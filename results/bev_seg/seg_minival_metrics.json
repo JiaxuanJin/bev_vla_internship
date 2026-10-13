@@ -1,0 +1,78 @@
+{
+  "dataset": "nuScenes v1.0-mini / mini_val",
+  "important_note": "仅为 nuScenes Mini BEV 分割评估，不是 DriveLM 正式验证集成绩",
+  "model": "BEVFormer-Small segmentation",
+  "requested_samples": 81,
+  "dataset_samples": 81,
+  "evaluated_samples": 81,
+  "complete": true,
+  "error": null,
+  "foreground_mIoU": 0.06375632428588948,
+  "mIoU_including_background": 0.24161769465925104,
+  "classes": [
+    {
+      "class_id": 0,
+      "class_name": "background",
+      "gt_pixels": 5702338,
+      "pred_pixels": 5514848,
+      "intersection": 4898363,
+      "union": 6318823,
+      "iou": 0.7752018057793358
+    },
+    {
+      "class_id": 1,
+      "class_name": "divider",
+      "gt_pixels": 191701,
+      "pred_pixels": 172115,
+      "intersection": 7943,
+      "union": 355873,
+      "iou": 0.022319760139150765
+    },
+    {
+      "class_id": 2,
+      "class_name": "ped_crossing",
+      "gt_pixels": 49580,
+      "pred_pixels": 106867,
+      "intersection": 12560,
+      "union": 143887,
+      "iou": 0.08729072119093455
+    },
+    {
+      "class_id": 3,
+      "class_name": "boundary",
+      "gt_pixels": 536381,
+      "pred_pixels": 686170,
+      "intersection": 92295,
+      "union": 1130256,
+      "iou": 0.08165849152758313
+    }
+  ],
+  "confusion_matrix_gt_rows_pred_cols": [
+    [
+      4898363,
+      161251,
+      85920,
+      556804
+    ],
+    [
+      154728,
+      7943,
+      225,
+      28805
+    ],
+    [
+      28502,
+      252,
+      12560,
+      8266
+    ],
+    [
+      433255,
+      2669,
+      8162,
+      92295
+    ]
+  ],
+  "aggregation": "global intersection/union summed over frames; NOT average of per-frame IoUs",
+  "input_order": "sequential validation dataset order; model forward_test retains its native temporal state"
+}

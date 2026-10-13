@@ -1,0 +1,166 @@
+{
+  "purpose": "Stage 1 local deliverable verification (no training or inference)",
+  "root": "/home/jjx2003520/projects/bev_vla",
+  "checked_files": 25,
+  "passed": 25,
+  "failed": 0,
+  "all_required_passed": true,
+  "checks": [
+    {
+      "name": "文档 00_阶段一交付导航.md",
+      "passed": true,
+      "important": true,
+      "detail": "docs/stage1/00_阶段一交付导航.md"
+    },
+    {
+      "name": "文档 01_DriveLM数据集结构与标注说明.md",
+      "passed": true,
+      "important": true,
+      "detail": "docs/stage1/01_DriveLM数据集结构与标注说明.md"
+    },
+    {
+      "name": "文档 02_BEVFormer原理与代码结构.md",
+      "passed": true,
+      "important": true,
+      "detail": "docs/stage1/02_BEVFormer原理与代码结构.md"
+    },
+    {
+      "name": "文档 03_基线性能测试报告.md",
+      "passed": true,
+      "important": true,
+      "detail": "docs/stage1/03_基线性能测试报告.md"
+    },
+    {
+      "name": "文档 04_可视化成果索引.md",
+      "passed": true,
+      "important": true,
+      "detail": "docs/stage1/04_可视化成果索引.md"
+    },
+    {
+      "name": "文档 05_复现和GitHub提交前检查.md",
+      "passed": true,
+      "important": true,
+      "detail": "docs/stage1/05_复现和GitHub提交前检查.md"
+    },
+    {
+      "name": "10月12日中文 Logbook",
+      "passed": true,
+      "important": true,
+      "detail": "docs/logbook_2026-10-12.md"
+    },
+    {
+      "name": "项目概览草案",
+      "passed": true,
+      "important": true,
+      "detail": "不会覆盖原 README.md"
+    },
+    {
+      "name": "Markdown 相对图片链接",
+      "passed": true,
+      "important": true,
+      "detail": "引用 9 张，缺失 0 张"
+    },
+    {
+      "name": "实验脚本 run_drivelm_official_preprocess.py",
+      "passed": true,
+      "important": true,
+      "detail": "scripts/run_drivelm_official_preprocess.py"
+    },
+    {
+      "name": "实验脚本 test_drivelm_799_bevformer_loader.py",
+      "passed": true,
+      "important": true,
+      "detail": "scripts/test_drivelm_799_bevformer_loader.py"
+    },
+    {
+      "name": "实验脚本 run_drivelm_799_det_all.py",
+      "passed": true,
+      "important": true,
+      "detail": "scripts/run_drivelm_799_det_all.py"
+    },
+    {
+      "name": "实验脚本 evaluate_drivelm_799_det_subset.py",
+      "passed": true,
+      "important": true,
+      "detail": "scripts/evaluate_drivelm_799_det_subset.py"
+    },
+    {
+      "name": "实验脚本 run_drivelm_799_seg_all.py",
+      "passed": true,
+      "important": true,
+      "detail": "scripts/run_drivelm_799_seg_all.py"
+    },
+    {
+      "name": "实验脚本 extract_bev_features.py",
+      "passed": true,
+      "important": true,
+      "detail": "scripts/extract_bev_features.py"
+    },
+    {
+      "name": "DriveLM 官方转换 QA 文件",
+      "passed": true,
+      "important": true,
+      "detail": "outputs/drivelm_official_preprocess/full/test_llama.json"
+    },
+    {
+      "name": "DriveLM 转换场景/帧/QA 数量",
+      "passed": true,
+      "important": true,
+      "detail": "696 场景，4072 帧，29450 条"
+    },
+    {
+      "name": "DriveLM 六路图像路径和结构检查",
+      "passed": true,
+      "important": true,
+      "detail": "唯一图片=24432，缺图=0，结构异常=0"
+    },
+    {
+      "name": "799 帧检测 NPZ 预测文件",
+      "passed": true,
+      "important": true,
+      "detail": "找到 799 / 799 个文件"
+    },
+    {
+      "name": "真实子集 3D mAP",
+      "passed": true,
+      "important": true,
+      "detail": "mAP=0.1338701670655289"
+    },
+    {
+      "name": "真实子集 NDS",
+      "passed": true,
+      "important": true,
+      "detail": "NDS=0.2579115728626631"
+    },
+    {
+      "name": "检测子集协议 JSON",
+      "passed": true,
+      "important": true,
+      "detail": "outputs/drivelm_check/det799_subset_eval/evaluation_protocol.json"
+    },
+    {
+      "name": "分割完整样本数量",
+      "passed": true,
+      "important": true,
+      "detail": "799 / 799，complete=True"
+    },
+    {
+      "name": "分割前景 mIoU",
+      "passed": true,
+      "important": true,
+      "detail": "foreground_mIoU=0.051211370593676"
+    },
+    {
+      "name": "分割含背景 mIoU",
+      "passed": true,
+      "important": true,
+      "detail": "mIoU_including_background=0.22221981828853998"
+    }
+  ],
+  "limitations": [
+    "799-frame independent subset; not official full nuScenes val benchmark",
+    "Low segmentation mIoU root cause unresolved",
+    "Official QA conversion differs from full nuScenes BEVFormer train PKL generation",
+    "GitHub repository creation/upload remains a separate task"
+  ]
+}

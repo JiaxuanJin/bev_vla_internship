@@ -1,0 +1,42 @@
+# Python 环境与缓存
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 数据集与大文件
+data/
+datasets/
+downloads/
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.safetensors
+*.onnx
+*.tgz
+*.tar
+*.zip
+*.npy
+*.npz
+
+# 临时输出
+outputs/
+build_logs/
+installers/
+*.log
+
+# 本地敏感配置
+.env
+.env.*
+*.pem
+*.key
+
+# 第三方代码仓库
+/BEVFormer/
+/BEVFormer-seg/
+/bevformer-blackwell/
+/mmdetection3d-0.17.1/
+/mmcv-1.7.2/
