@@ -1,0 +1,18 @@
+{
+  "source": "/mnt/g/nus/v1_1_train_nus.json",
+  "images_root": "/mnt/g/BEV_VLA_Datasets/nuscenes",
+  "requested_questions": 20,
+  "selected_questions": 20,
+  "distinct_scenes": 20,
+  "scenes_scanned": 81,
+  "frames_inspected": 20,
+  "selection_policy": "one QA per scene; sha256 scene bucket=0/5",
+  "qa_by_category": {
+    "perception": 5,
+    "prediction": 5,
+    "planning": 5,
+    "behavior": 5
+  },
+  "missing_image_reasons": {},
+  "output_file": "outputs/drivelm_vqa_baseline/qa_20.jsonl"
+}
