@@ -1,0 +1,95 @@
+{
+  "identity": {
+    "script_version": 1,
+    "dataset_pkl": "/mnt/g/BEV_VLA_Datasets/drivelm/nuscenes_infos_temporal_drivelm799_officialscene.pkl",
+    "dataset_sha256": "c167e5349c698870c7ae79d4f6cb315cd484d69c9d9c55c693f14605a7927d27",
+    "config_sha256": "34b53e295608bf682a42545cf3708a8dc2f3486817963c62c89d6415294d1066",
+    "checkpoint": "/mnt/g/nus/bevformer_small_seg.pth",
+    "checkpoint_size": 702015834,
+    "checkpoint_mtime_ns": 1791775056710918400,
+    "model_video_test_mode": false,
+    "class_names": [
+      "background",
+      "divider",
+      "ped_crossing",
+      "boundary"
+    ],
+    "data_protocol": "DriveLM 799 nuScenes official val frames; sparse independent-frame inference"
+  },
+  "dataset": "DriveLM v1.1 799 frames / nuScenes Val subset",
+  "evaluation_type": "BEVFormer-Small independent-frame BEV map segmentation",
+  "important_note": "799帧子集独立帧评估，非完整nuScenes Val、非DriveLM语言问答指标；mIoU不应与作者完整时序/不同数据协议直接比较。",
+  "dataset_samples": 799,
+  "requested_samples": 799,
+  "evaluated_samples": 799,
+  "complete": true,
+  "error": null,
+  "foreground_mIoU": 0.051211370593676,
+  "mIoU_including_background": 0.22221981828853998,
+  "classes": [
+    {
+      "class_id": 0,
+      "class_name": "background",
+      "gt_pixels": 53917609,
+      "pred_pixels": 54100408,
+      "intersection": 45768590,
+      "union": 62249427,
+      "iou": 0.735245161373132
+    },
+    {
+      "class_id": 1,
+      "class_name": "divider",
+      "gt_pixels": 3354504,
+      "pred_pixels": 2657106,
+      "intersection": 122729,
+      "union": 5888881,
+      "iou": 0.02084080150371522
+    },
+    {
+      "class_id": 2,
+      "class_name": "ped_crossing",
+      "gt_pixels": 865026,
+      "pred_pixels": 766366,
+      "intersection": 121848,
+      "union": 1509544,
+      "iou": 0.08071841562750076
+    },
+    {
+      "class_id": 3,
+      "class_name": "boundary",
+      "gt_pixels": 5782861,
+      "pred_pixels": 6396120,
+      "intersection": 602827,
+      "union": 11576154,
+      "iou": 0.05207489464981202
+    }
+  ],
+  "confusion_matrix_gt_rows_pred_cols": [
+    [
+      45768590,
+      2263428,
+      541294,
+      5344297
+    ],
+    [
+      2833703,
+      122729,
+      29822,
+      368250
+    ],
+    [
+      652200,
+      10232,
+      121848,
+      80746
+    ],
+    [
+      4845915,
+      260717,
+      73402,
+      602827
+    ]
+  ],
+  "aggregation": "global intersection/union over frames (no mean of per-frame IoU)",
+  "temporal_policy": "cfg.model.video_test_mode=False and official scene tokens retained for map lookup"
+}

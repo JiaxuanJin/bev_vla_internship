@@ -1,0 +1,22 @@
+{
+  "protocol": "DriveLM 799 keyframes within nuScenes val; independent-frame camera-only BEVFormer-Small",
+  "note": "真实 GPU 3D 检测预测；未计算子集 mAP，未使用历史 BEV，不是完整 nuScenes 官方 Val 成绩",
+  "identity": {
+    "format_version": 1,
+    "model_config_sha256": "f986f1474ee095bd3968565e1a41d730c1c6574a071f6110450cf3bd89020472",
+    "checkpoint_sha256": "4ebc5810201ca1e609c29452f07c08bc4d9c9ebfda5d7f8ee1034dd446274bc5",
+    "pkl_sha256": "cf13e193b87a62f027f31fe0f54fba6fb589f40010a1c33d8523235197473d49",
+    "score_threshold": 0.3,
+    "requested_frames": 799
+  },
+  "requested_frames": 799,
+  "finished_frames": 799,
+  "complete": true,
+  "error": null,
+  "score_threshold_for_display_only": 0.3,
+  "total_raw_boxes": 239700,
+  "total_above_threshold": 11110,
+  "mean_inference_seconds": 0.277712265331665,
+  "elapsed_wall_seconds": 476.96,
+  "per_frame_npz": "frames/frame_0000.npz ... frames/frame_0798.npz"
+}

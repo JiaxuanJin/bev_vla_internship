@@ -1,0 +1,37 @@
+{
+  "experiment": "BEVFormer-Small / DriveLM validation 799 subset / independent frame",
+  "dataset": "DriveLM-v1.1 validation frames within nuScenes official val",
+  "protocol": "nuScenes CVPR2019 detection matching/AP/NDS; 799-token subset, not official complete val",
+  "uses_previous_bev": false,
+  "sample_count": 799,
+  "gt_boxes_after_nuscenes_filter": 16974,
+  "prediction_boxes_after_nuscenes_filter": 204445,
+  "raw_prediction_boxes": 239700,
+  "mean_ap": 0.1338701670655289,
+  "nd_score": 0.2579115728626631,
+  "per_class_ap": {
+    "car": 0.20197658628115722,
+    "truck": 0.11608435232495601,
+    "bus": 0.1616072533463458,
+    "trailer": 0.020482427291728382,
+    "construction_vehicle": 0.018986806613622405,
+    "pedestrian": 0.16761789883198452,
+    "motorcycle": 0.14128590766294902,
+    "bicycle": 0.10066799475504289,
+    "traffic_cone": 0.23529143721873058,
+    "barrier": 0.17470100632877247
+  },
+  "input_prediction_path": "/home/jjx2003520/projects/bev_vla/outputs/drivelm_check/det799",
+  "result_file": "/home/jjx2003520/projects/bev_vla/outputs/drivelm_check/det799_subset_eval/results_nusc.json",
+  "metrics_summary_file": "/home/jjx2003520/projects/bev_vla/outputs/drivelm_check/det799_subset_eval/metrics_summary.json",
+  "identity": {
+    "format_version": 1,
+    "model_config_sha256": "f986f1474ee095bd3968565e1a41d730c1c6574a071f6110450cf3bd89020472",
+    "checkpoint_sha256": "4ebc5810201ca1e609c29452f07c08bc4d9c9ebfda5d7f8ee1034dd446274bc5",
+    "pkl_sha256": "cf13e193b87a62f027f31fe0f54fba6fb589f40010a1c33d8523235197473d49",
+    "score_threshold": 0.3,
+    "requested_frames": 799
+  },
+  "elapsed_seconds": 68.64,
+  "caution": "Non-temporal, sparse 799-frame subset. Not directly comparable with full NuScenes val or temporal baseline."
+}
