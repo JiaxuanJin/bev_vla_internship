@@ -1,0 +1,1450 @@
+{
+  "scope": "DriveLM799 predefined sparse independent-frame diagnostic subset",
+  "not_official_metric": true,
+  "warning": "只评估固定抽样索引；空间变换不可替代原始 799 帧 mIoU。",
+  "config_sha256": "34b53e295608bf682a42545cf3708a8dc2f3486817963c62c89d6415294d1066",
+  "checkpoint_sha256": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+  "pkl_sha256": "c167e5349c698870c7ae79d4f6cb315cd484d69c9d9c55c693f14605a7927d27",
+  "checkpoint_path": "/mnt/g/nus/bevformer_small_seg.pth",
+  "sample_count": 9,
+  "unique_scene_count": 9,
+  "fixed_shift_dy_dx": [
+    6,
+    22
+  ],
+  "rows": [
+    {
+      "index": 0,
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "sample_token": "08e76760a8c64a92a86686baf68f6aff",
+      "scores": {
+        "original": {
+          "foreground_miou": 0.137329984635795,
+          "binary_foreground_iou": 0.17451500918929957,
+          "including_background_miou": 0.3359179486534072,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 64031,
+              "pred_pixels": 67211,
+              "intersection": 55515,
+              "union": 75727,
+              "iou": 0.7330938766886316
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 6750,
+              "pred_pixels": 3771,
+              "intersection": 947,
+              "union": 9574,
+              "iou": 0.09891372467098392
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 0,
+              "pred_pixels": 0,
+              "intersection": 0,
+              "union": 0,
+              "iou": null
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 9219,
+              "pred_pixels": 9018,
+              "intersection": 2726,
+              "union": 15511,
+              "iou": 0.17574624460060603
+            }
+          ]
+        },
+        "flip_only": {
+          "foreground_miou": 0.053938766176114504,
+          "binary_foreground_iou": 0.08701239794375568,
+          "including_background_miou": 0.26566907989353433,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 64031,
+              "pred_pixels": 67211,
+              "intersection": 53544,
+              "union": 77698,
+              "iou": 0.689129707328374
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 6750,
+              "pred_pixels": 3771,
+              "intersection": 291,
+              "union": 10230,
+              "iou": 0.02844574780058651
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 0,
+              "pred_pixels": 0,
+              "intersection": 0,
+              "union": 0,
+              "iou": null
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 9219,
+              "pred_pixels": 9018,
+              "intersection": 1342,
+              "union": 16895,
+              "iou": 0.0794317845516425
+            }
+          ]
+        },
+        "fixed_flip_shift": {
+          "foreground_miou": 0.18081179888611537,
+          "binary_foreground_iou": 0.20727854948288546,
+          "including_background_miou": 0.37268408805765846,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 64031,
+              "pred_pixels": 68070,
+              "intersection": 56891,
+              "union": 75210,
+              "iou": 0.7564286664007446
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 6750,
+              "pred_pixels": 3558,
+              "intersection": 1395,
+              "union": 8913,
+              "iou": 0.15651295859979805
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 0,
+              "pred_pixels": 0,
+              "intersection": 0,
+              "union": 0,
+              "iou": null
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 9219,
+              "pred_pixels": 8372,
+              "intersection": 2994,
+              "union": 14597,
+              "iou": 0.2051106391724327
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": 100,
+      "scene_token": "b51869782c0e464b8021eb798609f35f",
+      "sample_token": "b007fc18b89f4f42bf5798e093b43729",
+      "scores": {
+        "original": {
+          "foreground_miou": 0.014719353106541584,
+          "binary_foreground_iou": 0.045885634588563456,
+          "including_background_miou": 0.2179286781986138,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 69412,
+              "pred_pixels": 75590,
+              "intersection": 65660,
+              "union": 79342,
+              "iou": 0.8275566534748304
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 2832,
+              "pred_pixels": 292,
+              "intersection": 0,
+              "union": 3124,
+              "iou": 0.0
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 0,
+              "pred_pixels": 855,
+              "intersection": 0,
+              "union": 855,
+              "iou": 0.0
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 7756,
+              "pred_pixels": 3263,
+              "intersection": 466,
+              "union": 10553,
+              "iou": 0.04415805931962475
+            }
+          ]
+        },
+        "flip_only": {
+          "foreground_miou": 0.008055271555596865,
+          "binary_foreground_iou": 0.03921840354767184,
+          "including_background_miou": 0.2124014506453214,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 69412,
+              "pred_pixels": 75590,
+              "intersection": 65568,
+              "union": 79434,
+              "iou": 0.825439987914495
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 2832,
+              "pred_pixels": 292,
+              "intersection": 0,
+              "union": 3124,
+              "iou": 0.0
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 0,
+              "pred_pixels": 855,
+              "intersection": 0,
+              "union": 855,
+              "iou": 0.0
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 7756,
+              "pred_pixels": 3263,
+              "intersection": 260,
+              "union": 10759,
+              "iou": 0.024165814666790592
+            }
+          ]
+        },
+        "fixed_flip_shift": {
+          "foreground_miou": 0.011873433583959899,
+          "binary_foreground_iou": 0.037206085753803596,
+          "including_background_miou": 0.2151042647376918,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 69412,
+              "pred_pixels": 75590,
+              "intersection": 65540,
+              "union": 79462,
+              "iou": 0.8247967581988875
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 2832,
+              "pred_pixels": 292,
+              "intersection": 0,
+              "union": 3124,
+              "iou": 0.0
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 0,
+              "pred_pixels": 855,
+              "intersection": 0,
+              "union": 855,
+              "iou": 0.0
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 7756,
+              "pred_pixels": 3263,
+              "intersection": 379,
+              "union": 10640,
+              "iou": 0.0356203007518797
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": 200,
+      "scene_token": "2ed0fcbfc214478ca3b3ce013e7723ba",
+      "sample_token": "d0cc76c904c542b39553f012e4791ef0",
+      "scores": {
+        "original": {
+          "foreground_miou": 0.030250322117758275,
+          "binary_foreground_iou": 0.12159023950642958,
+          "including_background_miou": 0.18985881830222343,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 62879,
+              "pred_pixels": 64762,
+              "intersection": 51149,
+              "union": 76492,
+              "iou": 0.6686843068556189
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 7799,
+              "pred_pixels": 2549,
+              "intersection": 0,
+              "union": 10348,
+              "iou": 0.0
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 2070,
+              "pred_pixels": 5778,
+              "intersection": 611,
+              "union": 7237,
+              "iou": 0.08442724886002487
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 7252,
+              "pred_pixels": 6911,
+              "intersection": 89,
+              "union": 14074,
+              "iou": 0.006323717493249965
+            }
+          ]
+        },
+        "flip_only": {
+          "foreground_miou": 0.10912156770629917,
+          "binary_foreground_iou": 0.14968379165778442,
+          "including_background_miou": 0.2528929392747829,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 62879,
+              "pred_pixels": 64762,
+              "intersection": 51854,
+              "union": 75787,
+              "iou": 0.6842070539802341
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 7799,
+              "pred_pixels": 2549,
+              "intersection": 258,
+              "union": 10090,
+              "iou": 0.025569871159563926
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 2070,
+              "pred_pixels": 5778,
+              "intersection": 730,
+              "union": 7118,
+              "iou": 0.1025568980050576
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 7252,
+              "pred_pixels": 6911,
+              "intersection": 2353,
+              "union": 11810,
+              "iou": 0.19923793395427603
+            }
+          ]
+        },
+        "fixed_flip_shift": {
+          "foreground_miou": 0.16763587165173646,
+          "binary_foreground_iou": 0.2629489978170272,
+          "including_background_miou": 0.3124560349142709,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 62879,
+              "pred_pixels": 65301,
+              "intersection": 54805,
+              "union": 73375,
+              "iou": 0.746916524701874
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 7799,
+              "pred_pixels": 2328,
+              "intersection": 1340,
+              "union": 8787,
+              "iou": 0.1524980084215318
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 2070,
+              "pred_pixels": 5778,
+              "intersection": 797,
+              "union": 7051,
+              "iou": 0.11303361225358105
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 7252,
+              "pred_pixels": 6593,
+              "intersection": 2656,
+              "union": 11189,
+              "iou": 0.23737599428009654
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": 300,
+      "scene_token": "b07358651c604e2d83da7c4d4755de73",
+      "sample_token": "4300e17a55f34a7aacc180dcba5616bf",
+      "scores": {
+        "original": {
+          "foreground_miou": 0.0429234024534858,
+          "binary_foreground_iou": 0.15669842273787404,
+          "including_background_miou": 0.21205143447465585,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 66350,
+              "pred_pixels": 64389,
+              "intersection": 54703,
+              "union": 76036,
+              "iou": 0.7194355305381661
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 2977,
+              "pred_pixels": 1594,
+              "intersection": 0,
+              "union": 4571,
+              "iou": 0.0
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 3951,
+              "pred_pixels": 5950,
+              "intersection": 777,
+              "union": 9124,
+              "iou": 0.08516001753616835
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 6722,
+              "pred_pixels": 8067,
+              "intersection": 618,
+              "union": 14171,
+              "iou": 0.04361018982428904
+            }
+          ]
+        },
+        "flip_only": {
+          "foreground_miou": 0.07044117156383702,
+          "binary_foreground_iou": 0.12499038831218762,
+          "including_background_miou": 0.22869636226224047,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 66350,
+              "pred_pixels": 64389,
+              "intersection": 53990,
+              "union": 76749,
+              "iou": 0.7034619343574509
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 2977,
+              "pred_pixels": 1594,
+              "intersection": 266,
+              "union": 4305,
+              "iou": 0.061788617886178863
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 3951,
+              "pred_pixels": 5950,
+              "intersection": 694,
+              "union": 9207,
+              "iou": 0.07537743021613989
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 6722,
+              "pred_pixels": 8067,
+              "intersection": 1021,
+              "union": 13768,
+              "iou": 0.07415746658919233
+            }
+          ]
+        },
+        "fixed_flip_shift": {
+          "foreground_miou": 0.13225692597082034,
+          "binary_foreground_iou": 0.16914019379369558,
+          "including_background_miou": 0.2822232891026358,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 66350,
+              "pred_pixels": 65054,
+              "intersection": 55541,
+              "union": 75863,
+              "iou": 0.732122378498082
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 2977,
+              "pred_pixels": 1240,
+              "intersection": 639,
+              "union": 3578,
+              "iou": 0.1785913918390162
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 3951,
+              "pred_pixels": 5950,
+              "intersection": 1065,
+              "union": 8836,
+              "iou": 0.12052965142598461
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 6722,
+              "pred_pixels": 7756,
+              "intersection": 1288,
+              "union": 13190,
+              "iou": 0.0976497346474602
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": 399,
+      "scene_token": "0e7ede02718341558414865d5c604745",
+      "sample_token": "66e594111d0e44fe8ef57d222f1830a7",
+      "scores": {
+        "original": {
+          "foreground_miou": 0.0812742711901508,
+          "binary_foreground_iou": 0.1654460592721891,
+          "including_background_miou": 0.2382659889558072,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 63694,
+              "pred_pixels": 65593,
+              "intersection": 53647,
+              "union": 75640,
+              "iou": 0.7092411422527763
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 8050,
+              "pred_pixels": 5859,
+              "intersection": 975,
+              "union": 12934,
+              "iou": 0.07538271223132828
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 612,
+              "pred_pixels": 50,
+              "intersection": 0,
+              "union": 662,
+              "iou": 0.0
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 7644,
+              "pred_pixels": 8498,
+              "intersection": 2327,
+              "union": 13815,
+              "iou": 0.16844010133912415
+            }
+          ]
+        },
+        "flip_only": {
+          "foreground_miou": 0.0627330533714558,
+          "binary_foreground_iou": 0.08106300598380851,
+          "including_background_miou": 0.21304719018561208,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 63694,
+              "pred_pixels": 65593,
+              "intersection": 51590,
+              "union": 77697,
+              "iou": 0.6639896006280809
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 8050,
+              "pred_pixels": 5859,
+              "intersection": 0,
+              "union": 13909,
+              "iou": 0.0
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 612,
+              "pred_pixels": 50,
+              "intersection": 22,
+              "union": 640,
+              "iou": 0.034375
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 7644,
+              "pred_pixels": 8498,
+              "intersection": 2152,
+              "union": 13990,
+              "iou": 0.1538241601143674
+            }
+          ]
+        },
+        "fixed_flip_shift": {
+          "foreground_miou": 0.11985948180558714,
+          "binary_foreground_iou": 0.2130477436232832,
+          "including_background_miou": 0.27553936719737376,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 63694,
+              "pred_pixels": 66630,
+              "intersection": 55536,
+              "union": 74788,
+              "iou": 0.7425790233727336
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 8050,
+              "pred_pixels": 5673,
+              "intersection": 1282,
+              "union": 12441,
+              "iou": 0.10304637890844788
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 612,
+              "pred_pixels": 0,
+              "intersection": 0,
+              "union": 612,
+              "iou": 0.0
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 7644,
+              "pred_pixels": 7697,
+              "intersection": 3132,
+              "union": 12209,
+              "iou": 0.25653206650831356
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": 500,
+      "scene_token": "f5b29a1e09d04355adcd60ab72de006b",
+      "sample_token": "039750d0ea984e26bf4526b6c5fa4b14",
+      "scores": {
+        "original": {
+          "foreground_miou": 0.017330754352030946,
+          "binary_foreground_iou": 0.07407025857628516,
+          "including_background_miou": 0.20579483774029672,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 68114,
+              "pred_pixels": 71034,
+              "intersection": 60586,
+              "union": 78562,
+              "iou": 0.771187087905094
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 4078,
+              "pred_pixels": 17,
+              "intersection": 0,
+              "union": 4095,
+              "iou": 0.0
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 3160,
+              "pred_pixels": 0,
+              "intersection": 0,
+              "union": 3160,
+              "iou": 0.0
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 4648,
+              "pred_pixels": 8949,
+              "intersection": 672,
+              "union": 12925,
+              "iou": 0.05199226305609284
+            }
+          ]
+        },
+        "flip_only": {
+          "foreground_miou": 0.017113843140287122,
+          "binary_foreground_iou": 0.0807504923810511,
+          "including_background_miou": 0.20630954160663678,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 68114,
+              "pred_pixels": 71034,
+              "intersection": 60706,
+              "union": 78442,
+              "iou": 0.7738966370056858
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 4078,
+              "pred_pixels": 17,
+              "intersection": 0,
+              "union": 4095,
+              "iou": 0.0
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 3160,
+              "pred_pixels": 0,
+              "intersection": 0,
+              "union": 3160,
+              "iou": 0.0
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 4648,
+              "pred_pixels": 8949,
+              "intersection": 664,
+              "union": 12933,
+              "iou": 0.05134152942086136
+            }
+          ]
+        },
+        "fixed_flip_shift": {
+          "foreground_miou": 0.00241993234066721,
+          "binary_foreground_iou": 0.047628617363344054,
+          "including_background_miou": 0.1918670668489832,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 68114,
+              "pred_pixels": 71034,
+              "intersection": 60096,
+              "union": 79052,
+              "iou": 0.7602084703739311
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 4078,
+              "pred_pixels": 17,
+              "intersection": 0,
+              "union": 4095,
+              "iou": 0.0
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 3160,
+              "pred_pixels": 0,
+              "intersection": 0,
+              "union": 3160,
+              "iou": 0.0
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 4648,
+              "pred_pixels": 8949,
+              "intersection": 98,
+              "union": 13499,
+              "iou": 0.00725979702200163
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": 600,
+      "scene_token": "64bfc5edd71147858ce7446892d7f864",
+      "sample_token": "ec55283a7cf346758faf11881b865297",
+      "scores": {
+        "original": {
+          "foreground_miou": 0.018724508713385244,
+          "binary_foreground_iou": 0.05679862306368331,
+          "including_background_miou": 0.2927966481573711,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 70884,
+              "pred_pixels": 74994,
+              "intersection": 66637,
+              "union": 79241,
+              "iou": 0.8409409270453427
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 3684,
+              "pred_pixels": 2044,
+              "intersection": 0,
+              "union": 5728,
+              "iou": 0.0
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 0,
+              "pred_pixels": 0,
+              "intersection": 0,
+              "union": 0,
+              "iou": null
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 5432,
+              "pred_pixels": 2962,
+              "intersection": 303,
+              "union": 8091,
+              "iou": 0.03744901742677049
+            }
+          ]
+        },
+        "flip_only": {
+          "foreground_miou": 0.09276234053889126,
+          "binary_foreground_iou": 0.10362613316661456,
+          "including_background_miou": 0.3465777290215042,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 70884,
+              "pred_pixels": 74994,
+              "intersection": 67204,
+              "union": 78674,
+              "iou": 0.85420850598673
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 3684,
+              "pred_pixels": 2044,
+              "intersection": 702,
+              "union": 5026,
+              "iou": 0.13967369677676084
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 0,
+              "pred_pixels": 0,
+              "intersection": 0,
+              "union": 0,
+              "iou": null
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 5432,
+              "pred_pixels": 2962,
+              "intersection": 368,
+              "union": 8026,
+              "iou": 0.04585098430102168
+            }
+          ]
+        },
+        "fixed_flip_shift": {
+          "foreground_miou": 0.08489800669171761,
+          "binary_foreground_iou": 0.1182199699105234,
+          "including_background_miou": 0.3426495965229994,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 70884,
+              "pred_pixels": 74994,
+              "intersection": 67371,
+              "union": 78507,
+              "iou": 0.8581527761855631
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 3684,
+              "pred_pixels": 2044,
+              "intersection": 618,
+              "union": 5110,
+              "iou": 0.12093933463796477
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 0,
+              "pred_pixels": 0,
+              "intersection": 0,
+              "union": 0,
+              "iou": null
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 5432,
+              "pred_pixels": 2962,
+              "intersection": 391,
+              "union": 8003,
+              "iou": 0.04885667874547045
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": 700,
+      "scene_token": "c4df079d260241ff8015218e29b42ea7",
+      "sample_token": "6742957ced7b491c939169eaccaf3e64",
+      "scores": {
+        "original": {
+          "foreground_miou": 0.026772348058486717,
+          "binary_foreground_iou": 0.053847578479488845,
+          "including_background_miou": 0.2647796644036592,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 70989,
+              "pred_pixels": 66250,
+              "intersection": 58402,
+              "union": 78837,
+              "iou": 0.7407942970940041
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 2037,
+              "pred_pixels": 4010,
+              "intersection": 182,
+              "union": 5865,
+              "iou": 0.03103154305200341
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 0,
+              "pred_pixels": 0,
+              "intersection": 0,
+              "union": 0,
+              "iou": null
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 6974,
+              "pred_pixels": 9740,
+              "intersection": 368,
+              "union": 16346,
+              "iou": 0.022513153064970023
+            }
+          ]
+        },
+        "flip_only": {
+          "foreground_miou": 0.035869995569785845,
+          "binary_foreground_iou": 0.07866925738116677,
+          "including_background_miou": 0.2745260441914477,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 70989,
+              "pred_pixels": 66250,
+              "intersection": 58899,
+              "union": 78340,
+              "iou": 0.7518381414347715
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 2037,
+              "pred_pixels": 4010,
+              "intersection": 32,
+              "union": 6015,
+              "iou": 0.005320033250207814
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 0,
+              "pred_pixels": 0,
+              "intersection": 0,
+              "union": 0,
+              "iou": null
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 6974,
+              "pred_pixels": 9740,
+              "intersection": 1041,
+              "union": 15673,
+              "iou": 0.06641995788936388
+            }
+          ]
+        },
+        "fixed_flip_shift": {
+          "foreground_miou": 0.2690773149434604,
+          "binary_foreground_iou": 0.269420643477274,
+          "including_background_miou": 0.4556876105540963,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 70989,
+              "pred_pixels": 66640,
+              "intersection": 62377,
+              "union": 75252,
+              "iou": 0.8289082017753681
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 2037,
+              "pred_pixels": 3819,
+              "intersection": 1239,
+              "union": 4617,
+              "iou": 0.2683560753736192
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 0,
+              "pred_pixels": 0,
+              "intersection": 0,
+              "union": 0,
+              "iou": null
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 6974,
+              "pred_pixels": 9541,
+              "intersection": 3509,
+              "union": 13006,
+              "iou": 0.26979855451330154
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": 798,
+      "scene_token": "82cabcf15a1a48aca6bbf082f8710e39",
+      "sample_token": "5d3e3366f21f49bcba8af3b57218f32d",
+      "scores": {
+        "original": {
+          "foreground_miou": 0.011634671320535195,
+          "binary_foreground_iou": 0.026042516174631655,
+          "including_background_miou": 0.26599850520055734,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 71197,
+              "pred_pixels": 69931,
+              "intersection": 61607,
+              "union": 79521,
+              "iou": 0.7747261729606016
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 2478,
+              "pred_pixels": 2322,
+              "intersection": 0,
+              "union": 4800,
+              "iou": 0.0
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 0,
+              "pred_pixels": 0,
+              "intersection": 0,
+              "union": 0,
+              "iou": null
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 6325,
+              "pred_pixels": 7747,
+              "intersection": 320,
+              "union": 13752,
+              "iou": 0.02326934264107039
+            }
+          ]
+        },
+        "flip_only": {
+          "foreground_miou": 0.18859796815697313,
+          "binary_foreground_iou": 0.1761919601121845,
+          "including_background_miou": 0.40197280565809357,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 71197,
+              "pred_pixels": 69931,
+              "intersection": 63955,
+              "union": 77173,
+              "iou": 0.8287224806603346
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 2478,
+              "pred_pixels": 2322,
+              "intersection": 906,
+              "union": 3894,
+              "iou": 0.23266563944530047
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 0,
+              "pred_pixels": 0,
+              "intersection": 0,
+              "union": 0,
+              "iou": null
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 6325,
+              "pred_pixels": 7747,
+              "intersection": 1777,
+              "union": 12295,
+              "iou": 0.1445302968686458
+            }
+          ]
+        },
+        "fixed_flip_shift": {
+          "foreground_miou": 0.11589917099041716,
+          "binary_foreground_iou": 0.18932007067600287,
+          "including_background_miou": 0.3570461599038401,
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "background",
+              "gt_pixels": 71197,
+              "pred_pixels": 70629,
+              "intersection": 64719,
+              "union": 77107,
+              "iou": 0.8393401377306859
+            },
+            {
+              "class_id": 1,
+              "class_name": "divider",
+              "gt_pixels": 2478,
+              "pred_pixels": 2105,
+              "intersection": 351,
+              "union": 4232,
+              "iou": 0.08293950850661626
+            },
+            {
+              "class_id": 2,
+              "class_name": "ped_crossing",
+              "gt_pixels": 0,
+              "pred_pixels": 0,
+              "intersection": 0,
+              "union": 0,
+              "iou": null
+            },
+            {
+              "class_id": 3,
+              "class_name": "boundary",
+              "gt_pixels": 6325,
+              "pred_pixels": 7266,
+              "intersection": 1761,
+              "union": 11830,
+              "iou": 0.14885883347421808
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "original": {
+      "foreground_miou": 0.05553580416966406,
+      "including_background_miou": 0.23035199238987106,
+      "binary_foreground_iou": 0.10724957572854957,
+      "classes": [
+        {
+          "class_id": 0,
+          "class_name": "background",
+          "gt_pixels": 607550,
+          "pred_pixels": 619754,
+          "intersection": 527906,
+          "union": 699398,
+          "iou": 0.754800557050492
+        },
+        {
+          "class_id": 1,
+          "class_name": "divider",
+          "gt_pixels": 40685,
+          "pred_pixels": 22458,
+          "intersection": 2104,
+          "union": 61039,
+          "iou": 0.03446976523206475
+        },
+        {
+          "class_id": 2,
+          "class_name": "ped_crossing",
+          "gt_pixels": 9793,
+          "pred_pixels": 12633,
+          "intersection": 1388,
+          "union": 21038,
+          "iou": 0.0659758532179865
+        },
+        {
+          "class_id": 3,
+          "class_name": "boundary",
+          "gt_pixels": 61972,
+          "pred_pixels": 65155,
+          "intersection": 7889,
+          "union": 119238,
+          "iou": 0.06616179405894095
+        }
+      ],
+      "confusion_matrix": [
+        [
+          527906,
+          17648,
+          9979,
+          52017
+        ],
+        [
+          34335,
+          2104,
+          0,
+          4246
+        ],
+        [
+          7401,
+          1,
+          1388,
+          1003
+        ],
+        [
+          50112,
+          2705,
+          1266,
+          7889
+        ]
+      ]
+    },
+    "flip_only": {
+      "foreground_miou": 0.0679640391978243,
+      "including_background_miou": 0.2392996436264902,
+      "binary_foreground_iou": 0.10382479630494577,
+      "classes": [
+        {
+          "class_id": 0,
+          "class_name": "background",
+          "gt_pixels": 607550,
+          "pred_pixels": 619754,
+          "intersection": 527310,
+          "union": 699994,
+          "iou": 0.7533064569124879
+        },
+        {
+          "class_id": 1,
+          "class_name": "divider",
+          "gt_pixels": 40685,
+          "pred_pixels": 22458,
+          "intersection": 2455,
+          "union": 60688,
+          "iou": 0.040452807803849196
+        },
+        {
+          "class_id": 2,
+          "class_name": "ped_crossing",
+          "gt_pixels": 9793,
+          "pred_pixels": 12633,
+          "intersection": 1446,
+          "union": 20980,
+          "iou": 0.06892278360343183
+        },
+        {
+          "class_id": 3,
+          "class_name": "boundary",
+          "gt_pixels": 61972,
+          "pred_pixels": 65155,
+          "intersection": 10978,
+          "union": 116149,
+          "iou": 0.09451652618619187
+        }
+      ],
+      "confusion_matrix": [
+        [
+          527310,
+          19080,
+          10050,
+          51110
+        ],
+        [
+          36405,
+          2455,
+          73,
+          1752
+        ],
+        [
+          6890,
+          142,
+          1446,
+          1315
+        ],
+        [
+          49149,
+          781,
+          1064,
+          10978
+        ]
+      ]
+    },
+    "fixed_flip_shift": {
+      "foreground_miou": 0.1218831168248335,
+      "including_background_miou": 0.288501862114135,
+      "binary_foreground_iou": 0.17718660373523634,
+      "classes": [
+        {
+          "class_id": 0,
+          "class_name": "background",
+          "gt_pixels": 607550,
+          "pred_pixels": 623942,
+          "intersection": 542876,
+          "union": 688616,
+          "iou": 0.7883580979820394
+        },
+        {
+          "class_id": 1,
+          "class_name": "divider",
+          "gt_pixels": 40685,
+          "pred_pixels": 21076,
+          "intersection": 6864,
+          "union": 54897,
+          "iou": 0.12503415487185093
+        },
+        {
+          "class_id": 2,
+          "class_name": "ped_crossing",
+          "gt_pixels": 9793,
+          "pred_pixels": 12583,
+          "intersection": 1862,
+          "union": 20514,
+          "iou": 0.09076728088134932
+        },
+        {
+          "class_id": 3,
+          "class_name": "boundary",
+          "gt_pixels": 61972,
+          "pred_pixels": 62399,
+          "intersection": 16208,
+          "union": 108163,
+          "iou": 0.14984791472130027
+        }
+      ],
+      "confusion_matrix": [
+        [
+          542876,
+          13301,
+          9653,
+          41720
+        ],
+        [
+          30372,
+          6864,
+          252,
+          3197
+        ],
+        [
+          6470,
+          187,
+          1862,
+          1274
+        ],
+        [
+          44224,
+          724,
+          816,
+          16208
+        ]
+      ]
+    }
+  }
+}

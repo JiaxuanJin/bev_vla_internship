@@ -1,0 +1,167 @@
+{
+  "experiment": "Physical BEV coordinate conventions using real LiDAR-to-Ego calibration",
+  "dataset": "nuScenes v1.0-trainval official val",
+  "note": "本实验使用真实的 LiDAR->Ego 标定，但只测试人工物理坐标场的几何一致性。它不能单独证明真实模型权重的空间错误，也不是 mIoU 或修复后模型指标。",
+  "samples": [
+    {
+      "index": 0,
+      "sample_token": "30e55a3ec6184d8cb1944b39ba19d622",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "lidar_to_ego_rotation_xy": [
+        [
+          0.0020332717916884792,
+          0.9997040585673612
+        ],
+        [
+          -0.9999805297789749,
+          0.002175657153334013
+        ]
+      ],
+      "lidar_to_ego_translation_xyz_m": [
+        0.943713,
+        0.0,
+        1.84023
+      ],
+      "orientation_results": {
+        "identity": {
+          "x_mae_m": 16.236064910888672,
+          "y_mae_m": 16.243846893310547,
+          "xy_mae_m": 16.23995590209961,
+          "max_abs_error_m": 45.72806167602539
+        },
+        "source_transpose": {
+          "x_mae_m": 0.9437136650085449,
+          "y_mae_m": 14.999656677246094,
+          "xy_mae_m": 7.971685886383057,
+          "max_abs_error_m": 29.914424896240234
+        },
+        "rotate_90_clockwise": {
+          "x_mae_m": 30.002574920654297,
+          "y_mae_m": 14.99965763092041,
+          "xy_mae_m": 22.50111961364746,
+          "max_abs_error_m": 60.81441879272461
+        },
+        "rotate_90_counterclockwise": {
+          "x_mae_m": 0.9437136650085449,
+          "y_mae_m": 0.03263514116406441,
+          "xy_mae_m": 0.4881744086742401,
+          "max_abs_error_m": 0.9836997985839844
+        },
+        "rotate_180": {
+          "x_mae_m": 16.291915893554688,
+          "y_mae_m": 16.254728317260742,
+          "xy_mae_m": 16.2733211517334,
+          "max_abs_error_m": 45.84975051879883
+        },
+        "flip_rows": {
+          "x_mae_m": 16.236064910888672,
+          "y_mae_m": 16.254728317260742,
+          "xy_mae_m": 16.245397567749023,
+          "max_abs_error_m": 45.72806167602539
+        },
+        "flip_columns": {
+          "x_mae_m": 16.291915893554688,
+          "y_mae_m": 16.24384880065918,
+          "xy_mae_m": 16.267881393432617,
+          "max_abs_error_m": 45.84974670410156
+        },
+        "anti_transpose": {
+          "x_mae_m": 30.002574920654297,
+          "y_mae_m": 0.03263513743877411,
+          "xy_mae_m": 15.01760482788086,
+          "max_abs_error_m": 60.814414978027344
+        }
+      },
+      "ranked_by_physical_mae": [
+        "rotate_90_counterclockwise",
+        "source_transpose",
+        "anti_transpose",
+        "identity",
+        "flip_rows",
+        "flip_columns",
+        "rotate_180",
+        "rotate_90_clockwise"
+      ]
+    },
+    {
+      "index": 3000,
+      "sample_token": "25f8552be635425aafa5d14150fc5ce1",
+      "scene_token": "ed242d80ccb34b139aaf9ab89859332e",
+      "lidar_to_ego_rotation_xy": [
+        [
+          -0.000542795003937102,
+          0.9989306991411446
+        ],
+        [
+          -0.9999954923496239,
+          -0.00040569316662746627
+        ]
+      ],
+      "lidar_to_ego_translation_xyz_m": [
+        0.985793,
+        0.0,
+        1.84019
+      ],
+      "orientation_results": {
+        "identity": {
+          "x_mae_m": 16.2708797454834,
+          "y_mae_m": 16.25047492980957,
+          "xy_mae_m": 16.260677337646484,
+          "max_abs_error_m": 45.83568572998047
+        },
+        "source_transpose": {
+          "x_mae_m": 0.9857936501502991,
+          "y_mae_m": 14.999770164489746,
+          "xy_mae_m": 7.992781162261963,
+          "max_abs_error_m": 29.861682891845703
+        },
+        "rotate_90_clockwise": {
+          "x_mae_m": 29.991605758666992,
+          "y_mae_m": 14.99976921081543,
+          "xy_mae_m": 22.49568748474121,
+          "max_abs_error_m": 60.81111145019531
+        },
+        "rotate_90_counterclockwise": {
+          "x_mae_m": 0.9857936501502991,
+          "y_mae_m": 0.0060881455428898335,
+          "xy_mae_m": 0.4959408640861511,
+          "max_abs_error_m": 1.0266780853271484
+        },
+        "rotate_180": {
+          "x_mae_m": 16.255970001220703,
+          "y_mae_m": 16.248445510864258,
+          "xy_mae_m": 16.252208709716797,
+          "max_abs_error_m": 45.803199768066406
+        },
+        "flip_rows": {
+          "x_mae_m": 16.2708797454834,
+          "y_mae_m": 16.248445510864258,
+          "xy_mae_m": 16.259662628173828,
+          "max_abs_error_m": 45.83568572998047
+        },
+        "flip_columns": {
+          "x_mae_m": 16.255970001220703,
+          "y_mae_m": 16.25047492980957,
+          "xy_mae_m": 16.253223419189453,
+          "max_abs_error_m": 45.803199768066406
+        },
+        "anti_transpose": {
+          "x_mae_m": 29.991605758666992,
+          "y_mae_m": 0.006088146008551121,
+          "xy_mae_m": 14.998847961425781,
+          "max_abs_error_m": 60.81111145019531
+        }
+      },
+      "ranked_by_physical_mae": [
+        "rotate_90_counterclockwise",
+        "source_transpose",
+        "anti_transpose",
+        "rotate_180",
+        "flip_columns",
+        "flip_rows",
+        "identity",
+        "rotate_90_clockwise"
+      ]
+    }
+  ]
+}

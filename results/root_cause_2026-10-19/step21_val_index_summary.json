@@ -1,0 +1,14 @@
+{
+  "dataset_version": "v1.0-trainval",
+  "split": "official nuScenes val",
+  "num_scenes": 150,
+  "num_samples": 6019,
+  "source_repo": "Bin-ze/BEVFormer_segmentation_detection",
+  "source_converter": "tools/data_converter/nuscenes_converter.py",
+  "generator": "_fill_trainval_infos (official val samples only)",
+  "can_bus_parent": "/mnt/g/BEV_VLA_Datasets",
+  "output_pkl": "/home/jjx2003520/projects/bev_vla/outputs/drivelm_check/root_cause/step21_full_val/nuscenes_infos_temporal_val_full6019.pkl",
+  "output_size_bytes": 78284941,
+  "sha256": "03a505c81ce8870803d05ef76c041a2f89ae04534d2b41d9d4d79111e8200d78",
+  "original_mini_pkl_untouched": true
+}

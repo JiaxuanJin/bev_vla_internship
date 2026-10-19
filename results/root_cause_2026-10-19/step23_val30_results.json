@@ -1,0 +1,274 @@
+{
+  "experiment": "full nuScenes Val contiguous subset - smoke test only",
+  "important_note": "仅30帧预检查，不是6019帧完整Val成绩或DriveLM799正式成绩",
+  "full_val_samples": 6019,
+  "tested_samples": 30,
+  "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+  "selected_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "video_test_mode": true,
+  "checkpoint": "/mnt/g/nus/bevformer_small_seg.pth",
+  "checkpoint_sha256": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+  "pkl": "/home/jjx2003520/projects/bev_vla/outputs/drivelm_check/root_cause/step21_full_val/nuscenes_infos_temporal_val_full6019_paths_fixed.pkl",
+  "class_names": [
+    "background",
+    "divider",
+    "ped_crossing",
+    "boundary"
+  ],
+  "per_class_iou_numpy": [
+    0.6796492090238871,
+    0.01757431559158736,
+    0.0,
+    0.04420973658180969
+  ],
+  "per_class_iou_upstream": [
+    0.6796492338180542,
+    0.017574315890669823,
+    0.0,
+    0.044209737330675125
+  ],
+  "numpy_foreground_miou": 0.020594684057799018,
+  "upstream_foreground_miou": 0.020594684407114983,
+  "max_iou_difference": 2.4794167052810678e-08,
+  "metric_match": true,
+  "confusion_gt_rows_pred_cols": [
+    [
+      1554476,
+      103358,
+      15911,
+      212732
+    ],
+    [
+      149929,
+      5983,
+      5,
+      39153
+    ],
+    [
+      5176,
+      15,
+      0,
+      116
+    ],
+    [
+      245592,
+      41997,
+      572,
+      24985
+    ]
+  ],
+  "per_frame": [
+    {
+      "index": 0,
+      "sample_token": "30e55a3ec6184d8cb1944b39ba19d622",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.024549498040808693
+    },
+    {
+      "index": 1,
+      "sample_token": "cc18fde20db74d30825b0b60ec511b7b",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.03238197782655811
+    },
+    {
+      "index": 2,
+      "sample_token": "08e76760a8c64a92a86686baf68f6aff",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.10010911527172932
+    },
+    {
+      "index": 3,
+      "sample_token": "2140329a6990437aa46b83c30f49cf49",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.016660300695462565
+    },
+    {
+      "index": 4,
+      "sample_token": "01a7d01c014f406f87b8fe11976c3d0a",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.021671081146159402
+    },
+    {
+      "index": 5,
+      "sample_token": "a2fada921a7d4141877f4a51328a21af",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.020815078762388767
+    },
+    {
+      "index": 6,
+      "sample_token": "b06a815164ec466f9fdb525522bb3799",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.021174561015198465
+    },
+    {
+      "index": 7,
+      "sample_token": "5bd85334fdf94fb99c7eaa45d5feba0d",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.030644982852085407
+    },
+    {
+      "index": 8,
+      "sample_token": "61f89208546a4045af336659ebe8db05",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.035394492869876316
+    },
+    {
+      "index": 9,
+      "sample_token": "3bf56ebb22b741339967a95a9fbe2081",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.038661469697424296
+    },
+    {
+      "index": 10,
+      "sample_token": "296fcfbf2e29489699f1cb5631f38ff5",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.04529903468611076
+    },
+    {
+      "index": 11,
+      "sample_token": "f7d75d25c86941f3aecfed9efea1a3e3",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.039343945714101075
+    },
+    {
+      "index": 12,
+      "sample_token": "1dfecb8189f54b999f4e47ddaa677fd0",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.029614475701674626
+    },
+    {
+      "index": 13,
+      "sample_token": "830ba619959e4802a955ac40c5ee9453",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.024344251727351957
+    },
+    {
+      "index": 14,
+      "sample_token": "dc2b67cdadca4deb89d7d684f2894292",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.02811236162369467
+    },
+    {
+      "index": 15,
+      "sample_token": "e1dffaba060040cfab07dec04790fbfa",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.022279246092300947
+    },
+    {
+      "index": 16,
+      "sample_token": "be28204a6a5a42ed9939d95ec3f22f5f",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.014174400353155035
+    },
+    {
+      "index": 17,
+      "sample_token": "77c3d98fab3e4d3ea65747caaa74d605",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.01216686445677234
+    },
+    {
+      "index": 18,
+      "sample_token": "5224809ffef94a6e83454ad3930d3533",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.0067670959234986
+    },
+    {
+      "index": 19,
+      "sample_token": "3c18f85f037744b6ae4c8a6f8dc578c2",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.003124968640244984
+    },
+    {
+      "index": 20,
+      "sample_token": "08d95280dd2f42d98a4a6e33dff8e815",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.0041509923466078605
+    },
+    {
+      "index": 21,
+      "sample_token": "f38aedc5545643d5be815165c6574186",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.006886644978664075
+    },
+    {
+      "index": 22,
+      "sample_token": "56f30b8972084492bbe742d423fc00ff",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.00904277217040728
+    },
+    {
+      "index": 23,
+      "sample_token": "d536032be01140afb6faa25b33de5487",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.009175302245250433
+    },
+    {
+      "index": 24,
+      "sample_token": "4094ae4656fb4b8fb1906192b24a34cb",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.006914433880726015
+    },
+    {
+      "index": 25,
+      "sample_token": "df25b3ecaf994001ab5d5b92b9de89fd",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.006515097810859621
+    },
+    {
+      "index": 26,
+      "sample_token": "27f42a55215f4223a01afa79fcda72e6",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.013791309853007415
+    },
+    {
+      "index": 27,
+      "sample_token": "f3c9f3e85f384381bfced8c2a863376f",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.011436345884500508
+    },
+    {
+      "index": 28,
+      "sample_token": "9c0558316d134feb8835997f8df4444d",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.006420701427684667
+    },
+    {
+      "index": 29,
+      "sample_token": "755ef1d006e94b2a87523000781a7a99",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "foreground_miou_single_frame": 0.00522775246098913
+    }
+  ],
+  "elapsed_seconds": 30.6
+}

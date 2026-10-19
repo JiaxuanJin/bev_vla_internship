@@ -1,0 +1,17 @@
+===== 运行环境对照 =====
+Python: 3.10.12
+MMCV 实际版本: 1.7.2
+CUDA 可用: True
+PyTorch CUDA: 12.8
+torch: 当前=2.8.0+cu128, 参考=1.9.1
+torchvision: 当前=0.23.0+cu128, 参考=0.10.1
+mmcv-full: 当前=1.7.2, 参考=1.4.0
+mmdet: 当前=2.28.2, 参考=2.14.0
+mmsegmentation: 当前=0.30.0, 参考=0.14.1
+mmdet3d: 当前=0.17.1, 参考=0.17.1
+numpy: 当前=1.26.4, 参考=参考旧环境
+Shapely: 当前=1.8.5, 参考=参考旧环境
+opencv-python: 当前=4.11.0.86, 参考=参考旧环境
+nuscenes-devkit: 当前=1.1.10, 参考=参考旧环境
+
+Step 29: PASS

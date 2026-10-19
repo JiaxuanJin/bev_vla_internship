@@ -1,0 +1,69 @@
+{
+  "experiment": "nuScenes v1.0-trainval official split, 6019-frame baseline",
+  "note": "遵循上游数据管线、模型 forward_test 和 IoU 类进行全量复现；不是作者原始 tools/test.py 的逐字相同执行入口，也未验证权重与作者发布 checkpoint 的 SHA256 是否相同。",
+  "identity": {
+    "checkpoint_sha256": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+    "config_sha256": "34b53e295608bf682a42545cf3708a8dc2f3486817963c62c89d6415294d1066",
+    "val_pkl_sha256": "5b1409d1d9d0eedfc2badea635f87d945bbc5f6fca4b4d07f9fd6bb190d8979c",
+    "sample_count": 6019
+  },
+  "checkpoint_path": "/mnt/g/nus/bevformer_small_seg.pth",
+  "val_pkl_path": "/home/jjx2003520/projects/bev_vla/outputs/drivelm_check/root_cause/step21_full_val/nuscenes_infos_temporal_val_full6019_paths_fixed.pkl",
+  "video_test_mode": true,
+  "expected_samples": 6019,
+  "absent_class_iou": 0.0,
+  "mIoU_definition": "global confusion then per-class IoU; mean foreground classes 1,2,3",
+  "complete": true,
+  "processed_samples": 6019,
+  "foreground_miou_local": 0.04641619392902555,
+  "foreground_miou_upstream": 0.04641622304916382,
+  "class_names": [
+    "background",
+    "divider",
+    "ped_crossing",
+    "boundary"
+  ],
+  "per_class_iou_local": [
+    0.7362439835636351,
+    0.024129691928517952,
+    0.06731105094339696,
+    0.04780783891516177
+  ],
+  "per_class_iou_upstream": [
+    0.7362438440322876,
+    0.024129707366228104,
+    0.06731104850769043,
+    0.04780791327357292
+  ],
+  "max_metric_difference": 1.395313474761295e-07,
+  "metric_match": true,
+  "confusion_gt_rows_pred_cols": [
+    [
+      345956037,
+      16304253,
+      3730382,
+      41710182
+    ],
+    [
+      21027383,
+      1036429,
+      154062,
+      2611481
+    ],
+    [
+      4512284,
+      77813,
+      691421,
+      627534
+    ],
+    [
+      36652673,
+      1741013,
+      478532,
+      4208521
+    ]
+  ],
+  "total_gt_pixels": 481520000,
+  "elapsed_seconds": 5406.38,
+  "per_frame_csv": "/home/jjx2003520/projects/bev_vla/outputs/drivelm_check/root_cause/step25_full_val_6019/per_frame.csv"
+}

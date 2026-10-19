@@ -1,0 +1,225 @@
+{
+  "experiment": "Step33 physically motivated BEV orientation counterfactual",
+  "protocol": "full Val sparse independent frames; identical data/GT/weights; no temporal history",
+  "calibration_hypothesis": "LiDAR->Ego yaw close to -90 deg; compare source transpose vs source BEV CCW90",
+  "note": "诊断性因果消融；模型权重在原始方向下训练，推理阶段单独改动不能视为正式修复。不得与完整 6019 帧时序 mIoU 直接作同协议比较。",
+  "indices": [
+    0,
+    300,
+    600,
+    900,
+    1200,
+    1500,
+    1800,
+    2100,
+    2400,
+    3000,
+    3600,
+    4500,
+    5300,
+    6018
+  ],
+  "scenes_represented": 14,
+  "original": {
+    "class_iou": {
+      "background": 0.7339115557745652,
+      "divider": 0.019297459476309228,
+      "ped_crossing": 0.08070933662619195,
+      "boundary": 0.06342983609348252
+    },
+    "foreground_miou": 0.05447887739866123,
+    "confusion_gt_rows_pred_cols": [
+      [
+        795315,
+        41885,
+        7054,
+        94327
+      ],
+      [
+        43418,
+        1981,
+        393,
+        8555
+      ],
+      [
+        15869,
+        270,
+        2353,
+        1979
+      ],
+      [
+        85798,
+        6154,
+        1236,
+        13413
+      ]
+    ]
+  },
+  "physical_ccw_candidate": {
+    "class_iou": {
+      "background": 0.7874870348327637,
+      "divider": 0.2176975241216093,
+      "ped_crossing": 0.1373566555378139,
+      "boundary": 0.23965367138064297
+    },
+    "foreground_miou": 0.19823595034668873,
+    "confusion_gt_rows_pred_cols": [
+      [
+        823009,
+        32159,
+        6843,
+        76570
+      ],
+      [
+        31001,
+        19133,
+        181,
+        4032
+      ],
+      [
+        15218,
+        295,
+        3785,
+        1173
+      ],
+      [
+        60308,
+        1087,
+        61,
+        45145
+      ]
+    ]
+  },
+  "aggregate_delta_percentage_points": 14.37570729480275,
+  "frames_improved": 14,
+  "frames_worsened": 0,
+  "frames_equal": 0,
+  "per_frame": [
+    {
+      "index": 0,
+      "sample_token": "30e55a3ec6184d8cb1944b39ba19d622",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "raw_fg_miou": 0.024549498040808693,
+      "candidate_fg_miou": 0.20849306312248664,
+      "changed_pixels": 19798,
+      "delta_fg_miou": 0.18394356508167795
+    },
+    {
+      "index": 300,
+      "sample_token": "33c965ece87842c2ac898543d26dad5f",
+      "scene_token": "8377abf77f464a9cb62eacf63f383422",
+      "raw_fg_miou": 0.08251048417615901,
+      "candidate_fg_miou": 0.18047402861227932,
+      "changed_pixels": 21675,
+      "delta_fg_miou": 0.0979635444361203
+    },
+    {
+      "index": 600,
+      "sample_token": "061805d66b424aa18267bdd7a955b761",
+      "scene_token": "813213458a214a39a1d1fc77fa52fa34",
+      "raw_fg_miou": 0.011517180784118163,
+      "candidate_fg_miou": 0.20391815369484223,
+      "changed_pixels": 21416,
+      "delta_fg_miou": 0.19240097291072406
+    },
+    {
+      "index": 900,
+      "sample_token": "02b68afcd7504587a003bffe899e4986",
+      "scene_token": "8edbc31083ab4fb187626e5b3c0411f7",
+      "raw_fg_miou": 0.0053231068628012135,
+      "candidate_fg_miou": 0.13411162474862232,
+      "changed_pixels": 16207,
+      "delta_fg_miou": 0.1287885178858211
+    },
+    {
+      "index": 1200,
+      "sample_token": "34dc0f073e864d70b6e2b09c5b3ed032",
+      "scene_token": "5af9c7f124d84e7e9ac729fafa40ea01",
+      "raw_fg_miou": 0.07908254295964338,
+      "candidate_fg_miou": 0.17987078771179618,
+      "changed_pixels": 21837,
+      "delta_fg_miou": 0.1007882447521528
+    },
+    {
+      "index": 1500,
+      "sample_token": "b988f7f03263462d94d39a722dc820ca",
+      "scene_token": "bed67ef03c4a4066a74f6c0117d512ee",
+      "raw_fg_miou": 0.0109189847134214,
+      "candidate_fg_miou": 0.11403251996414042,
+      "changed_pixels": 21219,
+      "delta_fg_miou": 0.10311353525071902
+    },
+    {
+      "index": 1800,
+      "sample_token": "6c6c21246e5249edb225218c1e0cd1ce",
+      "scene_token": "a499ee875da34e2b9655afb999edb8a9",
+      "raw_fg_miou": 0.055318118252477046,
+      "candidate_fg_miou": 0.30029894996512013,
+      "changed_pixels": 14027,
+      "delta_fg_miou": 0.2449808317126431
+    },
+    {
+      "index": 2100,
+      "sample_token": "6bed418003f549ddb2a54339ffc53cbe",
+      "scene_token": "f2541977a00a448db9b46a32187d9059",
+      "raw_fg_miou": 0.04958877885494156,
+      "candidate_fg_miou": 0.24213213401865916,
+      "changed_pixels": 21632,
+      "delta_fg_miou": 0.1925433551637176
+    },
+    {
+      "index": 2400,
+      "sample_token": "aa2e044f280d4f849172566c0634f806",
+      "scene_token": "aedcd3cf7c4a49d7a4a43ab7443a9eb1",
+      "raw_fg_miou": 0.0,
+      "candidate_fg_miou": 0.10362691960252936,
+      "changed_pixels": 25738,
+      "delta_fg_miou": 0.10362691960252936
+    },
+    {
+      "index": 3000,
+      "sample_token": "25f8552be635425aafa5d14150fc5ce1",
+      "scene_token": "ed242d80ccb34b139aaf9ab89859332e",
+      "raw_fg_miou": 0.1036356848942141,
+      "candidate_fg_miou": 0.22236258657723304,
+      "changed_pixels": 13129,
+      "delta_fg_miou": 0.11872690168301894
+    },
+    {
+      "index": 3600,
+      "sample_token": "08ecb5ce7d91436596526fe3b930db81",
+      "scene_token": "3045ed93c2534ec2a5cabea89b186bd9",
+      "raw_fg_miou": 0.044297194394416844,
+      "candidate_fg_miou": 0.1399770325582694,
+      "changed_pixels": 22674,
+      "delta_fg_miou": 0.09567983816385256
+    },
+    {
+      "index": 4500,
+      "sample_token": "8e7b267872c04c2b8a49b034ce6a9180",
+      "scene_token": "905cfed4f0fc46679e8df8890cca4141",
+      "raw_fg_miou": 0.07833138781756967,
+      "candidate_fg_miou": 0.15695436617772063,
+      "changed_pixels": 28041,
+      "delta_fg_miou": 0.07862297836015096
+    },
+    {
+      "index": 5300,
+      "sample_token": "58124ce02b20492a8362fea9ee98fcb7",
+      "scene_token": "cb3e964697d448b3bc04a9bc06c9e131",
+      "raw_fg_miou": 0.01375,
+      "candidate_fg_miou": 0.2139554233979001,
+      "changed_pixels": 24772,
+      "delta_fg_miou": 0.2002054233979001
+    },
+    {
+      "index": 6018,
+      "sample_token": "f0ee73d43c2748fbb584d1a062e2773a",
+      "scene_token": "6498fce2f38645fc9bf9d4464b159230",
+      "raw_fg_miou": 0.03913098558485845,
+      "candidate_fg_miou": 0.09695950759479001,
+      "changed_pixels": 21508,
+      "delta_fg_miou": 0.057828522009931556
+    }
+  ]
+}

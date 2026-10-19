@@ -1,0 +1,1651 @@
+{
+  "experiment": "DriveLM799 GT reference-frame ablation",
+  "sample_count": 9,
+  "distinct_scenes": 9,
+  "checkpoint_sha256_from_step9": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+  "config_sha256": "34b53e295608bf682a42545cf3708a8dc2f3486817963c62c89d6415294d1066",
+  "pkl_sha256": "c167e5349c698870c7ae79d4f6cb315cd484d69c9d9c55c693f14605a7927d27",
+  "original_gt_reproduced_for_all_samples": true,
+  "warning": "这是对固定预测重建假设地图 GT 的参考系消融，只对选定 9 个样本有效；不能把任一候选 GT 视为官方真值，也不能将候选指标替换 799 帧原始正式成绩。",
+  "aggregate": {
+    "ego_reference": {
+      "foreground_miou": 0.05553580416966406,
+      "foreground_binary_iou": 0.10724957572854957,
+      "class_ious": {
+        "background": 0.754800557050492,
+        "divider": 0.03446976523206475,
+        "ped_crossing": 0.0659758532179865,
+        "boundary": 0.06616179405894095
+      },
+      "gt_foreground_pixels": 112450,
+      "pred_foreground_pixels": 100246,
+      "confusion_matrix": [
+        [
+          527906,
+          17648,
+          9979,
+          52017
+        ],
+        [
+          34335,
+          2104,
+          0,
+          4246
+        ],
+        [
+          7401,
+          1,
+          1388,
+          1003
+        ],
+        [
+          50112,
+          2705,
+          1266,
+          7889
+        ]
+      ]
+    },
+    "lidar_center_ego_heading": {
+      "foreground_miou": 0.0618667896642608,
+      "foreground_binary_iou": 0.11343850301034215,
+      "class_ious": {
+        "background": 0.7579420650944342,
+        "divider": 0.03546425636811833,
+        "ped_crossing": 0.08246624401103421,
+        "boundary": 0.06766986861362986
+      },
+      "gt_foreground_pixels": 112060,
+      "pred_foreground_pixels": 100246,
+      "confusion_matrix": [
+        [
+          529324,
+          17509,
+          9575,
+          51532
+        ],
+        [
+          33868,
+          2158,
+          0,
+          4524
+        ],
+        [
+          6976,
+          0,
+          1704,
+          1054
+        ],
+        [
+          49586,
+          2791,
+          1354,
+          8045
+        ]
+      ]
+    },
+    "ego_center_lidar_heading": {
+      "foreground_miou": 0.019497067374324408,
+      "foreground_binary_iou": 0.06835025747148564,
+      "class_ious": {
+        "background": 0.7814540004910829,
+        "divider": 0.020465597516813244,
+        "ped_crossing": 0.0,
+        "boundary": 0.038025604606159974
+      },
+      "gt_foreground_pixels": 77348,
+      "pred_foreground_pixels": 100246,
+      "confusion_matrix": [
+        [
+          553768,
+          20005,
+          11473,
+          57406
+        ],
+        [
+          22579,
+          989,
+          505,
+          2783
+        ],
+        [
+          5660,
+          118,
+          0,
+          977
+        ],
+        [
+          37747,
+          1346,
+          655,
+          3989
+        ]
+      ]
+    },
+    "lidar_center_lidar_heading": {
+      "foreground_miou": 0.01888000866987142,
+      "foreground_binary_iou": 0.06556255214930158,
+      "class_ious": {
+        "background": 0.780465618733059,
+        "divider": 0.017490415500984353,
+        "ped_crossing": 0.0,
+        "boundary": 0.0391496105086299
+      },
+      "gt_foreground_pixels": 77265,
+      "pred_foreground_pixels": 100246,
+      "confusion_matrix": [
+        [
+          553411,
+          20047,
+          11458,
+          57819
+        ],
+        [
+          23038,
+          844,
+          544,
+          2215
+        ],
+        [
+          5860,
+          46,
+          0,
+          1020
+        ],
+        [
+          37445,
+          1521,
+          631,
+          4101
+        ]
+      ]
+    }
+  },
+  "samples": [
+    {
+      "index": 0,
+      "sample_token": "08e76760a8c64a92a86686baf68f6aff",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "location": "singapore-onenorth",
+      "original_gt_reproduction_exact": true,
+      "scores": {
+        "ego_reference": {
+          "foreground_miou": 0.137329984635795,
+          "foreground_binary_iou": 0.17451500918929957,
+          "class_ious": {
+            "background": 0.7330938766886316,
+            "divider": 0.09891372467098392,
+            "ped_crossing": null,
+            "boundary": 0.17574624460060603
+          },
+          "gt_foreground_pixels": 15969,
+          "pred_foreground_pixels": 12789,
+          "confusion_matrix": [
+            [
+              55515,
+              2470,
+              0,
+              6046
+            ],
+            [
+              5557,
+              947,
+              0,
+              246
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              6139,
+              354,
+              0,
+              2726
+            ]
+          ],
+          "gt_pixels_changed_from_original": 0
+        },
+        "lidar_center_ego_heading": {
+          "foreground_miou": 0.14325923784724456,
+          "foreground_binary_iou": 0.1800073925007187,
+          "class_ious": {
+            "background": 0.7359588452332148,
+            "divider": 0.10503627378824519,
+            "ped_crossing": null,
+            "boundary": 0.18148220190624392
+          },
+          "gt_foreground_pixels": 15943,
+          "pred_foreground_pixels": 12789,
+          "confusion_matrix": [
+            [
+              55651,
+              2420,
+              0,
+              5986
+            ],
+            [
+              5507,
+              999,
+              0,
+              233
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              6053,
+              352,
+              0,
+              2799
+            ]
+          ],
+          "gt_pixels_changed_from_original": 4326
+        },
+        "ego_center_lidar_heading": {
+          "foreground_miou": 0.03419842870450856,
+          "foreground_binary_iou": 0.07213443452523034,
+          "class_ious": {
+            "background": 0.7523729439794111,
+            "divider": 0.02534740092640247,
+            "ped_crossing": null,
+            "boundary": 0.04304945648261464
+          },
+          "gt_foreground_pixels": 9669,
+          "pred_foreground_pixels": 12789,
+          "confusion_matrix": [
+            [
+              59053,
+              3318,
+              0,
+              7960
+            ],
+            [
+              3541,
+              197,
+              0,
+              460
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4617,
+              256,
+              0,
+              598
+            ]
+          ],
+          "gt_pixels_changed_from_original": 22566
+        },
+        "lidar_center_lidar_heading": {
+          "foreground_miou": 0.034453828944683046,
+          "foreground_binary_iou": 0.0724450811843362,
+          "class_ious": {
+            "background": 0.7525196539377954,
+            "divider": 0.025482625482625483,
+            "ped_crossing": null,
+            "boundary": 0.0434250324067406
+          },
+          "gt_foreground_pixels": 9668,
+          "pred_foreground_pixels": 12789,
+          "confusion_matrix": [
+            [
+              59060,
+              3315,
+              0,
+              7957
+            ],
+            [
+              3541,
+              198,
+              0,
+              458
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4610,
+              258,
+              0,
+              603
+            ]
+          ],
+          "gt_pixels_changed_from_original": 22583
+        }
+      }
+    },
+    {
+      "index": 100,
+      "sample_token": "b007fc18b89f4f42bf5798e093b43729",
+      "scene_token": "b51869782c0e464b8021eb798609f35f",
+      "location": "singapore-onenorth",
+      "original_gt_reproduction_exact": true,
+      "scores": {
+        "ego_reference": {
+          "foreground_miou": 0.014719353106541584,
+          "foreground_binary_iou": 0.045885634588563456,
+          "class_ious": {
+            "background": 0.8275566534748304,
+            "divider": 0.0,
+            "ped_crossing": 0.0,
+            "boundary": 0.04415805931962475
+          },
+          "gt_foreground_pixels": 10588,
+          "pred_foreground_pixels": 4410,
+          "confusion_matrix": [
+            [
+              65660,
+              103,
+              855,
+              2794
+            ],
+            [
+              2829,
+              0,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7101,
+              189,
+              0,
+              466
+            ]
+          ],
+          "gt_pixels_changed_from_original": 0
+        },
+        "lidar_center_ego_heading": {
+          "foreground_miou": 0.019590614728757852,
+          "foreground_binary_iou": 0.05343839541547278,
+          "class_ious": {
+            "background": 0.833270245034951,
+            "divider": 0.0,
+            "ped_crossing": 0.0,
+            "boundary": 0.058771844186273556
+          },
+          "gt_foreground_pixels": 10296,
+          "pred_foreground_pixels": 4410,
+          "confusion_matrix": [
+            [
+              66040,
+              148,
+              855,
+              2661
+            ],
+            [
+              2714,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              6836,
+              144,
+              0,
+              602
+            ]
+          ],
+          "gt_pixels_changed_from_original": 12436
+        },
+        "ego_center_lidar_heading": {
+          "foreground_miou": 0.013693844756515056,
+          "foreground_binary_iou": 0.04575613959500215,
+          "class_ious": {
+            "background": 0.8606500648051442,
+            "divider": 0.0,
+            "ped_crossing": 0.0,
+            "boundary": 0.04108153426954517
+          },
+          "gt_foreground_pixels": 7726,
+          "pred_foreground_pixels": 4410,
+          "confusion_matrix": [
+            [
+              68395,
+              199,
+              809,
+              2871
+            ],
+            [
+              1055,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              6140,
+              93,
+              46,
+              392
+            ]
+          ],
+          "gt_pixels_changed_from_original": 17380
+        },
+        "lidar_center_lidar_heading": {
+          "foreground_miou": 0.0151337107858847,
+          "foreground_binary_iou": 0.04309594288699286,
+          "class_ious": {
+            "background": 0.8617571221935727,
+            "divider": 0.0,
+            "ped_crossing": 0.0,
+            "boundary": 0.0454011323576541
+          },
+          "gt_foreground_pixels": 7571,
+          "pred_foreground_pixels": 4410,
+          "confusion_matrix": [
+            [
+              68514,
+              222,
+              855,
+              2838
+            ],
+            [
+              1048,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              6028,
+              70,
+              0,
+              425
+            ]
+          ],
+          "gt_pixels_changed_from_original": 17102
+        }
+      }
+    },
+    {
+      "index": 200,
+      "sample_token": "d0cc76c904c542b39553f012e4791ef0",
+      "scene_token": "2ed0fcbfc214478ca3b3ce013e7723ba",
+      "location": "boston-seaport",
+      "original_gt_reproduction_exact": true,
+      "scores": {
+        "ego_reference": {
+          "foreground_miou": 0.030250322117758275,
+          "foreground_binary_iou": 0.12159023950642958,
+          "class_ious": {
+            "background": 0.6686843068556189,
+            "divider": 0.0,
+            "ped_crossing": 0.08442724886002487,
+            "boundary": 0.006323717493249965
+          },
+          "gt_foreground_pixels": 17121,
+          "pred_foreground_pixels": 15238,
+          "confusion_matrix": [
+            [
+              51149,
+              1875,
+              4378,
+              5477
+            ],
+            [
+              6705,
+              0,
+              0,
+              1094
+            ],
+            [
+              1208,
+              0,
+              611,
+              251
+            ],
+            [
+              5700,
+              674,
+              789,
+              89
+            ]
+          ],
+          "gt_pixels_changed_from_original": 0
+        },
+        "lidar_center_ego_heading": {
+          "foreground_miou": 0.03476097032880929,
+          "foreground_binary_iou": 0.13026247175386754,
+          "class_ious": {
+            "background": 0.6719079905052916,
+            "divider": 0.0,
+            "ped_crossing": 0.09675141242937853,
+            "boundary": 0.007531498557049342
+          },
+          "gt_foreground_pixels": 17274,
+          "pred_foreground_pixels": 15238,
+          "confusion_matrix": [
+            [
+              51235,
+              1863,
+              4194,
+              5434
+            ],
+            [
+              6741,
+              0,
+              0,
+              1143
+            ],
+            [
+              1075,
+              0,
+              685,
+              227
+            ],
+            [
+              5711,
+              686,
+              899,
+              107
+            ]
+          ],
+          "gt_pixels_changed_from_original": 5845
+        },
+        "ego_center_lidar_heading": {
+          "foreground_miou": 0.024415328852533696,
+          "foreground_binary_iou": 0.11449112745709181,
+          "class_ious": {
+            "background": 0.7241504304485727,
+            "divider": 0.02716961223951464,
+            "ped_crossing": 0.0,
+            "boundary": 0.04607637431808644
+          },
+          "gt_foreground_pixels": 11580,
+          "pred_foreground_pixels": 15238,
+          "confusion_matrix": [
+            [
+              55937,
+              2151,
+              4664,
+              5668
+            ],
+            [
+              3834,
+              206,
+              505,
+              694
+            ],
+            [
+              788,
+              0,
+              0,
+              0
+            ],
+            [
+              4203,
+              192,
+              609,
+              549
+            ]
+          ],
+          "gt_pixels_changed_from_original": 24623
+        },
+        "lidar_center_lidar_heading": {
+          "foreground_miou": 0.024332693856954177,
+          "foreground_binary_iou": 0.11599768747935249,
+          "class_ious": {
+            "background": 0.722674923242347,
+            "divider": 0.02637334362536987,
+            "ped_crossing": 0.0,
+            "boundary": 0.04662473794549266
+          },
+          "gt_foreground_pixels": 11787,
+          "pred_foreground_pixels": 15238,
+          "confusion_matrix": [
+            [
+              55784,
+              2150,
+              4625,
+              5654
+            ],
+            [
+              3979,
+              205,
+              544,
+              701
+            ],
+            [
+              788,
+              0,
+              0,
+              0
+            ],
+            [
+              4211,
+              194,
+              609,
+              556
+            ]
+          ],
+          "gt_pixels_changed_from_original": 24772
+        }
+      }
+    },
+    {
+      "index": 300,
+      "sample_token": "4300e17a55f34a7aacc180dcba5616bf",
+      "scene_token": "b07358651c604e2d83da7c4d4755de73",
+      "location": "boston-seaport",
+      "original_gt_reproduction_exact": true,
+      "scores": {
+        "ego_reference": {
+          "foreground_miou": 0.0429234024534858,
+          "foreground_binary_iou": 0.15669842273787404,
+          "class_ious": {
+            "background": 0.7194355305381661,
+            "divider": 0.0,
+            "ped_crossing": 0.08516001753616835,
+            "boundary": 0.04361018982428904
+          },
+          "gt_foreground_pixels": 13650,
+          "pred_foreground_pixels": 15611,
+          "confusion_matrix": [
+            [
+              54703,
+              864,
+              4738,
+              6045
+            ],
+            [
+              2019,
+              0,
+              0,
+              958
+            ],
+            [
+              2727,
+              1,
+              777,
+              446
+            ],
+            [
+              4940,
+              729,
+              435,
+              618
+            ]
+          ],
+          "gt_pixels_changed_from_original": 0
+        },
+        "lidar_center_ego_heading": {
+          "foreground_miou": 0.052813848639286565,
+          "foreground_binary_iou": 0.17393565941101152,
+          "class_ious": {
+            "background": 0.7271093016800392,
+            "divider": 0.0,
+            "ped_crossing": 0.11479103300664639,
+            "boundary": 0.0436505129112133
+          },
+          "gt_foreground_pixels": 13728,
+          "pred_foreground_pixels": 15611,
+          "confusion_matrix": [
+            [
+              55008,
+              798,
+              4520,
+              5946
+            ],
+            [
+              2095,
+              0,
+              0,
+              1002
+            ],
+            [
+              2425,
+              0,
+              1019,
+              502
+            ],
+            [
+              4861,
+              796,
+              411,
+              617
+            ]
+          ],
+          "gt_pixels_changed_from_original": 9173
+        },
+        "ego_center_lidar_heading": {
+          "foreground_miou": 0.01600685432980536,
+          "foreground_binary_iou": 0.07801603905160391,
+          "class_ious": {
+            "background": 0.7295230788901675,
+            "divider": 0.03492157443030482,
+            "ped_crossing": 0.0,
+            "boundary": 0.013098988559111258
+          },
+          "gt_foreground_pixels": 9123,
+          "pred_foreground_pixels": 15611,
+          "confusion_matrix": [
+            [
+              57056,
+              1256,
+              5950,
+              6615
+            ],
+            [
+              1193,
+              118,
+              0,
+              592
+            ],
+            [
+              2247,
+              118,
+              0,
+              702
+            ],
+            [
+              3893,
+              102,
+              0,
+              158
+            ]
+          ],
+          "gt_pixels_changed_from_original": 19160
+        },
+        "lidar_center_lidar_heading": {
+          "foreground_miou": 0.004274918638645264,
+          "foreground_binary_iou": 0.05853886318291803,
+          "class_ious": {
+            "background": 0.7179125170119942,
+            "divider": 0.0,
+            "ped_crossing": 0.0,
+            "boundary": 0.012824755915935793
+          },
+          "gt_foreground_pixels": 9325,
+          "pred_foreground_pixels": 15611,
+          "confusion_matrix": [
+            [
+              56443,
+              1199,
+              5928,
+              7105
+            ],
+            [
+              1931,
+              0,
+              0,
+              122
+            ],
+            [
+              2367,
+              46,
+              0,
+              685
+            ],
+            [
+              3648,
+              349,
+              22,
+              155
+            ]
+          ],
+          "gt_pixels_changed_from_original": 20615
+        }
+      }
+    },
+    {
+      "index": 399,
+      "sample_token": "66e594111d0e44fe8ef57d222f1830a7",
+      "scene_token": "0e7ede02718341558414865d5c604745",
+      "location": "boston-seaport",
+      "original_gt_reproduction_exact": true,
+      "scores": {
+        "ego_reference": {
+          "foreground_miou": 0.0812742711901508,
+          "foreground_binary_iou": 0.1654460592721891,
+          "class_ious": {
+            "background": 0.7092411422527763,
+            "divider": 0.07538271223132828,
+            "ped_crossing": 0.0,
+            "boundary": 0.16844010133912415
+          },
+          "gt_foreground_pixels": 16306,
+          "pred_foreground_pixels": 14407,
+          "confusion_matrix": [
+            [
+              53647,
+              4884,
+              8,
+              5155
+            ],
+            [
+              6182,
+              975,
+              0,
+              893
+            ],
+            [
+              489,
+              0,
+              0,
+              123
+            ],
+            [
+              5275,
+              0,
+              42,
+              2327
+            ]
+          ],
+          "gt_pixels_changed_from_original": 0
+        },
+        "lidar_center_ego_heading": {
+          "foreground_miou": 0.08134884146775585,
+          "foreground_binary_iou": 0.16780913721135066,
+          "class_ious": {
+            "background": 0.7126213335449232,
+            "divider": 0.07671728696199544,
+            "ped_crossing": 0.0,
+            "boundary": 0.16732923744127215
+          },
+          "gt_foreground_pixels": 16088,
+          "pred_foreground_pixels": 14407,
+          "confusion_matrix": [
+            [
+              53887,
+              4884,
+              6,
+              5135
+            ],
+            [
+              5951,
+              975,
+              0,
+              899
+            ],
+            [
+              462,
+              0,
+              0,
+              149
+            ],
+            [
+              5293,
+              0,
+              44,
+              2315
+            ]
+          ],
+          "gt_pixels_changed_from_original": 2892
+        },
+        "ego_center_lidar_heading": {
+          "foreground_miou": 0.02423237390719037,
+          "foreground_binary_iou": 0.0812,
+          "class_ious": {
+            "background": 0.7355480792601026,
+            "divider": 0.03354049521554701,
+            "ped_crossing": 0.0,
+            "boundary": 0.0391566265060241
+          },
+          "gt_foreground_pixels": 9920,
+          "pred_foreground_pixels": 14407,
+          "confusion_matrix": [
+            [
+              57500,
+              5005,
+              50,
+              7525
+            ],
+            [
+              3825,
+              340,
+              0,
+              453
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4268,
+              514,
+              0,
+              520
+            ]
+          ],
+          "gt_pixels_changed_from_original": 22623
+        },
+        "lidar_center_lidar_heading": {
+          "foreground_miou": 0.024246177691380755,
+          "foreground_binary_iou": 0.08173804647849701,
+          "class_ious": {
+            "background": 0.7361189294304283,
+            "divider": 0.034322632747829596,
+            "ped_crossing": 0.0,
+            "boundary": 0.03841590032631267
+          },
+          "gt_foreground_pixels": 9891,
+          "pred_foreground_pixels": 14407,
+          "confusion_matrix": [
+            [
+              57538,
+              4994,
+              50,
+              7527
+            ],
+            [
+              3594,
+              340,
+              0,
+              453
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4461,
+              525,
+              0,
+              518
+            ]
+          ],
+          "gt_pixels_changed_from_original": 22397
+        }
+      }
+    },
+    {
+      "index": 500,
+      "sample_token": "039750d0ea984e26bf4526b6c5fa4b14",
+      "scene_token": "f5b29a1e09d04355adcd60ab72de006b",
+      "location": "boston-seaport",
+      "original_gt_reproduction_exact": true,
+      "scores": {
+        "ego_reference": {
+          "foreground_miou": 0.017330754352030946,
+          "foreground_binary_iou": 0.07407025857628516,
+          "class_ious": {
+            "background": 0.771187087905094,
+            "divider": 0.0,
+            "ped_crossing": 0.0,
+            "boundary": 0.05199226305609284
+          },
+          "gt_foreground_pixels": 11886,
+          "pred_foreground_pixels": 8966,
+          "confusion_matrix": [
+            [
+              60586,
+              17,
+              0,
+              7511
+            ],
+            [
+              3495,
+              0,
+              0,
+              583
+            ],
+            [
+              2977,
+              0,
+              0,
+              183
+            ],
+            [
+              3976,
+              0,
+              0,
+              672
+            ]
+          ],
+          "gt_pixels_changed_from_original": 0
+        },
+        "lidar_center_ego_heading": {
+          "foreground_miou": 0.01730757574607846,
+          "foreground_binary_iou": 0.08115927054812212,
+          "class_ious": {
+            "background": 0.7732216399546086,
+            "divider": 0.00024254183846713557,
+            "ped_crossing": 0.0,
+            "boundary": 0.05168018539976825
+          },
+          "gt_foreground_pixels": 11962,
+          "pred_foreground_pixels": 8966,
+          "confusion_matrix": [
+            [
+              60643,
+              16,
+              0,
+              7379
+            ],
+            [
+              3381,
+              1,
+              0,
+              725
+            ],
+            [
+              3014,
+              0,
+              0,
+              176
+            ],
+            [
+              3996,
+              0,
+              0,
+              669
+            ]
+          ],
+          "gt_pixels_changed_from_original": 17160
+        },
+        "ego_center_lidar_heading": {
+          "foreground_miou": 0.02195072639574849,
+          "foreground_binary_iou": 0.07707486247309256,
+          "class_ious": {
+            "background": 0.8039028852384038,
+            "divider": 0.0,
+            "ped_crossing": 0.0,
+            "boundary": 0.06585217918724547
+          },
+          "gt_foreground_pixels": 9047,
+          "pred_foreground_pixels": 8966,
+          "confusion_matrix": [
+            [
+              63276,
+              17,
+              0,
+              7660
+            ],
+            [
+              2541,
+              0,
+              0,
+              254
+            ],
+            [
+              2625,
+              0,
+              0,
+              275
+            ],
+            [
+              2592,
+              0,
+              0,
+              760
+            ]
+          ],
+          "gt_pixels_changed_from_original": 16061
+        },
+        "lidar_center_lidar_heading": {
+          "foreground_miou": 0.02323557566791402,
+          "foreground_binary_iou": 0.0809714183423832,
+          "class_ious": {
+            "background": 0.804152944317994,
+            "divider": 0.0,
+            "ped_crossing": 0.0,
+            "boundary": 0.06970672700374206
+          },
+          "gt_foreground_pixels": 9150,
+          "pred_foreground_pixels": 8966,
+          "confusion_matrix": [
+            [
+              63241,
+              17,
+              0,
+              7592
+            ],
+            [
+              2546,
+              0,
+              0,
+              221
+            ],
+            [
+              2705,
+              0,
+              0,
+              335
+            ],
+            [
+              2542,
+              0,
+              0,
+              801
+            ]
+          ],
+          "gt_pixels_changed_from_original": 16730
+        }
+      }
+    },
+    {
+      "index": 600,
+      "sample_token": "ec55283a7cf346758faf11881b865297",
+      "scene_token": "64bfc5edd71147858ce7446892d7f864",
+      "location": "singapore-onenorth",
+      "original_gt_reproduction_exact": true,
+      "scores": {
+        "ego_reference": {
+          "foreground_miou": 0.018724508713385244,
+          "foreground_binary_iou": 0.05679862306368331,
+          "class_ious": {
+            "background": 0.8409409270453427,
+            "divider": 0.0,
+            "ped_crossing": null,
+            "boundary": 0.03744901742677049
+          },
+          "gt_foreground_pixels": 9116,
+          "pred_foreground_pixels": 5006,
+          "confusion_matrix": [
+            [
+              66637,
+              1688,
+              0,
+              2559
+            ],
+            [
+              3584,
+              0,
+              0,
+              100
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4773,
+              356,
+              0,
+              303
+            ]
+          ],
+          "gt_pixels_changed_from_original": 0
+        },
+        "lidar_center_ego_heading": {
+          "foreground_miou": 0.016292768517358065,
+          "foreground_binary_iou": 0.06777973500804166,
+          "class_ious": {
+            "background": 0.8461480123870315,
+            "divider": 0.0,
+            "ped_crossing": null,
+            "boundary": 0.03258553703471613
+          },
+          "gt_foreground_pixels": 8936,
+          "pred_foreground_pixels": 5006,
+          "confusion_matrix": [
+            [
+              66943,
+              1602,
+              0,
+              2519
+            ],
+            [
+              3476,
+              0,
+              0,
+              183
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4575,
+              442,
+              0,
+              260
+            ]
+          ],
+          "gt_pixels_changed_from_original": 10164
+        },
+        "ego_center_lidar_heading": {
+          "foreground_miou": 0.013771565625094994,
+          "foreground_binary_iou": 0.02081736909323116,
+          "class_ious": {
+            "background": 0.8075407284685092,
+            "divider": 0.011042202389956134,
+            "ped_crossing": null,
+            "boundary": 0.016500928860233854
+          },
+          "gt_foreground_pixels": 10980,
+          "pred_foreground_pixels": 5006,
+          "confusion_matrix": [
+            [
+              64340,
+              1966,
+              0,
+              2714
+            ],
+            [
+              4470,
+              73,
+              0,
+              97
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              6184,
+              5,
+              0,
+              151
+            ]
+          ],
+          "gt_pixels_changed_from_original": 17509
+        },
+        "lidar_center_lidar_heading": {
+          "foreground_miou": 0.01207550615653128,
+          "foreground_binary_iou": 0.017046567827052446,
+          "class_ious": {
+            "background": 0.8112592332484732,
+            "divider": 0.007091080995902931,
+            "ped_crossing": null,
+            "boundary": 0.017059931317159632
+          },
+          "gt_foreground_pixels": 10566,
+          "pred_foreground_pixels": 5006,
+          "confusion_matrix": [
+            [
+              64689,
+              1999,
+              0,
+              2746
+            ],
+            [
+              4240,
+              45,
+              0,
+              62
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              6065,
+              0,
+              0,
+              154
+            ]
+          ],
+          "gt_pixels_changed_from_original": 17380
+        }
+      }
+    },
+    {
+      "index": 700,
+      "sample_token": "6742957ced7b491c939169eaccaf3e64",
+      "scene_token": "c4df079d260241ff8015218e29b42ea7",
+      "location": "singapore-queenstown",
+      "original_gt_reproduction_exact": true,
+      "scores": {
+        "ego_reference": {
+          "foreground_miou": 0.026772348058486717,
+          "foreground_binary_iou": 0.053847578479488845,
+          "class_ious": {
+            "background": 0.7407942970940041,
+            "divider": 0.03103154305200341,
+            "ped_crossing": null,
+            "boundary": 0.022513153064970023
+          },
+          "gt_foreground_pixels": 9011,
+          "pred_foreground_pixels": 13750,
+          "confusion_matrix": [
+            [
+              58402,
+              3460,
+              0,
+              9127
+            ],
+            [
+              1610,
+              182,
+              0,
+              245
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              6238,
+              368,
+              0,
+              368
+            ]
+          ],
+          "gt_pixels_changed_from_original": 0
+        },
+        "lidar_center_ego_heading": {
+          "foreground_miou": 0.026831918023142203,
+          "foreground_binary_iou": 0.05245856097786832,
+          "class_ious": {
+            "background": 0.7405125084002181,
+            "divider": 0.031159543674442364,
+            "ped_crossing": null,
+            "boundary": 0.022504292371842042
+          },
+          "gt_foreground_pixels": 8981,
+          "pred_foreground_pixels": 13750,
+          "confusion_matrix": [
+            [
+              58402,
+              3465,
+              0,
+              9152
+            ],
+            [
+              1642,
+              183,
+              0,
+              221
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              6206,
+              362,
+              0,
+              367
+            ]
+          ],
+          "gt_pixels_changed_from_original": 3582
+        },
+        "ego_center_lidar_heading": {
+          "foreground_miou": 0.018167364402185554,
+          "foreground_binary_iou": 0.038262302801977864,
+          "class_ious": {
+            "background": 0.794102079395085,
+            "divider": 0.010780086240689926,
+            "ped_crossing": null,
+            "boundary": 0.025554642563681184
+          },
+          "gt_foreground_pixels": 3888,
+          "pred_foreground_pixels": 13750,
+          "confusion_matrix": [
+            [
+              63012,
+              3831,
+              0,
+              9269
+            ],
+            [
+              932,
+              55,
+              0,
+              160
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2306,
+              124,
+              0,
+              311
+            ]
+          ],
+          "gt_pixels_changed_from_original": 12213
+        },
+        "lidar_center_lidar_heading": {
+          "foreground_miou": 0.01822475711189612,
+          "foreground_binary_iou": 0.03823563961000822,
+          "class_ious": {
+            "background": 0.7936331900843111,
+            "divider": 0.01088646967340591,
+            "ped_crossing": null,
+            "boundary": 0.025563044550386323
+          },
+          "gt_foreground_pixels": 3927,
+          "pred_foreground_pixels": 13750,
+          "confusion_matrix": [
+            [
+              62974,
+              3829,
+              0,
+              9270
+            ],
+            [
+              975,
+              56,
+              0,
+              159
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2301,
+              125,
+              0,
+              311
+            ]
+          ],
+          "gt_pixels_changed_from_original": 12254
+        }
+      }
+    },
+    {
+      "index": 798,
+      "sample_token": "5d3e3366f21f49bcba8af3b57218f32d",
+      "scene_token": "82cabcf15a1a48aca6bbf082f8710e39",
+      "location": "singapore-hollandvillage",
+      "original_gt_reproduction_exact": true,
+      "scores": {
+        "ego_reference": {
+          "foreground_miou": 0.011634671320535195,
+          "foreground_binary_iou": 0.026042516174631655,
+          "class_ious": {
+            "background": 0.7747261729606016,
+            "divider": 0.0,
+            "ped_crossing": null,
+            "boundary": 0.02326934264107039
+          },
+          "gt_foreground_pixels": 8803,
+          "pred_foreground_pixels": 10069,
+          "confusion_matrix": [
+            [
+              61607,
+              2287,
+              0,
+              7303
+            ],
+            [
+              2354,
+              0,
+              0,
+              124
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              5970,
+              35,
+              0,
+              320
+            ]
+          ],
+          "gt_pixels_changed_from_original": 0
+        },
+        "lidar_center_ego_heading": {
+          "foreground_miou": 0.011186735211063645,
+          "foreground_binary_iou": 0.023586691912361374,
+          "class_ious": {
+            "background": 0.7731511738977427,
+            "divider": 0.0,
+            "ped_crossing": null,
+            "boundary": 0.02237347042212729
+          },
+          "gt_foreground_pixels": 8852,
+          "pred_foreground_pixels": 10069,
+          "confusion_matrix": [
+            [
+              61515,
+              2313,
+              0,
+              7320
+            ],
+            [
+              2361,
+              0,
+              0,
+              118
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              6055,
+              9,
+              0,
+              309
+            ]
+          ],
+          "gt_pixels_changed_from_original": 3407
+        },
+        "ego_center_lidar_heading": {
+          "foreground_miou": 0.024226940357677737,
+          "foreground_binary_iou": 0.046145530707384634,
+          "class_ious": {
+            "background": 0.8220053708536631,
+            "divider": 0.0,
+            "ped_crossing": null,
+            "boundary": 0.048453880715355474
+          },
+          "gt_foreground_pixels": 5415,
+          "pred_foreground_pixels": 10069,
+          "confusion_matrix": [
+            [
+              65199,
+              2262,
+              0,
+              7124
+            ],
+            [
+              1188,
+              0,
+              0,
+              73
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3544,
+              60,
+              0,
+              550
+            ]
+          ],
+          "gt_pixels_changed_from_original": 13183
+        },
+        "lidar_center_lidar_heading": {
+          "foreground_miou": 0.025516510683383366,
+          "foreground_binary_iou": 0.04159924487594391,
+          "class_ious": {
+            "background": 0.8209314336822745,
+            "divider": 0.0,
+            "ped_crossing": null,
+            "boundary": 0.05103302136676673
+          },
+          "gt_foreground_pixels": 5380,
+          "pred_foreground_pixels": 10069,
+          "confusion_matrix": [
+            [
+              65168,
+              2322,
+              0,
+              7130
+            ],
+            [
+              1184,
+              0,
+              0,
+              39
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3579,
+              0,
+              0,
+              578
+            ]
+          ],
+          "gt_pixels_changed_from_original": 12454
+        }
+      }
+    }
+  ]
+}

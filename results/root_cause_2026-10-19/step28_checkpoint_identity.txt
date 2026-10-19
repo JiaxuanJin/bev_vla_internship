@@ -1,0 +1,6 @@
+===== 本地权重 =====
+b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68  /mnt/g/nus/bevformer_small_seg.pth
+===== 作者发布权重 =====
+b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68  /mnt/g/nus/bevformer_small_seg_author_release.pth
+===== 逐字节一致性 =====
+IDENTICAL: 两份 checkpoint 完全相同

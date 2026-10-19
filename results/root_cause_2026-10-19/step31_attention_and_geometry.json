@@ -1,0 +1,186 @@
+{
+  "experiment": "Step31 direct real-model numerical and spatial coordinate verification",
+  "input_identity": {
+    "checkpoint_sha256": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+    "val_pkl_sha256": "5b1409d1d9d0eedfc2badea635f87d945bbc5f6fca4b4d07f9fd6bb190d8979c"
+  },
+  "official_6019_fg_miou_baseline": 0.046416,
+  "spatial": {
+    "test_type": "synthetic_coordinate_ramp_through_real_bev_feature_slicer",
+    "reason": "编码器物理 X/Y 查询通过原始 rot90+flip 和真实 Slicer 传递；未使用模型训练后的特征",
+    "shape": [
+      200,
+      400
+    ],
+    "map_grid_conf": {
+      "xbound": [
+        -30.0,
+        30.0,
+        0.15
+      ],
+      "ybound": [
+        -15.0,
+        15.0,
+        0.15
+      ],
+      "zbound": [
+        -10.0,
+        10.0,
+        20.0
+      ],
+      "dbound": [
+        1.0,
+        60.0,
+        1.0
+      ]
+    },
+    "source_rot90_plus_flip_equals_transpose": true,
+    "source_original_transform": {
+      "x_mae_m": 16.249809803541282,
+      "y_mae_m": 16.249514791717566,
+      "xy_mae_m": 16.249662297629424,
+      "center_xy_m": [
+        0.07499465346336365,
+        0.07499464601278305
+      ]
+    },
+    "control_no_transform": {
+      "x_mae_m": 0.0003936167269940215,
+      "y_mae_m": 0.00019728150023123482,
+      "xy_mae_m": 0.0002954491136126282,
+      "center_xy_m": [
+        0.07499464601278305,
+        0.07499465346336365
+      ]
+    },
+    "important_limitation": "此测试可检测几何约定是否一致，但不能从坐标斜坡单独推断已训练权重的模型表现，也不能把去转置视为模型修复；之前真实模型消融已观察到去转置降低 IoU。"
+  },
+  "attention": {
+    "test_type": "real_model_attention_cuda_vs_reference",
+    "note": "使用真实 6 路图像和已发布权重；在同一次前向对照算子参考值，模型实际预测仍来自原 CUDA 算子",
+    "environment": {
+      "torch": "2.8.0+cu128",
+      "mmcv": "1.7.2",
+      "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU"
+    },
+    "sample_indices": [
+      0,
+      3000
+    ],
+    "samples": [
+      {
+        "index": 0,
+        "sample_token": "30e55a3ec6184d8cb1944b39ba19d622",
+        "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+        "foreground_miou_single_frame": 0.024549498040808693,
+        "foreground_iou_per_class": [
+          0.025176542830825915,
+          0.0,
+          0.04847195129160017
+        ],
+        "latency_s": 1.29,
+        "reference_attention_ab": {
+          "completed": true,
+          "error": null,
+          "reference_miou": 0.02455035701531674,
+          "reference_class_ious": [
+            0.02517911975435005,
+            0.0,
+            0.04847195129160017
+          ],
+          "changed_pixels": 1,
+          "pixel_change_fraction": 1.25e-05,
+          "reference_minus_native_miou_percentage_points": 8.589745080465894e-05
+        }
+      },
+      {
+        "index": 3000,
+        "sample_token": "25f8552be635425aafa5d14150fc5ce1",
+        "scene_token": "ed242d80ccb34b139aaf9ab89859332e",
+        "foreground_miou_single_frame": 0.1036356848942141,
+        "foreground_iou_per_class": [
+          0.007518796992481203,
+          0.12311780336581045,
+          0.18027045432435063
+        ],
+        "latency_s": 0.5,
+        "reference_attention_ab": {
+          "completed": true,
+          "error": null,
+          "reference_miou": 0.10362983954874312,
+          "reference_class_ious": [
+            0.007518796992481203,
+            0.12311780336581045,
+            0.18025291828793774
+          ],
+          "changed_pixels": 1,
+          "pixel_change_fraction": 1.25e-05,
+          "reference_minus_native_miou_percentage_points": -0.0005845345470975594
+        }
+      }
+    ],
+    "native_operator_invocations": 12,
+    "comparisons": [
+      {
+        "precision": "fp32",
+        "shape": [
+          2,
+          22500,
+          256
+        ],
+        "mae": 4.201943681891862e-07,
+        "max_abs": 2.8133392333984375e-05,
+        "relative_mae_to_rms": 4.3940415170275343e-07,
+        "rms_reference": 0.9562821984291077,
+        "fraction_abs_gt_1e_minus_3": 0.0,
+        "all_finite": true
+      },
+      {
+        "precision": "fp32",
+        "shape": [
+          6,
+          5347,
+          256
+        ],
+        "mae": 2.1973987429646513e-07,
+        "max_abs": 2.777576446533203e-05,
+        "relative_mae_to_rms": 4.292766417514809e-08,
+        "rms_reference": 5.11884069442749,
+        "fraction_abs_gt_1e_minus_3": 0.0,
+        "all_finite": true
+      },
+      {
+        "precision": "fp32",
+        "shape": [
+          2,
+          22500,
+          256
+        ],
+        "mae": 1.6825316606627894e-07,
+        "max_abs": 2.7298927307128906e-05,
+        "relative_mae_to_rms": 1.1236734829311066e-07,
+        "rms_reference": 1.4973492622375488,
+        "fraction_abs_gt_1e_minus_3": 0.0,
+        "all_finite": true
+      },
+      {
+        "precision": "fp32",
+        "shape": [
+          6,
+          5347,
+          256
+        ],
+        "mae": 1.9323582023389463e-07,
+        "max_abs": 2.6702880859375e-05,
+        "relative_mae_to_rms": 4.539562541680236e-08,
+        "rms_reference": 4.2567057609558105,
+        "fraction_abs_gt_1e_minus_3": 0.0,
+        "all_finite": true
+      }
+    ],
+    "reference_failures": [],
+    "full_model_reference_ab_failures": [],
+    "max_relative_mae_to_rms": 4.3940415170275343e-07,
+    "limitation": "若 CUDA 与 PyTorch 一致，只能说明本次实际采样的注意力调用数值正常，不能排除所有环境或坐标因素"
+  }
+}
