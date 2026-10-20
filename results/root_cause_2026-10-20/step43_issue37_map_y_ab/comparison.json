@@ -1,0 +1,9 @@
+{
+  "experiment": "Issue37 reversed map_y + remove feature flip(dim=2)",
+  "dataset": "nuScenes v1.0-mini / mini_val, 81 frames",
+  "baseline_foreground_miou": 0.06375632428588948,
+  "issue37_foreground_miou": 0.06405103528888145,
+  "delta_percentage_points": 0.029471100299197084,
+  "source_restored": true,
+  "original_metrics_restored": true
+}

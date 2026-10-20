@@ -1,0 +1,232 @@
+{
+  "purpose": "真实 LiDAR 点云投影到对应相机原图，人工核查几何对齐",
+  "dataset_count": 81,
+  "does_not_modify_source_or_checkpoint": true,
+  "samples": [
+    {
+      "index": 0,
+      "token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "lidar_path": "./data/nuscenes/samples/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151603547590.pcd.bin",
+      "cameras": [
+        {
+          "camera": "CAM_FRONT",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 2984,
+          "forward_projection_points": 9709,
+          "input_points": 34752,
+          "image_path": "data/nuscenes/samples/CAM_FRONT/n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151603512404.jpg"
+        },
+        {
+          "camera": "CAM_FRONT_RIGHT",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 2289,
+          "forward_projection_points": 9303,
+          "input_points": 34752,
+          "image_path": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_RIGHT__1533151603520482.jpg"
+        },
+        {
+          "camera": "CAM_FRONT_LEFT",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 2910,
+          "forward_projection_points": 10097,
+          "input_points": 34752,
+          "image_path": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_LEFT__1533151603504799.jpg"
+        },
+        {
+          "camera": "CAM_BACK",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 3634,
+          "forward_projection_points": 7257,
+          "input_points": 34752,
+          "image_path": "data/nuscenes/samples/CAM_BACK/n008-2018-08-01-15-16-36-0400__CAM_BACK__1533151603537558.jpg"
+        },
+        {
+          "camera": "CAM_BACK_LEFT",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 2124,
+          "forward_projection_points": 9614,
+          "input_points": 34752,
+          "image_path": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-01-15-16-36-0400__CAM_BACK_LEFT__1533151603547405.jpg"
+        },
+        {
+          "camera": "CAM_BACK_RIGHT",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 1910,
+          "forward_projection_points": 8769,
+          "input_points": 34752,
+          "image_path": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_BACK_RIGHT__1533151603528113.jpg"
+        }
+      ],
+      "read_lidar_points": 34752,
+      "overlay_image": "/home/jjx2003520/projects/bev_vla/outputs/drivelm_check/root_cause/camera_lidar_overlay/val_0000_lidar_overlay.jpg"
+    },
+    {
+      "index": 40,
+      "token": "b5989651183643369174912bc5641d3b",
+      "lidar_path": "./data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984233547259.pcd.bin",
+      "cameras": [
+        {
+          "camera": "CAM_FRONT",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 3691,
+          "forward_projection_points": 12489,
+          "input_points": 34560,
+          "image_path": "data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984233512470.jpg"
+        },
+        {
+          "camera": "CAM_FRONT_RIGHT",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 3462,
+          "forward_projection_points": 12655,
+          "input_points": 34560,
+          "image_path": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984233520339.jpg"
+        },
+        {
+          "camera": "CAM_FRONT_LEFT",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 3706,
+          "forward_projection_points": 13329,
+          "input_points": 34560,
+          "image_path": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984233504844.jpg"
+        },
+        {
+          "camera": "CAM_BACK",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 5039,
+          "forward_projection_points": 11143,
+          "input_points": 34560,
+          "image_path": "data/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984233537525.jpg"
+        },
+        {
+          "camera": "CAM_BACK_LEFT",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 4108,
+          "forward_projection_points": 13424,
+          "input_points": 34560,
+          "image_path": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984233547423.jpg"
+        },
+        {
+          "camera": "CAM_BACK_RIGHT",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 3577,
+          "forward_projection_points": 12328,
+          "input_points": 34560,
+          "image_path": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984233527893.jpg"
+        }
+      ],
+      "read_lidar_points": 34560,
+      "overlay_image": "/home/jjx2003520/projects/bev_vla/outputs/drivelm_check/root_cause/camera_lidar_overlay/val_0040_lidar_overlay.jpg"
+    },
+    {
+      "index": 80,
+      "token": "b4ff30109dd14c89b24789dc5713cf8c",
+      "lidar_path": "./data/nuscenes/samples/LIDAR_TOP/n015-2018-10-08-15-36-50+0800__LIDAR_TOP__1538984253447765.pcd.bin",
+      "cameras": [
+        {
+          "camera": "CAM_FRONT",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 3099,
+          "forward_projection_points": 11189,
+          "input_points": 34752,
+          "image_path": "data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984253412460.jpg"
+        },
+        {
+          "camera": "CAM_FRONT_RIGHT",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 3546,
+          "forward_projection_points": 12452,
+          "input_points": 34752,
+          "image_path": "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984253420339.jpg"
+        },
+        {
+          "camera": "CAM_FRONT_LEFT",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 2939,
+          "forward_projection_points": 11907,
+          "input_points": 34752,
+          "image_path": "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984253404844.jpg"
+        },
+        {
+          "camera": "CAM_BACK",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 5020,
+          "forward_projection_points": 11139,
+          "input_points": 34752,
+          "image_path": "data/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984253437525.jpg"
+        },
+        {
+          "camera": "CAM_BACK_LEFT",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 3647,
+          "forward_projection_points": 11841,
+          "input_points": 34752,
+          "image_path": "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984253447423.jpg"
+        },
+        {
+          "camera": "CAM_BACK_RIGHT",
+          "image_hw": [
+            900,
+            1600
+          ],
+          "visible_lidar_points": 3832,
+          "forward_projection_points": 12653,
+          "input_points": 34752,
+          "image_path": "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984253427893.jpg"
+        }
+      ],
+      "read_lidar_points": 34752,
+      "overlay_image": "/home/jjx2003520/projects/bev_vla/outputs/drivelm_check/root_cause/camera_lidar_overlay/val_0080_lidar_overlay.jpg"
+    }
+  ]
+}

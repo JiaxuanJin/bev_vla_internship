@@ -1,0 +1,95 @@
+[>                                 ] 3/81, 1.4 task/s, elapsed: 2s, ETA:    57s
+[>                                 ] 4/81, 1.4 task/s, elapsed: 3s, ETA:    55s
+[>>                                ] 5/81, 0.9 task/s, elapsed: 6s, ETA:    84s
+[>>                                ] 6/81, 0.9 task/s, elapsed: 6s, ETA:    81s
+[>>                                ] 7/81, 1.0 task/s, elapsed: 7s, ETA:    78s
+[>>>                               ] 8/81, 1.0 task/s, elapsed: 8s, ETA:    76s
+[>>>                               ] 9/81, 1.0 task/s, elapsed: 9s, ETA:    75s
+[>>>                             ] 10/81, 1.0 task/s, elapsed: 10s, ETA:    73s
+[>>>>                            ] 11/81, 1.0 task/s, elapsed: 11s, ETA:    71s
+[>>>>                            ] 12/81, 1.0 task/s, elapsed: 12s, ETA:    70s
+[>>>>>                           ] 13/81, 1.0 task/s, elapsed: 13s, ETA:    70s
+[>>>>>                           ] 14/81, 1.0 task/s, elapsed: 14s, ETA:    68s
+[>>>>>                           ] 15/81, 1.0 task/s, elapsed: 15s, ETA:    66s
+[>>>>>>                          ] 16/81, 1.0 task/s, elapsed: 16s, ETA:    65s
+[>>>>>>                          ] 17/81, 1.0 task/s, elapsed: 17s, ETA:    63s
+[>>>>>>>                         ] 18/81, 1.0 task/s, elapsed: 18s, ETA:    62s
+[>>>>>>>                         ] 19/81, 1.0 task/s, elapsed: 19s, ETA:    61s
+[>>>>>>>                         ] 20/81, 1.0 task/s, elapsed: 19s, ETA:    59s
+[>>>>>>>>                        ] 21/81, 1.0 task/s, elapsed: 20s, ETA:    58s
+[>>>>>>>>                        ] 22/81, 1.0 task/s, elapsed: 21s, ETA:    57s
+[>>>>>>>>>                       ] 23/81, 1.0 task/s, elapsed: 22s, ETA:    56s
+[>>>>>>>>>                       ] 24/81, 1.0 task/s, elapsed: 23s, ETA:    55s
+[>>>>>>>>>                       ] 25/81, 1.0 task/s, elapsed: 24s, ETA:    54s
+[>>>>>>>>>>                      ] 26/81, 1.0 task/s, elapsed: 25s, ETA:    53s
+[>>>>>>>>>>                      ] 27/81, 1.0 task/s, elapsed: 26s, ETA:    52s
+[>>>>>>>>>>>                     ] 28/81, 1.0 task/s, elapsed: 27s, ETA:    51s
+[>>>>>>>>>>>                     ] 29/81, 1.0 task/s, elapsed: 28s, ETA:    50s
+[>>>>>>>>>>>                     ] 30/81, 1.0 task/s, elapsed: 29s, ETA:    49s
+[>>>>>>>>>>>>                    ] 31/81, 1.0 task/s, elapsed: 30s, ETA:    48s
+[>>>>>>>>>>>>                    ] 32/81, 1.0 task/s, elapsed: 31s, ETA:    47s
+[>>>>>>>>>>>>>                   ] 33/81, 1.0 task/s, elapsed: 32s, ETA:    46s
+[>>>>>>>>>>>>>                   ] 34/81, 1.0 task/s, elapsed: 33s, ETA:    45s
+[>>>>>>>>>>>>>                   ] 35/81, 1.0 task/s, elapsed: 34s, ETA:    44s
+[>>>>>>>>>>>>>>                  ] 36/81, 1.0 task/s, elapsed: 34s, ETA:    43s
+[>>>>>>>>>>>>>>                  ] 37/81, 1.0 task/s, elapsed: 35s, ETA:    42s
+[>>>>>>>>>>>>>>>                 ] 38/81, 1.0 task/s, elapsed: 36s, ETA:    41s
+[>>>>>>>>>>>>>>>                 ] 39/81, 1.1 task/s, elapsed: 37s, ETA:    40s
+[>>>>>>>>>>>>>>>                 ] 40/81, 1.1 task/s, elapsed: 38s, ETA:    39s
+[>>>>>>>>>>>>>>>>                ] 41/81, 1.0 task/s, elapsed: 39s, ETA:    38s
+[>>>>>>>>>>>>>>>>                ] 42/81, 1.1 task/s, elapsed: 40s, ETA:    37s
+[>>>>>>>>>>>>>>>>                ] 43/81, 1.1 task/s, elapsed: 41s, ETA:    36s
+[>>>>>>>>>>>>>>>>>               ] 44/81, 1.1 task/s, elapsed: 42s, ETA:    35s
+[>>>>>>>>>>>>>>>>>               ] 45/81, 1.1 task/s, elapsed: 42s, ETA:    34s
+[>>>>>>>>>>>>>>>>>>              ] 46/81, 1.1 task/s, elapsed: 43s, ETA:    33s
+[>>>>>>>>>>>>>>>>>>              ] 47/81, 1.1 task/s, elapsed: 44s, ETA:    32s
+[>>>>>>>>>>>>>>>>>>              ] 48/81, 1.1 task/s, elapsed: 45s, ETA:    31s
+[>>>>>>>>>>>>>>>>>>>             ] 49/81, 1.1 task/s, elapsed: 46s, ETA:    30s
+[>>>>>>>>>>>>>>>>>>>             ] 50/81, 1.1 task/s, elapsed: 47s, ETA:    29s
+[>>>>>>>>>>>>>>>>>>>>            ] 51/81, 1.1 task/s, elapsed: 48s, ETA:    28s
+[>>>>>>>>>>>>>>>>>>>>            ] 52/81, 1.1 task/s, elapsed: 49s, ETA:    27s
+[>>>>>>>>>>>>>>>>>>>>            ] 53/81, 1.1 task/s, elapsed: 50s, ETA:    27s
+[>>>>>>>>>>>>>>>>>>>>>           ] 54/81, 1.1 task/s, elapsed: 51s, ETA:    26s
+[>>>>>>>>>>>>>>>>>>>>>           ] 55/81, 1.1 task/s, elapsed: 52s, ETA:    25s
+[>>>>>>>>>>>>>>>>>>>>>>          ] 56/81, 1.1 task/s, elapsed: 53s, ETA:    24s
+[>>>>>>>>>>>>>>>>>>>>>>          ] 57/81, 1.1 task/s, elapsed: 54s, ETA:    23s
+[>>>>>>>>>>>>>>>>>>>>>>          ] 58/81, 1.1 task/s, elapsed: 55s, ETA:    22s
+[>>>>>>>>>>>>>>>>>>>>>>>         ] 59/81, 1.1 task/s, elapsed: 55s, ETA:    21s
+[>>>>>>>>>>>>>>>>>>>>>>>         ] 60/81, 1.1 task/s, elapsed: 56s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>>>>>>>        ] 61/81, 1.1 task/s, elapsed: 57s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>>>>>>>        ] 62/81, 1.1 task/s, elapsed: 58s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>>>>>>        ] 63/81, 1.1 task/s, elapsed: 59s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>>>>>>>       ] 64/81, 1.1 task/s, elapsed: 60s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>>>>>>       ] 65/81, 1.1 task/s, elapsed: 61s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>      ] 66/81, 1.1 task/s, elapsed: 62s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>      ] 67/81, 1.1 task/s, elapsed: 62s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>      ] 68/81, 1.1 task/s, elapsed: 63s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>     ] 69/81, 1.1 task/s, elapsed: 64s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>     ] 70/81, 1.1 task/s, elapsed: 65s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ] 71/81, 1.1 task/s, elapsed: 66s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ] 72/81, 1.1 task/s, elapsed: 67s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ] 73/81, 1.1 task/s, elapsed: 68s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 74/81, 1.1 task/s, elapsed: 69s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 75/81, 1.1 task/s, elapsed: 70s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 76/81, 1.1 task/s, elapsed: 71s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 77/81, 1.1 task/s, elapsed: 71s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 78/81, 1.1 task/s, elapsed: 72s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 79/81, 1.1 task/s, elapsed: 73s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 80/81, 1.1 task/s, elapsed: 74s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 81/81, 1.1 task/s, elapsed: 75s, ETA:     0s
+
++----------------+---------+---------------+----------+--------+
+| Validation num | Divider | Pred Crossing | Boundary |  mIoU  |
++----------------+---------+---------------+----------+--------+
+|       81       |  0.0218 |     0.0711    |  0.0797  | 0.0576 |
++----------------+---------+---------------+----------+--------+
+2026-10-20 21:12:26,723 - mmdet - INFO - +----------------+---------+---------------+----------+--------+
+| Validation num | Divider | Pred Crossing | Boundary |  mIoU  |
++----------------+---------+---------------+----------+--------+
+|       81       |  0.0218 |     0.0711    |  0.0797  | 0.0576 |
++----------------+---------+---------------+----------+--------+
+[Step54] calibrated: mIoU=5.7600%; 75.1s
+
+[Step54] 结果: /home/jjx2003520/projects/bev_vla/outputs/drivelm_check/root_cause/step54_author_mini_calibration_ab/results.json
+[Step54] 报告: /home/jjx2003520/projects/bev_vla/outputs/drivelm_check/root_cause/step54_author_mini_calibration_ab/audit.md
+[Step54] 校正相对原始 ΔmIoU = -0.62 pp

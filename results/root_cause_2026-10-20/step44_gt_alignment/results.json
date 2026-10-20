@@ -1,0 +1,209 @@
+{
+  "experiment": "Step44 Mini Val GT spatial and class-label diagnostic",
+  "scope": "81-frame official mini_val, frozen author checkpoint, temporal ON",
+  "caution": "GT 变换由一个验证场景选出，另一个场景交叉验证；仅用于定位标签约定，不能作为正式修复、指标或训练结果",
+  "scene_ids": [
+    "fcbccedd61424f1b85dcbf8f897f9754",
+    "325cef682f064c55a255f2625c533b75"
+  ],
+  "fit_frames": 40,
+  "holdout_frames": 41,
+  "baseline_all_miou": 0.06375632428588948,
+  "baseline_fit_miou": 0.06125527755513404,
+  "baseline_holdout_miou": 0.03075912132845794,
+  "baseline_confusion_gt_rows_pred_cols": [
+    [
+      4898363,
+      161251,
+      85920,
+      556804
+    ],
+    [
+      154728,
+      7943,
+      225,
+      28805
+    ],
+    [
+      28502,
+      252,
+      12560,
+      8266
+    ],
+    [
+      433255,
+      2669,
+      8162,
+      92295
+    ]
+  ],
+  "gt_class_pixels": [
+    5702338,
+    191701,
+    49580,
+    536381
+  ],
+  "pred_class_pixels": [
+    5514848,
+    172115,
+    106867,
+    686170
+  ],
+  "best_gt_spatial_candidate": {
+    "operation": "flip_rows",
+    "dx": 0,
+    "dy": 0,
+    "fit_miou": 0.0947190977043562,
+    "holdout_miou": 0.025686385834695027,
+    "holdout_delta_pp": -0.5072735493762911,
+    "holdout_confusion": [
+      [
+        2657867,
+        38542,
+        46,
+        284972
+      ],
+      [
+        5833,
+        0,
+        0,
+        243
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        247273,
+        702,
+        4,
+        44518
+      ]
+    ]
+  },
+  "top_10_spatial_fit": [
+    {
+      "operation": "flip_rows",
+      "dx": 0,
+      "dy": 0,
+      "fit_miou": 0.0947190977043562
+    },
+    {
+      "operation": "flip_rows",
+      "dx": 20,
+      "dy": 0,
+      "fit_miou": 0.09384310069435885
+    },
+    {
+      "operation": "none",
+      "dx": 0,
+      "dy": -20,
+      "fit_miou": 0.07946950496836908
+    },
+    {
+      "operation": "none",
+      "dx": 20,
+      "dy": -20,
+      "fit_miou": 0.07568547550656808
+    },
+    {
+      "operation": "flip_rows",
+      "dx": 40,
+      "dy": 0,
+      "fit_miou": 0.07475640305123142
+    },
+    {
+      "operation": "flip_rows",
+      "dx": -20,
+      "dy": 0,
+      "fit_miou": 0.0709434918473199
+    },
+    {
+      "operation": "none",
+      "dx": 40,
+      "dy": -20,
+      "fit_miou": 0.06921367780797914
+    },
+    {
+      "operation": "flip_rows",
+      "dx": 0,
+      "dy": 20,
+      "fit_miou": 0.06858774624395336
+    },
+    {
+      "operation": "flip_rows",
+      "dx": 0,
+      "dy": -20,
+      "fit_miou": 0.06557819470481513
+    },
+    {
+      "operation": "none",
+      "dx": -20,
+      "dy": -20,
+      "fit_miou": 0.06392768142500439
+    }
+  ],
+  "best_gt_class_permutation": {
+    "labels": [
+      1,
+      2,
+      3
+    ],
+    "fit_miou": 0.06125527755513404,
+    "holdout_miou": 0.03075912132845794,
+    "holdout_delta_pp": 0.0
+  },
+  "class_permutations_fit": [
+    {
+      "labels": [
+        1,
+        2,
+        3
+      ],
+      "fit_miou": 0.06125527755513404
+    },
+    {
+      "labels": [
+        3,
+        2,
+        1
+      ],
+      "fit_miou": 0.04867339815235481
+    },
+    {
+      "labels": [
+        3,
+        1,
+        2
+      ],
+      "fit_miou": 0.027109637729433884
+    },
+    {
+      "labels": [
+        2,
+        1,
+        3
+      ],
+      "fit_miou": 0.024340297339486883
+    },
+    {
+      "labels": [
+        1,
+        3,
+        2
+      ],
+      "fit_miou": 0.02339558142214775
+    },
+    {
+      "labels": [
+        2,
+        3,
+        1
+      ],
+      "fit_miou": 0.008044361629421525
+    }
+  ],
+  "elapsed_seconds": 41.5
+}

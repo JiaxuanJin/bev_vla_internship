@@ -1,0 +1,212 @@
+{
+  "purpose": "真实图像与相机投影 / 运行时源码审计；不评估 mIoU",
+  "tracked_python_changes": [],
+  "all_worktree_changes": [
+    "?? data/",
+    "?? projects/__pycache__/",
+    "?? projects/mmdet3d_plugin/__pycache__/",
+    "?? projects/mmdet3d_plugin/apis/__pycache__/",
+    "?? projects/mmdet3d_plugin/bevformer/__pycache__/",
+    "?? projects/mmdet3d_plugin/bevformer/apis/__pycache__/",
+    "?? projects/mmdet3d_plugin/bevformer/dense_heads/__pycache__/",
+    "?? projects/mmdet3d_plugin/bevformer/detectors/__pycache__/",
+    "?? projects/mmdet3d_plugin/bevformer/hooks/__pycache__/",
+    "?? projects/mmdet3d_plugin/bevformer/loss/__pycache__/",
+    "?? projects/mmdet3d_plugin/bevformer/modules/__pycache__/",
+    "?? projects/mmdet3d_plugin/bevformer/runner/__pycache__/",
+    "?? projects/mmdet3d_plugin/core/bbox/__pycache__/",
+    "?? projects/mmdet3d_plugin/core/bbox/assigners/__pycache__/__init__.cpython-310.pyc",
+    "?? projects/mmdet3d_plugin/core/bbox/assigners/__pycache__/hungarian_assigner_3d.cpython-310.pyc",
+    "?? projects/mmdet3d_plugin/core/bbox/coders/__pycache__/__init__.cpython-310.pyc",
+    "?? projects/mmdet3d_plugin/core/bbox/coders/__pycache__/nms_free_coder.cpython-310.pyc",
+    "?? projects/mmdet3d_plugin/core/bbox/match_costs/__pycache__/__init__.cpython-310.pyc",
+    "?? projects/mmdet3d_plugin/core/bbox/match_costs/__pycache__/match_cost.cpython-310.pyc",
+    "?? projects/mmdet3d_plugin/core/evaluation/__pycache__/",
+    "?? projects/mmdet3d_plugin/datasets/__pycache__/",
+    "?? projects/mmdet3d_plugin/datasets/pipelines/__pycache__/",
+    "?? projects/mmdet3d_plugin/datasets/samplers/__pycache__/",
+    "?? projects/mmdet3d_plugin/datasets/utils/__pycache__/",
+    "?? projects/mmdet3d_plugin/metrics/__pycache__/",
+    "?? projects/mmdet3d_plugin/models/backbones/__pycache__/",
+    "?? projects/mmdet3d_plugin/models/hooks/__pycache__/",
+    "?? projects/mmdet3d_plugin/models/opt/__pycache__/",
+    "?? projects/mmdet3d_plugin/models/utils/__pycache__/",
+    "?? segmentation_result.json",
+    "?? tools/__pycache__/",
+    "?? tools/data_converter/__pycache__/"
+  ],
+  "sample_results": [
+    {
+      "index": 0,
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "camera_image_shape": [
+        6,
+        3,
+        736,
+        1280
+      ],
+      "normalized_image_mean": -6.643280029296875,
+      "normalized_image_std": 50.48649597167969,
+      "image_hw_used_by_encoder": [
+        736,
+        1280
+      ],
+      "all_camera_image_hw": [
+        [
+          736,
+          1280
+        ],
+        [
+          736,
+          1280
+        ],
+        [
+          736,
+          1280
+        ],
+        [
+          736,
+          1280
+        ],
+        [
+          736,
+          1280
+        ],
+        [
+          736,
+          1280
+        ]
+      ],
+      "per_camera_visible_bev_query_pct": [
+        15.738,
+        18.916,
+        18.956,
+        24.196,
+        17.969,
+        18.267
+      ],
+      "any_camera_visible_bev_query_pct": 99.844,
+      "all_cameras_invisible_bev_query_pct": 0.156,
+      "non_finite_projection_values": 0,
+      "finite_calibration_matrices": true
+    },
+    {
+      "index": 40,
+      "sample_token": "b5989651183643369174912bc5641d3b",
+      "camera_image_shape": [
+        6,
+        3,
+        736,
+        1280
+      ],
+      "normalized_image_mean": -7.676091194152832,
+      "normalized_image_std": 52.98493194580078,
+      "image_hw_used_by_encoder": [
+        736,
+        1280
+      ],
+      "all_camera_image_hw": [
+        [
+          736,
+          1280
+        ],
+        [
+          736,
+          1280
+        ],
+        [
+          736,
+          1280
+        ],
+        [
+          736,
+          1280
+        ],
+        [
+          736,
+          1280
+        ],
+        [
+          736,
+          1280
+        ]
+      ],
+      "per_camera_visible_bev_query_pct": [
+        15.462,
+        18.884,
+        18.702,
+        23.84,
+        17.72,
+        17.987
+      ],
+      "any_camera_visible_bev_query_pct": 99.809,
+      "all_cameras_invisible_bev_query_pct": 0.191,
+      "non_finite_projection_values": 0,
+      "finite_calibration_matrices": true
+    },
+    {
+      "index": 80,
+      "sample_token": "b4ff30109dd14c89b24789dc5713cf8c",
+      "camera_image_shape": [
+        6,
+        3,
+        736,
+        1280
+      ],
+      "normalized_image_mean": -11.358505249023438,
+      "normalized_image_std": 57.327117919921875,
+      "image_hw_used_by_encoder": [
+        736,
+        1280
+      ],
+      "all_camera_image_hw": [
+        [
+          736,
+          1280
+        ],
+        [
+          736,
+          1280
+        ],
+        [
+          736,
+          1280
+        ],
+        [
+          736,
+          1280
+        ],
+        [
+          736,
+          1280
+        ],
+        [
+          736,
+          1280
+        ]
+      ],
+      "per_camera_visible_bev_query_pct": [
+        15.418,
+        18.853,
+        18.818,
+        23.831,
+        17.72,
+        18.049
+      ],
+      "any_camera_visible_bev_query_pct": 99.822,
+      "all_cameras_invisible_bev_query_pct": 0.178,
+      "non_finite_projection_values": 0,
+      "finite_calibration_matrices": true
+    }
+  ],
+  "loaded_code_paths": {
+    "BEVFormerEncoder": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/projects/mmdet3d_plugin/bevformer/modules/encoder.py",
+    "BEVFormerHead": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/projects/mmdet3d_plugin/bevformer/dense_heads/bevformer_head.py",
+    "VectorizedLocalMap": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/projects/mmdet3d_plugin/datasets/utils/vector_map.py",
+    "RasterizeMapVectors": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/projects/mmdet3d_plugin/datasets/pipelines/rasterize.py"
+  },
+  "package_versions": {
+    "torch": "2.8.0+cu128",
+    "numpy": "1.26.4"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "experiment": "Step53 author slicer vs inverse calibration grid",
+  "scope": "synthetic XY coordinate ramps only; NO MODEL FORWARD/IoU",
+  "assumption": "z_lidar=0 planar mapping; consistent with Step52",
+  "source": "/home/jjx2003520/projects/bevformer_author_clean_5080/BEVFormer-seg",
+  "frames": [
+    {
+      "index": 0,
+      "token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "translation_xy_m": [
+        0.985793,
+        0.0
+      ],
+      "valid_pixel_fraction": 1.0,
+      "author_slicer_baseline": {
+        "mean_dx_m": 0.9857949,
+        "mean_dy_m": 4e-07,
+        "mean_xy_error_m": 0.98582,
+        "p95_xy_error_m": 1.0165036,
+        "max_xy_error_m": 1.0267433
+      },
+      "calibrated_grid_counterfactual": {
+        "mean_dx_m": -0.0,
+        "mean_dy_m": 0.0,
+        "mean_xy_error_m": 0.0,
+        "p95_xy_error_m": 0.0,
+        "max_xy_error_m": 0.0
+      }
+    },
+    {
+      "index": 40,
+      "token": "b5989651183643369174912bc5641d3b",
+      "translation_xy_m": [
+        0.943713,
+        0.0
+      ],
+      "valid_pixel_fraction": 1.0,
+      "author_slicer_baseline": {
+        "mean_dx_m": 0.9437149,
+        "mean_dy_m": 4e-07,
+        "mean_xy_error_m": 0.944467,
+        "p95_xy_error_m": 0.9736687,
+        "max_xy_error_m": 0.9858067
+      },
+      "calibrated_grid_counterfactual": {
+        "mean_dx_m": -0.0,
+        "mean_dy_m": 0.0,
+        "mean_xy_error_m": 0.0,
+        "p95_xy_error_m": 0.0,
+        "max_xy_error_m": 0.0
+      }
+    },
+    {
+      "index": 80,
+      "token": "b4ff30109dd14c89b24789dc5713cf8c",
+      "translation_xy_m": [
+        0.943713,
+        0.0
+      ],
+      "valid_pixel_fraction": 1.0,
+      "author_slicer_baseline": {
+        "mean_dx_m": 0.9437149,
+        "mean_dy_m": 4e-07,
+        "mean_xy_error_m": 0.944467,
+        "p95_xy_error_m": 0.9736687,
+        "max_xy_error_m": 0.9858067
+      },
+      "calibrated_grid_counterfactual": {
+        "mean_dx_m": -0.0,
+        "mean_dy_m": 0.0,
+        "mean_xy_error_m": 0.0,
+        "p95_xy_error_m": 0.0,
+        "max_xy_error_m": 0.0
+      }
+    }
+  ],
+  "conclusion_limit": "校准后坐标误差变小仅验证二维映射可构造，不证明训练 checkpoint 的坐标、权重或分割 mIoU 已修复。"
+}

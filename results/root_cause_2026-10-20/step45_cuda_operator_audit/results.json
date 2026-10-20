@@ -1,0 +1,35 @@
+{
+  "purpose": "MMCV CUDA 算子 vs 独立数值参考；不等于整模型复现",
+  "torch": "2.8.0+cu128",
+  "mmcv": "1.7.2",
+  "python": "3.10.12",
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "cuda_runtime": "12.8",
+  "multi_scale_deformable_attention": {
+    "status": "tested",
+    "shape": [
+      1,
+      32,
+      32
+    ],
+    "max_abs_error": 1.7881393432617188e-07,
+    "mean_abs_error": 2.4769363449195225e-08,
+    "relative_l2_error": 1.3133802667653072e-07,
+    "all_finite": true,
+    "pass": true
+  },
+  "modulated_deform_conv2d": {
+    "status": "tested",
+    "shape": [
+      1,
+      8,
+      16,
+      16
+    ],
+    "max_abs_error": 0.0,
+    "mean_abs_error": 0.0,
+    "relative_l2_error": 0.0,
+    "all_finite": true,
+    "pass": true
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "purpose": "train-split supervised repair A/B; not official full Val result",
+  "train_ann_file": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/data/nuscenes/nuscenes_infos_temporal_train.pkl",
+  "train_ann_exists": true,
+  "val_ann_file": "/home/jjx2003520/projects/bev_vla/outputs/drivelm_check/root_cause/step21_full_val/nuscenes_infos_temporal_val_full6019_paths_fixed.pkl",
+  "val_ann_exists": true,
+  "checkpoint_file": "/mnt/g/nus/bevformer_small_seg.pth",
+  "checkpoint_exists": true,
+  "data_root_exists": true,
+  "steps": 120,
+  "lr": 0.0001,
+  "seed": 20261020,
+  "train_sample_count": 323,
+  "val_sample_count": 6019,
+  "status": "complete",
+  "scope": "no-temporal sparse Val; not formal full Val mIoU",
+  "protocol": "official train supervised fine-tuning; encoder frozen; two independent decoders; identical extracted BEV per sample",
+  "val_indices": [
+    73,
+    411,
+    817,
+    1311,
+    1733,
+    2261,
+    2877,
+    3449,
+    4027,
+    4631,
+    5239,
+    5831
+  ],
+  "regression_indices": [
+    3715,
+    3718,
+    3719
+  ],
+  "foreground_miou_by_variant": {
+    "pretrained_original": 0.06589015277386819,
+    "pretrained_transpose": 0.21013724672149092,
+    "original_ccw90": 0.05219591893407866,
+    "transpose_candidate": 0.18505856932474873
+  },
+  "group_foreground_miou": {
+    "holdout": {
+      "pretrained_original": 0.048631393672630724,
+      "pretrained_transpose": 0.25989210967681525,
+      "original_ccw90": 0.06597175124900867,
+      "transpose_candidate": 0.20393036710346482
+    },
+    "regression": {
+      "pretrained_original": 0.16019781917559614,
+      "pretrained_transpose": 0.05761172020452235,
+      "original_ccw90": 0.00039273691326485467,
+      "transpose_candidate": 0.12011964519533769
+    }
+  },
+  "per_class_confusion": {
+    "pretrained_original": [
+      [
+        840510,
+        45822,
+        9505,
+        100303
+      ],
+      [
+        56304,
+        5721,
+        454,
+        6014
+      ],
+      [
+        18646,
+        154,
+        2718,
+        2346
+      ],
+      [
+        91511,
+        3886,
+        608,
+        15498
+      ]
+    ],
+    "pretrained_transpose": [
+      [
+        890929,
+        26020,
+        9640,
+        69551
+      ],
+      [
+        36562,
+        26603,
+        605,
+        4723
+      ],
+      [
+        17169,
+        224,
+        3285,
+        3186
+      ],
+      [
+        62944,
+        365,
+        83,
+        48111
+      ]
+    ],
+    "original_ccw90": [
+      [
+        961386,
+        12363,
+        3460,
+        18931
+      ],
+      [
+        59826,
+        6762,
+        90,
+        1815
+      ],
+      [
+        21037,
+        2,
+        635,
+        2190
+      ],
+      [
+        102565,
+        1720,
+        260,
+        6958
+      ]
+    ],
+    "transpose_candidate": [
+      [
+        733191,
+        92583,
+        11675,
+        158691
+      ],
+      [
+        26559,
+        35210,
+        443,
+        6281
+      ],
+      [
+        15125,
+        168,
+        3856,
+        4715
+      ],
+      [
+        43211,
+        2441,
+        197,
+        65654
+      ]
+    ]
+  },
+  "elapsed_seconds": 141.48,
+  "decoder_checkpoint": "/home/jjx2003520/projects/bev_vla/outputs/drivelm_check/root_cause/step40_train_head_ab_repair/seg_decoder_ab_train_split.pt",
+  "conclusion_limit": "属于训练集修复可行性实验；若无法在独立验证集稳健改善，不得覆盖原权重或声称根因解决"
+}

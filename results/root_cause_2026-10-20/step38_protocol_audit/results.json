@@ -1,0 +1,182 @@
+{
+  "experiment": "Step38 official metric and full Val metadata audit",
+  "inference_performed": false,
+  "identity": {
+    "val_pkl_sha256_current": "5b1409d1d9d0eedfc2badea635f87d945bbc5f6fca4b4d07f9fd6bb190d8979c",
+    "val_pkl_sha256_step34": "5b1409d1d9d0eedfc2badea635f87d945bbc5f6fca4b4d07f9fd6bb190d8979c",
+    "val_pkl_hash_match": true
+  },
+  "dataset": {
+    "frames": 6019,
+    "scenes": 150,
+    "duplicate_tokens": 0,
+    "timestamps_nondecreasing": false,
+    "metadata_version": "v1.0-trainval"
+  },
+  "metric": {
+    "original": {
+      "foreground_miou_recalculated": 0.04641619392902555,
+      "max_class_iou_abs_diff": 0.0,
+      "foreground_miou_abs_diff": 0.0,
+      "pass": true
+    },
+    "physical_ccw_candidate": {
+      "foreground_miou_recalculated": 0.19600045945570974,
+      "max_class_iou_abs_diff": 0.0,
+      "foreground_miou_abs_diff": 0.0,
+      "pass": true
+    }
+  },
+  "nuscenes_reference": {
+    "status": "complete",
+    "checked": 12,
+    "passed": 12,
+    "failed": 0,
+    "samples": [
+      {
+        "index": 0,
+        "sample_token": "fd8420396768425eabec9bdddf7e64b6",
+        "scene_ok": true,
+        "timestamp_ok": true,
+        "ego_translation_max_abs_error_m": 0.0,
+        "ego_rotation_matrix_max_abs_error": 0.0,
+        "lidar_translation_max_abs_error_m": 0.0,
+        "lidar_rotation_matrix_max_abs_error": 0.0,
+        "camera_token_errors": [],
+        "pass": true
+      },
+      {
+        "index": 300,
+        "sample_token": "dbffcc96729b420380ace0e08ad587d5",
+        "scene_ok": true,
+        "timestamp_ok": true,
+        "ego_translation_max_abs_error_m": 0.0,
+        "ego_rotation_matrix_max_abs_error": 0.0,
+        "lidar_translation_max_abs_error_m": 0.0,
+        "lidar_rotation_matrix_max_abs_error": 0.0,
+        "camera_token_errors": [],
+        "pass": true
+      },
+      {
+        "index": 900,
+        "sample_token": "c0a6034c27fe43488476d9a15140e398",
+        "scene_ok": true,
+        "timestamp_ok": true,
+        "ego_translation_max_abs_error_m": 0.0,
+        "ego_rotation_matrix_max_abs_error": 0.0,
+        "lidar_translation_max_abs_error_m": 0.0,
+        "lidar_rotation_matrix_max_abs_error": 0.0,
+        "camera_token_errors": [],
+        "pass": true
+      },
+      {
+        "index": 1500,
+        "sample_token": "d21bdffbca9f4edaa4bf4f54fffa6f4b",
+        "scene_ok": true,
+        "timestamp_ok": true,
+        "ego_translation_max_abs_error_m": 0.0,
+        "ego_rotation_matrix_max_abs_error": 0.0,
+        "lidar_translation_max_abs_error_m": 0.0,
+        "lidar_rotation_matrix_max_abs_error": 0.0,
+        "camera_token_errors": [],
+        "pass": true
+      },
+      {
+        "index": 2400,
+        "sample_token": "2e5c6a6379a3467facbd9e6740cd7852",
+        "scene_ok": true,
+        "timestamp_ok": true,
+        "ego_translation_max_abs_error_m": 0.0,
+        "ego_rotation_matrix_max_abs_error": 0.0,
+        "lidar_translation_max_abs_error_m": 0.0,
+        "lidar_rotation_matrix_max_abs_error": 0.0,
+        "camera_token_errors": [],
+        "pass": true
+      },
+      {
+        "index": 3000,
+        "sample_token": "20fdb20b4ca148b9bca502ca7c196190",
+        "scene_ok": true,
+        "timestamp_ok": true,
+        "ego_translation_max_abs_error_m": 0.0,
+        "ego_rotation_matrix_max_abs_error": 0.0,
+        "lidar_translation_max_abs_error_m": 0.0,
+        "lidar_rotation_matrix_max_abs_error": 0.0,
+        "camera_token_errors": [],
+        "pass": true
+      },
+      {
+        "index": 3600,
+        "sample_token": "f2f86758734244c89e74690267cc37d2",
+        "scene_ok": true,
+        "timestamp_ok": true,
+        "ego_translation_max_abs_error_m": 0.0,
+        "ego_rotation_matrix_max_abs_error": 0.0,
+        "lidar_translation_max_abs_error_m": 0.0,
+        "lidar_rotation_matrix_max_abs_error": 0.0,
+        "camera_token_errors": [],
+        "pass": true
+      },
+      {
+        "index": 3715,
+        "sample_token": "f2dc8bdff2e24a0fb21758f26b8057e6",
+        "scene_ok": true,
+        "timestamp_ok": true,
+        "ego_translation_max_abs_error_m": 0.0,
+        "ego_rotation_matrix_max_abs_error": 0.0,
+        "lidar_translation_max_abs_error_m": 0.0,
+        "lidar_rotation_matrix_max_abs_error": 0.0,
+        "camera_token_errors": [],
+        "pass": true
+      },
+      {
+        "index": 3718,
+        "sample_token": "598c200674194f2896072b0b4017c487",
+        "scene_ok": true,
+        "timestamp_ok": true,
+        "ego_translation_max_abs_error_m": 0.0,
+        "ego_rotation_matrix_max_abs_error": 0.0,
+        "lidar_translation_max_abs_error_m": 0.0,
+        "lidar_rotation_matrix_max_abs_error": 0.0,
+        "camera_token_errors": [],
+        "pass": true
+      },
+      {
+        "index": 3719,
+        "sample_token": "f8e8dd98088d458abb0a664330403168",
+        "scene_ok": true,
+        "timestamp_ok": true,
+        "ego_translation_max_abs_error_m": 0.0,
+        "ego_rotation_matrix_max_abs_error": 0.0,
+        "lidar_translation_max_abs_error_m": 0.0,
+        "lidar_rotation_matrix_max_abs_error": 0.0,
+        "camera_token_errors": [],
+        "pass": true
+      },
+      {
+        "index": 4500,
+        "sample_token": "b1303058fa624645b753d7283d70de45",
+        "scene_ok": true,
+        "timestamp_ok": true,
+        "ego_translation_max_abs_error_m": 0.0,
+        "ego_rotation_matrix_max_abs_error": 0.0,
+        "lidar_translation_max_abs_error_m": 0.0,
+        "lidar_rotation_matrix_max_abs_error": 0.0,
+        "camera_token_errors": [],
+        "pass": true
+      },
+      {
+        "index": 6018,
+        "sample_token": "f0ee73d43c2748fbb584d1a062e2773a",
+        "scene_ok": true,
+        "timestamp_ok": true,
+        "ego_translation_max_abs_error_m": 0.0,
+        "ego_rotation_matrix_max_abs_error": 0.0,
+        "lidar_translation_max_abs_error_m": 0.0,
+        "lidar_rotation_matrix_max_abs_error": 0.0,
+        "camera_token_errors": [],
+        "pass": true
+      }
+    ]
+  }
+}

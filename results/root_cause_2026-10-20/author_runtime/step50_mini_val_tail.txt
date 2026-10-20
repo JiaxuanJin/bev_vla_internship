@@ -1,0 +1,95 @@
+[Run] Author single_gpu_test; 81-frame temporal ON
+[                                                  ] 0/81, elapsed: 0s, ETA:
+[                                  ] 1/81, 0.7 task/s, elapsed: 1s, ETA:   119s
+[                                  ] 2/81, 0.5 task/s, elapsed: 4s, ETA:   165s
+[>                                 ] 3/81, 0.6 task/s, elapsed: 5s, ETA:   132s
+[>                                 ] 4/81, 0.7 task/s, elapsed: 6s, ETA:   117s
+[>>                                ] 5/81, 0.7 task/s, elapsed: 7s, ETA:   110s
+[>>                                ] 6/81, 0.7 task/s, elapsed: 8s, ETA:   105s
+[>>                                ] 7/81, 0.7 task/s, elapsed: 9s, ETA:    99s
+[>>>                              ] 8/81, 0.8 task/s, elapsed: 10s, ETA:    94s
+[>>>                              ] 9/81, 0.8 task/s, elapsed: 11s, ETA:    90s
+[>>>                             ] 10/81, 0.8 task/s, elapsed: 12s, ETA:    88s
+[>>>>                            ] 11/81, 0.8 task/s, elapsed: 13s, ETA:    85s
+[>>>>                            ] 12/81, 0.8 task/s, elapsed: 14s, ETA:    83s
+[>>>>>                           ] 13/81, 0.8 task/s, elapsed: 15s, ETA:    81s
+[>>>>>                           ] 14/81, 0.8 task/s, elapsed: 17s, ETA:    80s
+[>>>>>                           ] 15/81, 0.8 task/s, elapsed: 18s, ETA:    79s
+[>>>>>>                          ] 16/81, 0.8 task/s, elapsed: 19s, ETA:    77s
+[>>>>>>                          ] 17/81, 0.8 task/s, elapsed: 20s, ETA:    76s
+[>>>>>>>                         ] 18/81, 0.9 task/s, elapsed: 21s, ETA:    74s
+[>>>>>>>                         ] 19/81, 0.9 task/s, elapsed: 22s, ETA:    73s
+[>>>>>>>                         ] 20/81, 0.9 task/s, elapsed: 23s, ETA:    71s
+[>>>>>>>>                        ] 21/81, 0.9 task/s, elapsed: 24s, ETA:    69s
+[>>>>>>>>                        ] 22/81, 0.9 task/s, elapsed: 25s, ETA:    68s
+[>>>>>>>>>                       ] 23/81, 0.9 task/s, elapsed: 26s, ETA:    67s
+[>>>>>>>>>                       ] 24/81, 0.9 task/s, elapsed: 27s, ETA:    65s
+[>>>>>>>>>                       ] 25/81, 0.9 task/s, elapsed: 29s, ETA:    64s
+[>>>>>>>>>>                      ] 26/81, 0.9 task/s, elapsed: 29s, ETA:    62s
+[>>>>>>>>>>                      ] 27/81, 0.9 task/s, elapsed: 31s, ETA:    61s
+[>>>>>>>>>>>                     ] 28/81, 0.9 task/s, elapsed: 32s, ETA:    60s
+[>>>>>>>>>>>                     ] 29/81, 0.9 task/s, elapsed: 33s, ETA:    59s
+[>>>>>>>>>>>                     ] 30/81, 0.9 task/s, elapsed: 34s, ETA:    58s
+[>>>>>>>>>>>>                    ] 31/81, 0.9 task/s, elapsed: 35s, ETA:    56s
+[>>>>>>>>>>>>                    ] 32/81, 0.9 task/s, elapsed: 36s, ETA:    55s
+[>>>>>>>>>>>>>                   ] 33/81, 0.9 task/s, elapsed: 37s, ETA:    54s
+[>>>>>>>>>>>>>                   ] 34/81, 0.9 task/s, elapsed: 38s, ETA:    53s
+[>>>>>>>>>>>>>                   ] 35/81, 0.9 task/s, elapsed: 39s, ETA:    51s
+[>>>>>>>>>>>>>>                  ] 36/81, 0.9 task/s, elapsed: 40s, ETA:    50s
+[>>>>>>>>>>>>>>                  ] 37/81, 0.9 task/s, elapsed: 41s, ETA:    49s
+[>>>>>>>>>>>>>>>                 ] 38/81, 0.9 task/s, elapsed: 42s, ETA:    48s
+[>>>>>>>>>>>>>>>                 ] 39/81, 0.9 task/s, elapsed: 43s, ETA:    47s
+[>>>>>>>>>>>>>>>                 ] 40/81, 0.9 task/s, elapsed: 44s, ETA:    45s
+[>>>>>>>>>>>>>>>>                ] 41/81, 0.9 task/s, elapsed: 45s, ETA:    44s
+[>>>>>>>>>>>>>>>>                ] 42/81, 0.9 task/s, elapsed: 46s, ETA:    43s
+[>>>>>>>>>>>>>>>>                ] 43/81, 0.9 task/s, elapsed: 47s, ETA:    42s
+[>>>>>>>>>>>>>>>>>               ] 44/81, 0.9 task/s, elapsed: 48s, ETA:    40s
+[>>>>>>>>>>>>>>>>>               ] 45/81, 0.9 task/s, elapsed: 49s, ETA:    39s
+[>>>>>>>>>>>>>>>>>>              ] 46/81, 0.9 task/s, elapsed: 50s, ETA:    38s
+[>>>>>>>>>>>>>>>>>>              ] 47/81, 0.9 task/s, elapsed: 51s, ETA:    37s
+[>>>>>>>>>>>>>>>>>>              ] 48/81, 0.9 task/s, elapsed: 52s, ETA:    36s
+[>>>>>>>>>>>>>>>>>>>             ] 49/81, 0.9 task/s, elapsed: 53s, ETA:    35s
+[>>>>>>>>>>>>>>>>>>>             ] 50/81, 0.9 task/s, elapsed: 54s, ETA:    33s
+[>>>>>>>>>>>>>>>>>>>>            ] 51/81, 0.9 task/s, elapsed: 55s, ETA:    32s
+[>>>>>>>>>>>>>>>>>>>>            ] 52/81, 0.9 task/s, elapsed: 56s, ETA:    31s
+[>>>>>>>>>>>>>>>>>>>>            ] 53/81, 0.9 task/s, elapsed: 57s, ETA:    30s
+[>>>>>>>>>>>>>>>>>>>>>           ] 54/81, 0.9 task/s, elapsed: 58s, ETA:    29s
+[>>>>>>>>>>>>>>>>>>>>>           ] 55/81, 0.9 task/s, elapsed: 59s, ETA:    28s
+[>>>>>>>>>>>>>>>>>>>>>>          ] 56/81, 0.9 task/s, elapsed: 60s, ETA:    27s
+[>>>>>>>>>>>>>>>>>>>>>>          ] 57/81, 0.9 task/s, elapsed: 61s, ETA:    26s
+[>>>>>>>>>>>>>>>>>>>>>>          ] 58/81, 0.9 task/s, elapsed: 62s, ETA:    25s
+[>>>>>>>>>>>>>>>>>>>>>>>         ] 59/81, 0.9 task/s, elapsed: 63s, ETA:    23s
+[>>>>>>>>>>>>>>>>>>>>>>>         ] 60/81, 0.9 task/s, elapsed: 64s, ETA:    22s
+[>>>>>>>>>>>>>>>>>>>>>>>>        ] 61/81, 0.9 task/s, elapsed: 65s, ETA:    21s
+[>>>>>>>>>>>>>>>>>>>>>>>>        ] 62/81, 0.9 task/s, elapsed: 66s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>>>>>>>        ] 63/81, 0.9 task/s, elapsed: 67s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>>>>>>>>       ] 64/81, 0.9 task/s, elapsed: 68s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>>>>>>>       ] 65/81, 0.9 task/s, elapsed: 69s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>      ] 66/81, 0.9 task/s, elapsed: 70s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>      ] 67/81, 0.9 task/s, elapsed: 71s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>      ] 68/81, 0.9 task/s, elapsed: 72s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>     ] 69/81, 0.9 task/s, elapsed: 73s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>     ] 70/81, 0.9 task/s, elapsed: 74s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ] 71/81, 0.9 task/s, elapsed: 75s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ] 72/81, 0.9 task/s, elapsed: 76s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ] 73/81, 0.9 task/s, elapsed: 77s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 74/81, 0.9 task/s, elapsed: 78s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 75/81, 0.9 task/s, elapsed: 79s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 76/81, 0.9 task/s, elapsed: 80s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 77/81, 0.9 task/s, elapsed: 81s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 78/81, 0.9 task/s, elapsed: 82s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 79/81, 0.9 task/s, elapsed: 83s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 80/81, 0.9 task/s, elapsed: 84s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 81/81, 0.9 task/s, elapsed: 85s, ETA:     0s
+
++----------------+---------+---------------+----------+--------+
+| Validation num | Divider | Pred Crossing | Boundary |  mIoU  |
++----------------+---------+---------------+----------+--------+
+|       81       |  0.0223 |     0.0873    |  0.0817  | 0.0638 |
++----------------+---------+---------------+----------+--------+
+2026-10-20 20:29:06,544 - mmdet - INFO - +----------------+---------+---------------+----------+--------+
+| Validation num | Divider | Pred Crossing | Boundary |  mIoU  |
++----------------+---------+---------------+----------+--------+
+|       81       |  0.0223 |     0.0873    |  0.0817  | 0.0638 |
++----------------+---------+---------------+----------+--------+
+[Done] 作者原始评估函数运行结束。请记录上方 mIoU 表格。

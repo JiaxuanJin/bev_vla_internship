@@ -1,0 +1,50 @@
+{
+  "purpose": "same checkpoint, same subset, original author test path vs Step25 path",
+  "temporal_on": true,
+  "frames": 30,
+  "author_class_iou": {
+    "background": 0.6796492338180542,
+    "divider": 0.017574315890669823,
+    "ped_crossing": 0.0,
+    "boundary": 0.044209737330675125
+  },
+  "author_foreground_miou": 0.020594684407114983,
+  "manual": {
+    "class_iou": {
+      "background": 0.6796492090238871,
+      "divider": 0.01757431559158736,
+      "ped_crossing": 0.0,
+      "boundary": 0.04420973658180969
+    },
+    "foreground_miou": 0.020594684057799018,
+    "confusion_gt_rows_pred_cols": [
+      [
+        1554476,
+        103358,
+        15911,
+        212732
+      ],
+      [
+        149929,
+        5983,
+        5,
+        39153
+      ],
+      [
+        5176,
+        15,
+        0,
+        116
+      ],
+      [
+        245592,
+        41997,
+        572,
+        24985
+      ]
+    ]
+  },
+  "maximum_class_iou_difference": 2.4794167052810678e-08,
+  "matching_within_1e_5": true,
+  "limit": "对比推理入口是否等价；即便通过也不能证明原作者报告的42.62% 与当前官方 Val 的数据协议完全相同"
+}

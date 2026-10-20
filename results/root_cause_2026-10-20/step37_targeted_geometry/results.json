@@ -1,0 +1,254 @@
+{
+  "experiment": "Step37 targeted geometry / official Val sparse samples",
+  "protocol": "same GT, checkpoint, frames; no temporal history; no retraining",
+  "variant_definitions": {
+    "original_ccw90": "actual local BEVFormerHead forward output",
+    "transpose_candidate": "extra flip(dim=2) before feat_cropper",
+    "lidar_to_ego_grid": "undo head CCW90, then per-frame inverse LiDAR-to-Ego grid_sample raw BEV onto Ego coordinates before Slicer"
+  },
+  "important_limit": "物理分支依据 Encoder ref_x/ref_y 的物理约定构造；只做推理端修正，不保证符合已有 checkpoint 训练时的空间排列。独立帧结果不可与Step34 连续时序 6019 帧 mIoU 直接比较。",
+  "indices": [
+    0,
+    300,
+    900,
+    1500,
+    2400,
+    3000,
+    3600,
+    3715,
+    3718,
+    3719,
+    4500,
+    6018
+  ],
+  "elapsed_seconds": 15.9023126639986,
+  "results": {
+    "original_ccw90": {
+      "foreground_miou": 0.07588151855449009,
+      "class_iou": {
+        "background": 0.7307379147584039,
+        "divider": 0.06454869684499315,
+        "ped_crossing": 0.07515307130159984,
+        "boundary": 0.08794278751687724
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          672208,
+          29163,
+          9315,
+          77415
+        ],
+        [
+          43406,
+          5882,
+          383,
+          7435
+        ],
+        [
+          14892,
+          270,
+          2283,
+          2148
+        ],
+        [
+          73504,
+          4586,
+          1087,
+          16023
+        ]
+      ]
+    },
+    "transpose_candidate": {
+      "foreground_miou": 0.1427996732889715,
+      "class_iou": {
+        "background": 0.7492511267526498,
+        "divider": 0.15133901256647997,
+        "ped_crossing": 0.10704235019562083,
+        "boundary": 0.17001765710481373
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          680093,
+          26954,
+          9324,
+          71730
+        ],
+        [
+          40127,
+          12862,
+          181,
+          3936
+        ],
+        [
+          14358,
+          247,
+          3119,
+          1869
+        ],
+        [
+          65111,
+          681,
+          40,
+          29368
+        ]
+      ]
+    },
+    "lidar_to_ego_grid": {
+      "foreground_miou": 0.08049287515704275,
+      "class_iou": {
+        "background": 0.7303554213135405,
+        "divider": 0.06339488388335952,
+        "ped_crossing": 0.09033275076248244,
+        "boundary": 0.0877509908252863
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          671973,
+          29677,
+          8472,
+          77979
+        ],
+        [
+          43522,
+          5809,
+          266,
+          7509
+        ],
+        [
+          14585,
+          384,
+          2636,
+          1988
+        ],
+        [
+          73855,
+          4465,
+          850,
+          16030
+        ]
+      ]
+    }
+  },
+  "per_frame": [
+    {
+      "index": 0,
+      "sample_token": "30e55a3ec6184d8cb1944b39ba19d622",
+      "scene_token": "c3ab8ee2c1a54068a72d7eb4cf22e43d",
+      "original_ccw90_miou": 0.024549498040808693,
+      "transpose_candidate_miou": 0.20849306312248664,
+      "lidar_to_ego_grid_miou": 0.02437594018583332,
+      "transpose_minus_original_pp": 18.394356508167796,
+      "physical_minus_original_pp": -0.0173557854975373
+    },
+    {
+      "index": 300,
+      "sample_token": "33c965ece87842c2ac898543d26dad5f",
+      "scene_token": "8377abf77f464a9cb62eacf63f383422",
+      "original_ccw90_miou": 0.08251048417615901,
+      "transpose_candidate_miou": 0.18047402861227932,
+      "lidar_to_ego_grid_miou": 0.07191858214074517,
+      "transpose_minus_original_pp": 9.79635444361203,
+      "physical_minus_original_pp": -1.0591902035413838
+    },
+    {
+      "index": 900,
+      "sample_token": "02b68afcd7504587a003bffe899e4986",
+      "scene_token": "8edbc31083ab4fb187626e5b3c0411f7",
+      "original_ccw90_miou": 0.0053231068628012135,
+      "transpose_candidate_miou": 0.13411162474862232,
+      "lidar_to_ego_grid_miou": 0.003749402199904352,
+      "transpose_minus_original_pp": 12.87885178858211,
+      "physical_minus_original_pp": -0.15737046628968615
+    },
+    {
+      "index": 1500,
+      "sample_token": "b988f7f03263462d94d39a722dc820ca",
+      "scene_token": "bed67ef03c4a4066a74f6c0117d512ee",
+      "original_ccw90_miou": 0.0109189847134214,
+      "transpose_candidate_miou": 0.11403251996414042,
+      "lidar_to_ego_grid_miou": 0.009950639478525128,
+      "transpose_minus_original_pp": 10.311353525071903,
+      "physical_minus_original_pp": -0.09683452348962715
+    },
+    {
+      "index": 2400,
+      "sample_token": "aa2e044f280d4f849172566c0634f806",
+      "scene_token": "aedcd3cf7c4a49d7a4a43ab7443a9eb1",
+      "original_ccw90_miou": 0.0,
+      "transpose_candidate_miou": 0.10362691960252936,
+      "lidar_to_ego_grid_miou": 0.0,
+      "transpose_minus_original_pp": 10.362691960252937,
+      "physical_minus_original_pp": 0.0
+    },
+    {
+      "index": 3000,
+      "sample_token": "25f8552be635425aafa5d14150fc5ce1",
+      "scene_token": "ed242d80ccb34b139aaf9ab89859332e",
+      "original_ccw90_miou": 0.1036356848942141,
+      "transpose_candidate_miou": 0.22236258657723304,
+      "lidar_to_ego_grid_miou": 0.06670263239359178,
+      "transpose_minus_original_pp": 11.872690168301894,
+      "physical_minus_original_pp": -3.6933052500622314
+    },
+    {
+      "index": 3600,
+      "sample_token": "08ecb5ce7d91436596526fe3b930db81",
+      "scene_token": "3045ed93c2534ec2a5cabea89b186bd9",
+      "original_ccw90_miou": 0.044297194394416844,
+      "transpose_candidate_miou": 0.1399770325582694,
+      "lidar_to_ego_grid_miou": 0.018119338902152917,
+      "transpose_minus_original_pp": 9.567983816385256,
+      "physical_minus_original_pp": -2.617785549226393
+    },
+    {
+      "index": 3715,
+      "sample_token": "5e3e194f6d484e898f7b39104f6b2c53",
+      "scene_token": "c164a8e8e8b8489f964f711f472789be",
+      "original_ccw90_miou": 0.18742807300135647,
+      "transpose_candidate_miou": 0.10787861537828562,
+      "lidar_to_ego_grid_miou": 0.19571345510407742,
+      "transpose_minus_original_pp": -7.9549457623070845,
+      "physical_minus_original_pp": 0.8285382102720951
+    },
+    {
+      "index": 3718,
+      "sample_token": "4585ac4b4a924065b02f289af6bacb4a",
+      "scene_token": "c164a8e8e8b8489f964f711f472789be",
+      "original_ccw90_miou": 0.1321070692549807,
+      "transpose_candidate_miou": 0.03457398284984492,
+      "lidar_to_ego_grid_miou": 0.177788197739462,
+      "transpose_minus_original_pp": -9.753308640513577,
+      "physical_minus_original_pp": 4.568112848448131
+    },
+    {
+      "index": 3719,
+      "sample_token": "26228f644fbd49e2a451b732edad1141",
+      "scene_token": "c164a8e8e8b8489f964f711f472789be",
+      "original_ccw90_miou": 0.165795052035704,
+      "transpose_candidate_miou": 0.03134887993064265,
+      "lidar_to_ego_grid_miou": 0.22108629058584853,
+      "transpose_minus_original_pp": -13.444617210506134,
+      "physical_minus_original_pp": 5.529123855014453
+    },
+    {
+      "index": 4500,
+      "sample_token": "8e7b267872c04c2b8a49b034ce6a9180",
+      "scene_token": "905cfed4f0fc46679e8df8890cca4141",
+      "original_ccw90_miou": 0.07833138781756967,
+      "transpose_candidate_miou": 0.15695436617772063,
+      "lidar_to_ego_grid_miou": 0.082141311367997,
+      "transpose_minus_original_pp": 7.862297836015096,
+      "physical_minus_original_pp": 0.38099235504273354
+    },
+    {
+      "index": 6018,
+      "sample_token": "f0ee73d43c2748fbb584d1a062e2773a",
+      "scene_token": "6498fce2f38645fc9bf9d4464b159230",
+      "original_ccw90_miou": 0.03913098558485845,
+      "transpose_candidate_miou": 0.09695950759479001,
+      "lidar_to_ego_grid_miou": 0.038448229950135616,
+      "transpose_minus_original_pp": 5.7828522009931556,
+      "physical_minus_original_pp": -0.0682755634722837
+    }
+  ]
+}

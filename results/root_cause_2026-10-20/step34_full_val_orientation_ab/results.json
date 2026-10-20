@@ -1,0 +1,96 @@
+{
+  "experiment": "Step34 full nuScenes Val orientation A/B, temporal on",
+  "complete": true,
+  "processed_frames": 6019,
+  "expected_frames": 6019,
+  "scenes_represented": 150,
+  "identity": {
+    "checkpoint_sha256": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+    "config_sha256": "34b53e295608bf682a42545cf3708a8dc2f3486817963c62c89d6415294d1066",
+    "val_pkl_sha256": "5b1409d1d9d0eedfc2badea635f87d945bbc5f6fca4b4d07f9fd6bb190d8979c",
+    "sample_count": 6019,
+    "video_test_mode": true,
+    "intervention": "flip_dim2_before_feat_cropper"
+  },
+  "protocol": "Same model, weights, 6019-sample Val, GT, and global IoU. Temporal ON, independent previous-BEV states per branch.",
+  "intervention": "A: original seg head; B: flip BEV along dim=2 immediately before original feat_cropper.forward (Step33 CCW90 candidate).",
+  "interpretation_limit": "推理端空间方向反事实消融；未验证训练时坐标链和分割标签 的完整约定之前，不得作为正式模型修复。",
+  "original": {
+    "class_iou": {
+      "background": 0.7362439835636351,
+      "divider": 0.024129691928517952,
+      "ped_crossing": 0.06731105094339696,
+      "boundary": 0.04780783891516177
+    },
+    "foreground_miou": 0.04641619392902555,
+    "confusion_gt_rows_pred_cols": [
+      [
+        345956037,
+        16304253,
+        3730382,
+        41710182
+      ],
+      [
+        21027383,
+        1036429,
+        154062,
+        2611481
+      ],
+      [
+        4512284,
+        77813,
+        691421,
+        627534
+      ],
+      [
+        36652673,
+        1741013,
+        478532,
+        4208521
+      ]
+    ]
+  },
+  "physical_ccw_candidate": {
+    "class_iou": {
+      "background": 0.8107138720053843,
+      "divider": 0.2587358953952607,
+      "ped_crossing": 0.09684508211555176,
+      "boundary": 0.2324204008563167
+    },
+    "foreground_miou": 0.19600045945570974,
+    "confusion_gt_rows_pred_cols": [
+      [
+        365609840,
+        10036209,
+        3596380,
+        28458425
+      ],
+      [
+        13574294,
+        9108199,
+        157634,
+        1989228
+      ],
+      [
+        4275164,
+        98102,
+        954681,
+        581105
+      ],
+      [
+        25422408,
+        239022,
+        194750,
+        17224559
+      ]
+    ]
+  },
+  "aggregate_delta_percentage_points": 14.958427,
+  "frames_improved": 5867,
+  "frames_worsened": 150,
+  "frames_equal": 2,
+  "reference_step25_temporal_fg_miou": 0.046416,
+  "delta_original_vs_step25_percentage_points": 1.9e-05,
+  "elapsed_seconds": 5655.2,
+  "per_frame_csv": "/home/jjx2003520/projects/bev_vla/outputs/drivelm_check/root_cause/step34_full_val_orientation_ab/per_frame.csv"
+}

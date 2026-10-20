@@ -1,0 +1,118 @@
+{
+  "purpose": "BEV ramp -> author head transform -> real Slicer -> LiDAR/Ego",
+  "scope": "CPU synthetic coordinate fields + real calibration; no model forward",
+  "source": "/home/jjx2003520/projects/bevformer_author_clean_5080/BEVFormer-seg",
+  "source_head_sha256": "35e525414955db4c0e2586167d8e04fe68e61bd2beeba1e4c62fd2c0166c8e6d",
+  "source_config_sha256": "34b53e295608bf682a42545cf3708a8dc2f3486817963c62c89d6415294d1066",
+  "checkpoint_modified": false,
+  "source_modified": false,
+  "bev_hw": [
+    150,
+    150
+  ],
+  "after_head_hw": [
+    150,
+    150
+  ],
+  "after_slicer_hw": [
+    200,
+    400
+  ],
+  "gt_hw": [
+    200,
+    400
+  ],
+  "assumptions": [
+    "Encoder flat query order: row=Y_lidar, column=X_lidar",
+    "Head: reshape->permute(2,3,1,0)->flip(dim=2)",
+    "GT raster: row=Y_ego, column=X_ego, pixel-centre coordinates",
+    "LiDAR->Ego: p_ego=R*p_lidar+t, z omitted in XY ramp",
+    "This diagnostic does not establish the checkpoint training runtime"
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "lidar2ego_translation_m": [
+        0.985793,
+        0.0,
+        1.84019
+      ],
+      "lidar2ego_rotation": [
+        0.706749235646644,
+        -0.015300993788500868,
+        0.01739745181256607,
+        -0.7070846669051719
+      ],
+      "coordinate_error": {
+        "signed_dx_mean_m": 0.985795,
+        "signed_dy_mean_m": 0.0,
+        "abs_dx_mean_m": 0.985795,
+        "abs_dy_mean_m": 0.006088,
+        "mean_distance_m": 0.98582,
+        "p95_distance_m": 1.016504,
+        "max_distance_m": 1.026743
+      },
+      "center_error_xy_m": [
+        0.985753,
+        -3.2e-05
+      ]
+    },
+    {
+      "index": 40,
+      "sample_token": "b5989651183643369174912bc5641d3b",
+      "lidar2ego_translation_m": [
+        0.943713,
+        0.0,
+        1.84023
+      ],
+      "lidar2ego_rotation": [
+        0.7077955119163518,
+        -0.006492242056004365,
+        0.010646214713995808,
+        -0.7063073142877817
+      ],
+      "coordinate_error": {
+        "signed_dx_mean_m": 0.943715,
+        "signed_dy_mean_m": 0.0,
+        "abs_dx_mean_m": 0.943715,
+        "abs_dy_mean_m": 0.032635,
+        "mean_distance_m": 0.944467,
+        "p95_distance_m": 0.973669,
+        "max_distance_m": 0.985807
+      },
+      "center_error_xy_m": [
+        0.943538,
+        0.00016
+      ]
+    },
+    {
+      "index": 80,
+      "sample_token": "b4ff30109dd14c89b24789dc5713cf8c",
+      "lidar2ego_translation_m": [
+        0.943713,
+        0.0,
+        1.84023
+      ],
+      "lidar2ego_rotation": [
+        0.7077955119163518,
+        -0.006492242056004365,
+        0.010646214713995808,
+        -0.7063073142877817
+      ],
+      "coordinate_error": {
+        "signed_dx_mean_m": 0.943715,
+        "signed_dy_mean_m": 0.0,
+        "abs_dx_mean_m": 0.943715,
+        "abs_dy_mean_m": 0.032635,
+        "mean_distance_m": 0.944467,
+        "p95_distance_m": 0.973669,
+        "max_distance_m": 0.985807
+      },
+      "center_error_xy_m": [
+        0.943538,
+        0.00016
+      ]
+    }
+  ]
+}
