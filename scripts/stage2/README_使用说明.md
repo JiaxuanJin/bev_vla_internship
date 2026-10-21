@@ -9,7 +9,6 @@
 
 ```bash
 cd ~/projects/bev_vla
-unzip -o /mnt/c/Users/*/Downloads/step73_language_spatial_completion.zip -d scripts/stage2/
 source ~/projects/bevformer_author_clean_5080/.venv-author/bin/activate
 python3 scripts/stage2/run_step73_fill_gaps.py --self-test
 python3 -u scripts/stage2/run_step73_fill_gaps.py --live

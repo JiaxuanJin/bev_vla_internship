@@ -32,6 +32,8 @@
 - `scripts/`：数据检查、推理、评估与可视化脚本
 - `patches/`：第三方 BEVFormer 的本地兼容性修改补丁
 - `results/`：适合版本管理的小型结果文件
+- `stage2/`：Day 1 语言编码和语义投影模块
+- `tests/`：离线单元测试；依赖见 `requirements_stage2.txt`
 
 ## 阅读入口
 
@@ -57,9 +59,19 @@
 
 - [阶段二实测证据与图片](docs/stage2/16_阶段二实证汇总_2026-10-21.md)
 - [第二阶段复现命令](docs/stage2/17_第二阶段复现指引.md)
+- [提交前审查与本轮回归结果](docs/stage2/18_提交前审查与回归_2026-10-21.md)
+- [实验图片来源与阅读说明](docs/images/stage2/README.md)
 - [模块架构设计](docs/stage2/11_模块架构设计.md)
 - [单元测试报告](docs/stage2/12_单元测试报告.md)
 - [真实联合梯度验证](docs/stage2/14_真实联合梯度验证.md)
 - [2026-10-21 Logbook](docs/logbook_2026-10-21.md)
 
 > 模型权重、nuScenes 数据和完整推理产物未放入仓库；选定的 JSON 证据位于 `results/stage2_2026-10-21/`。
+
+已有兼容的 PyTorch、Transformers、NumPy 和 pytest 环境时，可在项目根目录执行离线 CPU 回归：
+
+```bash
+python scripts/stage2/run_regression.py
+```
+
+覆盖 Day 1 pytest、Step56 合成输入及 Step68～73 自检；结果写入 `outputs/stage2_regression/`，不重跑真实模型推理。当前 WSL 已验证的解释器为 `.venv-bevformer/bin/python`。真实模型验证的环境、数据和权重要求见复现指引。

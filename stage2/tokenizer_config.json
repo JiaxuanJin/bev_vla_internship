@@ -1,0 +1,15 @@
+{
+  "model_id": "distilbert/distilbert-base-uncased",
+  "revision": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+  "language": "English",
+  "lower_case": true,
+  "max_length": 64,
+  "padding": "longest",
+  "truncation": true,
+  "return_attention_mask": true,
+  "freeze_backbone": true,
+  "pooling": "attention_masked_mean",
+  "bev_feature_dim": 256,
+  "model_file": "model.safetensors",
+  "expected_model_sha256": "5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063"
+}

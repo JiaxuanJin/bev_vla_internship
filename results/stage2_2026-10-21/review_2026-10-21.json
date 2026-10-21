@@ -1,0 +1,629 @@
+{
+  "date_local": "2026-10-21",
+  "branch": "publish-oct20",
+  "base_commit": "1f68b4c8ffa8a34b7213b8399e100f15417430e2",
+  "approval_status": "USER_AUTHORIZED_COMMIT_AND_PUSH_AFTER_FINAL_CHECKS",
+  "candidate_paths": [
+    ".gitignore",
+    "README.md",
+    "docs/images/stage2/README.md",
+    "docs/images/stage2/stage2_architecture.svg",
+    "docs/stage2/11_模块架构设计.md",
+    "docs/stage2/12_单元测试报告.md",
+    "docs/stage2/13_阶段二任务对照.md",
+    "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+    "docs/stage2/17_第二阶段复现指引.md",
+    "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+    "docs/stage2_acceptance_2026-10-21.md",
+    "docs/stage2_architecture_CN.md",
+    "docs/stage2_step69_multitask_loss_CN.md",
+    "docs/stage2_unit_tests_CN.md",
+    "requirements_stage2.txt",
+    "results/stage2_2026-10-21/README.md",
+    "results/stage2_2026-10-21/regression_2026-10-21.json",
+    "results/stage2_2026-10-21/review_2026-10-21.json",
+    "scripts/README_使用说明.md",
+    "scripts/stage2/README.md",
+    "scripts/stage2/README_使用说明.md",
+    "scripts/stage2/run_regression.py",
+    "scripts/stage2/step67_README_CN.md",
+    "scripts/step55_protocol_audit.py",
+    "scripts/step56_stage2_setup.py",
+    "scripts/step57_stage2_setup.py",
+    "scripts/step58_stage2_setup.py",
+    "scripts/step59_memory_fix.py",
+    "scripts/step59_stage2_setup.py",
+    "scripts/step60_stage2_setup.py",
+    "scripts/step61_stage2_setup.py",
+    "scripts/step62_stage2_setup.py",
+    "scripts/step63_inspect_npz.py",
+    "scripts/step64_recover_report.py",
+    "scripts/step64_stage2_setup.py",
+    "scripts/step65_stage2_setup.py",
+    "scripts/step70_fix_inference_gt.py",
+    "scripts/step72_fix_numpy.py",
+    "scripts/step72_run_all.sh",
+    "scripts/step74_stage2_git_publisher.py",
+    "stage2/__init__.py",
+    "stage2/language_encoder.py",
+    "stage2/semantic_projection.py",
+    "stage2/tokenizer_config.json",
+    "tests/test_stage2_day1.py"
+  ],
+  "candidate_count": 45,
+  "unrelated_untracked_paths": [
+    "README_使用说明.txt",
+    "scripts/README.txt",
+    "scripts/README_使用说明.txt",
+    "scripts/check_lidar_camera_alignment.py",
+    "scripts/step48a_clean_5080_pytorch.sh",
+    "scripts/step48a_offline_torch_copy.sh",
+    "scripts/step48b_build_mmcv_author_5080.sh",
+    "scripts/step48b_fix_cpp17_and_build.sh",
+    "scripts/step48c_fix_torch_dispatch.py",
+    "scripts/step48d_fix_thc_and_build.sh"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 539,
+      "state": "modified"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4992,
+      "state": "modified"
+    },
+    {
+      "path": "docs/images/stage2/README.md",
+      "bytes": 2085,
+      "state": "untracked"
+    },
+    {
+      "path": "docs/images/stage2/stage2_architecture.svg",
+      "bytes": 3618,
+      "state": "modified"
+    },
+    {
+      "path": "docs/stage2/11_模块架构设计.md",
+      "bytes": 3473,
+      "state": "modified"
+    },
+    {
+      "path": "docs/stage2/12_单元测试报告.md",
+      "bytes": 2633,
+      "state": "modified"
+    },
+    {
+      "path": "docs/stage2/13_阶段二任务对照.md",
+      "bytes": 2564,
+      "state": "modified"
+    },
+    {
+      "path": "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+      "bytes": 4597,
+      "state": "modified"
+    },
+    {
+      "path": "docs/stage2/17_第二阶段复现指引.md",
+      "bytes": 3690,
+      "state": "modified"
+    },
+    {
+      "path": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+      "bytes": 10112,
+      "state": "untracked"
+    },
+    {
+      "path": "docs/stage2_acceptance_2026-10-21.md",
+      "bytes": 3327,
+      "state": "modified"
+    },
+    {
+      "path": "docs/stage2_architecture_CN.md",
+      "bytes": 3046,
+      "state": "modified"
+    },
+    {
+      "path": "docs/stage2_step69_multitask_loss_CN.md",
+      "bytes": 1936,
+      "state": "modified"
+    },
+    {
+      "path": "docs/stage2_unit_tests_CN.md",
+      "bytes": 1659,
+      "state": "modified"
+    },
+    {
+      "path": "requirements_stage2.txt",
+      "bytes": 177,
+      "state": "untracked"
+    },
+    {
+      "path": "results/stage2_2026-10-21/README.md",
+      "bytes": 2652,
+      "state": "modified"
+    },
+    {
+      "path": "results/stage2_2026-10-21/regression_2026-10-21.json",
+      "bytes": 8314,
+      "state": "untracked"
+    },
+    {
+      "path": "results/stage2_2026-10-21/review_2026-10-21.json",
+      "state": "untracked",
+      "note": "本清单自身，不记录递归变化的文件大小"
+    },
+    {
+      "path": "scripts/README_使用说明.md",
+      "bytes": 2238,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/stage2/README.md",
+      "bytes": 3441,
+      "state": "modified"
+    },
+    {
+      "path": "scripts/stage2/README_使用说明.md",
+      "bytes": 2359,
+      "state": "modified"
+    },
+    {
+      "path": "scripts/stage2/run_regression.py",
+      "bytes": 4333,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/stage2/step67_README_CN.md",
+      "bytes": 2819,
+      "state": "modified"
+    },
+    {
+      "path": "scripts/step55_protocol_audit.py",
+      "bytes": 11856,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/step56_stage2_setup.py",
+      "bytes": 27361,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/step57_stage2_setup.py",
+      "bytes": 8389,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/step58_stage2_setup.py",
+      "bytes": 18334,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/step59_memory_fix.py",
+      "bytes": 5577,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/step59_stage2_setup.py",
+      "bytes": 22965,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/step60_stage2_setup.py",
+      "bytes": 23355,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/step61_stage2_setup.py",
+      "bytes": 32265,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/step62_stage2_setup.py",
+      "bytes": 22539,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/step63_inspect_npz.py",
+      "bytes": 2541,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/step64_recover_report.py",
+      "bytes": 13377,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/step64_stage2_setup.py",
+      "bytes": 35261,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/step65_stage2_setup.py",
+      "bytes": 28881,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/step70_fix_inference_gt.py",
+      "bytes": 2938,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/step72_fix_numpy.py",
+      "bytes": 1916,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/step72_run_all.sh",
+      "bytes": 794,
+      "state": "untracked"
+    },
+    {
+      "path": "scripts/step74_stage2_git_publisher.py",
+      "bytes": 31790,
+      "state": "untracked"
+    },
+    {
+      "path": "stage2/__init__.py",
+      "bytes": 60,
+      "state": "untracked"
+    },
+    {
+      "path": "stage2/language_encoder.py",
+      "bytes": 4194,
+      "state": "untracked"
+    },
+    {
+      "path": "stage2/semantic_projection.py",
+      "bytes": 1170,
+      "state": "untracked"
+    },
+    {
+      "path": "stage2/tokenizer_config.json",
+      "bytes": 482,
+      "state": "untracked"
+    },
+    {
+      "path": "tests/test_stage2_day1.py",
+      "bytes": 2971,
+      "state": "untracked"
+    }
+  ],
+  "checks": {
+    "python_ast_files": 51,
+    "embedded_python_sources": [
+      "step56_stage2_setup.py:211",
+      "step57_stage2_setup.py:13",
+      "step58_stage2_setup.py:16",
+      "step58_stage2_setup.py:16",
+      "step59_stage2_setup.py:9",
+      "step60_stage2_setup.py:13",
+      "step61_stage2_setup.py:15",
+      "step61_stage2_setup.py:16",
+      "step62_stage2_setup.py:17",
+      "step64_stage2_setup.py:15",
+      "step65_stage2_setup.py:20"
+    ],
+    "shell_syntax": "PASS",
+    "local_markdown_links": 127,
+    "missing_local_links": [],
+    "historical_evidence_json": [
+      {
+        "source": "outputs/protocol_audit_2026-10-21/step55_protocol_snapshot.json",
+        "archive": "results/stage2_2026-10-21/step55_step55_protocol_snapshot.json",
+        "json_equal": true,
+        "sha256": "419744079176c1c53bc60a1c5b83aa5748d792249af20290179384d98cdf809a"
+      },
+      {
+        "source": "outputs/stage2_step58/step58_author_live_smoke.json",
+        "archive": "results/stage2_2026-10-21/step58_step58_author_live_smoke.json",
+        "json_equal": true,
+        "sha256": "6ace80ce3a4bc58175f3e5c02545e6f6620452a655d29b73d9078705eebde1e9"
+      },
+      {
+        "source": "outputs/stage2_step59/step59_training_summary.json",
+        "archive": "results/stage2_2026-10-21/step59_step59_training_summary.json",
+        "json_equal": true,
+        "sha256": "4663bdaf5dc130be9912d1b703904cd3c14347f0f9f82943bc19ad2197000a39"
+      },
+      {
+        "source": "outputs/stage2_step60/step60_ab_summary.json",
+        "archive": "results/stage2_2026-10-21/step60_step60_ab_summary.json",
+        "json_equal": true,
+        "sha256": "01160a1da451fb29148102fe6d59919bdc1e11b3973f11c24ecc72a8d7bf2272"
+      },
+      {
+        "source": "outputs/stage2_step61/step61_supervised_summary.json",
+        "archive": "results/stage2_2026-10-21/step61_step61_supervised_summary.json",
+        "json_equal": true,
+        "sha256": "e4a575b07e818328158457ebccef5109e4f012864bf57f6e2964a4fef1f933b6"
+      },
+      {
+        "source": "outputs/stage2_step62/step62_diagnostics.json",
+        "archive": "results/stage2_2026-10-21/step62_step62_diagnostics.json",
+        "json_equal": true,
+        "sha256": "4f697f0ada5c4e6273b44795ae46081b4e32695b406fcf96844063e618df9579"
+      },
+      {
+        "source": "outputs/stage2_step64/step64_recovered_summary.json",
+        "archive": "results/stage2_2026-10-21/step64_step64_recovered_summary.json",
+        "json_equal": true,
+        "sha256": "7f9449160b3022ddcfe0b6cd6ec0d93f72f46344ca695e96bf4e33fb9ec26e0f"
+      },
+      {
+        "source": "outputs/stage2_step65/step65_ab_summary.json",
+        "archive": "results/stage2_2026-10-21/step65_step65_ab_summary.json",
+        "json_equal": true,
+        "sha256": "fc107da778ae9907cb41bfb48f438939723bf37b048683a884b48f3d1d38b373"
+      },
+      {
+        "source": "outputs/stage2_step66/step66_ab_summary.json",
+        "archive": "results/stage2_2026-10-21/step66_step66_ab_summary.json",
+        "json_equal": true,
+        "sha256": "44ff62ca2c94d963d8a55d13405be85ac6ca1e5a019bd37a9e9de833cc38e269"
+      },
+      {
+        "source": "outputs/stage2_step67/step67_ab_summary.json",
+        "archive": "results/stage2_2026-10-21/step67_step67_ab_summary.json",
+        "json_equal": true,
+        "sha256": "bc85020e0863e8d5944e42ab1101799e4a2bf612414c6a5dadb68901a5f119d8"
+      },
+      {
+        "source": "outputs/stage2_step68/step68_acceptance.json",
+        "archive": "results/stage2_2026-10-21/step68_step68_acceptance.json",
+        "json_equal": true,
+        "sha256": "c61169b7f951a1dcb3f3b746e8f58c38f163897ba14df1e1faad222ecd61841c"
+      },
+      {
+        "source": "outputs/stage2_step69/step69_loss_contract.json",
+        "archive": "results/stage2_2026-10-21/step69_step69_loss_contract.json",
+        "json_equal": true,
+        "sha256": "106ab51242aa7d5bc263d2f2453f73af97f5dbf726046ec7bce0163fbd8b1f50"
+      },
+      {
+        "source": "outputs/stage2_step70/step70_audit.json",
+        "archive": "results/stage2_2026-10-21/step70_audit_step70_audit.json",
+        "json_equal": true,
+        "sha256": "9aad07c5cecbc07a58c35d13833f37c3a8a2cf25790a48fa52fbeddfb8e653c8"
+      },
+      {
+        "source": "outputs/stage2_step70/step70_joint_live.json",
+        "archive": "results/stage2_2026-10-21/step70_live_step70_joint_live.json",
+        "json_equal": true,
+        "sha256": "b2588eac77d44b2ff53f6d30a67cd1b7f24af633778b8049ec5420ced7a2f369"
+      },
+      {
+        "source": "outputs/stage2_step71/step71_acceptance.json",
+        "archive": "results/stage2_2026-10-21/step71_step71_acceptance.json",
+        "json_equal": true,
+        "sha256": "3251171339f8710a6b8fb4c4aba4fe42ef09cd1afc8b851b94170a063e13004e"
+      },
+      {
+        "source": "outputs/stage2_step72/step72_real_joint_gradient.json",
+        "archive": "results/stage2_2026-10-21/step72_step72_real_joint_gradient.json",
+        "json_equal": true,
+        "sha256": "98a0211dab1fe9571c0fafb14f689f45e22fcd81e6d1047123371c10f7ca668a"
+      },
+      {
+        "source": "outputs/stage2_step73/step73_gap_check.json",
+        "archive": "results/stage2_2026-10-21/step73_step73_gap_check.json",
+        "json_equal": true,
+        "sha256": "141245efddedc80af0cc4355f2468ae85b19ee4e6b192668a372415cd1e5062c"
+      }
+    ],
+    "original_experiment_images": [
+      {
+        "file": "docs/images/stage2/step62_boundary_overlay.png",
+        "source": "outputs/stage2_step62/step62_boundary_overlay.png",
+        "byte_equal": true,
+        "sha256": "ccb89abfa1b986060ce1ee0e7b199d8ed01b8f3b1e7047e71075f673862c43a8"
+      },
+      {
+        "file": "docs/images/stage2/step62_divider_overlay.png",
+        "source": "outputs/stage2_step62/step62_divider_overlay.png",
+        "byte_equal": true,
+        "sha256": "f3b8fc56bcd0ae67849795e27ac7a6288d457562976c18f1692f2b6de64bf9e9"
+      },
+      {
+        "file": "docs/images/stage2/step62_ped_crossing_overlay.png",
+        "source": "outputs/stage2_step62/step62_ped_crossing_overlay.png",
+        "byte_equal": true,
+        "sha256": "941c6df7971af5e8fa82a64765a754391aa3bb9dd655b9b3ca7d63890a12a832"
+      },
+      {
+        "file": "docs/images/stage2/step62_threshold_scan.png",
+        "source": "outputs/stage2_step62/step62_threshold_scan.png",
+        "byte_equal": true,
+        "sha256": "882b6f60185eeb3684d4d94da0237824b1566e0602317646a34f6b05a8f1801d"
+      }
+    ],
+    "ignore_checks": [
+      "data",
+      "models/distilbert-base-uncased/model.safetensors",
+      "outputs/stage2_step72/step72_real_joint_gradient.json",
+      ".pytest_cache/",
+      "stage2/__pycache__/",
+      "third_party/DriveLM/",
+      "scripts/stage2/run_step72_real_joint_gradient.py.bak",
+      "docs/backups/",
+      "example.pth",
+      "example.pt",
+      "example.ckpt"
+    ],
+    "candidate_size_format_symlink_secret_scan": "PASS",
+    "regression_source_hashes_match": true,
+    "regression_status": "PASS",
+    "regression_groups": 8
+  },
+  "limitations": [
+    "CPU regression only; historical real-model experiments were not rerun.",
+    "Legacy setup/patch/publish tools were inspected statically, not executed.",
+    "Historical Step68-71 JSON remains unchanged, including its then-current status.",
+    "No staging, commit or push performed."
+  ],
+  "approved_commit_message": "docs: finalize stage2 integration and validation records",
+  "approved_push_command": [
+    "git",
+    "push",
+    "origin",
+    "publish-oct20"
+  ],
+  "final_checks": {
+    "images": [
+      [
+        "README.md",
+        "docs/images/stage2/stage2_architecture.svg"
+      ],
+      [
+        "docs/logbook_2026-10-21.md",
+        "docs/images/stage2/stage2_architecture.svg"
+      ],
+      [
+        "docs/logbook_2026-10-21.md",
+        "docs/images/stage2/stage2_evidence.svg"
+      ],
+      [
+        "docs/logbook_2026-10-21.md",
+        "docs/images/stage2/step62_divider_overlay.png"
+      ],
+      [
+        "docs/logbook_2026-10-21.md",
+        "docs/images/stage2/step62_boundary_overlay.png"
+      ],
+      [
+        "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+        "docs/images/stage2/stage2_architecture.svg"
+      ],
+      [
+        "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+        "docs/images/stage2/stage2_evidence.svg"
+      ],
+      [
+        "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+        "docs/images/stage2/step62_divider_overlay.png"
+      ],
+      [
+        "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+        "docs/images/stage2/step62_ped_crossing_overlay.png"
+      ],
+      [
+        "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+        "docs/images/stage2/step62_boundary_overlay.png"
+      ],
+      [
+        "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+        "docs/images/stage2/step62_threshold_scan.png"
+      ]
+    ],
+    "technical_evidence": "PASS",
+    "formal_document_review": "PASS",
+    "other_files_unchanged": "PASS",
+    "cpu_regression": {
+      "status": "PASS",
+      "timestamp_utc": "2026-10-21T10:03:51.924231+00:00",
+      "tests": {
+        "day1_pytest": {
+          "command": [
+            "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_stage2_day1.py",
+            "-q",
+            "-p",
+            "no:cacheprovider"
+          ],
+          "status": "PASS",
+          "exit_code": 0,
+          "output_tail": ".....                                                                    [100%]\n5 passed in 2.01s\n",
+          "elapsed_seconds": 2.927
+        },
+        "step56_synthetic": {
+          "command": [
+            "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+            "-m",
+            "scripts.stage2.run_step56_smoke",
+            "--text-mode",
+            "synthetic",
+            "--feature-source",
+            "synthetic",
+            "--output-dir",
+            "/tmp/step56_synthetic"
+          ],
+          "status": "PASS",
+          "exit_code": 0,
+          "output_tail": "===== Step56 语言引导 BEV 模块测试 =====\nDevice: cpu | BEV: synthetic_tensor | Text: synthetic\nBEV: (1, 256, 150, 150) | Attention: (1, 1, 150, 150)\n增强差值均值：0.00398298\nBaseline 回退：PASS；张量检查：PASS；梯度流：PASS\n报告：/tmp/step56_synthetic/step56_smoke_synthetic.json\n注意：未进行真实训练或分割 mIoU 评估。\n",
+          "elapsed_seconds": 1.025
+        },
+        "step68_self_test": {
+          "command": [
+            "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+            "scripts/stage2/run_step68_acceptance.py",
+            "--self-test"
+          ],
+          "status": "PASS",
+          "exit_code": 0,
+          "output_tail": "[Step68] 多任务 Loss 接口与梯度自检 PASS（合成数据）\n[Step68] AP、四类 mIoU 单元测试 PASS\n",
+          "elapsed_seconds": 0.79
+        },
+        "step69_self_test": {
+          "command": [
+            "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+            "scripts/stage2/run_step69_loss_contract.py",
+            "--self-test"
+          ],
+          "status": "PASS",
+          "exit_code": 0,
+          "output_tail": "[Step69] 6 项单元测试 PASS\n",
+          "elapsed_seconds": 0.805
+        },
+        "step70_self_test": {
+          "command": [
+            "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+            "scripts/stage2/run_step70_joint_integration.py",
+            "--self-test"
+          ],
+          "status": "PASS",
+          "exit_code": 0,
+          "output_tail": "[Step70] CPU 自检 PASS：150x150 共享 BEV 变换、开关回退、有限值\n",
+          "elapsed_seconds": 0.882
+        },
+        "step71_self_test": {
+          "command": [
+            "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+            "scripts/stage2/run_step71_stage2_review.py",
+            "--self-test"
+          ],
+          "status": "PASS",
+          "exit_code": 0,
+          "output_tail": "[Step71] 报告真实性/张量校验/错误拒绝单元测试 PASS\n",
+          "elapsed_seconds": 0.021
+        },
+        "step72_self_test": {
+          "command": [
+            "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+            "scripts/stage2/run_step72_real_joint_gradient.py",
+            "--self-test"
+          ],
+          "status": "PASS",
+          "exit_code": 0,
+          "output_tail": "[Step72] CPU 自检 PASS：三分支梯度、自检过滤器（非真实训练）\n",
+          "elapsed_seconds": 0.791
+        },
+        "step73_self_test": {
+          "command": [
+            "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+            "scripts/stage2/run_step73_fill_gaps.py",
+            "--self-test"
+          ],
+          "status": "PASS",
+          "exit_code": 0,
+          "output_tail": "[Step73] 自检 PASS：多目标、否定、方向、歧义拒绝、米制坐标栅格\n",
+          "elapsed_seconds": 0.062
+        }
+      }
+    },
+    "candidate_count": 45,
+    "merge_or_force_push_permitted": false
+  }
+}

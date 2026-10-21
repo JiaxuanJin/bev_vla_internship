@@ -20,11 +20,10 @@
 
 ## 安装、检查与一次运行
 
-在 Windows 下载 ZIP 文件到 Downloads 后，在 VS Code WSL 终端：
+仓库已包含脚本，在 VS Code WSL 终端从项目根目录运行：
 
 ```bash
 cd ~/projects/bev_vla
-unzip -o /mnt/c/Users/*/Downloads/step67_three_in_one.zip -d scripts/stage2/
 source ~/projects/bevformer_author_clean_5080/.venv-author/bin/activate
 python3 scripts/stage2/run_step67_three_in_one.py --self-test
 python3 -u scripts/stage2/run_step67_three_in_one.py --steps 64 --calibration-frames 8 --fresh-val-frames 12

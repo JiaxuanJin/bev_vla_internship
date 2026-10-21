@@ -1,0 +1,5 @@
+# 阶段二新增依赖：沿用已有 torch + CUDA 版本，不重装 torch、MMCV、BEVFormer。
+transformers==4.44.2
+huggingface-hub==0.25.2
+safetensors==0.4.5
+pytest>=8,<10
