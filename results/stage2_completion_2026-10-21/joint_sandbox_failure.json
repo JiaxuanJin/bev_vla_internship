@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-10-21T10:40:46.023950+00:00",
+  "mode": "joint",
+  "seed": 20261021,
+  "python": "/home/jjx2003520/projects/bevformer_author_clean_5080/.venv-author/bin/python",
+  "torch": "2.8.0+cu128",
+  "cuda_available": false,
+  "status": "FAIL",
+  "error_type": "RuntimeError",
+  "error": "CUDA_UNAVAILABLE：真实联合 BEVFormer 依赖 CUDA/MMCV 自定义算子",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/jjx2003520/projects/bev_vla/scripts/stage2/run_stage2.py\", line 121, in main\n    record.update(run_joint(args))\n  File \"/home/jjx2003520/projects/bev_vla/scripts/stage2/joint_runtime.py\", line 19, in run_joint\n    raise RuntimeError(\"CUDA_UNAVAILABLE：真实联合 BEVFormer 依赖 CUDA/MMCV 自定义算子\")\nRuntimeError: CUDA_UNAVAILABLE：真实联合 BEVFormer 依赖 CUDA/MMCV 自定义算子\n",
+  "semantic_localization": "NOT_VERIFIED",
+  "accuracy_improvement": "NOT_VERIFIED"
+}

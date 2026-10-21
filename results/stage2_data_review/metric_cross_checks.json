@@ -1,0 +1,952 @@
+{
+  "status": "PASS",
+  "checked_historical_fields": 135,
+  "checks": [
+    {
+      "experiment": 65,
+      "split": "development_6",
+      "branch": "original",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 65,
+      "split": "development_6",
+      "branch": "bias_only",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 65,
+      "split": "development_6",
+      "branch": "language_adapter",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 65,
+      "split": "development_6",
+      "branch": "text_shuffled",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 65,
+      "split": "fresh_tokens",
+      "branch": "original",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 65,
+      "split": "fresh_tokens",
+      "branch": "bias_only",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 65,
+      "split": "fresh_tokens",
+      "branch": "language_adapter",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 65,
+      "split": "fresh_tokens",
+      "branch": "text_shuffled",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "development_6",
+      "branch": "original",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "development_6",
+      "branch": "original",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "development_6",
+      "branch": "bias_step65",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "development_6",
+      "branch": "bias_step65",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "development_6",
+      "branch": "adapter_step65",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "development_6",
+      "branch": "adapter_step65",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "development_6",
+      "branch": "step65_text_shuffled",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "development_6",
+      "branch": "step65_text_shuffled",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "development_6",
+      "branch": "step66_guard_only",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "development_6",
+      "branch": "step66_guard_only",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "development_6",
+      "branch": "adapter_step66",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "development_6",
+      "branch": "adapter_step66",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "development_6",
+      "branch": "step66_text_shuffled",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "development_6",
+      "branch": "step66_text_shuffled",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "step65_seen_12",
+      "branch": "original",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "step65_seen_12",
+      "branch": "original",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "step65_seen_12",
+      "branch": "bias_step65",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "step65_seen_12",
+      "branch": "bias_step65",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "step65_seen_12",
+      "branch": "adapter_step65",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "step65_seen_12",
+      "branch": "adapter_step65",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "step65_seen_12",
+      "branch": "step65_text_shuffled",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "step65_seen_12",
+      "branch": "step65_text_shuffled",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "step65_seen_12",
+      "branch": "step66_guard_only",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "step65_seen_12",
+      "branch": "step66_guard_only",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "step65_seen_12",
+      "branch": "adapter_step66",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "step65_seen_12",
+      "branch": "adapter_step66",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "step65_seen_12",
+      "branch": "step66_text_shuffled",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "step65_seen_12",
+      "branch": "step66_text_shuffled",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "reserved_12",
+      "branch": "original",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "reserved_12",
+      "branch": "original",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "reserved_12",
+      "branch": "bias_step65",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "reserved_12",
+      "branch": "bias_step65",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "reserved_12",
+      "branch": "adapter_step65",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "reserved_12",
+      "branch": "adapter_step65",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "reserved_12",
+      "branch": "step65_text_shuffled",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "reserved_12",
+      "branch": "step65_text_shuffled",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "reserved_12",
+      "branch": "step66_guard_only",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "reserved_12",
+      "branch": "step66_guard_only",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "reserved_12",
+      "branch": "adapter_step66",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "reserved_12",
+      "branch": "adapter_step66",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "reserved_12",
+      "branch": "step66_text_shuffled",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 66,
+      "split": "reserved_12",
+      "branch": "step66_text_shuffled",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "development_6",
+      "branch": "original",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "development_6",
+      "branch": "original",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "development_6",
+      "branch": "bias_step65",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "development_6",
+      "branch": "bias_step65",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "development_6",
+      "branch": "adapter_step65",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "development_6",
+      "branch": "adapter_step65",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "development_6",
+      "branch": "adapter_step66",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "development_6",
+      "branch": "adapter_step66",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "development_6",
+      "branch": "adapter_step67_raw",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "development_6",
+      "branch": "adapter_step67_raw",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "development_6",
+      "branch": "step67_locked",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "development_6",
+      "branch": "step67_locked",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "development_6",
+      "branch": "step67_locked_text_shuffled",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "development_6",
+      "branch": "step67_locked_text_shuffled",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "development_6",
+      "branch": "step67_locked_text_constant",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "development_6",
+      "branch": "step67_locked_text_constant",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step65_seen_12",
+      "branch": "original",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step65_seen_12",
+      "branch": "original",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step65_seen_12",
+      "branch": "bias_step65",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step65_seen_12",
+      "branch": "bias_step65",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step65_seen_12",
+      "branch": "adapter_step65",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step65_seen_12",
+      "branch": "adapter_step65",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step65_seen_12",
+      "branch": "adapter_step66",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step65_seen_12",
+      "branch": "adapter_step66",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step65_seen_12",
+      "branch": "adapter_step67_raw",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step65_seen_12",
+      "branch": "adapter_step67_raw",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step65_seen_12",
+      "branch": "step67_locked",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step65_seen_12",
+      "branch": "step67_locked",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step65_seen_12",
+      "branch": "step67_locked_text_shuffled",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step65_seen_12",
+      "branch": "step67_locked_text_shuffled",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step65_seen_12",
+      "branch": "step67_locked_text_constant",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step65_seen_12",
+      "branch": "step67_locked_text_constant",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step66_seen_12",
+      "branch": "original",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step66_seen_12",
+      "branch": "original",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step66_seen_12",
+      "branch": "bias_step65",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step66_seen_12",
+      "branch": "bias_step65",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step66_seen_12",
+      "branch": "adapter_step65",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step66_seen_12",
+      "branch": "adapter_step65",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step66_seen_12",
+      "branch": "adapter_step66",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step66_seen_12",
+      "branch": "adapter_step66",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step66_seen_12",
+      "branch": "adapter_step67_raw",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step66_seen_12",
+      "branch": "adapter_step67_raw",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step66_seen_12",
+      "branch": "step67_locked",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step66_seen_12",
+      "branch": "step67_locked",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step66_seen_12",
+      "branch": "step67_locked_text_shuffled",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step66_seen_12",
+      "branch": "step67_locked_text_shuffled",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step66_seen_12",
+      "branch": "step67_locked_text_constant",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "step66_seen_12",
+      "branch": "step67_locked_text_constant",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "new_mini_val_12",
+      "branch": "original",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "new_mini_val_12",
+      "branch": "original",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "new_mini_val_12",
+      "branch": "bias_step65",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "new_mini_val_12",
+      "branch": "bias_step65",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "new_mini_val_12",
+      "branch": "adapter_step65",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "new_mini_val_12",
+      "branch": "adapter_step65",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "new_mini_val_12",
+      "branch": "adapter_step66",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "new_mini_val_12",
+      "branch": "adapter_step66",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "new_mini_val_12",
+      "branch": "adapter_step67_raw",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "new_mini_val_12",
+      "branch": "adapter_step67_raw",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "new_mini_val_12",
+      "branch": "step67_locked",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "new_mini_val_12",
+      "branch": "step67_locked",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "new_mini_val_12",
+      "branch": "step67_locked_text_shuffled",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "new_mini_val_12",
+      "branch": "step67_locked_text_shuffled",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "new_mini_val_12",
+      "branch": "step67_locked_text_constant",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 67,
+      "split": "new_mini_val_12",
+      "branch": "step67_locked_text_constant",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": "61/62",
+      "split": "development_6",
+      "branch": "original",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": "61/62",
+      "split": "development_6",
+      "branch": "original",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": "61/62",
+      "split": "development_6",
+      "branch": "original",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": "61/62",
+      "split": "development_6",
+      "branch": "before_random",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": "61/62",
+      "split": "development_6",
+      "branch": "before_random",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": "61/62",
+      "split": "development_6",
+      "branch": "before_random",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": "61/62",
+      "split": "development_6",
+      "branch": "after_trained",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": "61/62",
+      "split": "development_6",
+      "branch": "after_trained",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": "61/62",
+      "split": "development_6",
+      "branch": "after_trained",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 68,
+      "split": "text_intervention_6",
+      "branch": "original",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 68,
+      "split": "text_intervention_6",
+      "branch": "original",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 68,
+      "split": "text_intervention_6",
+      "branch": "normal",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 68,
+      "split": "text_intervention_6",
+      "branch": "normal",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 68,
+      "split": "text_intervention_6",
+      "branch": "shuffled",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 68,
+      "split": "text_intervention_6",
+      "branch": "shuffled",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 68,
+      "split": "text_intervention_6",
+      "branch": "constant",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": 68,
+      "split": "text_intervention_6",
+      "branch": "constant",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": "historical_81",
+      "split": "bev_seg",
+      "branch": "original",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": "historical_81",
+      "split": "bev_seg",
+      "branch": "original",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": "historical_81",
+      "split": "bev_seg_no_temporal",
+      "branch": "original",
+      "key": "foreground_miou",
+      "max_abs_error": 0.0
+    },
+    {
+      "experiment": "historical_81",
+      "split": "bev_seg_no_temporal",
+      "branch": "original",
+      "key": "four_class_miou",
+      "max_abs_error": 0.0
+    }
+  ],
+  "note": "Recomputed from original integer confusion matrices; per-class IoU also asserted. Does not certify dataset/coordinate protocol."
+}

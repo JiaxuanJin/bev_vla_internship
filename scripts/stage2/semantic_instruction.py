@@ -76,6 +76,23 @@ def parse_instruction(text: str) -> Instruction:
     for match in tokens:
         if all(match[1] <= old[0] or match[0] >= old[1] for old in nonoverlap):
             nonoverlap.append(match)
+    # 词典外对象和没有明确作用对象的否定必须拒绝，不能只找到一个已知词就接受。
+    for negator in NEGATORS.finditer(sentence):
+        following = [item for item in nonoverlap if item[0] >= negator.end()]
+        if not following or not re.fullmatch(
+            r"\s*(?:(?:the|any|all|those|these)\s+)?", sentence[negator.end():following[0][0]]
+        ):
+            raise ValueError("否定词必须明确紧邻受支持的地图目标")
+        first = following[0]
+        if len(following) > 1 and re.fullmatch(r"\s+(?:and|or)\s+(?:the\s+)?", sentence[first[1]:following[1][0]]):
+            raise ValueError("并列否定作用范围不明确，请分别给出指令")
+    remaining = sentence
+    for start, end, _category in sorted(nonoverlap, reverse=True):
+        remaining = remaining[:start] + " " * (end - start) + remaining[end:]
+    remaining = SUPPORTED_PREFIX.sub(" ", remaining)
+    remaining = re.sub(r"\bbut\b", " ", remaining)
+    if re.search(r"[\w]", remaining):
+        raise ValueError("包含受约束词表以外的对象或表达")
     positives: list[str] = []
     negatives: list[str] = []
     for start, _end, category in sorted(nonoverlap):

@@ -28,8 +28,9 @@ def main() -> int:
     output = args.output.resolve()
     output.parent.mkdir(parents=True, exist_ok=True)
     commands = {
-        "day1_pytest": [
-            "-m", "pytest", "tests/test_stage2_day1.py", "-q", "-p", "no:cacheprovider",
+        "stage2_pytest": [
+            "-m", "pytest", "tests/",
+            "-q", "-p", "no:cacheprovider",
         ],
         "step56_synthetic": [
             "-m", "scripts.stage2.run_step56_smoke",

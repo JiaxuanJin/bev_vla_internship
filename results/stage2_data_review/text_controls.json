@@ -1,0 +1,90 @@
+{
+  "created_utc": "2026-10-21T11:46:15.501801+00:00",
+  "command": "outputs/stage2_data_review/collect_text_controls.py",
+  "python": "/home/jjx2003520/projects/bevformer_author_clean_5080/.venv-author/bin/python",
+  "torch": "2.8.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "dataset": "nuScenes Mini Val",
+  "index": 14,
+  "frames": 1,
+  "token": "f753d3f87e5b40af87ff2cbf7c8e7082",
+  "temporal_mode": "OFF",
+  "source_bev": "/home/jjx2003520/projects/bev_vla/outputs/stage2_data_review/predictions/seg_val_014.npz",
+  "source_bev_sha256": "b97c057d82cfe690f6158d53ba8c83bd1f9d60120fcc0a7a3dbb2103245ebf13",
+  "checkpoint_sha256": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+  "original_encoder_cache_max_abs_error": 9.5367431640625e-07,
+  "sentences": {
+    "normal": [
+      "Focus on the road dividers and lane dividers.",
+      "Focus on the pedestrian crossings.",
+      "Focus on the road boundaries."
+    ],
+    "word_reversed": [
+      "dividers lane and dividers road the on Focus.",
+      "crossings pedestrian the on Focus.",
+      "boundaries road the on Focus."
+    ],
+    "constant_sentence": [
+      "Focus on the road.",
+      "Focus on the road.",
+      "Focus on the road."
+    ]
+  },
+  "trained_adapters": true,
+  "results": {
+    "65": {
+      "normal": {
+        "logit_mae_vs_normal": 0.0,
+        "argmax_changed_fraction": 0.0
+      },
+      "word_reversed": {
+        "logit_mae_vs_normal": 0.027194563299417496,
+        "argmax_changed_fraction": 0.006262499839067459
+      },
+      "constant_sentence": {
+        "logit_mae_vs_normal": 0.04239436611533165,
+        "argmax_changed_fraction": 0.01347499992698431
+      }
+    },
+    "66": {
+      "normal": {
+        "logit_mae_vs_normal": 0.0,
+        "argmax_changed_fraction": 0.0
+      },
+      "word_reversed": {
+        "logit_mae_vs_normal": 0.004327633883804083,
+        "argmax_changed_fraction": 0.001487499917857349
+      },
+      "constant_sentence": {
+        "logit_mae_vs_normal": 0.027619116008281708,
+        "argmax_changed_fraction": 0.007274999748915434
+      }
+    },
+    "67": {
+      "normal": {
+        "logit_mae_vs_normal": 0.0,
+        "argmax_changed_fraction": 0.0
+      },
+      "word_reversed": {
+        "logit_mae_vs_normal": 0.01405111700296402,
+        "argmax_changed_fraction": 0.003124999813735485
+      },
+      "constant_sentence": {
+        "logit_mae_vs_normal": 0.014265216886997223,
+        "argmax_changed_fraction": 0.003874999936670065
+      }
+    }
+  },
+  "weights_sha256": {
+    "/home/jjx2003520/projects/bev_vla/models/distilbert-base-uncased/model.safetensors": "5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_step65/adapter_step65.pt": "e6018fb2d07aa5be3c0fbd0e7a85a0ac26ec1d7d45005506b44b53230140741c",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_step66/adapter_step66.pt": "cad5b174af8e7af41d61841d39410328b7441034da95d56f0a9faf54c2773c51",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_step67/adapter_step67.pt": "1fd6edc5306852415d90f575d0b76520045ca7172638ba1a681311c118fce31d"
+  },
+  "weights_unchanged": true,
+  "optimizer_step_executed": false,
+  "backbone_rerun": false,
+  "output": "predictions/text_controls_val_014.npz",
+  "output_sha256": "3e9d5e557e4032b36f1eebbb6e3d0fe83d66965cee0cfdc89b362b209e80aff1",
+  "interpretation": "Actual word-order/constant-sentence controls are separate from historical class permutation/mean-embedding controls. Single-frame numerical sensitivity is not correct semantic localization."
+}

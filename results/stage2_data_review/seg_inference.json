@@ -1,0 +1,1271 @@
+{
+  "created_utc": "2026-10-21T11:38:48.634403+00:00",
+  "command": "outputs/stage2_data_review/collect_predictions.py --branch seg",
+  "python": "/home/jjx2003520/projects/bevformer_author_clean_5080/.venv-author/bin/python",
+  "python_version": "3.10.12",
+  "torch": "2.8.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "dataset": "nuScenes v1.0-mini Mini Val",
+  "temporal_mode": "OFF, independent frames; prev_bev reset every pass",
+  "checkpoint": "/mnt/g/nus/bevformer_small_seg.pth",
+  "checkpoint_sha256": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+  "config": "/home/jjx2003520/projects/bevformer_author_clean_5080/BEVFormer-seg/projects/configs/bevformer/bevformer_small_seg.py",
+  "config_sha256": "34b53e295608bf682a42545cf3708a8dc2f3486817963c62c89d6415294d1066",
+  "ann_file": "data/nuscenes/nuscenes_infos_temporal_val.pkl",
+  "ann_file_sha256": "29b1a75f83b554336cd0bf0d841ccb2a0e6b973116999b4d5d0345bf5d1ca7e2",
+  "seed": 20261021,
+  "indices": [
+    14,
+    21,
+    39,
+    77
+  ],
+  "selection": "Fixed before inference: Step62 existing per-class diagnostic tokens (21,39,77) plus first Step68 intervention index (14); no selection by predictions",
+  "weight_sha256_before": {
+    "/mnt/g/nus/bevformer_small_seg.pth": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+    "/home/jjx2003520/projects/bev_vla/models/distilbert-base-uncased/model.safetensors": "5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_step61/class_prompts.npy": "a482cb59064fe5d3621c9ac57c9063871f8b7b978b0f15bc0032abc34645acb2",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_step61/fusion_step61.pt": "4e770f7833e5715b3f9756d1bffedda00a42ed2379d40992845f3a11c418caa0",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_step65/adapter_step65.pt": "e6018fb2d07aa5be3c0fbd0e7a85a0ac26ec1d7d45005506b44b53230140741c",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_step66/adapter_step66.pt": "cad5b174af8e7af41d61841d39410328b7441034da95d56f0a9faf54c2773c51",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_step67/adapter_step67.pt": "1fd6edc5306852415d90f575d0b76520045ca7172638ba1a681311c118fce31d"
+  },
+  "optimizer_step_executed": false,
+  "training_executed": false,
+  "frames": [
+    {
+      "index": 14,
+      "token": "f753d3f87e5b40af87ff2cbf7c8e7082",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "file": "predictions/seg_val_014.npz",
+      "sha256": "b97c057d82cfe690f6158d53ba8c83bd1f9d60120fcc0a7a3dbb2103245ebf13",
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151610412404.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_RIGHT__1533151610420482.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_LEFT__1533151610406537.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-01-15-16-36-0400__CAM_BACK__1533151610437558.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-01-15-16-36-0400__CAM_BACK_LEFT__1533151610447422.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_BACK_RIGHT__1533151610428113.jpg"
+      },
+      "gt_tensor_sha256": "7dac9c6f0efb99c453776ade7d607a52841842c67f8859894ef0af15b60a4590",
+      "gt_unchanged": true,
+      "bypass_replay_max_abs": 0.0,
+      "confusions": {
+        "original": [
+          [
+            53568,
+            2677,
+            5687,
+            6098
+          ],
+          [
+            2476,
+            0,
+            39,
+            940
+          ],
+          [
+            1314,
+            54,
+            353,
+            495
+          ],
+          [
+            4945,
+            0,
+            408,
+            946
+          ]
+        ],
+        "step65_normal": [
+          [
+            33090,
+            5913,
+            8212,
+            20815
+          ],
+          [
+            2151,
+            152,
+            158,
+            994
+          ],
+          [
+            125,
+            112,
+            528,
+            1451
+          ],
+          [
+            2181,
+            4,
+            514,
+            3600
+          ]
+        ],
+        "step65_shuffled": [
+          [
+            33558,
+            5521,
+            8644,
+            20307
+          ],
+          [
+            2152,
+            127,
+            182,
+            994
+          ],
+          [
+            140,
+            62,
+            586,
+            1428
+          ],
+          [
+            2260,
+            3,
+            534,
+            3502
+          ]
+        ],
+        "step65_constant": [
+          [
+            32973,
+            5642,
+            8398,
+            21017
+          ],
+          [
+            2160,
+            131,
+            170,
+            994
+          ],
+          [
+            117,
+            80,
+            564,
+            1455
+          ],
+          [
+            2156,
+            2,
+            517,
+            3624
+          ]
+        ],
+        "step66_normal": [
+          [
+            65670,
+            842,
+            428,
+            1090
+          ],
+          [
+            2721,
+            0,
+            0,
+            734
+          ],
+          [
+            1885,
+            0,
+            14,
+            317
+          ],
+          [
+            6114,
+            0,
+            85,
+            100
+          ]
+        ],
+        "step66_shuffled": [
+          [
+            65624,
+            742,
+            181,
+            1483
+          ],
+          [
+            2663,
+            0,
+            0,
+            792
+          ],
+          [
+            1854,
+            0,
+            0,
+            362
+          ],
+          [
+            6101,
+            0,
+            52,
+            146
+          ]
+        ],
+        "step66_constant": [
+          [
+            65677,
+            842,
+            185,
+            1326
+          ],
+          [
+            2673,
+            0,
+            0,
+            782
+          ],
+          [
+            1880,
+            0,
+            0,
+            336
+          ],
+          [
+            6126,
+            0,
+            55,
+            118
+          ]
+        ],
+        "step67_normal": [
+          [
+            42503,
+            3841,
+            7718,
+            13968
+          ],
+          [
+            2332,
+            19,
+            119,
+            985
+          ],
+          [
+            483,
+            59,
+            527,
+            1147
+          ],
+          [
+            3846,
+            0,
+            508,
+            1945
+          ]
+        ],
+        "step67_shuffled": [
+          [
+            42659,
+            3857,
+            7783,
+            13731
+          ],
+          [
+            2328,
+            16,
+            129,
+            982
+          ],
+          [
+            499,
+            58,
+            529,
+            1130
+          ],
+          [
+            3881,
+            0,
+            508,
+            1910
+          ]
+        ],
+        "step67_constant": [
+          [
+            42589,
+            3839,
+            7780,
+            13822
+          ],
+          [
+            2330,
+            17,
+            126,
+            982
+          ],
+          [
+            498,
+            58,
+            529,
+            1131
+          ],
+          [
+            3869,
+            0,
+            511,
+            1919
+          ]
+        ],
+        "step67_locked": [
+          [
+            53568,
+            2677,
+            5687,
+            6098
+          ],
+          [
+            2476,
+            0,
+            39,
+            940
+          ],
+          [
+            1314,
+            54,
+            353,
+            495
+          ],
+          [
+            4945,
+            0,
+            408,
+            946
+          ]
+        ]
+      }
+    },
+    {
+      "index": 21,
+      "token": "d0ecf474e0e64950aa265cd44b9c9d75",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "file": "predictions/seg_val_021.npz",
+      "sha256": "c083e9f56da1cad78b0daba5ae64b32731ba0eb2a52fec6426fee54e77d04af7",
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151613912404.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_RIGHT__1533151613920482.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_LEFT__1533151613904799.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-01-15-16-36-0400__CAM_BACK__1533151613937558.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-01-15-16-36-0400__CAM_BACK_LEFT__1533151613947405.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_BACK_RIGHT__1533151613928113.jpg"
+      },
+      "gt_tensor_sha256": "f376fca0b6610d19a47e98961c6e8c57471c466dd5e6efdefac333a2ccc6b417",
+      "gt_unchanged": true,
+      "bypass_replay_max_abs": 0.0,
+      "confusions": {
+        "original": [
+          [
+            54873,
+            2825,
+            3514,
+            6236
+          ],
+          [
+            3361,
+            0,
+            14,
+            959
+          ],
+          [
+            1119,
+            2,
+            221,
+            426
+          ],
+          [
+            5270,
+            0,
+            23,
+            1157
+          ]
+        ],
+        "step65_normal": [
+          [
+            34346,
+            6172,
+            5370,
+            21560
+          ],
+          [
+            2853,
+            198,
+            308,
+            975
+          ],
+          [
+            476,
+            34,
+            338,
+            920
+          ],
+          [
+            2496,
+            5,
+            60,
+            3889
+          ]
+        ],
+        "step65_shuffled": [
+          [
+            34789,
+            5441,
+            5758,
+            21460
+          ],
+          [
+            2870,
+            157,
+            338,
+            969
+          ],
+          [
+            492,
+            13,
+            365,
+            898
+          ],
+          [
+            2530,
+            0,
+            71,
+            3849
+          ]
+        ],
+        "step65_constant": [
+          [
+            34399,
+            5457,
+            5553,
+            22039
+          ],
+          [
+            2868,
+            170,
+            320,
+            976
+          ],
+          [
+            460,
+            26,
+            347,
+            935
+          ],
+          [
+            2452,
+            0,
+            64,
+            3934
+          ]
+        ],
+        "step66_normal": [
+          [
+            64942,
+            1406,
+            267,
+            833
+          ],
+          [
+            3508,
+            0,
+            0,
+            826
+          ],
+          [
+            1676,
+            0,
+            0,
+            92
+          ],
+          [
+            6450,
+            0,
+            0,
+            0
+          ]
+        ],
+        "step66_shuffled": [
+          [
+            64605,
+            1318,
+            190,
+            1335
+          ],
+          [
+            3422,
+            0,
+            0,
+            912
+          ],
+          [
+            1553,
+            0,
+            0,
+            215
+          ],
+          [
+            6388,
+            0,
+            0,
+            62
+          ]
+        ],
+        "step66_constant": [
+          [
+            64868,
+            1419,
+            169,
+            992
+          ],
+          [
+            3461,
+            0,
+            0,
+            873
+          ],
+          [
+            1599,
+            0,
+            0,
+            169
+          ],
+          [
+            6421,
+            0,
+            0,
+            29
+          ]
+        ],
+        "step67_normal": [
+          [
+            44979,
+            3872,
+            4578,
+            14019
+          ],
+          [
+            2971,
+            129,
+            275,
+            959
+          ],
+          [
+            630,
+            13,
+            359,
+            766
+          ],
+          [
+            3599,
+            0,
+            52,
+            2799
+          ]
+        ],
+        "step67_shuffled": [
+          [
+            45262,
+            3876,
+            4620,
+            13690
+          ],
+          [
+            2979,
+            107,
+            289,
+            959
+          ],
+          [
+            640,
+            18,
+            359,
+            751
+          ],
+          [
+            3629,
+            0,
+            54,
+            2767
+          ]
+        ],
+        "step67_constant": [
+          [
+            45090,
+            3815,
+            4624,
+            13919
+          ],
+          [
+            2982,
+            110,
+            283,
+            959
+          ],
+          [
+            630,
+            12,
+            361,
+            765
+          ],
+          [
+            3614,
+            0,
+            54,
+            2782
+          ]
+        ],
+        "step67_locked": [
+          [
+            54873,
+            2825,
+            3514,
+            6236
+          ],
+          [
+            3361,
+            0,
+            14,
+            959
+          ],
+          [
+            1119,
+            2,
+            221,
+            426
+          ],
+          [
+            5270,
+            0,
+            23,
+            1157
+          ]
+        ]
+      }
+    },
+    {
+      "index": 39,
+      "token": "281b92269fd648d4b52d06ac06ca6d65",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "file": "predictions/seg_val_039.npz",
+      "sha256": "51119656cfd2e4e87ec311407effe3d7e7b90d0e80d9169743ccee79b1d1f050",
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151622912404.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_RIGHT__1533151622920482.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_LEFT__1533151622904799.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-01-15-16-36-0400__CAM_BACK__1533151622937558.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-01-15-16-36-0400__CAM_BACK_LEFT__1533151622947405.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_BACK_RIGHT__1533151622928113.jpg"
+      },
+      "gt_tensor_sha256": "d16c603cf563d06c909978c2446830b5de24fba0ac0d2a1d10cf6cf682ee5df7",
+      "gt_unchanged": true,
+      "bypass_replay_max_abs": 0.0,
+      "confusions": {
+        "original": [
+          [
+            50656,
+            8827,
+            0,
+            6202
+          ],
+          [
+            5650,
+            702,
+            0,
+            1430
+          ],
+          [
+            369,
+            190,
+            0,
+            36
+          ],
+          [
+            3895,
+            0,
+            0,
+            2043
+          ]
+        ],
+        "step65_normal": [
+          [
+            39789,
+            11286,
+            0,
+            14610
+          ],
+          [
+            4575,
+            1005,
+            0,
+            2202
+          ],
+          [
+            320,
+            222,
+            0,
+            53
+          ],
+          [
+            2278,
+            0,
+            0,
+            3660
+          ]
+        ],
+        "step65_shuffled": [
+          [
+            40141,
+            10916,
+            0,
+            14628
+          ],
+          [
+            4611,
+            991,
+            0,
+            2180
+          ],
+          [
+            325,
+            217,
+            0,
+            53
+          ],
+          [
+            2296,
+            0,
+            0,
+            3642
+          ]
+        ],
+        "step65_constant": [
+          [
+            39754,
+            10938,
+            0,
+            14993
+          ],
+          [
+            4582,
+            991,
+            0,
+            2209
+          ],
+          [
+            325,
+            217,
+            0,
+            53
+          ],
+          [
+            2263,
+            0,
+            0,
+            3675
+          ]
+        ],
+        "step66_normal": [
+          [
+            57378,
+            6219,
+            0,
+            2088
+          ],
+          [
+            6902,
+            60,
+            0,
+            820
+          ],
+          [
+            483,
+            98,
+            0,
+            14
+          ],
+          [
+            5053,
+            0,
+            0,
+            885
+          ]
+        ],
+        "step66_shuffled": [
+          [
+            57165,
+            5977,
+            0,
+            2543
+          ],
+          [
+            6851,
+            47,
+            0,
+            884
+          ],
+          [
+            476,
+            98,
+            0,
+            21
+          ],
+          [
+            4922,
+            0,
+            0,
+            1016
+          ]
+        ],
+        "step66_constant": [
+          [
+            57070,
+            6262,
+            0,
+            2353
+          ],
+          [
+            6838,
+            67,
+            0,
+            877
+          ],
+          [
+            483,
+            98,
+            0,
+            14
+          ],
+          [
+            5006,
+            0,
+            0,
+            932
+          ]
+        ],
+        "step67_normal": [
+          [
+            46522,
+            9931,
+            0,
+            9232
+          ],
+          [
+            5102,
+            819,
+            0,
+            1861
+          ],
+          [
+            347,
+            206,
+            0,
+            42
+          ],
+          [
+            3198,
+            0,
+            0,
+            2740
+          ]
+        ],
+        "step67_shuffled": [
+          [
+            46792,
+            9826,
+            0,
+            9067
+          ],
+          [
+            5112,
+            823,
+            0,
+            1847
+          ],
+          [
+            347,
+            206,
+            0,
+            42
+          ],
+          [
+            3246,
+            0,
+            0,
+            2692
+          ]
+        ],
+        "step67_constant": [
+          [
+            46508,
+            9814,
+            0,
+            9363
+          ],
+          [
+            5107,
+            818,
+            0,
+            1857
+          ],
+          [
+            347,
+            206,
+            0,
+            42
+          ],
+          [
+            3192,
+            0,
+            0,
+            2746
+          ]
+        ],
+        "step67_locked": [
+          [
+            50656,
+            8827,
+            0,
+            6202
+          ],
+          [
+            5650,
+            702,
+            0,
+            1430
+          ],
+          [
+            369,
+            190,
+            0,
+            36
+          ],
+          [
+            3895,
+            0,
+            0,
+            2043
+          ]
+        ]
+      }
+    },
+    {
+      "index": 77,
+      "token": "cb4e6195faad467094fbd4d0a9e960e9",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "file": "predictions/seg_val_077.npz",
+      "sha256": "9f0a905c1219ba5b5c33ac65ea62eeec68d7e19ba22be44edaf935a3b5f921ab",
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984251912460.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984251920339.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984251904844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984251937525.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984251947423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984251927893.jpg"
+      },
+      "gt_tensor_sha256": "2897123f07e55b58c892602c5b97c4696170034d993e747ac10b9d3439d8b973",
+      "gt_unchanged": true,
+      "bypass_replay_max_abs": 0.0,
+      "confusions": {
+        "original": [
+          [
+            64375,
+            971,
+            152,
+            5348
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            8163,
+            0,
+            2,
+            989
+          ]
+        ],
+        "step65_normal": [
+          [
+            48617,
+            4178,
+            300,
+            17751
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            5577,
+            292,
+            209,
+            3076
+          ]
+        ],
+        "step65_shuffled": [
+          [
+            49424,
+            3453,
+            315,
+            17654
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            5730,
+            170,
+            221,
+            3033
+          ]
+        ],
+        "step65_constant": [
+          [
+            49060,
+            3543,
+            304,
+            17939
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            5600,
+            181,
+            214,
+            3159
+          ]
+        ],
+        "step66_normal": [
+          [
+            70604,
+            0,
+            0,
+            242
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            9056,
+            0,
+            0,
+            98
+          ]
+        ],
+        "step66_shuffled": [
+          [
+            70387,
+            0,
+            0,
+            459
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            9012,
+            0,
+            0,
+            142
+          ]
+        ],
+        "step66_constant": [
+          [
+            70458,
+            0,
+            0,
+            388
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            9031,
+            0,
+            0,
+            123
+          ]
+        ],
+        "step67_normal": [
+          [
+            58286,
+            2145,
+            3,
+            10412
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            7158,
+            117,
+            45,
+            1834
+          ]
+        ],
+        "step67_shuffled": [
+          [
+            58479,
+            2109,
+            3,
+            10255
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            7192,
+            114,
+            47,
+            1801
+          ]
+        ],
+        "step67_constant": [
+          [
+            58385,
+            2102,
+            5,
+            10354
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            7159,
+            114,
+            55,
+            1826
+          ]
+        ],
+        "step67_locked": [
+          [
+            64375,
+            971,
+            152,
+            5348
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            8163,
+            0,
+            2,
+            989
+          ]
+        ]
+      }
+    }
+  ],
+  "weights_unchanged": true,
+  "weight_sha256_after": {
+    "/mnt/g/nus/bevformer_small_seg.pth": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+    "/home/jjx2003520/projects/bev_vla/models/distilbert-base-uncased/model.safetensors": "5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_step61/class_prompts.npy": "a482cb59064fe5d3621c9ac57c9063871f8b7b978b0f15bc0032abc34645acb2",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_step61/fusion_step61.pt": "4e770f7833e5715b3f9756d1bffedda00a42ed2379d40992845f3a11c418caa0",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_step65/adapter_step65.pt": "e6018fb2d07aa5be3c0fbd0e7a85a0ac26ec1d7d45005506b44b53230140741c",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_step66/adapter_step66.pt": "cad5b174af8e7af41d61841d39410328b7441034da95d56f0a9faf54c2773c51",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_step67/adapter_step67.pt": "1fd6edc5306852415d90f575d0b76520045ca7172638ba1a681311c118fce31d"
+  }
+}

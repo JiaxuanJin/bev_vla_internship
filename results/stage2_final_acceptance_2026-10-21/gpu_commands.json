@@ -1,0 +1,36 @@
+[
+  {
+    "command": [
+      "/home/jjx2003520/projects/bevformer_author_clean_5080/.venv-author/bin/python",
+      "-u",
+      "scripts/stage2/run_stage2.py",
+      "--mode",
+      "joint",
+      "--output",
+      "/home/jjx2003520/projects/bev_vla/outputs/stage2_final_acceptance_seeded/joint_forward.json"
+    ],
+    "started_utc": "2026-10-21T11:09:22.274827+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "finished_utc": "2026-10-21T11:10:17.070029+00:00",
+    "log": "/home/jjx2003520/projects/bev_vla/outputs/stage2_final_acceptance_seeded/joint_forward.log",
+    "result": "/home/jjx2003520/projects/bev_vla/outputs/stage2_final_acceptance_seeded/joint_forward.json"
+  },
+  {
+    "command": [
+      "/home/jjx2003520/projects/bevformer_author_clean_5080/.venv-author/bin/python",
+      "-u",
+      "scripts/stage2/run_stage2.py",
+      "--mode",
+      "joint-backward",
+      "--output",
+      "/home/jjx2003520/projects/bev_vla/outputs/stage2_final_acceptance_seeded/joint_backward.json"
+    ],
+    "started_utc": "2026-10-21T11:10:17.070222+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "finished_utc": "2026-10-21T11:11:13.377637+00:00",
+    "log": "/home/jjx2003520/projects/bev_vla/outputs/stage2_final_acceptance_seeded/joint_backward.log",
+    "result": "/home/jjx2003520/projects/bev_vla/outputs/stage2_final_acceptance_seeded/joint_backward.json"
+  }
+]

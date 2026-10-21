@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "metadata_version": "v1.0-mini",
+  "train_info_count": 323,
+  "index": 0,
+  "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+  "scene_name": "scene-0061",
+  "official_mini_train_membership": true,
+  "ann_file": "/mnt/g/BEV_VLA_Datasets/nuscenes/nuscenes_infos_temporal_train.pkl",
+  "ann_file_sha256": "e46cf82c464dc000de4d7f57aff23d13e9da5d7978feb57b4aa67a1cdc6a847d",
+  "config": "/home/jjx2003520/projects/bevformer_author_clean_5080/BEVFormer-seg/projects/configs/bevformer/bevformer_small_seg_det.py",
+  "config_sha256": "4c7141a84cbcd823a4cf880b2391fbc55c35e7e75db8eae2e2d3fcb6889ba8a9",
+  "data_root": "/mnt/g/BEV_VLA_Datasets/bev_seg_nuscenes",
+  "runtime_queue_length_override": 1,
+  "third_party_or_gt_written": false
+}

@@ -1,0 +1,227 @@
+[
+  {
+    "file": "figures/loss_step61.png",
+    "title": "Step61 实际 Loss 与梯度曲线",
+    "caption": "各图属于各自实验，不能拼成一条连续训练曲线。逐步样本/类别不同，曲线下降不能代替验证指标。"
+  },
+  {
+    "file": "figures/loss_step65.png",
+    "title": "Step65 实际 Loss 与梯度曲线",
+    "caption": "各图属于各自实验，不能拼成一条连续训练曲线。逐步样本/类别不同，曲线下降不能代替验证指标。"
+  },
+  {
+    "file": "figures/loss_step66.png",
+    "title": "Step66 实际 Loss 与梯度曲线",
+    "caption": "各图属于各自实验，不能拼成一条连续训练曲线。逐步样本/类别不同，曲线下降不能代替验证指标。"
+  },
+  {
+    "file": "figures/loss_step67.png",
+    "title": "Step67 实际 Loss 与梯度曲线",
+    "caption": "各图属于各自实验，不能拼成一条连续训练曲线。逐步样本/类别不同，曲线下降不能代替验证指标。"
+  },
+  {
+    "file": "figures/metrics_step65_development_6.png",
+    "title": "Step65 · development_6 · 6 帧",
+    "caption": "只比较本图同一子集。原始指标和派生 P/R、背景误检率可在 metrics.csv / metrics.json 中逐项复算。"
+  },
+  {
+    "file": "figures/metrics_step65_fresh_tokens.png",
+    "title": "Step65 · fresh_tokens · 12 帧",
+    "caption": "只比较本图同一子集。原始指标和派生 P/R、背景误检率可在 metrics.csv / metrics.json 中逐项复算。"
+  },
+  {
+    "file": "figures/metrics_step66_development_6.png",
+    "title": "Step66 · development_6 · 6 帧",
+    "caption": "只比较本图同一子集。原始指标和派生 P/R、背景误检率可在 metrics.csv / metrics.json 中逐项复算。"
+  },
+  {
+    "file": "figures/metrics_step66_step65_seen_12.png",
+    "title": "Step66 · step65_seen_12 · 12 帧",
+    "caption": "只比较本图同一子集。原始指标和派生 P/R、背景误检率可在 metrics.csv / metrics.json 中逐项复算。"
+  },
+  {
+    "file": "figures/metrics_step66_reserved_12.png",
+    "title": "Step66 · reserved_12 · 12 帧",
+    "caption": "只比较本图同一子集。原始指标和派生 P/R、背景误检率可在 metrics.csv / metrics.json 中逐项复算。"
+  },
+  {
+    "file": "figures/metrics_step67_development_6.png",
+    "title": "Step67 · development_6 · 6 帧",
+    "caption": "只比较本图同一子集。原始指标和派生 P/R、背景误检率可在 metrics.csv / metrics.json 中逐项复算。"
+  },
+  {
+    "file": "figures/metrics_step67_step65_seen_12.png",
+    "title": "Step67 · step65_seen_12 · 12 帧",
+    "caption": "只比较本图同一子集。原始指标和派生 P/R、背景误检率可在 metrics.csv / metrics.json 中逐项复算。"
+  },
+  {
+    "file": "figures/metrics_step67_step66_seen_12.png",
+    "title": "Step67 · step66_seen_12 · 12 帧",
+    "caption": "只比较本图同一子集。原始指标和派生 P/R、背景误检率可在 metrics.csv / metrics.json 中逐项复算。"
+  },
+  {
+    "file": "figures/metrics_step67_new_mini_val_12.png",
+    "title": "Step67 · new_mini_val_12 · 12 帧",
+    "caption": "只比较本图同一子集。原始指标和派生 P/R、背景误检率可在 metrics.csv / metrics.json 中逐项复算。"
+  },
+  {
+    "file": "figures/text_intervention_metrics.png",
+    "title": "Step68 · 训练后 Step67 raw adapter · 6 帧",
+    "caption": "这是 raw adapter 的正常/类别置乱/均值常量向量对照；与最终 locked=original 不同。"
+  },
+  {
+    "file": "figures/step54_temporal_geometry.png",
+    "title": "Step54：原始时序与几何诊断",
+    "caption": "源文件只有四舍五入的三前景类指标；Background、P/R 和背景误检率均未记录，不能据此补造。calibrated 不是语言模型。"
+  },
+  {
+    "file": "figures/step61_before_after.png",
+    "title": "Step61 真实训练前后",
+    "caption": "Step61 前后来自保存的评估快照；只有训练前、训练后两个评估时点，不存在逐 epoch 验证曲线。"
+  },
+  {
+    "file": "figures/step62_existing_attention.png",
+    "title": "Step62 已保存注意力与 GT",
+    "caption": "每类 NPZ 仅含 attention、gt_mask、token，不含多类分割预测。色标固定0–1，未按每张图重新拉伸。"
+  },
+  {
+    "file": "figures/attention_ap_controls.png",
+    "title": "已训练注意力的负对照",
+    "caption": "正例占比是无信息排序 AP 的参考水平。有限样本 AP 与随机基线的差异未做统计显著性检验。正常指令没有在三个类别上稳定胜过置乱。"
+  },
+  {
+    "file": "figures/real_joint_loss_gradient.png",
+    "title": "Step72 与最新真实多任务 Loss/梯度快照",
+    "caption": "可证明损失和梯度链路存在；不能证明训练收敛、检测精度提升或语义定位。最新 total = detection + segmentation + 0.1×attention。"
+  },
+  {
+    "file": "figures/step73_geometry_context.png",
+    "title": "Step73 几何证据的适用范围",
+    "caption": "独立地图点与标签容差匹配不能替代整个神经网络 BEV→地图投影的物理验证；图中方位掩码由坐标规则生成。"
+  },
+  {
+    "file": "figures/seg_014_cameras.png",
+    "title": "seg index 14 六相机输入",
+    "caption": "六张图片属于同一官方 sample token；每张图的源路径记录在 inference.json。"
+  },
+  {
+    "file": "figures/seg_014_segmentation.png",
+    "title": "seg index 14 地图分割",
+    "caption": "所有分支使用同一 GT 和同一冻结作者 checkpoint。raw adapter 与 locked 回退分开标明；单帧图不代表整个验证子集。"
+  },
+  {
+    "file": "figures/seg_014_errors.png",
+    "title": "seg index 14 错误区域",
+    "caption": "红：GT 背景误报前景；蓝：真实前景漏为背景；黄：三种前景类别之间混淆。背景占多数，不能仅用全像素错误率判断前景质量。"
+  },
+  {
+    "file": "figures/seg_021_cameras.png",
+    "title": "seg index 21 六相机输入",
+    "caption": "六张图片属于同一官方 sample token；每张图的源路径记录在 inference.json。"
+  },
+  {
+    "file": "figures/seg_021_segmentation.png",
+    "title": "seg index 21 地图分割",
+    "caption": "所有分支使用同一 GT 和同一冻结作者 checkpoint。raw adapter 与 locked 回退分开标明；单帧图不代表整个验证子集。"
+  },
+  {
+    "file": "figures/seg_021_errors.png",
+    "title": "seg index 21 错误区域",
+    "caption": "红：GT 背景误报前景；蓝：真实前景漏为背景；黄：三种前景类别之间混淆。背景占多数，不能仅用全像素错误率判断前景质量。"
+  },
+  {
+    "file": "figures/seg_039_cameras.png",
+    "title": "seg index 39 六相机输入",
+    "caption": "六张图片属于同一官方 sample token；每张图的源路径记录在 inference.json。"
+  },
+  {
+    "file": "figures/seg_039_segmentation.png",
+    "title": "seg index 39 地图分割",
+    "caption": "所有分支使用同一 GT 和同一冻结作者 checkpoint。raw adapter 与 locked 回退分开标明；单帧图不代表整个验证子集。"
+  },
+  {
+    "file": "figures/seg_039_errors.png",
+    "title": "seg index 39 错误区域",
+    "caption": "红：GT 背景误报前景；蓝：真实前景漏为背景；黄：三种前景类别之间混淆。背景占多数，不能仅用全像素错误率判断前景质量。"
+  },
+  {
+    "file": "figures/seg_077_cameras.png",
+    "title": "seg index 77 六相机输入",
+    "caption": "六张图片属于同一官方 sample token；每张图的源路径记录在 inference.json。"
+  },
+  {
+    "file": "figures/seg_077_segmentation.png",
+    "title": "seg index 77 地图分割",
+    "caption": "所有分支使用同一 GT 和同一冻结作者 checkpoint。raw adapter 与 locked 回退分开标明；单帧图不代表整个验证子集。"
+  },
+  {
+    "file": "figures/seg_077_errors.png",
+    "title": "seg index 77 错误区域",
+    "caption": "红：GT 背景误报前景；蓝：真实前景漏为背景；黄：三种前景类别之间混淆。背景占多数，不能仅用全像素错误率判断前景质量。"
+  },
+  {
+    "file": "figures/attention_step65_intervention.png",
+    "title": "Step65 正常、置乱与常量注意力",
+    "caption": "输出通道固定对应三类；类别置乱改变传给各通道的文本向量。常量采用历史 Step68 定义的均值向量；不是单词顺序置乱。所有热力图使用固定0–1色标。"
+  },
+  {
+    "file": "figures/attention_step66_intervention.png",
+    "title": "Step66 正常、置乱与常量注意力",
+    "caption": "输出通道固定对应三类；类别置乱改变传给各通道的文本向量。常量采用历史 Step68 定义的均值向量；不是单词顺序置乱。所有热力图使用固定0–1色标。"
+  },
+  {
+    "file": "figures/attention_step67_intervention.png",
+    "title": "Step67 正常、置乱与常量注意力",
+    "caption": "输出通道固定对应三类；类别置乱改变传给各通道的文本向量。常量采用历史 Step68 定义的均值向量；不是单词顺序置乱。所有热力图使用固定0–1色标。"
+  },
+  {
+    "file": "figures/attention_trained_vs_random.png",
+    "title": "已训练与随机初始化 Attention",
+    "caption": "相同真实 BEV 和三条 DistilBERT 类别模板向量；注意力纹理或输出变化均不代表语义定位正确。"
+  },
+  {
+    "file": "figures/joint_000_cameras.png",
+    "title": "joint index 0 六相机输入",
+    "caption": "六张图片属于同一官方 sample token；每张图的源路径记录在 inference.json。"
+  },
+  {
+    "file": "figures/joint_000_segmentation.png",
+    "title": "joint index 0 地图分割",
+    "caption": "所有分支使用同一 GT 和同一冻结作者 checkpoint。raw adapter 与 locked 回退分开标明；单帧图不代表整个验证子集。"
+  },
+  {
+    "file": "figures/joint_000_errors.png",
+    "title": "joint index 0 错误区域",
+    "caption": "红：GT 背景误报前景；蓝：真实前景漏为背景；黄：三种前景类别之间混淆。背景占多数，不能仅用全像素错误率判断前景质量。"
+  },
+  {
+    "file": "figures/attention_joint_random.png",
+    "title": "最新统一入口：真实随机融合注意力",
+    "caption": "本次只补充冻结推理，没有训练或更新参数；joint 与历史 seg-only 权重不同，指标分别呈现。"
+  },
+  {
+    "file": "figures/metrics_joint_single_frame.png",
+    "title": "补充推理 · joint checkpoint · Mini Val index0 · 仅1帧",
+    "caption": "该图使用 joint checkpoint 13459199…；原始、bypass、随机增强同帧，不能与 Step65–67 的 seg-only 结果交叉排名。"
+  },
+  {
+    "file": "figures/attention_step65_real_sentences.png",
+    "title": "Step65 实际句子：正常、词序反转、常量",
+    "caption": "与历史类别配对置乱/向量均值分开记录。只复用本次真实 BEV 缓存，不重复运行作者 Backbone；句子原文见 text_controls.json。不能把响应差异判为语义正确。"
+  },
+  {
+    "file": "figures/attention_step66_real_sentences.png",
+    "title": "Step66 实际句子：正常、词序反转、常量",
+    "caption": "与历史类别配对置乱/向量均值分开记录。只复用本次真实 BEV 缓存，不重复运行作者 Backbone；句子原文见 text_controls.json。不能把响应差异判为语义正确。"
+  },
+  {
+    "file": "figures/attention_step67_real_sentences.png",
+    "title": "Step67 实际句子：正常、词序反转、常量",
+    "caption": "与历史类别配对置乱/向量均值分开记录。只复用本次真实 BEV 缓存，不重复运行作者 Backbone；句子原文见 text_controls.json。不能把响应差异判为语义正确。"
+  },
+  {
+    "file": "figures/metrics_real_sentence_controls.png",
+    "title": "实际句子对照 · Mini Val index14 · 仅1帧",
+    "caption": "各 Step 分支分别对照正常句子、词序反转与同一句常量文本。此图只是固定单帧敏感性分析，不是更大子集语义准确率。"
+  }
+]

@@ -1,0 +1,141 @@
+{
+  "timestamp_utc": "2026-10-21T10:42:03.810461+00:00",
+  "mode": "offline-bev",
+  "seed": 20261021,
+  "python": "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+  "torch": "2.8.0+cu128",
+  "cuda_available": false,
+  "status": "PASS_PRETRAINED_ENCODING_AND_REAL_CACHED_BEV_FUNCTION_ONLY",
+  "feature_source": "real_npy",
+  "text": [
+    "Find lane markings ahead",
+    "Locate lane dividers in front",
+    "Locate pedestrian crossings ahead",
+    "Find the curb on the rear right",
+    "Find road boundaries and pedestrian crossings on the left",
+    "Highlight road boundaries but ignore pedestrian crossings",
+    "Show the zebra crossing on the front right"
+  ],
+  "instructions": [
+    {
+      "original": "Find lane markings ahead",
+      "targets": [
+        "divider"
+      ],
+      "excluded": [],
+      "front_back": "front",
+      "left_right": null,
+      "parser_type": "restricted_english_rules"
+    },
+    {
+      "original": "Locate lane dividers in front",
+      "targets": [
+        "divider"
+      ],
+      "excluded": [],
+      "front_back": "front",
+      "left_right": null,
+      "parser_type": "restricted_english_rules"
+    },
+    {
+      "original": "Locate pedestrian crossings ahead",
+      "targets": [
+        "ped_crossing"
+      ],
+      "excluded": [],
+      "front_back": "front",
+      "left_right": null,
+      "parser_type": "restricted_english_rules"
+    },
+    {
+      "original": "Find the curb on the rear right",
+      "targets": [
+        "boundary"
+      ],
+      "excluded": [],
+      "front_back": "rear",
+      "left_right": "right",
+      "parser_type": "restricted_english_rules"
+    },
+    {
+      "original": "Find road boundaries and pedestrian crossings on the left",
+      "targets": [
+        "boundary",
+        "ped_crossing"
+      ],
+      "excluded": [],
+      "front_back": null,
+      "left_right": "left",
+      "parser_type": "restricted_english_rules"
+    },
+    {
+      "original": "Highlight road boundaries but ignore pedestrian crossings",
+      "targets": [
+        "boundary"
+      ],
+      "excluded": [
+        "ped_crossing"
+      ],
+      "front_back": null,
+      "left_right": null,
+      "parser_type": "restricted_english_rules"
+    },
+    {
+      "original": "Show the zebra crossing on the front right",
+      "targets": [
+        "ped_crossing"
+      ],
+      "excluded": [],
+      "front_back": "front",
+      "left_right": "right",
+      "parser_type": "restricted_english_rules"
+    }
+  ],
+  "shapes": {
+    "enhanced_bev": [
+      7,
+      256,
+      150,
+      150
+    ],
+    "attention": [
+      7,
+      1,
+      150,
+      150
+    ],
+    "text_query": [
+      7,
+      256
+    ],
+    "semantic_bev": [
+      7,
+      256,
+      150,
+      150
+    ],
+    "text_embedding": [
+      7,
+      768
+    ]
+  },
+  "bypass_exact_identity": true,
+  "batch_permutation_equivariant": true,
+  "single_vs_padded_batch_consistent": true,
+  "word_shuffle": {
+    "text": "ahead markings lane Find",
+    "rule_parse": null,
+    "embedding_mae": 0.08352575451135635
+  },
+  "text_bev_pair_shuffle_attention_mae": 0.02774491347372532,
+  "semantic_localization": "NOT_VERIFIED",
+  "accuracy_improvement": "NOT_VERIFIED",
+  "bev_gt_physical_alignment": "NOT_VERIFIED",
+  "fusion_weights_trained": false,
+  "optimizer_step_executed": false,
+  "distilbert_sha256": "5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063",
+  "expected_distilbert_sha256": "5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063",
+  "model_id": "distilbert/distilbert-base-uncased",
+  "recorded_revision": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+  "bev_sha256": "91a0206914547683690ce3fc333ade5c4fb0c073215b05a3346a8f81246af5cf"
+}

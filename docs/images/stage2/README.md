@@ -23,3 +23,7 @@ ccb89abfa1b986060ce1ee0e7b199d8ed01b8f3b1e7047e71075f673862c43a8  step62_boundar
 ```
 
 在 VS Code 用 `Ctrl+Shift+V` 预览 [实证汇总](../../stage2/16_阶段二实证汇总_2026-10-21.md)，可同时查看四张真实实验图及两张 SVG。
+
+## 当前统一入口架构
+
+[stage2_final_architecture.svg](stage2_final_architecture.svg) 对应最终源码：文本与视觉生成二维 S，再进入 Attention 和残差融合；训练 GT 只进入损失分支。旧两张 SVG 和四张 Step62 PNG 保留为历史证据，最终运行数值见 [严格验收报告](../../stage2/20_第二阶段最终严格验收_2026-10-21.md)。

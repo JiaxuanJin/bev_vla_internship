@@ -1,0 +1,1027 @@
+[
+  {
+    "path": "outputs/drivelm_check/root_cause/step54_author_mini_calibration_ab/results.json",
+    "bytes": 8978,
+    "sha256": "eef4cdc4399536b9e3e3a7531f5b0f5eaa5732bf47d1451d10b8882f4b53fc2b",
+    "synthetic_only": false,
+    "schema": [
+      "purpose",
+      "scope",
+      "checkpoint",
+      "checkpoint_sha256",
+      "config",
+      "source",
+      "variants",
+      "notes",
+      "delta_miou_pp",
+      "delta_class_iou_pp"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step61/class_prompts.npy",
+    "bytes": 9344,
+    "sha256": "a482cb59064fe5d3621c9ac57c9063871f8b7b978b0f15bc0032abc34645acb2",
+    "synthetic_only": false,
+    "arrays": {
+      "array": {
+        "shape": [
+          3,
+          768
+        ],
+        "dtype": "float32"
+      }
+    }
+  },
+  {
+    "path": "outputs/stage2_step61/class_prompts_manifest.json",
+    "bytes": 817,
+    "sha256": "9de8c0cf19dbe4aa58308d86e976b55d81f844066c6a2c857f53b190d8b11f59",
+    "synthetic_only": false,
+    "schema": [
+      "step",
+      "prompts",
+      "class_ids",
+      "model_local_dir",
+      "embedding_shape",
+      "embedding_sha256",
+      "cosine_similarity",
+      "note"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step61/fusion_step61.pt",
+    "bytes": 1322785,
+    "sha256": "4e770f7833e5715b3f9756d1bffedda00a42ed2379d40992845f3a11c418caa0",
+    "synthetic_only": false
+  },
+  {
+    "path": "outputs/stage2_step61/step61_supervised_summary.json",
+    "bytes": 35305,
+    "sha256": "e4a575b07e818328158457ebccef5109e4f012864bf57f6e2964a4fef1f933b6",
+    "synthetic_only": false,
+    "schema": [
+      "experiment",
+      "train_indices",
+      "val_indices",
+      "train_tokens",
+      "val_tokens",
+      "train_scenes",
+      "val_scenes",
+      "source",
+      "checkpoint_sha256",
+      "text_sha256",
+      "weights_sha256",
+      "steps",
+      "train_frames",
+      "val_frames",
+      "lambda_attention",
+      "alpha_fixed",
+      "training_loss",
+      "attention_alignment",
+      "geometry_assertion",
+      "language_supervision",
+      "baseline_recovery_checked",
+      "temporal_mode",
+      "full_81frame_official_eval",
+      "history",
+      "original_segmentation",
+      "before",
+      "after",
+      "limitations",
+      "elapsed_seconds"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step62/step62_boundary_sample.npz",
+    "bytes": 273856,
+    "sha256": "a0c5a9cb97569026a1c18d18304d3004e4f1602f5870c17d5f3cb0160b1001ca",
+    "synthetic_only": false,
+    "arrays": {
+      "attention": {
+        "shape": [
+          200,
+          400
+        ],
+        "dtype": "float32"
+      },
+      "gt_mask": {
+        "shape": [
+          200,
+          400
+        ],
+        "dtype": "uint8"
+      },
+      "token": {
+        "shape": [],
+        "dtype": "<U32"
+      }
+    }
+  },
+  {
+    "path": "outputs/stage2_step62/step62_diagnostics.json",
+    "bytes": 15429,
+    "sha256": "4f697f0ada5c4e6273b44795ae46081b4e32695b406fcf96844063e618df9579",
+    "synthetic_only": false,
+    "schema": [
+      "experiment",
+      "scope",
+      "val_indices",
+      "val_tokens",
+      "checkpoint_sha256",
+      "step61_fusion_sha256",
+      "text_sha256",
+      "alignment",
+      "thresholds_predefined",
+      "scores",
+      "figures",
+      "elapsed_seconds",
+      "notes"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step62/step62_divider_sample.npz",
+    "bytes": 272376,
+    "sha256": "f03b43455c97e5f3a38c28e7f5c68a5ba357ac0eb0f511c46c47e75da44b0510",
+    "synthetic_only": false,
+    "arrays": {
+      "attention": {
+        "shape": [
+          200,
+          400
+        ],
+        "dtype": "float32"
+      },
+      "gt_mask": {
+        "shape": [
+          200,
+          400
+        ],
+        "dtype": "uint8"
+      },
+      "token": {
+        "shape": [],
+        "dtype": "<U32"
+      }
+    }
+  },
+  {
+    "path": "outputs/stage2_step62/step62_ped_crossing_sample.npz",
+    "bytes": 280093,
+    "sha256": "5b8792d08ed1d9fd521cdaa5ce82db95c1eec0e6ab0b6998b41b39f8996fac5e",
+    "synthetic_only": false,
+    "arrays": {
+      "attention": {
+        "shape": [
+          200,
+          400
+        ],
+        "dtype": "float32"
+      },
+      "gt_mask": {
+        "shape": [
+          200,
+          400
+        ],
+        "dtype": "uint8"
+      },
+      "token": {
+        "shape": [],
+        "dtype": "<U32"
+      }
+    }
+  },
+  {
+    "path": "outputs/stage2_step62/step63_npz_structure.json",
+    "bytes": 2150,
+    "sha256": "042dee74d0b710b2ebc8fe563fc7c156acd66f3bf54c2c3530080e1ad7ff9ffe",
+    "synthetic_only": false,
+    "schema": [
+      "source",
+      "files"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step65/adapter_step65.pt",
+    "bytes": 173625,
+    "sha256": "e6018fb2d07aa5be3c0fbd0e7a85a0ac26ec1d7d45005506b44b53230140741c",
+    "synthetic_only": false
+  },
+  {
+    "path": "outputs/stage2_step65/bias_step65.pt",
+    "bytes": 1733,
+    "sha256": "6aba90679052f757190727a3ea547c3ddb5b38cc0f4aca64bc2568173e109471",
+    "synthetic_only": false
+  },
+  {
+    "path": "outputs/stage2_step65/step65_ab_summary.json",
+    "bytes": 41645,
+    "sha256": "fc107da778ae9907cb41bfb48f438939723bf37b048683a884b48f3d1d38b373",
+    "synthetic_only": false,
+    "schema": [
+      "experiment",
+      "method",
+      "note",
+      "data",
+      "train_indices",
+      "train_tokens",
+      "dev_indices",
+      "dev_tokens",
+      "fresh_token_holdout_indices",
+      "fresh_token_holdout_tokens",
+      "fresh_holdout_is_same_mini_val_not_independent_dataset",
+      "steps_per_branch",
+      "train_frames",
+      "checkpoint_sha256",
+      "text_sha256",
+      "bias_weights_sha256",
+      "adapter_weights_sha256",
+      "metrics",
+      "history",
+      "weights",
+      "training_objective",
+      "validation_tuning",
+      "limitations",
+      "elapsed_seconds"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step66/adapter_step66.pt",
+    "bytes": 173561,
+    "sha256": "cad5b174af8e7af41d61841d39410328b7441034da95d56f0a9faf54c2773c51",
+    "synthetic_only": false
+  },
+  {
+    "path": "outputs/stage2_step66/step66_ab_summary.json",
+    "bytes": 70222,
+    "sha256": "44ff62ca2c94d963d8a55d13405be85ac6ca1e5a019bd37a9e9de833cc38e269",
+    "synthetic_only": false,
+    "schema": [
+      "experiment",
+      "checkpoint_sha256",
+      "text_sha256",
+      "step65_adapter_sha256",
+      "step66_adapter_sha256",
+      "mini_train_indices",
+      "mini_train_tokens",
+      "split_indices",
+      "split_tokens",
+      "steps",
+      "lr",
+      "temporal_mode",
+      "replay_verified",
+      "history",
+      "metrics",
+      "training_loss",
+      "inference_bg_guard",
+      "checkpoint_selection",
+      "limitations",
+      "elapsed_seconds"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step66/step66_fixed_splits.json",
+    "bytes": 920,
+    "sha256": "5a78b125863817fef42f8f35fb64658ab06e610a783922f5fd8c20ee0f6c9a00",
+    "synthetic_only": false,
+    "schema": [
+      "seed",
+      "dev_indices",
+      "previous_holdout_indices",
+      "reserved_indices",
+      "reserved_tokens",
+      "warning"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step66/step66_interim_0024.pt",
+    "bytes": 173646,
+    "sha256": "6e711acf6ef94b84d707eeb6c6ff7505a4dd125b251b5ab0f9540bd87d09dd46",
+    "synthetic_only": false
+  },
+  {
+    "path": "outputs/stage2_step66/step66_interim_0048.pt",
+    "bytes": 173646,
+    "sha256": "b644c6a0e61e4d16d2cf31a132261f31cf8ee2dd055f45e4d090efe65bb63097",
+    "synthetic_only": false
+  },
+  {
+    "path": "outputs/stage2_step66/step66_interim_0072.pt",
+    "bytes": 173646,
+    "sha256": "64eacdcd219d15a0692b44b1df3a82ed945473537bc174ef94371af1cd9d9606",
+    "synthetic_only": false
+  },
+  {
+    "path": "outputs/stage2_step66/step66_interim_0096.pt",
+    "bytes": 173646,
+    "sha256": "a0c26da5c4d354a806258b7aa148d5f9f6a782aca7628d37e6939b9212a98ba2",
+    "synthetic_only": false
+  },
+  {
+    "path": "outputs/stage2_step66/step66_partial_history.json",
+    "bytes": 40966,
+    "sha256": "2bdaf53dd09215ec9f5688fc2e3523293576e52d3810c0ce86406deb739831e5",
+    "synthetic_only": false,
+    "schema": "list[96]"
+  },
+  {
+    "path": "outputs/stage2_step67/adapter_step67.pt",
+    "bytes": 173497,
+    "sha256": "1fd6edc5306852415d90f575d0b76520045ca7172638ba1a681311c118fce31d",
+    "synthetic_only": false
+  },
+  {
+    "path": "outputs/stage2_step67/step67_ab_summary.json",
+    "bytes": 63573,
+    "sha256": "bc85020e0863e8d5944e42ab1101799e4a2bf612414c6a5dadb68901a5f119d8",
+    "synthetic_only": false,
+    "schema": [
+      "experiment",
+      "train_steps",
+      "train_indices",
+      "calibration_indices",
+      "locked_candidate",
+      "selection_reason",
+      "calibration",
+      "metrics",
+      "new_mini_val_indices",
+      "original_checkpoint_sha256",
+      "adapter_step67_sha256",
+      "time_seconds",
+      "protocol",
+      "limitations"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step67/step67_interim_0016.pt",
+    "bytes": 173582,
+    "sha256": "496e07daf14a57ec90b50cb5346b0ca51d04d13608be7db29e6a99093a9bf2a7",
+    "synthetic_only": false
+  },
+  {
+    "path": "outputs/stage2_step67/step67_interim_0032.pt",
+    "bytes": 173582,
+    "sha256": "752b3431f9b908072a3bae77b6e8b7236b152842618b98c4b5865b2d538a4139",
+    "synthetic_only": false
+  },
+  {
+    "path": "outputs/stage2_step67/step67_interim_0048.pt",
+    "bytes": 173582,
+    "sha256": "821aa86a408ba6574c55d010e3a10068ab7919aa9065fb02012581289c09ba45",
+    "synthetic_only": false
+  },
+  {
+    "path": "outputs/stage2_step67/step67_interim_0064.pt",
+    "bytes": 173582,
+    "sha256": "bbe47f29fcc3fd6b958996533d6523aa12280abb87ad33e9a312c4b4577b46a0",
+    "synthetic_only": false
+  },
+  {
+    "path": "outputs/stage2_step67/step67_method.json",
+    "bytes": 3590,
+    "sha256": "8a9c3eb166b67aa7373c560194e7abdcaf16dce95d7afe98cc70554e48134d85",
+    "synthetic_only": false,
+    "schema": [
+      "seed",
+      "steps",
+      "lr",
+      "candidates",
+      "selection_rule",
+      "source_hashes"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step67/step67_selection_lock.json",
+    "bytes": 38066,
+    "sha256": "5eecf57a718bbdb936b6a60245013b10e226290393af2e4689fd1e5777b3e22d",
+    "synthetic_only": false,
+    "schema": [
+      "locked_before_loading_mini_val",
+      "selected",
+      "name",
+      "reason",
+      "mini_train_calibration_indices",
+      "selection_grid_scores",
+      "baseline"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step67/step67_train_calib_split.json",
+    "bytes": 2113,
+    "sha256": "528863041af574e53e45a32699c6dc130185fb792a0e2ccde1afb55b7d6b9ca5",
+    "synthetic_only": false,
+    "schema": [
+      "seed",
+      "train_indices",
+      "train_tokens",
+      "calibration_indices",
+      "calibration_tokens",
+      "train_calib_disjoint"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step67/step67_train_history.json",
+    "bytes": 28889,
+    "sha256": "23977dda90f1ea358735da79e33b7ceddcd37127ec5bee4459cd8847322582d1",
+    "synthetic_only": false,
+    "schema": "list[64]"
+  },
+  {
+    "path": "outputs/stage2_step67/step67_val_manifest.json",
+    "bytes": 1014,
+    "sha256": "94981057ac1ea6a08f43d6fcd55f32b79b2a6b6ce10a75b7e3d3111548f59fc1",
+    "synthetic_only": false,
+    "schema": [
+      "previous_dev_6",
+      "previous_seen_12",
+      "step66_seen_12",
+      "new_mini_val_12",
+      "new_tokens",
+      "note"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step68/step68_acceptance.json",
+    "bytes": 8028,
+    "sha256": "c61169b7f951a1dcb3f3b746e8f58c38f163897ba14df1e1faad222ecd61841c",
+    "synthetic_only": false,
+    "schema": [
+      "checks",
+      "source_files",
+      "checkpoint_status",
+      "stage2_tests",
+      "text_intervention"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step70/step70_audit.json",
+    "bytes": 5416,
+    "sha256": "9aad07c5cecbc07a58c35d13833f37c3a8a2cf25790a48fa52fbeddfb8e653c8",
+    "synthetic_only": false,
+    "schema": [
+      "step",
+      "mode",
+      "configs",
+      "checkpoints",
+      "joint_checkpoint_reference",
+      "status",
+      "joint_config_valid",
+      "joint_weight_has_both_heads"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step70/step70_joint_live.json",
+    "bytes": 2166,
+    "sha256": "b2588eac77d44b2ff53f6d30a67cd1b7f24af633778b8049ec5420ced7a2f369",
+    "synthetic_only": false,
+    "schema": [
+      "step",
+      "status",
+      "sample_token",
+      "joint_checkpoint",
+      "joint_sha256",
+      "shared_bev_hook",
+      "language_embedding",
+      "language_fusion_weight_trained",
+      "temporal_mode",
+      "tensor_results",
+      "joint_training_verified",
+      "semantic_understanding_verified",
+      "checkpoint_is_author_joint",
+      "note"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step70/step70b_weight_ready.json",
+    "bytes": 664,
+    "sha256": "4a5c74f5e2e35b790853abe02f7e63d1fe08e9100495bf2bc914d191e9bf3beb",
+    "synthetic_only": false,
+    "schema": [
+      "source_repo",
+      "download_url",
+      "path",
+      "size_bytes",
+      "sha256_local_integrity",
+      "published_sha256_available",
+      "head_key_counts",
+      "both_heads_present",
+      "verification_scope"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step72/step72_real_joint_gradient.json",
+    "bytes": 1650,
+    "sha256": "98a0211dab1fe9571c0fafb14f689f45e22fcd81e6d1047123371c10f7ca668a",
+    "synthetic_only": false,
+    "schema": [
+      "step",
+      "status",
+      "mode",
+      "dataset",
+      "index",
+      "token",
+      "joint_checkpoint",
+      "checkpoint_modified",
+      "optimizer_step_executed",
+      "frozen_author_model",
+      "time_mode",
+      "module_weights_trained",
+      "gradients",
+      "total_backward_grad_norm",
+      "target_class",
+      "gt_class_counts",
+      "author_loss_keys"
+    ]
+  },
+  {
+    "path": "outputs/stage2_step73/step73_front_right_metric_bev_mask.npy",
+    "bytes": 22628,
+    "sha256": "45b12b208e53c7fc7e00fbd5dd9bfef737d1613d1d80681b9dfc1bc0c5551c59",
+    "synthetic_only": false,
+    "arrays": {
+      "array": {
+        "shape": [
+          150,
+          150
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  {
+    "path": "outputs/stage2_step73/step73_gap_check.json",
+    "bytes": 9177,
+    "sha256": "141245efddedc80af0cc4355f2468ae85b19ee4e6b192668a372415cd1e5062c",
+    "synthetic_only": false,
+    "schema": [
+      "step",
+      "scope",
+      "language",
+      "map_geometry"
+    ]
+  },
+  {
+    "path": "outputs/stage2_final_acceptance_seeded/cpu.json",
+    "bytes": 5132,
+    "sha256": "4e6e9956dcd107308395df47c2ebd6c14352d0dcf839c5117ab29433d37cb17e",
+    "synthetic_only": false,
+    "schema": [
+      "timestamp_utc",
+      "mode",
+      "seed",
+      "python",
+      "torch",
+      "cuda_available",
+      "command",
+      "random_seed_scope",
+      "python_version",
+      "gpu",
+      "versions",
+      "source_sha256",
+      "status"
+    ]
+  },
+  {
+    "path": "outputs/stage2_final_acceptance_seeded/cpu_regression.json",
+    "bytes": 8962,
+    "sha256": "75a1995c9db1c87eae51cfc2d634e31b29824bca57b41fd24e6d63eba3865aa7",
+    "synthetic_only": false,
+    "schema": [
+      "timestamp_utc",
+      "python",
+      "executable",
+      "versions",
+      "mode",
+      "real_model_inference_rerun",
+      "source_sha256",
+      "tests",
+      "status"
+    ]
+  },
+  {
+    "path": "outputs/stage2_final_acceptance_seeded/dataset_audit.json",
+    "bytes": 757,
+    "sha256": "063922e890a784c12a7fcb97813c9a2d7bfeecee0854b1e48a9a78c8df92ea75",
+    "synthetic_only": false,
+    "schema": [
+      "status",
+      "metadata_version",
+      "train_info_count",
+      "index",
+      "sample_token",
+      "scene_name",
+      "official_mini_train_membership",
+      "ann_file",
+      "ann_file_sha256",
+      "config",
+      "config_sha256",
+      "data_root",
+      "runtime_queue_length_override",
+      "third_party_or_gt_written"
+    ]
+  },
+  {
+    "path": "outputs/stage2_final_acceptance_seeded/gpu_commands.json",
+    "bytes": 1385,
+    "sha256": "41928b4928befd2d3b4bb6c03419087592a839f85c9b91d43cae26a44b3ef23f",
+    "synthetic_only": false,
+    "schema": "list[2]"
+  },
+  {
+    "path": "outputs/stage2_final_acceptance_seeded/joint_backward.json",
+    "bytes": 10172,
+    "sha256": "16498d7d3149f8fb9d44419e5956931ee5d2f8669c466d4425debc9e8c5da5a4",
+    "synthetic_only": false,
+    "schema": [
+      "timestamp_utc",
+      "mode",
+      "seed",
+      "python",
+      "torch",
+      "cuda_available",
+      "command",
+      "random_seed_scope",
+      "python_version",
+      "gpu",
+      "versions",
+      "source_sha256",
+      "status",
+      "forward_calls",
+      "shared_bev_hook_calls",
+      "head_calls",
+      "shapes",
+      "text",
+      "target_class",
+      "gt_class_counts",
+      "gt_tensor_sha256",
+      "gt_tensor_unchanged",
+      "author_loss_keys",
+      "loss_config",
+      "loss_sources",
+      "gradients",
+      "backward_global_l2",
+      "frozen_author_and_distilbert_gradients_absent",
+      "optimizer_step_executed",
+      "fusion_parameters_updated",
+      "semantic_localization",
+      "accuracy_improvement",
+      "bev_gt_physical_alignment",
+      "temporal_mode",
+      "sample_token",
+      "dataset",
+      "checkpoint_sha256",
+      "checkpoint_sha256_after",
+      "checkpoint_modified"
+    ]
+  },
+  {
+    "path": "outputs/stage2_final_acceptance_seeded/joint_forward.json",
+    "bytes": 8154,
+    "sha256": "8bc7ee2b06cfd04df367e5ee3be5a9c2e4f6505954efef567031573484679f3a",
+    "synthetic_only": false,
+    "schema": [
+      "timestamp_utc",
+      "mode",
+      "seed",
+      "python",
+      "torch",
+      "cuda_available",
+      "command",
+      "random_seed_scope",
+      "python_version",
+      "gpu",
+      "versions",
+      "source_sha256",
+      "status",
+      "sample_token",
+      "text",
+      "tensor_results",
+      "hook_traces",
+      "checkpoint_sha256",
+      "coordinate_contract",
+      "module_weights_trained",
+      "optimizer_step_executed",
+      "semantic_localization",
+      "accuracy_improvement",
+      "checkpoint_provenance",
+      "checkpoint_sha256_after",
+      "checkpoint_modified"
+    ]
+  },
+  {
+    "path": "outputs/stage2_final_acceptance_seeded/offline_bev.json",
+    "bytes": 8594,
+    "sha256": "e1c444a5067b9e852d93c39e7f7c8e7f6e30d2bc2acebdbcb57bcfccfe14f012",
+    "synthetic_only": false,
+    "schema": [
+      "timestamp_utc",
+      "mode",
+      "seed",
+      "python",
+      "torch",
+      "cuda_available",
+      "command",
+      "random_seed_scope",
+      "python_version",
+      "gpu",
+      "versions",
+      "source_sha256",
+      "status",
+      "feature_source",
+      "text",
+      "instructions",
+      "shapes",
+      "bypass_exact_identity",
+      "batch_permutation_equivariant",
+      "single_vs_padded_batch_consistent",
+      "word_shuffle",
+      "text_bev_pair_shuffle_attention_mae",
+      "semantic_localization",
+      "accuracy_improvement",
+      "bev_gt_physical_alignment",
+      "fusion_weights_trained",
+      "optimizer_step_executed",
+      "distilbert_sha256",
+      "expected_distilbert_sha256",
+      "model_id",
+      "recorded_revision",
+      "bev_sha256"
+    ]
+  },
+  {
+    "path": "outputs/stage2_final_acceptance_seeded/step56_synthetic/attention_synthetic.npy",
+    "bytes": 90128,
+    "sha256": "94a876d93b20becd7e300379a5b39d4d87c3092a166ca6bbb49e96e233831b1e",
+    "synthetic_only": true,
+    "arrays": {
+      "array": {
+        "shape": [
+          150,
+          150
+        ],
+        "dtype": "float32"
+      }
+    }
+  },
+  {
+    "path": "outputs/stage2_final_acceptance_seeded/step56_synthetic/step56_smoke_synthetic.json",
+    "bytes": 1383,
+    "sha256": "d0625013680431856433be660ccebfdf1e7995094ee21b5c14f4b9fe0cef311b",
+    "synthetic_only": true,
+    "schema": [
+      "experiment",
+      "text_mode",
+      "pretrained_language_model_loaded",
+      "bev_source",
+      "bev_shape",
+      "pooled_text_shape",
+      "attention_shape",
+      "enhanced_shape",
+      "baseline_exact_identity",
+      "attention_min",
+      "attention_max",
+      "initial_alpha",
+      "mean_absolute_feature_delta",
+      "gradient_test_loss",
+      "gradient_norms",
+      "all_nonzero_grads",
+      "task_training_completed",
+      "segmentation_evaluation_completed",
+      "official_score",
+      "notes"
+    ]
+  },
+  {
+    "path": "results/stage2_final_acceptance_2026-10-21/acceptance.json",
+    "bytes": 15425,
+    "sha256": "fd48e0e043caf3a1f70424811673714665745fcc13eab1a361a520d1aab3f517",
+    "synthetic_only": false,
+    "schema": [
+      "date_local",
+      "branch",
+      "base_commit",
+      "status",
+      "requirements_source",
+      "tasks",
+      "deliverables",
+      "mandatory_summary",
+      "extra_research",
+      "source_sha256",
+      "evidence_mapping",
+      "dataset_audit",
+      "initial_18_reviewed_files",
+      "review_notes",
+      "pytest_passed",
+      "legacy_regression_groups_passed",
+      "commit_push",
+      "push_target",
+      "proposed_paths",
+      "proposed_count",
+      "modified_count",
+      "new_count",
+      "other_untracked_files_unchanged",
+      "static_checks"
+    ]
+  },
+  {
+    "path": "results/stage2_final_acceptance_2026-10-21/cpu.json",
+    "bytes": 5132,
+    "sha256": "4e6e9956dcd107308395df47c2ebd6c14352d0dcf839c5117ab29433d37cb17e",
+    "synthetic_only": false,
+    "schema": [
+      "timestamp_utc",
+      "mode",
+      "seed",
+      "python",
+      "torch",
+      "cuda_available",
+      "command",
+      "random_seed_scope",
+      "python_version",
+      "gpu",
+      "versions",
+      "source_sha256",
+      "status"
+    ]
+  },
+  {
+    "path": "results/stage2_final_acceptance_2026-10-21/cpu_regression.json",
+    "bytes": 8962,
+    "sha256": "75a1995c9db1c87eae51cfc2d634e31b29824bca57b41fd24e6d63eba3865aa7",
+    "synthetic_only": false,
+    "schema": [
+      "timestamp_utc",
+      "python",
+      "executable",
+      "versions",
+      "mode",
+      "real_model_inference_rerun",
+      "source_sha256",
+      "tests",
+      "status"
+    ]
+  },
+  {
+    "path": "results/stage2_final_acceptance_2026-10-21/dataset_audit.json",
+    "bytes": 757,
+    "sha256": "063922e890a784c12a7fcb97813c9a2d7bfeecee0854b1e48a9a78c8df92ea75",
+    "synthetic_only": false,
+    "schema": [
+      "status",
+      "metadata_version",
+      "train_info_count",
+      "index",
+      "sample_token",
+      "scene_name",
+      "official_mini_train_membership",
+      "ann_file",
+      "ann_file_sha256",
+      "config",
+      "config_sha256",
+      "data_root",
+      "runtime_queue_length_override",
+      "third_party_or_gt_written"
+    ]
+  },
+  {
+    "path": "results/stage2_final_acceptance_2026-10-21/gpu_commands.json",
+    "bytes": 1385,
+    "sha256": "41928b4928befd2d3b4bb6c03419087592a839f85c9b91d43cae26a44b3ef23f",
+    "synthetic_only": false,
+    "schema": "list[2]"
+  },
+  {
+    "path": "results/stage2_final_acceptance_2026-10-21/joint_backward.json",
+    "bytes": 10172,
+    "sha256": "16498d7d3149f8fb9d44419e5956931ee5d2f8669c466d4425debc9e8c5da5a4",
+    "synthetic_only": false,
+    "schema": [
+      "timestamp_utc",
+      "mode",
+      "seed",
+      "python",
+      "torch",
+      "cuda_available",
+      "command",
+      "random_seed_scope",
+      "python_version",
+      "gpu",
+      "versions",
+      "source_sha256",
+      "status",
+      "forward_calls",
+      "shared_bev_hook_calls",
+      "head_calls",
+      "shapes",
+      "text",
+      "target_class",
+      "gt_class_counts",
+      "gt_tensor_sha256",
+      "gt_tensor_unchanged",
+      "author_loss_keys",
+      "loss_config",
+      "loss_sources",
+      "gradients",
+      "backward_global_l2",
+      "frozen_author_and_distilbert_gradients_absent",
+      "optimizer_step_executed",
+      "fusion_parameters_updated",
+      "semantic_localization",
+      "accuracy_improvement",
+      "bev_gt_physical_alignment",
+      "temporal_mode",
+      "sample_token",
+      "dataset",
+      "checkpoint_sha256",
+      "checkpoint_sha256_after",
+      "checkpoint_modified"
+    ]
+  },
+  {
+    "path": "results/stage2_final_acceptance_2026-10-21/joint_forward.json",
+    "bytes": 8154,
+    "sha256": "8bc7ee2b06cfd04df367e5ee3be5a9c2e4f6505954efef567031573484679f3a",
+    "synthetic_only": false,
+    "schema": [
+      "timestamp_utc",
+      "mode",
+      "seed",
+      "python",
+      "torch",
+      "cuda_available",
+      "command",
+      "random_seed_scope",
+      "python_version",
+      "gpu",
+      "versions",
+      "source_sha256",
+      "status",
+      "sample_token",
+      "text",
+      "tensor_results",
+      "hook_traces",
+      "checkpoint_sha256",
+      "coordinate_contract",
+      "module_weights_trained",
+      "optimizer_step_executed",
+      "semantic_localization",
+      "accuracy_improvement",
+      "checkpoint_provenance",
+      "checkpoint_sha256_after",
+      "checkpoint_modified"
+    ]
+  },
+  {
+    "path": "results/stage2_final_acceptance_2026-10-21/offline_bev.json",
+    "bytes": 8594,
+    "sha256": "e1c444a5067b9e852d93c39e7f7c8e7f6e30d2bc2acebdbcb57bcfccfe14f012",
+    "synthetic_only": false,
+    "schema": [
+      "timestamp_utc",
+      "mode",
+      "seed",
+      "python",
+      "torch",
+      "cuda_available",
+      "command",
+      "random_seed_scope",
+      "python_version",
+      "gpu",
+      "versions",
+      "source_sha256",
+      "status",
+      "feature_source",
+      "text",
+      "instructions",
+      "shapes",
+      "bypass_exact_identity",
+      "batch_permutation_equivariant",
+      "single_vs_padded_batch_consistent",
+      "word_shuffle",
+      "text_bev_pair_shuffle_attention_mae",
+      "semantic_localization",
+      "accuracy_improvement",
+      "bev_gt_physical_alignment",
+      "fusion_weights_trained",
+      "optimizer_step_executed",
+      "distilbert_sha256",
+      "expected_distilbert_sha256",
+      "model_id",
+      "recorded_revision",
+      "bev_sha256"
+    ]
+  },
+  {
+    "path": "results/stage2_final_acceptance_2026-10-21/proposed_commit_files.json",
+    "bytes": 8349,
+    "sha256": "37c6e456730a7ebbb67656914700224d04ca053442c917ca7c5d8b4d7a506fbc",
+    "synthetic_only": false,
+    "schema": [
+      "branch",
+      "target",
+      "base_commit",
+      "status",
+      "files",
+      "count"
+    ]
+  }
+]

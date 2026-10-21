@@ -1,0 +1,149 @@
+{
+  "created_utc": "2026-10-21T11:45:10.079972+00:00",
+  "command": "outputs/stage2_data_review/collect_predictions.py --branch joint",
+  "python": "/home/jjx2003520/projects/bevformer_author_clean_5080/.venv-author/bin/python",
+  "python_version": "3.10.12",
+  "torch": "2.8.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "dataset": "nuScenes v1.0-mini Mini Val",
+  "temporal_mode": "OFF, independent frames; prev_bev reset every pass",
+  "checkpoint": "/mnt/g/nus/bevformer_small_joint_author.pth",
+  "checkpoint_sha256": "1345919901785b8df7ee16838d62f9f7a00444c9d8061f0dbee712d1b1b67dcf",
+  "config": "/home/jjx2003520/projects/bevformer_author_clean_5080/BEVFormer-seg/projects/configs/bevformer/bevformer_small_seg_det.py",
+  "config_sha256": "4c7141a84cbcd823a4cf880b2391fbc55c35e7e75db8eae2e2d3fcb6889ba8a9",
+  "ann_file": "data/nuscenes/nuscenes_infos_temporal_val.pkl",
+  "ann_file_sha256": "29b1a75f83b554336cd0bf0d841ccb2a0e6b973116999b4d5d0345bf5d1ca7e2",
+  "seed": 20261021,
+  "indices": [
+    0
+  ],
+  "selection": "Same Mini Val index 0 as final seeded unified forward, separate joint checkpoint",
+  "weight_sha256_before": {
+    "/mnt/g/nus/bevformer_small_joint_author.pth": "1345919901785b8df7ee16838d62f9f7a00444c9d8061f0dbee712d1b1b67dcf",
+    "/home/jjx2003520/projects/bev_vla/models/distilbert-base-uncased/model.safetensors": "5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_step61/class_prompts.npy": "a482cb59064fe5d3621c9ac57c9063871f8b7b978b0f15bc0032abc34645acb2"
+  },
+  "optimizer_step_executed": false,
+  "training_executed": false,
+  "frames": [
+    {
+      "index": 0,
+      "token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "file": "predictions/joint_val_000.npz",
+      "sha256": "48106e76a3429d28d76f763a2e1f3af5c7b465ff3cf3bf4027091a6d14f4b740",
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151603512404.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_RIGHT__1533151603520482.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_LEFT__1533151603504799.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-01-15-16-36-0400__CAM_BACK__1533151603537558.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-01-15-16-36-0400__CAM_BACK_LEFT__1533151603547405.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_BACK_RIGHT__1533151603528113.jpg"
+      },
+      "gt_tensor_sha256": "320f138e01f1eae76ca6480e488220e8cdf34fdcbf1024e45af5259febef3d91",
+      "gt_unchanged": true,
+      "deltas": {
+        "all_cls_scores": {
+          "bypass_max_abs": 0.0,
+          "enhanced_mae": 0.0035845222882926464
+        },
+        "all_bbox_preds": {
+          "bypass_max_abs": 0.0,
+          "enhanced_mae": 0.0020268228836357594
+        },
+        "seg_preds": {
+          "bypass_max_abs": 0.0,
+          "enhanced_mae": 0.035236384719610214
+        }
+      },
+      "confusions": {
+        "original": [
+          [
+            64183,
+            1343,
+            1499,
+            4212
+          ],
+          [
+            569,
+            2026,
+            25,
+            0
+          ],
+          [
+            40,
+            0,
+            375,
+            51
+          ],
+          [
+            734,
+            0,
+            17,
+            4926
+          ]
+        ],
+        "bypass": [
+          [
+            64183,
+            1343,
+            1499,
+            4212
+          ],
+          [
+            569,
+            2026,
+            25,
+            0
+          ],
+          [
+            40,
+            0,
+            375,
+            51
+          ],
+          [
+            734,
+            0,
+            17,
+            4926
+          ]
+        ],
+        "enhanced": [
+          [
+            64196,
+            1340,
+            1493,
+            4208
+          ],
+          [
+            571,
+            2024,
+            25,
+            0
+          ],
+          [
+            40,
+            0,
+            374,
+            52
+          ],
+          [
+            739,
+            0,
+            17,
+            4921
+          ]
+        ]
+      }
+    }
+  ],
+  "module_weights_trained": false,
+  "text": "Find lane markings ahead",
+  "weights_unchanged": true,
+  "weight_sha256_after": {
+    "/mnt/g/nus/bevformer_small_joint_author.pth": "1345919901785b8df7ee16838d62f9f7a00444c9d8061f0dbee712d1b1b67dcf",
+    "/home/jjx2003520/projects/bev_vla/models/distilbert-base-uncased/model.safetensors": "5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_step61/class_prompts.npy": "a482cb59064fe5d3621c9ac57c9063871f8b7b978b0f15bc0032abc34645acb2"
+  }
+}

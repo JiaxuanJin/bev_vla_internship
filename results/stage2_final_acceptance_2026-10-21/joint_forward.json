@@ -1,0 +1,199 @@
+{
+  "timestamp_utc": "2026-10-21T11:09:23.941947+00:00",
+  "mode": "joint",
+  "seed": 20261021,
+  "python": "/home/jjx2003520/projects/bevformer_author_clean_5080/.venv-author/bin/python",
+  "torch": "2.8.0+cu128",
+  "cuda_available": true,
+  "command": [
+    "/home/jjx2003520/projects/bevformer_author_clean_5080/.venv-author/bin/python",
+    "scripts/stage2/run_stage2.py",
+    "--mode",
+    "joint",
+    "--output",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_final_acceptance_seeded/joint_forward.json"
+  ],
+  "random_seed_scope": "Python random, NumPy and torch before dataset construction; fusion torch seed reset",
+  "python_version": "3.10.12",
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.44.2",
+    "numpy": "1.26.4",
+    "mmcv-full": "1.4.0",
+    "mmdet": "2.14.0",
+    "mmdet3d": "0.17.1",
+    "pytest": "NOT_INSTALLED"
+  },
+  "source_sha256": {
+    "scripts/stage2/__init__.py": "260240bb1aa01534c89bde22cdd82dcd887a4415554ff42a56f016ad80cf0d25",
+    "scripts/stage2/bev_coordinates.py": "c69e0466c1b63b42621042f073e8728f1270cdcca55e327810eb1124e56d3cb5",
+    "scripts/stage2/bev_fusion.py": "f0debeaf460b9e17f5d59645e930e420608191b2d95a906eb1cbc98f76055c8a",
+    "scripts/stage2/download_distilbert.py": "19eb6bb8261dfab6b6533aded84aa09078016bd2cecd9266cabc5d67559aef93",
+    "scripts/stage2/joint_runtime.py": "089fa70da547372c100bf23d2c5c255a7d9f07985fa681110d4f9d1f4c171696",
+    "scripts/stage2/language_bev_attention.py": "9837e7d994ed0cc91043e560287afcb1cb59d5f2311820f7f68bc8288cbf9a88",
+    "scripts/stage2/language_encoder.py": "93d3240c40f3fa59a8eda85460cb0eb038d77de71a0d097c6b885e1a9fd17478",
+    "scripts/stage2/multitask_loss.py": "55fd282f25feb3ba2137e46e2fac340de27029f0b44b0a067bc97e15b53a1fff",
+    "scripts/stage2/multitask_training.py": "6dcba2ba7d723bd72603d065ebf86cbffed2bfbbdc080f0a47ec3f0c599a0658",
+    "scripts/stage2/pipeline.py": "3ee5d0d36d67bf4bf95fb2cb697f36d5d651d2b1b87124f1f687cdb62932fd75",
+    "scripts/stage2/run_day1.py": "05e47138f6540d0a97f44e096cd7e47f2c64404e34852a8d114a500e977fb449",
+    "scripts/stage2/run_regression.py": "73a4b72ee4408cb1653a4ef846dae2d1d81ea104bafa00d2a5c057c85323a427",
+    "scripts/stage2/run_stage2.py": "82641ab14aae796093fe0c89f2c1d9d90ee3a31572f34930ef0164d004f7e989",
+    "scripts/stage2/run_step56_smoke.py": "50b0d3ea20c066f5628f563bf5925091f75dd3a48bfe5a816977d501f180528b",
+    "scripts/stage2/run_step57_distilbert.py": "032f7dc963114095c59bdaa0369ac256a3f3005809a2444d27199706d1a38976",
+    "scripts/stage2/run_step58_author_inference.py": "dd54ee6620e2b242632e5e7a0dec51f5ac986c7c3b6c3d70ce9831a215a007ad",
+    "scripts/stage2/run_step58_prepare_text.py": "2a030b0afa33102a6572dcf660eb0ce5852abfc32ea440928912fbb12f43c835",
+    "scripts/stage2/run_step59_train.py": "f1104b7226afc5132278f4062051f79b22615299166b58bed541a0a89824f3fc",
+    "scripts/stage2/run_step60_extended_ab.py": "cf8b4b13236805f53c7245643ef9dc9eb9f30dbb3105b835435113f22935064a",
+    "scripts/stage2/run_step61_prepare_text.py": "3e2f2437dd0e0564ef42d9bbff32c642aa7ad411734f70f900c2981e2e360fe5",
+    "scripts/stage2/run_step61_supervised_train.py": "1b2407da06b892320c66c2e501c57c4d67cb885a665821098a4726af625fc231",
+    "scripts/stage2/run_step62_attention_diagnostic.py": "b47a5fffefb337eea6a4743f3466f539a746634a2d723545dbc9c457e32cf051",
+    "scripts/stage2/run_step64_balanced_train.py": "2131f32bd344d5863f8ed2f1670a64e287aa598c7b1c98571c7d1b9f854fb836",
+    "scripts/stage2/run_step65_literature_adapter.py": "6a9540224806850e9c1b9374ab44f3c26d6b20c29812516df7f1bc6c06eb0bef",
+    "scripts/stage2/run_step67_three_in_one.py": "c2aef5b45a53ef88eeb351af1b586be4c3891d63dbfa1cc5535059108417bd0d",
+    "scripts/stage2/run_step68_acceptance.py": "d69bb3cba4de2d0a709040ded33d1dc63956a5cdf9809973a93e3e25ee7e7367",
+    "scripts/stage2/run_step69_loss_contract.py": "133a398950602501b4bc6b30acf4e178a2a51e31599a96bca2b7dc1ff088c7b1",
+    "scripts/stage2/run_step70_joint_integration.py": "33b67a5f3309dddd180d43912533052af0b58f9bac76dc5082b991b8b9c112b6",
+    "scripts/stage2/run_step71_stage2_review.py": "9e143b7fe4384c9e69dc33fc87b616f08c0868699a524fac8890394ca3e23bab",
+    "scripts/stage2/run_step72_real_joint_gradient.py": "32a2f4cd802b2122c4641aabea7145177853700c80a43258d0c3fa20575543a9",
+    "scripts/stage2/run_step73_fill_gaps.py": "70d457adf15793809819c7844dced4832a56162b64d50ae7d5974715376314db",
+    "scripts/stage2/semantic_instruction.py": "d1c46f5783bdc01ed622e9d2c8774a072e0c8344373cf94d81f4d2f185fcc65c",
+    "scripts/stage2/semantic_projection.py": "2e5c6d14285bc115bd73b867db21ab1203747e7418f79239c67c9fccefb957c6",
+    "scripts/stage2/step66_background_safe_train.py": "3c13fb5e976f65221fa7a67ecf415a03ea6dd3a1b06cca751866368b7f256263",
+    "scripts/stage2/step70b_prepare_joint.py": "fce150eb21cda9eaac49beaf13f13a9f875c45fc76803bf3700a4ed72baccb1a",
+    "tests/test_stage2_day1.py": "55a8d955ba0fb43c760e15bfb4d903afd5d695b062d92ee31888b341d46737f2",
+    "tests/test_stage2_joint_backward.py": "6ad8a6bb491a1f7703e682d76f6819521314db8b040a5e1c259460d7cf3ee4a0",
+    "tests/test_stage2_pipeline.py": "4ccbbdcdd796f73ae1dcff255dd2478bebae12504fe1384a09195fc8bc29b4c1"
+  },
+  "status": "PASS_REAL_DUAL_HEAD_FUNCTION_ONLY",
+  "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+  "text": "Find lane markings ahead",
+  "tensor_results": {
+    "seg_preds": {
+      "bypass_vs_original": {
+        "shape": [
+          1,
+          4,
+          200,
+          400
+        ],
+        "mean_abs_difference": 0.0,
+        "max_abs_difference": 0.0
+      },
+      "enhanced_vs_original": {
+        "shape": [
+          1,
+          4,
+          200,
+          400
+        ],
+        "mean_abs_difference": 0.035236384719610214,
+        "max_abs_difference": 0.41072654724121094
+      }
+    },
+    "all_cls_scores": {
+      "bypass_vs_original": {
+        "shape": [
+          6,
+          1,
+          900,
+          10
+        ],
+        "mean_abs_difference": 0.0,
+        "max_abs_difference": 0.0
+      },
+      "enhanced_vs_original": {
+        "shape": [
+          6,
+          1,
+          900,
+          10
+        ],
+        "mean_abs_difference": 0.0035845222882926464,
+        "max_abs_difference": 0.06804275512695312
+      }
+    },
+    "all_bbox_preds": {
+      "bypass_vs_original": {
+        "shape": [
+          6,
+          1,
+          900,
+          10
+        ],
+        "mean_abs_difference": 0.0,
+        "max_abs_difference": 0.0
+      },
+      "enhanced_vs_original": {
+        "shape": [
+          6,
+          1,
+          900,
+          10
+        ],
+        "mean_abs_difference": 0.0020268228836357594,
+        "max_abs_difference": 0.12436676025390625
+      }
+    }
+  },
+  "hook_traces": {
+    "bypass": {
+      "hook_calls": 1,
+      "enabled": false,
+      "trace": {}
+    },
+    "enhanced": {
+      "hook_calls": 1,
+      "enabled": true,
+      "trace": {
+        "enhanced_bev": [
+          1,
+          256,
+          150,
+          150
+        ],
+        "attention": [
+          1,
+          1,
+          150,
+          150
+        ],
+        "text_query": [
+          1,
+          256
+        ],
+        "semantic_bev": [
+          1,
+          256,
+          150,
+          150
+        ],
+        "text_embedding": [
+          1,
+          768
+        ]
+      },
+      "instructions": [
+        {
+          "original": "Find lane markings ahead",
+          "targets": [
+            "divider"
+          ],
+          "excluded": [],
+          "front_back": "front",
+          "left_right": null,
+          "parser_type": "restricted_english_rules"
+        }
+      ]
+    }
+  },
+  "checkpoint_sha256": "1345919901785b8df7ee16838d62f9f7a00444c9d8061f0dbee712d1b1b67dcf",
+  "coordinate_contract": "TENSOR_ORDER_ONLY",
+  "module_weights_trained": false,
+  "optimizer_step_executed": false,
+  "semantic_localization": "NOT_VERIFIED",
+  "accuracy_improvement": "NOT_VERIFIED",
+  "checkpoint_provenance": "REQUIRES_MANUAL_VALIDATION",
+  "checkpoint_sha256_after": "1345919901785b8df7ee16838d62f9f7a00444c9d8061f0dbee712d1b1b67dcf",
+  "checkpoint_modified": false
+}

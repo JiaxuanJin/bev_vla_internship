@@ -1,0 +1,20 @@
+[
+  {
+    "class": "Divider",
+    "token": "281b92269fd648d4b52d06ac06ca6d65",
+    "gt_identical": true,
+    "attention_max_abs_difference": 0.0
+  },
+  {
+    "class": "Ped Crossing",
+    "token": "d0ecf474e0e64950aa265cd44b9c9d75",
+    "gt_identical": true,
+    "attention_max_abs_difference": 0.0
+  },
+  {
+    "class": "Boundary",
+    "token": "cb4e6195faad467094fbd4d0a9e960e9",
+    "gt_identical": true,
+    "attention_max_abs_difference": 0.0
+  }
+]

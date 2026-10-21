@@ -1,0 +1,137 @@
+{
+  "timestamp_utc": "2026-10-21T10:42:19.065691+00:00",
+  "mode": "joint",
+  "seed": 20261021,
+  "python": "/home/jjx2003520/projects/bevformer_author_clean_5080/.venv-author/bin/python",
+  "torch": "2.8.0+cu128",
+  "cuda_available": true,
+  "status": "PASS_REAL_DUAL_HEAD_FUNCTION_ONLY",
+  "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+  "text": "Find lane markings ahead",
+  "tensor_results": {
+    "seg_preds": {
+      "bypass_vs_original": {
+        "shape": [
+          1,
+          4,
+          200,
+          400
+        ],
+        "mean_abs_difference": 0.0,
+        "max_abs_difference": 0.0
+      },
+      "enhanced_vs_original": {
+        "shape": [
+          1,
+          4,
+          200,
+          400
+        ],
+        "mean_abs_difference": 0.035236384719610214,
+        "max_abs_difference": 0.41072654724121094
+      }
+    },
+    "all_cls_scores": {
+      "bypass_vs_original": {
+        "shape": [
+          6,
+          1,
+          900,
+          10
+        ],
+        "mean_abs_difference": 0.0,
+        "max_abs_difference": 0.0
+      },
+      "enhanced_vs_original": {
+        "shape": [
+          6,
+          1,
+          900,
+          10
+        ],
+        "mean_abs_difference": 0.0035845222882926464,
+        "max_abs_difference": 0.06804275512695312
+      }
+    },
+    "all_bbox_preds": {
+      "bypass_vs_original": {
+        "shape": [
+          6,
+          1,
+          900,
+          10
+        ],
+        "mean_abs_difference": 0.0,
+        "max_abs_difference": 0.0
+      },
+      "enhanced_vs_original": {
+        "shape": [
+          6,
+          1,
+          900,
+          10
+        ],
+        "mean_abs_difference": 0.0020268228836357594,
+        "max_abs_difference": 0.12436676025390625
+      }
+    }
+  },
+  "hook_traces": {
+    "bypass": {
+      "hook_calls": 1,
+      "enabled": false,
+      "trace": {}
+    },
+    "enhanced": {
+      "hook_calls": 1,
+      "enabled": true,
+      "trace": {
+        "enhanced_bev": [
+          1,
+          256,
+          150,
+          150
+        ],
+        "attention": [
+          1,
+          1,
+          150,
+          150
+        ],
+        "text_query": [
+          1,
+          256
+        ],
+        "semantic_bev": [
+          1,
+          256,
+          150,
+          150
+        ],
+        "text_embedding": [
+          1,
+          768
+        ]
+      },
+      "instructions": [
+        {
+          "original": "Find lane markings ahead",
+          "targets": [
+            "divider"
+          ],
+          "excluded": [],
+          "front_back": "front",
+          "left_right": null,
+          "parser_type": "restricted_english_rules"
+        }
+      ]
+    }
+  },
+  "checkpoint_sha256": "1345919901785b8df7ee16838d62f9f7a00444c9d8061f0dbee712d1b1b67dcf",
+  "coordinate_contract": "TENSOR_ORDER_ONLY",
+  "module_weights_trained": false,
+  "optimizer_step_executed": false,
+  "semantic_localization": "NOT_VERIFIED",
+  "accuracy_improvement": "NOT_VERIFIED",
+  "checkpoint_provenance": "REQUIRES_MANUAL_VALIDATION"
+}

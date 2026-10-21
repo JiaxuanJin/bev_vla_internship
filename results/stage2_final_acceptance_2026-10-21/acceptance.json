@@ -1,0 +1,292 @@
+{
+  "date_local": "2026-10-21",
+  "branch": "main",
+  "base_commit": "816d041bac2147da1db69c516f25aa09a0cf766c",
+  "status": "PASS",
+  "requirements_source": "docs/stage2/02_第二阶段原始任务书.md",
+  "tasks": [
+    {
+      "id": "T1",
+      "task": "集成轻量级DistilBERT作为语言编码器，加载预训练权重。",
+      "status": "PASS",
+      "evidence": "language_encoder.py + offline_bev.json; local pretrained model SHA256 matches"
+    },
+    {
+      "id": "T2",
+      "task": "实现自然语言指令的预处理和编码功能，提取指令语义特征。",
+      "status": "PASS",
+      "evidence": "normalize/tokenizer/masked pooling; 69 pytest; 7 real instruction encodings"
+    },
+    {
+      "id": "T3",
+      "task": "设计语义-空间映射头，将一维语言特征转换为二维BEV空间特征。",
+      "status": "PASS",
+      "evidence": "SemanticProjection.forward_spatial: 768 -> 256 -> [B,256,H,W]"
+    },
+    {
+      "id": "T4",
+      "task": "编写单元测试，验证各子模块的输入输出正确性。",
+      "status": "PASS",
+      "evidence": "all 69 pytest + 7 registered legacy regressions passed"
+    },
+    {
+      "id": "T5",
+      "task": "设计空间注意力生成器，将语义-空间特征转换为BEV注意力掩码。",
+      "status": "PASS",
+      "evidence": "LanguageBEVAttention.from_semantic consumes S; dependency and gradient tested"
+    },
+    {
+      "id": "T6",
+      "task": "实现注意力融合机制，将生成的掩码与原始BEV特征进行加权融合。",
+      "status": "PASS",
+      "evidence": "Fusion residual; all 3 real Head bypass max differences are zero"
+    },
+    {
+      "id": "T7",
+      "task": "设计多任务损失函数（检测损失+分割损失+注意力正则化损失）。",
+      "status": "PASS",
+      "evidence": "fresh joint-backward on actual Mini Train; one model forward and total.backward"
+    },
+    {
+      "id": "T8",
+      "task": "将增强模块集成到BEVFormer的特征提取流程中，确保代码可运行。",
+      "status": "PASS",
+      "evidence": "run_stage2 -> joint_runtime -> Stage2Pipeline; fresh real GPU forward and backward"
+    }
+  ],
+  "deliverables": [
+    {
+      "id": "D1",
+      "delivery": "语言引导BEV注意力增强模块的完整代码实现。",
+      "status": "PASS",
+      "paths": [
+        "scripts/stage2/language_encoder.py",
+        "scripts/stage2/semantic_instruction.py",
+        "scripts/stage2/semantic_projection.py",
+        "scripts/stage2/language_bev_attention.py",
+        "scripts/stage2/bev_fusion.py",
+        "scripts/stage2/multitask_training.py"
+      ]
+    },
+    {
+      "id": "D2",
+      "delivery": "模块结构设计文档（包含架构图、各子模块功能说明）。",
+      "status": "PASS",
+      "paths": [
+        "docs/stage2/11_模块架构设计.md",
+        "docs/images/stage2/stage2_final_architecture.svg"
+      ]
+    },
+    {
+      "id": "D3",
+      "delivery": "集成了增强模块的完整BEV感知系统代码。",
+      "status": "PASS",
+      "paths": [
+        "scripts/stage2/run_stage2.py",
+        "scripts/stage2/pipeline.py",
+        "scripts/stage2/joint_runtime.py",
+        "scripts/stage2/bev_coordinates.py",
+        "requirements_stage2.txt"
+      ]
+    },
+    {
+      "id": "D4",
+      "delivery": "单元测试报告，验证各模块功能正确性。",
+      "status": "PASS",
+      "paths": [
+        "docs/stage2/12_单元测试报告.md",
+        "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "tests/test_stage2_day1.py",
+        "tests/test_stage2_pipeline.py",
+        "tests/test_stage2_joint_backward.py",
+        "results/stage2_final_acceptance_2026-10-21/cpu_regression.json"
+      ]
+    }
+  ],
+  "mandatory_summary": {
+    "tasks_passed": 8,
+    "tasks_failed": 0,
+    "deliverables_passed": 4,
+    "deliverables_failed": 0
+  },
+  "extra_research": {
+    "semantic_localization_accuracy": "NOT_VERIFIED",
+    "miou_or_detection_accuracy_gain": "NOT_VERIFIED",
+    "complete_physical_alignment": "NOT_VERIFIED",
+    "full_temporal_evaluation": "NOT_VERIFIED",
+    "checkpoint_upstream_provenance": "NOT_VERIFIED"
+  },
+  "source_sha256": {
+    "requirements_stage2.txt": "3c1105188a60f5e49758a73e04b7063b89f7d4d860fb60fbe82986465014c1a0",
+    "scripts/stage2/__init__.py": "260240bb1aa01534c89bde22cdd82dcd887a4415554ff42a56f016ad80cf0d25",
+    "scripts/stage2/bev_coordinates.py": "c69e0466c1b63b42621042f073e8728f1270cdcca55e327810eb1124e56d3cb5",
+    "scripts/stage2/bev_fusion.py": "f0debeaf460b9e17f5d59645e930e420608191b2d95a906eb1cbc98f76055c8a",
+    "scripts/stage2/download_distilbert.py": "19eb6bb8261dfab6b6533aded84aa09078016bd2cecd9266cabc5d67559aef93",
+    "scripts/stage2/joint_runtime.py": "089fa70da547372c100bf23d2c5c255a7d9f07985fa681110d4f9d1f4c171696",
+    "scripts/stage2/language_bev_attention.py": "9837e7d994ed0cc91043e560287afcb1cb59d5f2311820f7f68bc8288cbf9a88",
+    "scripts/stage2/language_encoder.py": "93d3240c40f3fa59a8eda85460cb0eb038d77de71a0d097c6b885e1a9fd17478",
+    "scripts/stage2/multitask_loss.py": "55fd282f25feb3ba2137e46e2fac340de27029f0b44b0a067bc97e15b53a1fff",
+    "scripts/stage2/multitask_training.py": "6dcba2ba7d723bd72603d065ebf86cbffed2bfbbdc080f0a47ec3f0c599a0658",
+    "scripts/stage2/pipeline.py": "3ee5d0d36d67bf4bf95fb2cb697f36d5d651d2b1b87124f1f687cdb62932fd75",
+    "scripts/stage2/run_day1.py": "05e47138f6540d0a97f44e096cd7e47f2c64404e34852a8d114a500e977fb449",
+    "scripts/stage2/run_regression.py": "73a4b72ee4408cb1653a4ef846dae2d1d81ea104bafa00d2a5c057c85323a427",
+    "scripts/stage2/run_stage2.py": "82641ab14aae796093fe0c89f2c1d9d90ee3a31572f34930ef0164d004f7e989",
+    "scripts/stage2/run_step56_smoke.py": "50b0d3ea20c066f5628f563bf5925091f75dd3a48bfe5a816977d501f180528b",
+    "scripts/stage2/run_step57_distilbert.py": "032f7dc963114095c59bdaa0369ac256a3f3005809a2444d27199706d1a38976",
+    "scripts/stage2/run_step58_author_inference.py": "dd54ee6620e2b242632e5e7a0dec51f5ac986c7c3b6c3d70ce9831a215a007ad",
+    "scripts/stage2/run_step58_prepare_text.py": "2a030b0afa33102a6572dcf660eb0ce5852abfc32ea440928912fbb12f43c835",
+    "scripts/stage2/run_step59_train.py": "f1104b7226afc5132278f4062051f79b22615299166b58bed541a0a89824f3fc",
+    "scripts/stage2/run_step60_extended_ab.py": "cf8b4b13236805f53c7245643ef9dc9eb9f30dbb3105b835435113f22935064a",
+    "scripts/stage2/run_step61_prepare_text.py": "3e2f2437dd0e0564ef42d9bbff32c642aa7ad411734f70f900c2981e2e360fe5",
+    "scripts/stage2/run_step61_supervised_train.py": "1b2407da06b892320c66c2e501c57c4d67cb885a665821098a4726af625fc231",
+    "scripts/stage2/run_step62_attention_diagnostic.py": "b47a5fffefb337eea6a4743f3466f539a746634a2d723545dbc9c457e32cf051",
+    "scripts/stage2/run_step64_balanced_train.py": "2131f32bd344d5863f8ed2f1670a64e287aa598c7b1c98571c7d1b9f854fb836",
+    "scripts/stage2/run_step65_literature_adapter.py": "6a9540224806850e9c1b9374ab44f3c26d6b20c29812516df7f1bc6c06eb0bef",
+    "scripts/stage2/run_step67_three_in_one.py": "c2aef5b45a53ef88eeb351af1b586be4c3891d63dbfa1cc5535059108417bd0d",
+    "scripts/stage2/run_step68_acceptance.py": "d69bb3cba4de2d0a709040ded33d1dc63956a5cdf9809973a93e3e25ee7e7367",
+    "scripts/stage2/run_step69_loss_contract.py": "133a398950602501b4bc6b30acf4e178a2a51e31599a96bca2b7dc1ff088c7b1",
+    "scripts/stage2/run_step70_joint_integration.py": "33b67a5f3309dddd180d43912533052af0b58f9bac76dc5082b991b8b9c112b6",
+    "scripts/stage2/run_step71_stage2_review.py": "9e143b7fe4384c9e69dc33fc87b616f08c0868699a524fac8890394ca3e23bab",
+    "scripts/stage2/run_step72_real_joint_gradient.py": "32a2f4cd802b2122c4641aabea7145177853700c80a43258d0c3fa20575543a9",
+    "scripts/stage2/run_step73_fill_gaps.py": "70d457adf15793809819c7844dced4832a56162b64d50ae7d5974715376314db",
+    "scripts/stage2/semantic_instruction.py": "d1c46f5783bdc01ed622e9d2c8774a072e0c8344373cf94d81f4d2f185fcc65c",
+    "scripts/stage2/semantic_projection.py": "2e5c6d14285bc115bd73b867db21ab1203747e7418f79239c67c9fccefb957c6",
+    "scripts/stage2/step66_background_safe_train.py": "3c13fb5e976f65221fa7a67ecf415a03ea6dd3a1b06cca751866368b7f256263",
+    "scripts/stage2/step70b_prepare_joint.py": "fce150eb21cda9eaac49beaf13f13a9f875c45fc76803bf3700a4ed72baccb1a",
+    "stage2/__init__.py": "afb8402a3eddb6a9783d2261acdc76a2cfceb71195b13754a04637592116cad3",
+    "stage2/language_encoder.py": "51da16ad969457205385537180f4dd231b361174693f84230858b077fdd01c87",
+    "stage2/semantic_projection.py": "d550405a89f15ccba1b4c1db38661fc267f6b1cdc9c77fd23fc41833ec2ebe86",
+    "stage2/tokenizer_config.json": "8f85123978ec55eb8cbf9e40ffffb9dd4f945ca1f74aaa2c54c8accdc46abde4",
+    "tests/test_stage2_day1.py": "55a8d955ba0fb43c760e15bfb4d903afd5d695b062d92ee31888b341d46737f2",
+    "tests/test_stage2_joint_backward.py": "6ad8a6bb491a1f7703e682d76f6819521314db8b040a5e1c259460d7cf3ee4a0",
+    "tests/test_stage2_pipeline.py": "4ccbbdcdd796f73ae1dcff255dd2478bebae12504fe1384a09195fc8bc29b4c1"
+  },
+  "evidence_mapping": {
+    "cpu.json": "outputs/stage2_final_acceptance_seeded/cpu.json",
+    "cpu_regression.json": "outputs/stage2_final_acceptance_seeded/cpu_regression.json",
+    "offline_bev.json": "outputs/stage2_final_acceptance_seeded/offline_bev.json",
+    "joint_forward.json": "outputs/stage2_final_acceptance_seeded/joint_forward.json",
+    "joint_backward.json": "outputs/stage2_final_acceptance_seeded/joint_backward.json",
+    "gpu_commands.json": "outputs/stage2_final_acceptance_seeded/gpu_commands.json",
+    "joint_forward_output.txt": "outputs/stage2_final_acceptance_seeded/joint_forward.log",
+    "joint_backward_output.txt": "outputs/stage2_final_acceptance_seeded/joint_backward.log",
+    "dataset_audit.json": "outputs/stage2_final_acceptance_seeded/dataset_audit.json"
+  },
+  "dataset_audit": {
+    "status": "PASS",
+    "metadata_version": "v1.0-mini",
+    "train_info_count": 323,
+    "index": 0,
+    "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+    "scene_name": "scene-0061",
+    "official_mini_train_membership": true,
+    "ann_file": "/mnt/g/BEV_VLA_Datasets/nuscenes/nuscenes_infos_temporal_train.pkl",
+    "ann_file_sha256": "e46cf82c464dc000de4d7f57aff23d13e9da5d7978feb57b4aa67a1cdc6a847d",
+    "config": "/home/jjx2003520/projects/bevformer_author_clean_5080/BEVFormer-seg/projects/configs/bevformer/bevformer_small_seg_det.py",
+    "config_sha256": "4c7141a84cbcd823a4cf880b2391fbc55c35e7e75db8eae2e2d3fcb6889ba8a9",
+    "data_root": "/mnt/g/BEV_VLA_Datasets/bev_seg_nuscenes",
+    "runtime_queue_length_override": 1,
+    "third_party_or_gt_written": false
+  },
+  "initial_18_reviewed_files": [
+    "README.md",
+    "docs/stage2/11_模块架构设计.md",
+    "docs/stage2/12_单元测试报告.md",
+    "docs/stage2/13_阶段二任务对照.md",
+    "docs/stage2/17_第二阶段复现指引.md",
+    "docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md",
+    "scripts/stage2/README.md",
+    "scripts/stage2/bev_coordinates.py",
+    "scripts/stage2/bev_fusion.py",
+    "scripts/stage2/joint_runtime.py",
+    "scripts/stage2/language_bev_attention.py",
+    "scripts/stage2/language_encoder.py",
+    "scripts/stage2/pipeline.py",
+    "scripts/stage2/run_regression.py",
+    "scripts/stage2/run_stage2.py",
+    "scripts/stage2/semantic_instruction.py",
+    "scripts/stage2/semantic_projection.py",
+    "tests/test_stage2_pipeline.py"
+  ],
+  "review_notes": [
+    "二维 S 原为 Attention 后置辅助输出：已补成 forward_spatial -> from_semantic 的实际依赖，保留旧融合权重键/数值兼容测试。",
+    "新入口原无真实 backward：已新增 joint-backward，使用同一次训练前向的实际 3D/map GT 图，未调用 Step72 live。",
+    "训练取样前统一 Python/NumPy/Torch 种子；最终 seeded 目录与补种前初测分开，原始记录保留。",
+    "检查 Hook 正常/异常恢复、单帧/维度拒绝、非有限 Loss/零梯度拒绝、冻结参数、x 模式防覆盖与非零退出码。",
+    "编译/AST、实际导入、69 项 pytest、源码人工复核；不将未执行的格式化或静态分析工具记为 PASS。"
+  ],
+  "pytest_passed": 69,
+  "legacy_regression_groups_passed": 7,
+  "commit_push": "AWAITING_USER_CONFIRMATION",
+  "push_target": "origin/main",
+  "proposed_paths": [
+    "README.md",
+    "docs/images/stage2/README.md",
+    "docs/images/stage2/stage2_final_architecture.svg",
+    "docs/stage2/02_第二阶段原始任务书.md",
+    "docs/stage2/11_模块架构设计.md",
+    "docs/stage2/12_单元测试报告.md",
+    "docs/stage2/13_阶段二任务对照.md",
+    "docs/stage2/17_第二阶段复现指引.md",
+    "docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md",
+    "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+    "results/stage2_completion_2026-10-21/README.md",
+    "results/stage2_completion_2026-10-21/cpu_regression.json",
+    "results/stage2_completion_2026-10-21/joint_live.json",
+    "results/stage2_completion_2026-10-21/joint_sandbox_failure.json",
+    "results/stage2_completion_2026-10-21/offline_bev.json",
+    "results/stage2_completion_2026-10-21/verification.json",
+    "results/stage2_final_acceptance_2026-10-21/README.md",
+    "results/stage2_final_acceptance_2026-10-21/acceptance.json",
+    "results/stage2_final_acceptance_2026-10-21/cpu.json",
+    "results/stage2_final_acceptance_2026-10-21/cpu_regression.json",
+    "results/stage2_final_acceptance_2026-10-21/dataset_audit.json",
+    "results/stage2_final_acceptance_2026-10-21/gpu_commands.json",
+    "results/stage2_final_acceptance_2026-10-21/joint_backward.json",
+    "results/stage2_final_acceptance_2026-10-21/joint_backward_output.txt",
+    "results/stage2_final_acceptance_2026-10-21/joint_forward.json",
+    "results/stage2_final_acceptance_2026-10-21/joint_forward_output.txt",
+    "results/stage2_final_acceptance_2026-10-21/offline_bev.json",
+    "results/stage2_final_acceptance_2026-10-21/proposed_commit_files.json",
+    "scripts/stage2/README.md",
+    "scripts/stage2/bev_coordinates.py",
+    "scripts/stage2/bev_fusion.py",
+    "scripts/stage2/joint_runtime.py",
+    "scripts/stage2/language_bev_attention.py",
+    "scripts/stage2/language_encoder.py",
+    "scripts/stage2/pipeline.py",
+    "scripts/stage2/run_regression.py",
+    "scripts/stage2/run_stage2.py",
+    "scripts/stage2/semantic_instruction.py",
+    "scripts/stage2/semantic_projection.py",
+    "tests/test_stage2_joint_backward.py",
+    "tests/test_stage2_pipeline.py"
+  ],
+  "proposed_count": 41,
+  "modified_count": 13,
+  "new_count": 28,
+  "other_untracked_files_unchanged": [
+    "README_使用说明.txt",
+    "scripts/README.txt",
+    "scripts/README_使用说明.txt",
+    "scripts/check_lidar_camera_alignment.py",
+    "scripts/step48a_clean_5080_pytorch.sh",
+    "scripts/step48a_offline_torch_copy.sh",
+    "scripts/step48b_build_mmcv_author_5080.sh",
+    "scripts/step48b_fix_cpp17_and_build.sh",
+    "scripts/step48c_fix_torch_dispatch.py",
+    "scripts/step48d_fix_thc_and_build.sh"
+  ],
+  "static_checks": {
+    "status": "PASS",
+    "python_changed_files_compiled": 12,
+    "markdown_local_links": 219,
+    "markdown_image_references": 12,
+    "source_hashes_match_all_final_runs": true,
+    "original_10_other_files_unchanged": true,
+    "existing_archive_unchanged": true,
+    "index_empty": true,
+    "diff_check": "PASS",
+    "ignore_rules": "PASS"
+  }
+}
