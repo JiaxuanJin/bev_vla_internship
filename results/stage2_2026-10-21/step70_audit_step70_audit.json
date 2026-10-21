@@ -1,0 +1,179 @@
+{
+  "step": 70,
+  "mode": "read_only_joint_architecture_and_checkpoint_audit",
+  "configs": {
+    "det": {
+      "exists": true,
+      "path": "/home/jjx2003520/projects/bev_vla/BEVFormer/projects/configs/bevformer/bevformer_small.py",
+      "tasks": {
+        "seg": false,
+        "det": false
+      },
+      "bev_shape": [
+        150,
+        150
+      ],
+      "embed_dims": 256,
+      "seg_head_defined": false,
+      "decoder_defined": true,
+      "test_pipeline_types": [
+        "LoadMultiViewImageFromFiles",
+        "NormalizeMultiviewImage",
+        "MultiScaleFlipAug3D"
+      ],
+      "test_ann_file": "data/nuscenes/nuscenes_infos_temporal_val.pkl",
+      "map_grid_conf": {}
+    },
+    "seg": {
+      "exists": true,
+      "path": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/projects/configs/bevformer/bevformer_small_seg.py",
+      "tasks": {
+        "seg": true,
+        "det": false
+      },
+      "bev_shape": [
+        150,
+        150
+      ],
+      "embed_dims": 256,
+      "seg_head_defined": true,
+      "decoder_defined": false,
+      "test_pipeline_types": [
+        "LoadMultiViewImageFromFiles",
+        "RasterizeMapVectors",
+        "NormalizeMultiviewImage",
+        "MultiScaleFlipAug3D"
+      ],
+      "test_ann_file": "data/nuscenes/nuscenes_infos_temporal_val.pkl",
+      "map_grid_conf": {
+        "xbound": [
+          -30.0,
+          30.0,
+          0.15
+        ],
+        "ybound": [
+          -15.0,
+          15.0,
+          0.15
+        ],
+        "zbound": [
+          -10.0,
+          10.0,
+          20.0
+        ],
+        "dbound": [
+          1.0,
+          60.0,
+          1.0
+        ]
+      }
+    },
+    "joint": {
+      "exists": true,
+      "path": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/projects/configs/bevformer/bevformer_small_seg_det.py",
+      "tasks": {
+        "seg": true,
+        "det": true
+      },
+      "bev_shape": [
+        150,
+        150
+      ],
+      "embed_dims": 256,
+      "seg_head_defined": true,
+      "decoder_defined": true,
+      "test_pipeline_types": [
+        "LoadMultiViewImageFromFiles",
+        "RasterizeMapVectors",
+        "NormalizeMultiviewImage",
+        "MultiScaleFlipAug3D"
+      ],
+      "test_ann_file": "data/nuscenes/nuscenes_infos_temporal_val.pkl",
+      "map_grid_conf": {
+        "xbound": [
+          -30.0,
+          30.0,
+          0.15
+        ],
+        "ybound": [
+          -15.0,
+          15.0,
+          0.15
+        ],
+        "zbound": [
+          -10.0,
+          10.0,
+          20.0
+        ],
+        "dbound": [
+          1.0,
+          60.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "checkpoints": {
+    "det": {
+      "path": "/home/jjx2003520/projects/bev_vla/BEVFormer/ckpts/bevformer_small_epoch_24.pth",
+      "size_bytes": 712087430,
+      "sha256": "4ebc5810201ca1e609c29452f07c08bc4d9c9ebfda5d7f8ee1034dd446274bc5",
+      "total_state_keys": 1001,
+      "key_counts": {
+        "seg_decoder": 0,
+        "cls_branches": 60,
+        "reg_branches": 36,
+        "bev_encoder": 78
+      },
+      "both_heads_present": false,
+      "meta": {
+        "epoch": 24,
+        "iter": 84408,
+        "config": "point_cloud_range = [-51.2, -51.2, -5.0, 51.2, 51.2, 3.0]\nclass_names = [\n    'car', 'truck', 'construction_vehicle', 'bus', 'trailer', 'barrier',\n    'motorcycle', 'bicycle', 'pedestrian', 'traffic_cone'\n]\ndataset_type = 'CustomNuScenesDataset'\ndata_root = 'data/nuscenes/'\ninput_modality = dict(\n  ",
+        "mmdet_version": "2.14.0"
+      }
+    },
+    "seg": {
+      "path": "/mnt/g/nus/bevformer_small_seg.pth",
+      "size_bytes": 702015834,
+      "sha256": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+      "total_state_keys": 883,
+      "key_counts": {
+        "seg_decoder": 110,
+        "cls_branches": 0,
+        "reg_branches": 0,
+        "bev_encoder": 78
+      },
+      "both_heads_present": false,
+      "meta": {
+        "epoch": 4,
+        "iter": 112520,
+        "config": "point_cloud_range = [-51.2, -51.2, -5.0, 51.2, 51.2, 3.0]\nclass_names = [\n    'car', 'truck', 'construction_vehicle', 'bus', 'trailer', 'barrier',\n    'motorcycle', 'bicycle', 'pedestrian', 'traffic_cone'\n]\ndataset_type = 'CustomNuScenesDataset'\ndata_root = 'data/nuscenes/'\ninput_modality = dict(\n  ",
+        "mmdet_version": "2.14.0"
+      }
+    },
+    "joint": {
+      "path": "/mnt/g/nus/bevformer_small_joint_author.pth",
+      "size_bytes": 774591208,
+      "sha256": "1345919901785b8df7ee16838d62f9f7a00444c9d8061f0dbee712d1b1b67dcf",
+      "total_state_keys": 1111,
+      "key_counts": {
+        "seg_decoder": 110,
+        "cls_branches": 60,
+        "reg_branches": 36,
+        "bev_encoder": 78
+      },
+      "both_heads_present": true,
+      "meta": {
+        "epoch": 19,
+        "iter": 44555,
+        "config": "point_cloud_range = [-51.2, -51.2, -5.0, 51.2, 51.2, 3.0]\nclass_names = [\n    'car', 'truck', 'construction_vehicle', 'bus', 'trailer', 'barrier',\n    'motorcycle', 'bicycle', 'pedestrian', 'traffic_cone'\n]\ndataset_type = 'CustomNuScenesDataset'\ndata_root = 'data/nuscenes/'\ninput_modality = dict(\n  ",
+        "mmdet_version": "2.14.0"
+      }
+    }
+  },
+  "joint_checkpoint_reference": "https://drive.google.com/file/d/1a42LRJhI9FoIeOORTwEf0N2Vtu98wP9O/view?usp=share_link",
+  "status": "READY_FOR_REAL_JOINT_FORWARD",
+  "joint_config_valid": true,
+  "joint_weight_has_both_heads": true
+}

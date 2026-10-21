@@ -1,0 +1,59 @@
+{
+  "self_test": {
+    "status": "PASS",
+    "tests": {
+      "mmdet_loss_dict_and_metric_filter": "PASS",
+      "three_branch_differentiability": "PASS",
+      "coordinate_size_mismatch_rejected": "PASS",
+      "missing_or_nonfinite_detection_loss_rejected": "PASS",
+      "empty_target_does_not_invent_supervision": "PASS",
+      "no_fake_joint_training": "PASS"
+    },
+    "torch_version": "2.8.0+cu128"
+  },
+  "project_audit": {
+    "files": {
+      "stage1_detection_config": {
+        "path": "/home/jjx2003520/projects/bev_vla/BEVFormer/projects/configs/bevformer/bevformer_small.py",
+        "exists": true,
+        "sha256": "f986f1474ee095bd3968565e1a41d730c1c6574a071f6110450cf3bd89020472"
+      },
+      "stage1_detection_weights": {
+        "path": "/home/jjx2003520/projects/bev_vla/BEVFormer/ckpts/bevformer_small_epoch_24.pth",
+        "exists": true
+      },
+      "stage2_segmentation_config": {
+        "path": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/projects/configs/bevformer/bevformer_small_seg.py",
+        "exists": true,
+        "sha256": "34b53e295608bf682a42545cf3708a8dc2f3486817963c62c89d6415294d1066"
+      },
+      "stage2_segmentation_weights": {
+        "path": "/mnt/g/nus/bevformer_small_seg.pth",
+        "exists": true
+      },
+      "stage2_live_seg_report": {
+        "path": "/home/jjx2003520/projects/bev_vla/outputs/stage2_step58/step58_author_live_smoke.json",
+        "exists": true,
+        "sha256": "6ace80ce3a4bc58175f3e5c02545e6f6620452a655d29b73d9078705eebde1e9"
+      },
+      "stage2_frozen_train_report": {
+        "path": "/home/jjx2003520/projects/bev_vla/outputs/stage2_step59/step59_training_summary.json",
+        "exists": true,
+        "sha256": "4663bdaf5dc130be9912d1b703904cd3c14347f0f9f82943bc19ad2197000a39"
+      },
+      "stage2_text_intervention_report": {
+        "path": "/home/jjx2003520/projects/bev_vla/outputs/stage2_step68/step68_acceptance.json",
+        "exists": true,
+        "sha256": "c61169b7f951a1dcb3f3b746e8f58c38f163897ba14df1e1faad222ecd61841c"
+      },
+      "stage1_detection_eval": {
+        "path": "/home/jjx2003520/projects/bev_vla/outputs/drivelm_check/det799.run.log",
+        "exists": false
+      }
+    },
+    "unified_loss_interface": "testable",
+    "real_detection_seg_attention_shared_forward": "NOT_VERIFIED",
+    "real_joint_backprop": "NOT_VERIFIED",
+    "reason": "当前两条模型路径和独立权重不等于一个真实共享 BEV 联合训练模型；需在 Step70 将同帧检测头接入融合特征并由其返回实际 loss。"
+  }
+}

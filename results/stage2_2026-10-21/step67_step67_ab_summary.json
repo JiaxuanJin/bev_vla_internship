@@ -1,0 +1,2675 @@
+{
+  "experiment": "step67_three_in_one_train_calibrate_locked_evaluation",
+  "train_steps": 64,
+  "train_indices": [
+    18,
+    26,
+    35,
+    36,
+    64,
+    67,
+    69,
+    78,
+    93,
+    99,
+    115,
+    118,
+    130,
+    135,
+    147,
+    148,
+    164,
+    168,
+    169,
+    178,
+    202,
+    207,
+    208,
+    238,
+    243,
+    254,
+    260,
+    280,
+    293,
+    297,
+    303,
+    312
+  ],
+  "calibration_indices": [
+    20,
+    61,
+    103,
+    146,
+    177,
+    241,
+    268,
+    322
+  ],
+  "locked_candidate": {
+    "source": "original",
+    "strength": 0.0,
+    "guard": "none",
+    "name": "original"
+  },
+  "selection_reason": "无满足三项约束的候选，安全回退原始模型",
+  "calibration": {
+    "original": {
+      "foreground_miou": 0.042379956372915396,
+      "four_class_miou": 0.21112406300296307,
+      "background_iou": 0.7173563828931061,
+      "bg_to_fg_false_positive_rate": 0.1522425990142798,
+      "predicted_foreground_ratio": 0.1543203125,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.7173563828931061,
+        "Divider": 0.013959900186713664,
+        "Ped Crossing": 0.06929711509864181,
+        "Boundary": 0.043882853833390724
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          445672,
+          18963,
+          6635,
+          54437
+        ],
+        [
+          29394,
+          800,
+          285,
+          3926
+        ],
+        [
+          9074,
+          7,
+          1398,
+          1269
+        ],
+        [
+          57095,
+          3932,
+          1506,
+          5607
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step65_lambda0.15_none": {
+      "foreground_miou": 0.04620339614640694,
+      "four_class_miou": 0.2100777996072685,
+      "background_iou": 0.7017010099898532,
+      "bg_to_fg_false_positive_rate": 0.17520596073478192,
+      "predicted_foreground_ratio": 0.17840625,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.7017010099898532,
+        "Divider": 0.015374264087468462,
+        "Ped Crossing": 0.07308680491833364,
+        "Boundary": 0.050149119433418717
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          433600,
+          20760,
+          8063,
+          63284
+        ],
+        [
+          28443,
+          914,
+          303,
+          4745
+        ],
+        [
+          8499,
+          16,
+          1593,
+          1640
+        ],
+        [
+          55278,
+          4269,
+          1682,
+          6911
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step65_lambda0.30_none": {
+      "foreground_miou": 0.04930147901304363,
+      "four_class_miou": 0.2078556371393106,
+      "background_iou": 0.6835181115181115,
+      "bg_to_fg_false_positive_rate": 0.20135931231655657,
+      "predicted_foreground_ratio": 0.205634375,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6835181115181115,
+        "Divider": 0.016321235224396963,
+        "Ped Crossing": 0.07435396308360477,
+        "Boundary": 0.057229238731129166
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          419851,
+          23404,
+          9110,
+          73342
+        ],
+        [
+          27475,
+          1019,
+          314,
+          5597
+        ],
+        [
+          7909,
+          34,
+          1712,
+          2093
+        ],
+        [
+          53159,
+          4591,
+          1853,
+          8537
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step65_lambda0.50_none": {
+      "foreground_miou": 0.05297842315331219,
+      "four_class_miou": 0.20323929994730505,
+      "background_iou": 0.6540219303292837,
+      "bg_to_fg_false_positive_rate": 0.24323815357223702,
+      "predicted_foreground_ratio": 0.249346875,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6540219303292837,
+        "Divider": 0.018506928922664284,
+        "Ped Crossing": 0.07249383489255098,
+        "Boundary": 0.0679345056447213
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          397835,
+          27517,
+          11319,
+          89036
+        ],
+        [
+          25624,
+          1242,
+          349,
+          7190
+        ],
+        [
+          7384,
+          85,
+          1852,
+          2427
+        ],
+        [
+          49575,
+          5103,
+          2131,
+          11331
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step65_lambda0.70_none": {
+      "foreground_miou": 0.05520391545459869,
+      "four_class_miou": 0.19687391684699435,
+      "background_iou": 0.6218839210241813,
+      "bg_to_fg_false_positive_rate": 0.28767735639814573,
+      "predicted_foreground_ratio": 0.2954296875,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6218839210241813,
+        "Divider": 0.021408659589953447,
+        "Ped Crossing": 0.06827394170103275,
+        "Boundary": 0.07592914507280989
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          374473,
+          32545,
+          13759,
+          104930
+        ],
+        [
+          23746,
+          1559,
+          411,
+          8689
+        ],
+        [
+          6664,
+          247,
+          1937,
+          2900
+        ],
+        [
+          46042,
+          5624,
+          2453,
+          14021
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step65_lambda1.00_none": {
+      "foreground_miou": 0.05829096916765928,
+      "four_class_miou": 0.1837812795412683,
+      "background_iou": 0.5602522106620954,
+      "bg_to_fg_false_positive_rate": 0.37209320020467673,
+      "predicted_foreground_ratio": 0.385034375,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.5602522106620954,
+        "Divider": 0.029837923187665445,
+        "Ped Crossing": 0.06432346227211608,
+        "Boundary": 0.08071152204319632
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          330095,
+          44337,
+          16899,
+          134376
+        ],
+        [
+          17672,
+          2570,
+          448,
+          13715
+        ],
+        [
+          5257,
+          461,
+          2057,
+          3973
+        ],
+        [
+          40554,
+          6929,
+          2884,
+          17773
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step65_lambda0.15_soft": {
+      "foreground_miou": 0.04561441832071659,
+      "four_class_miou": 0.21032888706991495,
+      "background_iou": 0.70447229331751,
+      "bg_to_fg_false_positive_rate": 0.17118470935330898,
+      "predicted_foreground_ratio": 0.1742125,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.70447229331751,
+        "Divider": 0.0152197467325794,
+        "Ped Crossing": 0.07230199166280686,
+        "Boundary": 0.04932151656676351
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          435714,
+          20441,
+          7885,
+          61667
+        ],
+        [
+          28594,
+          899,
+          300,
+          4612
+        ],
+        [
+          8625,
+          16,
+          1561,
+          1546
+        ],
+        [
+          55571,
+          4206,
+          1657,
+          6706
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step65_lambda0.30_soft": {
+      "foreground_miou": 0.048219245488365314,
+      "four_class_miou": 0.20883537626567872,
+      "background_iou": 0.6906837685976189,
+      "bg_to_fg_false_positive_rate": 0.1912091716488462,
+      "predicted_foreground_ratio": 0.1951828125,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6906837685976189,
+        "Divider": 0.01618033241449053,
+        "Ped Crossing": 0.0737033263941179,
+        "Boundary": 0.054774077656487494
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          425187,
+          22415,
+          8740,
+          69365
+        ],
+        [
+          27816,
+          992,
+          308,
+          5289
+        ],
+        [
+          8111,
+          27,
+          1664,
+          1946
+        ],
+        [
+          53969,
+          4462,
+          1781,
+          7928
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step65_lambda0.50_soft": {
+      "foreground_miou": 0.050814531141268625,
+      "four_class_miou": 0.20583951688987784,
+      "background_iou": 0.6709144741357055,
+      "bg_to_fg_false_positive_rate": 0.21895466486084453,
+      "predicted_foreground_ratio": 0.2236,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6709144741357055,
+        "Divider": 0.0172163547649929,
+        "Ped Crossing": 0.07435177815942696,
+        "Boundary": 0.060875460499386004
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          410601,
+          25496,
+          9817,
+          79793
+        ],
+        [
+          26762,
+          1115,
+          321,
+          6207
+        ],
+        [
+          7705,
+          56,
+          1775,
+          2212
+        ],
+        [
+          51828,
+          4807,
+          1987,
+          9518
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step65_lambda0.70_soft": {
+      "foreground_miou": 0.05271706816069618,
+      "four_class_miou": 0.20241320069168198,
+      "background_iou": 0.6515015982846394,
+      "bg_to_fg_false_positive_rate": 0.2463254246186564,
+      "predicted_foreground_ratio": 0.2520984375,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6515015982846394,
+        "Divider": 0.01850536966361942,
+        "Ped Crossing": 0.07184932568594016,
+        "Boundary": 0.06779650913252896
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          396212,
+          27981,
+          11492,
+          90022
+        ],
+        [
+          25631,
+          1251,
+          357,
+          7166
+        ],
+        [
+          7382,
+          88,
+          1854,
+          2424
+        ],
+        [
+          49432,
+          5128,
+          2207,
+          11373
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step65_lambda1.00_soft": {
+      "foreground_miou": 0.05520827165758881,
+      "four_class_miou": 0.19774681831318502,
+      "background_iou": 0.6253624582799737,
+      "bg_to_fg_false_positive_rate": 0.2828971271069246,
+      "predicted_foreground_ratio": 0.2904578125,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6253624582799737,
+        "Divider": 0.021620274890306865,
+        "Ped Crossing": 0.06749649368863955,
+        "Boundary": 0.07650804639382001
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          376986,
+          32058,
+          13807,
+          102856
+        ],
+        [
+          24231,
+          1562,
+          417,
+          8195
+        ],
+        [
+          6832,
+          175,
+          1925,
+          2816
+        ],
+        [
+          46058,
+          5609,
+          2548,
+          13925
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step65_lambda0.15_strong": {
+      "foreground_miou": 0.04585390493502467,
+      "four_class_miou": 0.21021237387311398,
+      "background_iou": 0.7032877806873818,
+      "bg_to_fg_false_positive_rate": 0.17289668960086133,
+      "predicted_foreground_ratio": 0.175990625,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.7032877806873818,
+        "Divider": 0.015260732312574911,
+        "Ped Crossing": 0.07256465815315108,
+        "Boundary": 0.04973632433934801
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          434814,
+          20579,
+          7971,
+          62343
+        ],
+        [
+          28535,
+          904,
+          302,
+          4664
+        ],
+        [
+          8584,
+          16,
+          1574,
+          1574
+        ],
+        [
+          55433,
+          4237,
+          1670,
+          6800
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step65_lambda0.30_strong": {
+      "foreground_miou": 0.048443471955223305,
+      "four_class_miou": 0.2084094864078007,
+      "background_iou": 0.6883075297655329,
+      "bg_to_fg_false_positive_rate": 0.19448666272277143,
+      "predicted_foreground_ratio": 0.198465625,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6883075297655329,
+        "Divider": 0.01614105597510777,
+        "Ped Crossing": 0.07378743239083593,
+        "Boundary": 0.05540192749972621
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          423464,
+          22768,
+          8884,
+          70591
+        ],
+        [
+          27710,
+          996,
+          309,
+          5390
+        ],
+        [
+          8065,
+          30,
+          1678,
+          1975
+        ],
+        [
+          53743,
+          4503,
+          1800,
+          8094
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step65_lambda0.50_strong": {
+      "foreground_miou": 0.050867570493076275,
+      "four_class_miou": 0.20529320105095367,
+      "background_iou": 0.6685700927245858,
+      "bg_to_fg_false_positive_rate": 0.22206286011028958,
+      "predicted_foreground_ratio": 0.22661875,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6685700927245858,
+        "Divider": 0.01727653181671853,
+        "Ped Crossing": 0.07399233844103931,
+        "Boundary": 0.061333841221470974
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          408967,
+          25925,
+          9925,
+          80890
+        ],
+        [
+          26684,
+          1127,
+          323,
+          6271
+        ],
+        [
+          7695,
+          62,
+          1777,
+          2214
+        ],
+        [
+          51618,
+          4841,
+          2020,
+          9661
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step65_lambda0.70_strong": {
+      "foreground_miou": 0.05239028139584954,
+      "four_class_miou": 0.20200780316581984,
+      "background_iou": 0.6508603684757308,
+      "bg_to_fg_false_positive_rate": 0.24682950769154682,
+      "predicted_foreground_ratio": 0.2522125,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6508603684757308,
+        "Divider": 0.018574119863416932,
+        "Ped Crossing": 0.07146444161161973,
+        "Boundary": 0.06713228271251194
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          395947,
+          28302,
+          11518,
+          89940
+        ],
+        [
+          25741,
+          1262,
+          363,
+          7039
+        ],
+        [
+          7408,
+          89,
+          1850,
+          2401
+        ],
+        [
+          49488,
+          5148,
+          2258,
+          11246
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step65_lambda1.00_strong": {
+      "foreground_miou": 0.05463647144405146,
+      "four_class_miou": 0.19823997245163807,
+      "background_iou": 0.629050475474398,
+      "bg_to_fg_false_positive_rate": 0.27748346512410904,
+      "predicted_foreground_ratio": 0.2844640625,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.629050475474398,
+        "Divider": 0.021241898390131717,
+        "Ped Crossing": 0.06757380893168011,
+        "Boundary": 0.07509370701034258
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          379832,
+          31552,
+          13420,
+          100903
+        ],
+        [
+          24598,
+          1524,
+          414,
+          7869
+        ],
+        [
+          7035,
+          174,
+          1902,
+          2637
+        ],
+        [
+          46478,
+          5614,
+          2565,
+          13483
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step67_lambda0.15_none": {
+      "foreground_miou": 0.04524776530738298,
+      "four_class_miou": 0.21111387874674753,
+      "background_iou": 0.7087122190648412,
+      "bg_to_fg_false_positive_rate": 0.1650329936637709,
+      "predicted_foreground_ratio": 0.1678109375,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.7087122190648412,
+        "Divider": 0.015102333686404483,
+        "Ped Crossing": 0.07343017806935333,
+        "Boundary": 0.04721078416639115
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          438948,
+          19995,
+          7657,
+          59107
+        ],
+        [
+          28819,
+          884,
+          298,
+          4404
+        ],
+        [
+          8739,
+          9,
+          1567,
+          1433
+        ],
+        [
+          56095,
+          4125,
+          1637,
+          6283
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step67_lambda0.30_none": {
+      "foreground_miou": 0.04726461955213653,
+      "four_class_miou": 0.21034157876591253,
+      "background_iou": 0.6995724564072405,
+      "bg_to_fg_false_positive_rate": 0.1786128014274111,
+      "predicted_foreground_ratio": 0.1822671875,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6995724564072405,
+        "Divider": 0.016118568790857827,
+        "Ped Crossing": 0.07502490265326452,
+        "Boundary": 0.05065038721228725
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          431809,
+          21369,
+          8307,
+          64222
+        ],
+        [
+          28219,
+          969,
+          304,
+          4913
+        ],
+        [
+          8280,
+          15,
+          1657,
+          1796
+        ],
+        [
+          55041,
+          4328,
+          1727,
+          7044
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step67_lambda0.50_none": {
+      "foreground_miou": 0.0505838478779545,
+      "four_class_miou": 0.2089909893410034,
+      "background_iou": 0.6842124137301502,
+      "bg_to_fg_false_positive_rate": 0.20154763014378732,
+      "predicted_foreground_ratio": 0.2069890625,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6842124137301502,
+        "Divider": 0.017495233670314178,
+        "Ped Crossing": 0.07573113107147418,
+        "Boundary": 0.05852517889207515
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          419752,
+          23370,
+          9538,
+          73047
+        ],
+        [
+          27056,
+          1092,
+          313,
+          5944
+        ],
+        [
+          7808,
+          40,
+          1779,
+          2121
+        ],
+        [
+          52911,
+          4602,
+          1892,
+          8735
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step67_lambda0.70_none": {
+      "foreground_miou": 0.053526772342234304,
+      "four_class_miou": 0.206191585921241,
+      "background_iou": 0.6641860266582611,
+      "bg_to_fg_false_positive_rate": 0.23043254132054547,
+      "predicted_foreground_ratio": 0.2375359375,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6641860266582611,
+        "Divider": 0.02071858636768323,
+        "Ped Crossing": 0.0738181247055128,
+        "Boundary": 0.06604360595350689
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          404567,
+          26709,
+          11345,
+          83086
+        ],
+        [
+          25658,
+          1373,
+          322,
+          7052
+        ],
+        [
+          7278,
+          156,
+          1880,
+          2434
+        ],
+        [
+          50474,
+          4999,
+          2053,
+          10614
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step67_lambda1.00_none": {
+      "foreground_miou": 0.058516894861767775,
+      "four_class_miou": 0.1989709520623742,
+      "background_iou": 0.6203331236641935,
+      "bg_to_fg_false_positive_rate": 0.29276003553310115,
+      "predicted_foreground_ratio": 0.3039828125,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6203331236641935,
+        "Divider": 0.03221828271928472,
+        "Ped Crossing": 0.07086135355558736,
+        "Boundary": 0.07247104831043125
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          371801,
+          37335,
+          13461,
+          103110
+        ],
+        [
+          20697,
+          2508,
+          379,
+          10821
+        ],
+        [
+          6434,
+          268,
+          1981,
+          3065
+        ],
+        [
+          46519,
+          5836,
+          2368,
+          13417
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step67_lambda0.15_soft": {
+      "foreground_miou": 0.04470871352973347,
+      "four_class_miou": 0.21104705367675505,
+      "background_iou": 0.7100620741178199,
+      "bg_to_fg_false_positive_rate": 0.16292535575900643,
+      "predicted_foreground_ratio": 0.16548125,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.7100620741178199,
+        "Divider": 0.014944579801654027,
+        "Ped Crossing": 0.07249658034998349,
+        "Boundary": 0.046684980437562903
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          440056,
+          19794,
+          7536,
+          58321
+        ],
+        [
+          28943,
+          871,
+          296,
+          4295
+        ],
+        [
+          8817,
+          9,
+          1537,
+          1385
+        ],
+        [
+          56276,
+          4074,
+          1621,
+          6169
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step67_lambda0.30_soft": {
+      "foreground_miou": 0.04622398730454904,
+      "four_class_miou": 0.2103966288165582,
+      "background_iou": 0.7029145533525857,
+      "bg_to_fg_false_positive_rate": 0.17354153549410603,
+      "predicted_foreground_ratio": 0.1767609375,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.7029145533525857,
+        "Divider": 0.015601620685597081,
+        "Ped Crossing": 0.07438962942604553,
+        "Boundary": 0.0486807118020045
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          434475,
+          20802,
+          8083,
+          62347
+        ],
+        [
+          28436,
+          928,
+          301,
+          4740
+        ],
+        [
+          8445,
+          14,
+          1624,
+          1665
+        ],
+        [
+          55517,
+          4260,
+          1699,
+          6664
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step67_lambda0.50_soft": {
+      "foreground_miou": 0.04858693225612334,
+      "four_class_miou": 0.2097833080774522,
+      "background_iou": 0.6933724355414389,
+      "bg_to_fg_false_positive_rate": 0.18777189575181613,
+      "predicted_foreground_ratio": 0.1920171875,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6933724355414389,
+        "Divider": 0.0164073735128775,
+        "Ped Crossing": 0.07602158146117106,
+        "Boundary": 0.05333184179432143
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          426994,
+          22299,
+          8764,
+          67650
+        ],
+        [
+          27826,
+          1004,
+          309,
+          5266
+        ],
+        [
+          8026,
+          30,
+          1719,
+          1973
+        ],
+        [
+          54263,
+          4458,
+          1791,
+          7628
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step67_lambda0.70_soft": {
+      "foreground_miou": 0.050901765620111124,
+      "four_class_miou": 0.2088012650937648,
+      "background_iou": 0.6824997635147257,
+      "bg_to_fg_false_positive_rate": 0.20398244649586175,
+      "predicted_foreground_ratio": 0.2095140625,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6824997635147257,
+        "Divider": 0.017884443878201043,
+        "Ped Crossing": 0.07569872498522334,
+        "Boundary": 0.059122127996908996
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          418472,
+          23697,
+          9675,
+          73863
+        ],
+        [
+          26990,
+          1123,
+          318,
+          5974
+        ],
+        [
+          7773,
+          46,
+          1793,
+          2136
+        ],
+        [
+          52676,
+          4644,
+          1945,
+          8875
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step67_lambda1.00_soft": {
+      "foreground_miou": 0.053374811844106494,
+      "four_class_miou": 0.20648818817847253,
+      "background_iou": 0.6658283171815708,
+      "bg_to_fg_false_positive_rate": 0.22800533376957127,
+      "predicted_foreground_ratio": 0.2348953125,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6658283171815708,
+        "Divider": 0.020349591634226394,
+        "Ped Crossing": 0.07343134578637445,
+        "Boundary": 0.06634349811171862
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          405843,
+          26037,
+          11440,
+          82387
+        ],
+        [
+          25960,
+          1333,
+          333,
+          6779
+        ],
+        [
+          7430,
+          72,
+          1883,
+          2363
+        ],
+        [
+          50434,
+          4991,
+          2122,
+          10593
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step67_lambda0.15_strong": {
+      "foreground_miou": 0.04482901357497606,
+      "four_class_miou": 0.210979940133071,
+      "background_iou": 0.7094327198073559,
+      "bg_to_fg_false_positive_rate": 0.16387645589653552,
+      "predicted_foreground_ratio": 0.1665046875,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.7094327198073559,
+        "Divider": 0.015037078901847951,
+        "Ped Crossing": 0.07258026606496498,
+        "Boundary": 0.046869695758115254
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          439556,
+          19878,
+          7599,
+          58674
+        ],
+        [
+          28888,
+          878,
+          297,
+          4342
+        ],
+        [
+          8792,
+          9,
+          1544,
+          1403
+        ],
+        [
+          56201,
+          4097,
+          1629,
+          6213
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step67_lambda0.30_strong": {
+      "foreground_miou": 0.04647486918308846,
+      "four_class_miou": 0.21028862211452504,
+      "background_iou": 0.7017298809088349,
+      "bg_to_fg_false_positive_rate": 0.1752801465455092,
+      "predicted_foreground_ratio": 0.17859375,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.7017298809088349,
+        "Divider": 0.01568936070459797,
+        "Ped Crossing": 0.07457719834070292,
+        "Boundary": 0.04915804850396448
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          433561,
+          21020,
+          8178,
+          62948
+        ],
+        [
+          28367,
+          937,
+          303,
+          4798
+        ],
+        [
+          8386,
+          15,
+          1636,
+          1711
+        ],
+        [
+          55386,
+          4282,
+          1708,
+          6764
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step67_lambda0.50_strong": {
+      "foreground_miou": 0.04880034135593162,
+      "four_class_miou": 0.2095984736942752,
+      "background_iou": 0.6919928707093059,
+      "bg_to_fg_false_positive_rate": 0.18982627204887895,
+      "predicted_foreground_ratio": 0.194225,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6919928707093059,
+        "Divider": 0.016549771362549023,
+        "Ped Crossing": 0.07600563330692721,
+        "Boundary": 0.053845619398318625
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          425914,
+          22523,
+          8847,
+          68423
+        ],
+        [
+          27698,
+          1017,
+          310,
+          5380
+        ],
+        [
+          7998,
+          36,
+          1727,
+          1987
+        ],
+        [
+          54086,
+          4487,
+          1817,
+          7750
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step67_lambda0.70_strong": {
+      "foreground_miou": 0.0509168939531617,
+      "four_class_miou": 0.2086453297624061,
+      "background_iou": 0.6818306371901393,
+      "bg_to_fg_false_positive_rate": 0.20482512121771254,
+      "predicted_foreground_ratio": 0.21028125,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6818306371901393,
+        "Divider": 0.017846085451629804,
+        "Ped Crossing": 0.07578566012300952,
+        "Boundary": 0.05911893628484578
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          418029,
+          23857,
+          9710,
+          74111
+        ],
+        [
+          27000,
+          1124,
+          318,
+          5963
+        ],
+        [
+          7768,
+          54,
+          1799,
+          2127
+        ],
+        [
+          52623,
+          4667,
+          1962,
+          8888
+        ]
+      ],
+      "frame_count": 8
+    },
+    "step67_lambda1.00_strong": {
+      "foreground_miou": 0.05269879069399267,
+      "four_class_miou": 0.20638947186834078,
+      "background_iou": 0.6674615153913851,
+      "bg_to_fg_false_positive_rate": 0.2252889917767882,
+      "predicted_foreground_ratio": 0.2316515625,
+      "gt_foreground_ratio": 0.1785828125,
+      "per_class_iou": {
+        "Background": 0.6674615153913851,
+        "Divider": 0.019977904621616645,
+        "Ped Crossing": 0.07355592131044753,
+        "Boundary": 0.06456254614991386
+      },
+      "confusion_gt_rows_pred_cols": [
+        [
+          407271,
+          25759,
+          11272,
+          81405
+        ],
+        [
+          26154,
+          1302,
+          343,
+          6606
+        ],
+        [
+          7500,
+          71,
+          1877,
+          2300
+        ],
+        [
+          50818,
+          4937,
+          2155,
+          10230
+        ]
+      ],
+      "frame_count": 8
+    }
+  },
+  "metrics": {
+    "development_6": {
+      "original": {
+        "foreground_miou": 0.04225996280498306,
+        "four_class_miou": 0.2251917453891853,
+        "background_iou": 0.773987093141792,
+        "bg_to_fg_false_positive_rate": 0.12943324082047789,
+        "predicted_foreground_ratio": 0.13554166666666667,
+        "gt_foreground_ratio": 0.13150208333333332,
+        "per_class_iou": {
+          "Background": 0.773987093141792,
+          "Divider": 0.02044265593561368,
+          "Ped Crossing": 0.03250956163577523,
+          "Boundary": 0.07382767084356026
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            362921,
+            18382,
+            3666,
+            31910
+          ],
+          [
+            14214,
+            762,
+            14,
+            3711
+          ],
+          [
+            2218,
+            192,
+            221,
+            462
+          ],
+          [
+            35587,
+            0,
+            25,
+            5715
+          ]
+        ],
+        "frame_count": 6
+      },
+      "bias_step65": {
+        "foreground_miou": 0.04480952305828397,
+        "four_class_miou": 0.22446374967202512,
+        "background_iou": 0.7634264295132486,
+        "bg_to_fg_false_positive_rate": 0.14306789260193006,
+        "predicted_foreground_ratio": 0.14938125,
+        "gt_foreground_ratio": 0.13150208333333332,
+        "per_class_iou": {
+          "Background": 0.7634264295132486,
+          "Divider": 0.020913796274401618,
+          "Ped Crossing": 0.03526344676180022,
+          "Boundary": 0.07825132613865009
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            357237,
+            19158,
+            4103,
+            36381
+          ],
+          [
+            14058,
+            796,
+            29,
+            3818
+          ],
+          [
+            2157,
+            200,
+            257,
+            479
+          ],
+          [
+            34845,
+            2,
+            63,
+            6417
+          ]
+        ],
+        "frame_count": 6
+      },
+      "adapter_step65": {
+        "foreground_miou": 0.05914817746278983,
+        "four_class_miou": 0.18319801221504609,
+        "background_iou": 0.5553475164718149,
+        "bg_to_fg_false_positive_rate": 0.3995044125513638,
+        "predicted_foreground_ratio": 0.4078645833333333,
+        "gt_foreground_ratio": 0.13150208333333332,
+        "per_class_iou": {
+          "Background": 0.5553475164718149,
+          "Divider": 0.027106575723928866,
+          "Ped Crossing": 0.03607642224356922,
+          "Boundary": 0.11426153442087139
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            250334,
+            37350,
+            5699,
+            123496
+          ],
+          [
+            11467,
+            1538,
+            308,
+            5388
+          ],
+          [
+            1375,
+            256,
+            338,
+            1124
+          ],
+          [
+            21049,
+            432,
+            269,
+            19577
+          ]
+        ],
+        "frame_count": 6
+      },
+      "adapter_step66": {
+        "foreground_miou": 0.008667256765155952,
+        "four_class_miou": 0.21671772749938395,
+        "background_iou": 0.840869139702068,
+        "bg_to_fg_false_positive_rate": 0.03957983011857157,
+        "predicted_foreground_ratio": 0.04239791666666667,
+        "gt_foreground_ratio": 0.13150208333333332,
+        "per_class_iou": {
+          "Background": 0.840869139702068,
+          "Divider": 0.0020060180541624875,
+          "Ped Crossing": 0.0,
+          "Boundary": 0.02399575224130537
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            400379,
+            11111,
+            267,
+            5122
+          ],
+          [
+            16229,
+            60,
+            0,
+            2412
+          ],
+          [
+            2889,
+            98,
+            0,
+            106
+          ],
+          [
+            40152,
+            0,
+            0,
+            1175
+          ]
+        ],
+        "frame_count": 6
+      },
+      "adapter_step67_raw": {
+        "foreground_miou": 0.060031302226430085,
+        "four_class_miou": 0.21659915759351034,
+        "background_iou": 0.6863027236947511,
+        "bg_to_fg_false_positive_rate": 0.2437349926477467,
+        "predicted_foreground_ratio": 0.25465,
+        "gt_foreground_ratio": 0.13150208333333332,
+        "per_class_iou": {
+          "Background": 0.6863027236947511,
+          "Divider": 0.024624624624624624,
+          "Ped Crossing": 0.04461844394730301,
+          "Boundary": 0.11085083810736261
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            315271,
+            25918,
+            4581,
+            71109
+          ],
+          [
+            12831,
+            1107,
+            275,
+            4488
+          ],
+          [
+            1614,
+            219,
+            359,
+            901
+          ],
+          [
+            28052,
+            117,
+            97,
+            13061
+          ]
+        ],
+        "frame_count": 6
+      },
+      "step67_locked": {
+        "foreground_miou": 0.04225996280498306,
+        "four_class_miou": 0.2251917453891853,
+        "background_iou": 0.773987093141792,
+        "bg_to_fg_false_positive_rate": 0.12943324082047789,
+        "predicted_foreground_ratio": 0.13554166666666667,
+        "gt_foreground_ratio": 0.13150208333333332,
+        "per_class_iou": {
+          "Background": 0.773987093141792,
+          "Divider": 0.02044265593561368,
+          "Ped Crossing": 0.03250956163577523,
+          "Boundary": 0.07382767084356026
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            362921,
+            18382,
+            3666,
+            31910
+          ],
+          [
+            14214,
+            762,
+            14,
+            3711
+          ],
+          [
+            2218,
+            192,
+            221,
+            462
+          ],
+          [
+            35587,
+            0,
+            25,
+            5715
+          ]
+        ],
+        "frame_count": 6
+      },
+      "step67_locked_text_shuffled": {
+        "foreground_miou": 0.04225996280498306,
+        "four_class_miou": 0.2251917453891853,
+        "background_iou": 0.773987093141792,
+        "bg_to_fg_false_positive_rate": 0.12943324082047789,
+        "predicted_foreground_ratio": 0.13554166666666667,
+        "gt_foreground_ratio": 0.13150208333333332,
+        "per_class_iou": {
+          "Background": 0.773987093141792,
+          "Divider": 0.02044265593561368,
+          "Ped Crossing": 0.03250956163577523,
+          "Boundary": 0.07382767084356026
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            362921,
+            18382,
+            3666,
+            31910
+          ],
+          [
+            14214,
+            762,
+            14,
+            3711
+          ],
+          [
+            2218,
+            192,
+            221,
+            462
+          ],
+          [
+            35587,
+            0,
+            25,
+            5715
+          ]
+        ],
+        "frame_count": 6
+      },
+      "step67_locked_text_constant": {
+        "foreground_miou": 0.04225996280498306,
+        "four_class_miou": 0.2251917453891853,
+        "background_iou": 0.773987093141792,
+        "bg_to_fg_false_positive_rate": 0.12943324082047789,
+        "predicted_foreground_ratio": 0.13554166666666667,
+        "gt_foreground_ratio": 0.13150208333333332,
+        "per_class_iou": {
+          "Background": 0.773987093141792,
+          "Divider": 0.02044265593561368,
+          "Ped Crossing": 0.03250956163577523,
+          "Boundary": 0.07382767084356026
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            362921,
+            18382,
+            3666,
+            31910
+          ],
+          [
+            14214,
+            762,
+            14,
+            3711
+          ],
+          [
+            2218,
+            192,
+            221,
+            462
+          ],
+          [
+            35587,
+            0,
+            25,
+            5715
+          ]
+        ],
+        "frame_count": 6
+      }
+    },
+    "step65_seen_12": {
+      "original": {
+        "foreground_miou": 0.0791485886036841,
+        "four_class_miou": 0.255769076350818,
+        "background_iou": 0.7856305395922197,
+        "bg_to_fg_false_positive_rate": 0.13865515200871803,
+        "predicted_foreground_ratio": 0.14862291666666666,
+        "gt_foreground_ratio": 0.11103645833333334,
+        "per_class_iou": {
+          "Background": 0.7856305395922197,
+          "Divider": 0.03862362342464119,
+          "Ped Crossing": 0.1143068871288963,
+          "Boundary": 0.08451525525751477
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            735076,
+            27074,
+            12333,
+            78922
+          ],
+          [
+            17282,
+            1943,
+            133,
+            3605
+          ],
+          [
+            4094,
+            111,
+            2468,
+            1141
+          ],
+          [
+            60870,
+            158,
+            1311,
+            13479
+          ]
+        ],
+        "frame_count": 12
+      },
+      "bias_step65": {
+        "foreground_miou": 0.0802566418585783,
+        "four_class_miou": 0.25387558404953814,
+        "background_iou": 0.7747324106224177,
+        "bg_to_fg_false_positive_rate": 0.15211417791083953,
+        "predicted_foreground_ratio": 0.16232083333333333,
+        "gt_foreground_ratio": 0.11103645833333334,
+        "per_class_iou": {
+          "Background": 0.7747324106224177,
+          "Divider": 0.038696263211597325,
+          "Ped Crossing": 0.11602558328078552,
+          "Boundary": 0.08604807908335206
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            723590,
+            28682,
+            12866,
+            88267
+          ],
+          [
+            17087,
+            2010,
+            151,
+            3715
+          ],
+          [
+            3783,
+            117,
+            2576,
+            1338
+          ],
+          [
+            59712,
+            181,
+            1371,
+            14554
+          ]
+        ],
+        "frame_count": 12
+      },
+      "adapter_step65": {
+        "foreground_miou": 0.08355153245020767,
+        "four_class_miou": 0.20490799005517124,
+        "background_iou": 0.568977362870062,
+        "bg_to_fg_false_positive_rate": 0.397377563993649,
+        "predicted_foreground_ratio": 0.4117239583333333,
+        "gt_foreground_ratio": 0.11103645833333334,
+        "per_class_iou": {
+          "Background": 0.568977362870062,
+          "Divider": 0.039584414412381835,
+          "Ped Crossing": 0.10280829580333324,
+          "Boundary": 0.10826188713490793
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            514281,
+            63993,
+            23063,
+            252068
+          ],
+          [
+            13843,
+            3509,
+            862,
+            4749
+          ],
+          [
+            1660,
+            221,
+            3584,
+            2349
+          ],
+          [
+            34961,
+            1469,
+            3122,
+            36266
+          ]
+        ],
+        "frame_count": 12
+      },
+      "adapter_step66": {
+        "foreground_miou": 0.052457137098828155,
+        "four_class_miou": 0.25489861975273853,
+        "background_iou": 0.8622230677144698,
+        "bg_to_fg_false_positive_rate": 0.03871784205623356,
+        "predicted_foreground_ratio": 0.043323958333333336,
+        "gt_foreground_ratio": 0.11103645833333334,
+        "per_class_iou": {
+          "Background": 0.8622230677144698,
+          "Divider": 0.028401122019635343,
+          "Ped Crossing": 0.08707651313285115,
+          "Boundary": 0.041893776143997974
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            820363,
+            14090,
+            2461,
+            16491
+          ],
+          [
+            19956,
+            1053,
+            0,
+            1954
+          ],
+          [
+            6471,
+            23,
+            915,
+            405
+          ],
+          [
+            71619,
+            0,
+            233,
+            3966
+          ]
+        ],
+        "frame_count": 12
+      },
+      "adapter_step67_raw": {
+        "foreground_miou": 0.08820264373605653,
+        "four_class_miou": 0.23923271179880196,
+        "background_iou": 0.6923229159870381,
+        "bg_to_fg_false_positive_rate": 0.25396031192692803,
+        "predicted_foreground_ratio": 0.26782395833333333,
+        "gt_foreground_ratio": 0.11103645833333334,
+        "per_class_iou": {
+          "Background": 0.6923229159870381,
+          "Divider": 0.036725178277564455,
+          "Ped Crossing": 0.11947245927075252,
+          "Boundary": 0.10841029365985265
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            636674,
+            49173,
+            18045,
+            149513
+          ],
+          [
+            15655,
+            2678,
+            429,
+            4201
+          ],
+          [
+            2551,
+            119,
+            3388,
+            1756
+          ],
+          [
+            48009,
+            665,
+            2070,
+            25074
+          ]
+        ],
+        "frame_count": 12
+      },
+      "step67_locked": {
+        "foreground_miou": 0.0791485886036841,
+        "four_class_miou": 0.255769076350818,
+        "background_iou": 0.7856305395922197,
+        "bg_to_fg_false_positive_rate": 0.13865515200871803,
+        "predicted_foreground_ratio": 0.14862291666666666,
+        "gt_foreground_ratio": 0.11103645833333334,
+        "per_class_iou": {
+          "Background": 0.7856305395922197,
+          "Divider": 0.03862362342464119,
+          "Ped Crossing": 0.1143068871288963,
+          "Boundary": 0.08451525525751477
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            735076,
+            27074,
+            12333,
+            78922
+          ],
+          [
+            17282,
+            1943,
+            133,
+            3605
+          ],
+          [
+            4094,
+            111,
+            2468,
+            1141
+          ],
+          [
+            60870,
+            158,
+            1311,
+            13479
+          ]
+        ],
+        "frame_count": 12
+      },
+      "step67_locked_text_shuffled": {
+        "foreground_miou": 0.0791485886036841,
+        "four_class_miou": 0.255769076350818,
+        "background_iou": 0.7856305395922197,
+        "bg_to_fg_false_positive_rate": 0.13865515200871803,
+        "predicted_foreground_ratio": 0.14862291666666666,
+        "gt_foreground_ratio": 0.11103645833333334,
+        "per_class_iou": {
+          "Background": 0.7856305395922197,
+          "Divider": 0.03862362342464119,
+          "Ped Crossing": 0.1143068871288963,
+          "Boundary": 0.08451525525751477
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            735076,
+            27074,
+            12333,
+            78922
+          ],
+          [
+            17282,
+            1943,
+            133,
+            3605
+          ],
+          [
+            4094,
+            111,
+            2468,
+            1141
+          ],
+          [
+            60870,
+            158,
+            1311,
+            13479
+          ]
+        ],
+        "frame_count": 12
+      },
+      "step67_locked_text_constant": {
+        "foreground_miou": 0.0791485886036841,
+        "four_class_miou": 0.255769076350818,
+        "background_iou": 0.7856305395922197,
+        "bg_to_fg_false_positive_rate": 0.13865515200871803,
+        "predicted_foreground_ratio": 0.14862291666666666,
+        "gt_foreground_ratio": 0.11103645833333334,
+        "per_class_iou": {
+          "Background": 0.7856305395922197,
+          "Divider": 0.03862362342464119,
+          "Ped Crossing": 0.1143068871288963,
+          "Boundary": 0.08451525525751477
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            735076,
+            27074,
+            12333,
+            78922
+          ],
+          [
+            17282,
+            1943,
+            133,
+            3605
+          ],
+          [
+            4094,
+            111,
+            2468,
+            1141
+          ],
+          [
+            60870,
+            158,
+            1311,
+            13479
+          ]
+        ],
+        "frame_count": 12
+      }
+    },
+    "step66_seen_12": {
+      "original": {
+        "foreground_miou": 0.0580094331923471,
+        "four_class_miou": 0.23655804371873904,
+        "background_iou": 0.7722038752979149,
+        "bg_to_fg_false_positive_rate": 0.14472371207484946,
+        "predicted_foreground_ratio": 0.15269895833333333,
+        "gt_foreground_ratio": 0.12001145833333333,
+        "per_class_iou": {
+          "Background": 0.7722038752979149,
+          "Divider": 0.022301480754202817,
+          "Ped Crossing": 0.07043124136426442,
+          "Boundary": 0.08129557745857408
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            722528,
+            26029,
+            16273,
+            79959
+          ],
+          [
+            17981,
+            1113,
+            236,
+            3933
+          ],
+          [
+            5929,
+            265,
+            1937,
+            1735
+          ],
+          [
+            66971,
+            350,
+            1127,
+            13634
+          ]
+        ],
+        "frame_count": 12
+      },
+      "bias_step65": {
+        "foreground_miou": 0.05880676626922534,
+        "four_class_miou": 0.23424886882763013,
+        "background_iou": 0.7605751765028446,
+        "bg_to_fg_false_positive_rate": 0.1593806264049366,
+        "predicted_foreground_ratio": 0.167653125,
+        "gt_foreground_ratio": 0.12001145833333333,
+        "per_class_iou": {
+          "Background": 0.7605751765028446,
+          "Divider": 0.02327803014056499,
+          "Ped Crossing": 0.06955829960914531,
+          "Boundary": 0.08358396905796572
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            710146,
+            27372,
+            17551,
+            89720
+          ],
+          [
+            17782,
+            1194,
+            294,
+            3993
+          ],
+          [
+            5502,
+            267,
+            2011,
+            2086
+          ],
+          [
+            65623,
+            391,
+            1200,
+            14868
+          ]
+        ],
+        "frame_count": 12
+      },
+      "adapter_step65": {
+        "foreground_miou": 0.06989825771344821,
+        "four_class_miou": 0.1921685055394201,
+        "background_iou": 0.5589792490173359,
+        "bg_to_fg_false_positive_rate": 0.4032415194800122,
+        "predicted_foreground_ratio": 0.415384375,
+        "gt_foreground_ratio": 0.12001145833333333,
+        "per_class_iou": {
+          "Background": 0.5589792490173359,
+          "Divider": 0.03856655290102389,
+          "Ped Crossing": 0.06471945389244345,
+          "Boundary": 0.10640876634687729
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            504135,
+            62206,
+            29154,
+            249294
+          ],
+          [
+            13352,
+            3390,
+            966,
+            5555
+          ],
+          [
+            2075,
+            422,
+            2721,
+            4648
+          ],
+          [
+            41669,
+            2009,
+            2057,
+            36347
+          ]
+        ],
+        "frame_count": 12
+      },
+      "adapter_step66": {
+        "foreground_miou": 0.031067394107952905,
+        "four_class_miou": 0.23746024383195358,
+        "background_iou": 0.8566387930039555,
+        "bg_to_fg_false_positive_rate": 0.03352079631718689,
+        "predicted_foreground_ratio": 0.036675,
+        "gt_foreground_ratio": 0.12001145833333333,
+        "per_class_iou": {
+          "Background": 0.8566387930039555,
+          "Divider": 0.009735936979917896,
+          "Ped Crossing": 0.055868501246652505,
+          "Boundary": 0.02759774409728831
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            816471,
+            12680,
+            963,
+            14675
+          ],
+          [
+            20321,
+            351,
+            0,
+            2591
+          ],
+          [
+            8673,
+            109,
+            605,
+            479
+          ],
+          [
+            79327,
+            0,
+            0,
+            2755
+          ]
+        ],
+        "frame_count": 12
+      },
+      "adapter_step67_raw": {
+        "foreground_miou": 0.07002981974512261,
+        "four_class_miou": 0.22107506906635827,
+        "background_iou": 0.6742108170300652,
+        "bg_to_fg_false_positive_rate": 0.2688979141537118,
+        "predicted_foreground_ratio": 0.2823833333333333,
+        "gt_foreground_ratio": 0.12001145833333333,
+        "per_class_iou": {
+          "Background": 0.6742108170300652,
+          "Divider": 0.03310680306173546,
+          "Ped Crossing": 0.07015189737534216,
+          "Boundary": 0.1068307587982902
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            617627,
+            45106,
+            24976,
+            157080
+          ],
+          [
+            15521,
+            2314,
+            624,
+            4804
+          ],
+          [
+            3125,
+            346,
+            2614,
+            3781
+          ],
+          [
+            52639,
+            1180,
+            1796,
+            26467
+          ]
+        ],
+        "frame_count": 12
+      },
+      "step67_locked": {
+        "foreground_miou": 0.0580094331923471,
+        "four_class_miou": 0.23655804371873904,
+        "background_iou": 0.7722038752979149,
+        "bg_to_fg_false_positive_rate": 0.14472371207484946,
+        "predicted_foreground_ratio": 0.15269895833333333,
+        "gt_foreground_ratio": 0.12001145833333333,
+        "per_class_iou": {
+          "Background": 0.7722038752979149,
+          "Divider": 0.022301480754202817,
+          "Ped Crossing": 0.07043124136426442,
+          "Boundary": 0.08129557745857408
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            722528,
+            26029,
+            16273,
+            79959
+          ],
+          [
+            17981,
+            1113,
+            236,
+            3933
+          ],
+          [
+            5929,
+            265,
+            1937,
+            1735
+          ],
+          [
+            66971,
+            350,
+            1127,
+            13634
+          ]
+        ],
+        "frame_count": 12
+      },
+      "step67_locked_text_shuffled": {
+        "foreground_miou": 0.0580094331923471,
+        "four_class_miou": 0.23655804371873904,
+        "background_iou": 0.7722038752979149,
+        "bg_to_fg_false_positive_rate": 0.14472371207484946,
+        "predicted_foreground_ratio": 0.15269895833333333,
+        "gt_foreground_ratio": 0.12001145833333333,
+        "per_class_iou": {
+          "Background": 0.7722038752979149,
+          "Divider": 0.022301480754202817,
+          "Ped Crossing": 0.07043124136426442,
+          "Boundary": 0.08129557745857408
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            722528,
+            26029,
+            16273,
+            79959
+          ],
+          [
+            17981,
+            1113,
+            236,
+            3933
+          ],
+          [
+            5929,
+            265,
+            1937,
+            1735
+          ],
+          [
+            66971,
+            350,
+            1127,
+            13634
+          ]
+        ],
+        "frame_count": 12
+      },
+      "step67_locked_text_constant": {
+        "foreground_miou": 0.0580094331923471,
+        "four_class_miou": 0.23655804371873904,
+        "background_iou": 0.7722038752979149,
+        "bg_to_fg_false_positive_rate": 0.14472371207484946,
+        "predicted_foreground_ratio": 0.15269895833333333,
+        "gt_foreground_ratio": 0.12001145833333333,
+        "per_class_iou": {
+          "Background": 0.7722038752979149,
+          "Divider": 0.022301480754202817,
+          "Ped Crossing": 0.07043124136426442,
+          "Boundary": 0.08129557745857408
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            722528,
+            26029,
+            16273,
+            79959
+          ],
+          [
+            17981,
+            1113,
+            236,
+            3933
+          ],
+          [
+            5929,
+            265,
+            1937,
+            1735
+          ],
+          [
+            66971,
+            350,
+            1127,
+            13634
+          ]
+        ],
+        "frame_count": 12
+      }
+    },
+    "new_mini_val_12": {
+      "original": {
+        "foreground_miou": 0.03996059129744031,
+        "four_class_miou": 0.22081602339138415,
+        "background_iou": 0.7633823196732157,
+        "bg_to_fg_false_positive_rate": 0.14805415659874266,
+        "predicted_foreground_ratio": 0.15332395833333334,
+        "gt_foreground_ratio": 0.12529895833333332,
+        "per_class_iou": {
+          "Background": 0.7633823196732157,
+          "Divider": 0.0067147435897435895,
+          "Ped Crossing": 0.04582300529242313,
+          "Boundary": 0.06734402501015423
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            715390,
+            30110,
+            20624,
+            73589
+          ],
+          [
+            24262,
+            419,
+            90,
+            7210
+          ],
+          [
+            5189,
+            54,
+            1368,
+            1068
+          ],
+          [
+            67968,
+            255,
+            1461,
+            10943
+          ]
+        ],
+        "frame_count": 12
+      },
+      "bias_step65": {
+        "foreground_miou": 0.041552648207801614,
+        "four_class_miou": 0.21916242435750963,
+        "background_iou": 0.7519917528066337,
+        "bg_to_fg_false_positive_rate": 0.16258054835402097,
+        "predicted_foreground_ratio": 0.168140625,
+        "gt_foreground_ratio": 0.12529895833333332,
+        "per_class_iou": {
+          "Background": 0.7519917528066337,
+          "Divider": 0.007789480283367814,
+          "Ped Crossing": 0.04484504889002134,
+          "Boundary": 0.07202341545001568
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            703192,
+            31482,
+            21985,
+            83054
+          ],
+          [
+            23950,
+            497,
+            112,
+            7422
+          ],
+          [
+            5126,
+            54,
+            1408,
+            1091
+          ],
+          [
+            66317,
+            287,
+            1621,
+            12402
+          ]
+        ],
+        "frame_count": 12
+      },
+      "adapter_step65": {
+        "foreground_miou": 0.05778886484249792,
+        "four_class_miou": 0.17987718821397256,
+        "background_iou": 0.5461421583283964,
+        "bg_to_fg_false_positive_rate": 0.41485126465828204,
+        "predicted_foreground_ratio": 0.425696875,
+        "gt_foreground_ratio": 0.12529895833333332,
+        "per_class_iou": {
+          "Background": 0.5461421583283964,
+          "Divider": 0.022010471000767355,
+          "Ped Crossing": 0.04151385095591104,
+          "Boundary": 0.10984227257081536
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            491357,
+            69042,
+            27963,
+            251351
+          ],
+          [
+            19343,
+            2266,
+            701,
+            9671
+          ],
+          [
+            1897,
+            112,
+            1596,
+            4074
+          ],
+          [
+            38734,
+            1816,
+            2102,
+            37975
+          ]
+        ],
+        "frame_count": 12
+      },
+      "adapter_step66": {
+        "foreground_miou": 0.012778202918037848,
+        "four_class_miou": 0.2210184555013315,
+        "background_iou": 0.8457392132512125,
+        "bg_to_fg_false_positive_rate": 0.039765967657997434,
+        "predicted_foreground_ratio": 0.041666666666666664,
+        "gt_foreground_ratio": 0.12529895833333332,
+        "per_class_iou": {
+          "Background": 0.8457392132512125,
+          "Divider": 0.00027151778441487917,
+          "Ped Crossing": 0.022816166883963495,
+          "Boundary": 0.015246924085735166
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            806321,
+            15877,
+            2927,
+            14588
+          ],
+          [
+            27627,
+            13,
+            0,
+            4341
+          ],
+          [
+            7101,
+            0,
+            245,
+            333
+          ],
+          [
+            78951,
+            21,
+            132,
+            1523
+          ]
+        ],
+        "frame_count": 12
+      },
+      "adapter_step67_raw": {
+        "foreground_miou": 0.054240394132481114,
+        "four_class_miou": 0.20627551159988486,
+        "background_iou": 0.6623808640020962,
+        "bg_to_fg_false_positive_rate": 0.2774662295331857,
+        "predicted_foreground_ratio": 0.28856458333333335,
+        "gt_foreground_ratio": 0.12529895833333332,
+        "per_class_iou": {
+          "Background": 0.6623808640020962,
+          "Divider": 0.012130482729180748,
+          "Ped Crossing": 0.044209008209451964,
+          "Boundary": 0.10638169145881063
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            606721,
+            51376,
+            25907,
+            155709
+          ],
+          [
+            21853,
+            1023,
+            552,
+            8553
+          ],
+          [
+            2987,
+            59,
+            1594,
+            3039
+          ],
+          [
+            51417,
+            917,
+            1918,
+            26375
+          ]
+        ],
+        "frame_count": 12
+      },
+      "step67_locked": {
+        "foreground_miou": 0.03996059129744031,
+        "four_class_miou": 0.22081602339138415,
+        "background_iou": 0.7633823196732157,
+        "bg_to_fg_false_positive_rate": 0.14805415659874266,
+        "predicted_foreground_ratio": 0.15332395833333334,
+        "gt_foreground_ratio": 0.12529895833333332,
+        "per_class_iou": {
+          "Background": 0.7633823196732157,
+          "Divider": 0.0067147435897435895,
+          "Ped Crossing": 0.04582300529242313,
+          "Boundary": 0.06734402501015423
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            715390,
+            30110,
+            20624,
+            73589
+          ],
+          [
+            24262,
+            419,
+            90,
+            7210
+          ],
+          [
+            5189,
+            54,
+            1368,
+            1068
+          ],
+          [
+            67968,
+            255,
+            1461,
+            10943
+          ]
+        ],
+        "frame_count": 12
+      },
+      "step67_locked_text_shuffled": {
+        "foreground_miou": 0.03996059129744031,
+        "four_class_miou": 0.22081602339138415,
+        "background_iou": 0.7633823196732157,
+        "bg_to_fg_false_positive_rate": 0.14805415659874266,
+        "predicted_foreground_ratio": 0.15332395833333334,
+        "gt_foreground_ratio": 0.12529895833333332,
+        "per_class_iou": {
+          "Background": 0.7633823196732157,
+          "Divider": 0.0067147435897435895,
+          "Ped Crossing": 0.04582300529242313,
+          "Boundary": 0.06734402501015423
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            715390,
+            30110,
+            20624,
+            73589
+          ],
+          [
+            24262,
+            419,
+            90,
+            7210
+          ],
+          [
+            5189,
+            54,
+            1368,
+            1068
+          ],
+          [
+            67968,
+            255,
+            1461,
+            10943
+          ]
+        ],
+        "frame_count": 12
+      },
+      "step67_locked_text_constant": {
+        "foreground_miou": 0.03996059129744031,
+        "four_class_miou": 0.22081602339138415,
+        "background_iou": 0.7633823196732157,
+        "bg_to_fg_false_positive_rate": 0.14805415659874266,
+        "predicted_foreground_ratio": 0.15332395833333334,
+        "gt_foreground_ratio": 0.12529895833333332,
+        "per_class_iou": {
+          "Background": 0.7633823196732157,
+          "Divider": 0.0067147435897435895,
+          "Ped Crossing": 0.04582300529242313,
+          "Boundary": 0.06734402501015423
+        },
+        "confusion_gt_rows_pred_cols": [
+          [
+            715390,
+            30110,
+            20624,
+            73589
+          ],
+          [
+            24262,
+            419,
+            90,
+            7210
+          ],
+          [
+            5189,
+            54,
+            1368,
+            1068
+          ],
+          [
+            67968,
+            255,
+            1461,
+            10943
+          ]
+        ],
+        "frame_count": 12
+      }
+    }
+  },
+  "new_mini_val_indices": [
+    14,
+    18,
+    19,
+    30,
+    31,
+    34,
+    42,
+    46,
+    48,
+    59,
+    71,
+    75
+  ],
+  "original_checkpoint_sha256": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+  "adapter_step67_sha256": "1fd6edc5306852415d90f575d0b76520045ca7172638ba1a681311c118fce31d",
+  "time_seconds": 139.5,
+  "protocol": "nuScenes mini; frozen BEVFormer+decoder; temporal OFF; argmax; train-only calibration",
+  "limitations": [
+    "Mini Val 包含已在 Step65/66 被观察的 token；new12 仍在同一迷你场景体系",
+    "如选择 original 是符合预定安全规则的回退，不代表新模型有效提升",
+    "正常文本和置乱/常量文本差别较小时不得宣称语言语义贡献",
+    "原始分割 81 帧时序 6.38% 根因仍未闭环",
+    "本代码借鉴 BLV、Tversky、LAVT 的思想，并非这些论文完整复现"
+  ]
+}

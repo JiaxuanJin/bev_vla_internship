@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="370" viewBox="0 0 1050 370">
+<rect width="1050" height="370" fill="#ffffff"/>
+<style>text{font-family:Arial,Helvetica,sans-serif}</style>
+<text x="25" y="32" font-size="23" font-weight="700" fill="#111827">Stage 2 | Verified Forward &amp; Gradient Checks</text>
+<text x="25" y="58" font-size="14" fill="#64748b">Source: Step71 acceptance and Step72 real gradient JSON</text>
+<rect x="25" y="83" rx="11" width="480" height="66" fill="#eff6ff"/>
+<text x="43" y="110" font-size="17" font-weight="700" fill="#1e40af">Segmentation</text>
+<text x="43" y="132" font-size="13" fill="#334155">Bypass max: 0.0000  |  Enabled MAE: 0.036182</text>
+<rect x="25" y="161" rx="11" width="480" height="66" fill="#eff6ff"/>
+<text x="43" y="188" font-size="17" font-weight="700" fill="#1e40af">Detection cls</text>
+<text x="43" y="210" font-size="13" fill="#334155">Bypass max: 0.0000  |  Enabled MAE: 0.003593</text>
+<rect x="25" y="239" rx="11" width="480" height="66" fill="#eff6ff"/>
+<text x="43" y="266" font-size="17" font-weight="700" fill="#1e40af">Detection bbox</text>
+<text x="43" y="288" font-size="13" fill="#334155">Bypass max: 0.0000  |  Enabled MAE: 0.002075</text>
+<rect x="525" y="83" rx="10" width="500" height="53" fill="#f0fdf4"/>
+<text x="543" y="105" font-size="16" font-weight="700" fill="#166534">Detection</text>
+<text x="543" y="124" font-size="12" fill="#334155">Loss: 3.3935  |  Gradient L2: 0.1409</text>
+<rect x="525" y="144" rx="10" width="500" height="53" fill="#f0fdf4"/>
+<text x="543" y="166" font-size="16" font-weight="700" fill="#166534">Segmentation</text>
+<text x="543" y="185" font-size="12" fill="#334155">Loss: 0.4099  |  Gradient L2: 0.0413</text>
+<rect x="525" y="205" rx="10" width="500" height="53" fill="#f0fdf4"/>
+<text x="543" y="227" font-size="16" font-weight="700" fill="#166534">Attention</text>
+<text x="543" y="246" font-size="12" fill="#334155">Loss: 0.8849  |  Gradient L2: 4.7235</text>
+<rect x="525" y="266" rx="10" width="500" height="53" fill="#f0fdf4"/>
+<text x="543" y="288" font-size="16" font-weight="700" fill="#166534">Joint total</text>
+<text x="543" y="307" font-size="12" fill="#334155">Loss: 3.8918  |  Gradient L2: 0.5050</text>
+<text x="25" y="350" font-size="13" fill="#64748b">Single-frame autograd; no optimizer.step; no evidence of converged model or language grounding.</text>
+</svg>

@@ -1,0 +1,212 @@
+{
+  "experiment": "step59_frozen_bevformer_real_gt_fusion_training",
+  "training_type": "frozen real BEV / frozen decoder / real GT",
+  "author_source": "/home/jjx2003520/projects/bevformer_author_clean_5080/BEVFormer-seg",
+  "author_checkpoint": "/mnt/g/nus/bevformer_small_seg.pth",
+  "checkpoint_sha256": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+  "text_embedding_path": "/home/jjx2003520/projects/bev_vla/outputs/stage2_step58/distilbert_prompts.npy",
+  "text_embedding_sha256": "f586d011e75ec63bc8c17516f46943baec7db77fde647b93f9b7bf46f104bed3",
+  "dataset": {
+    "train": "nuScenes v1.0-mini mini_train",
+    "val": "mini_val"
+  },
+  "mini_train_index": [
+    0,
+    1
+  ],
+  "mini_val_index": [
+    0,
+    1
+  ],
+  "train_tokens": [
+    "ca9a282c9e77460f8360f564131a8af5",
+    "39586f9d59004284a7114a68825e8eec"
+  ],
+  "val_tokens": [
+    "3e8750f331d7499e9b5123e9eb70f2e2",
+    "3950bd41f74548429c0f7700ff3d8269"
+  ],
+  "train_distinct_frames": 2,
+  "val_distinct_frames": 2,
+  "optimizer_steps": 15,
+  "frozen_modules": [
+    "BEVFormer",
+    "segmentation decoder",
+    "DistilBERT"
+  ],
+  "trainable_module": "LanguageBEVFusion only",
+  "loss": "author segmentation cross entropy + 0.01 * alpha^2",
+  "history": [
+    {
+      "step": 1,
+      "mini_train_index": 0,
+      "seg_loss": 5.9174542,
+      "total_loss": 5.9174552,
+      "gradient_norm_before_clip": 0.0737555,
+      "alpha": 0.0097,
+      "attention_mean": 0.5203412
+    },
+    {
+      "step": 2,
+      "mini_train_index": 1,
+      "seg_loss": 6.1743236,
+      "total_loss": 6.1743245,
+      "gradient_norm_before_clip": 0.0843718,
+      "alpha": 0.0093996,
+      "attention_mean": 0.4985349
+    },
+    {
+      "step": 3,
+      "mini_train_index": 0,
+      "seg_loss": 5.9162793,
+      "total_loss": 5.9162803,
+      "gradient_norm_before_clip": 0.0511725,
+      "alpha": 0.00926913,
+      "attention_mean": 0.4128267
+    },
+    {
+      "step": 4,
+      "mini_train_index": 1,
+      "seg_loss": 6.1729422,
+      "total_loss": 6.1729431,
+      "gradient_norm_before_clip": 0.0696908,
+      "alpha": 0.00926284,
+      "attention_mean": 0.4068479
+    },
+    {
+      "step": 5,
+      "mini_train_index": 0,
+      "seg_loss": 5.9158707,
+      "total_loss": 5.9158716,
+      "gradient_norm_before_clip": 0.1045945,
+      "alpha": 0.00935667,
+      "attention_mean": 0.4017113
+    },
+    {
+      "step": 6,
+      "mini_train_index": 1,
+      "seg_loss": 6.1722469,
+      "total_loss": 6.1722479,
+      "gradient_norm_before_clip": 0.1406112,
+      "alpha": 0.00951795,
+      "attention_mean": 0.4255763
+    },
+    {
+      "step": 7,
+      "mini_train_index": 0,
+      "seg_loss": 5.9153938,
+      "total_loss": 5.9153948,
+      "gradient_norm_before_clip": 0.1493449,
+      "alpha": 0.00971943,
+      "attention_mean": 0.4500531
+    },
+    {
+      "step": 8,
+      "mini_train_index": 1,
+      "seg_loss": 6.171669,
+      "total_loss": 6.17167,
+      "gradient_norm_before_clip": 0.1941632,
+      "alpha": 0.0099505,
+      "attention_mean": 0.4782846
+    },
+    {
+      "step": 9,
+      "mini_train_index": 0,
+      "seg_loss": 5.9148707,
+      "total_loss": 5.9148717,
+      "gradient_norm_before_clip": 0.1860281,
+      "alpha": 0.01020114,
+      "attention_mean": 0.4998455
+    },
+    {
+      "step": 10,
+      "mini_train_index": 1,
+      "seg_loss": 6.1710534,
+      "total_loss": 6.1710544,
+      "gradient_norm_before_clip": 0.2387886,
+      "alpha": 0.01046786,
+      "attention_mean": 0.5073461
+    },
+    {
+      "step": 11,
+      "mini_train_index": 0,
+      "seg_loss": 5.9143567,
+      "total_loss": 5.9143577,
+      "gradient_norm_before_clip": 0.2243187,
+      "alpha": 0.01074635,
+      "attention_mean": 0.5150936
+    },
+    {
+      "step": 12,
+      "mini_train_index": 1,
+      "seg_loss": 6.1704268,
+      "total_loss": 6.1704278,
+      "gradient_norm_before_clip": 0.2841236,
+      "alpha": 0.01103541,
+      "attention_mean": 0.5022276
+    },
+    {
+      "step": 13,
+      "mini_train_index": 0,
+      "seg_loss": 5.9137506,
+      "total_loss": 5.9137521,
+      "gradient_norm_before_clip": 0.2656879,
+      "alpha": 0.0113326,
+      "attention_mean": 0.5062346
+    },
+    {
+      "step": 14,
+      "mini_train_index": 1,
+      "seg_loss": 6.1696486,
+      "total_loss": 6.1696501,
+      "gradient_norm_before_clip": 0.3328411,
+      "alpha": 0.01163775,
+      "attention_mean": 0.4871132
+    },
+    {
+      "step": 15,
+      "mini_train_index": 0,
+      "seg_loss": 5.9130244,
+      "total_loss": 5.9130259,
+      "gradient_norm_before_clip": 0.3104222,
+      "alpha": 0.01194912,
+      "attention_mean": 0.4995294
+    }
+  ],
+  "heldout_original_frozen_author": {
+    "mean_loss": 3.150848150253296,
+    "per_frame_loss": [
+      3.2515869140625,
+      3.050109386444092
+    ],
+    "pixel_accuracy_including_background": 0.7256625,
+    "frame_count": 2
+  },
+  "heldout_before": {
+    "mean_loss": 3.1555923223495483,
+    "per_frame_loss": [
+      3.2564196586608887,
+      3.054764986038208
+    ],
+    "pixel_accuracy_including_background": 0.72566875,
+    "frame_count": 2
+  },
+  "heldout_after": {
+    "mean_loss": 3.15386962890625,
+    "per_frame_loss": [
+      3.2540760040283203,
+      3.0536632537841797
+    ],
+    "pixel_accuracy_including_background": 0.7259625,
+    "frame_count": 2
+  },
+  "heldout_loss_delta": -0.0017226934432983398,
+  "weights": "/home/jjx2003520/projects/bev_vla/outputs/stage2_step59/fusion_step59.pt",
+  "weights_sha256": "d84c2dd924349a76f12b757a3862b73ea1caf679cfb9fe5e48be2eee72fc5200",
+  "elapsed_seconds": 75.79,
+  "official_miou": false,
+  "full_mini_val_81": false,
+  "temporally_consistent": false,
+  "language_grounding_supervised": false,
+  "limitations": "仅两条冻结驾驶文本特征；小样本重复训练以验证梯度与数据监督。语义文本与道路 GT 未严格配对，不证明定位能力。Mini Train/Val 分离但评估样本很少，不代表官方 81 帧时序或指标提升。"
+}

@@ -1,0 +1,1319 @@
+{
+  "experiment": "step61_supervised_class_conditioned_attention",
+  "train_indices": [
+    18,
+    35,
+    64,
+    69,
+    115,
+    118,
+    135,
+    148,
+    164,
+    169,
+    207,
+    208,
+    254,
+    260,
+    293,
+    303
+  ],
+  "val_indices": [
+    21,
+    32,
+    39,
+    51,
+    58,
+    77
+  ],
+  "train_tokens": [
+    "bf2938e43c6f487497cda76b51bfc406",
+    "aa581aac963a4fad848ac11fe66e8637",
+    "0402e40724984f3b833496067d46c771",
+    "b2e2ffeabf91451cb31a79649bfd95df",
+    "47188ae2bc8c4faf83c909b135701176",
+    "ed5b84e7ea6f434e99d7816b37d15f2f",
+    "348c8122f47349429a6cd694dcac86e6",
+    "a5addc41b07842768a2183abdd01cff8",
+    "6d5d0e60cbf4429d8b6cfa055924e5ca",
+    "fe42b85d7f7a4107b650ffa993a4fbff",
+    "7220a2aaebf347cda4efedc88dcae96e",
+    "4cd162f9083b47d0acd83129a6539c01",
+    "f65ffdc408fb4a0c8ef0d1614b47dce8",
+    "056becbc0d5a46da8d59eebddedb47bb",
+    "b902d29df24c4efda414a9a88ed57031",
+    "134ae8a8f5c340f9894a414fc0966af4"
+  ],
+  "val_tokens": [
+    "d0ecf474e0e64950aa265cd44b9c9d75",
+    "ce94ef7a0522468e81c0e2b3a2f1e12d",
+    "281b92269fd648d4b52d06ac06ca6d65",
+    "858a1ece22cf45d9bc71e42336604b78",
+    "8092909473464f80b9f791a4d31ddcb8",
+    "cb4e6195faad467094fbd4d0a9e960e9"
+  ],
+  "train_scenes": 8,
+  "val_scenes": 2,
+  "source": "/home/jjx2003520/projects/bevformer_author_clean_5080/BEVFormer-seg",
+  "checkpoint_sha256": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+  "text_sha256": "a482cb59064fe5d3621c9ac57c9063871f8b7b978b0f15bc0032abc34645acb2",
+  "weights_sha256": "4e770f7833e5715b3f9756d1bffedda00a42ed2379d40992845f3a11c418caa0",
+  "steps": 72,
+  "train_frames": 16,
+  "val_frames": 6,
+  "lambda_attention": 3.0,
+  "alpha_fixed": 0.02,
+  "training_loss": "author segmentation CE + lambda * (class_weighted_BCE + soft_Dice)/2",
+  "attention_alignment": "original segmentation Head flip/transposition + original feat_cropper",
+  "geometry_assertion": "per-sample author decoder replay max_diff <= 1e-4",
+  "language_supervision": "class name templates from GT; NOT open-vocabulary grounding",
+  "baseline_recovery_checked": true,
+  "temporal_mode": "OFF, independent frames",
+  "full_81frame_official_eval": false,
+  "history": [
+    {
+      "step": 1,
+      "class_name": "Divider",
+      "sample_index": 164,
+      "gt_positive_pixels": 4349,
+      "attention_loss": 1.1199336,
+      "segmentation_loss": 8.5054636,
+      "grad_before_clip": 3.9172421,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.5028823
+    },
+    {
+      "step": 2,
+      "class_name": "Ped Crossing",
+      "sample_index": 64,
+      "gt_positive_pixels": 960,
+      "attention_loss": 0.8991598,
+      "segmentation_loss": 4.3828459,
+      "grad_before_clip": 6.0625949,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.4727618
+    },
+    {
+      "step": 3,
+      "class_name": "Boundary",
+      "sample_index": 118,
+      "gt_positive_pixels": 11196,
+      "attention_loss": 1.0456821,
+      "segmentation_loss": 7.3578057,
+      "grad_before_clip": 4.8920336,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3957009
+    },
+    {
+      "step": 4,
+      "class_name": "Divider",
+      "sample_index": 260,
+      "gt_positive_pixels": 3890,
+      "attention_loss": 1.1428051,
+      "segmentation_loss": 7.2545071,
+      "grad_before_clip": 4.7724147,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3509188
+    },
+    {
+      "step": 5,
+      "class_name": "Ped Crossing",
+      "sample_index": 303,
+      "gt_positive_pixels": 2378,
+      "attention_loss": 0.9549655,
+      "segmentation_loss": 7.6517181,
+      "grad_before_clip": 2.8561141,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.367869
+    },
+    {
+      "step": 6,
+      "class_name": "Boundary",
+      "sample_index": 148,
+      "gt_positive_pixels": 6060,
+      "attention_loss": 1.085422,
+      "segmentation_loss": 3.7771461,
+      "grad_before_clip": 2.2761767,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.4158617
+    },
+    {
+      "step": 7,
+      "class_name": "Divider",
+      "sample_index": 207,
+      "gt_positive_pixels": 6593,
+      "attention_loss": 1.0027677,
+      "segmentation_loss": 7.6541891,
+      "grad_before_clip": 2.0915394,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.4767218
+    },
+    {
+      "step": 8,
+      "class_name": "Ped Crossing",
+      "sample_index": 18,
+      "gt_positive_pixels": 1914,
+      "attention_loss": 0.9624062,
+      "segmentation_loss": 5.2465715,
+      "grad_before_clip": 5.0272336,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.509283
+    },
+    {
+      "step": 9,
+      "class_name": "Boundary",
+      "sample_index": 260,
+      "gt_positive_pixels": 7421,
+      "attention_loss": 1.0482855,
+      "segmentation_loss": 7.2576642,
+      "grad_before_clip": 2.6606605,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.5206826
+    },
+    {
+      "step": 10,
+      "class_name": "Divider",
+      "sample_index": 303,
+      "gt_positive_pixels": 2523,
+      "attention_loss": 1.0216296,
+      "segmentation_loss": 7.6567917,
+      "grad_before_clip": 3.62818,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.4759629
+    },
+    {
+      "step": 11,
+      "class_name": "Ped Crossing",
+      "sample_index": 169,
+      "gt_positive_pixels": 0,
+      "attention_loss": 0.4131511,
+      "segmentation_loss": 5.5669446,
+      "grad_before_clip": 7.9106827,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3417585
+    },
+    {
+      "step": 12,
+      "class_name": "Boundary",
+      "sample_index": 260,
+      "gt_positive_pixels": 7421,
+      "attention_loss": 1.014127,
+      "segmentation_loss": 7.2546701,
+      "grad_before_clip": 1.6636424,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.389111
+    },
+    {
+      "step": 13,
+      "class_name": "Divider",
+      "sample_index": 69,
+      "gt_positive_pixels": 4863,
+      "attention_loss": 1.1725678,
+      "segmentation_loss": 3.2881355,
+      "grad_before_clip": 5.1140027,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3155587
+    },
+    {
+      "step": 14,
+      "class_name": "Ped Crossing",
+      "sample_index": 35,
+      "gt_positive_pixels": 1055,
+      "attention_loss": 0.8844158,
+      "segmentation_loss": 7.3800173,
+      "grad_before_clip": 2.859935,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.2956478
+    },
+    {
+      "step": 15,
+      "class_name": "Boundary",
+      "sample_index": 303,
+      "gt_positive_pixels": 8135,
+      "attention_loss": 1.0776056,
+      "segmentation_loss": 7.6508083,
+      "grad_before_clip": 3.5403852,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3119421
+    },
+    {
+      "step": 16,
+      "class_name": "Divider",
+      "sample_index": 64,
+      "gt_positive_pixels": 5490,
+      "attention_loss": 1.1381243,
+      "segmentation_loss": 4.3838778,
+      "grad_before_clip": 5.0529456,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.2754967
+    },
+    {
+      "step": 17,
+      "class_name": "Ped Crossing",
+      "sample_index": 254,
+      "gt_positive_pixels": 2386,
+      "attention_loss": 0.933165,
+      "segmentation_loss": 3.4406915,
+      "grad_before_clip": 2.6646199,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.2076119
+    },
+    {
+      "step": 18,
+      "class_name": "Boundary",
+      "sample_index": 207,
+      "gt_positive_pixels": 6639,
+      "attention_loss": 1.0836962,
+      "segmentation_loss": 7.653409,
+      "grad_before_clip": 4.3122678,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.2853945
+    },
+    {
+      "step": 19,
+      "class_name": "Divider",
+      "sample_index": 135,
+      "gt_positive_pixels": 1642,
+      "attention_loss": 0.9203447,
+      "segmentation_loss": 3.4178848,
+      "grad_before_clip": 2.8086262,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3544858
+    },
+    {
+      "step": 20,
+      "class_name": "Ped Crossing",
+      "sample_index": 303,
+      "gt_positive_pixels": 2378,
+      "attention_loss": 0.8981587,
+      "segmentation_loss": 7.6502481,
+      "grad_before_clip": 1.9166723,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.2807244
+    },
+    {
+      "step": 21,
+      "class_name": "Boundary",
+      "sample_index": 303,
+      "gt_positive_pixels": 8135,
+      "attention_loss": 1.0495813,
+      "segmentation_loss": 7.6541562,
+      "grad_before_clip": 1.9424664,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3987625
+    },
+    {
+      "step": 22,
+      "class_name": "Divider",
+      "sample_index": 293,
+      "gt_positive_pixels": 2632,
+      "attention_loss": 1.0293202,
+      "segmentation_loss": 7.6140614,
+      "grad_before_clip": 2.4998684,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.4040491
+    },
+    {
+      "step": 23,
+      "class_name": "Ped Crossing",
+      "sample_index": 260,
+      "gt_positive_pixels": 3682,
+      "attention_loss": 1.1361973,
+      "segmentation_loss": 7.2549992,
+      "grad_before_clip": 3.3434145,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.2929169
+    },
+    {
+      "step": 24,
+      "class_name": "Boundary",
+      "sample_index": 135,
+      "gt_positive_pixels": 5950,
+      "attention_loss": 1.0471067,
+      "segmentation_loss": 3.4194303,
+      "grad_before_clip": 0.9028137,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.4010901
+    },
+    {
+      "step": 25,
+      "class_name": "Divider",
+      "sample_index": 207,
+      "gt_positive_pixels": 6593,
+      "attention_loss": 0.9448723,
+      "segmentation_loss": 7.6557269,
+      "grad_before_clip": 1.6217655,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3606336
+    },
+    {
+      "step": 26,
+      "class_name": "Ped Crossing",
+      "sample_index": 208,
+      "gt_positive_pixels": 905,
+      "attention_loss": 0.7904007,
+      "segmentation_loss": 8.6157837,
+      "grad_before_clip": 2.4411657,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.2820343
+    },
+    {
+      "step": 27,
+      "class_name": "Boundary",
+      "sample_index": 293,
+      "gt_positive_pixels": 8157,
+      "attention_loss": 1.0141616,
+      "segmentation_loss": 7.61695,
+      "grad_before_clip": 1.8683313,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.4678357
+    },
+    {
+      "step": 28,
+      "class_name": "Divider",
+      "sample_index": 169,
+      "gt_positive_pixels": 2697,
+      "attention_loss": 0.9593475,
+      "segmentation_loss": 5.5687652,
+      "grad_before_clip": 1.9354773,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3718329
+    },
+    {
+      "step": 29,
+      "class_name": "Ped Crossing",
+      "sample_index": 260,
+      "gt_positive_pixels": 3682,
+      "attention_loss": 1.0865647,
+      "segmentation_loss": 7.255125,
+      "grad_before_clip": 2.7780569,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3137367
+    },
+    {
+      "step": 30,
+      "class_name": "Boundary",
+      "sample_index": 293,
+      "gt_positive_pixels": 8157,
+      "attention_loss": 0.9914922,
+      "segmentation_loss": 7.6163855,
+      "grad_before_clip": 1.337514,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.4304452
+    },
+    {
+      "step": 31,
+      "class_name": "Divider",
+      "sample_index": 148,
+      "gt_positive_pixels": 1609,
+      "attention_loss": 0.9173003,
+      "segmentation_loss": 3.7764335,
+      "grad_before_clip": 2.2491028,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3605622
+    },
+    {
+      "step": 32,
+      "class_name": "Ped Crossing",
+      "sample_index": 118,
+      "gt_positive_pixels": 2378,
+      "attention_loss": 0.9533613,
+      "segmentation_loss": 7.3563356,
+      "grad_before_clip": 1.6097515,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3702414
+    },
+    {
+      "step": 33,
+      "class_name": "Boundary",
+      "sample_index": 135,
+      "gt_positive_pixels": 5950,
+      "attention_loss": 1.0706007,
+      "segmentation_loss": 3.416899,
+      "grad_before_clip": 2.796762,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3137725
+    },
+    {
+      "step": 34,
+      "class_name": "Divider",
+      "sample_index": 207,
+      "gt_positive_pixels": 6593,
+      "attention_loss": 0.938867,
+      "segmentation_loss": 7.6546888,
+      "grad_before_clip": 2.9909878,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3013489
+    },
+    {
+      "step": 35,
+      "class_name": "Ped Crossing",
+      "sample_index": 115,
+      "gt_positive_pixels": 2377,
+      "attention_loss": 0.9320403,
+      "segmentation_loss": 7.3160205,
+      "grad_before_clip": 1.4804778,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3657415
+    },
+    {
+      "step": 36,
+      "class_name": "Boundary",
+      "sample_index": 169,
+      "gt_positive_pixels": 7156,
+      "attention_loss": 1.0863297,
+      "segmentation_loss": 5.5664201,
+      "grad_before_clip": 3.9763472,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.315332
+    },
+    {
+      "step": 37,
+      "class_name": "Divider",
+      "sample_index": 115,
+      "gt_positive_pixels": 4471,
+      "attention_loss": 1.0597334,
+      "segmentation_loss": 7.3187456,
+      "grad_before_clip": 2.2875843,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.4282597
+    },
+    {
+      "step": 38,
+      "class_name": "Ped Crossing",
+      "sample_index": 118,
+      "gt_positive_pixels": 2378,
+      "attention_loss": 0.9195364,
+      "segmentation_loss": 7.3581305,
+      "grad_before_clip": 1.3382574,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3855636
+    },
+    {
+      "step": 39,
+      "class_name": "Boundary",
+      "sample_index": 148,
+      "gt_positive_pixels": 6060,
+      "attention_loss": 1.0694414,
+      "segmentation_loss": 3.7772307,
+      "grad_before_clip": 1.8643044,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3748407
+    },
+    {
+      "step": 40,
+      "class_name": "Divider",
+      "sample_index": 18,
+      "gt_positive_pixels": 5023,
+      "attention_loss": 1.074497,
+      "segmentation_loss": 5.2461739,
+      "grad_before_clip": 1.8480203,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.4350055
+    },
+    {
+      "step": 41,
+      "class_name": "Ped Crossing",
+      "sample_index": 164,
+      "gt_positive_pixels": 0,
+      "attention_loss": 0.36838,
+      "segmentation_loss": 8.5039396,
+      "grad_before_clip": 6.2240734,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.2980354
+    },
+    {
+      "step": 42,
+      "class_name": "Boundary",
+      "sample_index": 69,
+      "gt_positive_pixels": 6760,
+      "attention_loss": 1.0221621,
+      "segmentation_loss": 3.2893503,
+      "grad_before_clip": 2.9084632,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3668169
+    },
+    {
+      "step": 43,
+      "class_name": "Divider",
+      "sample_index": 18,
+      "gt_positive_pixels": 5023,
+      "attention_loss": 1.0604498,
+      "segmentation_loss": 5.2477846,
+      "grad_before_clip": 1.4564599,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.4880064
+    },
+    {
+      "step": 44,
+      "class_name": "Ped Crossing",
+      "sample_index": 115,
+      "gt_positive_pixels": 2377,
+      "attention_loss": 0.900924,
+      "segmentation_loss": 7.3179283,
+      "grad_before_clip": 2.0256636,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.4114125
+    },
+    {
+      "step": 45,
+      "class_name": "Boundary",
+      "sample_index": 303,
+      "gt_positive_pixels": 8135,
+      "attention_loss": 0.9921976,
+      "segmentation_loss": 7.6628456,
+      "grad_before_clip": 3.144146,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.5167728
+    },
+    {
+      "step": 46,
+      "class_name": "Divider",
+      "sample_index": 303,
+      "gt_positive_pixels": 2523,
+      "attention_loss": 0.9715474,
+      "segmentation_loss": 7.6609564,
+      "grad_before_clip": 3.5714958,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.4597304
+    },
+    {
+      "step": 47,
+      "class_name": "Ped Crossing",
+      "sample_index": 35,
+      "gt_positive_pixels": 1055,
+      "attention_loss": 0.8165771,
+      "segmentation_loss": 7.3774929,
+      "grad_before_clip": 2.4466071,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.2638808
+    },
+    {
+      "step": 48,
+      "class_name": "Boundary",
+      "sample_index": 293,
+      "gt_positive_pixels": 8157,
+      "attention_loss": 0.9628127,
+      "segmentation_loss": 7.6184835,
+      "grad_before_clip": 1.3642377,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.4362414
+    },
+    {
+      "step": 49,
+      "class_name": "Divider",
+      "sample_index": 207,
+      "gt_positive_pixels": 6593,
+      "attention_loss": 0.9069526,
+      "segmentation_loss": 7.6559186,
+      "grad_before_clip": 2.5084538,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3233316
+    },
+    {
+      "step": 50,
+      "class_name": "Ped Crossing",
+      "sample_index": 207,
+      "gt_positive_pixels": 1355,
+      "attention_loss": 0.7933983,
+      "segmentation_loss": 7.6511717,
+      "grad_before_clip": 2.243541,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.192125
+    },
+    {
+      "step": 51,
+      "class_name": "Boundary",
+      "sample_index": 148,
+      "gt_positive_pixels": 6060,
+      "attention_loss": 1.0845886,
+      "segmentation_loss": 3.7752707,
+      "grad_before_clip": 3.5927761,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3103352
+    },
+    {
+      "step": 52,
+      "class_name": "Divider",
+      "sample_index": 164,
+      "gt_positive_pixels": 4349,
+      "attention_loss": 0.9679718,
+      "segmentation_loss": 8.5033121,
+      "grad_before_clip": 2.6737924,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.2936301
+    },
+    {
+      "step": 53,
+      "class_name": "Ped Crossing",
+      "sample_index": 148,
+      "gt_positive_pixels": 3998,
+      "attention_loss": 1.1151346,
+      "segmentation_loss": 3.7741017,
+      "grad_before_clip": 4.4946842,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.1927704
+    },
+    {
+      "step": 54,
+      "class_name": "Boundary",
+      "sample_index": 303,
+      "gt_positive_pixels": 8135,
+      "attention_loss": 0.9516861,
+      "segmentation_loss": 7.6571631,
+      "grad_before_clip": 1.3706073,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.355492
+    },
+    {
+      "step": 55,
+      "class_name": "Divider",
+      "sample_index": 118,
+      "gt_positive_pixels": 4471,
+      "attention_loss": 1.0482076,
+      "segmentation_loss": 7.3563466,
+      "grad_before_clip": 3.3998423,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3820184
+    },
+    {
+      "step": 56,
+      "class_name": "Ped Crossing",
+      "sample_index": 303,
+      "gt_positive_pixels": 2378,
+      "attention_loss": 0.8396776,
+      "segmentation_loss": 7.6504822,
+      "grad_before_clip": 1.7849369,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.2109629
+    },
+    {
+      "step": 57,
+      "class_name": "Boundary",
+      "sample_index": 208,
+      "gt_positive_pixels": 7334,
+      "attention_loss": 1.0644594,
+      "segmentation_loss": 8.6154461,
+      "grad_before_clip": 2.8042228,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3707445
+    },
+    {
+      "step": 58,
+      "class_name": "Divider",
+      "sample_index": 64,
+      "gt_positive_pixels": 5490,
+      "attention_loss": 1.1473904,
+      "segmentation_loss": 4.3813133,
+      "grad_before_clip": 3.6666751,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3468556
+    },
+    {
+      "step": 59,
+      "class_name": "Ped Crossing",
+      "sample_index": 115,
+      "gt_positive_pixels": 2377,
+      "attention_loss": 0.8694828,
+      "segmentation_loss": 7.3159943,
+      "grad_before_clip": 1.2082846,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.330026
+    },
+    {
+      "step": 60,
+      "class_name": "Boundary",
+      "sample_index": 118,
+      "gt_positive_pixels": 11196,
+      "attention_loss": 1.0133853,
+      "segmentation_loss": 7.3556442,
+      "grad_before_clip": 1.7246541,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.5154432
+    },
+    {
+      "step": 61,
+      "class_name": "Divider",
+      "sample_index": 35,
+      "gt_positive_pixels": 5263,
+      "attention_loss": 1.0373909,
+      "segmentation_loss": 7.3847914,
+      "grad_before_clip": 4.9037318,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.5248861
+    },
+    {
+      "step": 62,
+      "class_name": "Ped Crossing",
+      "sample_index": 115,
+      "gt_positive_pixels": 2377,
+      "attention_loss": 0.8692074,
+      "segmentation_loss": 7.3162708,
+      "grad_before_clip": 1.5887411,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3497232
+    },
+    {
+      "step": 63,
+      "class_name": "Boundary",
+      "sample_index": 254,
+      "gt_positive_pixels": 6594,
+      "attention_loss": 1.0814888,
+      "segmentation_loss": 3.4454906,
+      "grad_before_clip": 2.2078688,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.53351
+    },
+    {
+      "step": 64,
+      "class_name": "Divider",
+      "sample_index": 260,
+      "gt_positive_pixels": 3890,
+      "attention_loss": 1.0465294,
+      "segmentation_loss": 7.2545891,
+      "grad_before_clip": 2.1008384,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.4929774
+    },
+    {
+      "step": 65,
+      "class_name": "Ped Crossing",
+      "sample_index": 303,
+      "gt_positive_pixels": 2378,
+      "attention_loss": 0.8028188,
+      "segmentation_loss": 7.6518221,
+      "grad_before_clip": 1.697644,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.2290713
+    },
+    {
+      "step": 66,
+      "class_name": "Boundary",
+      "sample_index": 260,
+      "gt_positive_pixels": 7421,
+      "attention_loss": 0.994139,
+      "segmentation_loss": 7.2550964,
+      "grad_before_clip": 1.3807213,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.4369158
+    },
+    {
+      "step": 67,
+      "class_name": "Divider",
+      "sample_index": 207,
+      "gt_positive_pixels": 6593,
+      "attention_loss": 0.8833951,
+      "segmentation_loss": 7.6569252,
+      "grad_before_clip": 1.2454544,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3766194
+    },
+    {
+      "step": 68,
+      "class_name": "Ped Crossing",
+      "sample_index": 303,
+      "gt_positive_pixels": 2378,
+      "attention_loss": 0.7777324,
+      "segmentation_loss": 7.649972,
+      "grad_before_clip": 1.1852337,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.1862437
+    },
+    {
+      "step": 69,
+      "class_name": "Boundary",
+      "sample_index": 135,
+      "gt_positive_pixels": 5950,
+      "attention_loss": 1.0430765,
+      "segmentation_loss": 3.4163928,
+      "grad_before_clip": 3.2307959,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.2861108
+    },
+    {
+      "step": 70,
+      "class_name": "Divider",
+      "sample_index": 115,
+      "gt_positive_pixels": 4471,
+      "attention_loss": 0.9985332,
+      "segmentation_loss": 7.3145342,
+      "grad_before_clip": 3.0178163,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3777157
+    },
+    {
+      "step": 71,
+      "class_name": "Ped Crossing",
+      "sample_index": 293,
+      "gt_positive_pixels": 2371,
+      "attention_loss": 0.7746996,
+      "segmentation_loss": 7.6079292,
+      "grad_before_clip": 1.1042645,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.1768539
+    },
+    {
+      "step": 72,
+      "class_name": "Boundary",
+      "sample_index": 115,
+      "gt_positive_pixels": 11196,
+      "attention_loss": 1.0314294,
+      "segmentation_loss": 7.3111362,
+      "grad_before_clip": 4.6204042,
+      "alpha_fixed": 0.02,
+      "attention_mean": 0.3345438
+    }
+  ],
+  "original_segmentation": {
+    "per_prompt": {
+      "Divider": {
+        "segmentation": {
+          "foreground_miou_argmax": 0.04225996280498306,
+          "per_class_iou": {
+            "Background": 0.773987093141792,
+            "Divider": 0.02044265593561368,
+            "Ped Crossing": 0.03250956163577523,
+            "Boundary": 0.07382767084356026
+          },
+          "confusion_gt_rows_pred_columns": [
+            [
+              362921,
+              18382,
+              3666,
+              31910
+            ],
+            [
+              14214,
+              762,
+              14,
+              3711
+            ],
+            [
+              2218,
+              192,
+              221,
+              462
+            ],
+            [
+              35587,
+              0,
+              25,
+              5715
+            ]
+          ]
+        },
+        "mean_seg_loss": 2.7532156109809875,
+        "mean_abs_logits_vs_original": 0.0
+      },
+      "Ped Crossing": {
+        "segmentation": {
+          "foreground_miou_argmax": 0.04225996280498306,
+          "per_class_iou": {
+            "Background": 0.773987093141792,
+            "Divider": 0.02044265593561368,
+            "Ped Crossing": 0.03250956163577523,
+            "Boundary": 0.07382767084356026
+          },
+          "confusion_gt_rows_pred_columns": [
+            [
+              362921,
+              18382,
+              3666,
+              31910
+            ],
+            [
+              14214,
+              762,
+              14,
+              3711
+            ],
+            [
+              2218,
+              192,
+              221,
+              462
+            ],
+            [
+              35587,
+              0,
+              25,
+              5715
+            ]
+          ]
+        },
+        "mean_seg_loss": 2.7532156109809875,
+        "mean_abs_logits_vs_original": 0.0
+      },
+      "Boundary": {
+        "segmentation": {
+          "foreground_miou_argmax": 0.04225996280498306,
+          "per_class_iou": {
+            "Background": 0.773987093141792,
+            "Divider": 0.02044265593561368,
+            "Ped Crossing": 0.03250956163577523,
+            "Boundary": 0.07382767084356026
+          },
+          "confusion_gt_rows_pred_columns": [
+            [
+              362921,
+              18382,
+              3666,
+              31910
+            ],
+            [
+              14214,
+              762,
+              14,
+              3711
+            ],
+            [
+              2218,
+              192,
+              221,
+              462
+            ],
+            [
+              35587,
+              0,
+              25,
+              5715
+            ]
+          ]
+        },
+        "mean_seg_loss": 2.7532156109809875,
+        "mean_abs_logits_vs_original": 0.0
+      }
+    },
+    "frame_count": 6
+  },
+  "before": {
+    "per_prompt": {
+      "Divider": {
+        "segmentation": {
+          "foreground_miou_argmax": 0.04209626399314357,
+          "per_class_iou": {
+            "Background": 0.7745381505552428,
+            "Divider": 0.020342985963876438,
+            "Ped Crossing": 0.03277729002048581,
+            "Boundary": 0.07316851599506846
+          },
+          "confusion_gt_rows_pred_columns": [
+            [
+              363246,
+              18369,
+              3701,
+              31563
+            ],
+            [
+              14228,
+              758,
+              12,
+              3703
+            ],
+            [
+              2216,
+              191,
+              224,
+              462
+            ],
+            [
+              35661,
+              0,
+              28,
+              5638
+            ]
+          ]
+        },
+        "mean_seg_loss": 2.7570902506510415,
+        "mean_abs_logits_vs_original": 0.0182246418359379,
+        "attention": {
+          "attention_iou_at_0_5": 0.039128355270979,
+          "soft_dice_positive_frames_mean": 0.08164922798168846,
+          "positive_minus_negative_mean": 0.010161101818084717,
+          "mean_attention_loss": 0.9390155176321665,
+          "frames_with_class": 5,
+          "gt_positive_pixels": 18701,
+          "counts": {
+            "tp": 14153,
+            "fp": 343006,
+            "fn": 4548
+          }
+        }
+      },
+      "Ped Crossing": {
+        "segmentation": {
+          "foreground_miou_argmax": 0.04207214004208384,
+          "per_class_iou": {
+            "Background": 0.7745433765613472,
+            "Divider": 0.020317238787943854,
+            "Ped Crossing": 0.032767700409596257,
+            "Boundary": 0.07313148092871141
+          },
+          "confusion_gt_rows_pred_columns": [
+            [
+              363250,
+              18367,
+              3702,
+              31560
+            ],
+            [
+              14228,
+              757,
+              12,
+              3704
+            ],
+            [
+              2216,
+              191,
+              224,
+              462
+            ],
+            [
+              35663,
+              0,
+              29,
+              5635
+            ]
+          ]
+        },
+        "mean_seg_loss": 2.757261951764425,
+        "mean_abs_logits_vs_original": 0.01917619149511059,
+        "attention": {
+          "attention_iou_at_0_5": 0.006212231829496776,
+          "soft_dice_positive_frames_mean": 0.024357704756160576,
+          "positive_minus_negative_mean": -0.019592960675557453,
+          "mean_attention_loss": 0.820223460594813,
+          "frames_with_class": 3,
+          "gt_positive_pixels": 3093,
+          "counts": {
+            "tp": 2825,
+            "fp": 451655,
+            "fn": 268
+          }
+        }
+      },
+      "Boundary": {
+        "segmentation": {
+          "foreground_miou_argmax": 0.042089250421713846,
+          "per_class_iou": {
+            "Background": 0.7745699250300647,
+            "Divider": 0.02034517003516118,
+            "Ped Crossing": 0.03279648609077599,
+            "Boundary": 0.07312609513920436
+          },
+          "confusion_gt_rows_pred_columns": [
+            [
+              363264,
+              18365,
+              3696,
+              31554
+            ],
+            [
+              14229,
+              758,
+              12,
+              3702
+            ],
+            [
+              2216,
+              191,
+              224,
+              462
+            ],
+            [
+              35664,
+              0,
+              29,
+              5634
+            ]
+          ]
+        },
+        "mean_seg_loss": 2.7573280533154807,
+        "mean_abs_logits_vs_original": 0.01941656352331241,
+        "attention": {
+          "attention_iou_at_0_5": 0.08503788571662216,
+          "soft_dice_positive_frames_mean": 0.14816467960675558,
+          "positive_minus_negative_mean": -0.0019801159699757895,
+          "mean_attention_loss": 1.069196840127309,
+          "frames_with_class": 6,
+          "gt_positive_pixels": 41327,
+          "counts": {
+            "tp": 39516,
+            "fp": 423360,
+            "fn": 1811
+          }
+        }
+      }
+    },
+    "frame_count": 6
+  },
+  "after": {
+    "per_prompt": {
+      "Divider": {
+        "segmentation": {
+          "foreground_miou_argmax": 0.04220009155423086,
+          "per_class_iou": {
+            "Background": 0.7743732234133068,
+            "Divider": 0.020421306856299476,
+            "Ped Crossing": 0.03274596182085169,
+            "Boundary": 0.07343300598554142
+          },
+          "confusion_gt_rows_pred_columns": [
+            [
+              363140,
+              18373,
+              3679,
+              31687
+            ],
+            [
+              14218,
+              761,
+              12,
+              3710
+            ],
+            [
+              2217,
+              191,
+              223,
+              462
+            ],
+            [
+              35633,
+              0,
+              26,
+              5668
+            ]
+          ]
+        },
+        "mean_seg_loss": 2.7549529870351157,
+        "mean_abs_logits_vs_original": 0.011084427901854118,
+        "attention": {
+          "attention_iou_at_0_5": 0.00693387873194822,
+          "soft_dice_positive_frames_mean": 0.07723159383167513,
+          "positive_minus_negative_mean": -0.021393001079559326,
+          "mean_attention_loss": 0.8828632235527039,
+          "frames_with_class": 5,
+          "gt_positive_pixels": 18701,
+          "counts": {
+            "tp": 278,
+            "fp": 21392,
+            "fn": 18423
+          }
+        }
+      },
+      "Ped Crossing": {
+        "segmentation": {
+          "foreground_miou_argmax": 0.042282709484105195,
+          "per_class_iou": {
+            "Background": 0.7741970567098357,
+            "Divider": 0.02044978798776233,
+            "Ped Crossing": 0.032873495744056354,
+            "Boundary": 0.07352484472049689
+          },
+          "confusion_gt_rows_pred_columns": [
+            [
+              363045,
+              18370,
+              3683,
+              31781
+            ],
+            [
+              14216,
+              762,
+              13,
+              3710
+            ],
+            [
+              2216,
+              191,
+              224,
+              462
+            ],
+            [
+              35620,
+              0,
+              25,
+              5682
+            ]
+          ]
+        },
+        "mean_seg_loss": 2.754691938559214,
+        "mean_abs_logits_vs_original": 0.005867907544597983,
+        "attention": {
+          "attention_iou_at_0_5": 0.03208830702092157,
+          "soft_dice_positive_frames_mean": 0.029561028194924194,
+          "positive_minus_negative_mean": 0.028315136830012005,
+          "mean_attention_loss": 0.46740253766377765,
+          "frames_with_class": 3,
+          "gt_positive_pixels": 3093,
+          "counts": {
+            "tp": 250,
+            "fp": 4698,
+            "fn": 2843
+          }
+        }
+      },
+      "Boundary": {
+        "segmentation": {
+          "foreground_miou_argmax": 0.04221383003087684,
+          "per_class_iou": {
+            "Background": 0.7744029341521665,
+            "Divider": 0.020419662981646453,
+            "Ped Crossing": 0.0328879753340185,
+            "Boundary": 0.07333385177696555
+          },
+          "confusion_gt_rows_pred_columns": [
+            [
+              363164,
+              18375,
+              3680,
+              31660
+            ],
+            [
+              14223,
+              761,
+              12,
+              3705
+            ],
+            [
+              2215,
+              192,
+              224,
+              462
+            ],
+            [
+              35643,
+              0,
+              26,
+              5658
+            ]
+          ]
+        },
+        "mean_seg_loss": 2.754979689915975,
+        "mean_abs_logits_vs_original": 0.010885790766527256,
+        "attention": {
+          "attention_iou_at_0_5": 0.009446409790610956,
+          "soft_dice_positive_frames_mean": 0.1422404112915198,
+          "positive_minus_negative_mean": 0.022828872005144756,
+          "mean_attention_loss": 1.1222477555274963,
+          "frames_with_class": 6,
+          "gt_positive_pixels": 41327,
+          "counts": {
+            "tp": 494,
+            "fp": 10968,
+            "fn": 40833
+          }
+        }
+      }
+    },
+    "frame_count": 6
+  },
+  "limitations": [
+    "Mini Train/Val 按数据集官方 mini 划分；Mini Val 只抽样独立帧且关闭时序",
+    "语言指令和 GT 来自人工类别映射，不是 DriveLM 目标定位真值",
+    "用同一组冻结原始 BEVFormer 权重、图像、标签比较原始、训练前和训练后",
+    "类别文本并不提供额外目标位置标注，不能验证任意自由文本语义定位",
+    "注意力 IoU 的阈值固定为 0.5，需同时参考 Soft Dice 和分割 mIoU"
+  ],
+  "elapsed_seconds": 90.03
+}

@@ -1,0 +1,63 @@
+{
+  "step": 72,
+  "status": "PASS_REAL_JOINT_GRADIENT_NO_OPTIMIZER_STEP",
+  "mode": "frozen_real_joint_model_single_train_frame_autograd_no_update",
+  "dataset": "nuScenes Mini Train (training pipeline, real 3D and map GT)",
+  "index": 0,
+  "token": "ca9a282c9e77460f8360f564131a8af5",
+  "joint_checkpoint": "/mnt/g/nus/bevformer_small_joint_author.pth",
+  "checkpoint_modified": false,
+  "optimizer_step_executed": false,
+  "frozen_author_model": true,
+  "time_mode": "single frame, history disabled",
+  "module_weights_trained": false,
+  "gradients": {
+    "detection": {
+      "grad_parameter_tensors": 8,
+      "global_l2": 0.14085550413095682,
+      "all_finite": true,
+      "loss_value": 3.3934671878814697
+    },
+    "segmentation": {
+      "grad_parameter_tensors": 8,
+      "global_l2": 0.041267548692641945,
+      "all_finite": true,
+      "loss_value": 0.4098561108112335
+    },
+    "attention": {
+      "grad_parameter_tensors": 7,
+      "global_l2": 4.723516561411981,
+      "all_finite": true,
+      "loss_value": 0.8848652243614197
+    },
+    "total": {
+      "grad_parameter_tensors": 8,
+      "global_l2": 0.5049758857484331,
+      "all_finite": true,
+      "loss_value": 3.8918097019195557
+    }
+  },
+  "total_backward_grad_norm": 0.5049763762517652,
+  "target_class": 3,
+  "gt_class_counts": {
+    "0": 63664,
+    "1": 5274,
+    "2": 0,
+    "3": 11062
+  },
+  "author_loss_keys": [
+    "loss_cls",
+    "loss_bbox",
+    "d0.loss_cls",
+    "d0.loss_bbox",
+    "d1.loss_cls",
+    "d1.loss_bbox",
+    "d2.loss_cls",
+    "d2.loss_bbox",
+    "d3.loss_cls",
+    "d3.loss_bbox",
+    "d4.loss_cls",
+    "d4.loss_bbox",
+    "loss_seg"
+  ]
+}

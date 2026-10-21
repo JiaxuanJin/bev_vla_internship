@@ -1,0 +1,367 @@
+{
+  "experiment": "step64_balanced_hard_negative_report_recovery",
+  "recovery_mode": "frozen trained fusion weights; validation only; no training",
+  "training_completed_before_crash": true,
+  "training_history_available": false,
+  "training_history_note": "72 次迭代完成但进程报错时历史尚未写入 JSON；权重仍已保存，本文件只重新计算验证指标，不编造 history。",
+  "train_indices_reference_step61": [
+    18,
+    35,
+    64,
+    69,
+    115,
+    118,
+    135,
+    148,
+    164,
+    169,
+    207,
+    208,
+    254,
+    260,
+    293,
+    303
+  ],
+  "val_indices": [
+    21,
+    32,
+    39,
+    51,
+    58,
+    77
+  ],
+  "val_tokens": [
+    "d0ecf474e0e64950aa265cd44b9c9d75",
+    "ce94ef7a0522468e81c0e2b3a2f1e12d",
+    "281b92269fd648d4b52d06ac06ca6d65",
+    "858a1ece22cf45d9bc71e42336604b78",
+    "8092909473464f80b9f791a4d31ddcb8",
+    "cb4e6195faad467094fbd4d0a9e960e9"
+  ],
+  "val_frames": 6,
+  "optimizer_steps_recorded_in_weights": 72,
+  "alpha_fixed": 0.02,
+  "checkpoint_sha256": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+  "text_sha256": "a482cb59064fe5d3621c9ac57c9063871f8b7b978b0f15bc0032abc34645acb2",
+  "step64_weight_sha256": "34ee8fe5007a88ef2d77bcbc9027fb47a36d4888a64b297e183b045a10eadfe7",
+  "step64_weight_path": "/home/jjx2003520/projects/bev_vla/outputs/stage2_step64/fusion_step64.pt",
+  "legacy_saved_weight_path": "/home/jjx2003520/projects/bev_vla/outputs/stage2_step64/fusion_step61.pt",
+  "original_segmentation": {
+    "per_prompt": {
+      "Divider": {
+        "segmentation": {
+          "foreground_miou_argmax": 0.04225996280498306,
+          "per_class_iou": {
+            "Background": 0.773987093141792,
+            "Divider": 0.02044265593561368,
+            "Ped Crossing": 0.03250956163577523,
+            "Boundary": 0.07382767084356026
+          },
+          "confusion_gt_rows_pred_columns": [
+            [
+              362921,
+              18382,
+              3666,
+              31910
+            ],
+            [
+              14214,
+              762,
+              14,
+              3711
+            ],
+            [
+              2218,
+              192,
+              221,
+              462
+            ],
+            [
+              35587,
+              0,
+              25,
+              5715
+            ]
+          ]
+        },
+        "mean_seg_loss": 2.7532156109809875,
+        "mean_abs_logits_vs_original": 0.0
+      },
+      "Ped Crossing": {
+        "segmentation": {
+          "foreground_miou_argmax": 0.04225996280498306,
+          "per_class_iou": {
+            "Background": 0.773987093141792,
+            "Divider": 0.02044265593561368,
+            "Ped Crossing": 0.03250956163577523,
+            "Boundary": 0.07382767084356026
+          },
+          "confusion_gt_rows_pred_columns": [
+            [
+              362921,
+              18382,
+              3666,
+              31910
+            ],
+            [
+              14214,
+              762,
+              14,
+              3711
+            ],
+            [
+              2218,
+              192,
+              221,
+              462
+            ],
+            [
+              35587,
+              0,
+              25,
+              5715
+            ]
+          ]
+        },
+        "mean_seg_loss": 2.7532156109809875,
+        "mean_abs_logits_vs_original": 0.0
+      },
+      "Boundary": {
+        "segmentation": {
+          "foreground_miou_argmax": 0.04225996280498306,
+          "per_class_iou": {
+            "Background": 0.773987093141792,
+            "Divider": 0.02044265593561368,
+            "Ped Crossing": 0.03250956163577523,
+            "Boundary": 0.07382767084356026
+          },
+          "confusion_gt_rows_pred_columns": [
+            [
+              362921,
+              18382,
+              3666,
+              31910
+            ],
+            [
+              14214,
+              762,
+              14,
+              3711
+            ],
+            [
+              2218,
+              192,
+              221,
+              462
+            ],
+            [
+              35587,
+              0,
+              25,
+              5715
+            ]
+          ]
+        },
+        "mean_seg_loss": 2.7532156109809875,
+        "mean_abs_logits_vs_original": 0.0
+      }
+    },
+    "frame_count": 6
+  },
+  "after": {
+    "per_prompt": {
+      "Divider": {
+        "segmentation": {
+          "foreground_miou_argmax": 0.042108531111254045,
+          "per_class_iou": {
+            "Background": 0.7744572692128084,
+            "Divider": 0.020395019321597253,
+            "Ped Crossing": 0.0326883611844034,
+            "Boundary": 0.0732422128277615
+          },
+          "confusion_gt_rows_pred_columns": [
+            [
+              363198,
+              18372,
+              3690,
+              31619
+            ],
+            [
+              14223,
+              760,
+              12,
+              3706
+            ],
+            [
+              2217,
+              191,
+              223,
+              462
+            ],
+            [
+              35652,
+              0,
+              27,
+              5648
+            ]
+          ]
+        },
+        "mean_seg_loss": 2.7563779751459756,
+        "mean_abs_logits_vs_original": 0.015433243941515684,
+        "attention": {
+          "attention_iou_at_0_5": 0.0,
+          "soft_dice_positive_frames_mean": 0.08092650046455674,
+          "positive_minus_negative_mean": 0.0016820847988128663,
+          "mean_attention_loss": 0.6741332411766052,
+          "frames_with_class": 5,
+          "gt_positive_pixels": 18701,
+          "counts": {
+            "tp": 0,
+            "fp": 96,
+            "fn": 18701
+          }
+        }
+      },
+      "Ped Crossing": {
+        "segmentation": {
+          "foreground_miou_argmax": 0.04210119531741938,
+          "per_class_iou": {
+            "Background": 0.7744970936555118,
+            "Divider": 0.020397208803005905,
+            "Ped Crossing": 0.032669205977146204,
+            "Boundary": 0.07323717117210606
+          },
+          "confusion_gt_rows_pred_columns": [
+            [
+              363219,
+              18368,
+              3694,
+              31598
+            ],
+            [
+              14224,
+              760,
+              12,
+              3705
+            ],
+            [
+              2217,
+              191,
+              223,
+              462
+            ],
+            [
+              35654,
+              0,
+              27,
+              5646
+            ]
+          ]
+        },
+        "mean_seg_loss": 2.7566758394241333,
+        "mean_abs_logits_vs_original": 0.016552358865737915,
+        "attention": {
+          "attention_iou_at_0_5": 0.017034084985454608,
+          "soft_dice_positive_frames_mean": 0.02530659269541502,
+          "positive_minus_negative_mean": 0.003958553075790405,
+          "mean_attention_loss": 0.6946100989977518,
+          "frames_with_class": 3,
+          "gt_positive_pixels": 3093,
+          "counts": {
+            "tp": 1013,
+            "fp": 56376,
+            "fn": 2080
+          }
+        }
+      },
+      "Boundary": {
+        "segmentation": {
+          "foreground_miou_argmax": 0.042086963472444505,
+          "per_class_iou": {
+            "Background": 0.7744959230323087,
+            "Divider": 0.020370370370370372,
+            "Ped Crossing": 0.03266442068258386,
+            "Boundary": 0.0732260993643793
+          },
+          "confusion_gt_rows_pred_columns": [
+            [
+              363220,
+              18368,
+              3695,
+              31596
+            ],
+            [
+              14225,
+              759,
+              12,
+              3705
+            ],
+            [
+              2217,
+              191,
+              223,
+              462
+            ],
+            [
+              35655,
+              0,
+              27,
+              5645
+            ]
+          ]
+        },
+        "mean_seg_loss": 2.7566752433776855,
+        "mean_abs_logits_vs_original": 0.01662716967985034,
+        "attention": {
+          "attention_iou_at_0_5": 0.029048691484108727,
+          "soft_dice_positive_frames_mean": 0.14576307187477747,
+          "positive_minus_negative_mean": 0.0020175824562708535,
+          "mean_attention_loss": 0.6656354169050852,
+          "frames_with_class": 6,
+          "gt_positive_pixels": 41327,
+          "counts": {
+            "tp": 2412,
+            "fp": 41706,
+            "fn": 38915
+          }
+        }
+      }
+    },
+    "frame_count": 6
+  },
+  "attention_ap_after": {
+    "Divider": {
+      "average_precision": 0.05938155241534805,
+      "positive_prevalence": 0.038960416666666664,
+      "positive_pixels": 18701,
+      "pixels": 480000
+    },
+    "Ped Crossing": {
+      "average_precision": 0.013816531622181145,
+      "positive_prevalence": 0.00644375,
+      "positive_pixels": 3093,
+      "pixels": 480000
+    },
+    "Boundary": {
+      "average_precision": 0.08425788914758343,
+      "positive_prevalence": 0.08609791666666666,
+      "positive_pixels": 41327,
+      "pixels": 480000
+    }
+  },
+  "step61_attention_ap": {
+    "Divider": 0.03574729684751663,
+    "Ped Crossing": 0.024016718310999094,
+    "Boundary": 0.09872821406664176
+  },
+  "temporal": false,
+  "full_81_frame_eval": false,
+  "eval_set_previously_used_for_development": true,
+  "notes": [
+    "Mini Val 仅 6 帧单帧推理，不等于 81 帧时序成绩",
+    "Attention AP 来自阈值无关排名指标；IoU@0.5 仍需单独检查",
+    "GT 和文本指令是类别模板配对，不代表开放词表定位",
+    "训练前随机融合模型的 Step64 指标未持久化，不能伪造"
+  ],
+  "recovery_seconds": 39.18
+}

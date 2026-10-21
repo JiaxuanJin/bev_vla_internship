@@ -1,0 +1,535 @@
+{
+  "experiment": "step62_step61_supervised_attention_diagnostic",
+  "scope": "same 6 held-out Mini Val frames from Step61; temporal OFF",
+  "val_indices": [
+    21,
+    32,
+    39,
+    51,
+    58,
+    77
+  ],
+  "val_tokens": [
+    "d0ecf474e0e64950aa265cd44b9c9d75",
+    "ce94ef7a0522468e81c0e2b3a2f1e12d",
+    "281b92269fd648d4b52d06ac06ca6d65",
+    "858a1ece22cf45d9bc71e42336604b78",
+    "8092909473464f80b9f791a4d31ddcb8",
+    "cb4e6195faad467094fbd4d0a9e960e9"
+  ],
+  "checkpoint_sha256": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+  "step61_fusion_sha256": "4e770f7833e5715b3f9756d1bffedda00a42ed2379d40992845f3a11c418caa0",
+  "text_sha256": "a482cb59064fe5d3621c9ac57c9063871f8b7b978b0f15bc0032abc34645acb2",
+  "alignment": "same author seg head flip/transpose and feat_cropper, replay verified",
+  "thresholds_predefined": [
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "scores": {
+    "Divider": {
+      "pixels": 480000,
+      "gt_positive_pixels": 18701,
+      "gt_prevalence": 0.038960416666666664,
+      "prediction_mean": 0.3018045425415039,
+      "prediction_std": 0.10225054621696472,
+      "prediction_quantiles": {
+        "0.05": 0.15807027295231818,
+        "0.25": 0.22435148432850838,
+        "0.5": 0.2866707742214203,
+        "0.75": 0.3691830486059189,
+        "0.95": 0.4935999885201454
+      },
+      "positive_mean": 0.2970940172672272,
+      "negative_mean": 0.30199551582336426,
+      "positive_minus_negative_mean": -0.004901498556137085,
+      "average_precision": 0.03574729684751663,
+      "prevalence_random_baseline": 0.038960416666666664,
+      "thresholds": [
+        {
+          "threshold": 0.05,
+          "tp": 18701,
+          "fp": 461299,
+          "fn": 0,
+          "predicted_fraction": 1.0,
+          "iou": 0.038960416666666664,
+          "precision": 0.038960416666666664,
+          "recall": 1.0
+        },
+        {
+          "threshold": 0.1,
+          "tp": 18701,
+          "fp": 459861,
+          "fn": 0,
+          "predicted_fraction": 0.9970041666666667,
+          "iou": 0.039077486302715216,
+          "precision": 0.039077486302715216,
+          "recall": 1.0
+        },
+        {
+          "threshold": 0.2,
+          "tp": 16763,
+          "fp": 387722,
+          "fn": 1938,
+          "predicted_fraction": 0.8426770833333334,
+          "iou": 0.04124520511880479,
+          "precision": 0.04144282235435183,
+          "recall": 0.8963691781188172
+        },
+        {
+          "threshold": 0.3,
+          "tp": 8459,
+          "fp": 208507,
+          "fn": 10242,
+          "predicted_fraction": 0.4520125,
+          "iou": 0.0372302031618605,
+          "precision": 0.03898767548832536,
+          "recall": 0.45232875247312976
+        },
+        {
+          "threshold": 0.4,
+          "tp": 2028,
+          "fp": 82840,
+          "fn": 16673,
+          "predicted_fraction": 0.17680833333333335,
+          "iou": 0.0199722279670281,
+          "precision": 0.02389593250695197,
+          "recall": 0.10844339874873002
+        },
+        {
+          "threshold": 0.5,
+          "tp": 278,
+          "fp": 21392,
+          "fn": 18423,
+          "predicted_fraction": 0.045145833333333336,
+          "iou": 0.00693387873194822,
+          "precision": 0.012828795569912321,
+          "recall": 0.01486551521309021
+        },
+        {
+          "threshold": 0.6,
+          "tp": 5,
+          "fp": 1769,
+          "fn": 18696,
+          "predicted_fraction": 0.0036958333333333335,
+          "iou": 0.0002442598925256473,
+          "precision": 0.002818489289740699,
+          "recall": 0.00026736538153039944
+        },
+        {
+          "threshold": 0.7,
+          "tp": 0,
+          "fp": 2,
+          "fn": 18701,
+          "predicted_fraction": 4.166666666666667e-06,
+          "iou": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "threshold": 0.8,
+          "tp": 0,
+          "fp": 0,
+          "fn": 18701,
+          "predicted_fraction": 0.0,
+          "iou": 0.0,
+          "precision": null,
+          "recall": 0.0
+        },
+        {
+          "threshold": 0.9,
+          "tp": 0,
+          "fp": 0,
+          "fn": 18701,
+          "predicted_fraction": 0.0,
+          "iou": 0.0,
+          "precision": null,
+          "recall": 0.0
+        }
+      ],
+      "best_threshold_on_same_eval_set_diagnostic_only": {
+        "threshold": 0.2,
+        "tp": 16763,
+        "fp": 387722,
+        "fn": 1938,
+        "predicted_fraction": 0.8426770833333334,
+        "iou": 0.04124520511880479,
+        "precision": 0.04144282235435183,
+        "recall": 0.8963691781188172
+      },
+      "top_fraction_diagnostics": [
+        {
+          "top_fraction": 0.05,
+          "top_pixels": 24000,
+          "positive_pixels": 18701,
+          "precision_at_k": 0.013375,
+          "recall_at_k": 0.017164857494251645,
+          "iou": 0.00757432751297782
+        },
+        {
+          "top_fraction": 0.1,
+          "top_pixels": 48000,
+          "positive_pixels": 18701,
+          "precision_at_k": 0.018604166666666668,
+          "recall_at_k": 0.04775145714132934,
+          "iou": 0.013569778750303914
+        },
+        {
+          "top_fraction": 0.2,
+          "top_pixels": 96000,
+          "positive_pixels": 18701,
+          "precision_at_k": 0.027125,
+          "recall_at_k": 0.13924389070103202,
+          "iou": 0.023229881263548535
+        }
+      ],
+      "frames_with_gt": 5,
+      "empty_gt_frames": [
+        "cb4e6195faad467094fbd4d0a9e960e9"
+      ]
+    },
+    "Ped Crossing": {
+      "pixels": 480000,
+      "gt_positive_pixels": 3093,
+      "gt_prevalence": 0.00644375,
+      "prediction_mean": 0.16783078014850616,
+      "prediction_std": 0.09213658422231674,
+      "prediction_quantiles": {
+        "0.05": 0.07257068529725075,
+        "0.25": 0.10619811713695526,
+        "0.5": 0.1413162276148796,
+        "0.75": 0.1993498131632805,
+        "0.95": 0.3606838375329971
+      },
+      "positive_mean": 0.2642383277416229,
+      "negative_mean": 0.1672055572271347,
+      "positive_minus_negative_mean": 0.09703277051448822,
+      "average_precision": 0.024016718310999094,
+      "prevalence_random_baseline": 0.00644375,
+      "thresholds": [
+        {
+          "threshold": 0.05,
+          "tp": 3093,
+          "fp": 476907,
+          "fn": 0,
+          "predicted_fraction": 1.0,
+          "iou": 0.00644375,
+          "precision": 0.00644375,
+          "recall": 1.0
+        },
+        {
+          "threshold": 0.1,
+          "tp": 3093,
+          "fp": 379867,
+          "fn": 0,
+          "predicted_fraction": 0.7978333333333333,
+          "iou": 0.008076561520785461,
+          "precision": 0.008076561520785461,
+          "recall": 1.0
+        },
+        {
+          "threshold": 0.2,
+          "tp": 1585,
+          "fp": 117504,
+          "fn": 1508,
+          "predicted_fraction": 0.24810208333333333,
+          "iou": 0.013142947171156829,
+          "precision": 0.013309373661715187,
+          "recall": 0.5124474620109926
+        },
+        {
+          "threshold": 0.3,
+          "tp": 1166,
+          "fp": 43245,
+          "fn": 1927,
+          "predicted_fraction": 0.09252291666666666,
+          "iou": 0.025162933229746644,
+          "precision": 0.026254756704420075,
+          "recall": 0.37698027804720335
+        },
+        {
+          "threshold": 0.4,
+          "tp": 477,
+          "fp": 14964,
+          "fn": 2616,
+          "predicted_fraction": 0.03216875,
+          "iou": 0.02641634823060309,
+          "precision": 0.030891781620361377,
+          "recall": 0.1542192046556741
+        },
+        {
+          "threshold": 0.5,
+          "tp": 250,
+          "fp": 4698,
+          "fn": 2843,
+          "predicted_fraction": 0.010308333333333333,
+          "iou": 0.03208830702092157,
+          "precision": 0.05052546483427647,
+          "recall": 0.0808276753960556
+        },
+        {
+          "threshold": 0.6,
+          "tp": 90,
+          "fp": 1111,
+          "fn": 3003,
+          "predicted_fraction": 0.002502083333333333,
+          "iou": 0.021408182683158895,
+          "precision": 0.0749375520399667,
+          "recall": 0.029097963142580018
+        },
+        {
+          "threshold": 0.7,
+          "tp": 12,
+          "fp": 105,
+          "fn": 3081,
+          "predicted_fraction": 0.00024375,
+          "iou": 0.00375234521575985,
+          "precision": 0.10256410256410256,
+          "recall": 0.0038797284190106693
+        },
+        {
+          "threshold": 0.8,
+          "tp": 0,
+          "fp": 0,
+          "fn": 3093,
+          "predicted_fraction": 0.0,
+          "iou": 0.0,
+          "precision": null,
+          "recall": 0.0
+        },
+        {
+          "threshold": 0.9,
+          "tp": 0,
+          "fp": 0,
+          "fn": 3093,
+          "predicted_fraction": 0.0,
+          "iou": 0.0,
+          "precision": null,
+          "recall": 0.0
+        }
+      ],
+      "best_threshold_on_same_eval_set_diagnostic_only": {
+        "threshold": 0.5,
+        "tp": 250,
+        "fp": 4698,
+        "fn": 2843,
+        "predicted_fraction": 0.010308333333333333,
+        "iou": 0.03208830702092157,
+        "precision": 0.05052546483427647,
+        "recall": 0.0808276753960556
+      },
+      "top_fraction_diagnostics": [
+        {
+          "top_fraction": 0.05,
+          "top_pixels": 24000,
+          "positive_pixels": 3093,
+          "precision_at_k": 0.030833333333333334,
+          "recall_at_k": 0.2392499191723246,
+          "iou": 0.02808029446362843
+        },
+        {
+          "top_fraction": 0.1,
+          "top_pixels": 48000,
+          "positive_pixels": 3093,
+          "precision_at_k": 0.025041666666666667,
+          "recall_at_k": 0.38861946330423536,
+          "iou": 0.024092521697300116
+        },
+        {
+          "top_fraction": 0.2,
+          "top_pixels": 96000,
+          "positive_pixels": 3093,
+          "precision_at_k": 0.015447916666666667,
+          "recall_at_k": 0.47946977044940187,
+          "iou": 0.01519311545948161
+        }
+      ],
+      "frames_with_gt": 3,
+      "empty_gt_frames": [
+        "858a1ece22cf45d9bc71e42336604b78",
+        "8092909473464f80b9f791a4d31ddcb8",
+        "cb4e6195faad467094fbd4d0a9e960e9"
+      ]
+    },
+    "Boundary": {
+      "pixels": 480000,
+      "gt_positive_pixels": 41327,
+      "gt_prevalence": 0.08609791666666666,
+      "prediction_mean": 0.30658218264579773,
+      "prediction_std": 0.0889330729842186,
+      "prediction_quantiles": {
+        "0.05": 0.17347551956772805,
+        "0.25": 0.23979796469211578,
+        "0.5": 0.2991684228181839,
+        "0.75": 0.3656277731060982,
+        "0.95": 0.462712050974369
+      },
+      "positive_mean": 0.32514697313308716,
+      "negative_mean": 0.30483323335647583,
+      "positive_minus_negative_mean": 0.020313739776611328,
+      "average_precision": 0.09872821406664176,
+      "prevalence_random_baseline": 0.08609791666666666,
+      "thresholds": [
+        {
+          "threshold": 0.05,
+          "tp": 41327,
+          "fp": 438673,
+          "fn": 0,
+          "predicted_fraction": 1.0,
+          "iou": 0.08609791666666666,
+          "precision": 0.08609791666666666,
+          "recall": 1.0
+        },
+        {
+          "threshold": 0.1,
+          "tp": 41327,
+          "fp": 438673,
+          "fn": 0,
+          "predicted_fraction": 1.0,
+          "iou": 0.08609791666666666,
+          "precision": 0.08609791666666666,
+          "recall": 1.0
+        },
+        {
+          "threshold": 0.2,
+          "tp": 39634,
+          "fp": 390193,
+          "fn": 1693,
+          "predicted_fraction": 0.8954729166666666,
+          "iou": 0.09184742306266222,
+          "precision": 0.09220919113969109,
+          "recall": 0.9590340455392359
+        },
+        {
+          "threshold": 0.3,
+          "tp": 24938,
+          "fp": 213622,
+          "fn": 16389,
+          "predicted_fraction": 0.497,
+          "iou": 0.09781564155968449,
+          "precision": 0.1045355466130114,
+          "recall": 0.6034311709052194
+        },
+        {
+          "threshold": 0.4,
+          "tp": 7022,
+          "fp": 67591,
+          "fn": 34305,
+          "predicted_fraction": 0.15544375,
+          "iou": 0.06447051910611652,
+          "precision": 0.09411228606275046,
+          "recall": 0.1699131318508481
+        },
+        {
+          "threshold": 0.5,
+          "tp": 494,
+          "fp": 10968,
+          "fn": 40833,
+          "predicted_fraction": 0.023879166666666667,
+          "iou": 0.009446409790610956,
+          "precision": 0.04309893561333101,
+          "recall": 0.011953444479396037
+        },
+        {
+          "threshold": 0.6,
+          "tp": 1,
+          "fp": 775,
+          "fn": 41326,
+          "predicted_fraction": 0.0016166666666666666,
+          "iou": 2.3751840767659493e-05,
+          "precision": 0.001288659793814433,
+          "recall": 2.4197256031166065e-05
+        },
+        {
+          "threshold": 0.7,
+          "tp": 0,
+          "fp": 4,
+          "fn": 41327,
+          "predicted_fraction": 8.333333333333334e-06,
+          "iou": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "threshold": 0.8,
+          "tp": 0,
+          "fp": 0,
+          "fn": 41327,
+          "predicted_fraction": 0.0,
+          "iou": 0.0,
+          "precision": null,
+          "recall": 0.0
+        },
+        {
+          "threshold": 0.9,
+          "tp": 0,
+          "fp": 0,
+          "fn": 41327,
+          "predicted_fraction": 0.0,
+          "iou": 0.0,
+          "precision": null,
+          "recall": 0.0
+        }
+      ],
+      "best_threshold_on_same_eval_set_diagnostic_only": {
+        "threshold": 0.3,
+        "tp": 24938,
+        "fp": 213622,
+        "fn": 16389,
+        "predicted_fraction": 0.497,
+        "iou": 0.09781564155968449,
+        "precision": 0.1045355466130114,
+        "recall": 0.6034311709052194
+      },
+      "top_fraction_diagnostics": [
+        {
+          "top_fraction": 0.05,
+          "top_pixels": 24000,
+          "positive_pixels": 41327,
+          "precision_at_k": 0.06725,
+          "recall_at_k": 0.039054371234302034,
+          "iou": 0.02533234975593678
+        },
+        {
+          "top_fraction": 0.1,
+          "top_pixels": 48000,
+          "positive_pixels": 41327,
+          "precision_at_k": 0.08427083333333334,
+          "recall_at_k": 0.09787790064606673,
+          "iou": 0.0474308763865763
+        },
+        {
+          "top_fraction": 0.2,
+          "top_pixels": 96000,
+          "positive_pixels": 41327,
+          "precision_at_k": 0.10242708333333334,
+          "recall_at_k": 0.23793161855445594,
+          "iou": 0.07712519804853561
+        }
+      ],
+      "frames_with_gt": 6,
+      "empty_gt_frames": []
+    }
+  },
+  "figures": [
+    "step62_threshold_scan.png",
+    "step62_divider_overlay.png",
+    "step62_ped_crossing_overlay.png",
+    "step62_boundary_overlay.png"
+  ],
+  "elapsed_seconds": 38.87,
+  "notes": [
+    "No training, no tuning. Threshold scans on validation frames are exploratory only.",
+    "Average Precision is compared with class prevalence, a no-skill reference.",
+    "Top-k uses predefined area percentages for diagnostic ranking, not inference.",
+    "Segmentation Head geometry replay is verified; true physical GT alignment is not proven.",
+    "Step61 ground-truth class prompts are not open-vocabulary language grounding."
+  ]
+}

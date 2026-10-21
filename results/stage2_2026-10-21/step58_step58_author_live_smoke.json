@@ -1,0 +1,38 @@
+{
+  "experiment": "step58_live_author_bevformer_seg_inference_hook",
+  "sample_index": 0,
+  "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+  "model_checkpoint": "/mnt/g/nus/bevformer_small_seg.pth",
+  "checkpoint_sha256": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68",
+  "author_config": "/home/jjx2003520/projects/bevformer_author_clean_5080/BEVFormer-seg/projects/configs/bevformer/bevformer_small_seg.py",
+  "text_manifest": "/home/jjx2003520/projects/bev_vla/outputs/stage2_step58/text_manifest.json",
+  "real_pretrained_text_embeddings": true,
+  "architecture_insertion": "transformer.forward BEV output before segmentation head",
+  "temporal_mode": "OFF (four isolated single-frame passes)",
+  "bev_shape": [
+    22500,
+    1,
+    256
+  ],
+  "segmentation_output_shape": [
+    1,
+    4,
+    200,
+    400
+  ],
+  "bypass_max_absolute_difference": 0.0,
+  "bypass_equivalent_tolerance_1e-4": true,
+  "enhanced_output_mean_absolute_difference": 0.009727073833346367,
+  "two_prompt_prediction_mean_absolute_difference": 0.0004308437346480787,
+  "two_prompt_attention_mean_absolute_difference": 0.0347273051738739,
+  "attention_shape": [
+    150,
+    150
+  ],
+  "alpha_init": 0.01,
+  "fusion_weights_trained": false,
+  "full_81_frame_temporal_eval": false,
+  "miou_evaluated": false,
+  "note": "实际作者模型运行时 BEV 插入实验。输入文本来自真实 DistilBERT，融合头随机初始化；本实验不具备监督训练或 IoU 性能提升含义。",
+  "elapsed_seconds": 3.88
+}

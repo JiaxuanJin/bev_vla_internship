@@ -1,0 +1,255 @@
+{
+  "audit": "Step55: BEVFormer-seg protocol snapshot",
+  "timestamp": "2026-10-21T09:43:10",
+  "project": "/home/jjx2003520/projects/bev_vla",
+  "official_reference": "https://github.com/Bin-ze/BEVFormer_segmentation_detection/blob/master/projects/configs/bevformer/bevformer_small_seg.py",
+  "official_expected": {
+    "bev_h_": 150,
+    "bev_w_": 150,
+    "queue_length": 3,
+    "map_grid_conf": {
+      "xbound": [
+        -30.0,
+        30.0,
+        0.15
+      ],
+      "ybound": [
+        -15.0,
+        15.0,
+        0.15
+      ],
+      "zbound": [
+        -10.0,
+        10.0,
+        20.0
+      ],
+      "dbound": [
+        1.0,
+        60.0,
+        1.0
+      ]
+    }
+  },
+  "local_configs": [
+    {
+      "path": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/projects/configs/bevformer/bevformer_small_seg.py",
+      "exists": true,
+      "bytes": 9853,
+      "sha256": "34b53e295608bf682a42545cf3708a8dc2f3486817963c62c89d6415294d1066",
+      "config": {
+        "bev_h_": 150,
+        "bev_w_": 150,
+        "queue_length": 3,
+        "map_grid_conf": {
+          "xbound": [
+            -30.0,
+            30.0,
+            0.15
+          ],
+          "ybound": [
+            -15.0,
+            15.0,
+            0.15
+          ],
+          "zbound": [
+            -10.0,
+            10.0,
+            20.0
+          ],
+          "dbound": [
+            1.0,
+            60.0,
+            1.0
+          ]
+        },
+        "point_cloud_range": [
+          -51.2,
+          -51.2,
+          -5.0,
+          51.2,
+          51.2,
+          3.0
+        ]
+      },
+      "checks": {
+        "video_test_mode_true": true,
+        "map_rasterization_present": true,
+        "segmentation_four_outputs": true,
+        "segmentation_only": true,
+        "bev_temporal_rotate": true,
+        "bev_temporal_shift": true
+      },
+      "differences_from_upstream": []
+    },
+    {
+      "path": "/home/jjx2003520/projects/bevformer_author_clean_5080/projects/configs/bevformer/bevformer_small_seg.py",
+      "exists": false
+    }
+  ],
+  "gt_sources": [
+    {
+      "path": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/projects/mmdet3d_plugin/datasets/pipelines/rasterize.py",
+      "exists": true,
+      "bytes": 2356,
+      "sha256": "5e6a466c6bc1554413729d6d401110bb7db9012797109eb7d975a67333601b77"
+    },
+    {
+      "path": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/projects/mmdet3d_plugin/datasets/nuscenes_dataset.py",
+      "exists": true,
+      "bytes": 16793,
+      "sha256": "de25d480aab8c0e017f1367cf9ca1f69f0c26213831d6cb5c173abea738a2d5d"
+    },
+    {
+      "path": "/home/jjx2003520/projects/bevformer_author_clean_5080/projects/mmdet3d_plugin/datasets/pipelines/rasterize.py",
+      "exists": false
+    },
+    {
+      "path": "/home/jjx2003520/projects/bevformer_author_clean_5080/projects/mmdet3d_plugin/datasets/nuscenes_dataset.py",
+      "exists": false
+    }
+  ],
+  "nuscenes_constructor_version_strings": {
+    "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/projects/mmdet3d_plugin/datasets/pipelines/rasterize.py": [],
+    "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/projects/mmdet3d_plugin/datasets/nuscenes_dataset.py": [
+      "v1.0-trainval"
+    ]
+  },
+  "data_roots": [
+    {
+      "root": "/home/jjx2003520/projects/bev_vla/data/nuscenes",
+      "exists": true,
+      "dataset_folders": [
+        "v1.0-mini",
+        "v1.0-trainval"
+      ],
+      "map_expansion_json": [],
+      "annotation_pkls": [
+        {
+          "path": "/home/jjx2003520/projects/bev_vla/data/nuscenes/nuscenes_infos_temporal_train.pkl",
+          "exists": true,
+          "bytes": 6636267
+        },
+        {
+          "path": "/home/jjx2003520/projects/bev_vla/data/nuscenes/nuscenes_infos_temporal_val.pkl",
+          "exists": true,
+          "bytes": 1863804
+        }
+      ]
+    },
+    {
+      "root": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/data/nuscenes",
+      "exists": true,
+      "dataset_folders": [
+        "v1.0-mini",
+        "v1.0-trainval"
+      ],
+      "map_expansion_json": [
+        {
+          "path": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/data/nuscenes/maps/expansion/boston-seaport.json",
+          "exists": true,
+          "bytes": 16244922,
+          "map_version": "1.3"
+        },
+        {
+          "path": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/data/nuscenes/maps/expansion/singapore-hollandvillage.json",
+          "exists": true,
+          "bytes": 8203967,
+          "map_version": "未在文件头部识别，需手动核对"
+        },
+        {
+          "path": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/data/nuscenes/maps/expansion/singapore-onenorth.json",
+          "exists": true,
+          "bytes": 13809722,
+          "map_version": "1.3"
+        },
+        {
+          "path": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/data/nuscenes/maps/expansion/singapore-queenstown.json",
+          "exists": true,
+          "bytes": 11011530,
+          "map_version": "未在文件头部识别，需手动核对"
+        }
+      ],
+      "annotation_pkls": [
+        {
+          "path": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/data/nuscenes/nuscenes_infos_temporal_train.pkl",
+          "exists": true,
+          "bytes": 6636267
+        },
+        {
+          "path": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/data/nuscenes/nuscenes_infos_temporal_val.pkl",
+          "exists": true,
+          "bytes": 1863804
+        }
+      ]
+    },
+    {
+      "root": "/home/jjx2003520/projects/bev_vla/BEVFormer/data/nuscenes",
+      "exists": true,
+      "dataset_folders": [
+        "v1.0-mini",
+        "v1.0-trainval"
+      ],
+      "map_expansion_json": [],
+      "annotation_pkls": [
+        {
+          "path": "/home/jjx2003520/projects/bev_vla/BEVFormer/data/nuscenes/nuscenes_infos_temporal_train.pkl",
+          "exists": true,
+          "bytes": 6636267
+        },
+        {
+          "path": "/home/jjx2003520/projects/bev_vla/BEVFormer/data/nuscenes/nuscenes_infos_temporal_val.pkl",
+          "exists": true,
+          "bytes": 1863804
+        }
+      ]
+    },
+    {
+      "root": "/home/jjx2003520/projects/bevformer_author_clean_5080/data/nuscenes",
+      "exists": false
+    },
+    {
+      "root": "/mnt/g/nus",
+      "exists": true,
+      "dataset_folders": [],
+      "map_expansion_json": [],
+      "annotation_pkls": []
+    },
+    {
+      "root": "/mnt/g/BEV_VLA_Datasets/nuscenes",
+      "exists": true,
+      "dataset_folders": [
+        "v1.0-mini",
+        "v1.0-trainval"
+      ],
+      "map_expansion_json": [],
+      "annotation_pkls": [
+        {
+          "path": "/mnt/g/BEV_VLA_Datasets/nuscenes/nuscenes_infos_temporal_train.pkl",
+          "exists": true,
+          "bytes": 6636267
+        },
+        {
+          "path": "/mnt/g/BEV_VLA_Datasets/nuscenes/nuscenes_infos_temporal_val.pkl",
+          "exists": true,
+          "bytes": 1863804
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "path": "/mnt/g/nus/bevformer_small_seg.pth",
+    "exists": true,
+    "bytes": 702015834,
+    "recorded_sha256_from_2026_10_20_logbook": "b9e369ba2e4514050fefe914f57565a31b918edaa735958a1f877184ad75dc68"
+  },
+  "known_baseline": {
+    "data_split": "nuScenes v1.0-mini / mini_val",
+    "frames": 81,
+    "temporal": true,
+    "foreground_miou_pct": 6.38,
+    "divider_pct": 2.23,
+    "ped_crossing_pct": 8.73,
+    "boundary_pct": 8.17,
+    "source": "docs/logbook_2026-10-20.md Step50"
+  }
+}

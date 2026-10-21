@@ -1,0 +1,278 @@
+{
+  "checks": [
+    {
+      "item": "真实 DistilBERT + BEVFormer 分割链路",
+      "status": "PASS",
+      "evidence": "Step58 冻结模型同帧真实前向、关闭模块回退"
+    },
+    {
+      "item": "真实 GT 训练与留出验证",
+      "status": "PASS",
+      "evidence": "Step59 有真实 Train/Val、分割 Loss 与权重"
+    },
+    {
+      "item": "语言分割精度可靠提升",
+      "status": "NOT_VERIFIED",
+      "evidence": "Step67 校准最终选 original；既有 Adapter 未稳定改善前景与四类 IoU"
+    },
+    {
+      "item": "文本语义有效性",
+      "status": "TEXT_DEPENDENCE_TESTED",
+      "evidence": "真实作者 BEV + Step67 Raw Adapter，正常/置乱/常量同帧干预；详见 AP 和 mIoU"
+    },
+    {
+      "item": "BEV / GT 物理坐标一致性",
+      "status": "NOT_VERIFIED",
+      "evidence": "相同尺寸与 Decoder replay 不等于独立物理坐标验证；仍需地图锚点与实际投影对照"
+    },
+    {
+      "item": "检测 + 分割 + 注意力真实联合训练",
+      "status": "NOT_INTEGRATED",
+      "evidence": "已实现损失聚合接口并有合成梯度测试，当前真实训练是地图分割链路"
+    }
+  ],
+  "source_files": {
+    "step58": "/home/jjx2003520/projects/bev_vla/outputs/stage2_step58/step58_author_live_smoke.json",
+    "step59": "/home/jjx2003520/projects/bev_vla/outputs/stage2_step59/step59_training_summary.json",
+    "step67": "/home/jjx2003520/projects/bev_vla/outputs/stage2_step67/step67_ab_summary.json"
+  },
+  "checkpoint_status": {
+    "step67_locked": {
+      "source": "original",
+      "strength": 0.0,
+      "guard": "none",
+      "name": "original"
+    },
+    "reason": "无满足三项约束的候选，安全回退原始模型"
+  },
+  "stage2_tests": {
+    "module_source": "/home/jjx2003520/projects/bev_vla/scripts/stage2",
+    "config": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/projects/configs/bevformer/bevformer_small_seg.py",
+    "original_weights_unchanged": true
+  },
+  "text_intervention": {
+    "samples": 6,
+    "indices": [
+      14,
+      18,
+      19,
+      30,
+      31,
+      34
+    ],
+    "tokens": [
+      "f753d3f87e5b40af87ff2cbf7c8e7082",
+      "fdc39b23ab4242eda6ec5e1e6574fe33",
+      "9ee4020153674b9e9943d395ff8cfdf3",
+      "38a28a3aaf2647f2a8c0e90e31267bf8",
+      "6402fd1ffaf041d0b9162bd92a7ba0a2",
+      "1c9a906c40f6417bbe1cea06d6e55501"
+    ],
+    "model": "step67_raw_adapter_not_locked_original",
+    "normal_vs_shuffled_mean_abs_logit_delta": 0.02927789216240247,
+    "argmax_changed_by_shuffle_fraction": 0.005164583136017124,
+    "has_numerical_text_effect": true,
+    "segmentation": {
+      "original": {
+        "per_class_iou": {
+          "Background": 0.6955274957169428,
+          "Divider": 0.007556084541585515,
+          "Ped Crossing": 0.04582300529242313,
+          "Boundary": 0.05997882670755302
+        },
+        "foreground_miou": 0.03778597218052055,
+        "four_class_miou": 0.20222135306462613,
+        "confusion_gt_rows_pred_cols": [
+          [
+            322345,
+            24634,
+            20624,
+            37229
+          ],
+          [
+            23098,
+            419,
+            90,
+            7157
+          ],
+          [
+            5189,
+            54,
+            1368,
+            1068
+          ],
+          [
+            30335,
+            0,
+            1461,
+            4929
+          ]
+        ]
+      },
+      "normal": {
+        "per_class_iou": {
+          "Background": 0.6094820002033625,
+          "Divider": 0.01602769987622793,
+          "Ped Crossing": 0.044779054414697865,
+          "Boundary": 0.09442248202500063
+        },
+        "foreground_miou": 0.051743078771975475,
+        "four_class_miou": 0.1911778091298222,
+        "confusion_gt_rows_pred_cols": [
+          [
+            275726,
+            32989,
+            25549,
+            70568
+          ],
+          [
+            20884,
+            1023,
+            552,
+            8305
+          ],
+          [
+            2987,
+            59,
+            1594,
+            3039
+          ],
+          [
+            23691,
+            15,
+            1817,
+            11202
+          ]
+        ]
+      },
+      "shuffled": {
+        "per_class_iou": {
+          "Background": 0.61168709806408,
+          "Divider": 0.0159556126767186,
+          "Ped Crossing": 0.04554940315534656,
+          "Boundary": 0.09394299185964074
+        },
+        "foreground_miou": 0.05181600256390196,
+        "four_class_miou": 0.19178377643894648,
+        "confusion_gt_rows_pred_cols": [
+          [
+            276882,
+            32966,
+            25837,
+            69147
+          ],
+          [
+            20885,
+            1018,
+            595,
+            8266
+          ],
+          [
+            3051,
+            58,
+            1637,
+            2933
+          ],
+          [
+            23885,
+            14,
+            1828,
+            10998
+          ]
+        ]
+      },
+      "constant": {
+        "per_class_iou": {
+          "Background": 0.6102108831810608,
+          "Divider": 0.015863292968320532,
+          "Ped Crossing": 0.04501087623403425,
+          "Boundary": 0.09425209514941167
+        },
+        "foreground_miou": 0.05170875478392215,
+        "four_class_miou": 0.1913342868832068,
+        "confusion_gt_rows_pred_cols": [
+          [
+            276107,
+            32834,
+            25772,
+            70119
+          ],
+          [
+            20894,
+            1010,
+            579,
+            8281
+          ],
+          [
+            3002,
+            58,
+            1614,
+            3005
+          ],
+          [
+            23750,
+            13,
+            1828,
+            11134
+          ]
+        ]
+      }
+    },
+    "attention_ap": {
+      "Divider": {
+        "gt_share": 0.06409166666666667,
+        "normal_ap": 0.08501548967623089,
+        "shuffled_ap": 0.09130733363948075
+      },
+      "Ped Crossing": {
+        "gt_share": 0.015997916666666667,
+        "normal_ap": 0.0214095103575575,
+        "shuffled_ap": 0.042341676180521065
+      },
+      "Boundary": {
+        "gt_share": 0.07651041666666666,
+        "normal_ap": 0.07004127188831429,
+        "shuffled_ap": 0.06451980336186248
+      }
+    },
+    "per_frame": [
+      {
+        "token": "f753d3f87e5b40af87ff2cbf7c8e7082",
+        "normal_vs_shuffled_logit_mae": 0.020254336297512054,
+        "normal_vs_constant_logit_mae": 0.011987773701548576,
+        "argmax_changed_by_shuffle_ratio": 0.005324999801814556
+      },
+      {
+        "token": "fdc39b23ab4242eda6ec5e1e6574fe33",
+        "normal_vs_shuffled_logit_mae": 0.03188363462686539,
+        "normal_vs_constant_logit_mae": 0.01953776180744171,
+        "argmax_changed_by_shuffle_ratio": 0.00904999952763319
+      },
+      {
+        "token": "9ee4020153674b9e9943d395ff8cfdf3",
+        "normal_vs_shuffled_logit_mae": 0.029069017618894577,
+        "normal_vs_constant_logit_mae": 0.017929300665855408,
+        "argmax_changed_by_shuffle_ratio": 0.006924999877810478
+      },
+      {
+        "token": "38a28a3aaf2647f2a8c0e90e31267bf8",
+        "normal_vs_shuffled_logit_mae": 0.0322260744869709,
+        "normal_vs_constant_logit_mae": 0.019679348915815353,
+        "argmax_changed_by_shuffle_ratio": 0.00242499983869493
+      },
+      {
+        "token": "6402fd1ffaf041d0b9162bd92a7ba0a2",
+        "normal_vs_shuffled_logit_mae": 0.04036255553364754,
+        "normal_vs_constant_logit_mae": 0.02462286315858364,
+        "argmax_changed_by_shuffle_ratio": 0.003462499938905239
+      },
+      {
+        "token": "1c9a906c40f6417bbe1cea06d6e55501",
+        "normal_vs_shuffled_logit_mae": 0.02187173441052437,
+        "normal_vs_constant_logit_mae": 0.01332289818674326,
+        "argmax_changed_by_shuffle_ratio": 0.0037999998312443495
+      }
+    ],
+    "interpretation": "能否检测到文本导致的输出变化，仅是文本依赖的必要条件；AP 高于置乱文本仍需更大样本与开放语义测试，才能支持语言定位结论。"
+  }
+}

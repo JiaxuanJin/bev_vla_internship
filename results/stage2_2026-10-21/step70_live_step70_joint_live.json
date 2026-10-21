@@ -1,0 +1,83 @@
+{
+  "step": 70,
+  "status": "REAL_DUAL_HEAD_FORWARD_PASS",
+  "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+  "joint_checkpoint": "/mnt/g/nus/bevformer_small_joint_author.pth",
+  "joint_sha256": "1345919901785b8df7ee16838d62f9f7a00444c9d8061f0dbee712d1b1b67dcf",
+  "shared_bev_hook": "PerceptionTransformer.get_bev_features",
+  "language_embedding": "/home/jjx2003520/projects/bev_vla/outputs/stage2_step58/distilbert_prompts.npy",
+  "language_fusion_weight_trained": false,
+  "temporal_mode": "OFF; three isolated passes",
+  "tensor_results": {
+    "seg_preds": {
+      "bypass_vs_original": {
+        "shape": [
+          1,
+          4,
+          200,
+          400
+        ],
+        "mean_abs_difference": 0.0,
+        "max_abs_difference": 0.0
+      },
+      "enhanced_vs_original": {
+        "shape": [
+          1,
+          4,
+          200,
+          400
+        ],
+        "mean_abs_difference": 0.03618236631155014,
+        "max_abs_difference": 0.42811012268066406
+      }
+    },
+    "all_cls_scores": {
+      "bypass_vs_original": {
+        "shape": [
+          6,
+          1,
+          900,
+          10
+        ],
+        "mean_abs_difference": 0.0,
+        "max_abs_difference": 0.0
+      },
+      "enhanced_vs_original": {
+        "shape": [
+          6,
+          1,
+          900,
+          10
+        ],
+        "mean_abs_difference": 0.0035933400504291058,
+        "max_abs_difference": 0.06113243103027344
+      }
+    },
+    "all_bbox_preds": {
+      "bypass_vs_original": {
+        "shape": [
+          6,
+          1,
+          900,
+          10
+        ],
+        "mean_abs_difference": 0.0,
+        "max_abs_difference": 0.0
+      },
+      "enhanced_vs_original": {
+        "shape": [
+          6,
+          1,
+          900,
+          10
+        ],
+        "mean_abs_difference": 0.0020752199925482273,
+        "max_abs_difference": 0.11710810661315918
+      }
+    }
+  },
+  "joint_training_verified": false,
+  "semantic_understanding_verified": false,
+  "checkpoint_is_author_joint": "requires manual provenance validation",
+  "note": "真实共享 BEV 双 Head 前向；语言融合随机初始化，仅为结构功能实验。"
+}

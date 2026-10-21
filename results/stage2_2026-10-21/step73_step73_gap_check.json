@@ -1,0 +1,328 @@
+{
+  "step": 73,
+  "scope": "functional_plus_independent_map_diagnostic",
+  "language": {
+    "status": "PASS_FUNCTION_ONLY",
+    "device": "cuda",
+    "encoder_path": "/home/jjx2003520/projects/bev_vla/models/distilbert-base-uncased",
+    "feature_file": "/home/jjx2003520/projects/bev_vla/outputs/bev_features/bev_feature.npy",
+    "feature_origin": "real_npy",
+    "parsed_commands": [
+      {
+        "original": "Focus on lane markings ahead",
+        "targets": [
+          "divider"
+        ],
+        "excluded": [],
+        "front_back": "front",
+        "left_right": null,
+        "parser_type": "restricted_english_rules"
+      },
+      {
+        "original": "Find the lane dividers in front of the car",
+        "targets": [
+          "divider"
+        ],
+        "excluded": [],
+        "front_back": "front",
+        "left_right": null,
+        "parser_type": "restricted_english_rules"
+      },
+      {
+        "original": "Locate pedestrian crossings ahead",
+        "targets": [
+          "ped_crossing"
+        ],
+        "excluded": [],
+        "front_back": "front",
+        "left_right": null,
+        "parser_type": "restricted_english_rules"
+      },
+      {
+        "original": "Show the zebra crossing on the front right",
+        "targets": [
+          "ped_crossing"
+        ],
+        "excluded": [],
+        "front_back": "front",
+        "left_right": "right",
+        "parser_type": "restricted_english_rules"
+      },
+      {
+        "original": "Highlight the road boundaries on the left",
+        "targets": [
+          "boundary"
+        ],
+        "excluded": [],
+        "front_back": null,
+        "left_right": "left",
+        "parser_type": "restricted_english_rules"
+      },
+      {
+        "original": "Find the curb on the rear right",
+        "targets": [
+          "boundary"
+        ],
+        "excluded": [],
+        "front_back": "rear",
+        "left_right": "right",
+        "parser_type": "restricted_english_rules"
+      },
+      {
+        "original": "Find road edges and lane markings ahead",
+        "targets": [
+          "boundary",
+          "divider"
+        ],
+        "excluded": [],
+        "front_back": "front",
+        "left_right": null,
+        "parser_type": "restricted_english_rules"
+      },
+      {
+        "original": "Highlight road boundaries but ignore pedestrian crossings",
+        "targets": [
+          "boundary"
+        ],
+        "excluded": [
+          "ped_crossing"
+        ],
+        "front_back": null,
+        "left_right": null,
+        "parser_type": "restricted_english_rules"
+      }
+    ],
+    "explicitly_rejected": [
+      {
+        "text": "Do not ignore the lane lines",
+        "reason": "复杂否定或歧义句式不在受约束解析能力范围内"
+      },
+      {
+        "text": "Find the traffic lights ahead",
+        "reason": "没有明确的正向地图目标，无法执行"
+      }
+    ],
+    "supported_scope": "English, divider/ped_crossing/boundary, explicit directions and limited negation",
+    "text_shape": [
+      8,
+      768
+    ],
+    "attention_shape": [
+      2,
+      1,
+      150,
+      150
+    ],
+    "different_text_embedding_mae": 0.13034750521183014,
+    "different_text_attention_mae": 0.01960490457713604,
+    "pairwise_embedding_cosine_similarity": [
+      [
+        1.0,
+        0.8133460283279419,
+        0.8449670076370239,
+        0.7434970140457153,
+        0.8358219861984253,
+        0.7968569993972778,
+        0.9085010290145874,
+        0.8315370082855225
+      ],
+      [
+        0.8133460283279419,
+        1.0,
+        0.7353180050849915,
+        0.794966995716095,
+        0.8097519874572754,
+        0.9155880212783813,
+        0.8406519889831543,
+        0.7390329837799072
+      ],
+      [
+        0.8449670076370239,
+        0.7353180050849915,
+        1.0,
+        0.6815760135650635,
+        0.7577450275421143,
+        0.7162100076675415,
+        0.8597180247306824,
+        0.9046559929847717
+      ],
+      [
+        0.7434970140457153,
+        0.794966995716095,
+        0.6815760135650635,
+        1.0,
+        0.8633260130882263,
+        0.8522329926490784,
+        0.7443400025367737,
+        0.7047269940376282
+      ],
+      [
+        0.8358219861984253,
+        0.8097519874572754,
+        0.7577450275421143,
+        0.8633260130882263,
+        1.0,
+        0.8333500027656555,
+        0.8537690043449402,
+        0.81427001953125
+      ],
+      [
+        0.7968569993972778,
+        0.9155880212783813,
+        0.7162100076675415,
+        0.8522329926490784,
+        0.8333500027656555,
+        1.0,
+        0.8059179782867432,
+        0.6953210234642029
+      ],
+      [
+        0.9085010290145874,
+        0.8406519889831543,
+        0.8597180247306824,
+        0.7443400025367737,
+        0.8537690043449402,
+        0.8059179782867432,
+        1.0,
+        0.86456698179245
+      ],
+      [
+        0.8315370082855225,
+        0.7390329837799072,
+        0.9046559929847717,
+        0.7047269940376282,
+        0.81427001953125,
+        0.6953210234642029,
+        0.86456698179245,
+        1.0
+      ]
+    ],
+    "bypass_exact_identity": true,
+    "model_weights_trained_in_this_test": false,
+    "spatial_attention_weights_trained": false,
+    "no_semantic_accuracy_claim": true,
+    "note": "动态真实 DistilBERT+二维 BEV 注意力功能通过；注意力头随机初始化，不可据此证明正确定位。"
+  },
+  "map_geometry": {
+    "status": "MAP_ANCHOR_DIAGNOSTIC_ONLY",
+    "source": "/home/jjx2003520/projects/bev_vla/outputs/stage2_step62/step62_divider_sample.npz",
+    "sample_token": "281b92269fd648d4b52d06ac06ca6d65",
+    "map_name": "boston-seaport",
+    "map_root": "/home/jjx2003520/projects/bev_vla/BEVFormer-seg/data/nuscenes",
+    "ego_position": [
+      691.4516847591035,
+      1573.2390413260864,
+      0.0
+    ],
+    "ego_yaw_deg": -40.65055387515272,
+    "lidar2ego_translation": [
+      0.985793,
+      0.0,
+      1.84019
+    ],
+    "calibration_roundtrip_max_m": 8.881784197001252e-16,
+    "author_point_cloud_range": [
+      -51.2,
+      -51.2,
+      -5.0,
+      51.2,
+      51.2,
+      3.0
+    ],
+    "bev_metric_grid_shape": [
+      150,
+      150
+    ],
+    "front_right_ego_mask_pixel_ratio": 0.25333333333333335,
+    "directional_mask_path": "/home/jjx2003520/projects/bev_vla/outputs/stage2_step73/step73_front_right_metric_bev_mask.npy",
+    "bev_axis_assumption": "row=lidar_y, col=lidar_x; independent axis convention not yet established",
+    "gt_shape": [
+      200,
+      400
+    ],
+    "map_points": 1471,
+    "direct_projection": {
+      "transform": "direct",
+      "f1_with_2px_tolerance": 0.8208982398180102,
+      "precision": 0.967409948542024,
+      "recall": 0.7129272680544847,
+      "map_pixels": 1166,
+      "gt_pixels": 7782
+    },
+    "best_projection": {
+      "transform": "direct",
+      "f1_with_2px_tolerance": 0.8208982398180102,
+      "precision": 0.967409948542024,
+      "recall": 0.7129272680544847,
+      "map_pixels": 1166,
+      "gt_pixels": 7782
+    },
+    "candidate_transforms": [
+      {
+        "transform": "direct",
+        "f1_with_2px_tolerance": 0.8208982398180102,
+        "precision": 0.967409948542024,
+        "recall": 0.7129272680544847,
+        "map_pixels": 1166,
+        "gt_pixels": 7782
+      },
+      {
+        "transform": "flip_x",
+        "f1_with_2px_tolerance": 0.5024199112766939,
+        "precision": 0.6600858369098712,
+        "recall": 0.4055512721665382,
+        "map_pixels": 1165,
+        "gt_pixels": 7782
+      },
+      {
+        "transform": "flip_y",
+        "f1_with_2px_tolerance": 0.20597437425462772,
+        "precision": 0.3181818181818182,
+        "recall": 0.1522744795682344,
+        "map_pixels": 1166,
+        "gt_pixels": 7782
+      },
+      {
+        "transform": "flip_x_flip_y",
+        "f1_with_2px_tolerance": 0.1417571121195743,
+        "precision": 0.35536480686695276,
+        "recall": 0.08853765098946287,
+        "map_pixels": 1165,
+        "gt_pixels": 7782
+      },
+      {
+        "transform": "swap_flip_x_flip_y",
+        "f1_with_2px_tolerance": 0.11505900417582376,
+        "precision": 0.2931596091205212,
+        "recall": 0.07157543048059625,
+        "map_pixels": 614,
+        "gt_pixels": 7782
+      },
+      {
+        "transform": "swap_flip_y",
+        "f1_with_2px_tolerance": 0.08758283263065243,
+        "precision": 0.22312703583061888,
+        "recall": 0.05448470830120791,
+        "map_pixels": 614,
+        "gt_pixels": 7782
+      },
+      {
+        "transform": "swap_flip_x",
+        "f1_with_2px_tolerance": 0.08713564733720372,
+        "precision": 0.21951219512195122,
+        "recall": 0.0543562066306862,
+        "map_pixels": 615,
+        "gt_pixels": 7782
+      },
+      {
+        "transform": "swap",
+        "f1_with_2px_tolerance": 0.06511329950739489,
+        "precision": 0.16422764227642275,
+        "recall": 0.040606527884862506,
+        "map_pixels": 615,
+        "gt_pixels": 7782
+      }
+    ],
+    "note": "地图几何从官方 nuScenes Map API + ego pose 独立采点栅格化。检测可能的旋转/翻转和 Map GT 差异；尚未验证真实网络 BEV 投影矩阵与地图 GT 的完整空间物理闭环。"
+  }
+}
