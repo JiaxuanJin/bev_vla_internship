@@ -1,0 +1,1194 @@
+{
+  "summary": {
+    "whitelist_files": 228,
+    "new": 111,
+    "modified": 16,
+    "tracked_unchanged": 101,
+    "unrelated_untracked_excluded": 10,
+    "changed_files": 127
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "category": "modified",
+      "size_bytes": 675
+    },
+    {
+      "path": "README.md",
+      "category": "modified",
+      "size_bytes": 7661
+    },
+    {
+      "path": "docs/images/stage2/README.md",
+      "category": "modified",
+      "size_bytes": 2890
+    },
+    {
+      "path": "docs/images/stage2/data_review/attention_ap_controls.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 63141
+    },
+    {
+      "path": "docs/images/stage2/data_review/attention_joint_random.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 218673
+    },
+    {
+      "path": "docs/images/stage2/data_review/attention_step65_intervention.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 859295
+    },
+    {
+      "path": "docs/images/stage2/data_review/attention_step65_real_sentences.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 826161
+    },
+    {
+      "path": "docs/images/stage2/data_review/attention_step66_intervention.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 730804
+    },
+    {
+      "path": "docs/images/stage2/data_review/attention_step66_real_sentences.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 725078
+    },
+    {
+      "path": "docs/images/stage2/data_review/attention_step67_intervention.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 1005020
+    },
+    {
+      "path": "docs/images/stage2/data_review/attention_step67_real_sentences.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 982593
+    },
+    {
+      "path": "docs/images/stage2/data_review/attention_trained_vs_random.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 489491
+    },
+    {
+      "path": "docs/images/stage2/data_review/joint_000_cameras.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 2428234
+    },
+    {
+      "path": "docs/images/stage2/data_review/joint_000_errors.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 104645
+    },
+    {
+      "path": "docs/images/stage2/data_review/joint_000_segmentation.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 127585
+    },
+    {
+      "path": "docs/images/stage2/data_review/loss_step61.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 240261
+    },
+    {
+      "path": "docs/images/stage2/data_review/loss_step65.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 297147
+    },
+    {
+      "path": "docs/images/stage2/data_review/loss_step66.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 303795
+    },
+    {
+      "path": "docs/images/stage2/data_review/loss_step67.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 294327
+    },
+    {
+      "path": "docs/images/stage2/data_review/metrics_joint_single_frame.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 134769
+    },
+    {
+      "path": "docs/images/stage2/data_review/metrics_real_sentence_controls.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 224257
+    },
+    {
+      "path": "docs/images/stage2/data_review/metrics_step65_development_6.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 141680
+    },
+    {
+      "path": "docs/images/stage2/data_review/metrics_step65_fresh_tokens.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 143821
+    },
+    {
+      "path": "docs/images/stage2/data_review/metrics_step66_development_6.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 188210
+    },
+    {
+      "path": "docs/images/stage2/data_review/metrics_step66_reserved_12.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 187141
+    },
+    {
+      "path": "docs/images/stage2/data_review/metrics_step66_step65_seen_12.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 191397
+    },
+    {
+      "path": "docs/images/stage2/data_review/metrics_step67_development_6.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 203734
+    },
+    {
+      "path": "docs/images/stage2/data_review/metrics_step67_new_mini_val_12.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 203351
+    },
+    {
+      "path": "docs/images/stage2/data_review/metrics_step67_step65_seen_12.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 205469
+    },
+    {
+      "path": "docs/images/stage2/data_review/metrics_step67_step66_seen_12.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 200173
+    },
+    {
+      "path": "docs/images/stage2/data_review/real_joint_loss_gradient.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 155041
+    },
+    {
+      "path": "docs/images/stage2/data_review/seg_014_cameras.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 2597454
+    },
+    {
+      "path": "docs/images/stage2/data_review/seg_014_errors.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 124386
+    },
+    {
+      "path": "docs/images/stage2/data_review/seg_014_segmentation.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 148211
+    },
+    {
+      "path": "docs/images/stage2/data_review/seg_021_cameras.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 2555575
+    },
+    {
+      "path": "docs/images/stage2/data_review/seg_021_errors.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 123470
+    },
+    {
+      "path": "docs/images/stage2/data_review/seg_021_segmentation.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 147109
+    },
+    {
+      "path": "docs/images/stage2/data_review/seg_039_cameras.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 2649209
+    },
+    {
+      "path": "docs/images/stage2/data_review/seg_039_errors.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 119592
+    },
+    {
+      "path": "docs/images/stage2/data_review/seg_039_segmentation.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 144639
+    },
+    {
+      "path": "docs/images/stage2/data_review/seg_077_cameras.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 2888716
+    },
+    {
+      "path": "docs/images/stage2/data_review/seg_077_errors.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 130181
+    },
+    {
+      "path": "docs/images/stage2/data_review/seg_077_segmentation.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 147677
+    },
+    {
+      "path": "docs/images/stage2/data_review/step54_temporal_geometry.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 36153
+    },
+    {
+      "path": "docs/images/stage2/data_review/step61_before_after.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 68934
+    },
+    {
+      "path": "docs/images/stage2/data_review/step62_existing_attention.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 579895
+    },
+    {
+      "path": "docs/images/stage2/data_review/step73_geometry_context.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 81371
+    },
+    {
+      "path": "docs/images/stage2/data_review/text_intervention_metrics.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 139896
+    },
+    {
+      "path": "docs/images/stage2/stage2_architecture.svg",
+      "category": "tracked_unchanged",
+      "size_bytes": 3618
+    },
+    {
+      "path": "docs/images/stage2/stage2_audited_architecture_20261022.svg",
+      "category": "new",
+      "size_bytes": 5639
+    },
+    {
+      "path": "docs/images/stage2/stage2_evidence.svg",
+      "category": "tracked_unchanged",
+      "size_bytes": 2405
+    },
+    {
+      "path": "docs/images/stage2/stage2_final_architecture.svg",
+      "category": "tracked_unchanged",
+      "size_bytes": 6304
+    },
+    {
+      "path": "docs/images/stage2/step62_boundary_overlay.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 196349
+    },
+    {
+      "path": "docs/images/stage2/step62_divider_overlay.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 151480
+    },
+    {
+      "path": "docs/images/stage2/step62_ped_crossing_overlay.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 155367
+    },
+    {
+      "path": "docs/images/stage2/step62_threshold_scan.png",
+      "category": "tracked_unchanged",
+      "size_bytes": 90618
+    },
+    {
+      "path": "docs/logbook_2026-10-22.md",
+      "category": "new",
+      "size_bytes": 2580
+    },
+    {
+      "path": "docs/stage2/00_第二阶段执行计划_2026-10-20至23.md",
+      "category": "tracked_unchanged",
+      "size_bytes": 4738
+    },
+    {
+      "path": "docs/stage2/01_2026-10-20_运行说明.md",
+      "category": "tracked_unchanged",
+      "size_bytes": 2027
+    },
+    {
+      "path": "docs/stage2/02_第二阶段原始任务书.md",
+      "category": "tracked_unchanged",
+      "size_bytes": 2158
+    },
+    {
+      "path": "docs/stage2/11_模块架构设计.md",
+      "category": "modified",
+      "size_bytes": 7201
+    },
+    {
+      "path": "docs/stage2/12_单元测试报告.md",
+      "category": "modified",
+      "size_bytes": 4979
+    },
+    {
+      "path": "docs/stage2/13_阶段二任务对照.md",
+      "category": "modified",
+      "size_bytes": 6877
+    },
+    {
+      "path": "docs/stage2/14_真实联合梯度验证.md",
+      "category": "tracked_unchanged",
+      "size_bytes": 1193
+    },
+    {
+      "path": "docs/stage2/15_语言与空间能力补充验收.md",
+      "category": "tracked_unchanged",
+      "size_bytes": 2340
+    },
+    {
+      "path": "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+      "category": "tracked_unchanged",
+      "size_bytes": 4597
+    },
+    {
+      "path": "docs/stage2/17_第二阶段复现指引.md",
+      "category": "modified",
+      "size_bytes": 6823
+    },
+    {
+      "path": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+      "category": "tracked_unchanged",
+      "size_bytes": 10112
+    },
+    {
+      "path": "docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md",
+      "category": "tracked_unchanged",
+      "size_bytes": 7183
+    },
+    {
+      "path": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+      "category": "tracked_unchanged",
+      "size_bytes": 16930
+    },
+    {
+      "path": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+      "category": "new",
+      "size_bytes": 22921
+    },
+    {
+      "path": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+      "category": "new",
+      "size_bytes": 8239
+    },
+    {
+      "path": "docs/stage2/全部实验图表索引_2026-10-21.md",
+      "category": "tracked_unchanged",
+      "size_bytes": 9279
+    },
+    {
+      "path": "docs/stage2/数据分析报告_2026-10-21.md",
+      "category": "modified",
+      "size_bytes": 22104
+    },
+    {
+      "path": "docs/stage2/数据图表总览_2026-10-21.md",
+      "category": "tracked_unchanged",
+      "size_bytes": 5945
+    },
+    {
+      "path": "docs/stage2_oom_fix_20261022.md",
+      "category": "new",
+      "size_bytes": 8610
+    },
+    {
+      "path": "requirements_stage2.txt",
+      "category": "modified",
+      "size_bytes": 271
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/README.md",
+      "category": "new",
+      "size_bytes": 5970
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/baseline.json",
+      "category": "new",
+      "size_bytes": 30213
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/checks.json",
+      "category": "new",
+      "size_bytes": 1844
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/delivery_changes.md",
+      "category": "new",
+      "size_bytes": 946
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/diff_check.txt",
+      "category": "new",
+      "size_bytes": 0
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/figures/ab_metrics_6frames.png",
+      "category": "new",
+      "size_bytes": 83614
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/figures/ab_segmentation_6frames.png",
+      "category": "new",
+      "size_bytes": 125261
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/figures/attention_control_6frames.png",
+      "category": "new",
+      "size_bytes": 808293
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/figures/figure_provenance.json",
+      "category": "new",
+      "size_bytes": 4520
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/figures/training_20steps.csv",
+      "category": "new",
+      "size_bytes": 2755
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/figures/training_loss_20steps.png",
+      "category": "new",
+      "size_bytes": 147126
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/file_inventory.json",
+      "category": "new",
+      "size_bytes": 34347
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/file_inventory.md",
+      "category": "new",
+      "size_bytes": 19741
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/final_git_status.txt",
+      "category": "new",
+      "size_bytes": 2846
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/frozen_hashes.txt",
+      "category": "new",
+      "size_bytes": 182
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/git_whitelist.txt",
+      "category": "new",
+      "size_bytes": 12745
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/non_git_assets.json",
+      "category": "new",
+      "size_bytes": 9028
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/preflight.json",
+      "category": "new",
+      "size_bytes": 89405
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/pytest.txt",
+      "category": "new",
+      "size_bytes": 180
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/raw_evidence.txt",
+      "category": "new",
+      "size_bytes": 121
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/raw_recheck.json",
+      "category": "new",
+      "size_bytes": 5578
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/teacher_message.txt",
+      "category": "new",
+      "size_bytes": 777
+    },
+    {
+      "path": "results/stage2_delivery_2026-10-23/unified_help.txt",
+      "category": "new",
+      "size_bytes": 1977
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/README.md",
+      "category": "new",
+      "size_bytes": 3718
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/after_git_status.txt",
+      "category": "new",
+      "size_bytes": 1347
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/baseline_pytest.json",
+      "category": "new",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/baseline_pytest.log",
+      "category": "new",
+      "size_bytes": 179
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/before_git_status.txt",
+      "category": "new",
+      "size_bytes": 817
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/before_source.json",
+      "category": "new",
+      "size_bytes": 6896
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/changes.json",
+      "category": "new",
+      "size_bytes": 4255
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/checks.json",
+      "category": "new",
+      "size_bytes": 1863
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/delivery_bundle.json",
+      "category": "new",
+      "size_bytes": 368
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/delivery_manifest.json",
+      "category": "new",
+      "size_bytes": 53933
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/diff_check.log",
+      "category": "new",
+      "size_bytes": 0
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/document_checks.json",
+      "category": "new",
+      "size_bytes": 461
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/frozen_hashes.log",
+      "category": "new",
+      "size_bytes": 182
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/gpu_smoke.json",
+      "category": "new",
+      "size_bytes": 13072
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/gpu_smoke.log",
+      "category": "new",
+      "size_bytes": 12969
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/gpu_smoke_command.json",
+      "category": "new",
+      "size_bytes": 552
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/gpu_smoke_process.json",
+      "category": "new",
+      "size_bytes": 14856
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/gpu_smoke_protocol.json",
+      "category": "new",
+      "size_bytes": 37926
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/language_probe.json",
+      "category": "new",
+      "size_bytes": 2165
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/language_smoke.log",
+      "category": "new",
+      "size_bytes": 139
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_replay.json",
+      "category": "new",
+      "size_bytes": 22036
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_replay.log",
+      "category": "new",
+      "size_bytes": 12843
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_replay_summary.json",
+      "category": "new",
+      "size_bytes": 7609
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/__init__.py",
+      "category": "new",
+      "size_bytes": 66
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/bev_coordinates.py",
+      "category": "new",
+      "size_bytes": 3448
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/bev_fusion.py",
+      "category": "new",
+      "size_bytes": 3159
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/download_distilbert.py",
+      "category": "new",
+      "size_bytes": 5521
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/joint_runtime.py",
+      "category": "new",
+      "size_bytes": 19674
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/language_bev_attention.py",
+      "category": "new",
+      "size_bytes": 3183
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/language_encoder.py",
+      "category": "new",
+      "size_bytes": 3316
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/low_memory_dataset.py",
+      "category": "new",
+      "size_bytes": 4496
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/micro_process.py",
+      "category": "new",
+      "size_bytes": 5645
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/micro_report.py",
+      "category": "new",
+      "size_bytes": 22252
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/micro_training.py",
+      "category": "new",
+      "size_bytes": 34467
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/multitask_loss.py",
+      "category": "new",
+      "size_bytes": 2649
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/multitask_training.py",
+      "category": "new",
+      "size_bytes": 8444
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/pipeline.py",
+      "category": "new",
+      "size_bytes": 5081
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_day1.py",
+      "category": "new",
+      "size_bytes": 5353
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_regression.py",
+      "category": "new",
+      "size_bytes": 4328
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_stage2.py",
+      "category": "new",
+      "size_bytes": 10735
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step56_smoke.py",
+      "category": "new",
+      "size_bytes": 6953
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step57_distilbert.py",
+      "category": "new",
+      "size_bytes": 7132
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step58_author_inference.py",
+      "category": "new",
+      "size_bytes": 13187
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step58_prepare_text.py",
+      "category": "new",
+      "size_bytes": 3233
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step59_train.py",
+      "category": "new",
+      "size_bytes": 23306
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step60_extended_ab.py",
+      "category": "new",
+      "size_bytes": 21815
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step61_prepare_text.py",
+      "category": "new",
+      "size_bytes": 3104
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step61_supervised_train.py",
+      "category": "new",
+      "size_bytes": 26519
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step62_attention_diagnostic.py",
+      "category": "new",
+      "size_bytes": 20685
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step64_balanced_train.py",
+      "category": "new",
+      "size_bytes": 32937
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step65_literature_adapter.py",
+      "category": "new",
+      "size_bytes": 26880
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step67_three_in_one.py",
+      "category": "new",
+      "size_bytes": 33552
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step68_acceptance.py",
+      "category": "new",
+      "size_bytes": 22411
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step69_loss_contract.py",
+      "category": "new",
+      "size_bytes": 8947
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step70_joint_integration.py",
+      "category": "new",
+      "size_bytes": 21473
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step71_stage2_review.py",
+      "category": "new",
+      "size_bytes": 20156
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step72_real_joint_gradient.py",
+      "category": "new",
+      "size_bytes": 17455
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_step73_fill_gaps.py",
+      "category": "new",
+      "size_bytes": 21279
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/runtime_memory.py",
+      "category": "new",
+      "size_bytes": 2665
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/semantic_instruction.py",
+      "category": "new",
+      "size_bytes": 9478
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/semantic_projection.py",
+      "category": "new",
+      "size_bytes": 3482
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/step66_background_safe_train.py",
+      "category": "new",
+      "size_bytes": 28211
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/step70b_prepare_joint.py",
+      "category": "new",
+      "size_bytes": 7244
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/legacy_source_manifest.json",
+      "category": "new",
+      "size_bytes": 4446
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/loss_smoke.log",
+      "category": "new",
+      "size_bytes": 32
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/preservation.json",
+      "category": "new",
+      "size_bytes": 215
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/protected_experiments.json",
+      "category": "new",
+      "size_bytes": 8579
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/pytest.log",
+      "category": "new",
+      "size_bytes": 180
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/raw_artifact_audit.json",
+      "category": "new",
+      "size_bytes": 5578
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/source_locations.json",
+      "category": "new",
+      "size_bytes": 18823
+    },
+    {
+      "path": "results/stage2_final_audit_2026-10-22/static_compile.log",
+      "category": "new",
+      "size_bytes": 29
+    },
+    {
+      "path": "scripts/check_stage2_delivery.py",
+      "category": "new",
+      "size_bytes": 10521
+    },
+    {
+      "path": "scripts/prepare_stage2_delivery.py",
+      "category": "new",
+      "size_bytes": 13498
+    },
+    {
+      "path": "scripts/stage2/README.md",
+      "category": "modified",
+      "size_bytes": 3002
+    },
+    {
+      "path": "scripts/stage2/README_使用说明.md",
+      "category": "modified",
+      "size_bytes": 2677
+    },
+    {
+      "path": "scripts/stage2/__init__.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 66
+    },
+    {
+      "path": "scripts/stage2/audit_stage2_evidence.py",
+      "category": "new",
+      "size_bytes": 13941
+    },
+    {
+      "path": "scripts/stage2/bev_coordinates.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 3448
+    },
+    {
+      "path": "scripts/stage2/bev_fusion.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 3159
+    },
+    {
+      "path": "scripts/stage2/download_distilbert.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 5521
+    },
+    {
+      "path": "scripts/stage2/integration_smoke.py",
+      "category": "new",
+      "size_bytes": 4706
+    },
+    {
+      "path": "scripts/stage2/joint_runtime.py",
+      "category": "modified",
+      "size_bytes": 19871
+    },
+    {
+      "path": "scripts/stage2/language_bev_attention.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 3183
+    },
+    {
+      "path": "scripts/stage2/language_encoder.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 3316
+    },
+    {
+      "path": "scripts/stage2/low_memory_dataset.py",
+      "category": "new",
+      "size_bytes": 4496
+    },
+    {
+      "path": "scripts/stage2/micro_process.py",
+      "category": "new",
+      "size_bytes": 6706
+    },
+    {
+      "path": "scripts/stage2/micro_report.py",
+      "category": "new",
+      "size_bytes": 22252
+    },
+    {
+      "path": "scripts/stage2/micro_training.py",
+      "category": "new",
+      "size_bytes": 35660
+    },
+    {
+      "path": "scripts/stage2/multitask_loss.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 2649
+    },
+    {
+      "path": "scripts/stage2/multitask_training.py",
+      "category": "modified",
+      "size_bytes": 11145
+    },
+    {
+      "path": "scripts/stage2/pipeline.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 5081
+    },
+    {
+      "path": "scripts/stage2/replay_stage2.py",
+      "category": "new",
+      "size_bytes": 5744
+    },
+    {
+      "path": "scripts/stage2/run_day1.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 5353
+    },
+    {
+      "path": "scripts/stage2/run_regression.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 4328
+    },
+    {
+      "path": "scripts/stage2/run_stage2.py",
+      "category": "modified",
+      "size_bytes": 11690
+    },
+    {
+      "path": "scripts/stage2/run_step56_smoke.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 6953
+    },
+    {
+      "path": "scripts/stage2/run_step57_distilbert.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 7132
+    },
+    {
+      "path": "scripts/stage2/run_step58_author_inference.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 13187
+    },
+    {
+      "path": "scripts/stage2/run_step58_prepare_text.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 3233
+    },
+    {
+      "path": "scripts/stage2/run_step59_train.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 23306
+    },
+    {
+      "path": "scripts/stage2/run_step60_extended_ab.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 21815
+    },
+    {
+      "path": "scripts/stage2/run_step61_prepare_text.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 3104
+    },
+    {
+      "path": "scripts/stage2/run_step61_supervised_train.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 26519
+    },
+    {
+      "path": "scripts/stage2/run_step62_attention_diagnostic.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 20685
+    },
+    {
+      "path": "scripts/stage2/run_step64_balanced_train.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 32937
+    },
+    {
+      "path": "scripts/stage2/run_step65_literature_adapter.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 26880
+    },
+    {
+      "path": "scripts/stage2/run_step67_three_in_one.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 33552
+    },
+    {
+      "path": "scripts/stage2/run_step68_acceptance.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 22411
+    },
+    {
+      "path": "scripts/stage2/run_step69_loss_contract.py",
+      "category": "modified",
+      "size_bytes": 9074
+    },
+    {
+      "path": "scripts/stage2/run_step70_joint_integration.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 21473
+    },
+    {
+      "path": "scripts/stage2/run_step71_stage2_review.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 20156
+    },
+    {
+      "path": "scripts/stage2/run_step72_real_joint_gradient.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 17455
+    },
+    {
+      "path": "scripts/stage2/run_step73_fill_gaps.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 21279
+    },
+    {
+      "path": "scripts/stage2/runtime_memory.py",
+      "category": "new",
+      "size_bytes": 2665
+    },
+    {
+      "path": "scripts/stage2/semantic_instruction.py",
+      "category": "modified",
+      "size_bytes": 10405
+    },
+    {
+      "path": "scripts/stage2/semantic_projection.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 3482
+    },
+    {
+      "path": "scripts/stage2/step66_background_safe_train.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 28211
+    },
+    {
+      "path": "scripts/stage2/step67_README_CN.md",
+      "category": "tracked_unchanged",
+      "size_bytes": 2819
+    },
+    {
+      "path": "scripts/stage2/step70b_prepare_joint.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 7244
+    },
+    {
+      "path": "stage2/__init__.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 60
+    },
+    {
+      "path": "stage2/language_encoder.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 4194
+    },
+    {
+      "path": "stage2/semantic_projection.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 1170
+    },
+    {
+      "path": "stage2/tokenizer_config.json",
+      "category": "tracked_unchanged",
+      "size_bytes": 482
+    },
+    {
+      "path": "tests/test_stage2_day1.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 2971
+    },
+    {
+      "path": "tests/test_stage2_final_audit.py",
+      "category": "new",
+      "size_bytes": 10000
+    },
+    {
+      "path": "tests/test_stage2_joint_backward.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 1042
+    },
+    {
+      "path": "tests/test_stage2_micro_training.py",
+      "category": "new",
+      "size_bytes": 5778
+    },
+    {
+      "path": "tests/test_stage2_pipeline.py",
+      "category": "tracked_unchanged",
+      "size_bytes": 18098
+    }
+  ],
+  "unrelated_untracked_excluded": [
+    {
+      "path": "README_使用说明.txt",
+      "reason": "此前遗留，不属于第二阶段最终交付；保留不暂存"
+    },
+    {
+      "path": "scripts/README.txt",
+      "reason": "此前遗留，不属于第二阶段最终交付；保留不暂存"
+    },
+    {
+      "path": "scripts/README_使用说明.txt",
+      "reason": "此前遗留，不属于第二阶段最终交付；保留不暂存"
+    },
+    {
+      "path": "scripts/check_lidar_camera_alignment.py",
+      "reason": "此前遗留，不属于第二阶段最终交付；保留不暂存"
+    },
+    {
+      "path": "scripts/step48a_clean_5080_pytorch.sh",
+      "reason": "此前遗留，不属于第二阶段最终交付；保留不暂存"
+    },
+    {
+      "path": "scripts/step48a_offline_torch_copy.sh",
+      "reason": "此前遗留，不属于第二阶段最终交付；保留不暂存"
+    },
+    {
+      "path": "scripts/step48b_build_mmcv_author_5080.sh",
+      "reason": "此前遗留，不属于第二阶段最终交付；保留不暂存"
+    },
+    {
+      "path": "scripts/step48b_fix_cpp17_and_build.sh",
+      "reason": "此前遗留，不属于第二阶段最终交付；保留不暂存"
+    },
+    {
+      "path": "scripts/step48c_fix_torch_dispatch.py",
+      "reason": "此前遗留，不属于第二阶段最终交付；保留不暂存"
+    },
+    {
+      "path": "scripts/step48d_fix_thc_and_build.sh",
+      "reason": "此前遗留，不属于第二阶段最终交付；保留不暂存"
+    }
+  ]
+}

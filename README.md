@@ -51,7 +51,28 @@
 后续工作包括 DriveLM VQA 模型推理与评价、感知结果和语言问答的进一步衔接，以及 BEV 注意力增强方案验证。所有尚未完成的任务均不作为已验证成果呈现。
 
 
-## 第二阶段｜语言引导 BEV 注意力增强（2026-10-21）
+## 第二阶段最终交付（准备于2026-10-22，面向2026-10-23）
+
+统一入口：`scripts/stage2/run_stage2.py`。请先阅读 [Git交付检查与精确白名单](docs/stage2/22_第二阶段Git交付检查_2026-10-23.md)、[任务原文](docs/stage2/02_第二阶段原始任务书.md)、[8+4源码审查](docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md) 和 [复现指引](docs/stage2/17_第二阶段复现指引.md)。
+
+117项pytest、真实GPU双Head smoke与冻结旧源码重放已有实际记录；本轮交付检查重新执行CPU pytest，不重新训练或推理。原固定协议20次更新的TV=0，新增TV=0.001仅验证了smoke梯度，不能混作正则训练效果。原6帧A/B的Trained foreground mIoU略降、检测计数不变，稳定精度提升、真实语义定位和物理空间配准仍为NOT_VERIFIED。
+
+[本轮交付证据与真实20步/6帧图表](results/stage2_delivery_2026-10-23/README.md) · [原严格审查证据](results/stage2_final_audit_2026-10-22/README.md) · [架构说明](docs/stage2/11_模块架构设计.md) · [单元测试报告](docs/stage2/12_单元测试报告.md)。
+
+在仓库根目录、已有兼容环境下运行：
+
+```bash
+CUDA_VISIBLE_DEVICES='' HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 OMP_NUM_THREADS=2 \
+  .venv-bevformer/bin/python -m pytest tests/ -q -p no:cacheprovider
+.venv-bevformer/bin/python scripts/stage2/replay_stage2.py --verify-only
+```
+
+Git仅提交白名单中的源码、文档、小型JSON/CSV/日志和PNG/SVG。全部融合checkpoint、NPZ、真实BEV缓存和171MiB独立交付包不随Git上传；资产清单与包SHA见上述交付检查。外部作者工程、DistilBERT、原作者checkpoint和原始数据需另行准备。
+
+## 第二阶段历史记录（2026-10-21快照）
+
+以下69项及“无参数更新”仅描述10月21日当时的验证，不是今天的最终状态。
+
 
 最终严格验收以 [指导老师原始任务书](docs/stage2/02_第二阶段原始任务书.md) 为准：8 项任务、4 项产出均有源码与本轮证据。69 项 pytest、7 组旧回归、真实 GPU 前向/bypass 及新统一入口 Mini Train 单次前向三任务联合 backward 通过；不执行参数更新。详见 [最终严格验收与拟提交清单](docs/stage2/20_第二阶段最终严格验收_2026-10-21.md)。
 

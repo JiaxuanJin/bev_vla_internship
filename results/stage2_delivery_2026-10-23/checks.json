@@ -1,0 +1,68 @@
+{
+  "pytest": {
+    "command": [
+      "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+      "-m",
+      "pytest",
+      "tests/",
+      "-q",
+      "-p",
+      "no:cacheprovider"
+    ],
+    "exit_code": 0,
+    "seconds": 4.260056325000733,
+    "log": "pytest.txt"
+  },
+  "raw_evidence": {
+    "command": [
+      "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+      "scripts/stage2/audit_stage2_evidence.py",
+      "--mode",
+      "artifacts",
+      "--output",
+      "/home/jjx2003520/projects/bev_vla/results/stage2_delivery_2026-10-23/raw_recheck.json"
+    ],
+    "exit_code": 0,
+    "seconds": 42.46190122000007,
+    "log": "raw_evidence.txt"
+  },
+  "frozen_hashes": {
+    "command": [
+      "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+      "scripts/stage2/replay_stage2.py",
+      "--verify-only"
+    ],
+    "exit_code": 0,
+    "seconds": 0.04458621300000232,
+    "log": "frozen_hashes.txt"
+  },
+  "unified_help": {
+    "command": [
+      "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+      "scripts/stage2/run_stage2.py",
+      "--help"
+    ],
+    "exit_code": 0,
+    "seconds": 0.8670937829992909,
+    "log": "unified_help.txt"
+  },
+  "diff_check": {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0,
+    "seconds": 0.004582514000503579,
+    "log": "diff_check.txt"
+  },
+  "static_compile": {
+    "command": [
+      "/usr/bin/python3.10",
+      "-c",
+      "from pathlib import Path; files=[*Path('scripts/stage2').glob('*.py'),*Path('tests').glob('*.py'),Path('scripts/prepare_stage2_delivery.py'),Path('scripts/check_stage2_delivery.py')]; [compile(p.read_bytes(),str(p),'exec') for p in files]; print(f'{len(files)} Python files compile PASS')"
+    ],
+    "exit_code": 0,
+    "stdout": "50 Python files compile PASS\n"
+  }
+}

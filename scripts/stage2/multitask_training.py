@@ -23,9 +23,10 @@ class LossConfig:
     Args:
         detection_weight: 检测损失权重。
         segmentation_weight: 分割损失权重。
-        attention_weight: 类别注意力正则权重。
+        attention_weight: GT 类别注意力监督权重（BCE + Dice）。
         ignore_index: 分割 GT 中需要忽略的标签值。
         attention_dice_weight: 注意力 BCE 之外的 Soft Dice 系数。
+        attention_tv_weight: 无需 GT 的概率掩码空间 TV 正则权重；0 保持历史公式。
     """
 
     detection_weight: float = 1.0
@@ -33,6 +34,7 @@ class LossConfig:
     attention_weight: float = 0.1
     ignore_index: int = 255
     attention_dice_weight: float = 0.25
+    attention_tv_weight: float = 0.0
 
     def __post_init__(self) -> None:
         values = (
@@ -40,6 +42,7 @@ class LossConfig:
             self.segmentation_weight,
             self.attention_weight,
             self.attention_dice_weight,
+            self.attention_tv_weight,
         )
         if any(not math.isfinite(v) or v < 0 for v in values):
             raise ValueError("所有损失权重都必须是非负的有限数")
@@ -84,7 +87,9 @@ def aggregate_detection_losses(loss_dict: Mapping[str, Any]) -> Tensor:
     return total
 
 
-def _validate_gt(seg_logits: Tensor, segmentation_gt: Tensor, cfg: LossConfig) -> Tensor:
+def _validate_gt(
+    seg_logits: Tensor, segmentation_gt: Tensor, cfg: LossConfig
+) -> Tensor:
     if seg_logits.ndim != 4 or seg_logits.shape[1] != 4:
         raise ValueError("分割 logits 必须为 [B,4,H,W]")
     shape = (seg_logits.shape[0], seg_logits.shape[2], seg_logits.shape[3])
@@ -121,15 +126,20 @@ def supervised_attention_loss(
     if tuple(attention_logits.shape[0:1] + attention_logits.shape[2:4]) != tuple(
         segmentation_gt.shape
     ):
-        raise ValueError(
-            "注意力空间尺寸与 GT 不匹配；请显式进行坐标配准，禁止直接插值"
-        )
+        raise ValueError("注意力空间尺寸与 GT 不匹配；请显式进行坐标配准，禁止直接插值")
     if attention_logits.device != segmentation_gt.device:
         raise ValueError("注意力 logits / GT 设备不一致")
+    if segmentation_gt.dtype != torch.long:
+        raise TypeError("注意力监督 GT 必须为 long")
+    valid = segmentation_gt != cfg.ignore_index
+    if ((segmentation_gt[valid] < 0) | (segmentation_gt[valid] > 3)).any():
+        raise ValueError("注意力监督 GT 类别必须为 0～3")
     if target_classes.shape != (segmentation_gt.shape[0],):
         raise ValueError("target_classes 必须是 [B]，逐帧指定类别")
     if target_classes.dtype != torch.long:
         raise TypeError("target_classes 必须为 torch.long")
+    if target_classes.device != attention_logits.device:
+        raise ValueError("target_classes 与注意力设备不一致")
     if (target_classes < 1).any() or (target_classes > 3).any():
         raise ValueError("注意力目标类别必须属于 1、2、3")
     if not torch.isfinite(attention_logits.detach()).all():
@@ -155,6 +165,31 @@ def supervised_attention_loss(
     return bce + cfg.attention_dice_weight * dice.mean()
 
 
+def attention_regularization_loss(attention_logits: Tensor) -> Tensor:
+    """GT 无关的空间平滑先验：sigmoid 概率相邻差的各轴均值之和。
+
+    不约束注意力面积或正负比例。单像素/单行/单列跳过不存在的边，
+    保留可反传的零值；float32 计算避免半精度归约不稳定。
+    """
+    if (
+        attention_logits.ndim != 4
+        or attention_logits.shape[1] != 1
+        or min(attention_logits.shape) <= 0
+    ):
+        raise ValueError("TV 输入必须为非空 [B,1,H,W] logits")
+    if not attention_logits.is_floating_point():
+        raise TypeError("TV 输入必须为浮点 logits")
+    if not torch.isfinite(attention_logits).all():
+        raise ValueError("TV 输入包含 NaN/Inf")
+    probability = attention_logits.float().sigmoid()
+    value = probability.sum() * 0.0
+    if probability.shape[-2] > 1:
+        value = value + probability.diff(dim=-2).abs().mean()
+    if probability.shape[-1] > 1:
+        value = value + probability.diff(dim=-1).abs().mean()
+    return value
+
+
 class Stage2MultiTaskLoss(nn.Module):
     """接收检测头真实 loss、分割 logits、真实地图 GT、类别注意力。"""
 
@@ -169,6 +204,8 @@ class Stage2MultiTaskLoss(nn.Module):
         segmentation_gt: Tensor,
         attention_logits: Tensor,
         target_classes: Tensor,
+        *,
+        regularization_logits: Tensor | None = None,
     ) -> tuple[Tensor, dict[str, Tensor]]:
         """返回保留梯度的总损失和各项 detached 诊断指标。"""
         valid = _validate_gt(segmentation_logits, segmentation_gt, self.config)
@@ -185,17 +222,34 @@ class Stage2MultiTaskLoss(nn.Module):
         att = supervised_attention_loss(
             attention_logits, segmentation_gt, target_classes, self.config
         )
+        # 零权重不额外计算正则，历史实验的 total 保持逐位相同。
+        regularization = att.new_zeros(())
+        if self.config.attention_tv_weight:
+            if regularization_logits is not None and (
+                regularization_logits.device != attention_logits.device
+                or regularization_logits.shape[0] != attention_logits.shape[0]
+            ):
+                raise ValueError("正则 logits 与监督 logits 的 batch/设备不一致")
+            regularization = attention_regularization_loss(
+                attention_logits
+                if regularization_logits is None
+                else regularization_logits
+            )
         total = (
             det * self.config.detection_weight
             + seg * self.config.segmentation_weight
             + att * self.config.attention_weight
         )
+        if self.config.attention_tv_weight:
+            total = total + self.config.attention_tv_weight * regularization
         if not bool(torch.isfinite(total.detach()).item()):
             raise ValueError("总损失包含 NaN/Inf")
         parts = {
             "detection_loss": det.detach(),
             "segmentation_loss": seg.detach(),
             "attention_loss": att.detach(),
+            "attention_supervision_loss": att.detach(),
+            "attention_regularization_loss": regularization.detach(),
             "total_loss": total.detach(),
         }
         return total, parts
@@ -206,4 +260,5 @@ __all__ = [
     "Stage2MultiTaskLoss",
     "aggregate_detection_losses",
     "supervised_attention_loss",
+    "attention_regularization_loss",
 ]

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="870" viewBox="0 0 1180 870">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#55657b"/></marker></defs>
+<rect width="1180" height="870" fill="#f8fafc"/>
+<g font-family="Arial, Noto Sans CJK SC, sans-serif" fill="#182b43">
+<text x="35" y="40" font-size="24" font-weight="bold">语言引导 BEV 注意力增强 · 2026-10-22 源码审查数据流</text>
+<rect x="35" y="70" width="460" height="90" rx="9" fill="#e8f0fb" stroke="#8096af"/>
+<text x="265.0" y="95" text-anchor="middle" font-size="16">原始英文指令 → 空白规范化 → tokenizer</text>
+<text x="265.0" y="118" text-anchor="middle" font-size="16">DistilBERT 预训练 / masked mean: [B,768]</text>
+<rect x="650" y="70" width="495" height="90" rx="9" fill="#e8f0fb" stroke="#8096af"/>
+<text x="897.5" y="95" text-anchor="middle" font-size="16">六相机 → BEVFormer 特征提取 / Encoder</text>
+<text x="897.5" y="118" text-anchor="middle" font-size="16">共享 BEV F: [B,22500,256] ↔ [B,256,150,150]</text>
+<rect x="35" y="200" width="460" height="70" rx="9" fill="#e8f0fb" stroke="#8096af"/>
+<text x="265.0" y="225" text-anchor="middle" font-size="16">SemanticProjection: LayerNorm + MLP</text>
+<text x="265.0" y="248" text-anchor="middle" font-size="16">query q: [B,256]</text>
+<rect x="650" y="200" width="495" height="70" rx="9" fill="#e8f0fb" stroke="#8096af"/>
+<text x="897.5" y="225" text-anchor="middle" font-size="16">1×1 visual_projection + channel normalize</text>
+<text x="897.5" y="248" text-anchor="middle" font-size="16">视觉条件特征 V: [B,256,150,150]</text>
+<rect x="365" y="315" width="480" height="75" rx="9" fill="#e8f0fb" stroke="#8096af"/>
+<text x="605.0" y="340" text-anchor="middle" font-size="16">S = normalize(q) × V</text>
+<text x="605.0" y="363" text-anchor="middle" font-size="16">二维语义 [B,256,150,150]，真实前置依赖</text>
+<rect x="365" y="430" width="480" height="75" rx="9" fill="#e8f0fb" stroke="#8096af"/>
+<text x="605.0" y="455" text-anchor="middle" font-size="16">A = sigmoid(sum_channels(S) / 0.25)</text>
+<text x="605.0" y="478" text-anchor="middle" font-size="16">Attention Mask: [B,1,150,150]</text>
+<rect x="365" y="550" width="480" height="70" rx="9" fill="#e8f0fb" stroke="#8096af"/>
+<text x="605.0" y="575" text-anchor="middle" font-size="16">Fused = F + alpha × F × A</text>
+<text x="605.0" y="598" text-anchor="middle" font-size="16">转换回 [B,22500,256] 并返回共享接口</text>
+<rect x="35" y="670" width="480" height="80" rx="9" fill="#e8f0fb" stroke="#8096af"/>
+<text x="275.0" y="695" text-anchor="middle" font-size="16">Detection Decoder / Head</text>
+<text x="275.0" y="718" text-anchor="middle" font-size="16">分类、框: [6,B,900,10]</text>
+<rect x="650" y="670" width="495" height="80" rx="9" fill="#e8f0fb" stroke="#8096af"/>
+<text x="897.5" y="695" text-anchor="middle" font-size="16">作者地图变换 / feat_cropper / Seg Head</text>
+<text x="897.5" y="718" text-anchor="middle" font-size="16">分割 logits: [B,4,200,400]</text>
+<rect x="35" y="790" width="1110" height="55" rx="9" fill="#e4f5eb" stroke="#8096af"/>
+<text x="590.0" y="815" text-anchor="middle" font-size="16">训练: Ldet + Lseg + 0.1 Lsup + λTV LTV；旧20步 λTV=0，新 smoke λTV=0.001</text>
+<rect x="35" y="315" width="270" height="100" rx="9" fill="#fff3da" stroke="#8096af"/>
+<text x="170.0" y="340" text-anchor="middle" font-size="16">规则解析只做校验 / 元数据</text>
+<text x="170.0" y="363" text-anchor="middle" font-size="16">监督类别从当前文本导出</text>
+<text x="170.0" y="386" text-anchor="middle" font-size="16">方向 / 否定结构不注入 Mask</text>
+<rect x="895" y="410" width="250" height="110" rx="9" fill="#fff3da" stroke="#8096af"/>
+<text x="1020.0" y="435" text-anchor="middle" font-size="16">Attention Supervision</text>
+<text x="1020.0" y="458" text-anchor="middle" font-size="16">作者 cropper 后 BCE+Dice</text>
+<text x="1020.0" y="481" text-anchor="middle" font-size="16">Regularization: 原生 A 的 TV</text>
+<text x="1020.0" y="504" text-anchor="middle" font-size="16">GT 不进入前向融合</text>
+<path d="M265 160 L265 200" stroke="#55657b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M897 160 L897 200" stroke="#55657b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M265 270 L485 315" stroke="#55657b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M897 270 L725 315" stroke="#55657b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M605 390 L605 430" stroke="#55657b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M605 505 L605 550" stroke="#55657b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M650 110 L605 550" stroke="#55657b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M605 620 L275 670" stroke="#55657b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M605 620 L895 670" stroke="#55657b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M275 750 L420 790" stroke="#55657b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M895 750 L760 790" stroke="#55657b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M845 468 L895 468" stroke="#55657b" stroke-width="2" fill="none" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<path d="M1015 520 L1015 790" stroke="#55657b" stroke-width="2" fill="none" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+</g></svg>

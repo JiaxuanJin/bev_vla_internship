@@ -1,0 +1,20 @@
+ M scripts/stage2/joint_runtime.py
+ M scripts/stage2/run_stage2.py
+?? "README_\344\275\277\347\224\250\350\257\264\346\230\216.txt"
+?? docs/stage2_oom_fix_20261022.md
+?? results/stage2_final_audit_2026-10-22/
+?? scripts/README.txt
+?? "scripts/README_\344\275\277\347\224\250\350\257\264\346\230\216.txt"
+?? scripts/check_lidar_camera_alignment.py
+?? scripts/stage2/low_memory_dataset.py
+?? scripts/stage2/micro_process.py
+?? scripts/stage2/micro_report.py
+?? scripts/stage2/micro_training.py
+?? scripts/stage2/runtime_memory.py
+?? scripts/step48a_clean_5080_pytorch.sh
+?? scripts/step48a_offline_torch_copy.sh
+?? scripts/step48b_build_mmcv_author_5080.sh
+?? scripts/step48b_fix_cpp17_and_build.sh
+?? scripts/step48c_fix_torch_dispatch.py
+?? scripts/step48d_fix_thc_and_build.sh
+?? tests/test_stage2_micro_training.py

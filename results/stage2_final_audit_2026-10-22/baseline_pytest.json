@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+    "-m",
+    "pytest",
+    "tests/",
+    "-q",
+    "-p",
+    "no:cacheprovider"
+  ],
+  "exit_code": 0,
+  "stdout": "........................................................................ [ 81%]\n................                                                         [100%]\n88 passed in 2.23s\n"
+}

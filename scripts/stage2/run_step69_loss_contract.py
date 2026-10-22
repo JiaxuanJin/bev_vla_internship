@@ -80,6 +80,8 @@ def self_test() -> dict[str, Any]:
         "detection_loss",
         "segmentation_loss",
         "attention_loss",
+        "attention_supervision_loss",
+        "attention_regularization_loss",
         "total_loss",
     }
     assert all(torch.isfinite(part).all() for part in parts.values())
@@ -138,13 +140,19 @@ def _digest(path: Path) -> str:
 def project_audit() -> dict[str, Any]:
     """只读核对现有实机链路：存在不代表能跑通联合训练。"""
     candidates = {
-        "stage1_detection_config": ROOT / "BEVFormer/projects/configs/bevformer/bevformer_small.py",
-        "stage1_detection_weights": ROOT / "BEVFormer/ckpts/bevformer_small_epoch_24.pth",
-        "stage2_segmentation_config": ROOT / "BEVFormer-seg/projects/configs/bevformer/bevformer_small_seg.py",
+        "stage1_detection_config": ROOT
+        / "BEVFormer/projects/configs/bevformer/bevformer_small.py",
+        "stage1_detection_weights": ROOT
+        / "BEVFormer/ckpts/bevformer_small_epoch_24.pth",
+        "stage2_segmentation_config": ROOT
+        / "BEVFormer-seg/projects/configs/bevformer/bevformer_small_seg.py",
         "stage2_segmentation_weights": Path("/mnt/g/nus/bevformer_small_seg.pth"),
-        "stage2_live_seg_report": ROOT / "outputs/stage2_step58/step58_author_live_smoke.json",
-        "stage2_frozen_train_report": ROOT / "outputs/stage2_step59/step59_training_summary.json",
-        "stage2_text_intervention_report": ROOT / "outputs/stage2_step68/step68_acceptance.json",
+        "stage2_live_seg_report": ROOT
+        / "outputs/stage2_step58/step58_author_live_smoke.json",
+        "stage2_frozen_train_report": ROOT
+        / "outputs/stage2_step59/step59_training_summary.json",
+        "stage2_text_intervention_report": ROOT
+        / "outputs/stage2_step68/step68_acceptance.json",
         "stage1_detection_eval": ROOT / "outputs/drivelm_check/det799.run.log",
     }
     files: dict[str, Any] = {}

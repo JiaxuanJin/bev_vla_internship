@@ -1,0 +1,10 @@
+{
+  "status": "PASS_DELIVERY_ARCHIVE_VERIFIED",
+  "archive": "outputs/stage2_delivery_20261022/stage2_delivery_20261022.tar.gz",
+  "sha256": "99b58c982111d244e07aee3940c887303c9406928cc0c2c7a1acd9bc49f3b54a",
+  "size_bytes": 179730117,
+  "files": 270,
+  "all_archived_member_sha256_verified": true,
+  "seconds": 5.3709386690006795,
+  "training_updates_this_audit": 0
+}

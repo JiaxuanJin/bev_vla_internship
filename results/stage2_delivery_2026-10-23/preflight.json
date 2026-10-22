@@ -1,0 +1,2441 @@
+{
+  "status": "PASS_LOCAL_DELIVERY_PREFLIGHT",
+  "branch": "main",
+  "head": "9d27b00d28a02b00079891710f0282da9e548661",
+  "whitelist_files": 228,
+  "new_files_whitespace_checked": 111,
+  "whitelist_bytes": 28117462,
+  "markdown_documents": 67,
+  "links": {
+    "versioned": [
+      {
+        "document": "README.md",
+        "target": "docs/stage1/00_阶段一交付导航.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage1/03_基线性能测试报告.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/logbook_2026-10-12.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/logbook_bev_seg_debug_2026-10-12_CN.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/logbook_2026-10-13.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage1/06_第一阶段周报_2026-10-13.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage2/02_第二阶段原始任务书.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage2/17_第二阶段复现指引.md"
+      },
+      {
+        "document": "README.md",
+        "target": "results/stage2_delivery_2026-10-23/README.md"
+      },
+      {
+        "document": "README.md",
+        "target": "results/stage2_final_audit_2026-10-22/README.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage2/11_模块架构设计.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage2/12_单元测试报告.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage2/02_第二阶段原始任务书.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/images/stage2/stage2_final_architecture.svg"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage2/16_阶段二实证汇总_2026-10-21.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage2/17_第二阶段复现指引.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage2/18_提交前审查与回归_2026-10-21.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/images/stage2/README.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage2/11_模块架构设计.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage2/12_单元测试报告.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage2/14_真实联合梯度验证.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/logbook_2026-10-21.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage2/数据图表总览_2026-10-21.md"
+      },
+      {
+        "document": "README.md",
+        "target": "docs/stage2/数据分析报告_2026-10-21.md"
+      },
+      {
+        "document": "STAGE1_OVERVIEW.md",
+        "target": "docs/stage1/00_阶段一交付导航.md"
+      },
+      {
+        "document": "STAGE1_OVERVIEW.md",
+        "target": "docs/stage1/01_DriveLM数据集结构与标注说明.md"
+      },
+      {
+        "document": "STAGE1_OVERVIEW.md",
+        "target": "docs/stage1/02_BEVFormer原理与代码结构.md"
+      },
+      {
+        "document": "STAGE1_OVERVIEW.md",
+        "target": "docs/stage1/03_基线性能测试报告.md"
+      },
+      {
+        "document": "STAGE1_OVERVIEW.md",
+        "target": "docs/stage1/04_可视化成果索引.md"
+      },
+      {
+        "document": "STAGE1_OVERVIEW.md",
+        "target": "docs/stage1/05_复现和GitHub提交前检查.md"
+      },
+      {
+        "document": "STAGE1_OVERVIEW.md",
+        "target": "docs/logbook_2026-10-12.md"
+      },
+      {
+        "document": "docs/images/stage2/README.md",
+        "target": "../../../results/stage2_delivery_2026-10-23/README.md"
+      },
+      {
+        "document": "docs/images/stage2/README.md",
+        "target": "../../../results/stage2_final_audit_2026-10-22/README.md"
+      },
+      {
+        "document": "docs/images/stage2/README.md",
+        "target": "stage2_architecture.svg"
+      },
+      {
+        "document": "docs/images/stage2/README.md",
+        "target": "stage2_evidence.svg"
+      },
+      {
+        "document": "docs/images/stage2/README.md",
+        "target": "step62_divider_overlay.png"
+      },
+      {
+        "document": "docs/images/stage2/README.md",
+        "target": "step62_ped_crossing_overlay.png"
+      },
+      {
+        "document": "docs/images/stage2/README.md",
+        "target": "step62_boundary_overlay.png"
+      },
+      {
+        "document": "docs/images/stage2/README.md",
+        "target": "step62_threshold_scan.png"
+      },
+      {
+        "document": "docs/images/stage2/README.md",
+        "target": "../../../results/stage2_2026-10-21/step62_step62_diagnostics.json"
+      },
+      {
+        "document": "docs/images/stage2/README.md",
+        "target": "../../stage2/16_阶段二实证汇总_2026-10-21.md"
+      },
+      {
+        "document": "docs/images/stage2/README.md",
+        "target": "stage2_final_architecture.svg"
+      },
+      {
+        "document": "docs/images/stage2/README.md",
+        "target": "../../stage2/20_第二阶段最终严格验收_2026-10-21.md"
+      },
+      {
+        "document": "docs/logbook_2026-10-10.md",
+        "target": "./images/2026-10-10/01_cuda_gpu.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-10.md",
+        "target": "./images/2026-10-10/02_mmcv_attention.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-10.md",
+        "target": "./images/2026-10-10/03_bevformer_build.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-10.md",
+        "target": "./images/2026-10-10/04_checkpoint_loading.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-10.md",
+        "target": "./images/2026-10-10/05_nuscenes_loading.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-11.md",
+        "target": "images/2026-10-11/01_gpu_environment.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-11.md",
+        "target": "images/2026-10-11/02_nuscenes_cameras.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-11.md",
+        "target": "images/2026-10-11/03_nuscenes_gt_boxes.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-11.md",
+        "target": "images/2026-10-11/04_lidar_bev.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-11.md",
+        "target": "images/2026-10-11/05_drivelm_multimodal.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-11.md",
+        "target": "images/2026-10-11/06_attention_mask.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-11.md",
+        "target": "images/2026-10-11/07_attention_fusion.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-11.md",
+        "target": "images/2026-10-11/08_bevformer_predictions.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-11.md",
+        "target": "images/2026-10-11/09_baseline_metrics.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-11.md",
+        "target": "images/2026-10-11/10_inference_log.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-12.md",
+        "target": "images/2026-10-12/bev_feature_heatmap.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-12.md",
+        "target": "images/2026-10-12/bev_feature_channels.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-12.md",
+        "target": "images/2026-10-12/drivelm_bevformer_joint_01.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-12.md",
+        "target": "images/2026-10-12/drivelm799_seg_comparison_000.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-12.md",
+        "target": "images/2026-10-12/drivelm799_seg_comparison_399.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-12.md",
+        "target": "images/2026-10-12/drivelm799_seg_comparison_798.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-21.md",
+        "target": "images/stage2/stage2_architecture.svg"
+      },
+      {
+        "document": "docs/logbook_2026-10-21.md",
+        "target": "images/stage2/stage2_evidence.svg"
+      },
+      {
+        "document": "docs/logbook_2026-10-21.md",
+        "target": "stage2/16_阶段二实证汇总_2026-10-21.md"
+      },
+      {
+        "document": "docs/logbook_2026-10-21.md",
+        "target": "images/stage2/step62_divider_overlay.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-21.md",
+        "target": "images/stage2/step62_boundary_overlay.png"
+      },
+      {
+        "document": "docs/logbook_2026-10-22.md",
+        "target": "stage2/21_第二阶段最终缺口审查_2026-10-22.md"
+      },
+      {
+        "document": "docs/logbook_bev_seg_debug_2026-10-12_CN.md",
+        "target": "images/2026-10-12/seg_comparison_minival_00.png"
+      },
+      {
+        "document": "docs/logbook_bev_seg_debug_2026-10-12_CN.md",
+        "target": "images/2026-10-12/seg_comparison_minival_40.png"
+      },
+      {
+        "document": "docs/logbook_bev_seg_debug_2026-10-12_CN.md",
+        "target": "images/2026-10-12/seg_comparison_minival_80.png"
+      },
+      {
+        "document": "docs/logbook_bev_seg_debug_2026-10-12_CN.md",
+        "target": "images/2026-10-12/seg_comparison_minival_80_temporal_off.png"
+      },
+      {
+        "document": "docs/stage1/00_阶段一交付导航.md",
+        "target": "01_DriveLM数据集结构与标注说明.md"
+      },
+      {
+        "document": "docs/stage1/00_阶段一交付导航.md",
+        "target": "03_基线性能测试报告.md"
+      },
+      {
+        "document": "docs/stage1/00_阶段一交付导航.md",
+        "target": "02_BEVFormer原理与代码结构.md"
+      },
+      {
+        "document": "docs/stage1/00_阶段一交付导航.md",
+        "target": "04_可视化成果索引.md"
+      },
+      {
+        "document": "docs/stage1/00_阶段一交付导航.md",
+        "target": "01_DriveLM数据集结构与标注说明.md"
+      },
+      {
+        "document": "docs/stage1/00_阶段一交付导航.md",
+        "target": "02_BEVFormer原理与代码结构.md"
+      },
+      {
+        "document": "docs/stage1/00_阶段一交付导航.md",
+        "target": "03_基线性能测试报告.md"
+      },
+      {
+        "document": "docs/stage1/00_阶段一交付导航.md",
+        "target": "04_可视化成果索引.md"
+      },
+      {
+        "document": "docs/stage1/00_阶段一交付导航.md",
+        "target": "05_复现和GitHub提交前检查.md"
+      },
+      {
+        "document": "docs/stage1/02_BEVFormer原理与代码结构.md",
+        "target": "../images/2026-10-12/bev_feature_heatmap.png"
+      },
+      {
+        "document": "docs/stage1/02_BEVFormer原理与代码结构.md",
+        "target": "../images/2026-10-12/bev_feature_channels.png"
+      },
+      {
+        "document": "docs/stage1/03_基线性能测试报告.md",
+        "target": "../images/2026-10-12/drivelm799_seg_comparison_000.png"
+      },
+      {
+        "document": "docs/stage1/03_基线性能测试报告.md",
+        "target": "../images/2026-10-12/drivelm799_seg_comparison_798.png"
+      },
+      {
+        "document": "docs/stage1/03_基线性能测试报告.md",
+        "target": "04_可视化成果索引.md"
+      },
+      {
+        "document": "docs/stage1/04_可视化成果索引.md",
+        "target": "../images/2026-10-12/drivelm_bevformer_joint_01.png"
+      },
+      {
+        "document": "docs/stage1/04_可视化成果索引.md",
+        "target": "../images/2026-10-12/drivelm_bevformer_joint_02.png"
+      },
+      {
+        "document": "docs/stage1/04_可视化成果索引.md",
+        "target": "../images/2026-10-12/bev_feature_heatmap.png"
+      },
+      {
+        "document": "docs/stage1/04_可视化成果索引.md",
+        "target": "../images/2026-10-12/bev_feature_channels.png"
+      },
+      {
+        "document": "docs/stage1/04_可视化成果索引.md",
+        "target": "../images/2026-10-11/08_bevformer_predictions.png"
+      },
+      {
+        "document": "docs/stage1/04_可视化成果索引.md",
+        "target": "../images/2026-10-12/seg_comparison_minival_40.png"
+      },
+      {
+        "document": "docs/stage1/04_可视化成果索引.md",
+        "target": "../images/2026-10-12/drivelm799_seg_comparison_000.png"
+      },
+      {
+        "document": "docs/stage1/04_可视化成果索引.md",
+        "target": "../images/2026-10-12/drivelm799_seg_comparison_399.png"
+      },
+      {
+        "document": "docs/stage1/04_可视化成果索引.md",
+        "target": "../images/2026-10-12/drivelm799_seg_comparison_798.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-10/01_cuda_gpu.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-10/02_mmcv_attention.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-10/03_bevformer_build.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-10/05_nuscenes_loading.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-11/02_nuscenes_cameras.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-11/03_nuscenes_gt_boxes.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-11/04_lidar_bev.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-11/07_attention_fusion.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-11/08_bevformer_predictions.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-12/bev_feature_heatmap.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-12/bev_feature_channels.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-12/seg_comparison_minival_80.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-12/drivelm_bevformer_joint_01.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-12/drivelm799_seg_comparison_399.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-13/nuscenes_val6019_det_metrics.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-13/drivelm799_detection_class_ap.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-13/drivelm799_segmentation_iou.png"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "../images/2026-10-13/git_push_success_20261013.png"
+      },
+      {
+        "document": "docs/stage2/11_模块架构设计.md",
+        "target": "02_第二阶段原始任务书.md"
+      },
+      {
+        "document": "docs/stage2/11_模块架构设计.md",
+        "target": "../images/stage2/stage2_audited_architecture_20261022.svg"
+      },
+      {
+        "document": "docs/stage2/11_模块架构设计.md",
+        "target": "17_第二阶段复现指引.md"
+      },
+      {
+        "document": "docs/stage2/12_单元测试报告.md",
+        "target": "02_第二阶段原始任务书.md"
+      },
+      {
+        "document": "docs/stage2/12_单元测试报告.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/README.md"
+      },
+      {
+        "document": "docs/stage2/12_单元测试报告.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/checks.json"
+      },
+      {
+        "document": "docs/stage2/12_单元测试报告.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/pytest.log"
+      },
+      {
+        "document": "docs/stage2/12_单元测试报告.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/language_probe.json"
+      },
+      {
+        "document": "docs/stage2/12_单元测试报告.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/raw_artifact_audit.json"
+      },
+      {
+        "document": "docs/stage2/12_单元测试报告.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/gpu_smoke.json"
+      },
+      {
+        "document": "docs/stage2/12_单元测试报告.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/legacy_replay_summary.json"
+      },
+      {
+        "document": "docs/stage2/12_单元测试报告.md",
+        "target": "17_第二阶段复现指引.md"
+      },
+      {
+        "document": "docs/stage2/13_阶段二任务对照.md",
+        "target": "02_第二阶段原始任务书.md"
+      },
+      {
+        "document": "docs/stage2/13_阶段二任务对照.md",
+        "target": "21_第二阶段最终缺口审查_2026-10-22.md"
+      },
+      {
+        "document": "docs/stage2/13_阶段二任务对照.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/checks.json"
+      },
+      {
+        "document": "docs/stage2/13_阶段二任务对照.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/raw_artifact_audit.json"
+      },
+      {
+        "document": "docs/stage2/13_阶段二任务对照.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/language_probe.json"
+      },
+      {
+        "document": "docs/stage2/13_阶段二任务对照.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/gpu_smoke.json"
+      },
+      {
+        "document": "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+        "target": "../images/stage2/stage2_architecture.svg"
+      },
+      {
+        "document": "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+        "target": "../images/stage2/stage2_evidence.svg"
+      },
+      {
+        "document": "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+        "target": "../images/stage2/step62_divider_overlay.png"
+      },
+      {
+        "document": "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+        "target": "../images/stage2/step62_ped_crossing_overlay.png"
+      },
+      {
+        "document": "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+        "target": "../images/stage2/step62_boundary_overlay.png"
+      },
+      {
+        "document": "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+        "target": "../images/stage2/step62_threshold_scan.png"
+      },
+      {
+        "document": "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+        "target": "../images/stage2/README.md"
+      },
+      {
+        "document": "docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+        "target": "17_第二阶段复现指引.md"
+      },
+      {
+        "document": "docs/stage2/17_第二阶段复现指引.md",
+        "target": "02_第二阶段原始任务书.md"
+      },
+      {
+        "document": "docs/stage2/17_第二阶段复现指引.md",
+        "target": "21_第二阶段最终缺口审查_2026-10-22.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../results/stage2_2026-10-21/regression_2026-10-21.json"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "12_单元测试报告.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../results/stage2_2026-10-21/review_2026-10-21.json"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../.gitignore"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../README.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../docs/images/stage2/README.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../docs/images/stage2/stage2_architecture.svg"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../docs/stage2/11_模块架构设计.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../docs/stage2/12_单元测试报告.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../docs/stage2/13_阶段二任务对照.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../docs/stage2/16_阶段二实证汇总_2026-10-21.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../docs/stage2/17_第二阶段复现指引.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../docs/stage2/18_提交前审查与回归_2026-10-21.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../docs/stage2_acceptance_2026-10-21.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../docs/stage2_architecture_CN.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../docs/stage2_step69_multitask_loss_CN.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../docs/stage2_unit_tests_CN.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../requirements_stage2.txt"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../results/stage2_2026-10-21/README.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../results/stage2_2026-10-21/regression_2026-10-21.json"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../results/stage2_2026-10-21/review_2026-10-21.json"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/README_使用说明.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/stage2/README.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/stage2/README_使用说明.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/stage2/run_regression.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/stage2/step67_README_CN.md"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step55_protocol_audit.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step56_stage2_setup.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step57_stage2_setup.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step58_stage2_setup.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step59_memory_fix.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step59_stage2_setup.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step60_stage2_setup.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step61_stage2_setup.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step62_stage2_setup.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step63_inspect_npz.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step64_recover_report.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step64_stage2_setup.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step65_stage2_setup.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step70_fix_inference_gt.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step72_fix_numpy.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step72_run_all.sh"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../scripts/step74_stage2_git_publisher.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../stage2/__init__.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../stage2/language_encoder.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../stage2/semantic_projection.py"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../stage2/tokenizer_config.json"
+      },
+      {
+        "document": "docs/stage2/18_提交前审查与回归_2026-10-21.md",
+        "target": "../../tests/test_stage2_day1.py"
+      },
+      {
+        "document": "docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md",
+        "target": "20_第二阶段最终严格验收_2026-10-21.md"
+      },
+      {
+        "document": "docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md",
+        "target": "00_第二阶段执行计划_2026-10-20至23.md"
+      },
+      {
+        "document": "docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md",
+        "target": "13_阶段二任务对照.md"
+      },
+      {
+        "document": "docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md",
+        "target": "../../tests/test_stage2_pipeline.py"
+      },
+      {
+        "document": "docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md",
+        "target": "../../results/stage2_completion_2026-10-21/cpu_regression.json"
+      },
+      {
+        "document": "docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md",
+        "target": "../../results/stage2_completion_2026-10-21/offline_bev.json"
+      },
+      {
+        "document": "docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md",
+        "target": "../../results/stage2_completion_2026-10-21/joint_sandbox_failure.json"
+      },
+      {
+        "document": "docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md",
+        "target": "../../results/stage2_completion_2026-10-21/joint_live.json"
+      },
+      {
+        "document": "docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md",
+        "target": "14_真实联合梯度验证.md"
+      },
+      {
+        "document": "docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md",
+        "target": "11_模块架构设计.md"
+      },
+      {
+        "document": "docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md",
+        "target": "12_单元测试报告.md"
+      },
+      {
+        "document": "docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md",
+        "target": "../../results/stage2_completion_2026-10-21/verification.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "02_第二阶段原始任务书.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/language_encoder.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/semantic_instruction.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/semantic_projection.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/language_bev_attention.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/bev_fusion.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/multitask_training.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../docs/stage2/11_模块架构设计.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../docs/images/stage2/stage2_final_architecture.svg"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/run_stage2.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/pipeline.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/joint_runtime.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/bev_coordinates.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../requirements_stage2.txt"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../docs/stage2/12_单元测试报告.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../docs/stage2/20_第二阶段最终严格验收_2026-10-21.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../tests/test_stage2_day1.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../tests/test_stage2_pipeline.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../tests/test_stage2_joint_backward.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/cpu_regression.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "17_第二阶段复现指引.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/cpu.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/offline_bev.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/joint_forward.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/joint_backward.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/gpu_commands.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/cpu_regression.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/dataset_audit.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/acceptance.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/proposed_commit_files.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../README.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../docs/images/stage2/README.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../docs/images/stage2/stage2_final_architecture.svg"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../docs/stage2/02_第二阶段原始任务书.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../docs/stage2/11_模块架构设计.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../docs/stage2/12_单元测试报告.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../docs/stage2/13_阶段二任务对照.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../docs/stage2/17_第二阶段复现指引.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../docs/stage2/20_第二阶段最终严格验收_2026-10-21.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_completion_2026-10-21/README.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_completion_2026-10-21/cpu_regression.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_completion_2026-10-21/joint_live.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_completion_2026-10-21/joint_sandbox_failure.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_completion_2026-10-21/offline_bev.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_completion_2026-10-21/verification.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/README.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/acceptance.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/cpu.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/cpu_regression.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/dataset_audit.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/gpu_commands.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/joint_backward.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/joint_backward_output.txt"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/joint_forward.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/joint_forward_output.txt"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/offline_bev.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../results/stage2_final_acceptance_2026-10-21/proposed_commit_files.json"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/README.md"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/bev_coordinates.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/bev_fusion.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/joint_runtime.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/language_bev_attention.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/language_encoder.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/pipeline.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/run_regression.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/run_stage2.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/semantic_instruction.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../scripts/stage2/semantic_projection.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../tests/test_stage2_joint_backward.py"
+      },
+      {
+        "document": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+        "target": "../../tests/test_stage2_pipeline.py"
+      },
+      {
+        "document": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+        "target": "02_第二阶段原始任务书.md"
+      },
+      {
+        "document": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+        "target": "../../scripts/stage2/language_encoder.py"
+      },
+      {
+        "document": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+        "target": "../../scripts/stage2/semantic_projection.py"
+      },
+      {
+        "document": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+        "target": "../../scripts/stage2/language_bev_attention.py"
+      },
+      {
+        "document": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+        "target": "../../scripts/stage2/bev_fusion.py"
+      },
+      {
+        "document": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+        "target": "../../scripts/stage2/pipeline.py"
+      },
+      {
+        "document": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+        "target": "../../scripts/stage2/multitask_training.py"
+      },
+      {
+        "document": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+        "target": "../../scripts/stage2/joint_runtime.py"
+      },
+      {
+        "document": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+        "target": "../../scripts/stage2/micro_training.py"
+      },
+      {
+        "document": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/source_locations.json"
+      },
+      {
+        "document": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+        "target": "../images/stage2/stage2_audited_architecture_20261022.svg"
+      },
+      {
+        "document": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+        "target": "11_模块架构设计.md"
+      },
+      {
+        "document": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+        "target": "17_第二阶段复现指引.md"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "02_第二阶段原始任务书.md"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/language_probe.json"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "../../results/stage2_delivery_2026-10-23/pytest.txt"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/gpu_smoke.json"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "../../results/stage2_delivery_2026-10-23/checks.json"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/legacy_replay_summary.json"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "../../results/stage2_delivery_2026-10-23/raw_recheck.json"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "11_模块架构设计.md"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "../images/stage2/stage2_audited_architecture_20261022.svg"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "../../results/stage2_delivery_2026-10-23/README.md"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "17_第二阶段复现指引.md"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "12_单元测试报告.md"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/README.md"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "../../results/stage2_delivery_2026-10-23/file_inventory.md"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "../../results/stage2_delivery_2026-10-23/git_whitelist.txt"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "../../results/stage2_delivery_2026-10-23/file_inventory.json"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "../../results/stage2_delivery_2026-10-23/non_git_assets.json"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "../../results/stage2_delivery_2026-10-23/preflight.json"
+      },
+      {
+        "document": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+        "target": "../../results/stage2_delivery_2026-10-23/teacher_message.txt"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "数据图表总览_2026-10-21.md"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "数据分析报告_2026-10-21.md"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../../results/stage2_data_review/metrics.csv"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../../results/stage2_data_review/metrics.json"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../../results/stage2_data_review/training_histories.json"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_014_segmentation.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_trained_vs_random.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step67_new_mini_val_12.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/real_joint_loss_gradient.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_014_cameras.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_014_segmentation.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_014_errors.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_021_cameras.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_021_segmentation.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_021_errors.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_039_cameras.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_039_segmentation.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_039_errors.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_077_cameras.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_077_segmentation.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_077_errors.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_trained_vs_random.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_ap_controls.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_joint_random.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_step65_intervention.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_step65_real_sentences.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_step66_intervention.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_step66_real_sentences.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_step67_intervention.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_step67_real_sentences.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/step62_existing_attention.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/text_intervention_metrics.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step65_development_6.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step65_fresh_tokens.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step66_development_6.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step66_step65_seen_12.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step66_reserved_12.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step67_development_6.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step67_step65_seen_12.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step67_step66_seen_12.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step67_new_mini_val_12.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_joint_single_frame.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_real_sentence_controls.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/loss_step61.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/loss_step65.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/loss_step66.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/loss_step67.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/real_joint_loss_gradient.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/step61_before_after.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/joint_000_cameras.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/joint_000_segmentation.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/joint_000_errors.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/step54_temporal_geometry.png"
+      },
+      {
+        "document": "docs/stage2/全部实验图表索引_2026-10-21.md",
+        "target": "../images/stage2/data_review/step73_geometry_context.png"
+      },
+      {
+        "document": "docs/stage2/数据分析报告_2026-10-21.md",
+        "target": "../../results/stage2_data_review/source_inventory.json"
+      },
+      {
+        "document": "docs/stage2/数据分析报告_2026-10-21.md",
+        "target": "../../results/stage2_data_review/metrics.json"
+      },
+      {
+        "document": "docs/stage2/数据分析报告_2026-10-21.md",
+        "target": "../../results/stage2_data_review/text_controls.json"
+      },
+      {
+        "document": "docs/stage2/数据分析报告_2026-10-21.md",
+        "target": "../../results/stage2_data_review/seg_inference.json"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "数据分析报告_2026-10-21.md"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../../results/stage2_data_review/metrics.csv"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../../results/stage2_data_review/metrics.json"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../../results/stage2_data_review/training_histories.json"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_014_cameras.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_014_segmentation.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_014_errors.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_039_segmentation.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_trained_vs_random.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_step65_intervention.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_step67_intervention.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/text_intervention_metrics.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step67_new_mini_val_12.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step66_reserved_12.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step65_fresh_tokens.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/joint_000_cameras.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/joint_000_segmentation.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/joint_000_errors.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/real_joint_loss_gradient.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/step73_geometry_context.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/step54_temporal_geometry.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_ap_controls.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_joint_random.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_step65_real_sentences.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_step66_intervention.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_step66_real_sentences.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/attention_step67_real_sentences.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/loss_step61.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/loss_step65.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/loss_step66.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/loss_step67.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_joint_single_frame.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_real_sentence_controls.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step65_development_6.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step66_development_6.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step66_step65_seen_12.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step67_development_6.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step67_step65_seen_12.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/metrics_step67_step66_seen_12.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_021_cameras.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_021_errors.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_021_segmentation.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_039_cameras.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_039_errors.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_077_cameras.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_077_errors.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/seg_077_segmentation.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/step61_before_after.png"
+      },
+      {
+        "document": "docs/stage2/数据图表总览_2026-10-21.md",
+        "target": "../images/stage2/data_review/step62_existing_attention.png"
+      },
+      {
+        "document": "docs/stage2_acceptance_2026-10-21.md",
+        "target": "stage2/16_阶段二实证汇总_2026-10-21.md"
+      },
+      {
+        "document": "docs/stage2_acceptance_2026-10-21.md",
+        "target": "stage2/12_单元测试报告.md"
+      },
+      {
+        "document": "docs/stage2_architecture_CN.md",
+        "target": "stage2/16_阶段二实证汇总_2026-10-21.md"
+      },
+      {
+        "document": "docs/stage2_architecture_CN.md",
+        "target": "stage2/12_单元测试报告.md"
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../scripts/stage2/joint_runtime.py"
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../scripts/stage2/micro_training.py"
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../scripts/stage2/low_memory_dataset.py"
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../scripts/stage2/runtime_memory.py"
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../scripts/stage2/micro_process.py"
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../scripts/stage2/run_stage2.py"
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../tests/test_stage2_micro_training.py"
+      },
+      {
+        "document": "docs/stage2_step69_multitask_loss_CN.md",
+        "target": "stage2/16_阶段二实证汇总_2026-10-21.md"
+      },
+      {
+        "document": "docs/stage2_step69_multitask_loss_CN.md",
+        "target": "stage2/12_单元测试报告.md"
+      },
+      {
+        "document": "docs/stage2_unit_tests_CN.md",
+        "target": "stage2/16_阶段二实证汇总_2026-10-21.md"
+      },
+      {
+        "document": "docs/stage2_unit_tests_CN.md",
+        "target": "stage2/12_单元测试报告.md"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step55_step55_protocol_snapshot.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step58_step58_author_live_smoke.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step59_step59_training_summary.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step60_step60_ab_summary.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step61_step61_supervised_summary.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step62_step62_diagnostics.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step64_step64_recovered_summary.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step65_step65_ab_summary.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step66_step66_ab_summary.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step67_step67_ab_summary.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step68_step68_acceptance.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step69_step69_loss_contract.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step70_audit_step70_audit.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step70_live_step70_joint_live.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step71_step71_acceptance.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step72_step72_real_joint_gradient.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "step73_step73_gap_check.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "regression_2026-10-21.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "review_2026-10-21.json"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "../../docs/stage2/16_阶段二实证汇总_2026-10-21.md"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "../../docs/images/stage2/README.md"
+      },
+      {
+        "document": "results/stage2_2026-10-21/README.md",
+        "target": "../../docs/stage2/18_提交前审查与回归_2026-10-21.md"
+      },
+      {
+        "document": "results/stage2_completion_2026-10-21/README.md",
+        "target": "cpu_regression.json"
+      },
+      {
+        "document": "results/stage2_completion_2026-10-21/README.md",
+        "target": "offline_bev.json"
+      },
+      {
+        "document": "results/stage2_completion_2026-10-21/README.md",
+        "target": "joint_sandbox_failure.json"
+      },
+      {
+        "document": "results/stage2_completion_2026-10-21/README.md",
+        "target": "joint_live.json"
+      },
+      {
+        "document": "results/stage2_completion_2026-10-21/README.md",
+        "target": "verification.json"
+      },
+      {
+        "document": "results/stage2_completion_2026-10-21/README.md",
+        "target": "../../docs/stage2/19_第二阶段工程缺口补齐_2026-10-21.md"
+      },
+      {
+        "document": "results/stage2_data_review/README.md",
+        "target": "../../docs/stage2/数据图表总览_2026-10-21.md"
+      },
+      {
+        "document": "results/stage2_data_review/README.md",
+        "target": "../../docs/stage2/数据分析报告_2026-10-21.md"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "../../docs/stage2/22_第二阶段Git交付检查_2026-10-23.md"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "../../docs/stage2/02_第二阶段原始任务书.md"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "../../docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "../../docs/stage2/17_第二阶段复现指引.md"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "figures/training_loss_20steps.png"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "figures/training_20steps.csv"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "figures/ab_metrics_6frames.png"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "figures/ab_segmentation_6frames.png"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "figures/attention_control_6frames.png"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "figures/figure_provenance.json"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "../stage2_final_audit_2026-10-22/README.md"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "git_whitelist.txt"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "file_inventory.json"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "file_inventory.md"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "checks.json"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "pytest.txt"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "raw_recheck.json"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "preflight.json"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "non_git_assets.json"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "final_git_status.txt"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "delivery_changes.md"
+      },
+      {
+        "document": "results/stage2_delivery_2026-10-23/README.md",
+        "target": "teacher_message.txt"
+      },
+      {
+        "document": "results/stage2_final_acceptance_2026-10-21/README.md",
+        "target": "../../docs/stage2/02_第二阶段原始任务书.md"
+      },
+      {
+        "document": "results/stage2_final_acceptance_2026-10-21/README.md",
+        "target": "../../docs/stage2/20_第二阶段最终严格验收_2026-10-21.md"
+      },
+      {
+        "document": "results/stage2_final_acceptance_2026-10-21/README.md",
+        "target": "cpu.json"
+      },
+      {
+        "document": "results/stage2_final_acceptance_2026-10-21/README.md",
+        "target": "cpu_regression.json"
+      },
+      {
+        "document": "results/stage2_final_acceptance_2026-10-21/README.md",
+        "target": "offline_bev.json"
+      },
+      {
+        "document": "results/stage2_final_acceptance_2026-10-21/README.md",
+        "target": "joint_forward.json"
+      },
+      {
+        "document": "results/stage2_final_acceptance_2026-10-21/README.md",
+        "target": "joint_backward.json"
+      },
+      {
+        "document": "results/stage2_final_acceptance_2026-10-21/README.md",
+        "target": "gpu_commands.json"
+      },
+      {
+        "document": "results/stage2_final_acceptance_2026-10-21/README.md",
+        "target": "joint_forward_output.txt"
+      },
+      {
+        "document": "results/stage2_final_acceptance_2026-10-21/README.md",
+        "target": "joint_backward_output.txt"
+      },
+      {
+        "document": "results/stage2_final_acceptance_2026-10-21/README.md",
+        "target": "dataset_audit.json"
+      },
+      {
+        "document": "results/stage2_final_acceptance_2026-10-21/README.md",
+        "target": "acceptance.json"
+      },
+      {
+        "document": "results/stage2_final_acceptance_2026-10-21/README.md",
+        "target": "proposed_commit_files.json"
+      },
+      {
+        "document": "results/stage2_final_audit_2026-10-22/README.md",
+        "target": "../../docs/stage2/02_第二阶段原始任务书.md"
+      },
+      {
+        "document": "results/stage2_final_audit_2026-10-22/README.md",
+        "target": "../../docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md"
+      },
+      {
+        "document": "results/stage2_final_audit_2026-10-22/README.md",
+        "target": "../../docs/stage2/17_第二阶段复现指引.md"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./prepare_drivelm_v11.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./check_drivelm_val_official_split.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./build_drivelm_799_bevformer_pkl.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./run_drivelm_799_det_all.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./evaluate_drivelm_799_det_subset.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./run_drivelm_799_seg_all.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./fix_and_run_bevformer_val_6019.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./drivelm_vqa_baseline.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./inspect_drivelm.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./prepare_drivelm_v11.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./match_drivelm_nuscenes.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./check_drivelm_image_links.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./check_drivelm_val_official_split.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./build_drivelm_bevformer_pairs.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./check_drivelm_bevformer_alignment.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./build_drivelm_799_bevformer_pkl.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./inspect_drivelm_799_inference_ready.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./test_drivelm_799_bevformer_loader.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./run_drivelm_official_preprocess.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./prepare_bev_seg_data.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./bevformer_compat/test_bevformer_build.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./bevformer_compat/test_bevformer_weights.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./run_bevformer_test_compat.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./inspect_bev_seg_checkpoint.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./verify_bev_seg_build.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./test_bev_seg_dataset.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./check_stage1_submission.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./run_drivelm_799_det_one_sample.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./run_drivelm_799_det_all.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./evaluate_drivelm_799_det_subset.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./fix_and_run_bevformer_val_6019.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./test_bevformer_temporal_pair.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./test_bevformer_temporal_batch.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./run_bev_seg_one_sample.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./run_bev_seg_minival.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./run_drivelm_799_seg_all.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./diagnose_bev_seg_miou.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./audit_bev_seg_geometry.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./audit_bev_slicer_coordinates.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./extract_bev_features.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./extract_attention_targets.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./generate_bev_attention.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./test_bev_attention_fusion.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./visualize_nuscenes.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./visualize_nuscenes_boxes.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./visualize_lidar_bev.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./visualize_drivelm.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./visualize_bevformer_predictions.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./make_logbook_day2.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./make_logbook_figures.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "./make_stage1_reports.py"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "../docs/stage1/00_阶段一交付导航.md"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "../docs/stage1/01_DriveLM数据集结构与标注说明.md"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "../docs/stage1/02_BEVFormer原理与代码结构.md"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "../docs/stage1/03_基线性能测试报告.md"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "../docs/stage1/06_第一阶段周报_2026-10-13.md"
+      },
+      {
+        "document": "scripts/README.md",
+        "target": "../docs/logbook_2026-10-13.md"
+      },
+      {
+        "document": "scripts/README_使用说明.md",
+        "target": "stage2/README.md"
+      },
+      {
+        "document": "scripts/README_使用说明.md",
+        "target": "../docs/stage2/17_第二阶段复现指引.md"
+      },
+      {
+        "document": "scripts/README_使用说明.md",
+        "target": "../results/stage2_2026-10-21/regression_2026-10-21.json"
+      },
+      {
+        "document": "scripts/README_使用说明.md",
+        "target": "../docs/stage2/18_提交前审查与回归_2026-10-21.md"
+      },
+      {
+        "document": "scripts/stage2/README.md",
+        "target": "../../docs/stage2/02_第二阶段原始任务书.md"
+      },
+      {
+        "document": "scripts/stage2/README.md",
+        "target": "../../docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md"
+      },
+      {
+        "document": "scripts/stage2/README.md",
+        "target": "../../docs/stage2/22_第二阶段Git交付检查_2026-10-23.md"
+      },
+      {
+        "document": "scripts/stage2/README.md",
+        "target": "../../results/stage2_final_audit_2026-10-22/README.md"
+      },
+      {
+        "document": "scripts/stage2/README.md",
+        "target": "../../results/stage2_delivery_2026-10-23/README.md"
+      },
+      {
+        "document": "scripts/stage2/README.md",
+        "target": "../../docs/stage2/17_第二阶段复现指引.md"
+      },
+      {
+        "document": "scripts/stage2/README_使用说明.md",
+        "target": "README.md"
+      },
+      {
+        "document": "scripts/stage2/README_使用说明.md",
+        "target": "../../docs/stage2/17_第二阶段复现指引.md"
+      },
+      {
+        "document": "scripts/stage2/README_使用说明.md",
+        "target": "../../docs/stage2/22_第二阶段Git交付检查_2026-10-23.md"
+      }
+    ],
+    "local_asset_not_on_github": [
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../outputs/stage2_oom_fix_20261022_static/old_run_evidence.json",
+        "stored_in_verified_bundle": true
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../outputs/stage2_oom_fix_20261022_static/metadata_equality.json",
+        "stored_in_verified_bundle": true
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../outputs/stage2_oom_fix_20261022_step1/run.json",
+        "stored_in_verified_bundle": true
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../outputs/stage2_oom_fix_20261022_step1/protocol/protocol.json",
+        "stored_in_verified_bundle": true
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../outputs/stage2_oom_fix_20261022_step1/train/training.jsonl",
+        "stored_in_verified_bundle": true
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../outputs/stage2_oom_fix_20261022_step1/train/memory.jsonl",
+        "stored_in_verified_bundle": true
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../outputs/stage2_oom_fix_20261022_step1/train/watchdog.jsonl",
+        "stored_in_verified_bundle": true
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../outputs/stage2_oom_fix_20261022_step1/train/process_summary.json",
+        "stored_in_verified_bundle": true
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../outputs/stage2_oom_fix_20261022_step1/train/step1_gate.json",
+        "stored_in_verified_bundle": true
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../outputs/stage2_oom_fix_20261022_step1/train/integrity.json",
+        "stored_in_verified_bundle": true
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../outputs/stage2_oom_fix_20261022_step1/verification.json",
+        "stored_in_verified_bundle": true
+      },
+      {
+        "document": "docs/stage2_oom_fix_20261022.md",
+        "target": "../outputs/stage2_oom_fix_20261022_step1/train/fusion_step001.pt",
+        "stored_in_verified_bundle": true
+      }
+    ],
+    "external_not_fetched": [
+      {
+        "document": "STAGE1_OVERVIEW.md",
+        "target": "https://github.com/fundamentalvision/BEVFormer"
+      },
+      {
+        "document": "STAGE1_OVERVIEW.md",
+        "target": "https://github.com/OpenDriveLab/DriveLM"
+      },
+      {
+        "document": "STAGE1_OVERVIEW.md",
+        "target": "https://github.com/nutonomy/nuscenes-devkit"
+      },
+      {
+        "document": "docs/stage1/01_DriveLM数据集结构与标注说明.md",
+        "target": "https://github.com/OpenDriveLab/DriveLM"
+      },
+      {
+        "document": "docs/stage1/01_DriveLM数据集结构与标注说明.md",
+        "target": "https://github.com/OpenDriveLab/DriveLM/blob/main/challenge/README.md"
+      },
+      {
+        "document": "docs/stage1/01_DriveLM数据集结构与标注说明.md",
+        "target": "https://github.com/fundamentalvision/BEVFormer"
+      },
+      {
+        "document": "docs/stage1/01_DriveLM数据集结构与标注说明.md",
+        "target": "https://www.nuscenes.org/"
+      },
+      {
+        "document": "docs/stage1/02_BEVFormer原理与代码结构.md",
+        "target": "https://github.com/fundamentalvision/BEVFormer"
+      },
+      {
+        "document": "docs/stage1/02_BEVFormer原理与代码结构.md",
+        "target": "https://arxiv.org/abs/2203.17270"
+      },
+      {
+        "document": "docs/stage1/02_BEVFormer原理与代码结构.md",
+        "target": "https://github.com/fundamentalvision/BEVFormer/tree/master/docs"
+      },
+      {
+        "document": "docs/stage1/03_基线性能测试报告.md",
+        "target": "https://github.com/fundamentalvision/BEVFormer"
+      },
+      {
+        "document": "docs/stage1/03_基线性能测试报告.md",
+        "target": "https://github.com/OpenDriveLab/DriveLM/blob/main/challenge/README.md"
+      },
+      {
+        "document": "docs/stage1/03_基线性能测试报告.md",
+        "target": "https://github.com/nutonomy/nuscenes-devkit"
+      },
+      {
+        "document": "docs/stage1/06_第一阶段周报_2026-10-13.md",
+        "target": "https://github.com/JiaxuanJin/bev_vla_internship"
+      }
+    ],
+    "errors": []
+  },
+  "dependency_versions": {
+    "transformers": "4.44.2",
+    "huggingface-hub": "0.25.2",
+    "safetensors": "0.4.5",
+    "pytest": "9.1.1",
+    "matplotlib": "3.5.2",
+    "torch": "2.8.0+cu128",
+    "numpy": "1.26.4"
+  },
+  "core_python_files_unchanged": 43,
+  "frozen_files_unchanged": 165,
+  "index_unchanged": true,
+  "archive": {
+    "path": "outputs/stage2_delivery_20261022/stage2_delivery_20261022.tar.gz",
+    "sha256": "99b58c982111d244e07aee3940c887303c9406928cc0c2c7a1acd9bc49f3b54a",
+    "members_verified": 270,
+    "large_asset_members": 28
+  },
+  "cached_head_origin_main_difference": "0\t0",
+  "remote_live_checked": false,
+  "new_optimizer_steps": 0,
+  "new_inference_calls": 0,
+  "git_diff_check_exit_code": 0
+}

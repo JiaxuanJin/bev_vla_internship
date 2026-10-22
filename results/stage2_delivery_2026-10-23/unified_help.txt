@@ -1,0 +1,42 @@
+usage: run_stage2.py [-h] --mode
+                     {cpu-tests,offline-bev,joint,joint-backward,micro-train}
+                     [--model MODEL] [--bev BEV] [--text TEXT]
+                     [--device {cpu,cuda}] [--author-root AUTHOR_ROOT]
+                     [--joint-checkpoint JOINT_CHECKPOINT]
+                     [--joint-config JOINT_CONFIG] [--index INDEX]
+                     [--seed SEED] [--output OUTPUT]
+                     [--micro-phase {step,protocol,continue,validate,smoke}]
+                     [--micro-steps MICRO_STEPS] [--protocol PROTOCOL]
+                     [--resume RESUME] [--fusion-checkpoint FUSION_CHECKPOINT]
+                     [--attention-tv-weight ATTENTION_TV_WEIGHT]
+                     [--min-host-available-mib MIN_HOST_AVAILABLE_MIB]
+                     [--min-cuda-free-mib MIN_CUDA_FREE_MIB]
+                     [--max-worker-rss-mib MAX_WORKER_RSS_MIB]
+
+阶段二统一入口：CPU 回归、真实离线文本/BEV、真实联合双 Head。
+
+options:
+  -h, --help            show this help message and exit
+  --mode {cpu-tests,offline-bev,joint,joint-backward,micro-train}
+  --model MODEL
+  --bev BEV
+  --text TEXT           可重复指定；joint 单帧只接受一条指令
+  --device {cpu,cuda}
+  --author-root AUTHOR_ROOT
+  --joint-checkpoint JOINT_CHECKPOINT
+  --joint-config JOINT_CONFIG
+  --index INDEX
+  --seed SEED
+  --output OUTPUT
+  --micro-phase {step,protocol,continue,validate,smoke}
+  --micro-steps MICRO_STEPS
+                        Additional updates; fresh run is restricted to one
+  --protocol PROTOCOL
+  --resume RESUME
+  --fusion-checkpoint FUSION_CHECKPOINT
+                        smoke 加载独立融合权重，不创建优化器
+  --attention-tv-weight ATTENTION_TV_WEIGHT
+                        仅用于新协议的 TV 权重；默认 0 保持历史损失
+  --min-host-available-mib MIN_HOST_AVAILABLE_MIB
+  --min-cuda-free-mib MIN_CUDA_FREE_MIB
+  --max-worker-rss-mib MAX_WORKER_RSS_MIB

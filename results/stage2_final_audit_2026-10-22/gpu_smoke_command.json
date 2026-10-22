@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/home/jjx2003520/projects/bevformer_author_clean_5080/.venv-author/bin/python",
+    "scripts/stage2/run_stage2.py",
+    "--mode",
+    "micro-train",
+    "--micro-phase",
+    "smoke",
+    "--attention-tv-weight",
+    "0.001",
+    "--fusion-checkpoint",
+    "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step020.pt",
+    "--seed",
+    "20261021",
+    "--output",
+    "outputs/stage2_final_audit_20261022_smoke/run.json"
+  ],
+  "exit_code": 0,
+  "status": "PASS_REAL_INTEGRATION_SMOKE_NO_UPDATE",
+  "optimizer_steps": 0
+}

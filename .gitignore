@@ -33,6 +33,8 @@ outputs/
 build_logs/
 installers/
 *.log
+# 第二阶段已审查的小型测试日志；大型实验目录仍由 outputs/ 排除。
+!results/stage2_final_audit_2026-10-22/*.log
 *.bak
 /docs/backups/
 

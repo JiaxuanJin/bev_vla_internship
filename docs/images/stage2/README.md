@@ -1,3 +1,7 @@
+# 当前交付图表导航（2026-10-23）
+
+[真实20步Loss与固定6帧A/B图表及说明](../../../results/stage2_delivery_2026-10-23/README.md) 由旧TV=0训练JSONL和验证NPZ离线生成，未重新推理。新TV=0.001 smoke证据另见 [严格审查证据](../../../results/stage2_final_audit_2026-10-22/README.md)。下方图表保留各历史实验设置，不与当前6帧跨checkpoint/协议直接比较。
+
 # 第二阶段实验图片索引
 
 Markdown 使用相对路径引用本目录图片。四张 PNG 来自已有 Step62 实验，未重新生成或修饰；两张 SVG 是可编辑的架构/数值摘要图。

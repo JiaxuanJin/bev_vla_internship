@@ -1,0 +1,459 @@
+{
+  "timestamp_utc": "2026-10-22T05:40:54.615148+00:00",
+  "mode": "micro-train",
+  "seed": 20261021,
+  "python": "/home/jjx2003520/projects/bevformer_author_clean_5080/.venv-author/bin/python",
+  "torch": "2.8.0+cu128",
+  "cuda_available": true,
+  "command": [
+    "/home/jjx2003520/projects/bevformer_author_clean_5080/.venv-author/bin/python",
+    "/home/jjx2003520/projects/bev_vla/results/stage2_final_audit_2026-10-22/legacy_source/scripts/stage2/run_stage2.py",
+    "--mode",
+    "micro-train",
+    "--micro-worker",
+    "validate",
+    "--protocol",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_oom_fix_20261022_step1/protocol/protocol.json",
+    "--resume",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_oom_fix_20261022_continue/continue/fusion_step020.pt",
+    "--seed",
+    "20261021",
+    "--model",
+    "/home/jjx2003520/projects/bev_vla/models/distilbert-base-uncased",
+    "--min-host-available-mib",
+    "2048",
+    "--max-worker-rss-mib",
+    "11264",
+    "--output",
+    "/home/jjx2003520/projects/bev_vla/outputs/stage2_final_audit_20261022_legacy_replay/result.json"
+  ],
+  "random_seed_scope": "Python random, NumPy and torch before dataset construction; fusion torch seed reset",
+  "python_version": "3.10.12",
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.44.2",
+    "numpy": "1.26.4",
+    "mmcv-full": "1.4.0",
+    "mmdet": "2.14.0",
+    "mmdet3d": "0.17.1",
+    "pytest": "NOT_INSTALLED"
+  },
+  "source_sha256": {
+    "scripts/stage2/__init__.py": "260240bb1aa01534c89bde22cdd82dcd887a4415554ff42a56f016ad80cf0d25",
+    "scripts/stage2/bev_coordinates.py": "c69e0466c1b63b42621042f073e8728f1270cdcca55e327810eb1124e56d3cb5",
+    "scripts/stage2/bev_fusion.py": "f0debeaf460b9e17f5d59645e930e420608191b2d95a906eb1cbc98f76055c8a",
+    "scripts/stage2/download_distilbert.py": "19eb6bb8261dfab6b6533aded84aa09078016bd2cecd9266cabc5d67559aef93",
+    "scripts/stage2/joint_runtime.py": "100e5c5b625d2bba275d45aee23cc7734545a0db1d68538e1e0c3e17c3ea9330",
+    "scripts/stage2/language_bev_attention.py": "9837e7d994ed0cc91043e560287afcb1cb59d5f2311820f7f68bc8288cbf9a88",
+    "scripts/stage2/language_encoder.py": "93d3240c40f3fa59a8eda85460cb0eb038d77de71a0d097c6b885e1a9fd17478",
+    "scripts/stage2/low_memory_dataset.py": "59cadce7ce1b54d91e003e5de3d0c23285b7d7dca31d025e6ede96e7a2f064e5",
+    "scripts/stage2/micro_process.py": "5f9d58a4a6029b7f6610d30fa2846a2291e837844d3c34d1fe1f6483c996b29e",
+    "scripts/stage2/micro_report.py": "f9e9276ee9b15de0a7b4accda332662af68693af81b4dcd005b81aeb489e9153",
+    "scripts/stage2/micro_training.py": "42ef1fea47984636685c4026488ba38d1b969c2a3c9cf05faa9879072b1a3276",
+    "scripts/stage2/multitask_loss.py": "55fd282f25feb3ba2137e46e2fac340de27029f0b44b0a067bc97e15b53a1fff",
+    "scripts/stage2/multitask_training.py": "6dcba2ba7d723bd72603d065ebf86cbffed2bfbbdc080f0a47ec3f0c599a0658",
+    "scripts/stage2/pipeline.py": "3ee5d0d36d67bf4bf95fb2cb697f36d5d651d2b1b87124f1f687cdb62932fd75",
+    "scripts/stage2/run_day1.py": "05e47138f6540d0a97f44e096cd7e47f2c64404e34852a8d114a500e977fb449",
+    "scripts/stage2/run_regression.py": "73a4b72ee4408cb1653a4ef846dae2d1d81ea104bafa00d2a5c057c85323a427",
+    "scripts/stage2/run_stage2.py": "53ece0f15b401290020ced21a13cdce10e1a3af4bb0d5744b55085a697232023",
+    "scripts/stage2/run_step56_smoke.py": "50b0d3ea20c066f5628f563bf5925091f75dd3a48bfe5a816977d501f180528b",
+    "scripts/stage2/run_step57_distilbert.py": "032f7dc963114095c59bdaa0369ac256a3f3005809a2444d27199706d1a38976",
+    "scripts/stage2/run_step58_author_inference.py": "dd54ee6620e2b242632e5e7a0dec51f5ac986c7c3b6c3d70ce9831a215a007ad",
+    "scripts/stage2/run_step58_prepare_text.py": "2a030b0afa33102a6572dcf660eb0ce5852abfc32ea440928912fbb12f43c835",
+    "scripts/stage2/run_step59_train.py": "f1104b7226afc5132278f4062051f79b22615299166b58bed541a0a89824f3fc",
+    "scripts/stage2/run_step60_extended_ab.py": "cf8b4b13236805f53c7245643ef9dc9eb9f30dbb3105b835435113f22935064a",
+    "scripts/stage2/run_step61_prepare_text.py": "3e2f2437dd0e0564ef42d9bbff32c642aa7ad411734f70f900c2981e2e360fe5",
+    "scripts/stage2/run_step61_supervised_train.py": "1b2407da06b892320c66c2e501c57c4d67cb885a665821098a4726af625fc231",
+    "scripts/stage2/run_step62_attention_diagnostic.py": "b47a5fffefb337eea6a4743f3466f539a746634a2d723545dbc9c457e32cf051",
+    "scripts/stage2/run_step64_balanced_train.py": "2131f32bd344d5863f8ed2f1670a64e287aa598c7b1c98571c7d1b9f854fb836",
+    "scripts/stage2/run_step65_literature_adapter.py": "6a9540224806850e9c1b9374ab44f3c26d6b20c29812516df7f1bc6c06eb0bef",
+    "scripts/stage2/run_step67_three_in_one.py": "c2aef5b45a53ef88eeb351af1b586be4c3891d63dbfa1cc5535059108417bd0d",
+    "scripts/stage2/run_step68_acceptance.py": "d69bb3cba4de2d0a709040ded33d1dc63956a5cdf9809973a93e3e25ee7e7367",
+    "scripts/stage2/run_step69_loss_contract.py": "133a398950602501b4bc6b30acf4e178a2a51e31599a96bca2b7dc1ff088c7b1",
+    "scripts/stage2/run_step70_joint_integration.py": "33b67a5f3309dddd180d43912533052af0b58f9bac76dc5082b991b8b9c112b6",
+    "scripts/stage2/run_step71_stage2_review.py": "9e143b7fe4384c9e69dc33fc87b616f08c0868699a524fac8890394ca3e23bab",
+    "scripts/stage2/run_step72_real_joint_gradient.py": "32a2f4cd802b2122c4641aabea7145177853700c80a43258d0c3fa20575543a9",
+    "scripts/stage2/run_step73_fill_gaps.py": "70d457adf15793809819c7844dced4832a56162b64d50ae7d5974715376314db",
+    "scripts/stage2/runtime_memory.py": "fa96817f0cc9817511c351d5f366c68be87eaa0df369eab81e1fb09846579bc1",
+    "scripts/stage2/semantic_instruction.py": "d1c46f5783bdc01ed622e9d2c8774a072e0c8344373cf94d81f4d2f185fcc65c",
+    "scripts/stage2/semantic_projection.py": "2e5c6d14285bc115bd73b867db21ab1203747e7418f79239c67c9fccefb957c6",
+    "scripts/stage2/step66_background_safe_train.py": "3c13fb5e976f65221fa7a67ecf415a03ea6dd3a1b06cca751866368b7f256263",
+    "scripts/stage2/step70b_prepare_joint.py": "fce150eb21cda9eaac49beaf13f13a9f875c45fc76803bf3700a4ed72baccb1a"
+  },
+  "status": "PASS_FIXED_AB",
+  "optimizer_steps": 0,
+  "ab": {
+    "metrics": {
+      "original": {
+        "segmentation": {
+          "class_iou": {
+            "Background": 0.8073767296376303,
+            "Divider": 0.3516767323585505,
+            "Ped Crossing": 0.26446442533229086,
+            "Boundary": 0.33183684350839776
+          },
+          "foreground_miou": 0.31599266706641305,
+          "four_class_miou": 0.43883868270921733,
+          "background_false_positive_rate": 0.16631503174185971,
+          "confusion_matrix_gt_rows_pred_columns": [
+            [
+              352076,
+              11916,
+              6112,
+              52209
+            ],
+            [
+              3915,
+              8851,
+              116,
+              180
+            ],
+            [
+              482,
+              51,
+              2706,
+              186
+            ],
+            [
+              9364,
+              139,
+              579,
+              31118
+            ]
+          ],
+          "status": "DIAGNOSTIC_SAME_AUTHOR_RASTER_PROTOCOL",
+          "physical_alignment": "NOT_VERIFIED"
+        },
+        "detection": {
+          "tp": 207,
+          "fp": 599,
+          "fn": 35,
+          "matched_xy_error_sum_m": 171.9488541483879,
+          "precision_at_2m": 0.25682382133995035,
+          "recall_at_2m": 0.8553719008264463,
+          "mean_matched_xy_error_m": 0.8306707929873812,
+          "status": "DIAGNOSTIC_FIXED_SCORE_0.1_CLASSWISE_XY_2M",
+          "official_nuscenes_map_nds": "NOT_VERIFIED"
+        }
+      },
+      "untrained": {
+        "segmentation": {
+          "class_iou": {
+            "Background": 0.8073767296376303,
+            "Divider": 0.3516767323585505,
+            "Ped Crossing": 0.26446442533229086,
+            "Boundary": 0.33183684350839776
+          },
+          "foreground_miou": 0.31599266706641305,
+          "four_class_miou": 0.43883868270921733,
+          "background_false_positive_rate": 0.16631503174185971,
+          "confusion_matrix_gt_rows_pred_columns": [
+            [
+              352076,
+              11916,
+              6112,
+              52209
+            ],
+            [
+              3915,
+              8851,
+              116,
+              180
+            ],
+            [
+              482,
+              51,
+              2706,
+              186
+            ],
+            [
+              9364,
+              139,
+              579,
+              31118
+            ]
+          ],
+          "status": "DIAGNOSTIC_SAME_AUTHOR_RASTER_PROTOCOL",
+          "physical_alignment": "NOT_VERIFIED"
+        },
+        "detection": {
+          "tp": 207,
+          "fp": 599,
+          "fn": 35,
+          "matched_xy_error_sum_m": 171.9488541483879,
+          "precision_at_2m": 0.25682382133995035,
+          "recall_at_2m": 0.8553719008264463,
+          "mean_matched_xy_error_m": 0.8306707929873812,
+          "status": "DIAGNOSTIC_FIXED_SCORE_0.1_CLASSWISE_XY_2M",
+          "official_nuscenes_map_nds": "NOT_VERIFIED"
+        }
+      },
+      "trained": {
+        "segmentation": {
+          "class_iou": {
+            "Background": 0.8073827257884019,
+            "Divider": 0.3516627597441297,
+            "Ped Crossing": 0.2643408580084042,
+            "Boundary": 0.3318510461321902
+          },
+          "foreground_miou": 0.31595155462824137,
+          "four_class_miou": 0.4388093474182815,
+          "background_false_positive_rate": 0.16631266382990814,
+          "confusion_matrix_gt_rows_pred_columns": [
+            [
+              352077,
+              11917,
+              6112,
+              52207
+            ],
+            [
+              3915,
+              8851,
+              116,
+              180
+            ],
+            [
+              482,
+              51,
+              2705,
+              187
+            ],
+            [
+              9362,
+              139,
+              580,
+              31119
+            ]
+          ],
+          "status": "DIAGNOSTIC_SAME_AUTHOR_RASTER_PROTOCOL",
+          "physical_alignment": "NOT_VERIFIED"
+        },
+        "detection": {
+          "tp": 207,
+          "fp": 599,
+          "fn": 35,
+          "matched_xy_error_sum_m": 171.95133201405406,
+          "precision_at_2m": 0.25682382133995035,
+          "recall_at_2m": 0.8553719008264463,
+          "mean_matched_xy_error_m": 0.8306827633529181,
+          "status": "DIAGNOSTIC_FIXED_SCORE_0.1_CLASSWISE_XY_2M",
+          "official_nuscenes_map_nds": "NOT_VERIFIED"
+        }
+      },
+      "shuffled": {
+        "segmentation": {
+          "class_iou": {
+            "Background": 0.8073804325891137,
+            "Divider": 0.3516745461046442,
+            "Ped Crossing": 0.2643666927286943,
+            "Boundary": 0.3318545850084779
+          },
+          "foreground_miou": 0.3159652746139388,
+          "four_class_miou": 0.4388190641077325,
+          "background_false_positive_rate": 0.16631503174185971,
+          "confusion_matrix_gt_rows_pred_columns": [
+            [
+              352076,
+              11919,
+              6112,
+              52206
+            ],
+            [
+              3914,
+              8852,
+              116,
+              180
+            ],
+            [
+              482,
+              51,
+              2705,
+              187
+            ],
+            [
+              9363,
+              139,
+              579,
+              31119
+            ]
+          ],
+          "status": "DIAGNOSTIC_SAME_AUTHOR_RASTER_PROTOCOL",
+          "physical_alignment": "NOT_VERIFIED"
+        },
+        "detection": {
+          "tp": 207,
+          "fp": 599,
+          "fn": 35,
+          "matched_xy_error_sum_m": 171.95137973874807,
+          "precision_at_2m": 0.25682382133995035,
+          "recall_at_2m": 0.8553719008264463,
+          "mean_matched_xy_error_m": 0.8306829939069955,
+          "status": "DIAGNOSTIC_FIXED_SCORE_0.1_CLASSWISE_XY_2M",
+          "official_nuscenes_map_nds": "NOT_VERIFIED"
+        }
+      }
+    },
+    "frames": [
+      {
+        "index": 0,
+        "token": "3e8750f331d7499e9b5123e9eb70f2e2",
+        "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+        "scene_name": "scene-0103",
+        "text": "Find lane markings",
+        "target_class": 1,
+        "cameras": {
+          "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151603512404.jpg",
+          "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_RIGHT__1533151603520482.jpg",
+          "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_LEFT__1533151603504799.jpg",
+          "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-01-15-16-36-0400__CAM_BACK__1533151603537558.jpg",
+          "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-01-15-16-36-0400__CAM_BACK_LEFT__1533151603547405.jpg",
+          "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_BACK_RIGHT__1533151603528113.jpg"
+        },
+        "artifact": "val_000.npz",
+        "sha256": "9efb474170fd91e33df30899f4781b449fa9aac1e88f5426d224e4b402074233",
+        "gt_sha256": "320f138e01f1eae76ca6480e488220e8cdf34fdcbf1024e45af5259febef3d91",
+        "zero_init_max_abs": {
+          "seg_preds": 0.0,
+          "all_cls_scores": 0.0,
+          "all_bbox_preds": 0.0
+        },
+        "changed_pixels_trained_vs_original": 2,
+        "changed_pixels_shuffled_vs_trained": 0
+      },
+      {
+        "index": 16,
+        "token": "0a0d6b8c2e884134a3b48df43d54c36a",
+        "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+        "scene_name": "scene-0103",
+        "text": "Locate pedestrian crossings",
+        "target_class": 2,
+        "cameras": {
+          "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151611412404.jpg",
+          "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_RIGHT__1533151611420482.jpg",
+          "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_LEFT__1533151611404799.jpg",
+          "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-01-15-16-36-0400__CAM_BACK__1533151611437558.jpg",
+          "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-01-15-16-36-0400__CAM_BACK_LEFT__1533151611447405.jpg",
+          "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_BACK_RIGHT__1533151611428113.jpg"
+        },
+        "artifact": "val_016.npz",
+        "sha256": "b2f9a65c05bb1a2b86dadd766587974c9ff27e0943bcd0eb774ea6603cf6931f",
+        "gt_sha256": "9a648c92a4a5baf7deaa8f3e62d8e8eb89b5634878a681df03a863279e609e84",
+        "zero_init_max_abs": {
+          "seg_preds": 0.0,
+          "all_cls_scores": 0.0,
+          "all_bbox_preds": 0.0
+        },
+        "changed_pixels_trained_vs_original": 5,
+        "changed_pixels_shuffled_vs_trained": 5
+      },
+      {
+        "index": 32,
+        "token": "ce94ef7a0522468e81c0e2b3a2f1e12d",
+        "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+        "scene_name": "scene-0103",
+        "text": "Find road boundaries",
+        "target_class": 3,
+        "cameras": {
+          "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151619412404.jpg",
+          "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_RIGHT__1533151619420482.jpg",
+          "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_LEFT__1533151619404799.jpg",
+          "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-01-15-16-36-0400__CAM_BACK__1533151619437558.jpg",
+          "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-01-15-16-36-0400__CAM_BACK_LEFT__1533151619447405.jpg",
+          "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_BACK_RIGHT__1533151619428113.jpg"
+        },
+        "artifact": "val_032.npz",
+        "sha256": "5ee593940d996b4fe88f74243a85d075667a057339551ceef587f58301a70547",
+        "gt_sha256": "320989bbcd22450d2a9e55379a85827955630243f41837d416297c15f2e82aa9",
+        "zero_init_max_abs": {
+          "seg_preds": 0.0,
+          "all_cls_scores": 0.0,
+          "all_bbox_preds": 0.0
+        },
+        "changed_pixels_trained_vs_original": 8,
+        "changed_pixels_shuffled_vs_trained": 3
+      },
+      {
+        "index": 48,
+        "token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+        "scene_token": "325cef682f064c55a255f2625c533b75",
+        "scene_name": "scene-0916",
+        "text": "Find lane markings",
+        "target_class": 1,
+        "cameras": {
+          "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984237412460.jpg",
+          "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984237420339.jpg",
+          "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984237404844.jpg",
+          "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984237437525.jpg",
+          "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984237447423.jpg",
+          "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984237427893.jpg"
+        },
+        "artifact": "val_048.npz",
+        "sha256": "0789e445b86da6c7e16c63d5a703bcf322d02ece54e72e40d3647fd6ab5e5c8d",
+        "gt_sha256": "dd4b8c8069dd33b635da314adbb19118cc9a9217f30ae0512d9e34db04ee386e",
+        "zero_init_max_abs": {
+          "seg_preds": 0.0,
+          "all_cls_scores": 0.0,
+          "all_bbox_preds": 0.0
+        },
+        "changed_pixels_trained_vs_original": 6,
+        "changed_pixels_shuffled_vs_trained": 4
+      },
+      {
+        "index": 64,
+        "token": "55c258972acb4300a3a6077a531ab050",
+        "scene_token": "325cef682f064c55a255f2625c533b75",
+        "scene_name": "scene-0916",
+        "text": "Locate pedestrian crossings",
+        "target_class": 2,
+        "cameras": {
+          "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984245412460.jpg",
+          "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984245420339.jpg",
+          "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984245404844.jpg",
+          "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984245437525.jpg",
+          "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984245447423.jpg",
+          "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984245427893.jpg"
+        },
+        "artifact": "val_064.npz",
+        "sha256": "4e92504b32c1565ad5e7f0bf310209c37d9ed22a25d50fd263b8139508f34084",
+        "gt_sha256": "f62684785c27c37570a993b4cb6236b30d533e8b12841ce428a922497de7661d",
+        "zero_init_max_abs": {
+          "seg_preds": 0.0,
+          "all_cls_scores": 0.0,
+          "all_bbox_preds": 0.0
+        },
+        "changed_pixels_trained_vs_original": 1,
+        "changed_pixels_shuffled_vs_trained": 2
+      },
+      {
+        "index": 80,
+        "token": "b4ff30109dd14c89b24789dc5713cf8c",
+        "scene_token": "325cef682f064c55a255f2625c533b75",
+        "scene_name": "scene-0916",
+        "text": "Find road boundaries",
+        "target_class": 3,
+        "cameras": {
+          "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984253412460.jpg",
+          "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984253420339.jpg",
+          "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984253404844.jpg",
+          "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984253437525.jpg",
+          "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984253447423.jpg",
+          "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984253427893.jpg"
+        },
+        "artifact": "val_080.npz",
+        "sha256": "8cc530ae63e564383fe3575b87ddd295a6be065cf19705c2f82218921a465dfc",
+        "gt_sha256": "fb93a3abc5fc02ffdebfbc5464cebd42f559b7eb6f09f51ba3c53041f69b58e3",
+        "zero_init_max_abs": {
+          "seg_preds": 0.0,
+          "all_cls_scores": 0.0,
+          "all_bbox_preds": 0.0
+        },
+        "changed_pixels_trained_vs_original": 3,
+        "changed_pixels_shuffled_vs_trained": 2
+      }
+    ]
+  },
+  "checkpoint_sha256": "1345919901785b8df7ee16838d62f9f7a00444c9d8061f0dbee712d1b1b67dcf",
+  "checkpoint_sha256_after": "1345919901785b8df7ee16838d62f9f7a00444c9d8061f0dbee712d1b1b67dcf",
+  "checkpoint_modified": false
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "path": "docs/images/stage2/stage2_audited_architecture_20261022.svg",
+    "kind": "new",
+    "before_sha256": null,
+    "after_sha256": "accdb8a22f49e4847dce6b1774bc6fe761051043a25404f9d0f3a1ae1f2aa35f"
+  },
+  {
+    "path": "docs/logbook_2026-10-22.md",
+    "kind": "new",
+    "before_sha256": null,
+    "after_sha256": "8f5ceaa0141af512408b29aced0c5b04e679037d94f1318b67d76cacadfc0dda"
+  },
+  {
+    "path": "docs/stage2/11_模块架构设计.md",
+    "kind": "modified",
+    "before_sha256": "7d8b276c292eeb00424584fd56fdc00de9edfb630b100925812620a43de23192",
+    "after_sha256": "dd6723c1046023d03cf4ec4008a0605b947105e92c9f97b3b5ac8219231bd25c"
+  },
+  {
+    "path": "docs/stage2/12_单元测试报告.md",
+    "kind": "modified",
+    "before_sha256": "e48968d022eefa7249596dc8e2cb98bdfdec86363035467c7d939efdd4cc25d5",
+    "after_sha256": "493b716256c36fce53c2cc54b723b9bc69d491c212fb491ae41c99f48ab3113f"
+  },
+  {
+    "path": "docs/stage2/13_阶段二任务对照.md",
+    "kind": "modified",
+    "before_sha256": "0076688043486e7b15f05abceb3eadb5df9608d8c2f855cb5cbce989071b590a",
+    "after_sha256": "f7618d8d7ba10307ebd75c691a717cc312a76712f98c2aafaf4673282e6c1e10"
+  },
+  {
+    "path": "docs/stage2/17_第二阶段复现指引.md",
+    "kind": "modified",
+    "before_sha256": "646ec4c7d3d9f1af1aa923cabff1911b3db8e199b127ebaccda0237489b01302",
+    "after_sha256": "e066b05812942e6cc1c0d482b441a38f6fd61d4f848d73d226fae280147696ca"
+  },
+  {
+    "path": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+    "kind": "new",
+    "before_sha256": null,
+    "after_sha256": "c60c13a5e96cd5007862d78ba7998b9c3bf96bc29d79a153b8e02b5a3a3bf57d"
+  },
+  {
+    "path": "scripts/stage2/audit_stage2_evidence.py",
+    "kind": "new",
+    "before_sha256": null,
+    "after_sha256": "2e6bcbf3f994fac2f89fcd3a64c7025f0ceeee68f7e005f111234ee07cac122c"
+  },
+  {
+    "path": "scripts/stage2/integration_smoke.py",
+    "kind": "new",
+    "before_sha256": null,
+    "after_sha256": "7a3b44366d7e54a9e41f5a127afd1e1d2b838d366eca0cdb963668608d9ee915"
+  },
+  {
+    "path": "scripts/stage2/joint_runtime.py",
+    "kind": "modified",
+    "before_sha256": "100e5c5b625d2bba275d45aee23cc7734545a0db1d68538e1e0c3e17c3ea9330",
+    "after_sha256": "9fe1674f790fad5334641ddae9f4f7241f47b289dd4adf68b7b2676e43553f54"
+  },
+  {
+    "path": "scripts/stage2/micro_process.py",
+    "kind": "modified",
+    "before_sha256": "5f9d58a4a6029b7f6610d30fa2846a2291e837844d3c34d1fe1f6483c996b29e",
+    "after_sha256": "904b9dc2b0dec6a2c4068552c9c23c5d63423ab27331a1ee00d00dcc13b4ab4c"
+  },
+  {
+    "path": "scripts/stage2/micro_training.py",
+    "kind": "modified",
+    "before_sha256": "42ef1fea47984636685c4026488ba38d1b969c2a3c9cf05faa9879072b1a3276",
+    "after_sha256": "63f026953ebb109d4350c2c23b93e52dc04964fb589095c26a4d2a3a78aeb866"
+  },
+  {
+    "path": "scripts/stage2/multitask_training.py",
+    "kind": "modified",
+    "before_sha256": "6dcba2ba7d723bd72603d065ebf86cbffed2bfbbdc080f0a47ec3f0c599a0658",
+    "after_sha256": "675f66b7a0bb4bacb97e87ccfaa69f1b4f3f1eac8514851d087020b215d1d6f5"
+  },
+  {
+    "path": "scripts/stage2/replay_stage2.py",
+    "kind": "new",
+    "before_sha256": null,
+    "after_sha256": "e885c392690b24cf1ad2a7bcd2f19c75c551f10c6138a7387d552edf17750a8b"
+  },
+  {
+    "path": "scripts/stage2/run_stage2.py",
+    "kind": "modified",
+    "before_sha256": "53ece0f15b401290020ced21a13cdce10e1a3af4bb0d5744b55085a697232023",
+    "after_sha256": "fa0c640c7deff7b1e1b35f0b70c28761818630e9838afb2cde54cddb99ea9b2c"
+  },
+  {
+    "path": "scripts/stage2/run_step69_loss_contract.py",
+    "kind": "modified",
+    "before_sha256": "133a398950602501b4bc6b30acf4e178a2a51e31599a96bca2b7dc1ff088c7b1",
+    "after_sha256": "472ff2ef3d7b929d4f53cd2cb50f0922a80afaa2958f2ff106439504654f24d3"
+  },
+  {
+    "path": "scripts/stage2/semantic_instruction.py",
+    "kind": "modified",
+    "before_sha256": "d1c46f5783bdc01ed622e9d2c8774a072e0c8344373cf94d81f4d2f185fcc65c",
+    "after_sha256": "94d90ce8b2fe10f812034f70076ddd70c8db2b4a4ec3db86cd2ae72ffe03c15b"
+  },
+  {
+    "path": "tests/test_stage2_final_audit.py",
+    "kind": "new",
+    "before_sha256": null,
+    "after_sha256": "5a75cfb4a9216f48e55cf57850965f3d721f578c472653a4b35618ec738344e0"
+  }
+]

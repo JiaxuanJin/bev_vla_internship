@@ -9,26 +9,42 @@ from __future__ import annotations
 import re
 from dataclasses import asdict, dataclass
 
-
 ALIASES: dict[str, tuple[str, ...]] = {
     "divider": (
-        "lane dividers", "lane divider", "lane markings", "lane marking",
-        "lane lines", "lane line", "road divider", "road dividers",
+        "lane dividers",
+        "lane divider",
+        "lane markings",
+        "lane marking",
+        "lane lines",
+        "lane line",
+        "road divider",
+        "road dividers",
     ),
     "ped_crossing": (
-        "pedestrian crossings", "pedestrian crossing", "crosswalks",
-        "crosswalk", "zebra crossings", "zebra crossing",
+        "pedestrian crossings",
+        "pedestrian crossing",
+        "crosswalks",
+        "crosswalk",
+        "zebra crossings",
+        "zebra crossing",
     ),
     "boundary": (
-        "road boundaries", "road boundary", "road edges", "road edge",
-        "curbs", "curb", "kerbs", "kerb",
+        "road boundaries",
+        "road boundary",
+        "road edges",
+        "road edge",
+        "curbs",
+        "curb",
+        "kerbs",
+        "kerb",
     ),
 }
 
 NEGATORS = re.compile(r"\b(?:ignore|avoid|exclude|without|not|no)\b", re.I)
 AMBIGUOUS = re.compile(
     r"\b(?:don't ignore|do not ignore|don't avoid|do not avoid|unless|except|"
-    r"instead of|neither|only if|not only)\b", re.I
+    r"instead of|neither|only if|not only)\b",
+    re.I,
 )
 DIRECTION_RE = re.compile(
     r"\b(front|ahead|forward|behind|rear|back|left|right)\b", re.I
@@ -39,7 +55,8 @@ SUPPORTED_PREFIX = re.compile(
     r"around|near|from|side|sides|of|ahead|front|forward|behind|"
     r"rear|back|left|right|ignore|avoid|exclude|without|not|no|"
     r"roadway|vehicle|ego|car|route|visible|road|these|those|this|"
-    r"along|both|all|just|only)\b", re.I
+    r"along|both|all|just|only)\b",
+    re.I,
 )
 
 
@@ -58,6 +75,14 @@ class Instruction:
         return asdict(self)
 
 
+def attention_target_class(text: str) -> int:
+    """单类别地图监督从当前文本导出，拒绝按样本序号猜测标签。"""
+    instruction = parse_instruction(text)
+    if len(instruction.targets) != 1:
+        raise ValueError("注意力监督需要一个明确正向类别，多目标须另行定义监督")
+    return {"divider": 1, "ped_crossing": 2, "boundary": 3}[instruction.targets[0]]
+
+
 def parse_instruction(text: str) -> Instruction:
     """将有限的英文地图目标、否定词与方位变成可验证的结构。"""
     if not isinstance(text, str) or not text.strip():
@@ -68,7 +93,9 @@ def parse_instruction(text: str) -> Instruction:
     tokens: list[tuple[int, int, str]] = []
     for category, synonyms in ALIASES.items():
         for alias in synonyms:
-            for match in re.finditer(r"(?<!\w)" + re.escape(alias) + r"(?!\w)", sentence):
+            for match in re.finditer(
+                r"(?<!\w)" + re.escape(alias) + r"(?!\w)", sentence
+            ):
                 tokens.append((match.start(), match.end(), category))
     # 优先匹配长短语，避免 lane divider / divider 重复计数。
     tokens.sort(key=lambda item: (item[0], -(item[1] - item[0])))
@@ -80,11 +107,14 @@ def parse_instruction(text: str) -> Instruction:
     for negator in NEGATORS.finditer(sentence):
         following = [item for item in nonoverlap if item[0] >= negator.end()]
         if not following or not re.fullmatch(
-            r"\s*(?:(?:the|any|all|those|these)\s+)?", sentence[negator.end():following[0][0]]
+            r"\s*(?:(?:the|any|all|those|these)\s+)?",
+            sentence[negator.end() : following[0][0]],
         ):
             raise ValueError("否定词必须明确紧邻受支持的地图目标")
         first = following[0]
-        if len(following) > 1 and re.fullmatch(r"\s+(?:and|or)\s+(?:the\s+)?", sentence[first[1]:following[1][0]]):
+        if len(following) > 1 and re.fullmatch(
+            r"\s+(?:and|or)\s+(?:the\s+)?", sentence[first[1] : following[1][0]]
+        ):
             raise ValueError("并列否定作用范围不明确，请分别给出指令")
     remaining = sentence
     for start, end, _category in sorted(nonoverlap, reverse=True):
@@ -96,12 +126,14 @@ def parse_instruction(text: str) -> Instruction:
     positives: list[str] = []
     negatives: list[str] = []
     for start, _end, category in sorted(nonoverlap):
-        left = sentence[max(0, start - 36):start]
+        left = sentence[max(0, start - 36) : start]
         # 否定词必须紧邻目标名，最多允许冠词/形容词，不跨 and/or。
-        negated = bool(re.search(
-            r"\b(?:ignore|avoid|exclude|without|not|no)\s+(?:(?:the|any|all|those|these)\s+)?$",
-            left,
-        ))
+        negated = bool(
+            re.search(
+                r"\b(?:ignore|avoid|exclude|without|not|no)\s+(?:(?:the|any|all|those|these)\s+)?$",
+                left,
+            )
+        )
         target = negatives if negated else positives
         if category not in target:
             target.append(category)
@@ -153,10 +185,28 @@ def self_test() -> list[str]:
 
     cases = [
         ("Focus on the lane markings ahead", ("divider",), (), "front", None),
-        ("Show the crosswalk on the front right", ("ped_crossing",), (), "front", "right"),
-        ("Find the road edges but ignore the crosswalk", ("boundary",), ("ped_crossing",), None, None),
+        (
+            "Show the crosswalk on the front right",
+            ("ped_crossing",),
+            (),
+            "front",
+            "right",
+        ),
+        (
+            "Find the road edges but ignore the crosswalk",
+            ("boundary",),
+            ("ped_crossing",),
+            None,
+            None,
+        ),
         ("Look at the curb behind the car", ("boundary",), (), "rear", None),
-        ("Locate lane markings and zebra crossings", ("divider", "ped_crossing"), (), None, None),
+        (
+            "Locate lane markings and zebra crossings",
+            ("divider", "ped_crossing"),
+            (),
+            None,
+            None,
+        ),
     ]
     checks = []
     for source, target, excluded, fb, lr in cases:
@@ -164,21 +214,30 @@ def self_test() -> list[str]:
         assert parsed.targets == target and parsed.excluded == excluded
         assert parsed.front_back == fb and parsed.left_right == lr
         checks.append(source)
-    for bad in ("Ignore the lane markings", "Look at the lane markings or the curb", "Do not ignore crosswalks", "Show the lane line at the front and rear"):
+    for bad in (
+        "Ignore the lane markings",
+        "Look at the lane markings or the curb",
+        "Do not ignore crosswalks",
+        "Show the lane line at the front and rear",
+    ):
         try:
             parse_instruction(bad)
         except ValueError:
             continue
         raise AssertionError(f"应拒绝歧义指令：{bad}")
     d = parse_instruction("Find crosswalk on the front right")
-    mask = ego_direction_mask(np.array([[2.0, -2], [2, -2]]), np.array([[-1.0, -1], [2, 2]]), d)
+    mask = ego_direction_mask(
+        np.array([[2.0, -2], [2, -2]]), np.array([[-1.0, -1], [2, 2]]), d
+    )
     assert mask.tolist() == [[True, False], [False, False]]
     return checks
 
 
 def calibrated_bev_direction_mask(
-    shape: tuple[int, int], point_cloud_range: tuple[float, ...],
-    lidar_to_ego_rotation: object, lidar_to_ego_translation: object,
+    shape: tuple[int, int],
+    point_cloud_range: tuple[float, ...],
+    lidar_to_ego_rotation: object,
+    lidar_to_ego_translation: object,
     instruction: Instruction,
 ):
     """构建 LiDAR 网格→Ego 方向筛选掩码，严禁通过 resize 地图 GT 得到。

@@ -1,0 +1,69 @@
+{
+  "pytest": {
+    "command": [
+      "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+      "-m",
+      "pytest",
+      "tests/",
+      "-q",
+      "-p",
+      "no:cacheprovider"
+    ],
+    "exit_code": 0,
+    "seconds": 2.165129269999852,
+    "log": "pytest.log"
+  },
+  "static_compile": {
+    "command": [
+      "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+      "-c",
+      "import ast,pathlib; paths=list(pathlib.Path('scripts/stage2').glob('*.py'))+list(pathlib.Path('tests').glob('*.py')); [compile(p.read_bytes(),str(p),'exec') for p in paths]; print(f'{len(paths)} Python files compile PASS')"
+    ],
+    "exit_code": 0,
+    "seconds": 0.05762362499990559,
+    "log": "static_compile.log"
+  },
+  "diff_check": {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0,
+    "seconds": 0.004641481999897223,
+    "log": "diff_check.log"
+  },
+  "loss_smoke": {
+    "command": [
+      "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+      "scripts/stage2/run_step69_loss_contract.py",
+      "--self-test"
+    ],
+    "exit_code": 0,
+    "seconds": 0.780259563999607,
+    "log": "loss_smoke.log"
+  },
+  "frozen_hashes": {
+    "command": [
+      "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+      "scripts/stage2/replay_stage2.py",
+      "--verify-only"
+    ],
+    "exit_code": 0,
+    "seconds": 0.024170636999770068,
+    "log": "frozen_hashes.log"
+  },
+  "language_smoke": {
+    "command": [
+      "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+      "scripts/stage2/audit_stage2_evidence.py",
+      "--mode",
+      "language",
+      "--output",
+      "/home/jjx2003520/projects/bev_vla/results/stage2_final_audit_2026-10-22/language_probe.json"
+    ],
+    "exit_code": 0,
+    "seconds": 2.220817266999802,
+    "log": "language_smoke.log"
+  }
+}

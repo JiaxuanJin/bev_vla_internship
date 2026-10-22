@@ -1,0 +1,504 @@
+{
+  "created_utc": "2026-10-22T05:39:11.323579+00:00",
+  "seed": 20261021,
+  "steps": 20,
+  "batch_size": 1,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "gradient_clip_max_norm": 5.0,
+  "alpha_init": 0.0,
+  "loss": {
+    "detection_weight": 1.0,
+    "segmentation_weight": 1.0,
+    "attention_weight": 0.1,
+    "ignore_index": 255,
+    "attention_dice_weight": 0.25,
+    "attention_tv_weight": 0.001
+  },
+  "train": [
+    {
+      "index": 0,
+      "token": "ca9a282c9e77460f8360f564131a8af5",
+      "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+      "scene_name": "scene-0061",
+      "text": "Find lane markings",
+      "target_class": 1,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402927612460.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_RIGHT__1532402927620339.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_LEFT__1532402927604844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-07-24-11-22-45+0800__CAM_BACK__1532402927637525.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-24-11-22-45+0800__CAM_BACK_LEFT__1532402927647423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_BACK_RIGHT__1532402927627893.jpg"
+      }
+    },
+    {
+      "index": 16,
+      "token": "88449a5cb1644a199c1c11f6ac034867",
+      "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+      "scene_name": "scene-0061",
+      "text": "Locate pedestrian crossings",
+      "target_class": 2,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402935662460.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_RIGHT__1532402935670339.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_LEFT__1532402935654844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-07-24-11-22-45+0800__CAM_BACK__1532402935687525.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-24-11-22-45+0800__CAM_BACK_LEFT__1532402935697423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_BACK_RIGHT__1532402935677893.jpg"
+      }
+    },
+    {
+      "index": 33,
+      "token": "b73152cab88f49d9ba195da81fde1809",
+      "scene_token": "cc8c0bf57f984915a77078b10eb33198",
+      "scene_name": "scene-0061",
+      "text": "Find road boundaries",
+      "target_class": 3,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402944162460.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_RIGHT__1532402944170339.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-22-45+0800__CAM_FRONT_LEFT__1532402944154844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-07-24-11-22-45+0800__CAM_BACK__1532402944187525.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-24-11-22-45+0800__CAM_BACK_LEFT__1532402944197423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-24-11-22-45+0800__CAM_BACK_RIGHT__1532402944177893.jpg"
+      }
+    },
+    {
+      "index": 50,
+      "token": "9768a199e4884a0db50d015703efe969",
+      "scene_token": "bebf5f5b2a674631ab5c88fd1aa9e87a",
+      "scene_name": "scene-0655",
+      "text": "Find lane markings",
+      "target_class": 1,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385097362404.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-27-11-48-51-0400__CAM_FRONT_RIGHT__1535385097370482.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-27-11-48-51-0400__CAM_FRONT_LEFT__1535385097354799.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-27-11-48-51-0400__CAM_BACK__1535385097387558.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-27-11-48-51-0400__CAM_BACK_LEFT__1535385097397405.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-27-11-48-51-0400__CAM_BACK_RIGHT__1535385097378113.jpg"
+      }
+    },
+    {
+      "index": 67,
+      "token": "2e024439286d469f8f743fe9266c0e56",
+      "scene_token": "bebf5f5b2a674631ab5c88fd1aa9e87a",
+      "scene_name": "scene-0655",
+      "text": "Locate pedestrian crossings",
+      "target_class": 2,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385105912404.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-27-11-48-51-0400__CAM_FRONT_RIGHT__1535385105920482.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-27-11-48-51-0400__CAM_FRONT_LEFT__1535385105904799.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-27-11-48-51-0400__CAM_BACK__1535385105937572.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-27-11-48-51-0400__CAM_BACK_LEFT__1535385105947405.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-27-11-48-51-0400__CAM_BACK_RIGHT__1535385105928113.jpg"
+      }
+    },
+    {
+      "index": 84,
+      "token": "2021b6b367984ad7b18464a550d0ae8d",
+      "scene_token": "6f83169d067343658251f72e1dd17dbc",
+      "scene_name": "scene-0553",
+      "text": "Find road boundaries",
+      "target_class": 3,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489298012404.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-28-16-43-51-0400__CAM_FRONT_RIGHT__1535489298020482.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-28-16-43-51-0400__CAM_FRONT_LEFT__1535489298004799.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-28-16-43-51-0400__CAM_BACK__1535489298037558.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-28-16-43-51-0400__CAM_BACK_LEFT__1535489298047405.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-28-16-43-51-0400__CAM_BACK_RIGHT__1535489298028113.jpg"
+      }
+    },
+    {
+      "index": 101,
+      "token": "ac452a60e8b34a7080c938c904b23057",
+      "scene_token": "6f83169d067343658251f72e1dd17dbc",
+      "scene_name": "scene-0553",
+      "text": "Find lane markings",
+      "target_class": 1,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489306412404.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-28-16-43-51-0400__CAM_FRONT_RIGHT__1535489306420482.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-28-16-43-51-0400__CAM_FRONT_LEFT__1535489306404799.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-28-16-43-51-0400__CAM_BACK__1535489306437558.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-28-16-43-51-0400__CAM_BACK_LEFT__1535489306447405.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-28-16-43-51-0400__CAM_BACK_RIGHT__1535489306428113.jpg"
+      }
+    },
+    {
+      "index": 118,
+      "token": "ed5b84e7ea6f434e99d7816b37d15f2f",
+      "scene_token": "6f83169d067343658251f72e1dd17dbc",
+      "scene_name": "scene-0553",
+      "text": "Locate pedestrian crossings",
+      "target_class": 2,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489314862404.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-28-16-43-51-0400__CAM_FRONT_RIGHT__1535489314870482.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-28-16-43-51-0400__CAM_FRONT_LEFT__1535489314854799.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-28-16-43-51-0400__CAM_BACK__1535489314887558.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-28-16-43-51-0400__CAM_BACK_LEFT__1535489314897405.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-28-16-43-51-0400__CAM_BACK_RIGHT__1535489314878113.jpg"
+      }
+    },
+    {
+      "index": 135,
+      "token": "348c8122f47349429a6cd694dcac86e6",
+      "scene_token": "2fc3753772e241f2ab2cd16a784cc680",
+      "scene_name": "scene-0757",
+      "text": "Find road boundaries",
+      "target_class": 3,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-30-15-16-55-0400__CAM_FRONT__1535657115112404.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-30-15-16-55-0400__CAM_FRONT_RIGHT__1535657115120482.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-30-15-16-55-0400__CAM_FRONT_LEFT__1535657115104799.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-30-15-16-55-0400__CAM_BACK__1535657115137558.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-30-15-16-55-0400__CAM_BACK_LEFT__1535657115147405.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-30-15-16-55-0400__CAM_BACK_RIGHT__1535657115128113.jpg"
+      }
+    },
+    {
+      "index": 152,
+      "token": "4d8ff5b287bb4e1ba6d0a0f79fc74457",
+      "scene_token": "2fc3753772e241f2ab2cd16a784cc680",
+      "scene_name": "scene-0757",
+      "text": "Find lane markings",
+      "target_class": 1,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-30-15-16-55-0400__CAM_FRONT__1535657123612404.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-30-15-16-55-0400__CAM_FRONT_RIGHT__1535657123620482.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-30-15-16-55-0400__CAM_FRONT_LEFT__1535657123604799.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-30-15-16-55-0400__CAM_BACK__1535657123637558.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-30-15-16-55-0400__CAM_BACK_LEFT__1535657123647405.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-30-15-16-55-0400__CAM_BACK_RIGHT__1535657123628113.jpg"
+      }
+    },
+    {
+      "index": 169,
+      "token": "fe42b85d7f7a4107b650ffa993a4fbff",
+      "scene_token": "c5224b9b454b4ded9b5d2d2634bbda8a",
+      "scene_name": "scene-0796",
+      "text": "Locate pedestrian crossings",
+      "target_class": 2,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-10-02-10-50-40+0800__CAM_FRONT__1538448748012460.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-02-10-50-40+0800__CAM_FRONT_RIGHT__1538448748020339.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-02-10-50-40+0800__CAM_FRONT_LEFT__1538448748004844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-10-02-10-50-40+0800__CAM_BACK__1538448748037525.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-02-10-50-40+0800__CAM_BACK_LEFT__1538448748047423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-02-10-50-40+0800__CAM_BACK_RIGHT__1538448748027893.jpg"
+      }
+    },
+    {
+      "index": 186,
+      "token": "7df1288fed8a403b8e7a35112b392d7c",
+      "scene_token": "c5224b9b454b4ded9b5d2d2634bbda8a",
+      "scene_name": "scene-0796",
+      "text": "Find road boundaries",
+      "target_class": 3,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-10-02-10-50-40+0800__CAM_FRONT__1538448756512460.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-02-10-50-40+0800__CAM_FRONT_RIGHT__1538448756520339.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-02-10-50-40+0800__CAM_FRONT_LEFT__1538448756504844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-10-02-10-50-40+0800__CAM_BACK__1538448756537525.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-02-10-50-40+0800__CAM_BACK_LEFT__1538448756547423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-02-10-50-40+0800__CAM_BACK_RIGHT__1538448756527893.jpg"
+      }
+    },
+    {
+      "index": 203,
+      "token": "30aaef2c5ab44dc4afea271fe829b459",
+      "scene_token": "d25718445d89453381c659b9c8734939",
+      "scene_name": "scene-1077",
+      "text": "Find lane markings",
+      "target_class": 1,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800368412460.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_FRONT_RIGHT__1542800368420339.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-11-21-19-38-26+0800__CAM_FRONT_LEFT__1542800368404844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-11-21-19-38-26+0800__CAM_BACK__1542800368437525.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-11-21-19-38-26+0800__CAM_BACK_LEFT__1542800368447423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_BACK_RIGHT__1542800368427893.jpg"
+      }
+    },
+    {
+      "index": 220,
+      "token": "37bed8d646cd4f0f8eac519794dd8bd7",
+      "scene_token": "d25718445d89453381c659b9c8734939",
+      "scene_name": "scene-1077",
+      "text": "Locate pedestrian crossings",
+      "target_class": 2,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800376912460.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_FRONT_RIGHT__1542800376920339.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-11-21-19-38-26+0800__CAM_FRONT_LEFT__1542800376904844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-11-21-19-38-26+0800__CAM_BACK__1542800376937526.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-11-21-19-38-26+0800__CAM_BACK_LEFT__1542800376947423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_BACK_RIGHT__1542800376927893.jpg"
+      }
+    },
+    {
+      "index": 237,
+      "token": "64134c75d5f547fdb4a6862b192f06cd",
+      "scene_token": "d25718445d89453381c659b9c8734939",
+      "scene_name": "scene-1077",
+      "text": "Find road boundaries",
+      "target_class": 3,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800385412460.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_FRONT_RIGHT__1542800385420339.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-11-21-19-38-26+0800__CAM_FRONT_LEFT__1542800385404844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-11-21-19-38-26+0800__CAM_BACK__1542800385437525.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-11-21-19-38-26+0800__CAM_BACK_LEFT__1542800385447423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_BACK_RIGHT__1542800385427893.jpg"
+      }
+    },
+    {
+      "index": 254,
+      "token": "f65ffdc408fb4a0c8ef0d1614b47dce8",
+      "scene_token": "de7d80a1f5fb4c3e82ce8a4f213b450a",
+      "scene_name": "scene-1094",
+      "text": "Find lane markings",
+      "target_class": 1,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800853412460.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_FRONT_RIGHT__1542800853420339.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-11-21-19-38-26+0800__CAM_FRONT_LEFT__1542800853404844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-11-21-19-38-26+0800__CAM_BACK__1542800853437525.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-11-21-19-38-26+0800__CAM_BACK_LEFT__1542800853447423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_BACK_RIGHT__1542800853427893.jpg"
+      }
+    },
+    {
+      "index": 271,
+      "token": "49dfd2f2fef447cc9b8dec3e17c1c919",
+      "scene_token": "de7d80a1f5fb4c3e82ce8a4f213b450a",
+      "scene_name": "scene-1094",
+      "text": "Locate pedestrian crossings",
+      "target_class": 2,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800861912460.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_FRONT_RIGHT__1542800861920343.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-11-21-19-38-26+0800__CAM_FRONT_LEFT__1542800861904844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-11-21-19-38-26+0800__CAM_BACK__1542800861937525.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-11-21-19-38-26+0800__CAM_BACK_LEFT__1542800861947423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_BACK_RIGHT__1542800861927893.jpg"
+      }
+    },
+    {
+      "index": 288,
+      "token": "c9e812f2705b4b198f4675dfaa33812d",
+      "scene_token": "e233467e827140efa4b42d2b4c435855",
+      "scene_name": "scene-1100",
+      "text": "Find road boundaries",
+      "target_class": 3,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800990412460.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_FRONT_RIGHT__1542800990420339.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-11-21-19-38-26+0800__CAM_FRONT_LEFT__1542800990404844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-11-21-19-38-26+0800__CAM_BACK__1542800990437525.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-11-21-19-38-26+0800__CAM_BACK_LEFT__1542800990447423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_BACK_RIGHT__1542800990427893.jpg"
+      }
+    },
+    {
+      "index": 305,
+      "token": "36aa1c0eeb50457b97911c3bd742a730",
+      "scene_token": "e233467e827140efa4b42d2b4c435855",
+      "scene_name": "scene-1100",
+      "text": "Find lane markings",
+      "target_class": 1,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800998912460.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_FRONT_RIGHT__1542800998920339.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-11-21-19-38-26+0800__CAM_FRONT_LEFT__1542800998904844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-11-21-19-38-26+0800__CAM_BACK__1542800998937525.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-11-21-19-38-26+0800__CAM_BACK_LEFT__1542800998947423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_BACK_RIGHT__1542800998927906.jpg"
+      }
+    },
+    {
+      "index": 322,
+      "token": "abf3d91d3c28407e80e3334fe89c03cb",
+      "scene_token": "e233467e827140efa4b42d2b4c435855",
+      "scene_name": "scene-1100",
+      "text": "Locate pedestrian crossings",
+      "target_class": 2,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542801007412469.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_FRONT_RIGHT__1542801007420339.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-11-21-19-38-26+0800__CAM_FRONT_LEFT__1542801007404844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-11-21-19-38-26+0800__CAM_BACK__1542801007437536.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-11-21-19-38-26+0800__CAM_BACK_LEFT__1542801007447423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_BACK_RIGHT__1542801007427893.jpg"
+      }
+    }
+  ],
+  "validation": [
+    {
+      "index": 0,
+      "token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "scene_name": "scene-0103",
+      "text": "Find lane markings",
+      "target_class": 1,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151603512404.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_RIGHT__1533151603520482.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_LEFT__1533151603504799.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-01-15-16-36-0400__CAM_BACK__1533151603537558.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-01-15-16-36-0400__CAM_BACK_LEFT__1533151603547405.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_BACK_RIGHT__1533151603528113.jpg"
+      }
+    },
+    {
+      "index": 16,
+      "token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "scene_name": "scene-0103",
+      "text": "Locate pedestrian crossings",
+      "target_class": 2,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151611412404.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_RIGHT__1533151611420482.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_LEFT__1533151611404799.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-01-15-16-36-0400__CAM_BACK__1533151611437558.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-01-15-16-36-0400__CAM_BACK_LEFT__1533151611447405.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_BACK_RIGHT__1533151611428113.jpg"
+      }
+    },
+    {
+      "index": 32,
+      "token": "ce94ef7a0522468e81c0e2b3a2f1e12d",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "scene_name": "scene-0103",
+      "text": "Find road boundaries",
+      "target_class": 3,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151619412404.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_RIGHT__1533151619420482.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-08-01-15-16-36-0400__CAM_FRONT_LEFT__1533151619404799.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n008-2018-08-01-15-16-36-0400__CAM_BACK__1533151619437558.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n008-2018-08-01-15-16-36-0400__CAM_BACK_LEFT__1533151619447405.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-08-01-15-16-36-0400__CAM_BACK_RIGHT__1533151619428113.jpg"
+      }
+    },
+    {
+      "index": 48,
+      "token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "scene_name": "scene-0916",
+      "text": "Find lane markings",
+      "target_class": 1,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984237412460.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984237420339.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984237404844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984237437525.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984237447423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984237427893.jpg"
+      }
+    },
+    {
+      "index": 64,
+      "token": "55c258972acb4300a3a6077a531ab050",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "scene_name": "scene-0916",
+      "text": "Locate pedestrian crossings",
+      "target_class": 2,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984245412460.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984245420339.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984245404844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984245437525.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984245447423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984245427893.jpg"
+      }
+    },
+    {
+      "index": 80,
+      "token": "b4ff30109dd14c89b24789dc5713cf8c",
+      "scene_token": "325cef682f064c55a255f2625c533b75",
+      "scene_name": "scene-0916",
+      "text": "Find road boundaries",
+      "target_class": 3,
+      "cameras": {
+        "CAM_FRONT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984253412460.jpg",
+        "CAM_FRONT_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984253420339.jpg",
+        "CAM_FRONT_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984253404844.jpg",
+        "CAM_BACK": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984253437525.jpg",
+        "CAM_BACK_LEFT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984253447423.jpg",
+        "CAM_BACK_RIGHT": "/mnt/g/BEV_VLA_Datasets/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984253427893.jpg"
+      }
+    }
+  ],
+  "train_ann": "/mnt/g/BEV_VLA_Datasets/nuscenes/nuscenes_infos_temporal_train.pkl",
+  "val_ann": "/mnt/g/BEV_VLA_Datasets/nuscenes/nuscenes_infos_temporal_val.pkl",
+  "dataset_metadata_version": {
+    "train": "v1.0-mini",
+    "validation": "v1.0-mini"
+  },
+  "selection": "linspace indices fixed before predictions; no replacement or result-based selection",
+  "temporal_mode": "single frame; queue_length=1; no history",
+  "validation_schedule": "separate process after step20; subset fixed before step1",
+  "checkpoint": "/mnt/g/nus/bevformer_small_joint_author.pth",
+  "checkpoint_sha256": "1345919901785b8df7ee16838d62f9f7a00444c9d8061f0dbee712d1b1b67dcf",
+  "distilbert_sha256": "5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063",
+  "config_sha256": "4c7141a84cbcd823a4cf880b2391fbc55c35e7e75db8eae2e2d3fcb6889ba8a9",
+  "source_sha256": {
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/__init__.py": "260240bb1aa01534c89bde22cdd82dcd887a4415554ff42a56f016ad80cf0d25",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/audit_stage2_evidence.py": "2e6bcbf3f994fac2f89fcd3a64c7025f0ceeee68f7e005f111234ee07cac122c",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/bev_coordinates.py": "c69e0466c1b63b42621042f073e8728f1270cdcca55e327810eb1124e56d3cb5",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/bev_fusion.py": "f0debeaf460b9e17f5d59645e930e420608191b2d95a906eb1cbc98f76055c8a",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/download_distilbert.py": "19eb6bb8261dfab6b6533aded84aa09078016bd2cecd9266cabc5d67559aef93",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/integration_smoke.py": "7a3b44366d7e54a9e41f5a127afd1e1d2b838d366eca0cdb963668608d9ee915",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/joint_runtime.py": "9fe1674f790fad5334641ddae9f4f7241f47b289dd4adf68b7b2676e43553f54",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/language_bev_attention.py": "9837e7d994ed0cc91043e560287afcb1cb59d5f2311820f7f68bc8288cbf9a88",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/language_encoder.py": "93d3240c40f3fa59a8eda85460cb0eb038d77de71a0d097c6b885e1a9fd17478",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/low_memory_dataset.py": "59cadce7ce1b54d91e003e5de3d0c23285b7d7dca31d025e6ede96e7a2f064e5",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/micro_process.py": "904b9dc2b0dec6a2c4068552c9c23c5d63423ab27331a1ee00d00dcc13b4ab4c",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/micro_report.py": "f9e9276ee9b15de0a7b4accda332662af68693af81b4dcd005b81aeb489e9153",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/micro_training.py": "63f026953ebb109d4350c2c23b93e52dc04964fb589095c26a4d2a3a78aeb866",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/multitask_loss.py": "55fd282f25feb3ba2137e46e2fac340de27029f0b44b0a067bc97e15b53a1fff",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/multitask_training.py": "675f66b7a0bb4bacb97e87ccfaa69f1b4f3f1eac8514851d087020b215d1d6f5",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/pipeline.py": "3ee5d0d36d67bf4bf95fb2cb697f36d5d651d2b1b87124f1f687cdb62932fd75",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/replay_stage2.py": "e885c392690b24cf1ad2a7bcd2f19c75c551f10c6138a7387d552edf17750a8b",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_day1.py": "05e47138f6540d0a97f44e096cd7e47f2c64404e34852a8d114a500e977fb449",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_regression.py": "73a4b72ee4408cb1653a4ef846dae2d1d81ea104bafa00d2a5c057c85323a427",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_stage2.py": "fa0c640c7deff7b1e1b35f0b70c28761818630e9838afb2cde54cddb99ea9b2c",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step56_smoke.py": "50b0d3ea20c066f5628f563bf5925091f75dd3a48bfe5a816977d501f180528b",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step57_distilbert.py": "032f7dc963114095c59bdaa0369ac256a3f3005809a2444d27199706d1a38976",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step58_author_inference.py": "dd54ee6620e2b242632e5e7a0dec51f5ac986c7c3b6c3d70ce9831a215a007ad",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step58_prepare_text.py": "2a030b0afa33102a6572dcf660eb0ce5852abfc32ea440928912fbb12f43c835",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step59_train.py": "f1104b7226afc5132278f4062051f79b22615299166b58bed541a0a89824f3fc",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step60_extended_ab.py": "cf8b4b13236805f53c7245643ef9dc9eb9f30dbb3105b835435113f22935064a",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step61_prepare_text.py": "3e2f2437dd0e0564ef42d9bbff32c642aa7ad411734f70f900c2981e2e360fe5",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step61_supervised_train.py": "1b2407da06b892320c66c2e501c57c4d67cb885a665821098a4726af625fc231",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step62_attention_diagnostic.py": "b47a5fffefb337eea6a4743f3466f539a746634a2d723545dbc9c457e32cf051",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step64_balanced_train.py": "2131f32bd344d5863f8ed2f1670a64e287aa598c7b1c98571c7d1b9f854fb836",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step65_literature_adapter.py": "6a9540224806850e9c1b9374ab44f3c26d6b20c29812516df7f1bc6c06eb0bef",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step67_three_in_one.py": "c2aef5b45a53ef88eeb351af1b586be4c3891d63dbfa1cc5535059108417bd0d",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step68_acceptance.py": "d69bb3cba4de2d0a709040ded33d1dc63956a5cdf9809973a93e3e25ee7e7367",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step69_loss_contract.py": "472ff2ef3d7b929d4f53cd2cb50f0922a80afaa2958f2ff106439504654f24d3",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step70_joint_integration.py": "33b67a5f3309dddd180d43912533052af0b58f9bac76dc5082b991b8b9c112b6",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step71_stage2_review.py": "9e143b7fe4384c9e69dc33fc87b616f08c0868699a524fac8890394ca3e23bab",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step72_real_joint_gradient.py": "32a2f4cd802b2122c4641aabea7145177853700c80a43258d0c3fa20575543a9",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/run_step73_fill_gaps.py": "70d457adf15793809819c7844dced4832a56162b64d50ae7d5974715376314db",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/runtime_memory.py": "fa96817f0cc9817511c351d5f366c68be87eaa0df369eab81e1fb09846579bc1",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/semantic_instruction.py": "94d90ce8b2fe10f812034f70076ddd70c8db2b4a4ec3db86cd2ae72ffe03c15b",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/semantic_projection.py": "2e5c6d14285bc115bd73b867db21ab1203747e7418f79239c67c9fccefb957c6",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/step66_background_safe_train.py": "3c13fb5e976f65221fa7a67ecf415a03ea6dd3a1b06cca751866368b7f256263",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/step70b_prepare_joint.py": "fce150eb21cda9eaac49beaf13f13a9f875c45fc76803bf3700a4ed72baccb1a"
+  },
+  "physical_alignment": "NOT_VERIFIED; same-author-raster diagnostic only",
+  "metadata_loader": "stream original trainval tables; retain single-frame dependencies, no GT/source edits",
+  "detection_protocol": "native decoded boxes; score>=0.1; classwise greedy XY<=2m; diagnostic, not AP/NDS",
+  "frozen": [
+    "entire author model",
+    "DistilBERT"
+  ]
+}

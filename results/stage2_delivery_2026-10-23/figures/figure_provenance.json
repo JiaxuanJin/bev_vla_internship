@@ -1,0 +1,129 @@
+{
+  "status": "PASS_OFFLINE_FIGURES_FROM_EXISTING_ARRAYS",
+  "inference_calls": 0,
+  "optimizer_steps": 0,
+  "historical_training_steps": 20,
+  "historical_tv_weight": 0,
+  "new_tv_smoke_included": false,
+  "sources_sha256": {
+    "outputs/stage2_oom_fix_20261022_step1/protocol/protocol.json": "d3f9847fbb681e29f95609d672469a5bb3240ef9e4ced09d5d725fef783d5f6b",
+    "outputs/stage2_oom_fix_20261022_step1/train/training.jsonl": "4e4efea4aeaa44699612925b22e9638578f341642716167c6044961f59ecc5f5",
+    "outputs/stage2_oom_fix_20261022_continue/continue/training.jsonl": "bae7318d034b0ae21419eda65b7b78a49467422dd09097b26800ddc575e41627",
+    "outputs/stage2_oom_fix_20261022_validation/validate/ab_results.json": "0e3379f130907484b8d6cf77440c4f54597d1e98152501ba9aef626e88c6811b",
+    "outputs/stage2_oom_fix_20261022_validation/validate/val_000.npz": "9efb474170fd91e33df30899f4781b449fa9aac1e88f5426d224e4b402074233",
+    "outputs/stage2_oom_fix_20261022_validation/validate/val_016.npz": "b2f9a65c05bb1a2b86dadd766587974c9ff27e0943bcd0eb774ea6603cf6931f",
+    "outputs/stage2_oom_fix_20261022_validation/validate/val_032.npz": "5ee593940d996b4fe88f74243a85d075667a057339551ceef587f58301a70547",
+    "outputs/stage2_oom_fix_20261022_validation/validate/val_048.npz": "0789e445b86da6c7e16c63d5a703bcf322d02ece54e72e40d3647fd6ab5e5c8d",
+    "outputs/stage2_oom_fix_20261022_validation/validate/val_064.npz": "4e92504b32c1565ad5e7f0bf310209c37d9ed22a25d50fd263b8139508f34084",
+    "outputs/stage2_oom_fix_20261022_validation/validate/val_080.npz": "8cc530ae63e564383fe3575b87ddd295a6be065cf19705c2f82218921a465dfc"
+  },
+  "protocol_sha256": "d3f9847fbb681e29f95609d672469a5bb3240ef9e4ced09d5d725fef783d5f6b",
+  "metrics": {
+    "original": {
+      "foreground_miou": 0.31599266706641305,
+      "class_iou": [
+        0.8073767296376303,
+        0.3516767323585505,
+        0.26446442533229086,
+        0.33183684350839776
+      ],
+      "background_false_positive_rate": 0.16631503174185971,
+      "tp_fp_fn": [
+        207,
+        599,
+        35
+      ]
+    },
+    "trained": {
+      "foreground_miou": 0.31595155462824137,
+      "class_iou": [
+        0.8073827257884019,
+        0.3516627597441297,
+        0.2643408580084042,
+        0.3318510461321902
+      ],
+      "background_false_positive_rate": 0.16631266382990814,
+      "tp_fp_fn": [
+        207,
+        599,
+        35
+      ]
+    },
+    "shuffled": {
+      "foreground_miou": 0.3159652746139388,
+      "class_iou": [
+        0.8073804325891137,
+        0.3516745461046442,
+        0.2643666927286943,
+        0.3318545850084779
+      ],
+      "background_false_positive_rate": 0.16631503174185971,
+      "tp_fp_fn": [
+        207,
+        599,
+        35
+      ]
+    }
+  },
+  "frames": [
+    {
+      "index": 0,
+      "text": "Find lane markings",
+      "changed_pixels_trained_vs_original": 2,
+      "changed_pixels_shuffled_vs_trained": 0
+    },
+    {
+      "index": 16,
+      "text": "Locate pedestrian crossings",
+      "changed_pixels_trained_vs_original": 5,
+      "changed_pixels_shuffled_vs_trained": 5
+    },
+    {
+      "index": 32,
+      "text": "Find road boundaries",
+      "changed_pixels_trained_vs_original": 8,
+      "changed_pixels_shuffled_vs_trained": 3
+    },
+    {
+      "index": 48,
+      "text": "Find lane markings",
+      "changed_pixels_trained_vs_original": 6,
+      "changed_pixels_shuffled_vs_trained": 4
+    },
+    {
+      "index": 64,
+      "text": "Locate pedestrian crossings",
+      "changed_pixels_trained_vs_original": 1,
+      "changed_pixels_shuffled_vs_trained": 2
+    },
+    {
+      "index": 80,
+      "text": "Find road boundaries",
+      "changed_pixels_trained_vs_original": 3,
+      "changed_pixels_shuffled_vs_trained": 2
+    }
+  ],
+  "figures": {
+    "ab_metrics_6frames.png": {
+      "sha256": "309c69ba4971750d11fced05bd8e1027d40b5c023533a271d421de4a07091b3f",
+      "size_bytes": 83614
+    },
+    "ab_segmentation_6frames.png": {
+      "sha256": "20838d65c5326121843c848a9f259ef35920917cc55323df4ae927a446157076",
+      "size_bytes": 125261
+    },
+    "attention_control_6frames.png": {
+      "sha256": "f5bb42edc92b0e94543b7289696352d0ad4a83c3d4e3bcac3f02995950395238",
+      "size_bytes": 808293
+    },
+    "training_loss_20steps.png": {
+      "sha256": "b311911edad33ce427ad75e04a023471eed366356d1dff2f651bd9c53f83b89a",
+      "size_bytes": 147126
+    }
+  },
+  "limits": [
+    "No stable accuracy gain established",
+    "Semantic localization NOT_VERIFIED",
+    "Physical alignment NOT_VERIFIED"
+  ]
+}

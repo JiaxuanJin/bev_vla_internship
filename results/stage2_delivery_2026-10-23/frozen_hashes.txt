@@ -1,0 +1,1 @@
+{"status": "PASS_FROZEN_SOURCE_AND_WEIGHT_HASHES", "source_files": 40, "checkpoint_sha256": "125237365f3b456384009168ad8b97df6f0e46805331f79c7e1c344d4c2e9d5a", "optimizer_steps": 0}

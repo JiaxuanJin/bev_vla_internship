@@ -1,0 +1,225 @@
+{
+  "original_bundle": {
+    "status": "PASS_DELIVERY_ARCHIVE_VERIFIED",
+    "archive": "outputs/stage2_delivery_20261022/stage2_delivery_20261022.tar.gz",
+    "sha256": "99b58c982111d244e07aee3940c887303c9406928cc0c2c7a1acd9bc49f3b54a",
+    "size_bytes": 179730117,
+    "files": 270,
+    "all_archived_member_sha256_verified": true,
+    "seconds": 5.3709386690006795,
+    "training_updates_this_audit": 0
+  },
+  "raw_array_and_weight_assets": [
+    {
+      "path": "outputs/bev_features/bev_feature.npy",
+      "size_bytes": 23040128,
+      "sha256": "91a0206914547683690ce3fc333ade5c4fb0c073215b05a3346a8f81246af5cf",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step002.pt",
+      "size_bytes": 5288299,
+      "sha256": "09c6cdeaaab8674f2f941ca70d74bcb57c7f7334f8a3f9b69acd9693fd40475f",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step003.pt",
+      "size_bytes": 5288299,
+      "sha256": "a0a002179dd23c6160054f94394fc5694829765c0c8f4524bfc6fe5b2df257fe",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step004.pt",
+      "size_bytes": 5288299,
+      "sha256": "6b9dbf2dc2d047cbe785a6a969de287d57d9e542858d17115afdd7d22b181772",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step005.pt",
+      "size_bytes": 5288299,
+      "sha256": "f68921f25c8a56a7dddbac6a5df580589df4456d73a8f7483cda52d303863c68",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step006.pt",
+      "size_bytes": 5288299,
+      "sha256": "21bba38783ba9289e60d0168e33498cec937dbfafe4c7149e3606cb26131eeff",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step007.pt",
+      "size_bytes": 5288299,
+      "sha256": "fc64e40084ca3b47f326991027692405f4b3a51f76907e6ea8e799e7d26e155f",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step008.pt",
+      "size_bytes": 5288299,
+      "sha256": "7b0260519f4d1ad4e8b0a3b4935c66371d6c8844753305348886becec693d36e",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step009.pt",
+      "size_bytes": 5288299,
+      "sha256": "acfe3008f01af597259d194dc89273671701948abbb5f290138f0d309eed224e",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step010.pt",
+      "size_bytes": 5288299,
+      "sha256": "25709caba80a4c65e9c134054afd09f9d8095a9e5d86beaa41f58de9289a2327",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step011.pt",
+      "size_bytes": 5288299,
+      "sha256": "125e1218b816c99be430c7dfef3ee410783186e54e25ee058bb028e65a2f1ad1",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step012.pt",
+      "size_bytes": 5288299,
+      "sha256": "9b4baa9081fec58ebe97207b837f3873530c5fc81cde8ec7b95380cc82bf05bb",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step013.pt",
+      "size_bytes": 5288299,
+      "sha256": "e8618e6ea88cfb7c7c17b3653b4ef67623737bda6b000144e05d7f5906081048",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step014.pt",
+      "size_bytes": 5288299,
+      "sha256": "49a85e6ac230eaf137671c849ecc8b99dc78efe65200c337000e0101bacc6724",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step015.pt",
+      "size_bytes": 5288299,
+      "sha256": "974dda6d5f040570e09337f5b73aed3179a476977294108fb7e1b890fc39bd82",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step016.pt",
+      "size_bytes": 5288299,
+      "sha256": "ee0e60cf04ae8dedfc1f5849c985e63e80d66efb2c6fcac5502244ea0e0ba277",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step017.pt",
+      "size_bytes": 5288299,
+      "sha256": "a7b6cc1022e71a88e37757a8255c8e9c67b261917071b8532459b6f68349fee7",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step018.pt",
+      "size_bytes": 5288299,
+      "sha256": "47239150838ee35ebaebcfc95c6ed8813092e2a52fe54a93fb6420e3b3503a01",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step019.pt",
+      "size_bytes": 5288299,
+      "sha256": "b1941432ecf089f1934e56f2a6dd1b34eac458010ebc2752917e7e0316318533",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step020.pt",
+      "size_bytes": 5288299,
+      "sha256": "125237365f3b456384009168ad8b97df6f0e46805331f79c7e1c344d4c2e9d5a",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_step1/train/fusion_initial.pt",
+      "size_bytes": 1322189,
+      "sha256": "99ff36eb89ea748d5299c0e7eb46d9dcd79e7d5da01e9ac175713ad7ae49d226",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_step1/train/fusion_step001.pt",
+      "size_bytes": 5288299,
+      "sha256": "4e8bca6ab68d8e601d0cc8f0987fd752c9c55927a0816f995e63e819737d0b06",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_validation/validate/val_000.npz",
+      "size_bytes": 5649773,
+      "sha256": "9efb474170fd91e33df30899f4781b449fa9aac1e88f5426d224e4b402074233",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_validation/validate/val_016.npz",
+      "size_bytes": 5726202,
+      "sha256": "b2f9a65c05bb1a2b86dadd766587974c9ff27e0943bcd0eb774ea6603cf6931f",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_validation/validate/val_032.npz",
+      "size_bytes": 5668198,
+      "sha256": "5ee593940d996b4fe88f74243a85d075667a057339551ceef587f58301a70547",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_validation/validate/val_048.npz",
+      "size_bytes": 5688521,
+      "sha256": "0789e445b86da6c7e16c63d5a703bcf322d02ece54e72e40d3647fd6ab5e5c8d",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_validation/validate/val_064.npz",
+      "size_bytes": 5653270,
+      "sha256": "4e92504b32c1565ad5e7f0bf310209c37d9ed22a25d50fd263b8139508f34084",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    },
+    {
+      "path": "outputs/stage2_oom_fix_20261022_validation/validate/val_080.npz",
+      "size_bytes": 5656246,
+      "sha256": "8cc530ae63e564383fe3575b87ddd295a6be065cf19705c2f82218921a465dfc",
+      "stored_in_original_bundle": true,
+      "upload_to_git": false
+    }
+  ],
+  "raw_training_and_protocol_in_bundle": [
+    "outputs/stage2_oom_fix_20261022_continue/continue/training.jsonl",
+    "outputs/stage2_oom_fix_20261022_step1/protocol/protocol.json",
+    "outputs/stage2_oom_fix_20261022_step1/train/training.jsonl",
+    "results/stage2_final_audit_2026-10-22/gpu_smoke_protocol.json"
+  ],
+  "external_not_in_bundle": [
+    "/mnt/g/nus/bevformer_small_joint_author.pth",
+    "models/distilbert-base-uncased/",
+    "nuScenes原始图像、GT、地图元数据",
+    "作者BEVFormer工程与CUDA/MMCV依赖",
+    "Python虚拟环境"
+  ],
+  "git_policy": "No outputs, NPZ/NPY, checkpoint, model, raw dataset, environment or tar.gz in whitelist",
+  "supplement_path": "outputs/stage2_delivery_20261023/stage2_git_supplement_20261023_v2.tar.gz"
+}

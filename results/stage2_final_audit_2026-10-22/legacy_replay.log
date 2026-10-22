@@ -1,0 +1,81 @@
+[memory] {"time_utc": "2026-10-22T05:41:11.215955+00:00", "stage": "build_model.before", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 12753.45703125, "SwapFree_mib": 4012.546875, "VmHWM_mib": 947.953125, "VmRSS_mib": 946.80078125, "pid": 31072, "cuda_free_mib": 15045.0, "cuda_total_mib": 16275.4375, "allocated_mib": 0.0, "reserved_mib": 0.0, "peak_allocated_mib": 0.0, "peak_reserved_mib": 0.0}
+[memory] {"time_utc": "2026-10-22T05:41:11.643339+00:00", "stage": "build_model.after", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 12410.625, "SwapFree_mib": 4012.546875, "VmHWM_mib": 1293.21484375, "VmRSS_mib": 1293.21484375, "pid": 31072, "cuda_free_mib": 15045.0, "cuda_total_mib": 16275.4375, "allocated_mib": 0.0, "reserved_mib": 0.0, "peak_allocated_mib": 0.0, "peak_reserved_mib": 0.0}
+[memory] {"time_utc": "2026-10-22T05:41:11.644096+00:00", "stage": "load_checkpoint.before", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 12410.625, "SwapFree_mib": 4012.546875, "VmHWM_mib": 1293.2734375, "VmRSS_mib": 1293.2734375, "pid": 31072, "cuda_free_mib": 15045.0, "cuda_total_mib": 16275.4375, "allocated_mib": 0.0, "reserved_mib": 0.0, "peak_allocated_mib": 0.0, "peak_reserved_mib": 0.0}
+load checkpoint from local path: /mnt/g/nus/bevformer_small_joint_author.pth
+2026-10-22 13:41:14,078 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.0.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,079 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.1.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,080 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.2.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,081 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.3.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,082 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.4.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,083 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.5.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,083 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.6.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,084 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.7.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,085 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.8.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,086 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.9.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,087 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.10.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,088 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.11.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,088 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.12.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,089 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.13.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,090 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.14.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,091 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.15.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,092 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.16.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,093 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.17.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,094 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.18.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,095 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.19.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,096 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.20.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,096 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.21.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,097 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.22.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,098 - root - INFO - ModulatedDeformConvPack img_backbone.layer4.0.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,101 - root - INFO - ModulatedDeformConvPack img_backbone.layer4.1.conv2 is upgraded to version 2.
+2026-10-22 13:41:14,102 - root - INFO - ModulatedDeformConvPack img_backbone.layer4.2.conv2 is upgraded to version 2.
+[memory] {"time_utc": "2026-10-22T05:41:14.107565+00:00", "stage": "load_checkpoint.after", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 11685.015625, "SwapFree_mib": 4012.546875, "VmHWM_mib": 2036.609375, "VmRSS_mib": 1971.5, "pid": 31072, "cuda_free_mib": 15045.0, "cuda_total_mib": 16275.4375, "allocated_mib": 0.0, "reserved_mib": 0.0, "peak_allocated_mib": 0.0, "peak_reserved_mib": 0.0}
+[memory] {"time_utc": "2026-10-22T05:41:14.250312+00:00", "stage": "load_checkpoint.released", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 12358.01171875, "SwapFree_mib": 4012.546875, "VmHWM_mib": 2036.609375, "VmRSS_mib": 1296.98828125, "pid": 31072, "cuda_free_mib": 15045.0, "cuda_total_mib": 16275.4375, "allocated_mib": 0.0, "reserved_mib": 0.0, "peak_allocated_mib": 0.0, "peak_reserved_mib": 0.0}
+[memory] {"time_utc": "2026-10-22T05:41:14.253004+00:00", "stage": "model.cuda.before", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 12358.01171875, "SwapFree_mib": 4012.546875, "VmHWM_mib": 2036.609375, "VmRSS_mib": 1297.06640625, "pid": 31072, "cuda_free_mib": 15045.0, "cuda_total_mib": 16275.4375, "allocated_mib": 0.0, "reserved_mib": 0.0, "peak_allocated_mib": 0.0, "peak_reserved_mib": 0.0}
+[memory] {"time_utc": "2026-10-22T05:41:14.363521+00:00", "stage": "model.cuda.after", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 12377.1796875, "SwapFree_mib": 4012.546875, "VmHWM_mib": 2036.609375, "VmRSS_mib": 1275.4765625, "pid": 31072, "cuda_free_mib": 14791.0, "cuda_total_mib": 16275.4375, "allocated_mib": 249.216796875, "reserved_mib": 254.0, "peak_allocated_mib": 249.216796875, "peak_reserved_mib": 254.0}
+[memory] {"time_utc": "2026-10-22T05:41:14.497086+00:00", "stage": "DistilBERT.init.before", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 12598.57421875, "SwapFree_mib": 4012.546875, "VmHWM_mib": 2036.609375, "VmRSS_mib": 1052.375, "pid": 31072, "cuda_free_mib": 14791.0, "cuda_total_mib": 16275.4375, "allocated_mib": 249.216796875, "reserved_mib": 254.0, "peak_allocated_mib": 249.216796875, "peak_reserved_mib": 254.0}
+[memory] {"time_utc": "2026-10-22T05:41:14.682411+00:00", "stage": "DistilBERT.init.after", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 12561.625, "SwapFree_mib": 4012.546875, "VmHWM_mib": 2036.609375, "VmRSS_mib": 1171.22265625, "pid": 31072, "cuda_free_mib": 14791.0, "cuda_total_mib": 16275.4375, "allocated_mib": 249.216796875, "reserved_mib": 254.0, "peak_allocated_mib": 249.216796875, "peak_reserved_mib": 254.0}
+[memory] {"time_utc": "2026-10-22T05:41:14.683144+00:00", "stage": "DistilBERT.cuda.before", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 12561.625, "SwapFree_mib": 4012.546875, "VmHWM_mib": 2036.609375, "VmRSS_mib": 1171.22265625, "pid": 31072, "cuda_free_mib": 14791.0, "cuda_total_mib": 16275.4375, "allocated_mib": 249.216796875, "reserved_mib": 254.0, "peak_allocated_mib": 249.216796875, "peak_reserved_mib": 254.0}
+[memory] {"time_utc": "2026-10-22T05:41:14.725055+00:00", "stage": "DistilBERT.cuda.after", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 12562.45703125, "SwapFree_mib": 4012.546875, "VmHWM_mib": 2036.609375, "VmRSS_mib": 1095.1015625, "pid": 31072, "cuda_free_mib": 14519.0, "cuda_total_mib": 16275.4375, "allocated_mib": 504.21337890625, "reserved_mib": 526.0, "peak_allocated_mib": 504.21337890625, "peak_reserved_mib": 526.0}
+[memory] {"time_utc": "2026-10-22T05:41:14.880150+00:00", "stage": "build_dataset.validation.before", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 12562.24609375, "SwapFree_mib": 4012.546875, "VmHWM_mib": 2036.609375, "VmRSS_mib": 1082.83984375, "pid": 31072, "cuda_free_mib": 14519.0, "cuda_total_mib": 16275.4375, "allocated_mib": 504.21337890625, "reserved_mib": 526.0, "peak_allocated_mib": 504.21337890625, "peak_reserved_mib": 526.0}
+[memory] {"time_utc": "2026-10-22T05:41:14.911283+00:00", "stage": "metadata.streaming.before", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 12561.921875, "SwapFree_mib": 4012.546875, "VmHWM_mib": 2036.609375, "VmRSS_mib": 1090.7578125, "pid": 31072, "cuda_free_mib": 14519.0, "cuda_total_mib": 16275.4375, "allocated_mib": 504.21337890625, "reserved_mib": 526.0, "peak_allocated_mib": 504.21337890625, "peak_reserved_mib": 526.0}
+[memory] {"time_utc": "2026-10-22T05:41:33.375897+00:00", "stage": "metadata.streaming.after", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 12596.4921875, "SwapFree_mib": 4012.546875, "VmHWM_mib": 2036.609375, "VmRSS_mib": 1120.8828125, "pid": 31072, "cuda_free_mib": 14519.0, "cuda_total_mib": 16275.4375, "allocated_mib": 504.21337890625, "reserved_mib": 526.0, "peak_allocated_mib": 504.21337890625, "peak_reserved_mib": 526.0}
+[memory] {"time_utc": "2026-10-22T05:41:33.956906+00:00", "stage": "build_dataset.validation.after", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 12350.2421875, "SwapFree_mib": 4012.546875, "VmHWM_mib": 2036.609375, "VmRSS_mib": 1360.13671875, "pid": 31072, "cuda_free_mib": 14519.0, "cuda_total_mib": 16275.4375, "allocated_mib": 504.21337890625, "reserved_mib": 526.0, "peak_allocated_mib": 504.21337890625, "peak_reserved_mib": 526.0}
+[memory] {"time_utc": "2026-10-22T05:41:34.544722+00:00", "stage": "validation.evaluate.before", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 12170.01171875, "SwapFree_mib": 4012.546875, "VmHWM_mib": 2036.609375, "VmRSS_mib": 1549.984375, "pid": 31072, "cuda_free_mib": 14519.0, "cuda_total_mib": 16275.4375, "allocated_mib": 504.21337890625, "reserved_mib": 526.0, "peak_allocated_mib": 504.21337890625, "peak_reserved_mib": 526.0}
+2026-10-22 13:41:34,583 - shapely.geos - INFO - Self-intersection at or near point 471.98647224679792 1711.8705119768197
+2026-10-22 13:41:34,590 - shapely.geos - INFO - Self-intersection at or near point 1070.4578478045039 1612.8333503895974
+2026-10-22 13:41:34,603 - shapely.geos - INFO - Self-intersection at or near point 1147.8004993016441 1404.4814343572746
+2026-10-22 13:41:34,610 - shapely.geos - INFO - Self-intersection at or near point 1942.7006727221749 863.01771240972209
+[A/B] val=0 mode=original completed
+[A/B] val=0 mode=untrained completed
+[A/B] val=0 mode=trained completed
+[A/B] val=0 mode=shuffled completed
+2026-10-22 13:41:36,843 - shapely.geos - INFO - Self-intersection at or near point 471.98647224679792 1711.8705119768197
+2026-10-22 13:41:36,850 - shapely.geos - INFO - Self-intersection at or near point 1070.4578478045039 1612.8333503895974
+2026-10-22 13:41:36,862 - shapely.geos - INFO - Self-intersection at or near point 1147.8004993016441 1404.4814343572746
+2026-10-22 13:41:36,869 - shapely.geos - INFO - Self-intersection at or near point 1942.7006727221749 863.01771240972209
+[A/B] val=16 mode=original completed
+[A/B] val=16 mode=untrained completed
+[A/B] val=16 mode=trained completed
+[A/B] val=16 mode=shuffled completed
+2026-10-22 13:41:38,574 - shapely.geos - INFO - Self-intersection at or near point 471.98647224679792 1711.8705119768197
+2026-10-22 13:41:38,579 - shapely.geos - INFO - Self-intersection at or near point 1070.4578478045039 1612.8333503895974
+2026-10-22 13:41:38,591 - shapely.geos - INFO - Self-intersection at or near point 1147.8004993016441 1404.4814343572746
+2026-10-22 13:41:38,598 - shapely.geos - INFO - Self-intersection at or near point 1942.7006727221749 863.01771240972209
+[A/B] val=32 mode=original completed
+[A/B] val=32 mode=untrained completed
+[A/B] val=32 mode=trained completed
+[A/B] val=32 mode=shuffled completed
+[A/B] val=48 mode=original completed
+[A/B] val=48 mode=untrained completed
+[A/B] val=48 mode=trained completed
+[A/B] val=48 mode=shuffled completed
+[A/B] val=64 mode=original completed
+[A/B] val=64 mode=untrained completed
+[A/B] val=64 mode=trained completed
+[A/B] val=64 mode=shuffled completed
+[A/B] val=80 mode=original completed
+[A/B] val=80 mode=untrained completed
+[A/B] val=80 mode=trained completed
+[A/B] val=80 mode=shuffled completed
+[memory] {"time_utc": "2026-10-22T05:41:45.096135+00:00", "stage": "validation.evaluate.after", "MemTotal_mib": 15705.66015625, "MemAvailable_mib": 11183.125, "SwapFree_mib": 4012.546875, "VmHWM_mib": 2854.3046875, "VmRSS_mib": 2535.05859375, "pid": 31072, "cuda_free_mib": 12917.0, "cuda_total_mib": 16275.4375, "allocated_mib": 534.3115234375, "reserved_mib": 2056.0, "peak_allocated_mib": 1702.67041015625, "peak_reserved_mib": 2056.0}
+micro-train: PASS_FIXED_AB -> /home/jjx2003520/projects/bev_vla/outputs/stage2_final_audit_20261022_legacy_replay/result.json

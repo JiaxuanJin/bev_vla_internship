@@ -1,0 +1,67 @@
+{
+  "status": "PASS_REAL_PRETRAINED_LANGUAGE_RESPONSE_ONLY",
+  "model_sha256": "5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063",
+  "all_encoder_tensors_match_safetensors": true,
+  "loaded_fusion": {
+    "path": "/home/jjx2003520/projects/bev_vla/outputs/stage2_oom_fix_20261022_continue/continue/fusion_step020.pt",
+    "sha256": "125237365f3b456384009168ad8b97df6f0e46805331f79c7e1c344d4c2e9d5a",
+    "recorded_steps": 20
+  },
+  "bev_source": "real_npy",
+  "pairs": {
+    "target_word": {
+      "texts": [
+        "Find lane markings",
+        "Find road boundaries"
+      ],
+      "tokens_differ": true,
+      "embedding_mae": 0.06991013884544373,
+      "attention_mae": 0.00679735979065299,
+      "attention_max_abs": 0.038234710693359375
+    },
+    "front_rear": {
+      "texts": [
+        "Find lane markings ahead",
+        "Find lane markings behind"
+      ],
+      "tokens_differ": true,
+      "embedding_mae": 0.052435290068387985,
+      "attention_mae": 0.0066713569685816765,
+      "attention_max_abs": 0.017183661460876465
+    },
+    "left_right": {
+      "texts": [
+        "Find lane markings on the left",
+        "Find lane markings on the right"
+      ],
+      "tokens_differ": true,
+      "embedding_mae": 0.03540081903338432,
+      "attention_mae": 0.0017758775502443314,
+      "attention_max_abs": 0.010256439447402954
+    },
+    "negation": {
+      "texts": [
+        "Find lane markings and road boundaries",
+        "Find lane markings but ignore road boundaries"
+      ],
+      "tokens_differ": true,
+      "embedding_mae": 0.07584685832262039,
+      "attention_mae": 0.0030977532733231783,
+      "attention_max_abs": 0.0191381573677063
+    },
+    "word_shuffle": {
+      "texts": [
+        "Find lane markings",
+        "markings lane Find"
+      ],
+      "tokens_differ": true,
+      "embedding_mae": 0.07424858957529068,
+      "attention_mae": 0.008776666596531868,
+      "attention_max_abs": 0.03283986449241638
+    }
+  },
+  "attention_spatial_std": 0.03032817877829075,
+  "parser_role": "validation and metadata only; raw normalized text is encoded",
+  "semantic_localization": "NOT_VERIFIED",
+  "optimizer_steps": 0
+}

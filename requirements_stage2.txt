@@ -3,3 +3,5 @@ transformers==4.44.2
 huggingface-hub==0.25.2
 safetensors==0.4.5
 pytest>=8,<10
+# 交付图表仅从既有 JSON/NPZ 离线绘制；沿用已验证版本。
+matplotlib==3.5.2

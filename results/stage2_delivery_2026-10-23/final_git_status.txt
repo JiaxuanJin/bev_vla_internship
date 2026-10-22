@@ -1,0 +1,65 @@
+Before staging: main remains unchanged. Untracked new files are enumerated in file_inventory.json.
+
+ M .gitignore
+ M README.md
+ M docs/images/stage2/README.md
+ M docs/stage2/11_模块架构设计.md
+ M docs/stage2/12_单元测试报告.md
+ M docs/stage2/13_阶段二任务对照.md
+ M docs/stage2/17_第二阶段复现指引.md
+ M docs/stage2/数据分析报告_2026-10-21.md
+ M requirements_stage2.txt
+ M scripts/stage2/README.md
+ M scripts/stage2/README_使用说明.md
+ M scripts/stage2/joint_runtime.py
+ M scripts/stage2/multitask_training.py
+ M scripts/stage2/run_stage2.py
+ M scripts/stage2/run_step69_loss_contract.py
+ M scripts/stage2/semantic_instruction.py
+?? README_使用说明.txt
+?? docs/images/stage2/stage2_audited_architecture_20261022.svg
+?? docs/logbook_2026-10-22.md
+?? docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md
+?? docs/stage2/22_第二阶段Git交付检查_2026-10-23.md
+?? docs/stage2_oom_fix_20261022.md
+?? results/stage2_delivery_2026-10-23/
+?? results/stage2_final_audit_2026-10-22/
+?? scripts/README.txt
+?? scripts/README_使用说明.txt
+?? scripts/check_lidar_camera_alignment.py
+?? scripts/check_stage2_delivery.py
+?? scripts/prepare_stage2_delivery.py
+?? scripts/stage2/audit_stage2_evidence.py
+?? scripts/stage2/integration_smoke.py
+?? scripts/stage2/low_memory_dataset.py
+?? scripts/stage2/micro_process.py
+?? scripts/stage2/micro_report.py
+?? scripts/stage2/micro_training.py
+?? scripts/stage2/replay_stage2.py
+?? scripts/stage2/runtime_memory.py
+?? scripts/step48a_clean_5080_pytorch.sh
+?? scripts/step48a_offline_torch_copy.sh
+?? scripts/step48b_build_mmcv_author_5080.sh
+?? scripts/step48b_fix_cpp17_and_build.sh
+?? scripts/step48c_fix_torch_dispatch.py
+?? scripts/step48d_fix_thc_and_build.sh
+?? tests/test_stage2_final_audit.py
+?? tests/test_stage2_micro_training.py
+
+ .gitignore                                   |   2 +
+ README.md                                    |  23 +-
+ docs/images/stage2/README.md                 |   4 +
+ docs/stage2/11_模块架构设计.md         | 164 +++++---------
+ docs/stage2/12_单元测试报告.md         | 126 +++--------
+ docs/stage2/13_阶段二任务对照.md      |  49 ++---
+ docs/stage2/17_第二阶段复现指引.md   | 112 ++++------
+ docs/stage2/数据分析报告_2026-10-21.md |   6 +-
+ requirements_stage2.txt                      |   2 +
+ scripts/stage2/README.md                     |  84 ++------
+ scripts/stage2/README_使用说明.md        |   2 +
+ scripts/stage2/joint_runtime.py              | 310 ++++++++++++++++++++-------
+ scripts/stage2/multitask_training.py         |  65 +++++-
+ scripts/stage2/run_stage2.py                 | 218 +++++++++++++++----
+ scripts/stage2/run_step69_loss_contract.py   |  20 +-
+ scripts/stage2/semantic_instruction.py       | 107 ++++++---
+ 16 files changed, 769 insertions(+), 525 deletions(-)
