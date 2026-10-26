@@ -115,12 +115,35 @@ def supervised_attention_loss(
     segmentation_gt: Tensor,
     target_classes: Tensor,
     cfg: LossConfig,
+    *,
+    spatial_targets: Sequence[Any] | None = None,
 ) -> Tensor:
     """同空间下的类别条件注意力损失。
 
     注意力输入是未经 sigmoid 的 logits。[B,1,H,W]；训练 GT 不进入推理。
     注意力图与分割 GT 不同尺寸时严格拒绝，避免默默缩放掩盖空间协议问题。
     """
+    if spatial_targets is not None:
+        from .spatial_supervision import spatial_attention_loss
+
+        if target_classes.shape != (segmentation_gt.shape[0],):
+            raise ValueError("target_classes 必须逐帧指定")
+        if target_classes.dtype != torch.long or (
+            target_classes.device != attention_logits.device
+        ):
+            raise ValueError("指令类别 dtype/设备错误")
+        if len(spatial_targets) != segmentation_gt.shape[0]:
+            raise ValueError("实例标注数量必须等于 batch")
+        if any(
+            item.target_class != int(target_classes[i].item())
+            for i, item in enumerate(spatial_targets)
+        ):
+            raise ValueError("显式实例标签与指令类别不一致")
+        return spatial_attention_loss(
+            attention_logits, segmentation_gt, spatial_targets,
+            ignore_index=cfg.ignore_index,
+            dice_weight=cfg.attention_dice_weight,
+        )
     if attention_logits.ndim != 4 or attention_logits.shape[1] != 1:
         raise ValueError("注意力 logits 必须是 [B,1,H,W]")
     if tuple(attention_logits.shape[0:1] + attention_logits.shape[2:4]) != tuple(
@@ -205,6 +228,7 @@ class Stage2MultiTaskLoss(nn.Module):
         attention_logits: Tensor,
         target_classes: Tensor,
         *,
+        spatial_targets: Sequence[Any] | None = None,
         regularization_logits: Tensor | None = None,
     ) -> tuple[Tensor, dict[str, Tensor]]:
         """返回保留梯度的总损失和各项 detached 诊断指标。"""
@@ -220,7 +244,8 @@ class Stage2MultiTaskLoss(nn.Module):
             ignore_index=self.config.ignore_index,
         )
         att = supervised_attention_loss(
-            attention_logits, segmentation_gt, target_classes, self.config
+            attention_logits, segmentation_gt, target_classes, self.config,
+            spatial_targets=spatial_targets,
         )
         # 零权重不额外计算正则，历史实验的 total 保持逐位相同。
         regularization = att.new_zeros(())

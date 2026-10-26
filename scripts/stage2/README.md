@@ -1,6 +1,22 @@
-# 第二阶段统一模块与交付入口
+# 核心模块与历史训练脚本索引（原第二／第三阶段）
 
-当前任务依据：[指导老师原始任务书](../../docs/stage2/02_第二阶段原始任务书.md)。当前源码审查：[21_最终缺口审查](../../docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md)；最终Git交付：[22_交付检查](../../docs/stage2/22_第二阶段Git交付检查_2026-10-23.md)；[117项测试与真实GPU证据](../../results/stage2_final_audit_2026-10-22/README.md)；[真实20步与6帧A/B图表](../../results/stage2_delivery_2026-10-23/README.md)。
+> 2026-10-26 阶段归属更正：本目录同时存放第二阶段模块与原第三阶段研究脚本；V1～V5 不是项目阶段。现有“第二阶段任务书”仅为材料摘录，完整 PDF 缺失；以 [四阶段审计](../../docs/四阶段任务交付审计_2026-10-26.md) 为当前状态，不因源码目录、本地包或研究停止宣布第三／第四阶段完成。本轮不执行训练。
+
+第二轮入口为 `spatial_v2_data.py`、`spatial_v2_experiment.py`、`spatial_v2_model.py`、
+`spatial_v2_controls.py`、`spatial_v2_report.py` 和 `spatial_v2_detection.py`。
+已完成真实缓存对比预热与双Head联合训练，并在新的场景留出集评价；方位Attention改善，
+检测AP仍略降，完整证据见 [第二轮报告](../../docs/stage2/26_第二轮空间对比监督与独立留出评估_2026-10-26.md)。
+
+2026-10-26 已实际完成20步真实GPU空间监督与独立指令A/B，入口为
+`spatial_annotations.py`、`spatial_experiment.py`、`spatial_report.py` 和独立对象任务
+`spatial_detection.py`。相关IoU变化很小、对象AP略降，不能宣称语言定位收益；
+实际数值、图和完整命令见 [真实GPU空间监督报告](../../docs/stage2/25_真实GPU空间监督实验_2026-10-26.md)。
+
+正式 pytest 已于 2026-10-26 归档到 `tests/stage2/`；`pytest tests/` 仍有效。
+单文件新命令、早期 `stage2/` 兼容测试与手动实验脚本边界见
+[测试说明](../../tests/README.md) 和 [当天规范化报告](../../docs/stage2/24_测试目录规范化_2026-10-26.md)。
+
+历史第二阶段材料：[第二阶段摘录](../../docs/stage2/02_第二阶段原始任务书.md)。当前源码审查：[21_最终缺口审查](../../docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md)；最终Git交付：[22_交付检查](../../docs/stage2/22_第二阶段Git交付检查_2026-10-23.md)；[117项测试与真实GPU证据](../../results/stage2_final_audit_2026-10-22/README.md)；[真实20步与6帧A/B图表](../../results/stage2_delivery_2026-10-23/README.md)。
 
 在仓库根目录运行。完整统一入口为 `scripts/stage2/run_stage2.py`，支持cpu-tests、offline-bev、joint、joint-backward和独立进程micro-train阶段。15GiB WSL优先使用低内存smoke或冻结旧源码只读重放，不直接预加载作者全量元数据。
 

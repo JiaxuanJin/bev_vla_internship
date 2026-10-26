@@ -1,0 +1,85 @@
+{
+  "versions": [
+    {
+      "research_version": "historical_class",
+      "original_stage": 3,
+      "checkpoint": "outputs/stage2_oom_fix_20261022_continue/continue/fusion_step020.pt",
+      "checkpoint_sha256": "125237365f3b456384009168ad8b97df6f0e46805331f79c7e1c344d4c2e9d5a",
+      "new_optimizer_updates_across_this_version_branches": 20,
+      "metrics": "outputs/stage2_oom_fix_20261022_validation/validate/",
+      "formal_performance": "NOT_MET: no task-conforming mAP/mIoU acceptance result",
+      "counts_scope": "new updates over all branches; selected checkpoint step is not total version budget; inherited updates not summed",
+      "gpu_logs": []
+    },
+    {
+      "research_version": "V1",
+      "original_stage": 3,
+      "checkpoint": "outputs/stage2_spatial_20261026/train_continue/fusion_step020.pt",
+      "checkpoint_sha256": "8cb61c3662356684316098f8328add7968f358f1c49fbff368dcac92bcf4c913",
+      "new_optimizer_updates_across_this_version_branches": 20,
+      "metrics": "outputs/stage2_spatial_20261026/report/metrics.json",
+      "formal_performance": "NOT_MET: no task-conforming mAP/mIoU acceptance result",
+      "counts_scope": "new updates over all branches; selected checkpoint step is not total version budget; inherited updates not summed",
+      "gpu_logs": [
+        "outputs/stage2_spatial_20261026/train_step1.log",
+        "outputs/stage2_spatial_20261026/train_continue.log"
+      ]
+    },
+    {
+      "research_version": "V2_selected220",
+      "original_stage": 3,
+      "checkpoint": "outputs/stage2_spatial_v2_20261026/train/fusion_step220.pt",
+      "checkpoint_sha256": "bba3d02ae7410fa1d591ce156ecb412e0d2f382668f24634ba79df5762037601",
+      "new_optimizer_updates_across_this_version_branches": 240,
+      "metrics": "outputs/stage2_spatial_v2_20261026/report/metrics.json",
+      "formal_performance": "NOT_MET: no task-conforming mAP/mIoU acceptance result",
+      "counts_scope": "new updates over all branches; selected checkpoint step is not total version budget; inherited updates not summed",
+      "gpu_logs": [
+        "outputs/stage2_spatial_v2_20261026/train.log"
+      ]
+    },
+    {
+      "research_version": "V3_selected_map176",
+      "original_stage": 3,
+      "checkpoint": "outputs/stage2_spatial_v3_20261026/train/combined/fusion_step176.pt",
+      "checkpoint_sha256": "5b3d95bcd072111557f170197fc1b0dc325eb7af03a38cb5a10afc5b8cbae8b2",
+      "new_optimizer_updates_across_this_version_branches": 1488,
+      "metrics": "outputs/stage2_spatial_v3_20261026/report/metrics.json",
+      "formal_performance": "NOT_MET: no task-conforming mAP/mIoU acceptance result",
+      "counts_scope": "new updates over all branches; selected checkpoint step is not total version budget; inherited updates not summed",
+      "gpu_logs": [
+        "outputs/stage2_spatial_v3_20261026/logs/train.log",
+        "outputs/stage2_spatial_v3_20261026/logs/range_correction.log"
+      ]
+    },
+    {
+      "research_version": "V4_full_instruction384",
+      "original_stage": 3,
+      "checkpoint": "outputs/stage3_conditional_mask_v4_20261026/full_instruction/target_mask_step0384.pt",
+      "checkpoint_sha256": "675974fb802c044c7c6dfc5b9ac403c7f4c4520a374cbcf788757e86db0a2f18",
+      "new_optimizer_updates_across_this_version_branches": 1792,
+      "metrics": "outputs/stage3_conditional_mask_v4_20261026/report/metrics.json",
+      "formal_performance": "NOT_MET: no task-conforming mAP/mIoU acceptance result",
+      "counts_scope": "new updates over all branches; selected checkpoint step is not total version budget; inherited updates not summed",
+      "gpu_logs": [
+        "outputs/stage3_conditional_mask_v4_20261026/gpu_training_run.log"
+      ]
+    },
+    {
+      "research_version": "V5_targeted_language96",
+      "original_stage": 3,
+      "checkpoint": "outputs/stage3_coupled_v5_20261026/train/targeted_language/adapter_step096.pt",
+      "checkpoint_sha256": "20591c0a8450cb33bafaa348462bbfbdbde17bed24d7af95a5a11022a1093a0a",
+      "new_optimizer_updates_across_this_version_branches": 288,
+      "metrics": "outputs/stage3_coupled_v5_20261026/report/metrics.json",
+      "formal_performance": "NOT_MET: no task-conforming mAP/mIoU acceptance result",
+      "counts_scope": "new updates over all branches; selected checkpoint step is not total version budget; inherited updates not summed",
+      "gpu_logs": [
+        "outputs/stage3_coupled_v5_20261026/gpu_pilot_training.log"
+      ]
+    }
+  ],
+  "metric_review_extra_updates": 96,
+  "all_original_stage": 3,
+  "not_project_stages": true
+}

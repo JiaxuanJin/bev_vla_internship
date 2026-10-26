@@ -1,0 +1,25 @@
+{
+  "authoritative_document": "BEV感知注意力增强.pdf",
+  "pdf_found": false,
+  "project_pdf_candidates": [],
+  "project_demo_video_candidates": [],
+  "excluded_directories": [
+    ".git",
+    "BEVFormer",
+    "BEVFormer-seg",
+    "__pycache__",
+    "bevformer-blackwell",
+    "data",
+    "data_backup_before_g",
+    "datasets",
+    "mmcv-1.7.2",
+    "mmdetection3d-0.17.1",
+    "models",
+    "third_party"
+  ],
+  "scan": "repository regular files; no symlink traversal; environment/vendor/data directories excluded; vendor mmcv/tests/data/test.mp4 separately observed and is not a project demo",
+  "partial_material": "docs/stage2/02_第二阶段原始任务书.md",
+  "authority_status": "BLOCKED",
+  "audit_basis": "current user-provided four-stage definitions and four performance thresholds, provisionally; not represented as PDF verbatim",
+  "threshold_interpretation": "preserve 2%,1.5%,2%,20ms literally; relative-percent vs percentage-point and official protocol await PDF; do not invent"
+}

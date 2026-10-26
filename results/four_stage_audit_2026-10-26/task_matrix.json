@@ -1,0 +1,532 @@
+{
+  "date": "2026-10-26",
+  "authority": {
+    "authoritative_document": "BEV感知注意力增强.pdf",
+    "pdf_found": false,
+    "project_pdf_candidates": [],
+    "project_demo_video_candidates": [],
+    "excluded_directories": [
+      ".git",
+      "BEVFormer",
+      "BEVFormer-seg",
+      "__pycache__",
+      "bevformer-blackwell",
+      "data",
+      "data_backup_before_g",
+      "datasets",
+      "mmcv-1.7.2",
+      "mmdetection3d-0.17.1",
+      "models",
+      "third_party"
+    ],
+    "scan": "repository regular files; no symlink traversal; environment/vendor/data directories excluded; vendor mmcv/tests/data/test.mp4 separately observed and is not a project demo",
+    "partial_material": "docs/stage2/02_第二阶段原始任务书.md",
+    "authority_status": "BLOCKED",
+    "audit_basis": "current user-provided four-stage definitions and four performance thresholds, provisionally; not represented as PDF verbatim",
+    "threshold_interpretation": "preserve 2%,1.5%,2%,20ms literally; relative-percent vs percentage-point and official protocol await PDF; do not invent"
+  },
+  "stages": [
+    {
+      "stage": 1,
+      "name": "环境搭建与基线复现",
+      "status": "PARTIAL"
+    },
+    {
+      "stage": 2,
+      "name": "核心模块设计与实现",
+      "status": "PASS",
+      "scope": "engineering/function only, not proven grounding or performance"
+    },
+    {
+      "stage": 3,
+      "name": "模型训练与性能优化",
+      "status": "NOT_MET",
+      "formal_evaluation": "PARTIAL/NOT_RUN, no conforming accuracy result"
+    },
+    {
+      "stage": 4,
+      "name": "全面验证与成果总结",
+      "status": "PARTIAL",
+      "formal_drivelm_test": "NOT_RUN",
+      "demo_video": "NOT_RUN"
+    }
+  ],
+  "items": [
+    {
+      "id": "S1-01",
+      "stage": 1,
+      "original_requirement": "环境搭建",
+      "status": "PASS",
+      "evidence_paths": [
+        "outputs/stage3_coupled_v5_20261026/hardware.json",
+        "docs/stage2/17_第二阶段复现指引.md"
+      ],
+      "evidence_description": "[GPU 环境记录](../outputs/stage3_coupled_v5_20261026/hardware.json)、[环境与复现说明](stage2/17_第二阶段复现指引.md)",
+      "limitation": "RTX 5080 Laptop、Torch/CUDA/MMCV 已真实运行；不是 RTX 3090 正式延迟验收",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S1-02",
+      "stage": 1,
+      "original_requirement": "DriveLM 数据准备",
+      "status": "PASS",
+      "evidence_paths": [
+        "outputs/drivelm_official_preprocess/full/summary.json",
+        "docs/stage1/01_DriveLM数据集结构与标注说明.md"
+      ],
+      "evidence_description": "[官方预处理 summary](../outputs/drivelm_official_preprocess/full/summary.json)、[数据说明](stage1/01_DriveLM数据集结构与标注说明.md)",
+      "limitation": "696 场景、4072 关键帧、29450 QA 的训练数据转换；不能将产物名 test.json 解释为测试成绩",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S1-03",
+      "stage": 1,
+      "original_requirement": "BEVFormer-Small 基线运行",
+      "status": "PASS",
+      "evidence_paths": [
+        "docs/stage1/03_基线性能测试报告.md",
+        "outputs/drivelm_check/det799_subset_eval/evaluation_protocol.json"
+      ],
+      "evidence_description": "[基线性能报告](stage1/03_基线性能测试报告.md)、[799 帧检测协议](../outputs/drivelm_check/det799_subset_eval/evaluation_protocol.json)",
+      "limitation": "真实预训练模型推理及记录可追溯，不代表达到作者论文分数",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S1-04",
+      "stage": 1,
+      "original_requirement": "DriveLM 验证集 3D mAP",
+      "status": "PARTIAL",
+      "evidence_paths": [
+        "outputs/drivelm_check/det799_subset_eval/evaluation_protocol.json"
+      ],
+      "evidence_description": "[799 帧检测协议及 mAP](../outputs/drivelm_check/det799_subset_eval/evaluation_protocol.json)",
+      "limitation": "已测 799 帧独立帧子集 mAP=13.387017%、NDS=25.791157%；与完整 nuScenes 时序／任务书正式协议不能直接等同",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S1-05",
+      "stage": 1,
+      "original_requirement": "DriveLM 验证集 BEV mIoU",
+      "status": "PARTIAL",
+      "evidence_paths": [
+        "outputs/drivelm_check/seg799_independent_eval/metrics_summary.json"
+      ],
+      "evidence_description": "[799 帧分割原始指标](../outputs/drivelm_check/seg799_independent_eval/metrics_summary.json)",
+      "limitation": "前景 mIoU=5.121137%、含背景=22.221982%；真实但低值，正式覆盖／协议仍须对照 PDF",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S1-06",
+      "stage": 1,
+      "original_requirement": "数据结构与标注说明",
+      "status": "PASS",
+      "evidence_paths": [
+        "docs/stage1/01_DriveLM数据集结构与标注说明.md",
+        "outputs/drivelm_check/drivelm_bevformer_alignment_summary.json"
+      ],
+      "evidence_description": "[数据说明](stage1/01_DriveLM数据集结构与标注说明.md)、[对应关系日志](../outputs/drivelm_check/drivelm_bevformer_alignment_summary.json)",
+      "limitation": "说明 token、相机、标定和数据对应；不是效果验收",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S1-07",
+      "stage": 1,
+      "original_requirement": "数据与感知结果可视化",
+      "status": "PASS",
+      "evidence_paths": [
+        "docs/stage1/04_可视化成果索引.md",
+        "docs/images/2026-10-12/drivelm799_seg_comparison_000.png"
+      ],
+      "evidence_description": "[可视化索引](stage1/04_可视化成果索引.md)、[真实分割示例](images/2026-10-12/drivelm799_seg_comparison_000.png)",
+      "limitation": "有真实六相机／BEV／检测／分割图；静态图不是演示视频",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S2-01",
+      "stage": 2,
+      "original_requirement": "DistilBERT 预训练语言编码",
+      "status": "PASS",
+      "evidence_paths": [
+        "scripts/stage2/language_encoder.py",
+        "results/stage2_final_audit_2026-10-22/language_probe.json"
+      ],
+      "evidence_description": "[编码器源码](../scripts/stage2/language_encoder.py)、[真实权重／语言探测](../results/stage2_final_audit_2026-10-22/language_probe.json)",
+      "limitation": "动态编码和权重加载不等于语言理解／正确指代",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S2-02",
+      "stage": 2,
+      "original_requirement": "指令预处理与语义特征提取",
+      "status": "PASS",
+      "evidence_paths": [
+        "scripts/stage2/semantic_instruction.py",
+        "scripts/stage2/language_encoder.py"
+      ],
+      "evidence_description": "[解析器](../scripts/stage2/semantic_instruction.py)、[编码器](../scripts/stage2/language_encoder.py)",
+      "limitation": "受约束英文类别／方位任务；未证明自由语言能力",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S2-03",
+      "stage": 2,
+      "original_requirement": "语义—空间映射",
+      "status": "PASS",
+      "evidence_paths": [
+        "scripts/stage2/semantic_projection.py",
+        "results/stage2_final_audit_2026-10-22/gpu_smoke.json"
+      ],
+      "evidence_description": "[映射源码](../scripts/stage2/semantic_projection.py)、[GPU 集成证据](../results/stage2_final_audit_2026-10-22/gpu_smoke.json)",
+      "limitation": "二维张量和实际依赖存在；不是实例定位精度通过",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S2-04",
+      "stage": 2,
+      "original_requirement": "BEV Attention Mask",
+      "status": "PASS",
+      "evidence_paths": [
+        "scripts/stage2/language_bev_attention.py",
+        "docs/stage2/13_阶段二任务对照.md"
+      ],
+      "evidence_description": "[注意力源码](../scripts/stage2/language_bev_attention.py)、[模块任务对照](stage2/13_阶段二任务对照.md)",
+      "limitation": "Mask／Attention IoU 仅辅助诊断，不能代替正式分割或检测",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S2-05",
+      "stage": 2,
+      "original_requirement": "Fusion",
+      "status": "PASS",
+      "evidence_paths": [
+        "scripts/stage2/bev_fusion.py",
+        "results/stage2_final_audit_2026-10-22/gpu_smoke.json"
+      ],
+      "evidence_description": "[融合源码](../scripts/stage2/bev_fusion.py)、[GPU smoke](../results/stage2_final_audit_2026-10-22/gpu_smoke.json)",
+      "limitation": "已核验旁路和输出变化，不保证正确增强",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S2-06",
+      "stage": 2,
+      "original_requirement": "多任务 Loss",
+      "status": "PASS",
+      "evidence_paths": [
+        "scripts/stage2/multitask_training.py",
+        "results/stage2_final_audit_2026-10-22/checks.json"
+      ],
+      "evidence_description": "[损失源码](../scripts/stage2/multitask_training.py)、[损失检查](../results/stage2_final_audit_2026-10-22/checks.json)",
+      "limitation": "区分监督与 TV 正则；旧 20 步 TV=0，非零 TV 仅独立梯度证据",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S2-07",
+      "stage": 2,
+      "original_requirement": "BEVFormer 原生流程集成",
+      "status": "PASS",
+      "evidence_paths": [
+        "scripts/stage2/pipeline.py",
+        "results/stage2_final_audit_2026-10-22/gpu_smoke.json"
+      ],
+      "evidence_description": "[集成源码](../scripts/stage2/pipeline.py)、[双 Head 运行记录](../results/stage2_final_audit_2026-10-22/gpu_smoke.json)",
+      "limitation": "实验级 Hook 集成，依赖外部作者工程；不是部署或精度完成",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S2-08",
+      "stage": 2,
+      "original_requirement": "模块设计文档与架构图",
+      "status": "PASS",
+      "evidence_paths": [
+        "docs/stage2/11_模块架构设计.md",
+        "docs/images/stage2/stage2_audited_architecture_20261022.svg"
+      ],
+      "evidence_description": "[模块设计](stage2/11_模块架构设计.md)、[架构图](images/stage2/stage2_audited_architecture_20261022.svg)",
+      "limitation": "工程结构说明，不是正式性能结果",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S2-09",
+      "stage": 2,
+      "original_requirement": "单元测试与测试报告",
+      "status": "PASS",
+      "evidence_paths": [
+        "tests/README.md",
+        "results/test_layout_2026-10-26/verification.json"
+      ],
+      "evidence_description": "[测试说明](../tests/README.md)、[迁移前后记录](../results/test_layout_2026-10-26/verification.json)",
+      "limitation": "已有 123 项历史测试及兼容性记录；本轮未重跑，测试数量不代替算法验收",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S3-01",
+      "stage": 3,
+      "original_requirement": "冻结原作者主干、训练新增模块",
+      "status": "PASS",
+      "evidence_paths": [
+        "outputs/stage3_coupled_v5_20261026/report/training_audit.json",
+        "outputs/stage2_spatial_20261026/execution_manifest.json"
+      ],
+      "evidence_description": "[V5 真实训练审计](../outputs/stage3_coupled_v5_20261026/report/training_audit.json)、[V1 执行记录](../outputs/stage2_spatial_20261026/execution_manifest.json)",
+      "limitation": "真实 CUDA 更新，冻结项可追溯；不能混同 CPU 测试、GPU 前向和 optimizer.step",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S3-02",
+      "stage": 3,
+      "original_requirement": "超参数优化",
+      "status": "PARTIAL",
+      "evidence_paths": [
+        "outputs/stage2_spatial_v2_20261026/train/selection.json",
+        "outputs/stage2_spatial_v3_20261026/report/ablations.md",
+        "outputs/stage3_coupled_v5_20261026/pilot_decision.json"
+      ],
+      "evidence_description": "[V2 选择记录](../outputs/stage2_spatial_v2_20261026/train/selection.json)、[V3 消融](../outputs/stage2_spatial_v3_20261026/report/ablations.md)、[V5 固定门槛](../outputs/stage3_coupled_v5_20261026/pilot_decision.json)",
+      "limitation": "有开发集受限消融及失败结论，未获得正式精度达标模型；已按预算停止",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S3-03",
+      "stage": 3,
+      "original_requirement": "保存训练权重和运行日志",
+      "status": "PASS",
+      "evidence_paths": [
+        "outputs/stage3_coupled_v5_20261026/report/checkpoint_catalog.json",
+        "outputs/stage3_coupled_v5_20261026/gpu_pilot_training.log"
+      ],
+      "evidence_description": "[权重及 SHA 清单](../outputs/stage3_coupled_v5_20261026/report/checkpoint_catalog.json)、[V5 GPU 日志](../outputs/stage3_coupled_v5_20261026/gpu_pilot_training.log)、下表 V1～V5 索引",
+      "limitation": "所有候选含失败权重保留；保存不等于选出正式最优模型",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S3-04",
+      "stage": 3,
+      "original_requirement": "DriveLM 验证集增强前后性能对比",
+      "status": "PARTIAL",
+      "evidence_paths": [
+        "outputs/drivelm_check/det799_subset_eval/evaluation_protocol.json",
+        "outputs/stage3_coupled_v5_20261026/report/metrics.json"
+      ],
+      "evidence_description": "[第一阶段 DriveLM 基线](../outputs/drivelm_check/det799_subset_eval/evaluation_protocol.json)、[V5 诊断指标](../outputs/stage3_coupled_v5_20261026/report/metrics.json)",
+      "limitation": "前者为旧基线，后者是 Mini 场景有限指令诊断；没有同一正式 DriveLM 验证协议的完整 Baseline／增强成对 mAP、mIoU",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S3-05",
+      "stage": 3,
+      "original_requirement": "推理延迟评价",
+      "status": "PARTIAL",
+      "evidence_paths": [
+        "outputs/stage3_coupled_v5_20261026/runtime/metrics.json",
+        "outputs/stage3_coupled_v5_20261026/runtime/protocol.json"
+      ],
+      "evidence_description": "[V5 原始计时](../outputs/stage3_coupled_v5_20261026/runtime/metrics.json)、[计时协议](../outputs/stage3_coupled_v5_20261026/runtime/protocol.json)",
+      "limitation": "实际测过 RTX 5080 Laptop；RTX 3090 正式验收 NOT_RUN，不能换算",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S3-06",
+      "stage": 3,
+      "original_requirement": "结构优化",
+      "status": "PARTIAL",
+      "evidence_paths": [
+        "outputs/stage3_metric_review_20261026/compact_inference/protocol.json",
+        "scripts/stage2/coupled_v5_model.py"
+      ],
+      "evidence_description": "[精简模型及等价证据](../outputs/stage3_metric_review_20261026/compact_inference/protocol.json)、[V5 耦合模型](../scripts/stage2/coupled_v5_model.py)",
+      "limitation": "已进行结构试验／无损参数精简；没有证明正式精度、目标设备效率同时满足要求",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S3-07",
+      "stage": 3,
+      "original_requirement": "达到正式指令相关精度目标",
+      "status": "NOT_MET",
+      "evidence_paths": [
+        "outputs/stage3_coupled_v5_20261026/pilot_decision.json"
+      ],
+      "evidence_description": "[固定门槛失败](../outputs/stage3_coupled_v5_20261026/pilot_decision.json)、下方正式指标表",
+      "limitation": "没有正式指标达标证据；不将自定义指标改名为 mAP/mIoU",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "P-01",
+      "stage": "formal_performance",
+      "original_requirement": "指令相关目标 3D 检测 mAP 提升至少 2%",
+      "status": "NOT_MET",
+      "evidence_paths": [
+        "outputs/stage3_coupled_v5_20261026/report/metrics.json",
+        "outputs/stage3_coupled_v5_20261026/pilot_decision.json"
+      ],
+      "evidence_description": "[V5 诊断指标及评价范围](../outputs/stage3_coupled_v5_20261026/report/metrics.json)、[失败判定](../outputs/stage3_coupled_v5_20261026/pilot_decision.json)",
+      "limitation": "现有 AP@2m_xy 是自定义单距离、非插值、car/pedestrian 协议，不是任务书正式 mAP；诊断下降也不能直接填成正式 mAP 下降",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository",
+      "formal_result": "N/A，正式成对评价 NOT_RUN"
+    },
+    {
+      "id": "P-02",
+      "stage": "formal_performance",
+      "original_requirement": "指令相关区域 BEV 分割 mIoU 提升至少 1.5%",
+      "status": "NOT_MET",
+      "evidence_paths": [
+        "outputs/stage3_coupled_v5_20261026/report/metrics.json",
+        "outputs/stage3_coupled_v5_20261026/pilot/maps/semantic_per_instruction.csv"
+      ],
+      "evidence_description": "[V5 诊断指标](../outputs/stage3_coupled_v5_20261026/report/metrics.json)、[逐指令语义统计](../outputs/stage3_coupled_v5_20261026/pilot/maps/semantic_per_instruction.csv)",
+      "limitation": "目标邻域 target-class pooled IoU 不等于正式相关区域多类别 mIoU；Attention／Mask IoU 更不能替代",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository",
+      "formal_result": "N/A，正式成对评价 NOT_RUN"
+    },
+    {
+      "id": "P-03",
+      "stage": "formal_performance",
+      "original_requirement": "整体平均精度下降不超过 2%",
+      "status": "NOT_RUN",
+      "evidence_paths": [
+        "outputs/stage3_coupled_v5_20261026/report/metrics.json"
+      ],
+      "evidence_description": "[现有相关／无关子区域指标及范围](../outputs/stage3_coupled_v5_20261026/report/metrics.json)",
+      "limitation": "无关区域 IoU/AP 不是整体平均精度；须有相同正式集合、类别和平均定义下的基线／增强结果",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository",
+      "formal_result": "N/A"
+    },
+    {
+      "id": "P-04",
+      "stage": "formal_performance",
+      "original_requirement": "RTX 3090 上模块单帧推理延迟增加不超过 20ms",
+      "status": "BLOCKED",
+      "evidence_paths": [
+        "outputs/stage3_coupled_v5_20261026/hardware.json",
+        "outputs/stage3_coupled_v5_20261026/runtime/protocol.json",
+        "outputs/stage3_coupled_v5_20261026/runtime/metrics.json"
+      ],
+      "evidence_description": "[实际 GPU](../outputs/stage3_coupled_v5_20261026/hardware.json)、[计时协议](../outputs/stage3_coupled_v5_20261026/runtime/protocol.json)、[计时数据](../outputs/stage3_coupled_v5_20261026/runtime/metrics.json)",
+      "limitation": "本地证据为 RTX 5080 Laptop；未见 3090 对应记录，硬件和计时范围不同，不能从 12.179ms 直接判通过",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository",
+      "formal_result": "N/A，3090 测量 NOT_RUN"
+    },
+    {
+      "id": "S4-01",
+      "stage": 4,
+      "original_requirement": "DriveLM 测试集正式评估",
+      "status": "NOT_RUN",
+      "evidence_paths": [
+        "outputs/stage3_coupled_v5_20261026/report/metrics.json",
+        "outputs/drivelm_official_preprocess/full/summary.json"
+      ],
+      "evidence_description": "[V5 最终评价状态](../outputs/stage3_coupled_v5_20261026/report/metrics.json)、[预处理输入来源](../outputs/drivelm_official_preprocess/full/summary.json)",
+      "limitation": "没有正式测试集 Baseline／增强成对检测、分割结果；训练 QA 转换产物 test.json 不是测试评估",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S4-02",
+      "stage": 4,
+      "original_requirement": "分场景／跨场景验证分析",
+      "status": "PARTIAL",
+      "evidence_paths": [
+        "docs/stage2/26_第二轮空间对比监督与独立留出评估_2026-10-26.md",
+        "docs/stage2/27_第三轮实例排序与背景难负例实测_2026-10-26.md",
+        "outputs/stage3_conditional_mask_v4_20261026/report/final_metrics.json"
+      ],
+      "evidence_description": "[V2 记录](stage2/26_第二轮空间对比监督与独立留出评估_2026-10-26.md)、[V3 记录](stage2/27_第三轮实例排序与背景难负例实测_2026-10-26.md)、[V4 留出诊断](../outputs/stage3_conditional_mask_v4_20261026/report/final_metrics.json)",
+      "limitation": "有有限场景的适配留出诊断，不能写成统一正式测试集上的全面跨场景验证；V5 未开新最终集",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S4-03",
+      "stage": 4,
+      "original_requirement": "分指令分析",
+      "status": "PARTIAL",
+      "evidence_paths": [
+        "outputs/stage3_coupled_v5_20261026/pilot/maps/semantic_per_instruction.csv",
+        "outputs/stage3_conditional_mask_v4_20261026/dev_predictions/mask_per_instruction.csv"
+      ],
+      "evidence_description": "[V5 逐指令 CSV](../outputs/stage3_coupled_v5_20261026/pilot/maps/semantic_per_instruction.csv)、[V4 对照](../outputs/stage3_conditional_mask_v4_20261026/dev_predictions/mask_per_instruction.csv)",
+      "limitation": "有正确／错误、方位、nearest/farthest 等有限模板分析；没有完整 DriveLM 测试指令覆盖",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S4-04",
+      "stage": 4,
+      "original_requirement": "失效案例",
+      "status": "PASS",
+      "evidence_paths": [
+        "outputs/stage3_coupled_v5_20261026/report/detection_failure_counts.json",
+        "outputs/stage3_coupled_v5_20261026/pilot/maps/comparison_00.png",
+        "outputs/stage3_conditional_mask_v4_20261026/dev_predictions/comparison_08.png"
+      ],
+      "evidence_description": "[V5 检测失效计数](../outputs/stage3_coupled_v5_20261026/report/detection_failure_counts.json)、[真实失败／对照图](../outputs/stage3_coupled_v5_20261026/pilot/maps/comparison_00.png)、[V4 图像](../outputs/stage3_conditional_mask_v4_20261026/dev_predictions/comparison_08.png)",
+      "limitation": "已真实归档当前有限实验的失效案例；不是正式测试全覆盖",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S4-05",
+      "stage": 4,
+      "original_requirement": "完整 README",
+      "status": "PARTIAL",
+      "evidence_paths": [
+        "README.md",
+        "docs/stage2/17_第二阶段复现指引.md"
+      ],
+      "evidence_description": "[当前 README](../README.md)、[复现说明](stage2/17_第二阶段复现指引.md)、本审计",
+      "limitation": "本轮纠正四阶段导航；正式测试、3090、视频仍无对应实际产出和完整复现闭环",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S4-06",
+      "stage": 4,
+      "original_requirement": "完整技术报告",
+      "status": "PARTIAL",
+      "evidence_paths": [
+        "docs/stage3/03_V5语言条件耦合与最终探索结论_2026-10-26.md",
+        "docs/stage3/04_第三阶段收尾与DriveLM可评价范围_2026-10-26.md"
+      ],
+      "evidence_description": "[V5 报告](stage3/03_V5语言条件耦合与最终探索结论_2026-10-26.md)、[研究归档说明](stage3/04_第三阶段收尾与DriveLM可评价范围_2026-10-26.md)",
+      "limitation": "V1～V5 研究报告具备，原任务正式测试与四项性能验收报告缺失",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S4-07",
+      "stage": 4,
+      "original_requirement": "代码仓库与当前成果交付",
+      "status": "PARTIAL",
+      "evidence_paths": [
+        "results/stage4_delivery_2026-10-26/git_whitelist.txt",
+        "outputs/stage4_delivery_20261026/git_state.json"
+      ],
+      "evidence_description": "[历史候选清单](../results/stage4_delivery_2026-10-26/git_whitelist.txt)、[只读 Git 状态](../outputs/stage4_delivery_20261026/git_state.json)",
+      "limitation": "仓库存在，当前新增成果仍有本地未提交项；候选清单／本地包不等于已提交或已推送交付，本轮不代替用户执行",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    },
+    {
+      "id": "S4-08",
+      "stage": 4,
+      "original_requirement": "3～5 分钟演示视频",
+      "status": "NOT_RUN",
+      "evidence_paths": [
+        "outputs/four_stage_delivery_audit_20261026/authority_search.json"
+      ],
+      "evidence_description": "[本轮文件检索记录](../outputs/four_stage_delivery_audit_20261026/authority_search.json)",
+      "limitation": "项目文档／输出中未找到演示视频；第三方 mmcv 测试视频不属于项目演示",
+      "requirement_source": "user_supplied_brief_summary_pdf_not_in_repository"
+    }
+  ],
+  "official_requirement_values": {
+    "relevant_detection_map_improvement": "at least 2%",
+    "relevant_segmentation_miou_improvement": "at least 1.5%",
+    "overall_mean_accuracy_drop": "at most 2%",
+    "rtx3090_module_single_frame_increment": "at most20ms"
+  },
+  "interpretation": "Original symbols preserved; relative-percent vs percentage-point and formal metric protocol pending PDF. No surrogate-metric substitution.",
+  "scope_exclusions": [
+    "generative VQA decoder is not added as a mandatory original-task item",
+    "pretraining-unseen generalization is a research limitation, not a replacement for actual DriveLM test execution"
+  ],
+  "work_executed_this_audit": {
+    "training": false,
+    "inference": false,
+    "new_model_version": false,
+    "commit": false,
+    "push": false
+  }
+}

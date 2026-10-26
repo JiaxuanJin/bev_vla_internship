@@ -1,0 +1,49 @@
+{
+  "experiment": "step56_language_bev_forward_backward_smoke",
+  "text_mode": "synthetic",
+  "pretrained_language_model_loaded": false,
+  "bev_source": "synthetic_tensor",
+  "bev_shape": [
+    1,
+    256,
+    150,
+    150
+  ],
+  "pooled_text_shape": [
+    1,
+    768
+  ],
+  "attention_shape": [
+    1,
+    1,
+    150,
+    150
+  ],
+  "enhanced_shape": [
+    1,
+    256,
+    150,
+    150
+  ],
+  "baseline_exact_identity": true,
+  "attention_min": 0.2651185989379883,
+  "attention_max": 0.744382917881012,
+  "initial_alpha": 0.009999999776482582,
+  "mean_absolute_feature_delta": 0.003988486248999834,
+  "gradient_test_loss": 1.010036587715149,
+  "gradient_norms": {
+    "alpha": 1.0050084590911865,
+    "semantic_projection.net.0.weight": 6.6485540628491435e-06,
+    "semantic_projection.net.0.bias": 6.895552360219881e-06,
+    "semantic_projection.net.1.weight": 0.0003209593705832958,
+    "semantic_projection.net.1.bias": 1.158174745796714e-05,
+    "semantic_projection.net.3.weight": 0.00020985865558031946,
+    "semantic_projection.net.3.bias": 3.476358324405737e-05,
+    "attention.visual_projection.weight": 0.00023293428239412606
+  },
+  "all_nonzero_grads": true,
+  "task_training_completed": false,
+  "segmentation_evaluation_completed": false,
+  "official_score": false,
+  "notes": "仅验证模块接口与梯度；真实 BEV NPY 也不代表已接入模型分割头。"
+}

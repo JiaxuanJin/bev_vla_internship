@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-26",
+  "modified_document_count": 19,
+  "documents": [
+    {
+      "path": "README.md",
+      "before_sha256": "9b20db28c6d9b14eea990dd8cdd827e40a15284f0e9858205d633e5971eeca30",
+      "after_sha256": "b33c43457d22f0cae3789117febc3f99cbc821e1eb3c34dab46632682083f28d",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/README.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "docs/logbook_2026-10-26.md",
+      "before_sha256": "a7a2b76be7f8374068660f1392bf20ce01f44dcb7409f53c326417bab433a4c1",
+      "after_sha256": "8603991246219ddace36b5d249bfc3119dba3323ab48a4d96aa2ddf4294300cd",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/docs/logbook_2026-10-26.md",
+      "change_scope": "append-only dated correction"
+    },
+    {
+      "path": "docs/stage1/00_阶段一交付导航.md",
+      "before_sha256": "0f0b63b12a4b33c4a4be687c8670523d55aa6d80fba942d5bcc6390330dcb972",
+      "after_sha256": "d3f191b49d469bd330ee16c5bd8e083f395de30a9f38252b05172f87dd5ab5bf",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/docs/stage1/00_阶段一交付导航.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "docs/stage2/02_第二阶段原始任务书.md",
+      "before_sha256": "560858c014a77be3c3228c1cf1254cc413bd42713372bc1cd693f623a12656e0",
+      "after_sha256": "9e17866112b3423a4f88bd7c2aa2f2a0ccec0d308e53d1409aba8d91d58e0004",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/docs/stage2/02_第二阶段原始任务书.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "docs/stage2/13_阶段二任务对照.md",
+      "before_sha256": "3ab460b34ba5494f042840c129b644871714721747a35a2cb42838ef446c9c2a",
+      "after_sha256": "5acbf49ac12f3dc6e49c149102dbe00cc662ddd9fe0f48b1fd1f972c0f48192b",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/docs/stage2/13_阶段二任务对照.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+      "before_sha256": "c0d3b895c42229f81a0d9fa4683bc0546e36083cc487e113823bce65b0ee4553",
+      "after_sha256": "7d07abdc54bd9a1ae434a352f6f6867cedd2dbdb0d75c862c57d5b7918478ca5",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/docs/stage2/20_第二阶段最终严格验收_2026-10-21.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+      "before_sha256": "8ab171fafb6e65a2f138b7026acb25bd69054952651552bd1a9cea37a12165b7",
+      "after_sha256": "8894a63d0e619aa950ad9d8dbf69a086535795b016657ed176f3aa2805a1ffed",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+      "before_sha256": "8e36a29f32b0db1b8b64523093c8f82ebe6aca6f8931c3bdbaffac3615ce976e",
+      "after_sha256": "0800800ee167d518be1a577b2124df4f71d0a6c83c1d60b754b69434f6c17092",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "docs/stage2/25_真实GPU空间监督实验_2026-10-26.md",
+      "before_sha256": "7327e6364a41046b649d8433275619c92748070557a1ea2bf5d675b2fd9d1517",
+      "after_sha256": "8ac56652914cdb118c46ca66dea9009d9bdb114dd0eee97422ae2d2544c3e4e3",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/docs/stage2/25_真实GPU空间监督实验_2026-10-26.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "docs/stage2/26_第二轮空间对比监督与独立留出评估_2026-10-26.md",
+      "before_sha256": "038b13d9c99f0c1a9d7ccf84dbf8ba1798eae38023f7108d4b4a5e66a8aa5265",
+      "after_sha256": "fefc6a73669c0e6ab177d2d3318bcd5b489f5e3b1471c73f4cfd29c5321c3c6b",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/docs/stage2/26_第二轮空间对比监督与独立留出评估_2026-10-26.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "docs/stage2/27_第三轮实例排序与背景难负例实测_2026-10-26.md",
+      "before_sha256": "80b9bcc1c2b693b98086be48d8744f4119a40f4d776fd82455c2523546e7e67d",
+      "after_sha256": "aaff56318e712acc365407f24c78a1eb0603df81e3bb6e71dcfe6728dd2f8939",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/docs/stage2/27_第三轮实例排序与背景难负例实测_2026-10-26.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "docs/stage3/01_指标定义与感知收益瓶颈_2026-10-26.md",
+      "before_sha256": "c7de51b78db2eaa74504ce973d4df987be9b810224f0072765f0b47177eb4fcb",
+      "after_sha256": "8e3b48c9145471aa2b13373a092fad7c90e5aeffafbeee0de84eca0743f3d745",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/docs/stage3/01_指标定义与感知收益瓶颈_2026-10-26.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "docs/stage3/02_语言条件目标Mask与感知收益验证_2026-10-26.md",
+      "before_sha256": "715d0e25d9b531912674092e3b5c9e6e99f64ce38a579a992072ba104fab5196",
+      "after_sha256": "eaf068d0a98daa53aed2cc0c3c29b1fd5e3685a60c050fe36cea03ce5de2c87a",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/docs/stage3/02_语言条件目标Mask与感知收益验证_2026-10-26.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "docs/stage3/03_V5语言条件耦合与最终探索结论_2026-10-26.md",
+      "before_sha256": "98a5d9a37249d2a17f7795b7ea21ae955f9986b0852cd5150b8c2bd2d137138d",
+      "after_sha256": "5e39e87f93c8df3bb66a6d6f9d006f9046067486f98a060d4066e9d2620e726e",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/docs/stage3/03_V5语言条件耦合与最终探索结论_2026-10-26.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "docs/stage3/04_第三阶段收尾与DriveLM可评价范围_2026-10-26.md",
+      "before_sha256": "31bbb185d408c6232926ae3d5b9c48afd83b9d92db6744e1890565769f089cc8",
+      "after_sha256": "acca068b6c15daec4453a3effd71d3b36f69520da0e9ad4d7aa46714034f494e",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/docs/stage3/04_第三阶段收尾与DriveLM可评价范围_2026-10-26.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "docs/stage4/01_综合验收与Git交付_2026-10-26.md",
+      "before_sha256": "97350fd8e10e88d6b0d1b3287a32adb0b462c9b67526f886d20e4cdfaa260609",
+      "after_sha256": "db5573f7e1db0a1ca2913a018bb8c5b3a7250ad8d06b8cf3f200c5ee46c6920c",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/docs/stage4/01_综合验收与Git交付_2026-10-26.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "results/stage4_delivery_2026-10-26/README.md",
+      "before_sha256": "356b5cd1cd6edb0db56fa60fe367ea3663ac33df3705e43012b0281bc20b69b2",
+      "after_sha256": "f8c6821193a209d12b4e026ac1e970f266200d188f8f7cd81ef1ba3d6dc5273e",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/results/stage4_delivery_2026-10-26/README.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "scripts/README.md",
+      "before_sha256": "0a6c291ef21bca486c25f1c39b65997d86410c8493db6cfeb5794924d8648b45",
+      "after_sha256": "e0e3671493216de7041a5e5c391e6ff1837357883c422edc25f8489a3a04a776",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/scripts/README.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    },
+    {
+      "path": "scripts/stage2/README.md",
+      "before_sha256": "d535739a7b77e082d73a863a257ca8c15cb2a76827ca107482ca70d32e68d3b0",
+      "after_sha256": "73b5232b27de4e81a1e2f1a9a2f703e553148c42858b63cf179b5d10869cc52f",
+      "changed": true,
+      "before_snapshot": "outputs/four_stage_delivery_audit_20261026/documents_before/scripts/stage2/README.md",
+      "change_scope": "phase attribution, authority source and acceptance-scope correction; experiment values retained"
+    }
+  ],
+  "historical_outputs_rewritten": false,
+  "experiment_python_sources_modified": false
+}

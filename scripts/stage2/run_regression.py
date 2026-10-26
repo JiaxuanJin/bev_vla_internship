@@ -68,7 +68,8 @@ def main() -> int:
         *ROOT.glob("scripts/stage2/*.py"),
         *ROOT.glob("stage2/*.py"),
         *ROOT.glob("stage2/*.json"),
-        *ROOT.glob("tests/test_stage2*.py"),
+        *ROOT.glob("tests/**/*.py"),
+        ROOT / "pytest.ini",
         ROOT / "requirements_stage2.txt",
     })
     result = {

@@ -183,6 +183,8 @@ def real_training_forward(
     target_class: int,
     audit_gradients: bool = False,
     loss_config: LossConfig | None = None,
+    spatial_targets=None,
+    attention_sampling_grid: Tensor | None = None,
 ) -> tuple[Tensor, dict[str, Any], dict[str, Any]]:
     """三项损失严格来自一次作者双 Head 前向，保留新增模块计算图。"""
     if target_class != attention_target_class(text):
@@ -224,13 +226,19 @@ def real_training_forward(
             ):
                 raise RuntimeError("缺少作者真实检测 cls/bbox loss")
             attention = state["details"]["attention"]
-            attention_logits = head.feat_cropper(
-                torch.flip(
-                    torch.logit(attention.clamp(1e-5, 1 - 1e-5)).transpose(2, 3),
-                    dims=[2],
-                )
-            )
             native_attention_logits = torch.logit(attention.clamp(1e-5, 1 - 1e-5))
+            if spatial_targets is not None:
+                from .spatial_annotations import project_attention
+
+                if attention_sampling_grid is None:
+                    raise ValueError("空间监督需要独立验证的米制采样网格")
+                attention_logits = project_attention(
+                    native_attention_logits, attention_sampling_grid
+                )
+            else:
+                attention_logits = head.feat_cropper(
+                    torch.flip(native_attention_logits.transpose(2, 3), dims=[2])
+                )
             total, parts = Stage2MultiTaskLoss(loss_config)(
                 detection,
                 captured["seg_preds"],
@@ -238,6 +246,7 @@ def real_training_forward(
                 attention_logits,
                 torch.tensor([target_class], device="cuda", dtype=torch.long),
                 regularization_logits=native_attention_logits,
+                spatial_targets=spatial_targets,
             )
             if tensor_hash(raw_gt) != gt_hash:
                 raise RuntimeError("GT 张量被修改")
@@ -248,6 +257,7 @@ def real_training_forward(
                 "gt_sha256": gt_hash,
                 "gt_class_counts": {str(c): int((gt == c).sum()) for c in range(4)},
                 "attention_target_present": bool((gt == target_class).any()),
+                "attention_supervision": "spatial_instance" if spatial_targets is not None else "historical_class",
                 "author_loss_keys": list(author_losses),
                 "author_weighted_seg_loss": float(author_losses["loss_seg"].detach()),
             }
@@ -268,6 +278,7 @@ def real_training_forward(
                         gt,
                         torch.tensor([target_class], device="cuda", dtype=torch.long),
                         loss_config,
+                        spatial_targets=spatial_targets,
                     ),
                 }
                 if loss_config.attention_tv_weight:

@@ -1,0 +1,2126 @@
+{
+  "num_instructions": 10,
+  "num_distinct_frames": 4,
+  "num_scenes": 2,
+  "metrics": {
+    "original": {
+      "relevant_segmentation": {
+        "classes": {
+          "0": {
+            "intersection": 142967,
+            "union": 178566,
+            "gt_pixels": 173669,
+            "predicted_pixels": 147864,
+            "iou": 0.8006395394419991
+          },
+          "1": {
+            "intersection": 5578,
+            "union": 13769,
+            "gt_pixels": 7455,
+            "predicted_pixels": 11892,
+            "iou": 0.4051129348536568
+          },
+          "2": {
+            "intersection": 2373,
+            "union": 9578,
+            "gt_pixels": 3061,
+            "predicted_pixels": 8890,
+            "iou": 0.24775527249947796
+          },
+          "3": {
+            "intersection": 12799,
+            "union": 34370,
+            "gt_pixels": 15815,
+            "predicted_pixels": 31354,
+            "iou": 0.37238871108524874
+          }
+        },
+        "foreground_miou": 0.34175230614612784,
+        "pixels": 200000,
+        "confusion_gt_rows_pred_cols": [
+          [
+            142967,
+            6247,
+            6250,
+            18205
+          ],
+          [
+            1659,
+            5578,
+            100,
+            118
+          ],
+          [
+            405,
+            51,
+            2373,
+            232
+          ],
+          [
+            2833,
+            16,
+            167,
+            12799
+          ]
+        ]
+      },
+      "irrelevant_segmentation": {
+        "classes": {
+          "0": {
+            "intersection": 448810,
+            "union": 542709,
+            "gt_pixels": 527347,
+            "predicted_pixels": 464172,
+            "iou": 0.8269809419044092
+          },
+          "1": {
+            "intersection": 14382,
+            "union": 34764,
+            "gt_pixels": 20361,
+            "predicted_pixels": 28785,
+            "iou": 0.41370383154987916
+          },
+          "2": {
+            "intersection": 3599,
+            "union": 15001,
+            "gt_pixels": 4457,
+            "predicted_pixels": 14143,
+            "iou": 0.23991733884407707
+          },
+          "3": {
+            "intersection": 37491,
+            "union": 103244,
+            "gt_pixels": 47835,
+            "predicted_pixels": 92900,
+            "iou": 0.3631300608267793
+          }
+        },
+        "foreground_miou": 0.33891707707357854,
+        "pixels": 600000,
+        "confusion_gt_rows_pred_cols": [
+          [
+            448810,
+            14312,
+            9295,
+            54930
+          ],
+          [
+            5578,
+            14382,
+            207,
+            194
+          ],
+          [
+            522,
+            51,
+            3599,
+            285
+          ],
+          [
+            9262,
+            40,
+            1042,
+            37491
+          ]
+        ]
+      },
+      "target_class_intersection": 11725,
+      "target_class_union": 35417,
+      "attention_intersection": 0,
+      "attention_union": 0,
+      "attention_target_sum": 0.0,
+      "attention_total_sum": 0.0,
+      "other_instance_attention_sum": 0.0,
+      "non_target_same_class_sum": 0.0,
+      "outside_roi_attention_sum": 0.0,
+      "outside_roi_activation_pixels": 0,
+      "outside_roi_foreground_fp": 78537,
+      "outside_roi_background_pixels": 527347,
+      "target_class_iou": 0.33105570771098625,
+      "attention_target_iou": null,
+      "target_attention_mass": null,
+      "same_class_other_instance_mass": null,
+      "same_class_non_target_mass": null,
+      "outside_roi_attention_mass": null,
+      "outside_roi_foreground_fp_rate": 0.1489285043813656,
+      "relevant_detection_ap": null
+    },
+    "historical": {
+      "relevant_segmentation": {
+        "classes": {
+          "0": {
+            "intersection": 142965,
+            "union": 178564,
+            "gt_pixels": 173669,
+            "predicted_pixels": 147860,
+            "iou": 0.8006373065119509
+          },
+          "1": {
+            "intersection": 5579,
+            "union": 13770,
+            "gt_pixels": 7455,
+            "predicted_pixels": 11894,
+            "iou": 0.40515613652868554
+          },
+          "2": {
+            "intersection": 2373,
+            "union": 9578,
+            "gt_pixels": 3061,
+            "predicted_pixels": 8890,
+            "iou": 0.24775527249947796
+          },
+          "3": {
+            "intersection": 12800,
+            "union": 34371,
+            "gt_pixels": 15815,
+            "predicted_pixels": 31356,
+            "iou": 0.37240697099298825
+          }
+        },
+        "foreground_miou": 0.34177279334038396,
+        "pixels": 200000,
+        "confusion_gt_rows_pred_cols": [
+          [
+            142965,
+            6248,
+            6250,
+            18206
+          ],
+          [
+            1658,
+            5579,
+            100,
+            118
+          ],
+          [
+            405,
+            51,
+            2373,
+            232
+          ],
+          [
+            2832,
+            16,
+            167,
+            12800
+          ]
+        ]
+      },
+      "irrelevant_segmentation": {
+        "classes": {
+          "0": {
+            "intersection": 448816,
+            "union": 542707,
+            "gt_pixels": 527347,
+            "predicted_pixels": 464176,
+            "iou": 0.8269950452085564
+          },
+          "1": {
+            "intersection": 14382,
+            "union": 34767,
+            "gt_pixels": 20361,
+            "predicted_pixels": 28788,
+            "iou": 0.41366813357494175
+          },
+          "2": {
+            "intersection": 3600,
+            "union": 15000,
+            "gt_pixels": 4457,
+            "predicted_pixels": 14143,
+            "iou": 0.24
+          },
+          "3": {
+            "intersection": 37492,
+            "union": 103236,
+            "gt_pixels": 47835,
+            "predicted_pixels": 92893,
+            "iou": 0.36316788717114185
+          }
+        },
+        "foreground_miou": 0.33894534024869455,
+        "pixels": 600000,
+        "confusion_gt_rows_pred_cols": [
+          [
+            448816,
+            14315,
+            9294,
+            54922
+          ],
+          [
+            5578,
+            14382,
+            207,
+            194
+          ],
+          [
+            521,
+            51,
+            3600,
+            285
+          ],
+          [
+            9261,
+            40,
+            1042,
+            37492
+          ]
+        ]
+      },
+      "target_class_intersection": 11726,
+      "target_class_union": 35416,
+      "attention_intersection": 17,
+      "attention_union": 7480,
+      "attention_target_sum": 608.7831727974117,
+      "attention_total_sum": 64387.219419855624,
+      "other_instance_attention_sum": 256.5798804461956,
+      "non_target_same_class_sum": 925.6815837547183,
+      "outside_roi_attention_sum": 47683.17717783153,
+      "outside_roi_activation_pixels": 1447,
+      "outside_roi_foreground_fp": 78531,
+      "outside_roi_background_pixels": 527347,
+      "target_class_iou": 0.33109329116783376,
+      "attention_target_iou": 0.0022727272727272726,
+      "target_attention_mass": 0.009455031266805662,
+      "same_class_other_instance_mass": 0.0039849504724391305,
+      "same_class_non_target_mass": 0.01437679079940604,
+      "outside_roi_attention_mass": 0.7405689763817798,
+      "outside_roi_foreground_fp_rate": 0.1489171266737082,
+      "relevant_detection_ap": null
+    },
+    "spatial": {
+      "relevant_segmentation": {
+        "classes": {
+          "0": {
+            "intersection": 142970,
+            "union": 178563,
+            "gt_pixels": 173669,
+            "predicted_pixels": 147864,
+            "iou": 0.8006697916141642
+          },
+          "1": {
+            "intersection": 5579,
+            "union": 13767,
+            "gt_pixels": 7455,
+            "predicted_pixels": 11891,
+            "iou": 0.4052444250744534
+          },
+          "2": {
+            "intersection": 2373,
+            "union": 9578,
+            "gt_pixels": 3061,
+            "predicted_pixels": 8890,
+            "iou": 0.24775527249947796
+          },
+          "3": {
+            "intersection": 12801,
+            "union": 34369,
+            "gt_pixels": 15815,
+            "predicted_pixels": 31355,
+            "iou": 0.37245773807791904
+          }
+        },
+        "foreground_miou": 0.34181914521728346,
+        "pixels": 200000,
+        "confusion_gt_rows_pred_cols": [
+          [
+            142970,
+            6245,
+            6250,
+            18204
+          ],
+          [
+            1658,
+            5579,
+            100,
+            118
+          ],
+          [
+            405,
+            51,
+            2373,
+            232
+          ],
+          [
+            2831,
+            16,
+            167,
+            12801
+          ]
+        ]
+      },
+      "irrelevant_segmentation": {
+        "classes": {
+          "0": {
+            "intersection": 448823,
+            "union": 542699,
+            "gt_pixels": 527347,
+            "predicted_pixels": 464175,
+            "iou": 0.8270201345497228
+          },
+          "1": {
+            "intersection": 14387,
+            "union": 34760,
+            "gt_pixels": 20361,
+            "predicted_pixels": 28786,
+            "iou": 0.41389528193325664
+          },
+          "2": {
+            "intersection": 3603,
+            "union": 15001,
+            "gt_pixels": 4457,
+            "predicted_pixels": 14147,
+            "iou": 0.24018398773415106
+          },
+          "3": {
+            "intersection": 37491,
+            "union": 103236,
+            "gt_pixels": 47835,
+            "predicted_pixels": 92892,
+            "iou": 0.363158200627688
+          }
+        },
+        "foreground_miou": 0.3390791567650319,
+        "pixels": 600000,
+        "confusion_gt_rows_pred_cols": [
+          [
+            448823,
+            14308,
+            9294,
+            54922
+          ],
+          [
+            5573,
+            14387,
+            207,
+            194
+          ],
+          [
+            518,
+            51,
+            3603,
+            285
+          ],
+          [
+            9261,
+            40,
+            1043,
+            37491
+          ]
+        ]
+      },
+      "target_class_intersection": 11729,
+      "target_class_union": 35411,
+      "attention_intersection": 28,
+      "attention_union": 7319,
+      "attention_target_sum": 850.3214033469558,
+      "attention_total_sum": 81695.33431440592,
+      "other_instance_attention_sum": 374.4856027960777,
+      "non_target_same_class_sum": 1246.700638383627,
+      "outside_roi_attention_sum": 60176.4361757189,
+      "outside_roi_activation_pixels": 1294,
+      "outside_roi_foreground_fp": 78524,
+      "outside_roi_background_pixels": 527347,
+      "target_class_iou": 0.33122476066758916,
+      "attention_target_iou": 0.0038256592430659926,
+      "target_attention_mass": 0.010408445114802751,
+      "same_class_other_instance_mass": 0.004583928885765537,
+      "same_class_non_target_mass": 0.015260365219703708,
+      "outside_roi_attention_mass": 0.7365957515288307,
+      "outside_roi_foreground_fp_rate": 0.14890385268144124,
+      "relevant_detection_ap": null
+    },
+    "incorrect": {
+      "relevant_segmentation": {
+        "classes": {
+          "0": {
+            "intersection": 142969,
+            "union": 178562,
+            "gt_pixels": 173669,
+            "predicted_pixels": 147862,
+            "iou": 0.8006686753060561
+          },
+          "1": {
+            "intersection": 5579,
+            "union": 13767,
+            "gt_pixels": 7455,
+            "predicted_pixels": 11891,
+            "iou": 0.4052444250744534
+          },
+          "2": {
+            "intersection": 2373,
+            "union": 9579,
+            "gt_pixels": 3061,
+            "predicted_pixels": 8891,
+            "iou": 0.24772940808017538
+          },
+          "3": {
+            "intersection": 12802,
+            "union": 34369,
+            "gt_pixels": 15815,
+            "predicted_pixels": 31356,
+            "iou": 0.37248683406558236
+          }
+        },
+        "foreground_miou": 0.34182022240673704,
+        "pixels": 200000,
+        "confusion_gt_rows_pred_cols": [
+          [
+            142969,
+            6245,
+            6251,
+            18204
+          ],
+          [
+            1658,
+            5579,
+            100,
+            118
+          ],
+          [
+            405,
+            51,
+            2373,
+            232
+          ],
+          [
+            2830,
+            16,
+            167,
+            12802
+          ]
+        ]
+      },
+      "irrelevant_segmentation": {
+        "classes": {
+          "0": {
+            "intersection": 448829,
+            "union": 542696,
+            "gt_pixels": 527347,
+            "predicted_pixels": 464178,
+            "iou": 0.8270357621946726
+          },
+          "1": {
+            "intersection": 14390,
+            "union": 34758,
+            "gt_pixels": 20361,
+            "predicted_pixels": 28787,
+            "iou": 0.4140054088267449
+          },
+          "2": {
+            "intersection": 3604,
+            "union": 15001,
+            "gt_pixels": 4457,
+            "predicted_pixels": 14148,
+            "iou": 0.24025064995666956
+          },
+          "3": {
+            "intersection": 37491,
+            "union": 103231,
+            "gt_pixels": 47835,
+            "predicted_pixels": 92887,
+            "iou": 0.36317579021805463
+          }
+        },
+        "foreground_miou": 0.3391439496671564,
+        "pixels": 600000,
+        "confusion_gt_rows_pred_cols": [
+          [
+            448829,
+            14306,
+            9295,
+            54917
+          ],
+          [
+            5570,
+            14390,
+            207,
+            194
+          ],
+          [
+            517,
+            51,
+            3604,
+            285
+          ],
+          [
+            9262,
+            40,
+            1042,
+            37491
+          ]
+        ]
+      },
+      "target_class_intersection": 11730,
+      "target_class_union": 35411,
+      "attention_intersection": 27,
+      "attention_union": 7328,
+      "attention_target_sum": 856.8720987215638,
+      "attention_total_sum": 82109.74000217393,
+      "other_instance_attention_sum": 379.3713229820132,
+      "non_target_same_class_sum": 1251.8461609333754,
+      "outside_roi_attention_sum": 60485.78506916389,
+      "outside_roi_activation_pixels": 1298,
+      "outside_roi_foreground_fp": 78518,
+      "outside_roi_background_pixels": 527347,
+      "target_class_iou": 0.33125300048007683,
+      "attention_target_iou": 0.0036844978165938864,
+      "target_attention_mass": 0.0104356937276732,
+      "same_class_other_instance_mass": 0.004620296239787984,
+      "same_class_non_target_mass": 0.015246012968744409,
+      "outside_roi_attention_mass": 0.7366456776938092,
+      "outside_roi_foreground_fp_rate": 0.14889247497378386,
+      "relevant_detection_ap": null
+    },
+    "shuffled": {
+      "relevant_segmentation": {
+        "classes": {
+          "0": {
+            "intersection": 142971,
+            "union": 178562,
+            "gt_pixels": 173669,
+            "predicted_pixels": 147864,
+            "iou": 0.8006798758974474
+          },
+          "1": {
+            "intersection": 5579,
+            "union": 13767,
+            "gt_pixels": 7455,
+            "predicted_pixels": 11891,
+            "iou": 0.4052444250744534
+          },
+          "2": {
+            "intersection": 2373,
+            "union": 9579,
+            "gt_pixels": 3061,
+            "predicted_pixels": 8891,
+            "iou": 0.24772940808017538
+          },
+          "3": {
+            "intersection": 12802,
+            "union": 34367,
+            "gt_pixels": 15815,
+            "predicted_pixels": 31354,
+            "iou": 0.3725085110716676
+          }
+        },
+        "foreground_miou": 0.34182744807543214,
+        "pixels": 200000,
+        "confusion_gt_rows_pred_cols": [
+          [
+            142971,
+            6245,
+            6251,
+            18202
+          ],
+          [
+            1658,
+            5579,
+            100,
+            118
+          ],
+          [
+            405,
+            51,
+            2373,
+            232
+          ],
+          [
+            2830,
+            16,
+            167,
+            12802
+          ]
+        ]
+      },
+      "irrelevant_segmentation": {
+        "classes": {
+          "0": {
+            "intersection": 448823,
+            "union": 542703,
+            "gt_pixels": 527347,
+            "predicted_pixels": 464179,
+            "iou": 0.8270140389863332
+          },
+          "1": {
+            "intersection": 14387,
+            "union": 34759,
+            "gt_pixels": 20361,
+            "predicted_pixels": 28785,
+            "iou": 0.4139071895048764
+          },
+          "2": {
+            "intersection": 3601,
+            "union": 15002,
+            "gt_pixels": 4457,
+            "predicted_pixels": 14146,
+            "iou": 0.24003466204506066
+          },
+          "3": {
+            "intersection": 37489,
+            "union": 103236,
+            "gt_pixels": 47835,
+            "predicted_pixels": 92890,
+            "iou": 0.36313882754078036
+          }
+        },
+        "foreground_miou": 0.33902689303023914,
+        "pixels": 600000,
+        "confusion_gt_rows_pred_cols": [
+          [
+            448823,
+            14307,
+            9295,
+            54922
+          ],
+          [
+            5573,
+            14387,
+            207,
+            194
+          ],
+          [
+            520,
+            51,
+            3601,
+            285
+          ],
+          [
+            9263,
+            40,
+            1043,
+            37489
+          ]
+        ]
+      },
+      "target_class_intersection": 11727,
+      "target_class_union": 35415,
+      "attention_intersection": 33,
+      "attention_union": 7400,
+      "attention_target_sum": 817.7645869478583,
+      "attention_total_sum": 78157.02903688326,
+      "other_instance_attention_sum": 359.8530557602644,
+      "non_target_same_class_sum": 1179.9881730154157,
+      "outside_roi_attention_sum": 57504.472305990756,
+      "outside_roi_activation_pixels": 1355,
+      "outside_roi_foreground_fp": 78524,
+      "outside_roi_background_pixels": 527347,
+      "target_class_iou": 0.33113087674714103,
+      "attention_target_iou": 0.00445945945945946,
+      "target_attention_mass": 0.0104630971395029,
+      "same_class_other_instance_mass": 0.004604231509240778,
+      "same_class_non_target_mass": 0.01509765900209135,
+      "outside_roi_attention_mass": 0.7357556065603988,
+      "outside_roi_foreground_fp_rate": 0.14890385268144124,
+      "relevant_detection_ap": null
+    }
+  },
+  "per_instruction": [
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_front_left",
+      "branch": "original",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 1,
+      "target_gt_pixels": 1115,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.32593447508359946,
+      "irrelevant_foreground_miou": 0.4427980218599757,
+      "target_class_intersection": 2026,
+      "target_class_union": 3963,
+      "outside_roi_foreground_fp": 3656
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_front_left",
+      "branch": "historical",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 1,
+      "target_gt_pixels": 1115,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.32593447508359946,
+      "irrelevant_foreground_miou": 0.4428605802420395,
+      "target_class_intersection": 2026,
+      "target_class_union": 3963,
+      "outside_roi_foreground_fp": 3654,
+      "attention_intersection": 0,
+      "attention_union": 1173,
+      "target_attention_mass": 0.016075399813565552,
+      "target_mean_attention": 0.08894202664427693,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_front_left",
+      "branch": "spatial",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 1,
+      "target_gt_pixels": 1115,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.32603725943835227,
+      "irrelevant_foreground_miou": 0.4428605802420395,
+      "target_class_intersection": 2026,
+      "target_class_union": 3962,
+      "outside_roi_foreground_fp": 3654,
+      "attention_intersection": 0,
+      "attention_union": 1215,
+      "target_attention_mass": 0.01528727848212,
+      "target_mean_attention": 0.10349016871152972,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_front_left",
+      "branch": "incorrect",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 1,
+      "target_gt_pixels": 1115,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.32593447508359946,
+      "irrelevant_foreground_miou": 0.4428605802420395,
+      "target_class_intersection": 2026,
+      "target_class_union": 3963,
+      "outside_roi_foreground_fp": 3654,
+      "attention_intersection": 0,
+      "attention_union": 1216,
+      "target_attention_mass": 0.01534483342871211,
+      "target_mean_attention": 0.10432297686958526,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_front_left",
+      "branch": "shuffled",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 1,
+      "target_gt_pixels": 1115,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.32593447508359946,
+      "irrelevant_foreground_miou": 0.4428605802420395,
+      "target_class_intersection": 2026,
+      "target_class_union": 3963,
+      "outside_roi_foreground_fp": 3654,
+      "attention_intersection": 0,
+      "attention_union": 1227,
+      "target_attention_mass": 0.01523598865943677,
+      "target_mean_attention": 0.09521862630619596,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_front_right",
+      "branch": "original",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 1,
+      "target_gt_pixels": 105,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.3740562031521171,
+      "irrelevant_foreground_miou": 0.386223637910516,
+      "target_class_intersection": 2026,
+      "target_class_union": 3963,
+      "outside_roi_foreground_fp": 5240
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_front_right",
+      "branch": "historical",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 1,
+      "target_gt_pixels": 105,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.3740562031521171,
+      "irrelevant_foreground_miou": 0.38627636196174303,
+      "target_class_intersection": 2026,
+      "target_class_union": 3963,
+      "outside_roi_foreground_fp": 5239,
+      "attention_intersection": 0,
+      "attention_union": 165,
+      "target_attention_mass": 0.0018110454647898603,
+      "target_mean_attention": 0.10639680063440686,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_front_right",
+      "branch": "spatial",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 1,
+      "target_gt_pixels": 105,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.37412717922219985,
+      "irrelevant_foreground_miou": 0.3862453344766114,
+      "target_class_intersection": 2026,
+      "target_class_union": 3963,
+      "outside_roi_foreground_fp": 5239,
+      "attention_intersection": 0,
+      "attention_union": 206,
+      "target_attention_mass": 0.0020214952161488643,
+      "target_mean_attention": 0.14594058373144694,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_front_right",
+      "branch": "incorrect",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 1,
+      "target_gt_pixels": 105,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.37412717922219985,
+      "irrelevant_foreground_miou": 0.38629150415665886,
+      "target_class_intersection": 2026,
+      "target_class_union": 3962,
+      "outside_roi_foreground_fp": 5238,
+      "attention_intersection": 0,
+      "attention_union": 205,
+      "target_attention_mass": 0.0020208594682506447,
+      "target_mean_attention": 0.1452749048670133,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_front_right",
+      "branch": "shuffled",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 1,
+      "target_gt_pixels": 105,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.37412717922219985,
+      "irrelevant_foreground_miou": 0.3862453344766114,
+      "target_class_intersection": 2026,
+      "target_class_union": 3963,
+      "outside_roi_foreground_fp": 5239,
+      "attention_intersection": 0,
+      "attention_union": 208,
+      "target_attention_mass": 0.002114012783682566,
+      "target_mean_attention": 0.14409445694514683,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_rear_left",
+      "branch": "original",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 1,
+      "target_gt_pixels": 1400,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.5586641743844178,
+      "irrelevant_foreground_miou": 0.3838913921724753,
+      "target_class_intersection": 2026,
+      "target_class_union": 3963,
+      "outside_roi_foreground_fp": 5662
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_rear_left",
+      "branch": "historical",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 1,
+      "target_gt_pixels": 1400,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.5586641743844178,
+      "irrelevant_foreground_miou": 0.3839313501347472,
+      "target_class_intersection": 2026,
+      "target_class_union": 3963,
+      "outside_roi_foreground_fp": 5660,
+      "attention_intersection": 0,
+      "attention_union": 1460,
+      "target_attention_mass": 0.025464589075950093,
+      "target_mean_attention": 0.11070406288972923,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_rear_left",
+      "branch": "spatial",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 1,
+      "target_gt_pixels": 1400,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.5586641743844178,
+      "irrelevant_foreground_miou": 0.3839313501347472,
+      "target_class_intersection": 2026,
+      "target_class_union": 3963,
+      "outside_roi_foreground_fp": 5660,
+      "attention_intersection": 0,
+      "attention_union": 1500,
+      "target_attention_mass": 0.026252958838886346,
+      "target_mean_attention": 0.14207310508936644,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_rear_left",
+      "branch": "incorrect",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 1,
+      "target_gt_pixels": 1400,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.5586641743844178,
+      "irrelevant_foreground_miou": 0.3839313501347472,
+      "target_class_intersection": 2026,
+      "target_class_union": 3963,
+      "outside_roi_foreground_fp": 5660,
+      "attention_intersection": 0,
+      "attention_union": 1499,
+      "target_attention_mass": 0.026575820968177254,
+      "target_mean_attention": 0.14459184014371462,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_rear_left",
+      "branch": "shuffled",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 1,
+      "target_gt_pixels": 1400,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.5586641743844178,
+      "irrelevant_foreground_miou": 0.3839313501347472,
+      "target_class_intersection": 2026,
+      "target_class_union": 3963,
+      "outside_roi_foreground_fp": 5660,
+      "attention_intersection": 0,
+      "attention_union": 1501,
+      "target_attention_mass": 0.025522206891068207,
+      "target_mean_attention": 0.13161816798682724,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c2_front_left",
+      "branch": "original",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 2,
+      "target_gt_pixels": 199,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.32593447508359946,
+      "irrelevant_foreground_miou": 0.4427980218599757,
+      "target_class_intersection": 375,
+      "target_class_union": 2007,
+      "outside_roi_foreground_fp": 3656
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c2_front_left",
+      "branch": "historical",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 2,
+      "target_gt_pixels": 199,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.32593447508359946,
+      "irrelevant_foreground_miou": 0.4428605802420395,
+      "target_class_intersection": 375,
+      "target_class_union": 2007,
+      "outside_roi_foreground_fp": 3654,
+      "attention_intersection": 0,
+      "attention_union": 255,
+      "target_attention_mass": 0.003086152469808298,
+      "target_mean_attention": 0.09225242929392724,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c2_front_left",
+      "branch": "spatial",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 2,
+      "target_gt_pixels": 199,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.32593447508359946,
+      "irrelevant_foreground_miou": 0.4428605802420395,
+      "target_class_intersection": 375,
+      "target_class_union": 2007,
+      "outside_roi_foreground_fp": 3654,
+      "attention_intersection": 0,
+      "attention_union": 247,
+      "target_attention_mass": 0.0027606098601260956,
+      "target_mean_attention": 0.1117540315242868,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c2_front_left",
+      "branch": "incorrect",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 2,
+      "target_gt_pixels": 199,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.32593447508359946,
+      "irrelevant_foreground_miou": 0.4428605802420395,
+      "target_class_intersection": 375,
+      "target_class_union": 2007,
+      "outside_roi_foreground_fp": 3654,
+      "attention_intersection": 0,
+      "attention_union": 251,
+      "target_attention_mass": 0.0027402709446368557,
+      "target_mean_attention": 0.11344809961229113,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c2_front_left",
+      "branch": "shuffled",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 2,
+      "target_gt_pixels": 199,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.32593447508359946,
+      "irrelevant_foreground_miou": 0.4428605802420395,
+      "target_class_intersection": 375,
+      "target_class_union": 2007,
+      "outside_roi_foreground_fp": 3654,
+      "attention_intersection": 0,
+      "attention_union": 267,
+      "target_attention_mass": 0.0027324196802269982,
+      "target_mean_attention": 0.10486378389686796,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c2_front_right",
+      "branch": "original",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 2,
+      "target_gt_pixels": 267,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.3740562031521171,
+      "irrelevant_foreground_miou": 0.386223637910516,
+      "target_class_intersection": 375,
+      "target_class_union": 2007,
+      "outside_roi_foreground_fp": 5240
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c2_front_right",
+      "branch": "historical",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 2,
+      "target_gt_pixels": 267,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.3740562031521171,
+      "irrelevant_foreground_miou": 0.3862453344766114,
+      "target_class_intersection": 375,
+      "target_class_union": 2007,
+      "outside_roi_foreground_fp": 5239,
+      "attention_intersection": 0,
+      "attention_union": 327,
+      "target_attention_mass": 0.003963450318609421,
+      "target_mean_attention": 0.08858819378449229,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c2_front_right",
+      "branch": "spatial",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 2,
+      "target_gt_pixels": 267,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.37412717922219985,
+      "irrelevant_foreground_miou": 0.3862453344766114,
+      "target_class_intersection": 375,
+      "target_class_union": 2007,
+      "outside_roi_foreground_fp": 5239,
+      "attention_intersection": 0,
+      "attention_union": 319,
+      "target_attention_mass": 0.005816190407558112,
+      "target_mean_attention": 0.17946681288186084,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c2_front_right",
+      "branch": "incorrect",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 2,
+      "target_gt_pixels": 267,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.37412717922219985,
+      "irrelevant_foreground_miou": 0.3862453344766114,
+      "target_class_intersection": 375,
+      "target_class_union": 2007,
+      "outside_roi_foreground_fp": 5239,
+      "attention_intersection": 0,
+      "attention_union": 315,
+      "target_attention_mass": 0.005853599017206203,
+      "target_mean_attention": 0.176613114244036,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c2_front_right",
+      "branch": "shuffled",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "target_class": 2,
+      "target_gt_pixels": 267,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.37412717922219985,
+      "irrelevant_foreground_miou": 0.3862453344766114,
+      "target_class_intersection": 375,
+      "target_class_union": 2007,
+      "outside_roi_foreground_fp": 5239,
+      "attention_intersection": 0,
+      "attention_union": 335,
+      "target_attention_mass": 0.005729430450732816,
+      "target_mean_attention": 0.16947277906012445,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "0a0d6b8c2e884134a3b48df43d54c36a_c2_front_left",
+      "branch": "original",
+      "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "target_class": 2,
+      "target_gt_pixels": 738,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.29738895007374405,
+      "irrelevant_foreground_miou": 0.37313488662852884,
+      "target_class_intersection": 1766,
+      "target_class_union": 6432,
+      "outside_roi_foreground_fp": 9066
+    },
+    {
+      "instruction_id": "0a0d6b8c2e884134a3b48df43d54c36a_c2_front_left",
+      "branch": "historical",
+      "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "target_class": 2,
+      "target_gt_pixels": 738,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.29735654162992015,
+      "irrelevant_foreground_miou": 0.37313488662852884,
+      "target_class_intersection": 1766,
+      "target_class_union": 6432,
+      "outside_roi_foreground_fp": 9066,
+      "attention_intersection": 0,
+      "attention_union": 873,
+      "target_attention_mass": 0.010027969135804553,
+      "target_mean_attention": 0.09005164920900088,
+      "other_instance_attention_mass": 0.021118508870834392
+    },
+    {
+      "instruction_id": "0a0d6b8c2e884134a3b48df43d54c36a_c2_front_left",
+      "branch": "spatial",
+      "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "target_class": 2,
+      "target_gt_pixels": 738,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.29738895007374405,
+      "irrelevant_foreground_miou": 0.37327725931332806,
+      "target_class_intersection": 1768,
+      "target_class_union": 6431,
+      "outside_roi_foreground_fp": 9066,
+      "attention_intersection": 0,
+      "attention_union": 804,
+      "target_attention_mass": 0.012329196119570058,
+      "target_mean_attention": 0.14533373839688818,
+      "other_instance_attention_mass": 0.02355873901205848
+    },
+    {
+      "instruction_id": "0a0d6b8c2e884134a3b48df43d54c36a_c2_front_left",
+      "branch": "incorrect",
+      "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "target_class": 2,
+      "target_gt_pixels": 738,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.29742138403602775,
+      "irrelevant_foreground_miou": 0.3733665371611572,
+      "target_class_intersection": 1768,
+      "target_class_union": 6432,
+      "outside_roi_foreground_fp": 9065,
+      "attention_intersection": 0,
+      "attention_union": 808,
+      "target_attention_mass": 0.012258027392088103,
+      "target_mean_attention": 0.14764417343467554,
+      "other_instance_attention_mass": 0.023489105452904835
+    },
+    {
+      "instruction_id": "0a0d6b8c2e884134a3b48df43d54c36a_c2_front_left",
+      "branch": "shuffled",
+      "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "target_class": 2,
+      "target_gt_pixels": 738,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.29742138403602775,
+      "irrelevant_foreground_miou": 0.37325510760627106,
+      "target_class_intersection": 1768,
+      "target_class_union": 6433,
+      "outside_roi_foreground_fp": 9066,
+      "attention_intersection": 0,
+      "attention_union": 833,
+      "target_attention_mass": 0.012318922848612936,
+      "target_mean_attention": 0.1383355716722929,
+      "other_instance_attention_mass": 0.02354069691562001
+    },
+    {
+      "instruction_id": "0a0d6b8c2e884134a3b48df43d54c36a_c2_rear_left",
+      "branch": "original",
+      "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "target_class": 2,
+      "target_gt_pixels": 661,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.44234174024893885,
+      "irrelevant_foreground_miou": 0.3167015802794725,
+      "target_class_intersection": 1766,
+      "target_class_union": 6432,
+      "outside_roi_foreground_fp": 9695
+    },
+    {
+      "instruction_id": "0a0d6b8c2e884134a3b48df43d54c36a_c2_rear_left",
+      "branch": "historical",
+      "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "target_class": 2,
+      "target_gt_pixels": 661,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.44251472070214765,
+      "irrelevant_foreground_miou": 0.31675894247222064,
+      "target_class_intersection": 1767,
+      "target_class_union": 6432,
+      "outside_roi_foreground_fp": 9696,
+      "attention_intersection": 0,
+      "attention_union": 795,
+      "target_attention_mass": 0.009152380648857383,
+      "target_mean_attention": 0.09092553273271685,
+      "other_instance_attention_mass": 0.017759311305882843
+    },
+    {
+      "instruction_id": "0a0d6b8c2e884134a3b48df43d54c36a_c2_rear_left",
+      "branch": "spatial",
+      "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "target_class": 2,
+      "target_gt_pixels": 661,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.4423024282289354,
+      "irrelevant_foreground_miou": 0.3168671723449628,
+      "target_class_intersection": 1768,
+      "target_class_union": 6432,
+      "outside_roi_foreground_fp": 9696,
+      "attention_intersection": 0,
+      "attention_union": 721,
+      "target_attention_mass": 0.011274139393325274,
+      "target_mean_attention": 0.15077532980021838,
+      "other_instance_attention_mass": 0.019178826957283283
+    },
+    {
+      "instruction_id": "0a0d6b8c2e884134a3b48df43d54c36a_c2_rear_left",
+      "branch": "incorrect",
+      "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "target_class": 2,
+      "target_gt_pixels": 661,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.44234174024893885,
+      "irrelevant_foreground_miou": 0.3170337525900253,
+      "target_class_intersection": 1769,
+      "target_class_union": 6432,
+      "outside_roi_foreground_fp": 9693,
+      "attention_intersection": 0,
+      "attention_union": 721,
+      "target_attention_mass": 0.011250851274518883,
+      "target_mean_attention": 0.15291887645732255,
+      "other_instance_attention_mass": 0.018986435861012677
+    },
+    {
+      "instruction_id": "0a0d6b8c2e884134a3b48df43d54c36a_c2_rear_left",
+      "branch": "shuffled",
+      "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+      "target_class": 2,
+      "target_gt_pixels": 661,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.44234174024893885,
+      "irrelevant_foreground_miou": 0.3168183342093929,
+      "target_class_intersection": 1766,
+      "target_class_union": 6432,
+      "outside_roi_foreground_fp": 9693,
+      "attention_intersection": 0,
+      "attention_union": 735,
+      "target_attention_mass": 0.011366578130741361,
+      "target_mean_attention": 0.14779244125475502,
+      "other_instance_attention_mass": 0.019170514223849543
+    },
+    {
+      "instruction_id": "ce94ef7a0522468e81c0e2b3a2f1e12d_c2_rear_left",
+      "branch": "original",
+      "sample_token": "ce94ef7a0522468e81c0e2b3a2f1e12d",
+      "target_class": 2,
+      "target_gt_pixels": 730,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.34690620988697907,
+      "irrelevant_foreground_miou": 0.3839334574576324,
+      "target_class_intersection": 565,
+      "target_class_union": 1680,
+      "outside_roi_foreground_fp": 8382
+    },
+    {
+      "instruction_id": "ce94ef7a0522468e81c0e2b3a2f1e12d_c2_rear_left",
+      "branch": "historical",
+      "sample_token": "ce94ef7a0522468e81c0e2b3a2f1e12d",
+      "target_class": 2,
+      "target_gt_pixels": 730,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.3468402785710478,
+      "irrelevant_foreground_miou": 0.38389086727917743,
+      "target_class_intersection": 565,
+      "target_class_union": 1680,
+      "outside_roi_foreground_fp": 8384,
+      "attention_intersection": 17,
+      "attention_union": 873,
+      "target_attention_mass": 0.017398660188892155,
+      "target_mean_attention": 0.15613362598296715,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "ce94ef7a0522468e81c0e2b3a2f1e12d_c2_rear_left",
+      "branch": "spatial",
+      "sample_token": "ce94ef7a0522468e81c0e2b3a2f1e12d",
+      "target_class": 2,
+      "target_gt_pixels": 730,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.34697379038659415,
+      "irrelevant_foreground_miou": 0.38422440740033426,
+      "target_class_intersection": 565,
+      "target_class_union": 1681,
+      "outside_roi_foreground_fp": 8379,
+      "attention_intersection": 28,
+      "attention_union": 799,
+      "target_attention_mass": 0.01651509870070141,
+      "target_mean_attention": 0.20722329180738697,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "ce94ef7a0522468e81c0e2b3a2f1e12d_c2_rear_left",
+      "branch": "incorrect",
+      "sample_token": "ce94ef7a0522468e81c0e2b3a2f1e12d",
+      "target_class": 2,
+      "target_gt_pixels": 730,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.3470833674192481,
+      "irrelevant_foreground_miou": 0.38433852357059556,
+      "target_class_intersection": 565,
+      "target_class_union": 1681,
+      "outside_roi_foreground_fp": 8379,
+      "attention_intersection": 27,
+      "attention_union": 797,
+      "target_attention_mass": 0.016266934592585415,
+      "target_mean_attention": 0.20767172229004233,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "ce94ef7a0522468e81c0e2b3a2f1e12d_c2_rear_left",
+      "branch": "shuffled",
+      "sample_token": "ce94ef7a0522468e81c0e2b3a2f1e12d",
+      "target_class": 2,
+      "target_gt_pixels": 730,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.3470833674192481,
+      "irrelevant_foreground_miou": 0.38420369761545836,
+      "target_class_intersection": 565,
+      "target_class_union": 1681,
+      "outside_roi_foreground_fp": 8380,
+      "attention_intersection": 33,
+      "attention_union": 809,
+      "target_attention_mass": 0.017036610704607005,
+      "target_mean_attention": 0.20789117537540933,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "5b7cb170eee6468aa1fdbd3abcf63c5a_c1_front_right",
+      "branch": "original",
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "target_class": 1,
+      "target_gt_pixels": 32,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.1564681169696046,
+      "irrelevant_foreground_miou": 0.20875502551099967,
+      "target_class_intersection": 400,
+      "target_class_union": 2485,
+      "outside_roi_foreground_fp": 14158
+    },
+    {
+      "instruction_id": "5b7cb170eee6468aa1fdbd3abcf63c5a_c1_front_right",
+      "branch": "historical",
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "target_class": 1,
+      "target_gt_pixels": 32,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.1564681169696046,
+      "irrelevant_foreground_miou": 0.20878725306290533,
+      "target_class_intersection": 400,
+      "target_class_union": 2485,
+      "outside_roi_foreground_fp": 14157,
+      "attention_intersection": 0,
+      "attention_union": 589,
+      "target_attention_mass": 0.0006902979747967975,
+      "target_mean_attention": 0.15478703216649592,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "5b7cb170eee6468aa1fdbd3abcf63c5a_c1_front_right",
+      "branch": "spatial",
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "target_class": 1,
+      "target_gt_pixels": 32,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.156491873526689,
+      "irrelevant_foreground_miou": 0.20889357837325997,
+      "target_class_intersection": 400,
+      "target_class_union": 2483,
+      "outside_roi_foreground_fp": 14156,
+      "attention_intersection": 0,
+      "attention_union": 578,
+      "target_attention_mass": 0.0008400493091029193,
+      "target_mean_attention": 0.2093622423708439,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "5b7cb170eee6468aa1fdbd3abcf63c5a_c1_front_right",
+      "branch": "incorrect",
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "target_class": 1,
+      "target_gt_pixels": 32,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.1564681169696046,
+      "irrelevant_foreground_miou": 0.2089496660348165,
+      "target_class_intersection": 400,
+      "target_class_union": 2482,
+      "outside_roi_foreground_fp": 14155,
+      "attention_intersection": 0,
+      "attention_union": 578,
+      "target_attention_mass": 0.0008382933685301306,
+      "target_mean_attention": 0.2074135011062026,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "5b7cb170eee6468aa1fdbd3abcf63c5a_c1_front_right",
+      "branch": "shuffled",
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "target_class": 1,
+      "target_gt_pixels": 32,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.156491873526689,
+      "irrelevant_foreground_miou": 0.20884045470135176,
+      "target_class_intersection": 400,
+      "target_class_union": 2483,
+      "outside_roi_foreground_fp": 14156,
+      "attention_intersection": 0,
+      "attention_union": 567,
+      "target_attention_mass": 0.0008680477739800525,
+      "target_mean_attention": 0.2079223431646824,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "5b7cb170eee6468aa1fdbd3abcf63c5a_c1_rear_right",
+      "branch": "original",
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "target_class": 1,
+      "target_gt_pixels": 397,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.3113045311186381,
+      "irrelevant_foreground_miou": 0.11287134971360534,
+      "target_class_intersection": 400,
+      "target_class_union": 2485,
+      "outside_roi_foreground_fp": 13782
+    },
+    {
+      "instruction_id": "5b7cb170eee6468aa1fdbd3abcf63c5a_c1_rear_right",
+      "branch": "historical",
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "target_class": 1,
+      "target_gt_pixels": 397,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.3115082540164501,
+      "irrelevant_foreground_miou": 0.11287134971360534,
+      "target_class_intersection": 400,
+      "target_class_union": 2484,
+      "outside_roi_foreground_fp": 13782,
+      "attention_intersection": 0,
+      "attention_union": 970,
+      "target_attention_mass": 0.007851605529212607,
+      "target_mean_attention": 0.1409409409506195,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "5b7cb170eee6468aa1fdbd3abcf63c5a_c1_rear_right",
+      "branch": "spatial",
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "target_class": 1,
+      "target_gt_pixels": 397,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.31173798318167145,
+      "irrelevant_foreground_miou": 0.11287886248531726,
+      "target_class_intersection": 400,
+      "target_class_union": 2482,
+      "outside_roi_foreground_fp": 13781,
+      "attention_intersection": 0,
+      "attention_union": 930,
+      "target_attention_mass": 0.010678105172000166,
+      "target_mean_attention": 0.21575737731432734,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "5b7cb170eee6468aa1fdbd3abcf63c5a_c1_rear_right",
+      "branch": "incorrect",
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "target_class": 1,
+      "target_gt_pixels": 397,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.31173798318167145,
+      "irrelevant_foreground_miou": 0.11285225683427696,
+      "target_class_intersection": 400,
+      "target_class_union": 2482,
+      "outside_roi_foreground_fp": 13781,
+      "attention_intersection": 0,
+      "attention_union": 938,
+      "target_attention_mass": 0.01066157142659713,
+      "target_mean_attention": 0.21375138119275985,
+      "other_instance_attention_mass": 0.0
+    },
+    {
+      "instruction_id": "5b7cb170eee6468aa1fdbd3abcf63c5a_c1_rear_right",
+      "branch": "shuffled",
+      "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "target_class": 1,
+      "target_gt_pixels": 397,
+      "roi_pixels": 20000,
+      "related_foreground_miou": 0.3117637698391932,
+      "irrelevant_foreground_miou": 0.11283927542204317,
+      "target_class_intersection": 400,
+      "target_class_union": 2483,
+      "outside_roi_foreground_fp": 13783,
+      "attention_intersection": 0,
+      "attention_union": 918,
+      "target_attention_mass": 0.011235335115225266,
+      "target_mean_attention": 0.22137735990493063,
+      "other_instance_attention_mass": 0.0
+    }
+  ],
+  "direction_controls": [
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_front_left",
+      "correct_text_target_mean": 0.10349016636610031,
+      "incorrect_text_target_mean": 0.10432296991348267,
+      "correct_text_has_more_target_attention": false,
+      "attention_mean_abs_change": 0.000669208588078618,
+      "note": "same BEV and class; swap left/right only; target fixed"
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_front_right",
+      "correct_text_target_mean": 0.14594058692455292,
+      "incorrect_text_target_mean": 0.14527489244937897,
+      "correct_text_has_more_target_attention": true,
+      "attention_mean_abs_change": 0.000669208588078618,
+      "note": "same BEV and class; swap left/right only; target fixed"
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_rear_left",
+      "correct_text_target_mean": 0.1420731097459793,
+      "incorrect_text_target_mean": 0.14459183812141418,
+      "correct_text_has_more_target_attention": false,
+      "attention_mean_abs_change": 0.0009069520747289062,
+      "note": "same BEV and class; swap left/right only; target fixed"
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c2_front_left",
+      "correct_text_target_mean": 0.11175402998924255,
+      "incorrect_text_target_mean": 0.11344809830188751,
+      "correct_text_has_more_target_attention": false,
+      "attention_mean_abs_change": 0.002312654396519065,
+      "note": "same BEV and class; swap left/right only; target fixed"
+    },
+    {
+      "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c2_front_right",
+      "correct_text_target_mean": 0.17946681380271912,
+      "incorrect_text_target_mean": 0.17661310732364655,
+      "correct_text_has_more_target_attention": true,
+      "attention_mean_abs_change": 0.002312654396519065,
+      "note": "same BEV and class; swap left/right only; target fixed"
+    },
+    {
+      "instruction_id": "0a0d6b8c2e884134a3b48df43d54c36a_c2_front_left",
+      "correct_text_target_mean": 0.14533373713493347,
+      "incorrect_text_target_mean": 0.14764417707920074,
+      "correct_text_has_more_target_attention": false,
+      "attention_mean_abs_change": 0.0023763771168887615,
+      "note": "same BEV and class; swap left/right only; target fixed"
+    },
+    {
+      "instruction_id": "0a0d6b8c2e884134a3b48df43d54c36a_c2_rear_left",
+      "correct_text_target_mean": 0.15077532827854156,
+      "incorrect_text_target_mean": 0.15291887521743774,
+      "correct_text_has_more_target_attention": false,
+      "attention_mean_abs_change": 0.0019024093635380268,
+      "note": "same BEV and class; swap left/right only; target fixed"
+    },
+    {
+      "instruction_id": "ce94ef7a0522468e81c0e2b3a2f1e12d_c2_rear_left",
+      "correct_text_target_mean": 0.2072232961654663,
+      "incorrect_text_target_mean": 0.20767171680927277,
+      "correct_text_has_more_target_attention": false,
+      "attention_mean_abs_change": 0.002108723856508732,
+      "note": "same BEV and class; swap left/right only; target fixed"
+    },
+    {
+      "instruction_id": "5b7cb170eee6468aa1fdbd3abcf63c5a_c1_front_right",
+      "correct_text_target_mean": 0.2093622386455536,
+      "incorrect_text_target_mean": 0.20741349458694458,
+      "correct_text_has_more_target_attention": true,
+      "attention_mean_abs_change": 0.0007408682722598314,
+      "note": "same BEV and class; swap left/right only; target fixed"
+    },
+    {
+      "instruction_id": "5b7cb170eee6468aa1fdbd3abcf63c5a_c1_rear_right",
+      "correct_text_target_mean": 0.21575739979743958,
+      "incorrect_text_target_mean": 0.21375137567520142,
+      "correct_text_has_more_target_attention": true,
+      "attention_mean_abs_change": 0.0008404098334722221,
+      "note": "same BEV and class; swap left/right only; target fixed"
+    }
+  ],
+  "direction_correct_count": 4,
+  "detection": {
+    "status": "NOT_EVALUABLE_FOR_MAP_INSTRUCTIONS",
+    "reason": "divider/crosswalk map records have no correspondence to 10-class 3D boxes; no map-object AP is invented",
+    "missing": [
+      "object-language target schema and frozen instance matching protocol",
+      "object-conditioned inference outputs on same protocol"
+    ]
+  },
+  "protocol": "pooled valid pixel confusion across all fixed instruction-frame pairs; macro IoU of present foreground classes; repeats are instruction-weighted, not independent frames; 0.5 attention threshold fixed before evaluation",
+  "visualizations": [
+    "comparison_000.png",
+    "comparison_001.png",
+    "comparison_002.png",
+    "comparison_003.png",
+    "comparison_004.png",
+    "comparison_005.png",
+    "comparison_006.png",
+    "comparison_007.png",
+    "comparison_008.png",
+    "comparison_009.png"
+  ],
+  "checkpoint_metadata": {
+    "annotations": [
+      {
+        "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_front_left",
+        "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+        "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+        "index": 0,
+        "split": "validation",
+        "target_class": 1,
+        "text": "Find lane markings on the front left",
+        "candidate_instance_ids": [
+          "boston-seaport/road_divider/9ebe22f5-221a-466e-a92d-de67c1abc61d"
+        ],
+        "instance_id": "boston-seaport/road_divider/9ebe22f5-221a-466e-a92d-de67c1abc61d",
+        "mask_file": "3e8750f331d7499e9b5123e9eb70f2e2_c1_front_left.npz",
+        "annotation_source": "nuscenes_map_record_exact_author_raster",
+        "coordinate_frame": "segmentation_gt_pixel_grid",
+        "gt_sha256": "a7f9ff3c1c2330b1034d9b6dd458935c90acc3b6676665cfb22bffb8f274c12c",
+        "target_sha256": "ab0cf34cb0592a8c273164d8f2d25d264054b0c678575ebcf2133991db5adedf",
+        "roi_definition": "Ego metric quadrant; x front, y left; fixed before predictions",
+        "target_pixels": 1115,
+        "distractor_pixels": 1505,
+        "other_instance_pixels": 0,
+        "ego_pose_token": "fdddd75ee1d94f14a09991988dab8b3e",
+        "calibrated_sensor_token": "d051cafdd9fe4d999b413462364d44a0",
+        "lidar2ego_rotation": [
+          0.706749235646644,
+          -0.015300993788500868,
+          0.01739745181256607,
+          -0.7070846669051719
+        ],
+        "lidar2ego_translation": [
+          0.985793,
+          0.0,
+          1.84019
+        ],
+        "prediction_file": "instruction_000.npz",
+        "branch_text": {
+          "original": "Find lane markings on the front left",
+          "historical": "Find lane markings on the front left",
+          "spatial": "Find lane markings on the front left",
+          "incorrect": "Find lane markings on the front right",
+          "shuffled": "left front the on markings lane Find"
+        }
+      },
+      {
+        "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_front_right",
+        "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+        "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+        "index": 0,
+        "split": "validation",
+        "target_class": 1,
+        "text": "Find lane markings on the front right",
+        "candidate_instance_ids": [
+          "boston-seaport/road_divider/9ebe22f5-221a-466e-a92d-de67c1abc61d"
+        ],
+        "instance_id": "boston-seaport/road_divider/9ebe22f5-221a-466e-a92d-de67c1abc61d",
+        "mask_file": "3e8750f331d7499e9b5123e9eb70f2e2_c1_front_right.npz",
+        "annotation_source": "nuscenes_map_record_exact_author_raster",
+        "coordinate_frame": "segmentation_gt_pixel_grid",
+        "gt_sha256": "a7f9ff3c1c2330b1034d9b6dd458935c90acc3b6676665cfb22bffb8f274c12c",
+        "target_sha256": "878c04bbf909035c0769647360ba9cf4d6459b7bfda4488a7cd5c44457cce017",
+        "roi_definition": "Ego metric quadrant; x front, y left; fixed before predictions",
+        "target_pixels": 105,
+        "distractor_pixels": 2515,
+        "other_instance_pixels": 0,
+        "ego_pose_token": "fdddd75ee1d94f14a09991988dab8b3e",
+        "calibrated_sensor_token": "d051cafdd9fe4d999b413462364d44a0",
+        "lidar2ego_rotation": [
+          0.706749235646644,
+          -0.015300993788500868,
+          0.01739745181256607,
+          -0.7070846669051719
+        ],
+        "lidar2ego_translation": [
+          0.985793,
+          0.0,
+          1.84019
+        ],
+        "prediction_file": "instruction_001.npz",
+        "branch_text": {
+          "original": "Find lane markings on the front right",
+          "historical": "Find lane markings on the front right",
+          "spatial": "Find lane markings on the front right",
+          "incorrect": "Find lane markings on the front left",
+          "shuffled": "right front the on markings lane Find"
+        }
+      },
+      {
+        "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c1_rear_left",
+        "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+        "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+        "index": 0,
+        "split": "validation",
+        "target_class": 1,
+        "text": "Find lane markings on the rear left",
+        "candidate_instance_ids": [
+          "boston-seaport/road_divider/9ebe22f5-221a-466e-a92d-de67c1abc61d"
+        ],
+        "instance_id": "boston-seaport/road_divider/9ebe22f5-221a-466e-a92d-de67c1abc61d",
+        "mask_file": "3e8750f331d7499e9b5123e9eb70f2e2_c1_rear_left.npz",
+        "annotation_source": "nuscenes_map_record_exact_author_raster",
+        "coordinate_frame": "segmentation_gt_pixel_grid",
+        "gt_sha256": "a7f9ff3c1c2330b1034d9b6dd458935c90acc3b6676665cfb22bffb8f274c12c",
+        "target_sha256": "573552e486def5ae486dc4d40b2689dfa50c0dcc65a4c0cd39b1efcb6f5e5b58",
+        "roi_definition": "Ego metric quadrant; x front, y left; fixed before predictions",
+        "target_pixels": 1400,
+        "distractor_pixels": 1220,
+        "other_instance_pixels": 0,
+        "ego_pose_token": "fdddd75ee1d94f14a09991988dab8b3e",
+        "calibrated_sensor_token": "d051cafdd9fe4d999b413462364d44a0",
+        "lidar2ego_rotation": [
+          0.706749235646644,
+          -0.015300993788500868,
+          0.01739745181256607,
+          -0.7070846669051719
+        ],
+        "lidar2ego_translation": [
+          0.985793,
+          0.0,
+          1.84019
+        ],
+        "prediction_file": "instruction_002.npz",
+        "branch_text": {
+          "original": "Find lane markings on the rear left",
+          "historical": "Find lane markings on the rear left",
+          "spatial": "Find lane markings on the rear left",
+          "incorrect": "Find lane markings on the rear right",
+          "shuffled": "left rear the on markings lane Find"
+        }
+      },
+      {
+        "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c2_front_left",
+        "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+        "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+        "index": 0,
+        "split": "validation",
+        "target_class": 2,
+        "text": "Find crosswalk on the front left",
+        "candidate_instance_ids": [
+          "boston-seaport/ped_crossing/2c289a08-5e14-4678-bd1e-4bbe26f24b2d"
+        ],
+        "instance_id": "boston-seaport/ped_crossing/2c289a08-5e14-4678-bd1e-4bbe26f24b2d",
+        "mask_file": "3e8750f331d7499e9b5123e9eb70f2e2_c2_front_left.npz",
+        "annotation_source": "nuscenes_map_record_exact_author_raster",
+        "coordinate_frame": "segmentation_gt_pixel_grid",
+        "gt_sha256": "a7f9ff3c1c2330b1034d9b6dd458935c90acc3b6676665cfb22bffb8f274c12c",
+        "target_sha256": "b8ae76e31fac215e0cc8f1244b84a11d368337f9046d686544960b34053a6141",
+        "roi_definition": "Ego metric quadrant; x front, y left; fixed before predictions",
+        "target_pixels": 199,
+        "distractor_pixels": 267,
+        "other_instance_pixels": 0,
+        "ego_pose_token": "fdddd75ee1d94f14a09991988dab8b3e",
+        "calibrated_sensor_token": "d051cafdd9fe4d999b413462364d44a0",
+        "lidar2ego_rotation": [
+          0.706749235646644,
+          -0.015300993788500868,
+          0.01739745181256607,
+          -0.7070846669051719
+        ],
+        "lidar2ego_translation": [
+          0.985793,
+          0.0,
+          1.84019
+        ],
+        "prediction_file": "instruction_003.npz",
+        "branch_text": {
+          "original": "Find crosswalk on the front left",
+          "historical": "Find crosswalk on the front left",
+          "spatial": "Find crosswalk on the front left",
+          "incorrect": "Find crosswalk on the front right",
+          "shuffled": "left front the on crosswalk Find"
+        }
+      },
+      {
+        "instruction_id": "3e8750f331d7499e9b5123e9eb70f2e2_c2_front_right",
+        "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+        "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+        "index": 0,
+        "split": "validation",
+        "target_class": 2,
+        "text": "Find crosswalk on the front right",
+        "candidate_instance_ids": [
+          "boston-seaport/ped_crossing/2c289a08-5e14-4678-bd1e-4bbe26f24b2d"
+        ],
+        "instance_id": "boston-seaport/ped_crossing/2c289a08-5e14-4678-bd1e-4bbe26f24b2d",
+        "mask_file": "3e8750f331d7499e9b5123e9eb70f2e2_c2_front_right.npz",
+        "annotation_source": "nuscenes_map_record_exact_author_raster",
+        "coordinate_frame": "segmentation_gt_pixel_grid",
+        "gt_sha256": "a7f9ff3c1c2330b1034d9b6dd458935c90acc3b6676665cfb22bffb8f274c12c",
+        "target_sha256": "29fe8760fd5d26068a9188f0bbf248b6519dd2786fd3eeb2e3439647876f48c7",
+        "roi_definition": "Ego metric quadrant; x front, y left; fixed before predictions",
+        "target_pixels": 267,
+        "distractor_pixels": 199,
+        "other_instance_pixels": 0,
+        "ego_pose_token": "fdddd75ee1d94f14a09991988dab8b3e",
+        "calibrated_sensor_token": "d051cafdd9fe4d999b413462364d44a0",
+        "lidar2ego_rotation": [
+          0.706749235646644,
+          -0.015300993788500868,
+          0.01739745181256607,
+          -0.7070846669051719
+        ],
+        "lidar2ego_translation": [
+          0.985793,
+          0.0,
+          1.84019
+        ],
+        "prediction_file": "instruction_004.npz",
+        "branch_text": {
+          "original": "Find crosswalk on the front right",
+          "historical": "Find crosswalk on the front right",
+          "spatial": "Find crosswalk on the front right",
+          "incorrect": "Find crosswalk on the front left",
+          "shuffled": "right front the on crosswalk Find"
+        }
+      },
+      {
+        "instruction_id": "0a0d6b8c2e884134a3b48df43d54c36a_c2_front_left",
+        "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+        "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+        "index": 16,
+        "split": "validation",
+        "target_class": 2,
+        "text": "Find crosswalk on the front left",
+        "candidate_instance_ids": [
+          "boston-seaport/ped_crossing/9c6b1153-be47-427d-b762-642be1b163c3"
+        ],
+        "instance_id": "boston-seaport/ped_crossing/9c6b1153-be47-427d-b762-642be1b163c3",
+        "mask_file": "0a0d6b8c2e884134a3b48df43d54c36a_c2_front_left.npz",
+        "annotation_source": "nuscenes_map_record_exact_author_raster",
+        "coordinate_frame": "segmentation_gt_pixel_grid",
+        "gt_sha256": "92b19683c57a1de20af3a870dfe4d8274109293b21913c8fd3583e160bea4875",
+        "target_sha256": "15779c4f8b270420451329add6e7d1d2c3d11fce0099b9586e213091910ce7b6",
+        "roi_definition": "Ego metric quadrant; x front, y left; fixed before predictions",
+        "target_pixels": 738,
+        "distractor_pixels": 1491,
+        "other_instance_pixels": 1491,
+        "ego_pose_token": "3e92d615685942dfab6edb5a0a7678e6",
+        "calibrated_sensor_token": "d051cafdd9fe4d999b413462364d44a0",
+        "lidar2ego_rotation": [
+          0.706749235646644,
+          -0.015300993788500868,
+          0.01739745181256607,
+          -0.7070846669051719
+        ],
+        "lidar2ego_translation": [
+          0.985793,
+          0.0,
+          1.84019
+        ],
+        "prediction_file": "instruction_005.npz",
+        "branch_text": {
+          "original": "Find crosswalk on the front left",
+          "historical": "Find crosswalk on the front left",
+          "spatial": "Find crosswalk on the front left",
+          "incorrect": "Find crosswalk on the front right",
+          "shuffled": "left front the on crosswalk Find"
+        }
+      },
+      {
+        "instruction_id": "0a0d6b8c2e884134a3b48df43d54c36a_c2_rear_left",
+        "sample_token": "0a0d6b8c2e884134a3b48df43d54c36a",
+        "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+        "index": 16,
+        "split": "validation",
+        "target_class": 2,
+        "text": "Find crosswalk on the rear left",
+        "candidate_instance_ids": [
+          "boston-seaport/ped_crossing/2c289a08-5e14-4678-bd1e-4bbe26f24b2d"
+        ],
+        "instance_id": "boston-seaport/ped_crossing/2c289a08-5e14-4678-bd1e-4bbe26f24b2d",
+        "mask_file": "0a0d6b8c2e884134a3b48df43d54c36a_c2_rear_left.npz",
+        "annotation_source": "nuscenes_map_record_exact_author_raster",
+        "coordinate_frame": "segmentation_gt_pixel_grid",
+        "gt_sha256": "92b19683c57a1de20af3a870dfe4d8274109293b21913c8fd3583e160bea4875",
+        "target_sha256": "fd822501979cc26cc7d336de1c2f63a4a58731dc52ccd1f1e1b1f4f3a996c6d2",
+        "roi_definition": "Ego metric quadrant; x front, y left; fixed before predictions",
+        "target_pixels": 661,
+        "distractor_pixels": 1568,
+        "other_instance_pixels": 1259,
+        "ego_pose_token": "3e92d615685942dfab6edb5a0a7678e6",
+        "calibrated_sensor_token": "d051cafdd9fe4d999b413462364d44a0",
+        "lidar2ego_rotation": [
+          0.706749235646644,
+          -0.015300993788500868,
+          0.01739745181256607,
+          -0.7070846669051719
+        ],
+        "lidar2ego_translation": [
+          0.985793,
+          0.0,
+          1.84019
+        ],
+        "prediction_file": "instruction_006.npz",
+        "branch_text": {
+          "original": "Find crosswalk on the rear left",
+          "historical": "Find crosswalk on the rear left",
+          "spatial": "Find crosswalk on the rear left",
+          "incorrect": "Find crosswalk on the rear right",
+          "shuffled": "left rear the on crosswalk Find"
+        }
+      },
+      {
+        "instruction_id": "ce94ef7a0522468e81c0e2b3a2f1e12d_c2_rear_left",
+        "sample_token": "ce94ef7a0522468e81c0e2b3a2f1e12d",
+        "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+        "index": 32,
+        "split": "validation",
+        "target_class": 2,
+        "text": "Find crosswalk on the rear left",
+        "candidate_instance_ids": [
+          "boston-seaport/ped_crossing/9c6b1153-be47-427d-b762-642be1b163c3"
+        ],
+        "instance_id": "boston-seaport/ped_crossing/9c6b1153-be47-427d-b762-642be1b163c3",
+        "mask_file": "ce94ef7a0522468e81c0e2b3a2f1e12d_c2_rear_left.npz",
+        "annotation_source": "nuscenes_map_record_exact_author_raster",
+        "coordinate_frame": "segmentation_gt_pixel_grid",
+        "gt_sha256": "1bd6d98b50ad84c8a8ced75571ffa40e7dcf44786b46fdc767d6df5ab16c91bf",
+        "target_sha256": "e0d9e33b68d3b468f8a67bcf8918bd82c78afaeb9a2065a0ecd46a250143d0c7",
+        "roi_definition": "Ego metric quadrant; x front, y left; fixed before predictions",
+        "target_pixels": 730,
+        "distractor_pixels": 0,
+        "other_instance_pixels": 0,
+        "ego_pose_token": "103914217786464998f1e48a2c20cef0",
+        "calibrated_sensor_token": "d051cafdd9fe4d999b413462364d44a0",
+        "lidar2ego_rotation": [
+          0.706749235646644,
+          -0.015300993788500868,
+          0.01739745181256607,
+          -0.7070846669051719
+        ],
+        "lidar2ego_translation": [
+          0.985793,
+          0.0,
+          1.84019
+        ],
+        "prediction_file": "instruction_007.npz",
+        "branch_text": {
+          "original": "Find crosswalk on the rear left",
+          "historical": "Find crosswalk on the rear left",
+          "spatial": "Find crosswalk on the rear left",
+          "incorrect": "Find crosswalk on the rear right",
+          "shuffled": "left rear the on crosswalk Find"
+        }
+      },
+      {
+        "instruction_id": "5b7cb170eee6468aa1fdbd3abcf63c5a_c1_front_right",
+        "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+        "scene_token": "325cef682f064c55a255f2625c533b75",
+        "index": 48,
+        "split": "validation",
+        "target_class": 1,
+        "text": "Find lane markings on the front right",
+        "candidate_instance_ids": [
+          "singapore-queenstown/lane_divider/6881f526-ddda-4e9f-83ee-0f6968a92d73"
+        ],
+        "instance_id": "singapore-queenstown/lane_divider/6881f526-ddda-4e9f-83ee-0f6968a92d73",
+        "mask_file": "5b7cb170eee6468aa1fdbd3abcf63c5a_c1_front_right.npz",
+        "annotation_source": "nuscenes_map_record_exact_author_raster",
+        "coordinate_frame": "segmentation_gt_pixel_grid",
+        "gt_sha256": "c287f1ead8e1b41c93428b8390f9d85c2af71cde4f2aaec4cfb20f08d13aa372",
+        "target_sha256": "f44040ff10e9174b167d5cb9d3ef07bbd3e30ebe8575d098680dd30d16af3179",
+        "roi_definition": "Ego metric quadrant; x front, y left; fixed before predictions",
+        "target_pixels": 32,
+        "distractor_pixels": 397,
+        "other_instance_pixels": 0,
+        "ego_pose_token": "cb440b4d1912467fb51d871f0ccf8e8a",
+        "calibrated_sensor_token": "00e93a09857648a8b723b48db4236602",
+        "lidar2ego_rotation": [
+          0.7077955119163518,
+          -0.006492242056004365,
+          0.010646214713995808,
+          -0.7063073142877817
+        ],
+        "lidar2ego_translation": [
+          0.943713,
+          0.0,
+          1.84023
+        ],
+        "prediction_file": "instruction_008.npz",
+        "branch_text": {
+          "original": "Find lane markings on the front right",
+          "historical": "Find lane markings on the front right",
+          "spatial": "Find lane markings on the front right",
+          "incorrect": "Find lane markings on the front left",
+          "shuffled": "right front the on markings lane Find"
+        }
+      },
+      {
+        "instruction_id": "5b7cb170eee6468aa1fdbd3abcf63c5a_c1_rear_right",
+        "sample_token": "5b7cb170eee6468aa1fdbd3abcf63c5a",
+        "scene_token": "325cef682f064c55a255f2625c533b75",
+        "index": 48,
+        "split": "validation",
+        "target_class": 1,
+        "text": "Find lane markings on the rear right",
+        "candidate_instance_ids": [
+          "singapore-queenstown/lane_divider/6881f526-ddda-4e9f-83ee-0f6968a92d73"
+        ],
+        "instance_id": "singapore-queenstown/lane_divider/6881f526-ddda-4e9f-83ee-0f6968a92d73",
+        "mask_file": "5b7cb170eee6468aa1fdbd3abcf63c5a_c1_rear_right.npz",
+        "annotation_source": "nuscenes_map_record_exact_author_raster",
+        "coordinate_frame": "segmentation_gt_pixel_grid",
+        "gt_sha256": "c287f1ead8e1b41c93428b8390f9d85c2af71cde4f2aaec4cfb20f08d13aa372",
+        "target_sha256": "98fb3dd94d7eb67aedfb82ebff35da9bd07a9969b78fc5de641f6666782f986d",
+        "roi_definition": "Ego metric quadrant; x front, y left; fixed before predictions",
+        "target_pixels": 397,
+        "distractor_pixels": 32,
+        "other_instance_pixels": 0,
+        "ego_pose_token": "cb440b4d1912467fb51d871f0ccf8e8a",
+        "calibrated_sensor_token": "00e93a09857648a8b723b48db4236602",
+        "lidar2ego_rotation": [
+          0.7077955119163518,
+          -0.006492242056004365,
+          0.010646214713995808,
+          -0.7063073142877817
+        ],
+        "lidar2ego_translation": [
+          0.943713,
+          0.0,
+          1.84023
+        ],
+        "prediction_file": "instruction_009.npz",
+        "branch_text": {
+          "original": "Find lane markings on the rear right",
+          "historical": "Find lane markings on the rear right",
+          "spatial": "Find lane markings on the rear right",
+          "incorrect": "Find lane markings on the rear left",
+          "shuffled": "right rear the on markings lane Find"
+        }
+      }
+    ],
+    "spatial_checkpoint": "/home/jjx2003520/projects/bev_vla/outputs/stage2_spatial_20261026/train_continue/fusion_step020.pt",
+    "spatial_sha256": "8cb61c3662356684316098f8328add7968f358f1c49fbff368dcac92bcf4c913",
+    "historical_sha256": "125237365f3b456384009168ad8b97df6f0e46805331f79c7e1c344d4c2e9d5a",
+    "author_sha256": "1345919901785b8df7ee16838d62f9f7a00444c9d8061f0dbee712d1b1b67dcf",
+    "protocol_sha256": "8d79ccfa094730c8dbab4bab787c5fe874326a16e7b2f308d8af57f0756d3945",
+    "command": [
+      "/home/jjx2003520/projects/bevformer_author_clean_5080/.venv-author/bin/python",
+      "scripts/stage2/spatial_experiment.py",
+      "--phase",
+      "evaluate",
+      "--protocol",
+      "outputs/stage2_spatial_20261026/protocol/protocol.json",
+      "--resume",
+      "outputs/stage2_spatial_20261026/train_continue/fusion_step020.pt",
+      "--output-dir",
+      "outputs/stage2_spatial_20261026/evaluate"
+    ],
+    "optimizer_steps_evaluation": 0,
+    "gt_used_for_inference": false
+  }
+}

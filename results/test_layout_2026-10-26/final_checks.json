@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "static_compile_files": [
+    "scripts/stage2/run_regression.py",
+    "scripts/stage2/run_stage2.py",
+    "tests/stage2/test_stage2_day1.py",
+    "tests/stage2/test_stage2_final_audit.py",
+    "tests/stage2/test_stage2_joint_backward.py",
+    "tests/stage2/test_stage2_micro_training.py",
+    "tests/stage2/test_stage2_pipeline.py",
+    "tests/stage2/test_stage2_spatial_supervision.py"
+  ],
+  "static_compile_count": 8,
+  "markdown_links_checked": 330,
+  "markdown_broken_links": [],
+  "git_diff_check": {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0,
+    "output": ""
+  },
+  "whitelist_count": 47,
+  "tracked_deletions": [
+    "tests/test_stage2_day1.py",
+    "tests/test_stage2_final_audit.py",
+    "tests/test_stage2_joint_backward.py",
+    "tests/test_stage2_micro_training.py",
+    "tests/test_stage2_pipeline.py"
+  ],
+  "whitelist_ignored_paths": [],
+  "head_and_index_unchanged": true,
+  "black_or_linter_executed": false,
+  "note": "仅做源码编译及路径/链接静态检查，未宣称执行未安装的格式化或 lint 工具；手动实验产物不在 P1 增量白名单。"
+}

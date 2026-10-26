@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-26",
+  "audit_integrity_status": "PASS",
+  "scope": "documentation and existing-evidence audit only; not project performance acceptance",
+  "authoritative_pdf": "BLOCKED: full original PDF absent; user current task summary used provisionally",
+  "stage_summary": [
+    {
+      "stage": 1,
+      "name": "环境搭建与基线复现",
+      "status": "PARTIAL"
+    },
+    {
+      "stage": 2,
+      "name": "核心模块设计与实现",
+      "status": "PASS",
+      "scope": "engineering/function only, not proven grounding or performance"
+    },
+    {
+      "stage": 3,
+      "name": "模型训练与性能优化",
+      "status": "NOT_MET",
+      "formal_evaluation": "PARTIAL/NOT_RUN, no conforming accuracy result"
+    },
+    {
+      "stage": 4,
+      "name": "全面验证与成果总结",
+      "status": "PARTIAL",
+      "formal_drivelm_test": "NOT_RUN",
+      "demo_video": "NOT_RUN"
+    }
+  ],
+  "checks": {
+    "protected_historical_files": {
+      "count": 3569,
+      "bytes": 3877341582,
+      "scope": "regular non-symlink files, matching the pre-audit manifest; existing symlink targets counted at canonical paths",
+      "existing_symlinks_observed": [
+        {
+          "path": "outputs/stage2_spatial_v3_20261026/range_filter_correction/annotations",
+          "target": "/home/jjx2003520/projects/bev_vla/outputs/stage2_spatial_v3_20261026/annotations"
+        },
+        {
+          "path": "outputs/stage2_spatial_v3_20261026/range_filter_correction/object_records.json",
+          "target": "/home/jjx2003520/projects/bev_vla/outputs/stage2_spatial_v3_20261026/object_records.json"
+        },
+        {
+          "path": "outputs/stage2_spatial_v3_20261026/range_filter_correction/train",
+          "target": "/home/jjx2003520/projects/bev_vla/outputs/stage2_spatial_v3_20261026/train"
+        }
+      ],
+      "sha256_mismatches": [],
+      "added": [],
+      "missing": []
+    },
+    "experiment_python_sources": {
+      "count": 208,
+      "added": [],
+      "missing": [],
+      "scope": "existing scripts/, stage2/, tests/; baseline SHA set captured before documentation changes"
+    },
+    "task_matrix": {
+      "items": 35,
+      "markdown_items": 35,
+      "status_counts": {
+        "PASS": 17,
+        "PARTIAL": 11,
+        "NOT_MET": 3,
+        "NOT_RUN": 3,
+        "BLOCKED": 1
+      },
+      "markdown_mismatches": [],
+      "csv_items": 35,
+      "csv_mismatches": [],
+      "missing_evidence": [],
+      "empty_evidence": []
+    },
+    "local_markdown_links": {
+      "checked": 420,
+      "new_broken": [],
+      "preexisting_broken": []
+    },
+    "research_numeric_tables": {
+      "documents": 7,
+      "numeric_rows": 132,
+      "changed": []
+    },
+    "logbook": {
+      "append_only": true,
+      "correction_heading_count": 1
+    },
+    "research_version_index": {
+      "versions": 6,
+      "checkpoint_sha_and_paths_errors": []
+    },
+    "git": {
+      "head_unchanged": true,
+      "index_unchanged": true,
+      "diff_check_exit_code": 0,
+      "diff_check_output": "",
+      "no_add_commit_or_push_executed": true
+    },
+    "corrected_documents": 19,
+    "incremental_whitelist": {
+      "path": "results/four_stage_audit_2026-10-26/git_whitelist_incremental.txt",
+      "entries": 28,
+      "candidates_only": true
+    }
+  },
+  "executed_this_audit": {
+    "gpu_training_steps": 0,
+    "gpu_inference_runs": 0,
+    "pytest_runs": 0,
+    "new_architecture_versions": 0,
+    "commit": false,
+    "push": false
+  }
+}

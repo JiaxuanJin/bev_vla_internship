@@ -1,0 +1,10 @@
+stage2_pytest: PASS
+step56_synthetic: PASS
+step68_self_test: PASS
+step69_self_test: PASS
+step70_self_test: PASS
+step71_self_test: PASS
+step72_self_test: PASS
+step73_self_test: PASS
+Report: /home/jjx2003520/projects/bev_vla/results/test_layout_2026-10-26/after_entrypoint_regression.json
+cpu-tests: PASS_CPU_REGRESSION -> /home/jjx2003520/projects/bev_vla/results/test_layout_2026-10-26/after_entrypoint.json

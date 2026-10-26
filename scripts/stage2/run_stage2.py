@@ -248,7 +248,11 @@ def main():
     record["source_sha256"] = {
         str(path.relative_to(ROOT)): file_digest(path)
         for path in sorted(
-            {*ROOT.glob("scripts/stage2/*.py"), *ROOT.glob("tests/test_stage2*.py")}
+            {
+                *ROOT.glob("scripts/stage2/*.py"),
+                *ROOT.glob("tests/**/*.py"),
+                ROOT / "pytest.ini",
+            }
         )
     }
     try:

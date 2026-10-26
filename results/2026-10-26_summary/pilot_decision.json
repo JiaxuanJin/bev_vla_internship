@@ -1,0 +1,17 @@
+{
+  "phase": "pilot",
+  "checks": {
+    "relevant_segmentation_vs_global_control": true,
+    "relevant_ap_vs_global_control": false,
+    "relevant_segmentation_vs_targeted_no_language": true,
+    "relevant_ap_vs_targeted_no_language": false,
+    "relevant_segmentation_vs_original": true,
+    "relevant_ap_vs_original": false,
+    "irrelevant_segmentation_protected": true,
+    "irrelevant_ap_protected": false
+  },
+  "expand": false,
+  "useful_model": false,
+  "decision": "STOP_ARCHITECTURE_EXPLORATION_AND_CLOSE",
+  "no_new_threshold_or_validation_selection": true
+}
