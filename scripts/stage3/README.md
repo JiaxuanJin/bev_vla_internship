@@ -1,37 +1,38 @@
 # 第三阶段 LG-BEV 源码与复现索引
 
-截至 2026-10-27 最终收尾：**正式训练尚未启动，正式更新 0，状态 BLOCKED**。
-GT 仅成功提交 **5787/19123 帧**，剩余 13336 帧；**640 个块**通过完整性校验。
-运行代码仍采用 V2（累计 48 小时、单会话 7.5 小时）；
-V3 为 **DRAFT_NOT_APPLIED**，取消累计硬上限尚未实施或验收。
-完整真实 start→自动暂停→人工暂停→跨进程 resume 对照及严格会话保存时间验收尚未完成。
-2026-10-28 本轮只做 Git 交付检查，不启动 GT、GPU 实验或正式训练；提交/推送等待确认。
+2026-10-28 最新状态：**V3 工程准入 READY，正式训练未启动、正式更新 0，等待单独授权**。
+GT **19123/19123 帧**、476场景、35日志，正式来源验收PASS、选中块970个。
+新正式CLI默认V3，累计硬上限null、48/72小时只预警；单会话27000秒，提前600秒保存。
+真实自动暂停→人工stop→跨进程resume完整状态对照通过。四条命令与关机规则见
+[V3每日操作](README_LG_BEV_V3_20261028.md)。旧24/48小时协议和失败结果仍保留。
 
 历史两步 smoke、唯一 16 步 pilot 与有界工程更新各有独立记录，不计入正式 28686 次更新。
 历史 pilot 没有证明相关精度提升；新正式 development/cold_final 仍未评价。
-230 项 CPU 工程回归不能替代正式训练、真实控制全链验收或项目精度验收。
+260 项 CPU 工程回归及32帧真实控制验收不能替代正式训练或项目精度验收。
 
 ## 阅读入口与协议优先关系
 
 | 入口 | 内容 |
 |---|---|
-| [每日操作](README_LG_BEV_DAILY_20261027.md) | 最新暂停状态、V2 管理器、状态查看及尚未完成的控制验收 |
+| [V3每日操作](README_LG_BEV_V3_20261028.md) | 当前READY状态、独立run-id、四条命令及安全关机 |
+| [历史V2操作](README_LG_BEV_DAILY_20261027.md) | 2026-10-27暂停状态和当时未完成项，保留历史语义 |
 | [工程实现](README_LG_BEV_ENGINEERING_20261027.md) | FP32 时序、rolling cache、梯度/恢复/计分；24 小时章节是历史记录 |
 | [正式固定方案](../../docs/lg_bev_formal_training_protocol_2026-10-27.md) | 固定 split、A2+B4、loss、冻结边界和计分定义，保留原始设计历史 |
-| [V3 草案](../../docs/lg_bev_resource_protocol_v3_draft_2026-10-27.md) | 累计时间改预警的待实施方案，不授予训练权限 |
+| [V3执行协议](../../docs/lg_bev_resource_protocol_v3_2026-10-28.md) | 已实施并验收；原草案保留，不授予训练权限 |
 | [监督空间与 pilot](README_LG_BEV_SPACE_20261027.md) | 实际 Head 根因更正、独立监督空间及失败的历史性能结果 |
 | [早期原型](README_LG_BEV_20261027.md) | 首次 smoke 和旧空间门槛；15m 诊断已更正 |
 | [昨日唯一中文 Logbook](../../docs/logbook_2026-10-27.md#后续每日离线运行准备全量gt部分构建与今日安全收尾) | 同日各轮历史，末节为最终收尾状态 |
+| [今日唯一中文 Logbook](../../docs/logbook_2026-10-28.md) | GT修复/完成、V3实施及当前真实准入证据 |
 | [Git 拟交付清单](../../docs/lg_bev_github_delivery_2026-10-28.md) | 逐文件白名单、核查结果、提交消息和排除范围 |
 
 原 24 小时合同保留原字节；V2 仅补充资源时间语义，launch hold 仍有效。
-V3 文档和 JSON 均为草案。日期到达、CPU 测试通过或未来 READY 均不自动授权训练。
+V3执行协议独立新建，原V3草案保留为历史。日期到达、测试通过或READY均不自动授权训练。
 旧文档的“当前”“今日”“未实现”和旧吞吐值按其记录阶段理解，不能覆盖末节状态。
 
-## 46 个源码文件的职责
+## 47 个源码文件的职责
 
 以下每行对应一个实际文件；路径相对于本目录。`python -m scripts.stage3.<模块名>`
-须在仓库根目录执行。历史/GPU/构建入口仅说明职责，本轮均不运行。
+须在仓库根目录执行。历史/GPU/构建入口须依各自协议使用，不据源码存在宣称实验完成。
 
 | 基础与历史链路 | 职责 |
 |---|---|
@@ -84,6 +85,7 @@ V3 文档和 JSON 均为草案。日期到达、CPU 测试通过或未来 READY 
 
 | 每日控制与 GT 准备 | 职责 |
 |---|---|
+| [lg_bev_v3_acceptance.py](lg_bev_v3_acceptance.py) | 当前三场景32帧参考、真实三会话控制、完整状态逐项比较 |
 | [lg_bev_daily.py](lg_bev_daily.py) | start/status/stop/resume、tmux worker、离线与授权检查 |
 | [lg_bev_daily_state.py](lg_bev_daily_state.py) | V2 时钟、协议、checkpoint/receipt 校验和事件 |
 | [lg_bev_daily_metadata.py](lg_bev_daily_metadata.py) | 原始大表流式索引、场景视图与来源指纹缓存 |
@@ -94,7 +96,7 @@ V3 文档和 JSON 均为草案。日期到达、CPU 测试通过或未来 READY 
 | [lg_bev_session_control_test.py](lg_bev_session_control_test.py) | 真实暂停/恢复控制驱动，完整对照尚未验收 |
 | [lg_bev_session_logbook.py](lg_bev_session_logbook.py) | 从未来真实会话事件追加唯一中文日志 |
 
-7 个测试文件及用途见 [测试 README](../../tests/README.md)。未迁移或改写历史 V1～V5。
+9 个测试文件及用途见 [测试 README](../../tests/README.md)。未迁移或改写历史 V1～V5。
 
 ## CPU 复核命令
 
@@ -109,7 +111,7 @@ export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2
 .venv-bevformer/bin/python -m pyflakes scripts/stage3/lg_bev*.py tests/test_lg_bev*.py
 ```
 
-预期全库 230 passed、19 warnings；其中 90 项来自 LG-BEV 测试文件。
+预期全库 260 passed、20 warnings；其中 120 项来自 LG-BEV 测试文件。
 本地 socket 创建权限是离线拒绝测试的必要条件；不需要联网下载或 GPU。
 Black 88 检查请逐文件调用，避免该环境已知的多进程池挂起：
 
@@ -137,7 +139,7 @@ G 盘对应 Windows 的 `G:\BEV_VLA_Datasets\`；这些是资产布局说明，�
 Python 3.10.12、PyTorch 2.8.0+cu128 及已有 MMCV/MMDetection3D 兼容环境为本机记录，
 不保证任意新环境直接可用；`.venv-bevformer/` 与第三方工程不随 Git 分发。
 
-公开仓库包含源码、测试、README、固定合同/V2/V3 草案和少量收尾元数据。
+公开仓库交付源码、测试、README、固定合同/V2/V3执行协议及少量摘要；旧V3草案保留。
 历史结果目录、原始审计、逐帧 split/来源大清单、标签、FP32 参考、模型权重、数据库和
 profiler trace 保留在本机，不能仅凭克隆执行历史真实数据复现或正式准入。
 其中 `admission.json` 含个人绝对路径，留在本机；缺失时管理器继续显示 BLOCKED。
@@ -146,4 +148,5 @@ profiler trace 保留在本机，不能仅凭克隆执行历史真实数据复�
 随交付保留的合同、V2/V3 JSON 和收尾 JSON 均不改写；其中源码/Logbook SHA 指向
 2026-10-27 原始快照。公开文档添加状态说明并移除个人主目录后，文档 SHA 会改变，
 不能用历史文档 SHA 校验公开改版，也不能把旧“未实现”合同字段当作今日实现清单。
-所有源码和测试的字节保持昨日版本，交付修改仅涉及文档。
+2026-10-28的GT校验修复和V3代码/测试修改以今日Logbook及新的Git白名单为准，
+不能把旧源码封存SHA当作今日已验收版本的SHA。

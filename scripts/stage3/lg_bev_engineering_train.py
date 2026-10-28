@@ -177,14 +177,17 @@ class Trainer:
     def should_stop(self) -> bool:
         """同一边界检查手工、会话及累计预算，兼容封存的24小时旧入口。"""
         session = getattr(self, "session", None)
+        budget = getattr(self, "total_budget_seconds", 86400.0)
         return (
             self.stop_requested
-            or self.elapsed_wall() >= getattr(self, "total_budget_seconds", 86400.0)
+            or budget is not None
+            and self.elapsed_wall() >= budget
             or bool(session is not None and session.reason())
         )
 
     def checkpoint(self, path: Path, cache: RollingCache | None = None) -> str:
         """原子保存优化器/scheduler、精确cursor、部分梯度和RNG，禁止覆盖。"""
+        save_started = time.perf_counter()
         value = dict(
             stage=self.stage,
             state_dict={
@@ -217,7 +220,12 @@ class Trainer:
             atomic_save(path, value)
         digest = sha(path)
         # 独立原子receipt补记CPU复制/序列化/fsync/校验耗时；旧checkpoint不覆盖。
-        receipt = dict(checkpoint_sha256=digest, wall_seconds=self.elapsed_wall())
+        receipt = dict(
+            checkpoint_sha256=digest,
+            wall_seconds=self.elapsed_wall(),
+            protocol_sha256=self.protocol_sha256,
+            checkpoint_save_seconds=time.perf_counter() - save_started,
+        )
         receipt_path = path.with_name(path.name + ".receipt.pt")
         if cache is not None:
             with cache.locked():
@@ -225,6 +233,7 @@ class Trainer:
                 atomic_save(receipt_path, receipt)
         else:
             atomic_save(receipt_path, receipt)
+        self.last_checkpoint_seconds = time.perf_counter() - save_started
         return digest
 
     def resume(self, path: Path) -> None:
@@ -503,7 +512,11 @@ class Trainer:
                         raise RuntimeError("epoch尾残留梯度")
                     self.cursor = 0
                     self.epoch += 1
+                microstep_started = time.perf_counter()
                 record = self.microstep()
+                record["microstep_wall_seconds"] = (
+                    time.perf_counter() - microstep_started
+                )
                 record["learning_rate"] = (
                     self.optimizer.param_groups[0]["lr"]
                     if hasattr(self, "optimizer")

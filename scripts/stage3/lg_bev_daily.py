@@ -39,6 +39,33 @@ from scripts.stage3.lg_bev_daily_state import (
     source_manifest,
     validate_policy,
 )
+from scripts.stage3 import lg_bev_daily_state as time_state
+
+
+def configure_protocol(version: str) -> None:
+    """CLI默认V3；历史V2须显式选择，旧API和测试默认值保留。"""
+    global RUN_ID, RUN, OUT, POLICY, TMUX_NAME
+    if version == "v3":
+        RUN_ID, RUN, OUT, POLICY = (
+            time_state.V3_RUN_ID,
+            time_state.V3_RUN,
+            time_state.V3_OUT,
+            time_state.V3_POLICY,
+        )
+        TMUX_NAME = "lg-bev-formal-v3"
+    else:
+        RUN_ID, RUN, OUT, POLICY = (
+            time_state.RUN_ID,
+            time_state.RUN,
+            time_state.OUT,
+            time_state.POLICY,
+        )
+        TMUX_NAME = time_state.TMUX_NAME
+
+
+def is_v3() -> bool:
+    """明确按版本选择，不把旧时限批量改成无限。"""
+    return POLICY == time_state.V3_POLICY
 
 
 def offline_environment() -> None:
@@ -117,6 +144,8 @@ def options(args) -> tuple[Path, dict | None]:
         ):
             raise ValueError("验收配置不得伪装正式run")
         return contained(CACHE_ROOT, "runs/" + config["run_id"]), config
+    if getattr(args, "run_id", None) not in (None, RUN_ID):
+        raise ValueError("正式run-id必须与当前版本化协议一致")
     return RUN, None
 
 
@@ -137,14 +166,18 @@ def admission() -> dict:
         "storage_and_memory",
         "resource_48h",
     }
+    if is_v3():
+        required -= {"session_and_total_budget", "resource_48h"}
+        required |= {"session_safety_v3", "resource_monitoring"}
     if (
         gate["status"] != "READY"
         or set(gate["gates"]) != required
         or not all(v == "PASS" for v in gate["gates"].values())
-        or gate["conservative_active_hours"] > 48
+        or not is_v3()
+        and gate["conservative_active_hours"] > 48
         or gate["policy_sha256"] != sha(POLICY)
     ):
-        raise ValueError("BLOCKED：关键准入不通过或48小时不足")
+        raise ValueError("BLOCKED：当前版本关键准入未全部通过")
     if gate["source_sha256"] != source_manifest():
         raise ValueError("BLOCKED：源码偏离准入封存")
     for path, digest in gate["artifacts"].items():
@@ -155,7 +188,7 @@ def admission() -> dict:
 
 def require_launch_authorization() -> None:
     """日期到达不能自动解锁；必须有绑定最新hold的新明确用户授权记录。"""
-    hold = OUT / "launch_hold_20261027.json"
+    hold = OUT / ("launch_hold_v3.json" if is_v3() else "launch_hold_20261027.json")
     authorization = OUT / "launch_authorization.json"
     if not hold.exists() or not authorization.exists():
         raise ValueError(
@@ -231,21 +264,46 @@ def status(run: Path) -> dict:
                 value["pid"] = int(result.stdout.strip())
         except (OSError, ValueError, subprocess.TimeoutExpired):
             pass
-    value["process_alive"] = alive(value, run)
+    worker_alive = alive(value, run)
+    supervisor_alive = (
+        alive({"pid": value["supervisor_pid"]}, run)
+        if value.get("supervisor_pid")
+        else False
+    )
+    value["worker_process_alive"] = worker_alive
+    value["supervisor_process_alive"] = supervisor_alive
+    value["process_alive"] = worker_alive or supervisor_alive
+    if value["process_alive"]:
+        value["safe_to_shutdown"] = False
     if (
         value["status"] in ("RUNNING", "STARTING", "STOPPING")
         and not value["process_alive"]
     ):
         value["status"] = "FAILED_UNCLEAN"
         value["safe_to_shutdown"] = False
-    if (
-        value["status"] in ("STOPPED", "COMPLETED")
-        or value.get("checkpoint_verified_after_stop")
-    ) and not value["process_alive"]:
+    if (value["status"] in ("STOPPED", "COMPLETED")) and not value["process_alive"]:
         try:
             latest_checkpoint(run, load=False)
+            if value.get("protocol_version") == "V3":
+                receipt = Path(value["exit_receipt"])
+                digest = receipt.with_suffix(".sha256").read_text().strip()
+                if sha(receipt) != digest:
+                    raise ValueError("会话退出receipt损坏")
+                ended = read(receipt)
+                if (
+                    ended["worker_exit_code"] != 0
+                    or ended["checkpoint_sha256"] != value["checkpoint_sha256"]
+                    or ended["execution_sha256"] != sha(run / "execution.json")
+                    or ended["session_active_seconds"] > ended["session_limit_seconds"]
+                ):
+                    raise ValueError("会话退出/保存时间验收失败")
+                value.update(
+                    total_active_seconds=ended["total_active_seconds"],
+                    session_active_seconds=ended["session_active_seconds"],
+                    exit_receipt_sha256=digest,
+                )
             value["safe_to_shutdown"] = True
-        except (ValueError, OSError) as exc:
+        except (ValueError, OSError, KeyError) as exc:
             value.update(
                 status="FAILED_CHECKPOINT",
                 safe_to_shutdown=False,
@@ -257,6 +315,7 @@ def status(run: Path) -> dict:
 
 def start(args, *, resume: bool) -> dict:
     """验证后创建独立tmux会话；完成/失败状态不盲目重跑。"""
+    session_started_at = time.perf_counter()
     run, config = options(args)
     if config is None:
         require_launch_authorization()
@@ -290,12 +349,16 @@ def start(args, *, resume: bool) -> dict:
         "-u",
         "-m",
         "scripts.stage3.lg_bev_daily",
-        "_worker",
+        "_supervisor" if is_v3() else "_worker",
+        "--protocol",
+        "v3" if is_v3() else "v2",
         "--run-id",
         run.name,
         "--session-id",
         session_id,
     ]
+    if is_v3():
+        command += ["--session-started-at", str(session_started_at)]
     if resume:
         command += ["--checkpoint", checkpoint["path"]]
     if config:
@@ -315,6 +378,7 @@ def start(args, *, resume: bool) -> dict:
             previous_total_active_seconds=existing.get("total_active_seconds", 0),
             checkpoint=existing.get("checkpoint"),
             checkpoint_sha256=existing.get("checkpoint_sha256"),
+            protocol_version="V3" if is_v3() else "V2",
         ),
         cache,
     )
@@ -402,6 +466,7 @@ class Worker:
     """摘要派生自唯一control与训练器，保存失败一律FAILED。"""
 
     def __init__(self, run: Path, args, config: dict | None) -> None:
+        started_at = getattr(args, "session_started_at", None)
         self.cache = RollingCache()
         self.run, self.args, self.config = run, args, config
         previous = 0.0
@@ -423,12 +488,30 @@ class Worker:
             # 归属明确的单次请求不是历史实验；改名留存，不删除。
             if read(stop_path).get("session_id") != args.session_id:
                 os.rename(stop_path, run / ("stop.request.handled_" + args.session_id))
+        policy = validate_policy(POLICY)
         self.clock = SessionClock(
             previous,
             stop_path=stop_path,
             session_seconds=config["session_seconds"] if config else SESSION_SECONDS,
-            margin_seconds=0 if config else 120,
+            margin_seconds=(
+                config.get("margin_seconds", 0)
+                if config
+                else policy["stop_save_margin_seconds"]
+            ),
+            total_seconds=None if is_v3() else time_state.TOTAL_SECONDS,
+            started_at=started_at if is_v3() else None,
         )
+        if config and not args.checkpoint:
+            self.clock.previous = config.get("simulated_previous_seconds", 0.0)
+        self.emitted_warnings = set()
+        if (run / "control.jsonl").exists():
+            self.emitted_warnings = {
+                r["hours"]
+                for r in map(
+                    json.loads, (run / "control.jsonl").read_text().splitlines()
+                )
+                if r.get("event") == "resource_warning"
+            }
         self.last_write = 0.0
         self.last_persist = 0.0
         self.last_record = {}
@@ -451,11 +534,25 @@ class Worker:
             pid=os.getpid(),
             total_active_seconds=self.clock.total(),
             session_active_seconds=self.clock.elapsed(),
+            supervisor_pid=getattr(args, "supervisor_pid", None),
+            protocol_version="V3" if is_v3() else "V2",
         )
         atomic_json(run / "status.json", value, self.cache)
 
     def progress(self, trainer, record: dict, *, force: bool = False) -> None:
         self.last_record = record
+        for hours in self.clock.resource_warnings():
+            if hours not in self.emitted_warnings:
+                event(
+                    self.run,
+                    dict(
+                        event="resource_warning",
+                        hours=hours,
+                        total_active_seconds=self.clock.total(),
+                    ),
+                    self.cache,
+                )
+                self.emitted_warnings.add(hours)
         if not force and time.monotonic() - self.last_write < 2:
             return
         self.last_write = time.monotonic()
@@ -496,6 +593,8 @@ class Worker:
                 28686 if self.config is None else self.config["total_microsteps"] // 4
             ),
             formal_training=self.config is None,
+            protocol_version="V3" if is_v3() else "V2",
+            supervisor_pid=getattr(self.args, "supervisor_pid", None),
             partial_accumulation=trainer.accumulated,
             loss=record.get("losses"),
             learning_rate=trainer.optimizer.param_groups[0]["lr"],
@@ -550,6 +649,7 @@ class Worker:
             path=str(path),
             sha256=digest,
             receipt_sha256=sha(receipt),
+            execution_sha256=trainer.protocol_sha256,
         )
         event(self.run, record, self.cache)
         latest_checkpoint(self.run)  # 真正反序列化、SHA与协议核验，不仅检查存在。
@@ -571,7 +671,10 @@ class Worker:
             stop_reason=reason or self.clock.reason() or "USER_STOP",
             safe_to_shutdown=False,
             can_resume=state == "STOPPED"
-            and self.clock.total() < self.clock.total_seconds
+            and (
+                self.clock.total_seconds is None
+                or self.clock.total() < self.clock.total_seconds
+            )
             and self.clock.reason() != "TOTAL_ACTIVE_TIME_LIMIT",
             checkpoint_verified_after_stop=True,
             resume_command=".venv-bevformer/bin/python -m scripts.stage3.lg_bev_daily resume",
@@ -592,8 +695,10 @@ def worker(args) -> None:
     try:
         validate_policy(POLICY)
         if config:
-            from scripts.stage3.lg_bev_daily_acceptance import acceptance_worker
-
+            if is_v3():
+                from scripts.stage3.lg_bev_v3_acceptance import acceptance_worker
+            else:
+                from scripts.stage3.lg_bev_daily_acceptance import acceptance_worker
             acceptance_worker(work, config)
         else:
             require_launch_authorization()
@@ -642,19 +747,114 @@ def worker(args) -> None:
         raise
 
 
+def supervise(args) -> None:
+    """独立监督进程在GPU进程真实退出后封存时间receipt，不依赖联网客户端。"""
+    run, config = options(args)
+    cache = RollingCache()
+    before = read(run / "status.json")
+    previous = before.get("previous_total_active_seconds", 0.0)
+    if config and not args.checkpoint:
+        previous = config.get("simulated_previous_seconds", 0.0)
+    command = [
+        sys.executable,
+        "-u",
+        "-m",
+        "scripts.stage3.lg_bev_daily",
+        "_worker",
+        "--protocol",
+        "v3",
+        "--run-id",
+        run.name,
+        "--session-id",
+        args.session_id,
+        "--session-started-at",
+        str(args.session_started_at),
+        "--supervisor-pid",
+        str(os.getpid()),
+    ]
+    if args.checkpoint:
+        command += ["--checkpoint", str(args.checkpoint)]
+    if args.acceptance_config:
+        command += ["--acceptance-config", str(args.acceptance_config)]
+    child = subprocess.Popen(command, cwd=ROOT)
+    code = child.wait()
+    value = read(run / "status.json")
+    if code or value.get("status") not in ("STOPPED", "COMPLETED"):
+        value.update(
+            status="FAILED",
+            safe_to_shutdown=False,
+            can_resume=False,
+            worker_exit_code=code,
+        )
+        atomic_json(run / "status.json", value, cache)
+        raise RuntimeError("GPU进程没有安全退出，禁止恢复或关机")
+    latest = latest_checkpoint(run)
+    limit = config["session_seconds"] if config else SESSION_SECONDS
+    receipt = run / "sessions" / (args.session_id + ".exit.json")
+    receipt.parent.mkdir(exist_ok=True)
+    with cache.locked():
+        cache.reserve_for_artifact(16384)
+    # 先完成可能较慢的状态持久化，最后一份不可变退出receipt才是累计计时权威。
+    value.update(
+        exit_receipt=str(receipt),
+        worker_exit_code=code,
+        supervisor_pid=os.getpid(),
+        safe_to_shutdown=False,
+    )
+    atomic_json(run / "status.json", value, cache)
+    if time.perf_counter() - args.session_started_at > limit:
+        value.update(status="FAILED_SESSION_OVERRUN", can_resume=False)
+        atomic_json(run / "status.json", value, cache)
+    with cache.locked():
+        elapsed = time.perf_counter() - args.session_started_at
+        closed = dict(
+            worker_pid=child.pid,
+            worker_exit_code=code,
+            session_active_seconds=elapsed,
+            session_limit_seconds=limit,
+            total_active_seconds=previous + elapsed,
+            checkpoint_sha256=latest["sha256"],
+            execution_sha256=sha(run / "execution.json"),
+            checkpoint_receipt_sha256=latest.get("receipt_sha256"),
+            policy_sha256=sha(POLICY),
+            previous_total_active_seconds=previous,
+        )
+        with receipt.open("x", encoding="utf-8") as stream:
+            json.dump(closed, stream, ensure_ascii=False, allow_nan=False)
+            stream.flush()
+            os.fsync(stream.fileno())
+        with receipt.with_suffix(".sha256").open("x") as stream:
+            stream.write(sha(receipt))
+            stream.flush()
+            os.fsync(stream.fileno())
+    if time.perf_counter() - args.session_started_at > limit:
+        value.update(status="FAILED_SESSION_OVERRUN", can_resume=False)
+        atomic_json(run / "status.json", value, cache)
+    if value["status"] == "FAILED_SESSION_OVERRUN":
+        raise RuntimeError("会话含保存退出已超过时限，安全准入失败")
+
+
 def main() -> None:
     """四个可复制命令；watch的Ctrl-C仅退出监控，不给训练进程发信号。"""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "action", choices=["start", "status", "stop", "resume", "_worker"]
+        "action",
+        choices=["start", "status", "stop", "resume", "_worker", "_supervisor"],
     )
+    parser.add_argument("--protocol", choices=["v2", "v3"], default="v3")
     parser.add_argument("--watch", action="store_true")
     parser.add_argument("--timeout", type=float, default=120)
-    parser.add_argument("--run-id", default=RUN_ID)
+    parser.add_argument("--run-id")
+    parser.add_argument("--session-started-at", type=float)
+    parser.add_argument("--supervisor-pid", type=int)
     parser.add_argument("--session-id")
     parser.add_argument("--checkpoint", type=Path)
     parser.add_argument("--acceptance-config", type=Path)
     args = parser.parse_args()
+    configure_protocol(args.protocol)
+    if args.action == "_supervisor":
+        supervise(args)
+        return
     if args.action == "_worker":
         worker(args)
         return

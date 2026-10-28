@@ -382,18 +382,56 @@ def prepare(out: Path) -> None:
 
 
 def verify_box_corners(boxes: object, masks: np.ndarray) -> int:
-    """与实际原生 LiDARInstance3DBoxes.corners 栅格化逐像素对照。"""
+    """独立闭多边形逐像素核验，并检查旧版原生 corners 的浮点误差界。
+
+    GT 保留 box_masks 的原计算：FP32 sin/cos 系数、FP64 像素中心和 <=。
+    原生 corners 在 FP32 中旋转后再平移，近边缘的点可能跨过其舍入边。
+    因此先核验原生 corners 的顺时针几何，再用 GT 仿射的逆构造 FP64
+    闭多边形；不能将有舍入误差的 FP32 corners 当作精确的离散标签。
+    """
     from shapely.geometry import Polygon
-    from shapely.vectorized import contains
+    from shapely.vectorized import contains, touches
 
     xy = BEVGrid().lidar_centers().numpy()[..., :2]
+    values = boxes.tensor.numpy()
+    if masks.shape != (len(boxes), 150, 150) or masks.dtype != np.bool_:
+        raise ValueError("对象掩码必须为每框一个150×150布尔栅格")
     corners = boxes.corners.numpy() if len(boxes) else np.empty((0, 8, 3))
-    for k, corner in enumerate(corners):
-        polygon = Polygon(corner[[0, 3, 7, 4], :2])
-        raster = contains(polygon, xy[..., 0], xy[..., 1])
-        # 亚像素中心回填由独立协议定义，不视为 polygon 包含误差。
-        if raster.any():
-            np.testing.assert_array_equal(raster, masks[k])
+    native_c = boxes.tensor[:, 6].cos().numpy()
+    native_s = boxes.tensor[:, 6].sin().numpy()
+    # 原生旋转每坐标至多三个乘积、两次求和及一次平移；局部半尺寸乘2^-1精确。
+    # gamma_6 是这些浮点运算的前向误差界，不是像素容差。
+    unit = np.finfo(values.dtype).eps / 2
+    gamma = 6 * unit / (1 - 6 * unit)
+    signs = np.array([[-1, -1], [-1, 1], [1, 1], [1, -1]], dtype=np.float64)
+    for k, (box, corner) in enumerate(zip(values, corners)):
+        if not np.isfinite(box[:7]).all() or (box[3:6] <= 0).any():
+            raise ValueError(f"非法原生3D框: {k}")
+        local = signs * box[3:5] / 2
+        native_rotation = np.array(
+            [[native_c[k], -native_s[k]], [native_s[k], native_c[k]]],
+            dtype=np.float64,
+        )
+        reference = local @ native_rotation + box[:2]
+        bound = gamma * (np.abs(local) @ np.abs(native_rotation) + np.abs(box[:2]))
+        np.testing.assert_array_less(
+            np.abs(corner[[0, 3, 7, 4], :2] - reference),
+            np.nextafter(bound, np.inf),
+            err_msg=f"原生corners不符合旧版顺时针yaw及浮点误差界: box={k}",
+        )
+        # 原生成器的世界→局部矩阵A使用已舍入的系数，det(A)不严格为1。
+        # 逆矩阵必须除以 c*c+s*s，不能用A.T假装精确正交。
+        c, s = float(np.cos(box[6])), float(np.sin(box[6]))
+        vertices = local @ np.array([[c, -s], [s, c]]) / (c * c + s * s)
+        polygon = Polygon(vertices + box[:2])
+        raster = contains(polygon, xy[..., 0], xy[..., 1]) | touches(
+            polygon, xy[..., 0], xy[..., 1]
+        )
+        # 只有几何footprint为空时应用既有中心回填，并同样逐像素严格核验。
+        if not raster.any() and (np.abs(box[:2]) < 51.2).all():
+            col, row = np.floor((box[:2] + 51.2) / (102.4 / 150)).astype(int)
+            raster[row, col] = True
+        np.testing.assert_array_equal(raster, masks[k], err_msg=f"box={k}")
     return len(corners)
 
 

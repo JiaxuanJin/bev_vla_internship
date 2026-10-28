@@ -222,14 +222,178 @@ def seal(preflight: Path) -> dict:
     return result
 
 
+def seal_v3(preflight: Path) -> dict:
+    """复用已正式验收的全量GT，只以当前源码真实V3控制证据生成新准入。"""
+    from scripts.stage3.lg_bev_daily_state import (
+        V3_OUT,
+        V3_POLICY,
+        V3_RUN_ID,
+        validate_policy,
+    )
+
+    policy = validate_policy(V3_POLICY)
+    data_path = OUT / "full_gt_integrity.json"
+    provenance_path = DATA_REPORT.parent / "source_provenance.json"
+    data = read(data_path)
+    provenance = read(provenance_path)
+    if (
+        data["data_report_sha256"] != sha(DATA_REPORT)
+        or data["provenance_sha256"] != sha(provenance_path)
+        or provenance["data_report_sha256"] != sha(DATA_REPORT)
+    ):
+        raise ValueError("既有全量GT来源封存变化，不得改写PASS")
+    initial = read(V3_OUT / "preserved_before.json")
+    for path in [
+        "scripts/stage3/lg_bev_data.py",
+        "scripts/stage3/lg_bev_engineering_data.py",
+    ]:
+        from scripts.stage3.lg_bev_common import ROOT
+
+        if sha(ROOT / path) != initial[path]:
+            raise ValueError("V3不得改变已经通过全量验收的GT算法")
+    cross_path = preflight / "evidence/cross_scene_v3.json"
+    resume_path = preflight / "evidence/manager_resume_v3.json"
+    control_path = preflight / "evidence/manager_control_v3.json"
+    cross, resumed, control = map(read, (cross_path, resume_path, control_path))
+    current = source_manifest()
+    if cross["source_sha256"] != current or resumed["source_sha256"] != current:
+        raise ValueError("真实GPU证据不是当前源码，必须有界复核")
+    if any(v["policy_sha256"] != sha(V3_POLICY) for v in (cross, resumed)):
+        raise ValueError("GPU证据时间协议不符")
+    metadata_path = CACHE_ROOT / "metadata_bulk_train_v1/equivalence.json"
+    metadata = read(metadata_path)
+    cache = RollingCache()
+    usage, free = cache.usage(), shutil.disk_usage(CACHE_ROOT).free
+    gates = dict(
+        full_train_labels=(
+            data["status"] == "PASS"
+            and data["success"] == 19123
+            and data["failures"] == 0
+            and data["scenes"] == 476
+            and data["logs"] == 35
+            and data["blocks"] == 970
+            and data["label_count"] == 478848
+            and data["independent_32frames_bitwise"] == 32
+            and metadata["status"] == "PASS"
+            and metadata["scenes"] == 476
+        ),
+        cross_scene_native_FP32=(
+            cross["status"] == "PASS"
+            and cross["frames"] == 32
+            and len(cross["scenes"]) == 3
+            and cross["raw_FP32_heads_bitwise"]
+            and cross["parameter_max_abs"] <= 1e-6
+            and cross["loss_max_abs"] <= 1e-5
+            and cross["frozen_sha256"][0]
+            == "ba1b1870e0a60d25158ce66898a9531cce42dadd15fa09be5c75baf06f069ab5"
+        ),
+        real_backward_resume=(
+            resumed["status"] == "PASS"
+            and resumed["stage_updates"] == 8
+            and all(
+                resumed[k]
+                for k in [
+                    "sample_order_exact",
+                    "optimizer_exact",
+                    "scheduler_exact",
+                    "rng_exact",
+                    "partial_gradient_exact",
+                    "bn_and_head_frozen",
+                ]
+            )
+        ),
+        offline_local_assets=(
+            cross["offline_network_attempts"] == 0
+            and control["offline_network_attempts"] == 0
+        ),
+        detached_manager=control["status"] == "PASS" and control["detached_tmux"],
+        session_safety_v3=(
+            all(
+                control[k]
+                for k in [
+                    "automatic_stop_verified",
+                    "manual_stop_verified",
+                    "partial_gradient_resume_verified",
+                    "safe_to_shutdown_after_exit",
+                    "completed_refuses_resume",
+                    "formal_launch_locked",
+                    "over48h_real_resume_verified",
+                ]
+            )
+            and resumed["required_margin_seconds"] <= policy["stop_save_margin_seconds"]
+        ),
+        storage_and_memory=(
+            usage <= 30_000_000_000
+            and free >= 250_000_000_000
+            and cross["cuda_peak_allocated_bytes"] < 12 * 2**30
+            and cross["cpu_peak_rss_bytes"] < 12 * 2**30
+            and psutil.virtual_memory().available > 2**30
+        ),
+        resource_monitoring=(
+            policy["cumulative_hard_limit_seconds"] is None
+            and policy["cumulative_warning_hours"] == [48, 72]
+        ),
+    )
+    artifacts = [
+        data_path,
+        DATA_REPORT,
+        provenance_path,
+        cross_path,
+        resume_path,
+        control_path,
+        metadata_path,
+        V3_POLICY,
+        V3_OUT / "launch_hold_v3.json",
+        V3_OUT / "pytest_cpu.log",
+        preflight / "acceptance_config.json",
+        preflight / "uninterrupted_reference_v3.pt",
+    ]
+    artifacts += [
+        Path(record["exit_receipt"]) for record in control["session_summaries"]
+    ]
+    artifacts += [
+        p.with_suffix(".sha256") for p in artifacts if p.name.endswith(".exit.json")
+    ]
+    result = dict(
+        status="READY" if all(gates.values()) else "BLOCKED",
+        version="LG_BEV_FINAL_ADMISSION_V3_20261028",
+        run_id=V3_RUN_ID,
+        gates={k: "PASS" if v else "FAIL" for k, v in gates.items()},
+        policy_sha256=sha(V3_POLICY),
+        source_sha256=current,
+        artifacts={str(p): sha(p) for p in artifacts},
+        active_point_hours=cross["active_point_hours"],
+        conservative_active_hours=cross["conservative_active_hours"],
+        resource_warning="累计时间仅预警，不作为READY或resume拒绝条件",
+        cumulative_hard_limit_seconds=None,
+        session_limit_seconds=27000,
+        save_margin_seconds=policy["stop_save_margin_seconds"],
+        cache_bytes=usage,
+        g_free_bytes=free,
+        formal_updates=0,
+        formal_start_or_resume_authorized=False,
+        ready_is_not_automatic_authorization=True,
+        deferred_training_gate="A128 grounding gate remains mandatory at actual Stage A endpoint",
+    )
+    attempt = V3_OUT / ("admission_attempt_" + str(time.time_ns()) + ".json")
+    write(attempt, result)
+    if result["status"] == "READY":
+        write(V3_OUT / "admission.json", result)
+    return result
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("phase", choices=["validate-data", "seal"])
+    parser.add_argument("phase", choices=["validate-data", "seal", "seal-v3"])
     parser.add_argument("--preflight", type=Path, required=True)
     args = parser.parse_args()
     result = (
-        validate_data(args.preflight)
-        if args.phase == "validate-data"
-        else seal(args.preflight)
+        seal_v3(args.preflight)
+        if args.phase == "seal-v3"
+        else (
+            validate_data(args.preflight)
+            if args.phase == "validate-data"
+            else seal(args.preflight)
+        )
     )
     print(json.dumps(result, ensure_ascii=False, indent=2))

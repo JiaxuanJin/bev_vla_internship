@@ -29,7 +29,8 @@ def check(config_path: Path) -> dict:
 
     def invoke(action: str, expected: int = 0) -> str:
         result = subprocess.run(
-            command + [action, "--acceptance-config", str(config_path)],
+            command
+            + [action, "--protocol", "v2", "--acceptance-config", str(config_path)],
             cwd=ROOT,
             text=True,
             capture_output=True,

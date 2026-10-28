@@ -155,13 +155,14 @@ def warmup_probe(trainer: Trainer) -> dict:
         ).hexdigest(),
     )[:128]
     probe_start = time.perf_counter()
+    budget = getattr(trainer, "total_budget_seconds", 86400)
     for i, token in enumerate(tokens):
         if getattr(trainer, "session", None) is not None and trainer.should_stop():
             return dict(status="PAUSED", inspected_frames=i)
-        if getattr(
-            trainer, "session", None
-        ) is None and trainer.elapsed_wall() + time.perf_counter() - probe_start >= getattr(
-            trainer, "total_budget_seconds", 86400
+        if (
+            getattr(trainer, "session", None) is None
+            and budget is not None
+            and trainer.elapsed_wall() + time.perf_counter() - probe_start >= budget
         ):
             return dict(status="INCOMPLETE_TIME_LIMIT", inspected_frames=i)
         label = trainer.labels.get(token)
@@ -252,19 +253,24 @@ def full_training(args: argparse.Namespace) -> None:
         raise ValueError("32帧工程验收未通过")
     resource_gate = read(args.engineering_out / "resource_admission.json")
     daily = getattr(args, "daily_policy", None)
+    v3 = False
     if daily:
         from scripts.stage3.lg_bev_daily_state import validate_policy, source_manifest
-        from scripts.stage3.lg_bev_daily import require_launch_authorization
+        from scripts.stage3 import lg_bev_daily as manager
+        from scripts.stage3.lg_bev_daily_state import V3_VERSION, V3_RUN_ID
 
-        require_launch_authorization()
-
-        validate_policy(daily)
+        policy = validate_policy(daily)
+        v3 = policy.get("version") == V3_VERSION
+        manager.configure_protocol("v3" if v3 else "v2")
+        manager.require_launch_authorization()
+        if v3 and args.run_id != V3_RUN_ID:
+            raise ValueError("V3必须使用独立正式run-id")
         admission = read(args.daily_admission)
         if admission["status"] != "READY" or not all(
             v == "PASS" for v in admission["gates"].values()
         ):
             raise ValueError("48小时正式准入尚未全部通过")
-        if admission["conservative_active_hours"] > 48:
+        if not v3 and admission["conservative_active_hours"] > 48:
             raise ValueError("全尺度预检超过48小时，禁止扩预算")
         for path, digest in admission["artifacts"].items():
             if sha(Path(path)) != digest:
@@ -326,11 +332,19 @@ def full_training(args: argparse.Namespace) -> None:
     if daily:
         protocol.update(
             time_protocol_sha256=sha(daily),
-            total_active_seconds=172800,
             session_active_seconds=27000,
             daily_source_sha256=source_manifest(),
             source_provenance_sha256=sha(args.source_provenance),
         )
+        if v3:
+            protocol.update(
+                version="LG_BEV_FORMAL_EXECUTION_V3_20261028",
+                run_id=args.run_id,
+                cumulative_hard_limit_seconds=None,
+                stop_save_margin_seconds=policy["stop_save_margin_seconds"],
+            )
+        else:
+            protocol["total_active_seconds"] = 172800
     if args.resume:
         if read(run / "execution.json") != protocol:
             raise ValueError("续训源码/标签/合同与首次启动不一致")
@@ -395,7 +409,7 @@ def full_training(args: argparse.Namespace) -> None:
     def attach(trainer):
         if daily:
             trainer.session = args.session_clock
-            trainer.total_budget_seconds = 172800
+            trainer.total_budget_seconds = None if v3 else 172800
             trainer.progress_callback = args.progress_callback
             trainer.checkpoint_callback = getattr(args, "checkpoint_callback", None)
         return trainer

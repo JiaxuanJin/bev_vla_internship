@@ -8,7 +8,7 @@
 ```text
 tests/
 ├── README.md
-├── test_lg_bev*.py        # 第三阶段 LG-BEV 的 7 个测试文件，逐项见下表
+├── test_lg_bev*.py        # 第三阶段 LG-BEV 的 9 个测试文件，逐项见下表
 └── stage2/
     ├── test_stage2_day1.py
     ├── test_stage2_pipeline.py
@@ -30,8 +30,8 @@ tests/
 在项目根目录使用已有环境执行，无需下载权重或数据：
 
 LG-BEV 测试按以下文件分工；源码入口及本地兼容环境说明见
-[第三阶段索引](../scripts/stage3/README.md)。全库当前回归为 230 passed、19 warnings。
-这些是工程测试，正式训练仍为 BLOCKED、正式更新为 0。
+[第三阶段索引](../scripts/stage3/README.md)。全库当前回归为 260 passed、20 warnings。
+这些是工程测试，V3准入READY等待单独授权，正式训练尚未启动、正式更新为0。
 
 | 文件（位于 `tests/` 根目录） | 用途 |
 |---|---|
@@ -42,6 +42,8 @@ LG-BEV 测试按以下文件分工；源码入口及本地兼容环境说明见
 | `test_lg_bev_engineering_20261027.py` | 缓存归属/容量、事务恢复、计分、梯度和完整数据准入 |
 | `test_lg_bev_daily_20261027.py` | V2 时钟、离线拒绝、checkpoint/receipt、状态、授权与来源缓存 |
 | `test_lg_bev_gt_batch_recovery.py` | GT 完整 pending 恢复及损坏 pending 保留重建 |
+| `test_lg_bev_box_validation.py` | 真实FP32角点反例、闭边界及任意1像素损坏拒绝 |
+| `test_lg_bev_v3_20261028.py` | 累计null、48/72小时预警、共享会话时钟、退出receipt和部分状态恢复 |
 
 离线拒绝测试需要操作系统允许创建本地 socket；实际 connect 由测试中的离线防护拒绝。
 环境禁止创建 socket 时该测试会失败，不能据此改为跳过或宣称全量通过。
