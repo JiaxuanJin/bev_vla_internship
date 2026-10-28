@@ -1,0 +1,62 @@
+{
+  "status": "FORMAL_DESIGN_SEALED_IMPLEMENTATION_GATES_PENDING",
+  "parent_protocol_sha256": "ffb2ea18889e22fe16125cab897a12013d00a63b65ec2c554bec42abffb5a25c",
+  "split_manifest_sha256": "2adc066fb931c4c59ac8d76e447d7e5b3781827e8bb2c2a1e409ded8111f3302",
+  "training_started": false,
+  "optimizer_updates_this_audit": 0,
+  "clarification": "this addendum governs strict baseline/cache and exact scoring/loss semantics; first FP16 storage estimate is retained, not overwritten; no experiments follow either design in this audit",
+  "strict_baseline": {
+    "primary_cache_dtype": "float32 lossless native BEV, no compression quantization",
+    "bytes_per_frame": 23040000,
+    "cache_train_plus_dev_bytes": 502617600000,
+    "cache_all_splits_bytes": 578373120000,
+    "disk_reserve_before_final_gb": 650,
+    "disk_reserve_all_splits_gb": 750,
+    "FP16": "storage alternative only, not primary formal baseline; requires separate registered quantization analysis, no silent adoption",
+    "parity": ">=3 consecutive raw TRAIN frames: full original forward vs FP32 BEV full-Head replay cls/bbox/seg bitwise equal, including current native temporal history; fail closed otherwise",
+    "raw_pipeline": "deterministic author test transform, no PhotoMetricDistortion; eval state; native scene chronology/history preserved",
+    "unchanged": "original checkpoint, all native parameters/buffers, cropper, decoder, text encoder; no enhanced feature into native temporal history"
+  },
+  "grounding_contract": {
+    "warmup_probe": "128 train frames chosen by token hash before training, positive-only IoU macro across map/object spaces; empty active fraction separate; no dev labels",
+    "bce": "per-example valid positives and negatives balanced; positives/empty examples separately averaged; no positive Dice for empty target",
+    "ranking": "for paired actual texts c,w with independently grounded target sets S_c,S_w: mean relu(0.5-logit_c+logit_w) on S_c minus S_w, and symmetric term on S_w minus S_c; skip empty set, never mark all wrong-text foreground as negative",
+    "overlap": "do not rank shared target pixels; different instruction IDs are insufficient unless grounded target sets differ",
+    "gt_input_policy": "target sets used in loss/scorer only, never adapter/native model inputs; position only calibration-derived",
+    "full_labels": "all train frames retained including6 actual emptyGT; record per-frame valid task, failed associations and out-of-map cells, cannot silently drop/reassign frames or recompute budget"
+  },
+  "scoring_contract": {
+    "related_det_classes": [
+      "car",
+      "pedestrian"
+    ],
+    "related_det_thresholds_m": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "query_unit": "virtual sample=(frame token, fixed instruction ID), never claim repeated prompts as new independent frames",
+    "related_gt": "all/nearest/farthest exact annotation IDs per frozen instruction table; predicted boxes filtered only by requested class, not GT proximity; sameclass distractor boxes count FP, other classes ignored for related metric",
+    "ap": "SDK recall grid/min_recall0.1/min_precision0.1 and score sorting; equal mean over2classes x4distances; empty-target instructions retain all sameclass predictions as FP; absent positive class makes gate NOT_EVALUABLE, not zero",
+    "raw_metric_name": "instruction_conditional_2class_mAP_4distance; not official10class full-val nuScenes mAP",
+    "related_seg_classes": [
+      "lane_marking",
+      "crosswalk"
+    ],
+    "related_seg_roi": "GT selected-record raster dilated by Euclidean pixel-centre distance<=2m, fixed0.15m raster; fullGT labels in ROI, never replace other true sameclass instances by background",
+    "related_seg_macro": "pool intersection/union within each class over frozen positive queries then average2class IoUs; empty map queries reported separately, never inflate positive mIoU",
+    "overall": "one hash-selected canonical prompt per frame, full10class detection4distance and3foreground semantic macroIoU; no ROI filtering",
+    "wrong_zero": "use same correct-query GT to score all4branches; wrong text has separate GT only during paired training, never change evaluation target",
+    "statistical_unit": "drive scene for1000 seeded bootstrap replicates, not language prompt; disclose same-location overlap may persist across logs",
+    "target": "absolute+2.0pp related conditionalmAP,+1.5pp related macroIoU; overall mAP/mIoU decrease<=2.0pp; correct must exceed wrong/zero on both related metrics; no claim official project acceptance without aligned benchmark scope"
+  },
+  "remaining_gates": {
+    "full_instruction_gt_manifest": "NOT_YET_GENERATED",
+    "temporal_native_cache_builder": "NOT_YET_IMPLEMENTED_FOR_FORMAL_SPLIT",
+    "full_data_frozen_joint_trainer": "NOT_YET_IMPLEMENTED",
+    "mAP_4distance_conditional_scorer": "NOT_YET_IMPLEMENTED",
+    "current16step_runner": "incompatible full data indices/mini dataset; not a formal training command"
+  },
+  "long_training_command": "NONE: formal full-data trainer/scorer/cache/label pipeline must be implemented and validated in a later explicitly scheduled run"
+}

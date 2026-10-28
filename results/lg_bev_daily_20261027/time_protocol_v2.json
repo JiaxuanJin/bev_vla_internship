@@ -1,0 +1,13 @@
+{
+  "version": "LG_BEV_RESOURCE_TIME_V2_20261027",
+  "parent_contract_sha256": "4281d31722ba240543bfdcb9c4cc2baa56101593749c0098f7db035855b5761c",
+  "training_content_sha256": "75152d072fc34d5c4305cc87d32a12b54d4b5c615c9aa8ed439e881317de3d81",
+  "total_active_seconds": 172800,
+  "session_active_seconds": 27000,
+  "stop_save_margin_seconds": 120,
+  "training_content_changed": false,
+  "authorization": "用户附件明确将累计24小时修订48小时，并授权准入全过后的首次7.5小时会话；后续会话由用户resume",
+  "old_contract_overwritten": false,
+  "cache_addendum": "继承G盘30GB总根目录/剩余250GB/严格FP32/时序重建；不改变既有工程补充",
+  "daily_operation": "会话时间跨A/B共享，停机等待不计入；提前约120秒请求保存，无自动关机，无自动第二次会话"
+}

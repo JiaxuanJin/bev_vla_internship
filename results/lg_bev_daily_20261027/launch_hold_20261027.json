@@ -1,0 +1,10 @@
+{
+  "status": "AWAITING_NEW_EXPLICIT_USER_AUTHORIZATION",
+  "formal_start_allowed": false,
+  "formal_resume_allowed": false,
+  "earliest_possible_date": "2026-10-28",
+  "date_alone_is_not_authorization": true,
+  "reason": "用户2026-10-27最新指令：今天严禁正式优化器更新，明天仍须再次明确授权。工程READY不自动衔接训练。",
+  "cumulative_limit_seconds": 172800,
+  "session_limit_seconds": 27000
+}

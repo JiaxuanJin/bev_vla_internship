@@ -1,12 +1,14 @@
 # 正式测试目录
 
 正式 pytest 单元测试、集成契约和回归测试统一放在已有 `tests/` 中。
-目前全部属于第二阶段；尚无适合迁移的第一阶段 pytest 文件，因此不创建空的
+`stage2/` 保留第二阶段及 V1～V5 历史回归，根目录的 `test_lg_bev*.py` 属于第三阶段 LG-BEV。
+尚无适合迁移的第一阶段 pytest 文件，因此不创建空的
 `tests/stage1/` 或另一个 `test/` 目录。
 
 ```text
 tests/
 ├── README.md
+├── test_lg_bev*.py        # 第三阶段 LG-BEV 的 7 个测试文件，逐项见下表
 └── stage2/
     ├── test_stage2_day1.py
     ├── test_stage2_pipeline.py
@@ -26,6 +28,23 @@ tests/
 | `test_stage2_spatial_supervision.py` | 空间实例标签、同类干扰物梯度、相关/无关区域指标、外部检测匹配及 opt-in 损失兼容 |
 
 在项目根目录使用已有环境执行，无需下载权重或数据：
+
+LG-BEV 测试按以下文件分工；源码入口及本地兼容环境说明见
+[第三阶段索引](../scripts/stage3/README.md)。全库当前回归为 230 passed、19 warnings。
+这些是工程测试，正式训练仍为 BLOCKED、正式更新为 0。
+
+| 文件（位于 `tests/` 根目录） | 用途 |
+|---|---|
+| `test_lg_bev_20261027.py` | Adapter 恒等、语言响应、梯度路由、实例监督及阻断边界 |
+| `test_lg_bev_coordinate_rca.py` | 实际 Head 坐标变换、独立 GT、历史桥接诊断和作用域恢复 |
+| `test_lg_bev_supervision_space.py` | 独立 Attention 监督空间、插值伴随和原生输出边界 |
+| `test_lg_bev_formal_audit_20261027.py` | 日志隔离划分、固定预算、封存合同与禁止自动授权 |
+| `test_lg_bev_engineering_20261027.py` | 缓存归属/容量、事务恢复、计分、梯度和完整数据准入 |
+| `test_lg_bev_daily_20261027.py` | V2 时钟、离线拒绝、checkpoint/receipt、状态、授权与来源缓存 |
+| `test_lg_bev_gt_batch_recovery.py` | GT 完整 pending 恢复及损坏 pending 保留重建 |
+
+离线拒绝测试需要操作系统允许创建本地 socket；实际 connect 由测试中的离线防护拒绝。
+环境禁止创建 socket 时该测试会失败，不能据此改为跳过或宣称全量通过。
 
 ```bash
 export PYTHONDONTWRITEBYTECODE=1 CUDA_VISIBLE_DEVICES=''

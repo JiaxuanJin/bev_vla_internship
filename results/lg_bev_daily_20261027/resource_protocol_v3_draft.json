@@ -1,0 +1,18 @@
+{
+  "version": "LG_BEV_RESOURCE_TIME_V3_DRAFT_20261027",
+  "status": "DRAFT_NOT_APPLIED",
+  "parent_v2_sha256": "38af958d975105ff91765400e5b194292e1d204c2a572763acbeaf49f830af10",
+  "parent_contract_sha256": "4281d31722ba240543bfdcb9c4cc2baa56101593749c0098f7db035855b5761c",
+  "session_limit_seconds": 27000,
+  "cumulative_hard_limit_seconds": null,
+  "cumulative_warning_hours": [
+    48,
+    72
+  ],
+  "training_content_changed": false,
+  "formal_training_allowed_today": false,
+  "requires_new_explicit_authorization_after_ready": true,
+  "proposal_path": "docs/lg_bev_resource_protocol_v3_draft_2026-10-27.md",
+  "proposal_sha256": "8f705a57a68b389a8637055aa2c32406b3108e04f10c34a3f96c517a079d27a5",
+  "code_implementation": "pending; current entry remains V2 and launch-locked"
+}

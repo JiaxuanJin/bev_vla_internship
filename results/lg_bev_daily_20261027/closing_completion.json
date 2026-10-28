@@ -1,0 +1,16 @@
+{
+  "status": "SAFE_PAUSED_FORMAL_TRAINING_BLOCKED",
+  "all_current_bounded_cuda_tests_exited": true,
+  "latest_pytest": "230 passed, 19 warnings in 3.61s",
+  "source_manifest_verified": true,
+  "active_lg_processes": [],
+  "formal_updates": 0,
+  "formal_start_or_resume_executed": false,
+  "bounded_acceptance_test_start_executed": true,
+  "bounded_test_optimizer_updates_in_manager": 0,
+  "resource_v3": "DRAFT_NOT_APPLIED",
+  "safe_to_close_windows_for_lg_bev": true,
+  "remaining_gt_frames": 13336,
+  "logbook_sha256": "5ac3f2ebc3fe7cadc243615018deb278f910d424cd334b3937a6f05eade40e1a",
+  "code_and_docs_saved": true
+}

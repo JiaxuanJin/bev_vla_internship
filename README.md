@@ -19,9 +19,35 @@
 
 **推荐阅读顺序：** [当前四阶段审计](docs/四阶段任务交付审计_2026-10-26.md) → [第二阶段材料摘录](docs/stage2/02_第二阶段原始任务书.md) → [工程任务对照](docs/stage2/13_阶段二任务对照.md) → [架构设计](docs/stage2/11_模块架构设计.md) → [历史结果](results/stage2_delivery_2026-10-23/README.md) → [复现说明](docs/stage2/17_第二阶段复现指引.md)。
 
+## 第三阶段：LG-BEV 当前工程状态（2026-10-28 交付检查）
+
+LG-BEV 是第三阶段的独立探索，沿用冻结原生双 Head 与语言编码器，仅训练新增 Adapter。
+**正式训练尚未启动，正式优化器更新为 0，状态 BLOCKED。**
+历史 smoke、16 步 pilot 和有界 GPU 工程测试分别保留，不能计入正式训练进度，
+也没有正式精度达标结论。
+
+| 项目 | 2026-10-27 最终收尾状态 |
+|---|---|
+| CPU 工程回归 | 230 passed、19 warnings；不代表正式训练或跨会话 GPU 控制全部通过 |
+| GT | 仅完成 5787 / 19123 帧，剩余 13336 帧；640 个已提交块通过校验 |
+| 正式训练 | 未执行正式 start/resume，正式更新 0；development / cold_final 未评价 |
+| 资源协议 | 代码仍使用 V2；V3 为 **DRAFT_NOT_APPLIED**，取消累计硬上限尚未实施 |
+| 未完成准入 | 全量 GT / 来源封存、真实跨进程停止恢复、V3 与严格会话保存时间验收 |
+
+代码入口和逐文件用途见 [LG-BEV 源码索引](scripts/stage3/README.md)。建议按以下顺序阅读：
+
+1. [每日控制与暂停状态](scripts/stage3/README_LG_BEV_DAILY_20261027.md)：`lg_bev_daily.py` 提供 start/status/stop/resume，当前正式入口被阻断。
+2. [固定训练方案](docs/lg_bev_formal_training_protocol_2026-10-27.md) 与 [V3 草案](docs/lg_bev_resource_protocol_v3_draft_2026-10-27.md)：区分原合同、V2 运行语义和未实施的 V3。
+3. [工程实现](scripts/stage3/README_LG_BEV_ENGINEERING_20261027.md) 与 [监督空间及历史 pilot](scripts/stage3/README_LG_BEV_SPACE_20261027.md)。
+4. [昨日唯一中文 Logbook](docs/logbook_2026-10-27.md#后续每日离线运行准备全量gt部分构建与今日安全收尾) 与 [Git 拟交付清单](docs/lg_bev_github_delivery_2026-10-28.md)。
+
+本轮只做 Git 交付检查，commit/push 等待用户确认；不启动 GT 构建、GPU 实验或正式训练。
+仓库只交付代码、测试、文档与少量协议/收尾元数据；G 盘原始数据、GT 张量、BEV 缓存、
+权重、checkpoint、数据库和 profiler trace 均不上传。CPU 复核命令及本地资产边界见源码索引。
+
 ## 第二阶段：语言引导 BEV 注意力增强
 
-2026-10-26 测试目录规范化：正式测试统一位于 [`tests/stage2/`](tests/stage2/)，
+第二阶段及 V1～V5 历史回归位于 [`tests/stage2/`](tests/stage2/)，LG-BEV 的 7 个测试文件位于 `tests/` 根目录；
 默认在仓库根目录执行 `.venv-bevformer/bin/python -m pytest -q -p no:cacheprovider`。
 完整命令和文件用途见 [测试 README](tests/README.md)，整理前后结果与迁移清单见
 [测试目录规范化报告](docs/stage2/24_测试目录规范化_2026-10-26.md)。
