@@ -2,6 +2,18 @@
 
 本仓库记录 BEVFormer、nuScenes / DriveLM 及语言引导 BEV 注意力增强实验。项目严格按原始《BEV感知注意力增强.pdf》的四阶段组织，**V1～V5 是第三阶段研究版本，不是项目阶段**。第二阶段已有工程功能证据，第三阶段正式精度目标未达标，第四阶段全面验证与成果交付未完成。
 
+## 最新进展｜第三阶段 LG-BEV（截至 2026-10-30 周报）
+
+<!-- LG-BEV-LATEST-WEEKLY-2026-10-30 -->
+
+**LG-BEV V3 已从工程准入进入正式训练。** Train 全量 **19,123 帧 / 476 场景 / 35 日志** 的 GT 构建及来源核验 PASS；冻结作者 BEVFormer、原生双 Head 和 DistilBERT，训练约 93,866 个新增 Adapter 参数。正式协议固定为 Stage A 2 轮 + Stage B 4 轮，共 **28,686 次**优化器更新。
+
+截至 2026-10-30 19:22（北京时间）的**已核验安全停止快照**：**Stage A · Epoch 2，6,225 / 28,686 次更新（21.70%）**，`STOPPED`、`can_resume=true`、`safe_to_shutdown=true`；训练断点和完整状态保存在 G 盘本地，**不上传 GitHub**。后续更新以 `lg_bev_daily status --protocol v3` 的现场结果为准，主页不作为实时监控面板。
+
+**当前边界：** 仍在 Stage A；A 阶段定位门槛尚未到固定验收点，Stage B、正式 Development/Cold Final 精度评估及 RTX 3090 延迟验收尚未完成。**不能将 Loss 下降、CPU/GPU 测试通过或 V1～V5 的历史指标称为正式 AP/mIoU 达标。**
+
+**最新入口：** [本周周报（10.26–10.30）](docs/weekly_report_2026-10-26_to_2026-10-30.md) · [10 月 30 日 Logbook](docs/logbook_2026-10-30.md) · [V3 运行与断点恢复](scripts/stage3/README_LG_BEV_V3_20261028.md) · [正式训练固定协议](docs/lg_bev_formal_training_protocol_2026-10-27.md) · [LG-BEV 源码索引](scripts/stage3/README.md)
+
 > **2026-10-26 权威来源与状态更正：** 仓库未找到完整原 PDF，现有“第二阶段原始任务书”仅为第二阶段材料。本次按用户提供的四阶段及性能要求审计，待原 PDF 核对；完整清单见 [四阶段任务交付审计](docs/四阶段任务交付审计_2026-10-26.md)。旧 117 项测试、20 步训练和六帧结果保留为历史事实，不代表正式精度或第四阶段通过。
 
 ## 项目进展与交付入口
@@ -10,8 +22,8 @@
 |---|---|---|---|
 | 第一阶段 | 环境搭建与基线复现：DriveLM 数据、BEVFormer-Small、验证集 3D mAP／BEV mIoU、说明和图像 | PARTIAL：已有真实基线，正式协议待原 PDF 核对 | [第一阶段导航](docs/stage1/00_阶段一交付导航.md) |
 | 第二阶段 | 核心模块设计与实现：DistilBERT、空间映射、Attention、Fusion、多任务 Loss、集成、文档和单测 | PASS，仅工程功能范围；效果有限 | [模块对照](docs/stage2/13_阶段二任务对照.md) |
-| 第三阶段 | 模型训练与性能优化：冻结主干、训练新增模块、超参数、权重、DriveLM 验证对比、延迟和结构优化 | NOT_MET：V1～V5 真实研究保留，正式精度未达标 | [V5 报告](docs/stage3/03_V5语言条件耦合与最终探索结论_2026-10-26.md) · [研究归档边界](docs/stage3/04_第三阶段收尾与DriveLM可评价范围_2026-10-26.md) |
-| 第四阶段 | 全面验证与成果总结：DriveLM 测试、分场景／分指令、失效案例、README、技术报告、仓库、3～5 分钟视频 | PARTIAL：正式测试和视频 NOT_RUN，当前成果未提交／推送 | [第四阶段状态](docs/stage4/01_综合验收与Git交付_2026-10-26.md) |
+| 第三阶段 | 模型训练与性能优化：冻结主干、语言空间监督、原生双 Head、断点训练及评价 | IN_PROGRESS：LG-BEV V3 Stage A 正式训练；截至 10/30 周报已核验 6,225/28,686 次更新；相关 AP/mIoU 尚未验收。V1～V5 负向结论保留 | [本周周报](docs/weekly_report_2026-10-26_to_2026-10-30.md) · [V3 操作说明](scripts/stage3/README_LG_BEV_V3_20261028.md) · [V5 历史报告](docs/stage3/03_V5语言条件耦合与最终探索结论_2026-10-26.md) |
+| 第四阶段 | 全面验证与成果总结：DriveLM 测试、分场景／分指令、失效案例、技术报告与演示视频 | PARTIAL：阶段三工程及周报已提交，但第四阶段正式测试、演示视频和最终性能验收仍未完成 | [第四阶段历史审计](docs/stage4/01_综合验收与Git交付_2026-10-26.md) |
 
 原任务性能门槛（按用户提供原写法，待 PDF 核对）：指令相关检测 **mAP 提升至少 2%**、相关区域分割 **mIoU 提升至少 1.5%**、整体平均精度下降 **不超过 2%**、**RTX 3090** 上模块单帧增加 **不超过 20ms**。现有 AP@2m_xy、目标邻域 IoU、Attention／Mask IoU 及 RTX 5080 Laptop 计时均不能替代这些正式验收。未取得达标证据；“百分比／百分点”及正式指标协议不能自行补定。
 
@@ -19,10 +31,10 @@
 
 **推荐阅读顺序：** [当前四阶段审计](docs/四阶段任务交付审计_2026-10-26.md) → [第二阶段材料摘录](docs/stage2/02_第二阶段原始任务书.md) → [工程任务对照](docs/stage2/13_阶段二任务对照.md) → [架构设计](docs/stage2/11_模块架构设计.md) → [历史结果](results/stage2_delivery_2026-10-23/README.md) → [复现说明](docs/stage2/17_第二阶段复现指引.md)。
 
-## 第三阶段：LG-BEV 当前工程状态（2026-10-28 V3 最终准入）
+## 第三阶段：LG-BEV V3 工程准入历史快照（2026-10-28，训练启动前）
 
 LG-BEV 是第三阶段的独立探索，沿用冻结原生双 Head 与语言编码器，仅训练新增 Adapter。
-**V3 工程准入 READY，等待用户单独授权；正式训练尚未启动，正式优化器更新为 0。**
+**以下为 10 月 28 日正式启动前的历史状态：当时 V3 工程准入 READY、正式更新为 0。随后经用户授权已正式启动训练；当前进度请参考页面顶部周报入口。**
 历史 smoke、16 步 pilot 和有界 GPU 工程测试分别保留，不能计入正式训练进度，
 也没有正式精度达标结论。
 
@@ -40,9 +52,9 @@ LG-BEV 是第三阶段的独立探索，沿用冻结原生双 Head 与语言编�
 1. [V3 每日操作](scripts/stage3/README_LG_BEV_V3_20261028.md)：四条真实命令、离线运行、安全保存和关机。
 2. [固定训练方案](docs/lg_bev_formal_training_protocol_2026-10-27.md) 与 [V3 执行协议](docs/lg_bev_resource_protocol_v3_2026-10-28.md)：旧 V1/V2 和草案保留，新正式运行使用独立 V3。
 3. [工程实现](scripts/stage3/README_LG_BEV_ENGINEERING_20261027.md) 与 [监督空间及历史 pilot](scripts/stage3/README_LG_BEV_SPACE_20261027.md)。
-4. [今日唯一中文 Logbook](docs/logbook_2026-10-28.md) 与 [今日 Git 人工白名单](results/lg_bev_v3_20261028/git_whitelist.json)。
+4. [10 月 28 日中文 Logbook](docs/logbook_2026-10-28.md) 与 [当日 Git 人工白名单](results/lg_bev_v3_20261028/git_whitelist.json)。
 
-本轮只完成 V3 实施和必要有界验收；正式 start/resume 及 commit/push 均未执行。
+此处仅记录 10 月 28 日准入环节的历史边界；后续正式 start/resume 与 Git 提交已执行，详见周报和每日 Logbook。
 仓库只交付代码、测试、文档与少量协议/收尾元数据；G 盘原始数据、GT 张量、BEV 缓存、
 权重、checkpoint、数据库和 profiler trace 均不上传。CPU 复核命令及本地资产边界见源码索引。
 
@@ -134,6 +146,8 @@ docs/stage3/             第三阶段训练研究记录（V1～V5 不代表阶�
 docs/stage4/             第四阶段状态与交付缺口，不代表全面验收通过
 docs/images/             真实实验图、架构图与可视化
 docs/logbook_*.md        每日中文实验记录
+docs/weekly_report_*.md   每周中文进展与交付报告
+scripts/stage3/         第三阶段 LG-BEV 模型、训练与验收入口
 results/                 版本化的小型 JSON/CSV/日志、测试证据和图表
 patches/                 第三方工程的本地兼容补丁
 ```
@@ -163,7 +177,7 @@ CUDA_VISIBLE_DEVICES='' HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 OMP_NUM_THREADS=
 
 - **本阶段已验证：** 117 项 CPU 单元测试、真实 GPU 双 Head 集成与梯度检查；完成 TV=0 协议的 20 步真实参数更新及固定 6 帧 A/B 诊断。新增 TV 正则已验证功能与梯度，尚未验证非零 TV 权重下的训练收益。
 - **第三阶段正式目标仍未满足：** V1～V5 已真实训练并保留失败结论，但尚无符合原任务协议的指令相关 mAP／mIoU 达标结果或 RTX 3090 延迟验收。精度要求不能改列为可选研究。
-- **第四阶段仍未完成：** DriveLM 正式测试 NOT_RUN；有限场景／模板分析不能代替全面验证；演示视频 NOT_RUN，当前新增成果尚未 commit/push。
-- **研究扩展边界：** 通用 VQA／完整 VLA 不自行加入原任务强制项。V5 已按有限预算停止，本次只做审计，不继续训练、不创建 V6。
+- **第四阶段仍未完成：** DriveLM 正式测试 NOT_RUN；有限场景／模板分析不能代替全面验证；演示视频 NOT_RUN，阶段三新工程及周报已按独立提交交付；但第四阶段正式成果尚未验收。
+- **研究扩展边界：** 通用 VQA／完整 VLA 不自行加入原任务强制项。V5 已按有限预算停止且不创建 V6；独立 LG-BEV V3 的后续训练及验收按页面顶部新协议执行。
 
 历史阶段二实验及图像仍可从 [数据图表总览](docs/stage2/数据图表总览_2026-10-21.md)、[完整实验图索引](docs/stage2/全部实验图表索引_2026-10-21.md) 和 [2026-10-21 记录](docs/logbook_2026-10-21.md) 查询；这些历史结果保留原评估设置，不替代当前版本的验收结论。
