@@ -1,0 +1,114 @@
+{
+  "scope": "只记录非Git资产定位与摘要，不上传权重、数据或原始预测；数据集内容本次未读取",
+  "logical_paths": {
+    "project_root": "/home/jjx2003520/projects/bev_vla",
+    "nuscenes_stage3": "/mnt/g/BEV_VLA_Datasets/bev_seg_nuscenes",
+    "DriveLM历史资产": "/mnt/g/BEV_VLA_Datasets/drivelm",
+    "作者源码": "/home/jjx2003520/projects/bevformer_author_clean_5080/BEVFormer-seg",
+    "DistilBERT": "/home/jjx2003520/projects/bev_vla/models/distilbert-base-uncased",
+    "共享冻结缓存": "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache",
+    "独立实验输出": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101"
+  },
+  "checkpoint_expected_checksums": [
+    {
+      "role": "Baseline",
+      "path": "/mnt/g/nus/bevformer_small_joint_author.pth",
+      "sha256": "1345919901785b8df7ee16838d62f9f7a00444c9d8061f0dbee712d1b1b67dcf",
+      "bytes": 774591208,
+      "matches": true
+    },
+    {
+      "role": "A9562",
+      "path": "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u009562_m019123_1d99b39859.pt",
+      "sha256": "b19dacd76ee5861a05d6f915e4d096250d36d7280bc3701dbf5e99e1430b038a",
+      "bytes": 1910679,
+      "matches": true
+    },
+    {
+      "role": "StageB256",
+      "path": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101/checkpoints/1793586093365436391_6b94c545_end.pt",
+      "sha256": "fd0bead6f70aff8eac103817ea1059b4e598c59b4c59c2c04bf6b77ff1636621",
+      "bytes": 1183429,
+      "matches": true
+    },
+    {
+      "role": "A0",
+      "path": "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_acceptance_v3_20261028_v1/checkpoints/B_u000000_m000001_e4660011d5.pt",
+      "sha256": "737b8dded2aabc340572d46c86d36515e9496b38c69e83c9554f2a0dfc17bb8d",
+      "bytes": 777265,
+      "matches": true
+    }
+  ],
+  "checkpoint_checksums_provenance": "复用本日只读身份核查结果，本次没有重新加载或计算权重输出",
+  "source_repositories": {
+    "MMCV": {
+      "path": "/home/jjx2003520/projects/bev_vla/mmcv-1.7.2",
+      "commit": "4c01b026f0afa5a91a5f54aea313788da1e40f95",
+      "remote": "https://github.com/open-mmlab/mmcv.git",
+      "modified_files": []
+    },
+    "MMDetection3D": {
+      "path": "/home/jjx2003520/projects/bev_vla/mmdetection3d-0.17.1",
+      "commit": "f1107977dfd26155fc1f83779ee6535d2468f449",
+      "remote": "https://github.com/open-mmlab/mmdetection3d.git",
+      "modified_files": [
+        "mmdet3d/__init__.py",
+        "mmdet3d/core/__init__.py",
+        "mmdet3d/datasets/pipelines/data_augment_utils.py",
+        "mmdet3d/ops/ball_query/src/ball_query.cpp",
+        "mmdet3d/ops/furthest_point_sample/src/furthest_point_sample.cpp",
+        "mmdet3d/ops/gather_points/src/gather_points.cpp",
+        "mmdet3d/ops/group_points/src/group_points.cpp",
+        "mmdet3d/ops/interpolate/src/interpolate.cpp",
+        "mmdet3d/ops/knn/src/knn.cpp",
+        "mmdet3d/ops/spconv/conv.py",
+        "setup.py"
+      ]
+    },
+    "作者BEVFormer-seg": {
+      "path": "/home/jjx2003520/projects/bevformer_author_clean_5080/BEVFormer-seg",
+      "commit": "8e2a1beee39946f393322a293f127a489b093377",
+      "remote": "https://github.com/Bin-ze/BEVFormer_segmentation_detection.git",
+      "modified_files": []
+    }
+  },
+  "distilbert_required_files": [
+    {
+      "path": "/home/jjx2003520/projects/bev_vla/models/distilbert-base-uncased/model.safetensors",
+      "sha256": "5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063",
+      "bytes": 267954768
+    },
+    {
+      "path": "/home/jjx2003520/projects/bev_vla/models/distilbert-base-uncased/config.json",
+      "sha256": "69c94b0222d5d1f4b0ad027ca7416cdafb98378cbbb8305d0bf47c9365c60c83",
+      "bytes": 483
+    },
+    {
+      "path": "/home/jjx2003520/projects/bev_vla/models/distilbert-base-uncased/tokenizer.json",
+      "sha256": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+      "bytes": 466062
+    },
+    {
+      "path": "/home/jjx2003520/projects/bev_vla/models/distilbert-base-uncased/tokenizer_config.json",
+      "sha256": "53b6f42b8b8daddbdc6d3532c324187a92b46c1602bd6e8d4ad5a413b4fc90e1",
+      "bytes": 28
+    },
+    {
+      "path": "/home/jjx2003520/projects/bev_vla/models/distilbert-base-uncased/vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "bytes": 231508
+    },
+    {
+      "path": "/home/jjx2003520/projects/bev_vla/models/distilbert-base-uncased/LICENSE",
+      "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+      "bytes": 11356
+    }
+  ],
+  "existing_dataset_hash_evidence": [
+    "experiments/lg_bev_stage3_exploration_20261101/configs/main.json::sealed_inputs",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/preregistration.json",
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/source_manifests/"
+  ],
+  "diagnostic_predictions": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101_unified_eval_20261102_diagnostic/",
+  "cold_final_accessed": false
+}

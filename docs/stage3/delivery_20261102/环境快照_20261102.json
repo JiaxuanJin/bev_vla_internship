@@ -1,0 +1,476 @@
+{
+  "scope": "只读元数据及已编译扩展版本，不执行GPU计算、测试或安装",
+  "python": "3.10.12",
+  "python_executable": "/home/jjx2003520/projects/bev_vla/.venv-bevformer/bin/python",
+  "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "packages": {
+    "torch": {
+      "version": "2.8.0+cu128",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "torchvision": {
+      "version": "0.23.0+cu128",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "mmcv-full": {
+      "version": "1.7.2",
+      "installer": "pip",
+      "direct_url": {
+        "dir_info": {},
+        "url": "file:///home/jjx2003520/projects/bev_vla/mmcv-1.7.2"
+      }
+    },
+    "mmdet": {
+      "version": "2.28.2",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "mmdet3d": {
+      "version": "0.17.1",
+      "installer": "pip",
+      "direct_url": {
+        "dir_info": {},
+        "url": "file:///home/jjx2003520/projects/bev_vla/mmdetection3d-0.17.1"
+      }
+    },
+    "nuscenes-devkit": {
+      "version": "1.1.10",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "numpy": {
+      "version": "1.26.4",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "scipy": {
+      "version": "1.15.3",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "numba": {
+      "version": "0.58.1",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "llvmlite": {
+      "version": "0.41.1",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "transformers": {
+      "version": "4.44.2",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "tokenizers": {
+      "version": "0.19.1",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "huggingface-hub": {
+      "version": "0.25.2",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "safetensors": {
+      "version": "0.4.5",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "matplotlib": {
+      "version": "3.5.2",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "pyquaternion": {
+      "version": "0.9.9",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "Shapely": {
+      "version": "1.8.5",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "opencv-python": {
+      "version": "4.11.0.86",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "scikit-learn": {
+      "version": "1.7.2",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "Pillow": {
+      "version": "12.3.0",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "pytest": {
+      "version": "9.1.1",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "black": {
+      "version": "26.10.1",
+      "installer": "pip",
+      "direct_url": null
+    },
+    "nvidia-cudnn-cu12": {
+      "version": "9.10.2.21",
+      "installer": "pip",
+      "direct_url": null
+    }
+  },
+  "installed_distribution_versions": {
+    "tokenizers": "0.19.1",
+    "platformdirs": "4.12.4",
+    "exceptiongroup": "1.3.1",
+    "psutil": "7.2.2",
+    "fonttools": "4.65.0",
+    "beautifulsoup4": "4.15.0",
+    "traitlets": "5.16.1",
+    "timm": "0.6.13",
+    "mmcv-full": "1.7.2",
+    "torchmetrics": "0.3.2",
+    "torch": "2.8.0+cu128",
+    "pluggy": "1.6.0",
+    "nvidia-nvjitlink-cu12": "12.8.93",
+    "tqdm": "4.70.1",
+    "asttokens": "3.0.2",
+    "cloudpickle": "3.1.2",
+    "pip": "26.2.1",
+    "einops": "0.8.2",
+    "pure_eval": "0.2.4",
+    "regex": "2026.9.29",
+    "packaging": "26.3",
+    "requests": "2.34.2",
+    "pexpect": "4.9.0",
+    "ijson": "3.6.0",
+    "narwhals": "2.27.1",
+    "prompt_toolkit": "3.0.53",
+    "executing": "2.2.1",
+    "Markdown": "3.10.3",
+    "cycler": "0.12.1",
+    "termcolor": "3.3.0",
+    "tensorboard-data-server": "0.7.2",
+    "nvidia-cudnn-cu12": "9.10.2.21",
+    "nvidia-cufile-cu12": "1.13.1.3",
+    "nvidia-cusparselt-cu12": "0.7.1",
+    "decorator": "5.3.1",
+    "huggingface-hub": "0.25.2",
+    "ImageIO": "2.38.0",
+    "pillow": "12.3.0",
+    "numba": "0.58.1",
+    "gdown": "5.2.0",
+    "filelock": "3.32.3",
+    "Cython": "3.2.4",
+    "MarkupSafe": "3.0.3",
+    "kiwisolver": "1.5.1",
+    "nvidia-cusolver-cu12": "11.7.3.90",
+    "fire": "0.7.1",
+    "typing_extensions": "4.16.0",
+    "matplotlib": "3.5.2",
+    "yacs": "0.1.8",
+    "nvidia-cuda-runtime-cu12": "12.8.90",
+    "wcwidth": "0.9.2",
+    "nvidia-cublas-cu12": "12.8.4.1",
+    "transformers": "4.44.2",
+    "pytz": "2026.5",
+    "nvidia-nccl-cu12": "2.27.3",
+    "trimesh": "5.1.1",
+    "lyft-dataset-sdk": "0.0.8",
+    "scipy": "1.15.3",
+    "tomli": "2.5.0",
+    "nvidia-cuda-nvrtc-cu12": "12.8.93",
+    "flake8": "7.4.1",
+    "PyYAML": "6.0.3",
+    "PyWavelets": "1.8.0",
+    "pyparsing": "3.3.3",
+    "scikit-image": "0.19.3",
+    "Pygments": "2.21.0",
+    "ipython": "8.39.0",
+    "soupsieve": "2.10",
+    "torchvision": "0.23.0+cu128",
+    "Werkzeug": "3.1.9",
+    "idna": "3.20",
+    "parso": "0.8.7",
+    "click": "8.5.0",
+    "PySocks": "1.7.1",
+    "numpy": "1.26.4",
+    "yapf": "0.40.1",
+    "httpx2": "2.13.1",
+    "anyio": "4.15.1",
+    "opencv-python": "4.11.0.86",
+    "charset-normalizer": "3.5.2",
+    "pycodestyle": "2.15.0",
+    "prettytable": "3.18.0",
+    "cachetools": "7.2.1",
+    "pathspec": "1.1.1",
+    "nvidia-curand-cu12": "10.3.9.90",
+    "mmcls": "0.25.0",
+    "absl-py": "2.5.1",
+    "hf-xet": "1.7.0",
+    "grpcio": "1.84.0",
+    "mpmath": "1.3.0",
+    "mmdet": "2.28.2",
+    "tabulate": "0.10.0",
+    "urllib3": "2.8.0",
+    "terminaltables": "3.1.10",
+    "modelscope-hub": "0.4.6",
+    "pyflakes": "4.0.3",
+    "addict": "2.4.0",
+    "nuscenes-devkit": "1.1.10",
+    "wheel": "0.48.0",
+    "Jinja2": "3.1.6",
+    "joblib": "1.6.0",
+    "tifffile": "2025.5.10",
+    "pytest": "9.1.1",
+    "contourpy": "1.3.2",
+    "ptyprocess": "0.7.0",
+    "mmdet3d": "0.17.1",
+    "h11": "0.16.0",
+    "iniconfig": "2.3.1",
+    "triton": "3.4.0",
+    "networkx": "2.8.8",
+    "opencv-python-headless": "4.11.0.86",
+    "nvidia-cuda-cupti-cu12": "12.8.90",
+    "nvidia-nvtx-cu12": "12.8.90",
+    "modelscope": "1.40.2",
+    "cryptography": "50.0.2",
+    "pycparser": "3.11",
+    "protobuf": "7.36.2",
+    "matplotlib-inline": "0.2.2",
+    "tzdata": "2026.5",
+    "pycocotools": "2.0.11",
+    "safetensors": "0.4.5",
+    "plyfile": "1.1.3",
+    "stack-data": "0.6.3",
+    "setuptools": "69.5.1",
+    "zipp": "4.1.1",
+    "seaborn": "0.13.2",
+    "threadpoolctl": "3.7.0",
+    "httpcore2": "2.13.1",
+    "mmsegmentation": "0.30.0",
+    "sympy": "1.14.0",
+    "fsspec": "2026.7.0",
+    "nvidia-cusparse-cu12": "12.5.8.93",
+    "portalocker": "4.4.0",
+    "cffi": "2.1.1",
+    "nvidia-cufft-cu12": "11.3.3.83",
+    "mccabe": "0.7.0",
+    "Shapely": "1.8.5",
+    "certifi": "2026.10.18",
+    "pytokens": "0.4.1",
+    "llvmlite": "0.41.1",
+    "mypy_extensions": "1.1.0",
+    "pandas": "1.5.3",
+    "jedi": "0.20.0",
+    "black": "26.10.1",
+    "six": "1.17.0",
+    "pyquaternion": "0.9.9",
+    "scikit-learn": "1.7.2",
+    "iopath": "0.1.9",
+    "python-dateutil": "2.9.0.post0",
+    "descartes": "1.1.0",
+    "plotly": "7.1.0",
+    "tensorboard": "2.21.0",
+    "fvcore": "0.1.5.post20221221",
+    "truststore": "0.10.4",
+    "importlib_metadata": "9.0.1"
+  },
+  "torch_built_cuda": "12.8",
+  "cudnn_version_integer": 91002,
+  "mmcv_compiling_cuda": "12.8",
+  "mmcv_compiler": "GCC 11.4",
+  "mmcv_extension": {
+    "path": "/home/jjx2003520/projects/bev_vla/.venv-bevformer/lib/python3.10/site-packages/mmcv/_ext.cpython-310-x86_64-linux-gnu.so",
+    "sha256": "9145f0d23124b926e800f889d2906807b7cdf186a90ea3a6710fd65d75bb5785"
+  },
+  "cuda_toolkit_manifest": {
+    "cuda": {
+      "name": "CUDA SDK",
+      "version": "12.8.2"
+    },
+    "cuda_cccl": {
+      "name": "CUDA C++ Core Compute Libraries",
+      "version": "12.8.90"
+    },
+    "cuda_cudart": {
+      "name": "CUDA Runtime (cudart)",
+      "version": "12.8.90"
+    },
+    "cuda_cuobjdump": {
+      "name": "cuobjdump",
+      "version": "12.8.90"
+    },
+    "cuda_cupti": {
+      "name": "CUPTI",
+      "version": "12.8.90"
+    },
+    "cuda_cuxxfilt": {
+      "name": "CUDA cu++ filt",
+      "version": "12.8.90"
+    },
+    "cuda_demo_suite": {
+      "name": "CUDA Demo Suite",
+      "version": "12.8.90"
+    },
+    "cuda_gdb": {
+      "name": "CUDA GDB",
+      "version": "12.8.90"
+    },
+    "cuda_nsight": {
+      "name": "Nsight Eclipse Plugins",
+      "version": "12.8.90"
+    },
+    "cuda_nvcc": {
+      "name": "CUDA NVCC",
+      "version": "12.8.93"
+    },
+    "cuda_nvdisasm": {
+      "name": "CUDA nvdisasm",
+      "version": "12.8.90"
+    },
+    "cuda_nvml_dev": {
+      "name": "CUDA NVML Headers",
+      "version": "12.8.90"
+    },
+    "cuda_nvprof": {
+      "name": "CUDA nvprof",
+      "version": "12.8.90"
+    },
+    "cuda_nvprune": {
+      "name": "CUDA nvprune",
+      "version": "12.8.90"
+    },
+    "cuda_nvrtc": {
+      "name": "CUDA NVRTC",
+      "version": "12.8.93"
+    },
+    "cuda_nvtx": {
+      "name": "CUDA NVTX",
+      "version": "12.8.90"
+    },
+    "cuda_nvvp": {
+      "name": "CUDA NVVP",
+      "version": "12.8.93"
+    },
+    "cuda_opencl": {
+      "name": "CUDA OpenCL",
+      "version": "12.8.90"
+    },
+    "cuda_profiler_api": {
+      "name": "CUDA Profiler API",
+      "version": "12.8.90"
+    },
+    "cuda_sandbox_dev": {
+      "name": "NVIDIA Sandbox Utils",
+      "version": "12.8.90"
+    },
+    "cuda_sanitizer_api": {
+      "name": "CUDA Compute Sanitizer API",
+      "version": "12.8.93"
+    },
+    "libcublas": {
+      "name": "CUDA cuBLAS",
+      "version": "12.8.5.5"
+    },
+    "libcufft": {
+      "name": "CUDA cuFFT",
+      "version": "11.3.3.83"
+    },
+    "libcufile": {
+      "name": "GPUDirect Storage (cufile)",
+      "version": "1.13.1.3"
+    },
+    "libcurand": {
+      "name": "CUDA cuRAND",
+      "version": "10.3.9.90"
+    },
+    "libcusolver": {
+      "name": "CUDA cuSOLVER",
+      "version": "11.7.3.90"
+    },
+    "libcusparse": {
+      "name": "CUDA cuSPARSE",
+      "version": "12.5.8.93"
+    },
+    "libnpp": {
+      "name": "CUDA NPP",
+      "version": "12.3.3.100"
+    },
+    "libnvfatbin": {
+      "name": "Fatbin interaction library",
+      "version": "12.8.90"
+    },
+    "libnvjitlink": {
+      "name": "JIT Linker Library",
+      "version": "12.8.93"
+    },
+    "libnvjpeg": {
+      "name": "CUDA nvJPEG",
+      "version": "12.3.5.92"
+    },
+    "nsight_compute": {
+      "name": "Nsight Compute",
+      "version": "2025.1.1.2"
+    },
+    "nsight_systems": {
+      "name": "Nsight Systems",
+      "version": "2024.6.2.225"
+    },
+    "nvidia_fs": {
+      "name": "NVIDIA file-system",
+      "version": "2.24.3"
+    }
+  },
+  "nvcc_version": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Fri_Feb_21_20:23:50_PST_2025\nCuda compilation tools, release 12.8, V12.8.93\nBuild cuda_12.8.r12.8/compiler.35583870_0",
+  "source_repositories": {
+    "MMCV": {
+      "path": "/home/jjx2003520/projects/bev_vla/mmcv-1.7.2",
+      "commit": "4c01b026f0afa5a91a5f54aea313788da1e40f95",
+      "remote": "https://github.com/open-mmlab/mmcv.git",
+      "modified_files": []
+    },
+    "MMDetection3D": {
+      "path": "/home/jjx2003520/projects/bev_vla/mmdetection3d-0.17.1",
+      "commit": "f1107977dfd26155fc1f83779ee6535d2468f449",
+      "remote": "https://github.com/open-mmlab/mmdetection3d.git",
+      "modified_files": [
+        "mmdet3d/__init__.py",
+        "mmdet3d/core/__init__.py",
+        "mmdet3d/datasets/pipelines/data_augment_utils.py",
+        "mmdet3d/ops/ball_query/src/ball_query.cpp",
+        "mmdet3d/ops/furthest_point_sample/src/furthest_point_sample.cpp",
+        "mmdet3d/ops/gather_points/src/gather_points.cpp",
+        "mmdet3d/ops/group_points/src/group_points.cpp",
+        "mmdet3d/ops/interpolate/src/interpolate.cpp",
+        "mmdet3d/ops/knn/src/knn.cpp",
+        "mmdet3d/ops/spconv/conv.py",
+        "setup.py"
+      ]
+    },
+    "作者BEVFormer-seg": {
+      "path": "/home/jjx2003520/projects/bevformer_author_clean_5080/BEVFormer-seg",
+      "commit": "8e2a1beee39946f393322a293f127a489b093377",
+      "remote": "https://github.com/Bin-ze/BEVFormer_segmentation_detection.git",
+      "modified_files": []
+    }
+  },
+  "mmcv_build_evidence": {
+    "path": "/home/jjx2003520/projects/bev_vla/mmcv-1.7.2/build/temp.linux-x86_64-cpython-310/build.ninja",
+    "sha256": "6231113b9088f5b945659ed6547e2206adc9713b731df6ee4f8fe0f5db09b2f4",
+    "flags": [
+      "post_cflags = -std=c++17 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE=\"_gcc\"' '-DPYBIND11_STDLIB=\"_libstdcpp\"' '-DPYBIND11_BUILD_ABI=\"_cxxabi1018\"' -DTORCH_EXTENSION_NAME=_ext",
+      "cuda_post_cflags = -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''\"'\"'-fPIC'\"'\"'' -std=c++17 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE=\"_gcc\"' '-DPYBIND11_STDLIB=\"_libstdcpp\"' '-DPYBIND11_BUILD_ABI=\"_cxxabi1018\"' -DTORCH_EXTENSION_NAME=_ext -gencode=arch=compute_120,code=sm_120"
+    ]
+  },
+  "mmdet3d_existing_patch_sha256": "cf9ba622b12ff8f771b74bb2593aa1db1123e34fbaf4c6ac444e95af0b7b937e",
+  "cuda_initialized": false,
+  "download_origin_limit": "未保存direct_url的wheel不能由当前元数据还原原下载URL和wheel SHA；不推测或伪造。"
+}

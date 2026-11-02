@@ -1,0 +1,7 @@
+{
+  "black_version": "26.10.1",
+  "line_length": 88,
+  "files": 13,
+  "unchanged": true,
+  "method": "Black Python API逐文件format_str比对；无CUDA初始化"
+}

@@ -1,0 +1,983 @@
+--- /home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/checks.py
++++ /home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/checks.py
+@@ -1,4 +1,5 @@
+-"""Independent checks using installed SDK and explicit pixel counts."""
++"""使用已安装官方 SDK 和独立像素计数复核评分。"""
++
+ import numpy as np
+ from eval_metrics import DetectionAP, SegmentationIoU, quadrant, segmentation_regions
+ from core import require
+@@ -9,49 +10,116 @@
+     from nuscenes.eval.common.utils import center_distance
+     from nuscenes.eval.detection.algo import accumulate, calc_ap
+     from nuscenes.eval.detection.data_classes import DetectionBox
++
+     checks = 0
+     for row in records:
+-        if row['group']=='a0':
++        if row["group"] == "a0":
+             continue
+-        for control,prediction in row['predictions'].items():
+-            if row['task']=='object':
+-                cls='car' if row['target_class']==0 else 'pedestrian'
+-                metric=DetectionAP((cls,))
+-                metric.add(row['query_id'],prediction['gt_boxes'],prediction['pred_boxes'],cls,row['fb'],row['lr'])
+-                result=metric.result()
+-                for region in ('relevant','irrelevant'):
+-                    gt,pred=EvalBoxes(),EvalBoxes()
+-                    def boxes(items,truth):
+-                        chosen=[]
++        for control, prediction in row["predictions"].items():
++            if row["task"] == "object":
++                cls = "car" if row["target_class"] == 0 else "pedestrian"
++                metric = DetectionAP((cls,))
++                metric.add(
++                    row["query_id"],
++                    prediction["gt_boxes"],
++                    prediction["pred_boxes"],
++                    cls,
++                    row["fb"],
++                    row["lr"],
++                )
++                result = metric.result()
++                for region in ("relevant", "irrelevant"):
++                    gt, pred = EvalBoxes(), EvalBoxes()
++
++                    def boxes(items, truth):
++                        chosen = []
+                         for b in items:
+-                            if b['class']!=cls:
++                            if b["class"] != cls:
+                                 continue
+-                            x,y=b['xy']
+-                            inside=(x>=0 if row['fb']=='front' else x<0) and (y>=0 if row['lr']=='left' else y<0)
+-                            if inside != (region=='relevant'):
++                            x, y = b["xy"]
++                            inside = (x >= 0 if row["fb"] == "front" else x < 0) and (
++                                y >= 0 if row["lr"] == "left" else y < 0
++                            )
++                            if inside != (region == "relevant"):
+                                 continue
+-                            chosen.append(DetectionBox(sample_token='q',translation=(x,y,0),size=(1,1,1),rotation=(1,0,0,0),velocity=(0,0),detection_name=cls,detection_score=-1.0 if truth else float(b['score']),attribute_name='',num_pts=1))
++                            chosen.append(
++                                DetectionBox(
++                                    sample_token="q",
++                                    translation=(x, y, 0),
++                                    size=(1, 1, 1),
++                                    rotation=(1, 0, 0, 0),
++                                    velocity=(0, 0),
++                                    detection_name=cls,
++                                    detection_score=(
++                                        -1.0 if truth else float(b["score"])
++                                    ),
++                                    attribute_name="",
++                                    num_pts=1,
++                                )
++                            )
+                         return chosen
+-                    truths=boxes(prediction['gt_boxes'],True)
+-                    forecasts=boxes(prediction['pred_boxes'],False)
+-                    gt.add_boxes('q',truths)
+-                    pred.add_boxes('q',forecasts)
+-                    value=result[region]['classes'][cls]['2.0']
+-                    require(value['GT']==len(truths) and value['TP']+value['FP']==len(forecasts),'Detection raw counts disagree')
++
++                    truths = boxes(prediction["gt_boxes"], True)
++                    forecasts = boxes(prediction["pred_boxes"], False)
++                    gt.add_boxes("q", truths)
++                    pred.add_boxes("q", forecasts)
++                    value = result[region]["classes"][cls]["2.0"]
++                    require(
++                        value["GT"] == len(truths)
++                        and value["TP"] + value["FP"] == len(forecasts),
++                        "Detection raw counts disagree",
++                    )
+                     if truths:
+-                        native=calc_ap(accumulate(gt,pred,cls,center_distance,2.0),0.1,0.1)
+-                        require(abs(value['AP']-native)<1e-12,'SDK AP@2m mismatch')
++                        native = calc_ap(
++                            accumulate(gt, pred, cls, center_distance, 2.0), 0.1, 0.1
++                        )
++                        require(abs(value["AP"] - native) < 1e-12, "SDK AP@2m mismatch")
+                     else:
+-                        require(value['AP'] is None and value['FP']==len(forecasts),'Empty GT handling mismatch')
+-                    checks+=1
++                        require(
++                            value["AP"] is None and value["FP"] == len(forecasts),
++                            "Empty GT handling mismatch",
++                        )
++                    checks += 1
+             else:
+-                metric=SegmentationIoU()
+-                metric.add(row['query_id'],row['gt'],prediction['semantic'],row['target'],row['valid'],row['target_class'])
+-                regions=segmentation_regions(row['target'],row['valid'])
+-                require(np.array_equal(regions['relevant']|regions['irrelevant'],row['valid']),'Region union mismatch')
+-                require(not (regions['relevant']&regions['irrelevant']).any(),'Region overlap')
+-                for region,mask in regions.items():
+-                    manual=np.array([[np.count_nonzero(mask&(row['gt']==i)&(prediction['semantic']==j)) for j in range(4)] for i in range(4)])
+-                    require(np.array_equal(manual,metric.matrices[region,row['target_class']]),'Confusion mismatch')
+-                    checks+=1
++                metric = SegmentationIoU()
++                metric.add(
++                    row["query_id"],
++                    row["gt"],
++                    prediction["semantic"],
++                    row["target"],
++                    row["valid"],
++                    row["target_class"],
++                )
++                regions = segmentation_regions(row["target"], row["valid"])
++                require(
++                    np.array_equal(
++                        regions["relevant"] | regions["irrelevant"], row["valid"]
++                    ),
++                    "Region union mismatch",
++                )
++                require(
++                    not (regions["relevant"] & regions["irrelevant"]).any(),
++                    "Region overlap",
++                )
++                for region, mask in regions.items():
++                    manual = np.array(
++                        [
++                            [
++                                np.count_nonzero(
++                                    mask
++                                    & (row["gt"] == i)
++                                    & (prediction["semantic"] == j)
++                                )
++                                for j in range(4)
++                            ]
++                            for i in range(4)
++                        ]
++                    )
++                    require(
++                        np.array_equal(
++                            manual, metric.matrices[region, row["target_class"]]
++                        ),
++                        "Confusion mismatch",
++                    )
++                    checks += 1
+     return checks
+--- /home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/entry.py
++++ /home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/entry.py
+@@ -1,4 +1,5 @@
+-"""Separately sealed evaluation controller. Original training code stays immutable."""
++"""版本化评价入口；修复版本须重新绑定授权，原训练源码保持封存。"""
++
+ import argparse
+ import fcntl
+ import json
+@@ -16,133 +17,278 @@
+ sys.path.insert(0, str(ORIGINAL.parents[1]))
+ from core import Store, read, require, sha, tensor_sha
+ from cli import validate_config, trained_endpoint
+-from lifecycle import verified_checkpoint, session_directories, record_exit, record_closure
+-
+-CONFIG_PATH = ORIGINAL/'configs/main.json'
++from lifecycle import (
++    verified_checkpoint,
++    session_directories,
++    record_exit,
++    record_closure,
++)
++
++CONFIG_PATH = ORIGINAL / "configs/main.json"
+ 
+ 
+ def checked_protocol():
+-    p = read(REPORT/'protocol.json')
+-    require(sha(REPORT/'protocol.json') == (REPORT/'protocol.sha256').read_text().strip(), 'Protocol SHA changed')
+-    require(p['source_sha256'] == {f.name: sha(f) for f in sorted(SOURCE.glob('*.py'))}, 'Evaluation source changed')
+-    require(p['authorization']['approved'] and not p['authorization']['cold_final'], 'Invalid authorization')
+-    require(p['development_frames'] == 320 and p['session_seconds'] == 27000 and p['save_margin_seconds'] == 600, 'Protocol changed')
++    p = read(REPORT / "protocol.json")
++    require(
++        sha(REPORT / "protocol.json")
++        == (REPORT / "protocol.sha256").read_text().strip(),
++        "Protocol SHA changed",
++    )
++    require(
++        p["source_sha256"] == {f.name: sha(f) for f in sorted(SOURCE.glob("*.py"))},
++        "Evaluation source changed",
++    )
++    approval_path = REPORT / "authorization.approved.json"
++    require(approval_path.exists(), "修复版本 v2 尚未重新绑定授权，评价保持暂停")
++    approval = read(approval_path)
++    require(
++        approval.get("approved") is True
++        and approval.get("protocol_sha256") == sha(REPORT / "protocol.json")
++        and approval.get("source_sha256") == p["source_sha256"]
++        and approval.get("development_gt") is True
++        and approval.get("cold_final") is False,
++        "修复版本授权与封存协议不一致",
++    )
++    require(
++        p["development_frames"] == 320
++        and p["session_seconds"] == 27000
++        and p["save_margin_seconds"] == 600,
++        "Protocol changed",
++    )
+     config = validate_config(CONFIG_PATH)
+-    require(sha(CONFIG_PATH) == p['training_config_sha256'], 'Training config changed')
++    require(sha(CONFIG_PATH) == p["training_config_sha256"], "Training config changed")
+     return p, config
+ 
+ 
+ def expected(action):
+-    return dict(schema='LG_BEV_UNIFIED_EVAL_20261102_V1', action=action, protocol_sha256=sha(REPORT/'protocol.json'))
++    return dict(
++        schema="LG_BEV_UNIFIED_EVAL_FIX_20261102_V2",
++        action=action,
++        protocol_sha256=sha(REPORT / "protocol.json"),
++    )
+ 
+ 
+ def run_id(action):
+-    return 'lg_bev_explore_main_20261101_unified_eval_20261102_'+action
++    return "lg_bev_explore_main_20261101_unified_eval_fix_v2_20261102_" + action
+ 
+ 
+ def endpoint(store, config, protocol):
+     trained = trained_endpoint(store, config, CONFIG_PATH)
+-    require(trained['adapter_digest'] == protocol['trained_adapter_sha256'], 'Trained adapter changed')
+-    require(sha(protocol['trained_checkpoint']) == protocol['trained_checkpoint_sha256'], 'Trained checkpoint changed')
++    require(
++        trained["adapter_digest"] == protocol["trained_adapter_sha256"],
++        "Trained adapter changed",
++    )
++    require(
++        sha(protocol["trained_checkpoint"]) == protocol["trained_checkpoint_sha256"],
++        "Trained checkpoint changed",
++    )
+     return trained
+ 
+ 
+ def preflight_gate(store):
+-    state, end, _ = verified_checkpoint(store, run_id('diagnostic'), expected('diagnostic'), require_outcome='PREFLIGHT_PASS')
+-    require(state['preflight_passed'] and end['preflight_passed'], 'Diagnostic preflight failed')
+-    cpu = read(REPORT/'cpu_preflight.json')
+-    require(cpu['passed'] and cpu['source_sha256'] == read(REPORT/'protocol.json')['source_sha256'], 'CPU preflight missing or stale')
++    # 模型、评分规则及清单不变；复用已完成的 8 帧 GPU 结果，补充修复专用 CPU 核验。
++    previous_report = REPORT.parent / "evaluation_20261102"
++    previous_protocol = read(previous_report / "protocol.json")
++    require(
++        previous_protocol["source_sha256"]
++        == {
++            path.name: sha(path)
++            for path in sorted((previous_report / "source").glob("*.py"))
++        },
++        "原评价封存源码发生变化",
++    )
++    previous_identity = dict(
++        schema="LG_BEV_UNIFIED_EVAL_20261102_V1",
++        action="diagnostic",
++        protocol_sha256=sha(previous_report / "protocol.json"),
++    )
++    state, end, _ = verified_checkpoint(
++        store,
++        "lg_bev_explore_main_20261101_unified_eval_20261102_diagnostic",
++        previous_identity,
++        require_outcome="PREFLIGHT_PASS",
++    )
++    require(
++        state["preflight_passed"] and end["preflight_passed"],
++        "Diagnostic preflight failed",
++    )
++    cpu = read(REPORT / "cpu_preflight.json")
++    require(
++        cpu["passed"]
++        and cpu["source_sha256"] == read(REPORT / "protocol.json")["source_sha256"],
++        "CPU preflight missing or stale",
++    )
++    require(cpu["sdk_velocity_exact"] and cpu["cleanup_fence_passed"], "修复核验不完整")
+ 
+ 
+ def command(args, role):
+-    result = [sys.executable, '-B', str(SOURCE/'entry.py'), role, '--action', args.action, '--session-id', args.session_id, '--started', str(args.started)]
++    result = [
++        sys.executable,
++        "-B",
++        str(SOURCE / "entry.py"),
++        role,
++        "--action",
++        args.action,
++        "--session-id",
++        args.session_id,
++        "--started",
++        str(args.started),
++    ]
+     if args.continue_run:
+-        result.append('--continue-run')
++        result.append("--continue-run")
+     return result
+ 
+ 
+ def main():
+     parser = argparse.ArgumentParser()
+-    parser.add_argument('command', choices=('diagnostic','development','status','stop','_supervisor','_worker'))
+-    parser.add_argument('--action', choices=('diagnostic','development'), default='development')
+-    parser.add_argument('--session-id')
+-    parser.add_argument('--started', type=float)
+-    parser.add_argument('--continue-run', action='store_true')
++    parser.add_argument(
++        "command",
++        choices=(
++            "diagnostic",
++            "development",
++            "status",
++            "stop",
++            "_supervisor",
++            "_worker",
++        ),
++    )
++    parser.add_argument(
++        "--action", choices=("diagnostic", "development"), default="development"
++    )
++    parser.add_argument("--session-id")
++    parser.add_argument("--started", type=float)
++    parser.add_argument("--continue-run", action="store_true")
+     args = parser.parse_args()
+-    if args.command in ('diagnostic','development'):
++    if args.command in ("diagnostic", "development"):
+         args.action = args.command
+     protocol, config = checked_protocol()
+     store = Store()
+     rid, ident = run_id(args.action), expected(args.action)
+-    if args.command == 'status':
+-        state, end, cp = verified_checkpoint(store,rid,ident)
+-        print(json.dumps(dict(outcome=end['outcome'],cursor=state['cursor'],safe_to_shutdown=True,can_resume=end['outcome']=='PAUSED',checkpoint=str(cp),sha256=sha(cp))))
++    if args.command == "status":
++        state, end, cp = verified_checkpoint(store, rid, ident)
++        print(
++            json.dumps(
++                dict(
++                    outcome=end["outcome"],
++                    cursor=state["cursor"],
++                    safe_to_shutdown=True,
++                    can_resume=end["outcome"] == "PAUSED",
++                    checkpoint=str(cp),
++                    sha256=sha(cp),
++                )
++            )
++        )
+         return
+-    if args.command == 'stop':
+-        sessions = session_directories(store,rid)
+-        require(sessions,'No session to stop')
+-        rel = str(sessions[-1].relative_to(store.root))+'/stop.request.json'
++    if args.command == "stop":
++        sessions = session_directories(store, rid)
++        require(sessions, "No session to stop")
++        rel = str(sessions[-1].relative_to(store.root)) + "/stop.request.json"
+         if not store.path(rel).exists():
+-            store.json(rel,dict(requested_at=time.time(),reason='USER_STOP'))
++            store.json(rel, dict(requested_at=time.time(), reason="USER_STOP"))
+         return
+-    trained = endpoint(store,config,protocol)
+-    if args.action == 'development':
++    trained = endpoint(store, config, protocol)
++    if args.action == "development":
+         preflight_gate(store)
+-    if args.command in ('diagnostic','development'):
++    if args.command in ("diagnostic", "development"):
+         args.started = time.monotonic()
+-        with store.path('experiment.lock').open('a') as lock:
+-            fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+-            sessions = session_directories(store,rid)
++        with store.path("experiment.lock").open("a") as lock:
++            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
++            sessions = session_directories(store, rid)
+             prior = None
+             if args.continue_run:
+-                _, _, prior = verified_checkpoint(store,rid,ident,require_outcome='PAUSED')
++                _, _, prior = verified_checkpoint(
++                    store, rid, ident, require_outcome="PAUSED"
++                )
+             else:
+-                require(not sessions,'Existing run: no retry or overwrite permitted')
+-            args.session_id = str(time.time_ns())+'_'+uuid.uuid4().hex[:8]
+-            rel=f'{rid}/sessions/{args.session_id}'
+-            launch=dict(identity=ident,session_id=args.session_id,launcher_pid=os.getpid(),requested_at=time.time())
++                require(not sessions, "Existing run: no retry or overwrite permitted")
++            args.session_id = str(time.time_ns()) + "_" + uuid.uuid4().hex[:8]
++            rel = f"{rid}/sessions/{args.session_id}"
++            launch = dict(
++                identity=ident,
++                session_id=args.session_id,
++                launcher_pid=os.getpid(),
++                requested_at=time.time(),
++            )
+             if prior:
+-                launch.update(previous_checkpoint=str(prior.relative_to(store.root)),previous_checkpoint_sha256=sha(prior))
+-            store.json(rel+'/launch.json',launch)
+-            with store.path(rel+'/console.log').open('xb') as log:
+-                child=subprocess.Popen(command(args,'_supervisor'),stdout=log,stderr=log)
+-                code=child.wait()
++                launch.update(
++                    previous_checkpoint=str(prior.relative_to(store.root)),
++                    previous_checkpoint_sha256=sha(prior),
++                )
++            store.json(rel + "/launch.json", launch)
++            with store.path(rel + "/console.log").open("xb") as log:
++                child = subprocess.Popen(
++                    command(args, "_supervisor"), stdout=log, stderr=log
++                )
++                code = child.wait()
+             if code:
+-                store.json(rel+'/failure_observation.json',dict(supervisor_pid=child.pid,actual_exit_code=code,safe_to_shutdown=False))
+-            record_closure(store,rid,args.session_id,ident,child,code,args.started)
+-            state,end,cp=verified_checkpoint(store,rid,ident)
+-            print(json.dumps(dict(outcome=end['outcome'],cursor=state['cursor'],safe_to_shutdown=True,checkpoint=str(cp))))
++                store.json(
++                    rel + "/failure_observation.json",
++                    dict(
++                        supervisor_pid=child.pid,
++                        actual_exit_code=code,
++                        safe_to_shutdown=False,
++                    ),
++                )
++            record_closure(
++                store, rid, args.session_id, ident, child, code, args.started
++            )
++            state, end, cp = verified_checkpoint(store, rid, ident)
++            print(
++                json.dumps(
++                    dict(
++                        outcome=end["outcome"],
++                        cursor=state["cursor"],
++                        safe_to_shutdown=True,
++                        checkpoint=str(cp),
++                    )
++                )
++            )
+             return
+-    rel=f'{rid}/sessions/{args.session_id}'
+-    launch=read(store.path(rel+'/launch.json'))
+-    require(launch['identity']==ident,'Session identity changed')
+-    if args.command=='_supervisor':
+-        require(os.getppid()==launch['launcher_pid'],'Wrong launcher')
+-        store.json(rel+'/supervisor.json',dict(pid=os.getpid()))
+-        child=subprocess.Popen(command(args,'_worker'))
+-        code=child.wait()
++    rel = f"{rid}/sessions/{args.session_id}"
++    launch = read(store.path(rel + "/launch.json"))
++    require(launch["identity"] == ident, "Session identity changed")
++    if args.command == "_supervisor":
++        require(os.getppid() == launch["launcher_pid"], "Wrong launcher")
++        store.json(rel + "/supervisor.json", dict(pid=os.getpid()))
++        child = subprocess.Popen(command(args, "_worker"))
++        code = child.wait()
+         if code:
+-            store.json(rel+'/worker_failure_observation.json',dict(worker_pid=child.pid,actual_exit_code=code,safe_to_shutdown=False))
+-        record_exit(store,rid,args.session_id,ident,child,code,args.started)
++            store.json(
++                rel + "/worker_failure_observation.json",
++                dict(
++                    worker_pid=child.pid, actual_exit_code=code, safe_to_shutdown=False
++                ),
++            )
++        record_exit(store, rid, args.session_id, ident, child, code, args.started)
+         return
+-    require(os.getppid()==read(store.path(rel+'/supervisor.json'))['pid'],'Wrong supervisor')
+-    previous=None
++    require(
++        os.getppid() == read(store.path(rel + "/supervisor.json"))["pid"],
++        "Wrong supervisor",
++    )
++    previous = None
+     if args.continue_run:
+         import torch
+-        cp=store.path(launch['previous_checkpoint'])
+-        require(sha(cp)==launch['previous_checkpoint_sha256'],'Previous checkpoint changed')
+-        previous=torch.load(cp,map_location='cpu',weights_only=False)
+-        require(previous['identity']==ident,'Previous identity changed')
+-    from backend import environment
++
++        cp = store.path(launch["previous_checkpoint"])
++        require(
++            sha(cp) == launch["previous_checkpoint_sha256"],
++            "Previous checkpoint changed",
++        )
++        previous = torch.load(cp, map_location="cpu", weights_only=False)
++        require(previous["identity"] == ident, "Previous identity changed")
++    from runtime_v2 import environment
++
+     environment(store)
+     from job import evaluate
+-    evaluate(args,config,protocol,store,rid,ident,trained,previous)
+-
+-
+-if __name__=='__main__':
++
++    evaluate(args, config, protocol, store, rid, ident, trained, previous)
++
++
++if __name__ == "__main__":
+     try:
+         main()
+     except Exception:
+         import traceback
++
+         traceback.print_exc()
+         sys.exit(2)
+--- /home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/eval_driver.py
++++ /home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/eval_driver.py
+@@ -177,7 +177,10 @@
+             common = {
+                 "query_id": token + "/" + query["instruction_id"],
+                 "instruction": dict(query),
+-                "frame_calibration": {k: label["frame"][k] for k in ("lidar2ego_rotation", "lidar2ego_translation")},
++                "frame_calibration": {
++                    k: label["frame"][k]
++                    for k in ("lidar2ego_rotation", "lidar2ego_translation")
++                },
+                 "task": query["task"],
+                 "target": target,
+                 "valid": valid,
+@@ -237,7 +240,8 @@
+                             "semantic": prediction["seg_preds"]
+                             .argmax(1)[0]
+                             .cpu()
+-                            .numpy().astype(np.uint8),
++                            .numpy()
++                            .astype(np.uint8),
+                         }
+                 records.append(
+                     {
+--- /home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/eval_metrics.py
++++ /home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/eval_metrics.py
+@@ -142,7 +142,11 @@
+             aps = [v["AP"] for ds in classes.values() for v in ds.values()]
+             result[region] = {
+                 "mAP": float(np.mean(aps)) if all(v is not None for v in aps) else None,
+-                "AP@2m_xy": (float(np.mean([ds["2.0"]["AP"] for ds in classes.values()])) if all(ds["2.0"]["AP"] is not None for ds in classes.values()) else None),
++                "AP@2m_xy": (
++                    float(np.mean([ds["2.0"]["AP"] for ds in classes.values()]))
++                    if all(ds["2.0"]["AP"] is not None for ds in classes.values())
++                    else None
++                ),
+                 "status": "OK" if all(v is not None for v in aps) else "NOT_EVALUABLE",
+                 "classes": classes,
+                 "empty_GT_predictions": self.empty_predictions[region],
+--- /home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/job.py
++++ /home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/job.py
+@@ -1,4 +1,5 @@
+-"""Fixed evaluation: immutable per-frame raw predictions and checkpointed accumulators."""
++"""固定评价；逐帧保存原始预测，累计器只从真实安全退出的边界恢复。"""
++
+ import gzip
+ import pickle
+ import resource
+@@ -7,75 +8,174 @@
+ import torch
+ from core import read, require, selected_rows, seed_cpu, sha, tensor_sha
+ from lifecycle import save_checkpoint, saved_end
+-from eval_driver import EvaluationState, adapters_for_evaluation, evaluate_frame, ground_truth_coverage
++from eval_driver import (
++    EvaluationState,
++    adapters_for_evaluation,
++    evaluate_frame,
++    ground_truth_coverage,
++)
+ 
+ 
+ def evaluate(args, config, protocol, store, rid, ident, trained, previous):
+-    from backend import Runtime
++    from runtime_v2 import Runtime
+     from scripts.stage3.lg_bev_engineering_train import frozen_check
+     from checks import check_records
+-    stopped=[False]
+-    for signum in (signal.SIGINT,signal.SIGTERM,signal.SIGUSR1):
+-        signal.signal(signum,lambda *_:stopped.__setitem__(0,True))
+-    session=f'{rid}/sessions/{args.session_id}'
++
++    stopped = [False]
++    for signum in (signal.SIGINT, signal.SIGTERM, signal.SIGUSR1):
++        signal.signal(signum, lambda *_: stopped.__setitem__(0, True))
++    session = f"{rid}/sessions/{args.session_id}"
++
+     def stop():
+-        return stopped[0] or time.monotonic()-args.started>=26400 or store.path(session+'/stop.request.json').exists()
+-    torch.backends.cuda.matmul.allow_tf32=False
+-    torch.backends.cudnn.allow_tf32=False
+-    development=args.action=='development'
+-    rows=selected_rows(config,'development' if development else 'diagnostic')
+-    selected=protocol['development_tokens' if development else 'diagnostic_tokens']
+-    by_token={r['sample_token']:r for r in rows}
+-    rows=[by_token[t] for t in selected]
+-    require(len(rows)==(320 if development else 8),'Wrong frame list')
+-    runtime=Runtime(config,store,development_authorized=development)
+-    # Restrict this evaluator to the sealed action list before any label/media reads.
+-    runtime.rows={r['sample_token']:r for r in rows}
+-    seed_cpu(config['seed'])
+-    torch.cuda.manual_seed_all(config['seed'])
+-    adapters=adapters_for_evaluation(config,trained)
+-    digests={k:tensor_sha(a.state_dict()) for k,a in adapters.items()}
+-    require(digests['enhanced']==protocol['trained_adapter_sha256'],'Wrong Enhanced adapter')
+-    frozen_check(runtime.model,runtime.encoder,trained['frozen_sha256'])
+-    cursor,metrics,artifacts,check_count=0,EvaluationState(),[],0
++        return (
++            stopped[0]
++            or time.monotonic() - args.started >= 26400
++            or store.path(session + "/stop.request.json").exists()
++        )
++
++    torch.backends.cuda.matmul.allow_tf32 = False
++    torch.backends.cudnn.allow_tf32 = False
++    development = args.action == "development"
++    rows = selected_rows(config, "development" if development else "diagnostic")
++    selected = protocol["development_tokens" if development else "diagnostic_tokens"]
++    by_token = {r["sample_token"]: r for r in rows}
++    rows = [by_token[t] for t in selected]
++    require(len(rows) == (320 if development else 8), "Wrong frame list")
++    runtime = Runtime(config, store, development_authorized=development)
++    # 读取标签和媒体前，限制为该动作已经封存的清单。
++    runtime.rows = {r["sample_token"]: r for r in rows}
++    seed_cpu(config["seed"])
++    torch.cuda.manual_seed_all(config["seed"])
++    adapters = adapters_for_evaluation(config, trained)
++    digests = {k: tensor_sha(a.state_dict()) for k, a in adapters.items()}
++    require(
++        digests["enhanced"] == protocol["trained_adapter_sha256"],
++        "Wrong Enhanced adapter",
++    )
++    frozen_check(runtime.model, runtime.encoder, trained["frozen_sha256"])
++    cursor, metrics, artifacts, check_count = 0, EvaluationState(), [], 0
+     if previous:
+-        require(previous['trained_adapter_sha256']==protocol['trained_adapter_sha256'],'Changed evaluation weights')
+-        cursor,metrics,artifacts,check_count=(previous[k] for k in ('cursor','metrics','artifacts','check_count'))
++        require(
++            previous["trained_adapter_sha256"] == protocol["trained_adapter_sha256"],
++            "Changed evaluation weights",
++        )
++        cursor, metrics, artifacts, check_count = (
++            previous[k] for k in ("cursor", "metrics", "artifacts", "check_count")
++        )
+         for a in artifacts:
+-            require(sha(store.path(a['path']))==a['sha256'],'Raw prediction artifact changed')
+-    coverage_path=store.path(rid+'/gt_coverage.json')
++            require(
++                sha(store.path(a["path"])) == a["sha256"],
++                "Raw prediction artifact changed",
++            )
++    coverage_path = store.path(rid + "/gt_coverage.json")
+     if not coverage_path.exists():
+-        coverage=ground_truth_coverage(runtime,rows,stop)
++        coverage = ground_truth_coverage(runtime, rows, stop)
+         if coverage is not None:
+-            store.json(rid+'/gt_coverage.json',dict(identity=ident,trained_adapter_sha256=protocol['trained_adapter_sha256'],**coverage))
+-    coverage_sha=sha(coverage_path) if coverage_path.exists() else None
++            store.json(
++                rid + "/gt_coverage.json",
++                dict(
++                    identity=ident,
++                    trained_adapter_sha256=protocol["trained_adapter_sha256"],
++                    **coverage,
++                ),
++            )
++    coverage_sha = sha(coverage_path) if coverage_path.exists() else None
+     if coverage_sha:
+-        require(read(coverage_path)['identity']==ident,'Changed coverage identity')
++        require(read(coverage_path)["identity"] == ident, "Changed coverage identity")
+     if previous and cursor:
+-        require(previous['coverage_sha256']==coverage_sha,'Changed GT coverage')
++        require(previous["coverage_sha256"] == coverage_sha, "Changed GT coverage")
++
+     def state():
+-        return dict(identity=ident,cursor=cursor,metrics=metrics,artifacts=artifacts,check_count=check_count,trained_adapter_sha256=protocol['trained_adapter_sha256'],coverage_sha256=coverage_sha,preflight_passed=not development and cursor==len(rows))
+-    while coverage_sha and cursor<len(rows) and not stop():
+-        start=time.monotonic()
+-        records=evaluate_frame(runtime,adapters,rows[cursor]['sample_token'],cursor)
++        return dict(
++            identity=ident,
++            cursor=cursor,
++            metrics=metrics,
++            artifacts=artifacts,
++            check_count=check_count,
++            trained_adapter_sha256=protocol["trained_adapter_sha256"],
++            coverage_sha256=coverage_sha,
++            preflight_passed=not development and cursor == len(rows),
++        )
++
++    while coverage_sha and cursor < len(rows) and not stop():
++        start = time.monotonic()
++        records = evaluate_frame(
++            runtime, adapters, rows[cursor]["sample_token"], cursor
++        )
+         if not development:
+-            check_count+=check_records(records)
++            check_count += check_records(records)
+         for record in records:
+             metrics.add(record)
+-        raw=gzip.compress(pickle.dumps(dict(index=cursor,token=rows[cursor]['sample_token'],records=records),protocol=5),compresslevel=3,mtime=0)
+-        rel=f'{rid}/predictions/{cursor:04d}.pkl.gz'
+-        path=store.bytes(rel,raw)
+-        artifacts.append(dict(index=cursor,token=rows[cursor]['sample_token'],path=rel,sha256=sha(path),bytes=len(raw)))
+-        cursor+=1
+-        store.json(f'{session}/frames/{cursor:04d}.json',dict(cursor=cursor,total_frames=len(rows),token=rows[cursor-1]['sample_token'],wall_seconds=time.monotonic()-start,cuda_allocated_bytes=torch.cuda.memory_allocated(),cuda_reserved_bytes=torch.cuda.memory_reserved(),cpu_peak_rss_bytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024,raw_prediction=artifacts[-1]))
+-        print(f'{args.action}: {cursor}/{len(rows)} frames committed',flush=True)
+-        if cursor%32==0:
+-            save_checkpoint(store,rid,args.session_id,state(),f'periodic_{cursor:04d}')
+-    frozen_check(runtime.model,runtime.encoder,trained['frozen_sha256'])
+-    require(digests=={k:tensor_sha(a.state_dict()) for k,a in adapters.items()},'Evaluation mutated adapter')
+-    outcome=('COMPLETED' if development else 'PREFLIGHT_PASS') if cursor==len(rows) else 'PAUSED'
+-    if cursor==len(rows):
+-        store.json(rid+'/metrics.json',metrics.result())
+-        store.json(rid+'/raw_manifest.json',dict(identity=ident,artifacts=artifacts))
+-    relative,digest=save_checkpoint(store,rid,args.session_id,state(),'end')
+-    saved_end(store,rid,args.session_id,ident,relative,digest,outcome,evaluated_frames=cursor,preflight_passed=not development and cursor==len(rows),check_count=check_count,all_a_only_heads_bitwise_equal=True,frozen_sha256=trained['frozen_sha256'],adapter_digests=digests,cuda_peak_allocated_bytes=torch.cuda.max_memory_allocated(),cuda_peak_reserved_bytes=torch.cuda.max_memory_reserved(),cpu_peak_rss_bytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024)
++        raw = gzip.compress(
++            pickle.dumps(
++                dict(index=cursor, token=rows[cursor]["sample_token"], records=records),
++                protocol=5,
++            ),
++            compresslevel=3,
++            mtime=0,
++        )
++        rel = f"{rid}/predictions/{cursor:04d}.pkl.gz"
++        path = store.bytes(rel, raw)
++        artifacts.append(
++            dict(
++                index=cursor,
++                token=rows[cursor]["sample_token"],
++                path=rel,
++                sha256=sha(path),
++                bytes=len(raw),
++            )
++        )
++        cursor += 1
++        store.json(
++            f"{session}/frames/{cursor:04d}.json",
++            dict(
++                cursor=cursor,
++                total_frames=len(rows),
++                token=rows[cursor - 1]["sample_token"],
++                wall_seconds=time.monotonic() - start,
++                cuda_allocated_bytes=torch.cuda.memory_allocated(),
++                cuda_reserved_bytes=torch.cuda.memory_reserved(),
++                cpu_peak_rss_bytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
++                * 1024,
++                raw_prediction=artifacts[-1],
++            ),
++        )
++        print(f"{args.action}: {cursor}/{len(rows)} frames committed", flush=True)
++        if cursor % 32 == 0:
++            save_checkpoint(
++                store, rid, args.session_id, state(), f"periodic_{cursor:04d}"
++            )
++    frozen_check(runtime.model, runtime.encoder, trained["frozen_sha256"])
++    require(
++        digests == {k: tensor_sha(a.state_dict()) for k, a in adapters.items()},
++        "Evaluation mutated adapter",
++    )
++    outcome = (
++        ("COMPLETED" if development else "PREFLIGHT_PASS")
++        if cursor == len(rows)
++        else "PAUSED"
++    )
++    if cursor == len(rows):
++        store.json(rid + "/metrics.json", metrics.result())
++        store.json(
++            rid + "/raw_manifest.json", dict(identity=ident, artifacts=artifacts)
++        )
++    relative, digest = save_checkpoint(store, rid, args.session_id, state(), "end")
++    saved_end(
++        store,
++        rid,
++        args.session_id,
++        ident,
++        relative,
++        digest,
++        outcome,
++        evaluated_frames=cursor,
++        preflight_passed=not development and cursor == len(rows),
++        check_count=check_count,
++        all_a_only_heads_bitwise_equal=True,
++        frozen_sha256=trained["frozen_sha256"],
++        adapter_digests=digests,
++        cuda_peak_allocated_bytes=torch.cuda.max_memory_allocated(),
++        cuda_peak_reserved_bytes=torch.cuda.max_memory_reserved(),
++        cpu_peak_rss_bytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss * 1024,
++    )
+--- /dev/null
++++ /home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/metadata_context.py
+@@ -0,0 +1,101 @@
++"""仅补齐评分帧速度所需的一阶标注及时间戳，不改变官方 SDK 算法。"""
++
++from pathlib import Path
++
++from scripts.stage2.low_memory_dataset import json_records
++
++
++def velocity_subset_nuscenes_class(base, tokens):
++    """上下文仅供 box_velocity 使用；评分清单仍由调用方独立固定。"""
++    requested = set(tokens)
++    if not requested:
++        raise ValueError("评分帧清单不能为空")
++
++    class VelocityContextNuScenes(base):
++        """保留原始 prev/next，显式检查依赖，禁止补零和丢帧。"""
++
++        def __init__(self, version, dataroot, **kwargs):
++            root = Path(dataroot) / version
++            annotations = [
++                row
++                for row in json_records(root / "sample_annotation.json")
++                if row["sample_token"] in requested
++            ]
++            scoring = {row["token"]: row for row in annotations}
++            wanted = {
++                row[key]
++                for row in annotations
++                for key in ("prev", "next")
++                if row[key] and row[key] not in scoring
++            }
++            context = (
++                [
++                    row
++                    for row in json_records(root / "sample_annotation.json")
++                    if row["token"] in wanted
++                ]
++                if wanted
++                else []
++            )
++            if {row["token"] for row in context} != wanted:
++                raise ValueError("原始相邻标注依赖不完整，拒绝构造速度上下文")
++            all_annotations = {**scoring, **{row["token"]: row for row in context}}
++            sample_tokens = requested | {row["sample_token"] for row in context}
++            samples = [
++                row
++                for row in json_records(root / "sample.json")
++                if row["token"] in sample_tokens
++            ]
++            sample_index = {row["token"]: row for row in samples}
++            if set(sample_index) != sample_tokens:
++                raise ValueError("相邻标注缺少真实 sample 时间戳")
++            scenes = {sample_index[token]["scene_token"] for token in requested}
++            if len(scenes) != 1:
++                raise ValueError("一次只允许一个已授权场景的速度上下文")
++            if any(row["scene_token"] not in scenes for row in samples):
++                raise ValueError("相邻标注跨越授权场景，停止读取")
++            for row in annotations:
++                for key, reciprocal in (("prev", "next"), ("next", "prev")):
++                    if not row[key]:
++                        continue
++                    neighbor = all_annotations[row[key]]
++                    if (
++                        neighbor["instance_token"] != row["instance_token"]
++                        or neighbor[reciprocal] != row["token"]
++                    ):
++                        raise ValueError("原始实例链接不互反或实例身份不一致")
++            data = [
++                row
++                for row in json_records(root / "sample_data.json")
++                if row["sample_token"] in requested and row["is_key_frame"]
++            ]
++            self._selected = {
++                "sample": samples,
++                "sample_annotation": annotations + context,
++                "sample_data": data,
++            }
++            self._wanted = {
++                "ego_pose": {row["ego_pose_token"] for row in data},
++                "calibrated_sensor": {row["calibrated_sensor_token"] for row in data},
++                "instance": {row["instance_token"] for row in annotations + context},
++            }
++            self.velocity_context = {
++                "requested_sample_tokens": sorted(requested),
++                "context_sample_tokens": sorted(sample_tokens - requested),
++                "context_annotation_tokens": sorted(wanted),
++                "scoring_annotations": len(annotations),
++            }
++            super().__init__(version=version, dataroot=dataroot, **kwargs)
++            del self._selected, self._wanted
++
++        def __load_table__(self, table_name):
++            if table_name in self._selected:
++                return self._selected[table_name]
++            wanted = self._wanted.get(table_name)
++            return [
++                row
++                for row in json_records(Path(self.table_root) / (table_name + ".json"))
++                if wanted is None or row["token"] in wanted
++            ]
++
++    return VelocityContextNuScenes
+--- /home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/backend.py
++++ /home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/runtime_v2.py
+@@ -20,10 +20,16 @@
+     """子进程审计钩子拒绝根目录外写入；第三方缓存同样受限。"""
+     root = no_symlinks(root)
+ 
+-    def allowed(path):
++    def allowed(path, dir_fd=None):
+         if isinstance(path, int) or path is None:
+             return
+-        path = no_symlinks(Path(os.fsdecode(path)))
++        path = Path(os.fsdecode(path))
++        if not path.is_absolute() and dir_fd not in (None, -1):
++            anchor = Path(os.readlink(f"/proc/self/fd/{dir_fd}"))
++            require(anchor.is_absolute(), "目录描述符没有可核验的绝对路径")
++            require(anchor.is_dir(), "描述符没有指向存活目录")
++            path = anchor / path
++        path = no_symlinks(path)
+         require(
+             path.is_relative_to(root) and ".." not in path.parts,
+             "拒绝实验外写入：" + str(path),
+@@ -37,11 +43,15 @@
+             )
+             if writing:
+                 allowed(path)
+-        elif event in ("os.remove", "os.rmdir", "os.mkdir", "os.chmod", "os.utime"):
+-            allowed(args[0])
++        elif event in ("os.remove", "os.rmdir"):
++            allowed(args[0], args[1])
++        elif event in ("os.mkdir", "os.chmod"):
++            allowed(args[0], args[2])
++        elif event == "os.utime":
++            allowed(args[0], args[3])
+         elif event in ("os.rename", "os.link"):
+-            allowed(args[0])
+-            allowed(args[1])
++            allowed(args[0], args[2])
++            allowed(args[1], args[3])
+         elif event == "os.symlink":
+             raise PermissionError("实验禁止创建符号链接")
+         elif event == "sqlite3.connect":
+@@ -104,7 +114,10 @@
+     module = importlib.util.module_from_spec(spec)
+     sys.modules[name] = module
+     spec.loader.exec_module(module)
+-    module.CACHE_ROOT = store.path("cache")
++    from metadata_context import velocity_subset_nuscenes_class
++
++    module.subset_nuscenes_class = velocity_subset_nuscenes_class
++    module.CACHE_ROOT = store.path("cache/evaluation_fix_v2_20261102")
+     module.RollingCache = lambda: store
+ 
+     def atomic_save(path, value):
+@@ -170,7 +183,11 @@
+             )
+             # 只读复用通过摘要验证的训练索引，不连接共享catalog。
+             source = SHARED / "metadata" / (row["scene_token"] + ".pt")
+-            relative = "cache/metadata/" + row["scene_token"] + ".pt"
++            relative = (
++                "cache/evaluation_fix_v2_20261102/metadata/"
++                + row["scene_token"]
++                + ".pt"
++            )
+             if (
+                 row["split"] == "train"
+                 and source.exists()
+@@ -215,7 +232,9 @@
+         if row["split"] == "train":
+             return self.labels.get(token)
+         require(self.development_authorized, "禁止开发GT")
+-        relative = "cache/development_labels/" + token + ".pt"
++        relative = (
++            "cache/evaluation_fix_v2_20261102/development_labels/" + token + ".pt"
++        )
+         path = self.store.path(relative)
+         if not path.exists():
+             value = self.data.label(token)

@@ -1,0 +1,368 @@
+{
+  "manual_review_only": true,
+  "git_operations_executed": false,
+  "ready_for_review": [
+    {
+      "path": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "docs/logbook_2026-11-02.md",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/backend.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/cli.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/core.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/evaluation.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/lifecycle.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/metrics.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/numerics.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/checks.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/entry.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/eval_driver.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/eval_metrics.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/job.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/tests/conftest.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/tests/test_metrics.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/tests/test_pipeline.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/checks.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/entry.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/eval_driver.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/eval_metrics.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/job.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/metadata_context.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/runtime_v2.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/tests/conftest.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/tests/test_authorization_gate.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/tests/test_cleanup_fence.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/tests/test_metadata_context.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention对照.csv",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.pdf",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.png",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/同类不同位置实例.csv",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/有效指令配对.csv",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/汇总既有结果.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.pdf",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/逐指令定位.csv",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/synthetic.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/tests/conftest.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/tests/test_assets.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/tests/test_metrics.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/tests/test_numerics.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/tests/test_protocol.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/tests/test_safety.py",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/worker.py",
+      "exists": true,
+      "git_tracked": false
+    }
+  ],
+  "needs_portability_or_history_review": [
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/configs/authorization_main.template.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/configs/authorization_preflight.approved.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/configs/authorization_short.template.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/configs/authorization_train.approved.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/configs/main.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/configs/short.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/cpu_preflight.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/protocol.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/training_final_audit.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/training_sessions_verified.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/authorization.pending.template.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/cpu_preflight.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/protocol.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/交付文件清单.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/保全核查.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复清单.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/回归汇总.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/最终进程核查.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/根因现场.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/格式检查.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收汇总.json",
+      "exists": true,
+      "git_tracked": false
+    },
+    {
+      "path": "experiments/lg_bev_stage3_exploration_20261101/运行命令.md",
+      "exists": true,
+      "git_tracked": false
+    }
+  ],
+  "review_notes": [
+    "README与运行命令仍是旧状态，发布前需新导航/日期说明，当前仅只读检查。",
+    "绑定协议含本机绝对路径；单独附路径/非Git资产映射，不改已封存内容。",
+    "旧V3 git_whitelist.json是2026-10-28快照，不能作为本次完整待提交清单。"
+  ],
+  "exclude": [
+    "G盘数据集、GT、BEV缓存、权重、原始预测、SQLite、临时日志",
+    "本次范围外的既有未提交修改",
+    "历史源码备份与重复报告快照：保留本地，按需人工选取"
+  ]
+}

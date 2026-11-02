@@ -35,6 +35,8 @@ installers/
 *.log
 # 第二阶段已审查的小型测试日志；大型实验目录仍由 outputs/ 排除。
 !results/stage2_final_audit_2026-10-22/*.log
+# 独立 Stage3 历史实施报告引用的已完成 CPU 验收日志，非临时运行日志。
+!experiments/lg_bev_stage3_exploration_20261101/reports/pytest_delivery.log
 *.bak
 /docs/backups/
 

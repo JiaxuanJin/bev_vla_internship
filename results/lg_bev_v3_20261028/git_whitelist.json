@@ -1,0 +1,43 @@
+{
+  "manual_review_only": true,
+  "git_add_commit_push_executed": false,
+  "status": "READY_AWAITING_SEPARATE_FORMAL_AUTHORIZATION",
+  "files": [
+    "README.md",
+    "docs/lg_bev_resource_protocol_v3_2026-10-28.md",
+    "docs/logbook_2026-10-28.md",
+    "results/lg_bev_v3_20261028/admission_public_summary.json",
+    "results/lg_bev_v3_20261028/git_whitelist.json",
+    "results/lg_bev_v3_20261028/launch_hold_v3.json",
+    "results/lg_bev_v3_20261028/math_preservation.json",
+    "results/lg_bev_v3_20261028/time_protocol_v3.json",
+    "scripts/stage3/README.md",
+    "scripts/stage3/README_LG_BEV_V3_20261028.md",
+    "scripts/stage3/lg_bev_daily.py",
+    "scripts/stage3/lg_bev_daily_state.py",
+    "scripts/stage3/lg_bev_data.py",
+    "scripts/stage3/lg_bev_engineering_full.py",
+    "scripts/stage3/lg_bev_engineering_train.py",
+    "scripts/stage3/lg_bev_gt_completion.py",
+    "scripts/stage3/lg_bev_session_admission.py",
+    "scripts/stage3/lg_bev_session_control_test.py",
+    "scripts/stage3/lg_bev_v3_acceptance.py",
+    "tests/README.md",
+    "tests/test_lg_bev_box_validation.py",
+    "tests/test_lg_bev_gt_batch_recovery.py",
+    "tests/test_lg_bev_v3_20261028.py"
+  ],
+  "in_scope_prior_gt_fixes": [
+    "scripts/stage3/lg_bev_data.py",
+    "scripts/stage3/lg_bev_gt_completion.py",
+    "tests/test_lg_bev_gt_batch_recovery.py",
+    "tests/test_lg_bev_box_validation.py"
+  ],
+  "exclude": [
+    "All G drive GT/BEV/reference tensors/weights/checkpoints/databases/large logs/traces",
+    "Full private admission.json and source provenance with personal absolute paths",
+    "Source backups and unrelated existing uncommitted files",
+    "Old V1/V2/failed reports overwritten or renamed as V3"
+  ],
+  "formal_updates": 0
+}

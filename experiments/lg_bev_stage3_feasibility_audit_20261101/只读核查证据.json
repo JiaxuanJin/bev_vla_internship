@@ -1,0 +1,135 @@
+{
+  "审计时间": "2026-11-01T16:17:37.969462+08:00",
+  "范围": "只读源码和CPU资产核查；未前向、反向或训练；仅新增隔离审计文档和清单",
+  "正式运行状态": {
+    "status": "FAILED",
+    "stop_reason": "GROUNDING_NOT_READY",
+    "can_resume": false,
+    "safe_to_shutdown": false,
+    "updates": 9562
+  },
+  "正式CheckpointSHA": "b19dacd76ee5861a05d6f915e4d096250d36d7280bc3701dbf5e99e1430b038a",
+  "初始对照路径": "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_acceptance_v3_20261028_v1/checkpoints/B_u000000_m000001_e4660011d5.pt",
+  "初始对照文件SHA": "737b8dded2aabc340572d46c86d36515e9496b38c69e83c9554f2a0dfc17bb8d",
+  "初始对照控制事件及receipt摘要验证": true,
+  "初始对照更新数": 0,
+  "初始对照已有累积微步": 1,
+  "初始对照优化器状态条目": 0,
+  "与封存种子初始化逐张量相同": true,
+  "初始Adapter张量摘要": "bc6e34dd4def828420d94b147a61a57a0b4f2d5c3a6e6f60512d301d58a2bc8f",
+  "正式A终点Adapter张量摘要": "5db7c4105bb9b138773ec249b7f47641ccddc16bb64d3a3b11ebb297ce7dfe81",
+  "正式A终点up非零元素": {
+    "up.weight": 0,
+    "up.bias": 0
+  },
+  "正式总参数": 93866,
+  "三帧坐标和标签抽查": [
+    {
+      "帧": "556a590f3e1741fb87d7e4dc8ea687e4",
+      "标签摘要匹配": true,
+      "目标索引与实例ID一致": true,
+      "地图采样全部在界内": true,
+      "尺寸": {
+        "gt": [
+          200,
+          400
+        ],
+        "object_masks": [
+          48,
+          150,
+          150
+        ],
+        "map_masks": [
+          6,
+          200,
+          400
+        ]
+      }
+    },
+    {
+      "帧": "633212bb7ffa4953ac240019c9de2414",
+      "标签摘要匹配": true,
+      "目标索引与实例ID一致": true,
+      "地图采样全部在界内": true,
+      "尺寸": {
+        "gt": [
+          200,
+          400
+        ],
+        "object_masks": [
+          14,
+          150,
+          150
+        ],
+        "map_masks": [
+          11,
+          200,
+          400
+        ]
+      }
+    },
+    {
+      "帧": "7ba9d78d92914fd5a204d3bc1233bd4e",
+      "标签摘要匹配": true,
+      "目标索引与实例ID一致": true,
+      "地图采样全部在界内": true,
+      "尺寸": {
+        "gt": [
+          200,
+          400
+        ],
+        "object_masks": [
+          58,
+          150,
+          150
+        ],
+        "map_masks": [
+          2,
+          200,
+          400
+        ]
+      }
+    }
+  ],
+  "未验证": [
+    "训练前后定位收益",
+    "当前A权重迁移后的B梯度",
+    "独立区域AP和IoU"
+  ],
+  "候选清单帧数": {
+    "训练候选": 512,
+    "评估候选": 320,
+    "训练内诊断候选": 128
+  },
+  "候选清单驾驶日志数": {
+    "训练候选": 8,
+    "评估候选": 5,
+    "训练内诊断候选": 4
+  },
+  "候选之间帧及日志无交叉": true,
+  "开发与ColdFinal_GT本轮读取": false,
+  "CUDA初始化": false,
+  "受保护资产保全": {
+    "unchanged": true,
+    "files_checked": 196,
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "directories_unchanged": true,
+    "source_manifest_unchanged": true
+  },
+  "本目录文档SHA": {
+    "proposed_subset_metadata.json": "116822521c67167d05d9e9edec18c68194109a00aed9eb0b1c132d34cb159439",
+    "审计与最小实验方案.md": "7dcf3a4fa50a231d246565bfaf5180118d5e9ebbcdd18aeafe21c3030c1de918"
+  },
+  "候选原始nuScenes划分": {
+    "训练": {
+      "train": 512
+    },
+    "评估": {
+      "train": 320
+    },
+    "已登记历史baseline评价场景": false,
+    "限制": "仅证明Adapter训练日志隔离；作者预训练数据覆盖未核实"
+  }
+}

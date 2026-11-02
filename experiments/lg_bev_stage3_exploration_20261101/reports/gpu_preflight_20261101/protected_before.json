@@ -1,0 +1,830 @@
+{
+  "files": {
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_daily_20261027/full_gt_integrity.json": {
+      "sha256": "940a4f0dca26522aef09bf2f8be32dfd3ea5bec56cc14166a5a508c6278c3e43",
+      "bytes": 843
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_daily_20261027/time_protocol_v2.json": {
+      "sha256": "38af958d975105ff91765400e5b194292e1d204c2a572763acbeaf49f830af10",
+      "bytes": 840
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_formal_training_audit_20261027/formal_execution_contract.json": {
+      "sha256": "4281d31722ba240543bfdcb9c4cc2baa56101593749c0098f7db035855b5761c",
+      "bytes": 5153
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/admission.json": {
+      "sha256": "e4fd5af5ad9980dca85357da91adc26d5a812d8453faa5b24e0006c5530898ca",
+      "bytes": 9217
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/admission_attempt_1793163048649629442.json": {
+      "sha256": "e4fd5af5ad9980dca85357da91adc26d5a812d8453faa5b24e0006c5530898ca",
+      "bytes": 9217
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/admission_public_summary.json": {
+      "sha256": "9a0c5f05bd01b79b44713379a71c3a20af23a208e43c465293f4537582b83e49",
+      "bytes": 1565
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/delivery_check.json": {
+      "sha256": "a04d894acb855f9a0496fa020e2fa2954bc2a74f1c25a0c557deadb90cbc3632",
+      "bytes": 217
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/final_integrity.json": {
+      "sha256": "22874d0236b5bd69a6d650356453a97e70c0e1baf2d0a6d684a654ad69cc368d",
+      "bytes": 779
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/formal_status_before_authorization.json": {
+      "sha256": "57de41a0f708c7834d9c37ab5c0a662c7048fdb3bba12bb64e6a574f5d17bff9",
+      "bytes": 161
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/git_whitelist.json": {
+      "sha256": "1b0d419ac9ded3ba9c2a82a4f42963f1412628ab295e61ece041832fb5c20632",
+      "bytes": 1738
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/initial_diff.patch": {
+      "sha256": "a8f32aeecf26afada2a2ed366fac32cbfc8964a6449a2b9e7aff62799df6d093",
+      "bytes": 24773
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/initial_git_status.txt": {
+      "sha256": "c4956d2d59217c1938e4ed4ac8790e8682613eb75c2adcaba347b79bcb86ac69",
+      "bytes": 3983
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/launch_authorization.json": {
+      "sha256": "8cae756544022498090885a9827cb13ca1c665fe44374039014d3ab6fa3cd2d2",
+      "bytes": 427
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/launch_hold_v3.json": {
+      "sha256": "a271a6759f47f6a25031a3610ccb2196ddb8d0a0d3c965b610fda85e38bd7a48",
+      "bytes": 351
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/math_preservation.json": {
+      "sha256": "4b5f640c0b436f8374e59cf18a6723451ad23928cf5bb6c6cd7d36d5a48ab2aa",
+      "bytes": 335
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/preserved_before.json": {
+      "sha256": "714533b12fe6f1258c7d9d6843da7f17269e92a0d6570a22e2faab2f694e110e",
+      "bytes": 1890
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/process_exit_final.json": {
+      "sha256": "ed89446c0b3e49c3097a26b0e961e2c886596c2448cd2cf7511b9a0ca886c431",
+      "bytes": 103
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/pytest_cpu.log": {
+      "sha256": "e40d7e5c381f9e4c0735dd9af64c4277578a8ef9df46d88e3747e4250e2e188f",
+      "bytes": 5671
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/pytest_legacy_targeted.log": {
+      "sha256": "1d321b0f79b5260b5c85b4fe099370bb1155cc5a1d30846cec3d4804b567ae86",
+      "bytes": 6742
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/pytest_targeted.log": {
+      "sha256": "c57ca708f5054eb941794f77b34ce8e4cce99f5cceb780171b55cb49a74aedb6",
+      "bytes": 4861
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/seal_v3.log": {
+      "sha256": "e7e4739f23a99f3d44fea1aab65209ede1af7b2129e7ccfbfe8169938e0f41a2",
+      "bytes": 9218
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/source_before/lg_bev_daily.py": {
+      "sha256": "e608d2cae46c4bc812e311970f599f1cf90eba383656315cbea28bdfb0dd7f7c",
+      "bytes": 25781
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/source_before/lg_bev_daily_acceptance.py": {
+      "sha256": "1c0d3dc2479c0a2d7f0f55e14e65013a352c9aed9e2667923b35b05366ca7b09",
+      "bytes": 18489
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/source_before/lg_bev_daily_state.py": {
+      "sha256": "7da8b5791f138fba3baee75c8d2df44e8283eba1565856495afa3959f3459a93",
+      "bytes": 7229
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/source_before/lg_bev_engineering_full.py": {
+      "sha256": "a2be3c86630ca1ed8ebcf29950a8470e74fd73c6e7bf296a6bd0a066a8a5eed9",
+      "bytes": 25111
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/source_before/lg_bev_engineering_train.py": {
+      "sha256": "2feb070f6b38f8f1fc7232fb28341373f91015cab01cbe6640d8762b5fffebf2",
+      "bytes": 24069
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/source_before/lg_bev_session_admission.py": {
+      "sha256": "148c688f958e735b62b1e83251818783d7e140b6d4c5b3ab488b52ace4efc295",
+      "bytes": 9872
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/source_before/lg_bev_session_control_test.py": {
+      "sha256": "b9bab4133d8bc2bdc8b5aeb713a368defc00eecf3d9e4200173f690cd6fdaac6",
+      "bytes": 5023
+    },
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/time_protocol_v3.json": {
+      "sha256": "ceb2a1bd8856e29ae78e3979cb34c93765b00160c61969f347b2007533009cf2",
+      "bytes": 1242
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/bev_coordinates.py": {
+      "sha256": "c69e0466c1b63b42621042f073e8728f1270cdcca55e327810eb1124e56d3cb5",
+      "bytes": 3448
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/joint_runtime.py": {
+      "sha256": "9fe1674f790fad5334641ddae9f4f7241f47b289dd4adf68b7b2676e43553f54",
+      "bytes": 19871
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/language_encoder.py": {
+      "sha256": "93d3240c40f3fa59a8eda85460cb0eb038d77de71a0d097c6b885e1a9fd17478",
+      "bytes": 3316
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/low_memory_dataset.py": {
+      "sha256": "59cadce7ce1b54d91e003e5de3d0c23285b7d7dca31d025e6ede96e7a2f064e5",
+      "bytes": 4496
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/micro_training.py": {
+      "sha256": "97f3c671d729d69d909bfca0c29a4f6f97e501506e6481823fc92b8a6f6158ca",
+      "bytes": 36306
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/spatial_annotations.py": {
+      "sha256": "95844b510ce445a33f93e76fc9d1b0028db19381a7386a47a1188044a328e513",
+      "bytes": 15084
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/spatial_v3_model.py": {
+      "sha256": "f8efa6507dd105db00a5d06f48dfdb8c3e15a47ec2e94f89025ef2474778d3ea",
+      "bytes": 5593
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_daily.py": {
+      "sha256": "051d64b4a94bd543639ebaf00966e3ec86b988209d228f0eb09ab33bcb55f9c7",
+      "bytes": 34169
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_daily_acceptance.py": {
+      "sha256": "1c0d3dc2479c0a2d7f0f55e14e65013a352c9aed9e2667923b35b05366ca7b09",
+      "bytes": 18489
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_daily_metadata.py": {
+      "sha256": "713d901d6dd7972152ccecb28b9062d5d9bad1abcde0a00f8225185a9a0b2677",
+      "bytes": 10196
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_daily_state.py": {
+      "sha256": "e01b0cfec991976691974a636980d79c0d5240f21751137920d9aa19e540ea19",
+      "bytes": 9556
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_data.py": {
+      "sha256": "d6ac56d2698c4c54a6c432c4268a6853b0c672fc103b48ab6cf4130c10bf291f",
+      "bytes": 25613
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_audit.py": {
+      "sha256": "7b1268c77482ecb7c77561ed22d331b6770513c8fdef47f9716705bd3586dfdf",
+      "bytes": 18177
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_cache.py": {
+      "sha256": "9b730d4ff61ef34de6aef539aba43cbcfba6f863043242e01c1dd9e092fa5f03",
+      "bytes": 19803
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_data.py": {
+      "sha256": "5c2445ac6ce86c9f0345a6cdfedad32680d67278e553ee1cabc4a23aab8cf7a6",
+      "bytes": 30747
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_determinism.py": {
+      "sha256": "bd1f7ad41b6465ed999e6eb0e8ad0902c1818fd8772ae4d025bfaeaa469ec48b",
+      "bytes": 16023
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_dynamic_cuda.py": {
+      "sha256": "c3c520a03f1b5c024c3a3bbe3cebb14a310a97a48b2ecaa50f6a6dffa93c3410",
+      "bytes": 7472
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_evaluate.py": {
+      "sha256": "b8e60ea5e7dcd1f903e1895e67a5d5e159594bfddd102a27351e5bf7c7b57c9e",
+      "bytes": 19573
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_fast_verify.py": {
+      "sha256": "8135fa88ab5901392da52f7a6b21863e67f6d1310b51754e061f6511e31ee057",
+      "bytes": 8905
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_full.py": {
+      "sha256": "f704222c389b0d33c7f3f65ad6630c8a4c69ac6ed8ab844d2845f87e7f230854",
+      "bytes": 25802
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_loss.py": {
+      "sha256": "125b8a51774416bff8ddc196188d66401af3b813e57ea2724a2a63eeeb459ce4",
+      "bytes": 8303
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_metrics.py": {
+      "sha256": "94b273120904ce332288e667b9a2c5eda108dde7cd091a93ba500ec850eabfc0",
+      "bytes": 9164
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_native.py": {
+      "sha256": "f592fc0e5f9ac4ac3422848f6543e1ea03f52965b36ea128d8889ecafca1d04d",
+      "bytes": 14892
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_recovery.py": {
+      "sha256": "38bdf6d5420bd83455e54ab8839f7a4708173c5abaaaaba9e647747bc1913633",
+      "bytes": 3309
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_run.py": {
+      "sha256": "55004ba752bead9e4737733001e927e9147db9beb0859a8023f2f5fe545c31d6",
+      "bytes": 5279
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_train.py": {
+      "sha256": "af9d87468bbdbbd1d89ad929ab605e94ef51059370fea676c7066d3e2c9d3a82",
+      "bytes": 24589
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_native.py": {
+      "sha256": "c5d658f23121a9090fd3ed66f49bf9722a3f8e3ea7a125dc42a085cad45c3050",
+      "bytes": 4440
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_prototype.py": {
+      "sha256": "91f468b93a83164e232a3b2aaf144c5c877bd778f4b08c1486863ed91fe34665",
+      "bytes": 12030
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_session_admission.py": {
+      "sha256": "28dc880d5322e6b73c2442cd5b73fc6edb013d91b10c8b941e8a96b9f48c4cd6",
+      "bytes": 16368
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_session_control_test.py": {
+      "sha256": "afe92250ac2b945bd7cfc2328617c8300b46ac32f27baa6697da4568ab1c154b",
+      "bytes": 5055
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_session_logbook.py": {
+      "sha256": "b366fc992b05f658f1be3f49d8263c999fe10c254374848bd8567ffd4f4bc255",
+      "bytes": 2728
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_supervision_space.py": {
+      "sha256": "4298d32cbbd30f5f6f812bb8b51bd6e0c95f00eaa396721023c559401b398c66",
+      "bytes": 5176
+    },
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_v3_acceptance.py": {
+      "sha256": "93f9fa0714e9676d894638c9e5932e4a678ad2e04a09e41f0b3257c6b68482e4",
+      "bytes": 25122
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/metadata_bulk_train_v1/equivalence.json": {
+      "sha256": "d87b4ea82d4f94d39a8ed5ef3a754aa1670712abbf4b178caccdb853d2cf4d75",
+      "bytes": 172
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_acceptance_v3_20261028_v1/sessions/79d5a2072e71.exit.json": {
+      "sha256": "4f3b2c2afef5b8f35f7f30f4b9b0214150acf8d32b7222f88307161877ef4949",
+      "bytes": 574
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_acceptance_v3_20261028_v1/sessions/79d5a2072e71.exit.sha256": {
+      "sha256": "c0ee886da87b0d534e07d32894c2062c359e094c379c16972fc0f22403dcd72a",
+      "bytes": 64
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_acceptance_v3_20261028_v1/sessions/7d448e8a258e.exit.json": {
+      "sha256": "dedcb4302eac13283581a2efca7cbcbc303461607d84681130e318d2e4f58497",
+      "bytes": 566
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_acceptance_v3_20261028_v1/sessions/7d448e8a258e.exit.sha256": {
+      "sha256": "dcd49126f3e36785c86d24c1766aa7a3e529c99b67c68af1fe88159d8acce9d9",
+      "bytes": 64
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_acceptance_v3_20261028_v1/sessions/dbc19fa9a354.exit.json": {
+      "sha256": "2ba563c9f7ab3682aa69b81c922036da1fcd9c4dc26ce71fbf992186da4ef112",
+      "bytes": 574
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_acceptance_v3_20261028_v1/sessions/dbc19fa9a354.exit.sha256": {
+      "sha256": "2a5c66f52c6cf33313ba24d7d9c87610faa5b0517c7aadf4e26997719058e4d3",
+      "bytes": 64
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_preflight_v3_20261028_v1/acceptance_config.json": {
+      "sha256": "efe99ce43e5b177474e5cf9a5f48094aa78fe9cd8e8a545f44bcee5d48a48114",
+      "bytes": 7239
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_preflight_v3_20261028_v1/evidence/cross_scene_v3.json": {
+      "sha256": "81f4a1a61025c472be2c2148f9b0604acc2be2b0d34d3469810c865303c683bf",
+      "bytes": 25099
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_preflight_v3_20261028_v1/evidence/manager_control_v3.json": {
+      "sha256": "098848e54ce0a6b7784cac35adb4484f1847c086c6684a53ba54a43a57b7d3c8",
+      "bytes": 12895
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_preflight_v3_20261028_v1/evidence/manager_resume_v3.json": {
+      "sha256": "5b7b8f52a77e214c5650950ae078accf379b7de92d44f3a5eb45f8a0ec7faecd",
+      "bytes": 6072
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_preflight_v3_20261028_v1/uninterrupted_reference_v3.pt": {
+      "sha256": "131ac6283731c8bebb0820f935e658555c07fdd45e14faae5649c681e792bbeb",
+      "bytes": 22138455
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/formal_gt_20261027_v1/data_report.json": {
+      "sha256": "295f6006e0aa09ab4dad45e1a6a528115de89dec1b2a524c7a423d46db8afd27",
+      "bytes": 9555420
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/formal_gt_20261027_v1/source_provenance.json": {
+      "sha256": "61135d3c17318495c8da657adb9600553f4359113d7133a7a6ca2878329f7f5f",
+      "bytes": 27464612
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/A_from_000000_000000_75f2f310.jsonl": {
+      "sha256": "d227cf438ecbffd05cd6ad579e703ad2dba2f9879a8d8d5d928cff5d6f6f8d31",
+      "bytes": 3658546
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/A_from_001570_006283_60b26538.jsonl": {
+      "sha256": "053668c421cb1df94b4c65cfb00ae679de84113ed7115bc5cc9b8f047d47c8b6",
+      "bytes": 4750652
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/A_from_003613_014453_77ee3261.jsonl": {
+      "sha256": "037b8e02d015d50507fd5db073c36e15cd983b69c54a0d19e8fd505d61df74df",
+      "bytes": 902868
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/A_from_004001_016004_e153e96f.jsonl": {
+      "sha256": "0d98f51910d0f760fb5b4503d0b04febc49f5c0eebe6413f9eff76291ef57318",
+      "bytes": 4027731
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/A_from_005733_003811_48a20686.jsonl": {
+      "sha256": "26af895ba55f9ebcd2148c6128357476df9ac599cbfaa6c51be97ca366584a00",
+      "bytes": 1141199
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/A_from_006225_005776_531ddd4a.jsonl": {
+      "sha256": "64496b4d7e11d7fd88550595a8130dbfff24f8468939ec851dc7e374c852c3b3",
+      "bytes": 2706000
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/A_from_007390_010437_5f826abd.jsonl": {
+      "sha256": "0201d6e1d6d206564bebc131d00a9105fb5059f0edb69e45ace47a0403d5e1a8",
+      "bytes": 2637471
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/A_from_008523_014971_b7e1a2bd.jsonl": {
+      "sha256": "bd13d5ea9338863e23db474026f4a3ae1985924e2d967600ee9a9b07a76e9122",
+      "bytes": 2414804
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/A_from_009562_019123_5054fa11.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u000500_e0_m002000_1793169980158511587.pt": {
+      "sha256": "3789da4400488c9d2957cc0911ac8149f7433a9b6cf2cd38b42965270ac0153a",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u000500_e0_m002000_1793169980158511587.pt.receipt.pt": {
+      "sha256": "a9dae7a1c017d8c47a200d9d75a64b505bfd5a2744eae1afe3a9e8ea2c68d4a1",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u001000_e0_m004000_1793175813510083841.pt": {
+      "sha256": "4b41d48d47d85b7b37340e4b3f7b1bb439fe9cf38e5176a9d3179e9ac842246c",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u001000_e0_m004000_1793175813510083841.pt.receipt.pt": {
+      "sha256": "0cf2a3bfe57fdfe779feaa39c86e83933f58d72b2129aed815dc6d1533fc33f9",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u001500_e0_m006000_1793182220670581147.pt": {
+      "sha256": "19e045c8237b2cdb53d5f83dbe6dce4ef5bf65cbcb9b53d9a60d5d0271b71254",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u001500_e0_m006000_1793182220670581147.pt.receipt.pt": {
+      "sha256": "87916b55c5f78eed2cdfc941f9503ecd14a1367f6b207cbcd7454f3e83f65954",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u001570_e0_m006283_1793183119717699453.pt": {
+      "sha256": "6672cda9d290d04ace5107ee33128444ed927c22b2440e4810e1d666f5fb50a2",
+      "bytes": 2264999
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u001570_e0_m006283_1793183119717699453.pt.receipt.pt": {
+      "sha256": "a66b82c1a138689ce57ddbee1e82742170e53c04d6e6bc3b57664fdd58de8a21",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u001570_m006283_6a3f952099.pt": {
+      "sha256": "edcbd7902bdea83a8d3f0418fd593e569a8a161bb71db17df11bb2d3d813e5a5",
+      "bytes": 2264999
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u001570_m006283_6a3f952099.pt.receipt.pt": {
+      "sha256": "e97365f84393f63a61297ee1ea5c49652866d36d9f4d5c0a4cfad0fb033c410a",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u002000_e0_m008000_1793245038800955572.pt": {
+      "sha256": "f2bc6e8fb69ddd9d1c7b46509e4a56bf1f6c4c240e09e4bc3fcfdb05283e54cd",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u002000_e0_m008000_1793245038800955572.pt.receipt.pt": {
+      "sha256": "4650243eaa05b1e36177918e41dda4b204524e912f7d42f8365803e089145cbb",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u002500_e0_m010000_1793251297952135471.pt": {
+      "sha256": "9c21b4528e9b73e6d089de2990662f6ab6f974be1d789fa35d9e210c9085ad8e",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u002500_e0_m010000_1793251297952135471.pt.receipt.pt": {
+      "sha256": "b16b7c7c40993479faeb999f3a65641cf1a79be7bf5321b6576fe7ffb9786821",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u003000_e0_m012000_1793257724830533742.pt": {
+      "sha256": "046bfbee06122a00b4e599b86f84c815afff5d0eec9f3db5663efa948229f40f",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u003000_e0_m012000_1793257724830533742.pt.receipt.pt": {
+      "sha256": "435b4d8236113f0077f43dc75b41d7ff96f5d4983acb726c41abe4ee45c2253d",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u003500_e0_m014000_1793264115312134743.pt": {
+      "sha256": "7850d60e29d15444f034add2fa9969bfe521737f761e8b94b10cc3121909e142",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u003500_e0_m014000_1793264115312134743.pt.receipt.pt": {
+      "sha256": "71e632f11b4f058b2ecb9f95abcc35f2531fbf4518f82cd20561c3a62f878d56",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u003613_e0_m014453_1793265689134064696.pt": {
+      "sha256": "b01d57cc1e5d58bf9fd87c0a25ed59eb4770dddaaf3870de1cc2dd4395b9d1e1",
+      "bytes": 2264999
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u003613_e0_m014453_1793265689134064696.pt.receipt.pt": {
+      "sha256": "dd29d847a615f4c0584c4a3cf138e5258e29608f31875b5e6f82aa2709000c52",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u003613_m014453_4d4c872ac1.pt": {
+      "sha256": "62ae24c2df39efed701649f437c9a45964aabb832d4c22f4afbb9156264f58db",
+      "bytes": 2264999
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u003613_m014453_4d4c872ac1.pt.receipt.pt": {
+      "sha256": "494e55cee036a011a98d9a7733d8e664a75f0f05da509099db58649f00c08b8c",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u004000_e0_m016000_1793273465940482467.pt": {
+      "sha256": "89aee5f0a734e16788d6c20ae2a1e000757f9463a898f7ea2fb42a95350100ae",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u004000_e0_m016000_1793273465940482467.pt.receipt.pt": {
+      "sha256": "599a3d2ed744443e66ea74c9b724ceafc7fe5cb5f64a99a93a19b87a585997a7",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u004001_e0_m016004_1793273527986644845.pt": {
+      "sha256": "508063bb0564b585c7783850bb2410742f5211f9320ae7d92df148efe2b5b992",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u004001_e0_m016004_1793273527986644845.pt.receipt.pt": {
+      "sha256": "8460c2e91f0924591a1c8ec183947624e6985a4e35941cf47338ef4989a10ad3",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u004001_m016004_e1d086a424.pt": {
+      "sha256": "e6280920924bcc61d75ed9d0d7b4eb15b12d4b0fefe12baa54f9127596f21669",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u004001_m016004_e1d086a424.pt.receipt.pt": {
+      "sha256": "c7e56014115e87b6c6656c4c3deea7b5d26ec2648cb29b902d8505f75a76b150",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u004500_e0_m018000_1793330943155661124.pt": {
+      "sha256": "ad351dee043a79c25a57afa7dc3ab19a3c6f37c582c3c2025fc927698b508d18",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u004500_e0_m018000_1793330943155661124.pt.receipt.pt": {
+      "sha256": "7772e3a5381181b7b30f0170bd1a1fbd35c629e824fd4f6004c21a292616c1af",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u004781_e0_m019123_1793336393847767628.pt": {
+      "sha256": "91359feec6607807a298df71c7fe74948f0f310c30f75f48a8dc94e16f19147f",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u004781_e0_m019123_1793336393847767628.pt.receipt.pt": {
+      "sha256": "376432229974b2aa09ba0308121fcc2343b8ee4edbd56741e58c10ec68c9011b",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u005000_e1_m000876_1793339534192642504.pt": {
+      "sha256": "f0a5c397ee7fb0c067022a4ea8c52a1612fb6e66c7465034d9211abfdbf42821",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u005000_e1_m000876_1793339534192642504.pt.receipt.pt": {
+      "sha256": "13847cdd58b189a25c3489961906d4e3433f982e813314b3f21b80656ea6cad6",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u005500_e1_m002876_1793346338976582524.pt": {
+      "sha256": "38f2b9eb02b1a062257e6155bdb36120e641d04f44482c786c93e02c7bef3255",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u005500_e1_m002876_1793346338976582524.pt.receipt.pt": {
+      "sha256": "af9532ea0e749143614c712d97eae740dad2a7985ece57583832cfa648f758cc",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u005733_e1_m003811_1793349233352028624.pt": {
+      "sha256": "c7b0ad9ec1f446e89afb98d4b6e008fe61812e1754980526c720c03848cef9bc",
+      "bytes": 2264999
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u005733_e1_m003811_1793349233352028624.pt.receipt.pt": {
+      "sha256": "8e98cef1e234e22bb0a5eacbdf07ac0d225eb0ae1f471486591512d156d7138f",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u005733_m003811_6f76cb4fe0.pt": {
+      "sha256": "0c6c4e26b21f9ea2d586940ada26296c054a9fbfb3c8c9b0b9589d434ca79caf",
+      "bytes": 2264999
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u005733_m003811_6f76cb4fe0.pt.receipt.pt": {
+      "sha256": "70da1807ea206b795523d4d546f68be5a2979de0f019b219377d86d7ec8d9362",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u006000_e1_m004876_1793355558589945640.pt": {
+      "sha256": "638e9750fdfdc0388ebaec48741c45c5adb4e8cffc715de97b9f438857a5dce7",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u006000_e1_m004876_1793355558589945640.pt.receipt.pt": {
+      "sha256": "88756ea96aa56eb344066e8039a4b9cdeb1ec2cb50d2b62c0ed24e214876741b",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u006225_e1_m005776_1793358648357545340.pt": {
+      "sha256": "4ac2990509a8dad64b0e5df4880d554c0ef728d4fc0ead4e2d911970ce097f3b",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u006225_e1_m005776_1793358648357545340.pt.receipt.pt": {
+      "sha256": "5cd2e38af5b1ac39c214973ed7039195e6482a16db12005e86bc592a90265cb9",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u006225_m005776_e5359316f6.pt": {
+      "sha256": "f5f6b49de9ea81368992287e182e32fce0ddb07b3b0952de73f724c744844fb8",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u006225_m005776_e5359316f6.pt.receipt.pt": {
+      "sha256": "130c55d00d5fe5d9958985ca973e7d5b3ac38f024a33da6d3a54357a85c2a151",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u006500_e1_m006876_1793414683611526182.pt": {
+      "sha256": "45b7256fa2897af16322aa4d26982c9e1e518f7753c466a97f597fa2e9ee6973",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u006500_e1_m006876_1793414683611526182.pt.receipt.pt": {
+      "sha256": "31ef75e9da76015063cd36f326326c58a39a7ee50e4837c1feb4df18e47f9e43",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u007000_e1_m008876_1793422248078421164.pt": {
+      "sha256": "8b6883a49669a0f65e02665758b5c5bf1872f3050e445b2cd9eda7d6d96c1113",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u007000_e1_m008876_1793422248078421164.pt.receipt.pt": {
+      "sha256": "e2d94773f04137b7e898d8248471ca5f355e9274d690e109d63a955c48daf92d",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u007390_e1_m010437_1793427337652993568.pt": {
+      "sha256": "28797cab457463217b12a4624f8100cefdeafda3be0aac75bcce947eab820947",
+      "bytes": 2264999
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u007390_e1_m010437_1793427337652993568.pt.receipt.pt": {
+      "sha256": "932da3f63c37da80292406b178e09e0760c25cdcac70ee1794099b2d2e34f387",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u007390_m010437_17176d7e84.pt": {
+      "sha256": "02b5f62b50ed4256d0b54a740fbfedf2ca786c415f073db3c4138a26f5da3a29",
+      "bytes": 2264999
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u007390_m010437_17176d7e84.pt.receipt.pt": {
+      "sha256": "d803b5b0c49e6fbf936fcd20ebe9fdf678998c2110bb46b15a158594b6bc5a20",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u007500_e1_m010876_1793436448551531197.pt": {
+      "sha256": "90455ef1f546692e635ba6911a5c187cdd99a2b6486cf6ff4e9d3db3b62d8d2e",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u007500_e1_m010876_1793436448551531197.pt.receipt.pt": {
+      "sha256": "8a6c4bd4c9d2ed75d32e6cd09abe58bf1bad281757b5ac577d3dadb9acdf4a40",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u008000_e1_m012876_1793443550119677629.pt": {
+      "sha256": "eae1912a107668953e0958c483fa32c5e6a2ba3467339b5dcc89ba3851666ed3",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u008000_e1_m012876_1793443550119677629.pt.receipt.pt": {
+      "sha256": "940437487d72767718ae51f2278eb0f1b08f22fbf35ea57f8f6d7064186080ab",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u008500_e1_m014876_1793449950938175107.pt": {
+      "sha256": "13d68c2266639fc303ba24a8342dcec0e29d1e90c0291954070dcc44b46bc343",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u008500_e1_m014876_1793449950938175107.pt.receipt.pt": {
+      "sha256": "55e7c70894e7b57a6c174a38cdcb9d56acedb014fef5128b9d0dc6b05e9e6694",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u008523_e1_m014971_1793450274992582809.pt": {
+      "sha256": "6f5ace0b90440633f07b20fc5875f1bbed4dade3316f0fbc37b913e317177fb9",
+      "bytes": 2264999
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u008523_e1_m014971_1793450274992582809.pt.receipt.pt": {
+      "sha256": "36745c2300a5da1f9f2915b8eb3e08b556eac369ec500c73086f33470fe8a633",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u008523_m014971_5992d330c5.pt": {
+      "sha256": "16d169252a868b9ab092840cdc0d2488e4a29a5ddce96bf18bd1aea373e0e1e2",
+      "bytes": 2264999
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u008523_m014971_5992d330c5.pt.receipt.pt": {
+      "sha256": "425c81729208bdfce1a7c3a0a47a2f33310556bf48a072881a53252bfb85b678",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u009000_e1_m016876_1793504648413181235.pt": {
+      "sha256": "7a39314c7f819c780c5cc9a549c320801d8d01649d2d93f74f0fba35ec50e8b0",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u009000_e1_m016876_1793504648413181235.pt.receipt.pt": {
+      "sha256": "4273e433d2a866563158c46d9de5180ef671ba24071ceb35f105085dd254b2ec",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u009500_e1_m018876_1793510585941850655.pt": {
+      "sha256": "73bf348ea5c0bcd5a87854e3e74043474e82860d695eaf332ee562d9a07f4691",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u009500_e1_m018876_1793510585941850655.pt.receipt.pt": {
+      "sha256": "2efe503d0add89faf0fc4a64d3c11b6e6c647d16000ef25a814a72b473bdd722",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u009562_e1_m019123_1793511364732520373.pt": {
+      "sha256": "5d73c2e76e827c9a0eb2bba954bee9615024fd1e095d02d2fe93ea925b5f1c6e",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u009562_e1_m019123_1793511364732520373.pt.receipt.pt": {
+      "sha256": "6000a01338eb0c194fdad6fb544bae2abe73868d65507ca1443cd706f1d8877a",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u009562_m019123_1d99b39859.pt": {
+      "sha256": "b19dacd76ee5861a05d6f915e4d096250d36d7280bc3701dbf5e99e1430b038a",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u009562_m019123_1d99b39859.pt.receipt.pt": {
+      "sha256": "32ed28a87d29c8e0d6e74f42978ffba5301e67e3ced1146591b5c4b832351cb4",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u009562_m019123_6368168997.pt": {
+      "sha256": "2bd6be48dfbd79afaa994c73a6fa0561949843b6dcd94c2820a6dde723b360e6",
+      "bytes": 1910679
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u009562_m019123_6368168997.pt.receipt.pt": {
+      "sha256": "6062b0da35b7dc16855f28d39db1336913e206c5858647dcafdb57a554b89a8d",
+      "bytes": 1517
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/console/21732740b5ef.log": {
+      "sha256": "a5b8586a18b5644f608a9e2c2d84fcd3470bb9e47e2a9a7bfffc0cc4d9ed1a7d",
+      "bytes": 8651
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/console/2c6e976847e3.log": {
+      "sha256": "129edf57ad4647c9ec94b48a280ba3e9b22bb8f04befced1f70f4cd78a5fb2f5",
+      "bytes": 1271571
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/console/5a386b6d1a22.log": {
+      "sha256": "8373172ad7f85986a7493762b6b5c3423159c4035903b9324327bae89fb2caaf",
+      "bytes": 572417
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/console/6bc1ddcfeaec.log": {
+      "sha256": "06369beea9bc50fa56174cdc456afcfe4899cdee6ae10fafd47d6cc339dbce84",
+      "bytes": 1325619
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/console/77d16823747d.log": {
+      "sha256": "93822768ff07ce80ad19a0a344721b38f1731bac565769a95d6ed0b5daa3ec6a",
+      "bytes": 1572691
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/console/7a437891fc1b.log": {
+      "sha256": "ae1e647c596591eb00ca3db77be575021d3d9eeffe4df48252bf2df460f1f74d",
+      "bytes": 2202830
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/console/b95f476d5c40.log": {
+      "sha256": "3909c4324f58f63d18c23e93dbaf27cf0316231d2b5871b45cfde5f21c70c7f4",
+      "bytes": 1168268
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/console/c751da68e9e9.log": {
+      "sha256": "47e0815dd6729a9a9e27ecc46a2f6fe0e78d534bbf9085edccb173ac7d657a9d",
+      "bytes": 1920420
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/console/e957eb87a0f5.log": {
+      "sha256": "97dc7b511a10089f5eaa8caf8c790423ccd827c33921cc3b8bd51bb0b251601b",
+      "bytes": 441970
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/control.jsonl": {
+      "sha256": "fd7399a40533f0cf3b86e7d32db118fc65a640bceb5e0d9085a64cc5fc9f496b",
+      "bytes": 2923806
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/execution.json": {
+      "sha256": "9de2da91b104d6fca28a223d76f0d5c8aae2078b6c5243b6d13e9b7058b30cf6",
+      "bytes": 8003
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/prelaunch.json": {
+      "sha256": "7a34b46ddf3cb555c3e9caa84e9914b8eb5ac1cba727cfef0d6d8ce6fbaffa27",
+      "bytes": 160
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions/2c6e976847e3.exit.json": {
+      "sha256": "d3cb5c06f208998aa9c60235eefc3f514a2fae27e88a573ec84f753402e66f8d",
+      "bytes": 576
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions/2c6e976847e3.exit.sha256": {
+      "sha256": "97e78909ea83c07d998720c697bac376f21d6d8a48afc5d88ed00c7579074730",
+      "bytes": 64
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions/5a386b6d1a22.exit.json": {
+      "sha256": "eaa7c826f453a0820ef00be4102a68bd96fb783617c098b3331f9a4459b2a39b",
+      "bytes": 578
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions/5a386b6d1a22.exit.sha256": {
+      "sha256": "66190dc0bb24400f2dadb66c9672d0d25e6bae99a8b7fde13ae3b55a611a1063",
+      "bytes": 64
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions/6bc1ddcfeaec.exit.json": {
+      "sha256": "b0efc2cd6d8589a5a89e4bba122eebee6f6fda5c6be51e0bca928b9f086f089e",
+      "bytes": 575
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions/6bc1ddcfeaec.exit.sha256": {
+      "sha256": "feb68570ec865efda0e386cfb3a262c8970673bd782efa9d73de08b0954f13da",
+      "bytes": 64
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions/77d16823747d.exit.json": {
+      "sha256": "d769f90850c8695828664bd9d7dd5d171fc404ddae013983d3c4358ae8a2e459",
+      "bytes": 557
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions/77d16823747d.exit.sha256": {
+      "sha256": "ce278ba18a621f14b153e31f326ae301b7ad54bc76d390478692f861620edee7",
+      "bytes": 64
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions/7a437891fc1b.exit.json": {
+      "sha256": "3eb996f81fe5ef9f334b045b3aaaba3af4d00f7a38383e369ba823be50eb2c32",
+      "bytes": 570
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions/7a437891fc1b.exit.sha256": {
+      "sha256": "3e87655be0128cf7ac1bdfccf834a4093ee95d41f5cc9798ed8129a7fc98b778",
+      "bytes": 64
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions/b95f476d5c40.exit.json": {
+      "sha256": "fcb3e4ab131c31e10ed132095e62dcdbaf8cd0153304c9e49c8f4b11a411c435",
+      "bytes": 574
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions/b95f476d5c40.exit.sha256": {
+      "sha256": "f65df153bd966313023201a6de974dba3bb53c4cb6fd306a25ecdbaa3407e91e",
+      "bytes": 64
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions/c751da68e9e9.exit.json": {
+      "sha256": "f23a7cd24b2ad791cce01f4d428403aa59d40544011670eb4a8cc01e1a8d175e",
+      "bytes": 572
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions/c751da68e9e9.exit.sha256": {
+      "sha256": "e6f23bcc155d0e1d1085ff520e2577c97967a814c993576721c6262b8e51693f",
+      "bytes": 64
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions/e957eb87a0f5.exit.json": {
+      "sha256": "856952567c037f019f01fc4092573254ca27b169b04617b15ddf35db98e43073",
+      "bytes": 574
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions/e957eb87a0f5.exit.sha256": {
+      "sha256": "6c828498b3b446c48439452d1107474fecc25c4a7bdee398d970ab5700125b50",
+      "bytes": 64
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/status.json": {
+      "sha256": "b0d4d2364cf44e4fe99b285ef20e88663a0e15454e8d31fd33fcb8320762389d",
+      "bytes": 1766
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/stop.request.handled_21732740b5ef": {
+      "sha256": "a4da6b35e50a20383057ec82c245e0213fa37bdc5bdcacd22c6308aee50c2d74",
+      "bytes": 57
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/stop.request.handled_2c6e976847e3": {
+      "sha256": "5edbcb412b08b2af64657c6ca62bd5d1fc2b1d9f1aaeb8b29936354aef866e15",
+      "bytes": 57
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/stop.request.handled_5a386b6d1a22": {
+      "sha256": "6129c85ea3dd1608251e18eb3084d304b93a16ab48d05bfb58e13c17b4fb473d",
+      "bytes": 58
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/stop.request.handled_6bc1ddcfeaec": {
+      "sha256": "0cd4bd2b009f2f3fff5064a1d5ceb2731b9d1734ce6aa31d641430880d841cbf",
+      "bytes": 58
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/stop.request.handled_7a437891fc1b": {
+      "sha256": "8e8c5f5a9cceb901cc5d88da001d4d41ef2a814f4ed8348cc8bb9b65743d6dbe",
+      "bytes": 58
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/stop.request.handled_b95f476d5c40": {
+      "sha256": "07cf725143b117229d4d005cbf50395324b1bfb9c5d689c251ece5fba46b1d3c",
+      "bytes": 57
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/stop.request.handled_c751da68e9e9": {
+      "sha256": "77236501df984fac6d5d91569d68b8a3c6788e8e9333fd829a725021c5e2c9b2",
+      "bytes": 58
+    },
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/warmup_gate.json": {
+      "sha256": "5459b6aecf8e7099a6989f5b1446aa378fa6188def98bf7c46f8f5bc14e2851a",
+      "bytes": 5640
+    }
+  },
+  "directories": [
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/source_before",
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints",
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/console",
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/sessions"
+  ],
+  "source_manifest": {
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/bev_coordinates.py": "c69e0466c1b63b42621042f073e8728f1270cdcca55e327810eb1124e56d3cb5",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/joint_runtime.py": "9fe1674f790fad5334641ddae9f4f7241f47b289dd4adf68b7b2676e43553f54",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/language_encoder.py": "93d3240c40f3fa59a8eda85460cb0eb038d77de71a0d097c6b885e1a9fd17478",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/low_memory_dataset.py": "59cadce7ce1b54d91e003e5de3d0c23285b7d7dca31d025e6ede96e7a2f064e5",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/micro_training.py": "97f3c671d729d69d909bfca0c29a4f6f97e501506e6481823fc92b8a6f6158ca",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/spatial_annotations.py": "95844b510ce445a33f93e76fc9d1b0028db19381a7386a47a1188044a328e513",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage2/spatial_v3_model.py": "f8efa6507dd105db00a5d06f48dfdb8c3e15a47ec2e94f89025ef2474778d3ea",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_daily.py": "051d64b4a94bd543639ebaf00966e3ec86b988209d228f0eb09ab33bcb55f9c7",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_daily_acceptance.py": "1c0d3dc2479c0a2d7f0f55e14e65013a352c9aed9e2667923b35b05366ca7b09",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_daily_metadata.py": "713d901d6dd7972152ccecb28b9062d5d9bad1abcde0a00f8225185a9a0b2677",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_daily_state.py": "e01b0cfec991976691974a636980d79c0d5240f21751137920d9aa19e540ea19",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_data.py": "d6ac56d2698c4c54a6c432c4268a6853b0c672fc103b48ab6cf4130c10bf291f",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_audit.py": "7b1268c77482ecb7c77561ed22d331b6770513c8fdef47f9716705bd3586dfdf",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_cache.py": "9b730d4ff61ef34de6aef539aba43cbcfba6f863043242e01c1dd9e092fa5f03",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_data.py": "5c2445ac6ce86c9f0345a6cdfedad32680d67278e553ee1cabc4a23aab8cf7a6",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_determinism.py": "bd1f7ad41b6465ed999e6eb0e8ad0902c1818fd8772ae4d025bfaeaa469ec48b",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_dynamic_cuda.py": "c3c520a03f1b5c024c3a3bbe3cebb14a310a97a48b2ecaa50f6a6dffa93c3410",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_evaluate.py": "b8e60ea5e7dcd1f903e1895e67a5d5e159594bfddd102a27351e5bf7c7b57c9e",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_fast_verify.py": "8135fa88ab5901392da52f7a6b21863e67f6d1310b51754e061f6511e31ee057",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_full.py": "f704222c389b0d33c7f3f65ad6630c8a4c69ac6ed8ab844d2845f87e7f230854",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_loss.py": "125b8a51774416bff8ddc196188d66401af3b813e57ea2724a2a63eeeb459ce4",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_metrics.py": "94b273120904ce332288e667b9a2c5eda108dde7cd091a93ba500ec850eabfc0",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_native.py": "f592fc0e5f9ac4ac3422848f6543e1ea03f52965b36ea128d8889ecafca1d04d",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_recovery.py": "38bdf6d5420bd83455e54ab8839f7a4708173c5abaaaaba9e647747bc1913633",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_run.py": "55004ba752bead9e4737733001e927e9147db9beb0859a8023f2f5fe545c31d6",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_engineering_train.py": "af9d87468bbdbbd1d89ad929ab605e94ef51059370fea676c7066d3e2c9d3a82",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_native.py": "c5d658f23121a9090fd3ed66f49bf9722a3f8e3ea7a125dc42a085cad45c3050",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_prototype.py": "91f468b93a83164e232a3b2aaf144c5c877bd778f4b08c1486863ed91fe34665",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_session_admission.py": "28dc880d5322e6b73c2442cd5b73fc6edb013d91b10c8b941e8a96b9f48c4cd6",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_session_control_test.py": "afe92250ac2b945bd7cfc2328617c8300b46ac32f27baa6697da4568ab1c154b",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_session_logbook.py": "b366fc992b05f658f1be3f49d8263c999fe10c254374848bd8567ffd4f4bc255",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_supervision_space.py": "4298d32cbbd30f5f6f812bb8b51bd6e0c95f00eaa396721023c559401b398c66",
+    "/home/jjx2003520/projects/bev_vla/scripts/stage3/lg_bev_v3_acceptance.py": "93f9fa0714e9676d894638c9e5932e4a678ad2e04a09e41f0b3257c6b68482e4"
+  },
+  "shared_catalog_sha256": "36ce11864227b8f5a73d032c54291f77d926311ca623eb5bfa436bdf0e9dd2f9"
+}

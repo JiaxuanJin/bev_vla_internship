@@ -1,0 +1,438 @@
+{
+  "scope": "现有文件与标量一致性、Checkpoint SHA及引用核查；未计算新指标、未推理、未运行测试",
+  "observed_at": 1793609531.9642227,
+  "perception_table_complete": true,
+  "csv_matches_existing_metrics_json": true,
+  "comparison_group_keys": [
+    "baseline/correct",
+    "a_only/correct",
+    "enhanced/correct"
+  ],
+  "existing_rows": [
+    {
+      "模型": "Baseline",
+      "范围": "固定8帧诊断，非Development",
+      "相关检测AP@2m_xy": "0.8438523662551441",
+      "相关检测AP@2m_xy变化_百分点": "0.0",
+      "无关检测AP@2m_xy": "0.9366734657474463",
+      "无关检测AP@2m_xy变化_百分点": "0.0",
+      "相关分割IoU": "0.45608315081999296",
+      "相关分割IoU变化_百分点": "0.0",
+      "无关分割IoU": "0.42823871166709654",
+      "无关分割IoU变化_百分点": "0.0"
+    },
+    {
+      "模型": "A9562",
+      "范围": "固定8帧诊断，非Development",
+      "相关检测AP@2m_xy": "0.8438523662551441",
+      "相关检测AP@2m_xy变化_百分点": "0.0",
+      "无关检测AP@2m_xy": "0.9366734657474463",
+      "无关检测AP@2m_xy变化_百分点": "0.0",
+      "相关分割IoU": "0.45608315081999296",
+      "相关分割IoU变化_百分点": "0.0",
+      "无关分割IoU": "0.42823871166709654",
+      "无关分割IoU变化_百分点": "0.0"
+    },
+    {
+      "模型": "StageB256",
+      "范围": "固定8帧诊断，非Development",
+      "相关检测AP@2m_xy": "0.8438523662551441",
+      "相关检测AP@2m_xy变化_百分点": "0.0",
+      "无关检测AP@2m_xy": "0.9366734657474463",
+      "无关检测AP@2m_xy变化_百分点": "0.0",
+      "相关分割IoU": "0.4563129190330716",
+      "相关分割IoU变化_百分点": "0.022976821307862938",
+      "无关分割IoU": "0.4282557864047893",
+      "无关分割IoU变化_百分点": "0.0017074737692746034"
+    }
+  ],
+  "identity": {
+    "Baseline": {
+      "role": "原作者联合模型旁路Adapter，绝非零更新候选A0",
+      "native_checkpoint": "/mnt/g/nus/bevformer_small_joint_author.pth",
+      "native_checkpoint_sha256": "1345919901785b8df7ee16838d62f9f7a00444c9d8061f0dbee712d1b1b67dcf",
+      "frozen_model_sha256": "ba1b1870e0a60d25158ce66898a9531cce42dadd15fa09be5c75baf06f069ab5",
+      "attention": "N/A"
+    },
+    "A9562": {
+      "path": "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u009562_m019123_1d99b39859.pt",
+      "file_sha256": "b19dacd76ee5861a05d6f915e4d096250d36d7280bc3701dbf5e99e1430b038a",
+      "receipt_sha256": "32ed28a87d29c8e0d6e74f42978ffba5301e67e3ced1146591b5c4b832351cb4",
+      "execution_sha256": "9de2da91b104d6fca28a223d76f0d5c8aae2078b6c5243b6d13e9b7058b30cf6",
+      "adapter_sha256": "5db7c4105bb9b138773ec249b7f47641ccddc16bb64d3a3b11ebb297ce7dfe81"
+    },
+    "StageB256": {
+      "path": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101/checkpoints/1793586093365436391_6b94c545_end.pt",
+      "file_sha256": "fd0bead6f70aff8eac103817ea1059b4e598c59b4c59c2c04bf6b77ff1636621",
+      "adapter_sha256": "5c2e509b6c3ad8dcc7c2eb71cd2b7da1656adfc40fa8a1404c6383cbb71e45ee"
+    },
+    "A0": {
+      "path": "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_acceptance_v3_20261028_v1/checkpoints/B_u000000_m000001_e4660011d5.pt",
+      "file_sha256": "737b8dded2aabc340572d46c86d36515e9496b38c69e83c9554f2a0dfc17bb8d",
+      "receipt_sha256": "a9be0d3eb6f544bab81b964036521ab3c4b0aec75cb880745bce2d3afa7584ff",
+      "execution_sha256": "a30f9a7f9735bfcd36c04bd9a952b6492093b785fbe6ddd7cd4d49ba7208c5e3",
+      "adapter_sha256": "bc6e34dd4def828420d94b147a61a57a0b4f2d5c3a6e6f60512d301d58a2bc8f",
+      "role": "独立零更新Attention初始化参照，不是感知Baseline"
+    }
+  },
+  "checkpoint_checks": [
+    {
+      "role": "Baseline",
+      "path": "/mnt/g/nus/bevformer_small_joint_author.pth",
+      "sha256": "1345919901785b8df7ee16838d62f9f7a00444c9d8061f0dbee712d1b1b67dcf",
+      "bytes": 774591208,
+      "matches": true
+    },
+    {
+      "role": "A9562",
+      "path": "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u009562_m019123_1d99b39859.pt",
+      "sha256": "b19dacd76ee5861a05d6f915e4d096250d36d7280bc3701dbf5e99e1430b038a",
+      "bytes": 1910679,
+      "matches": true
+    },
+    {
+      "role": "StageB256",
+      "path": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101/checkpoints/1793586093365436391_6b94c545_end.pt",
+      "sha256": "fd0bead6f70aff8eac103817ea1059b4e598c59b4c59c2c04bf6b77ff1636621",
+      "bytes": 1183429,
+      "matches": true
+    },
+    {
+      "role": "A0",
+      "path": "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_acceptance_v3_20261028_v1/checkpoints/B_u000000_m000001_e4660011d5.pt",
+      "sha256": "737b8dded2aabc340572d46c86d36515e9496b38c69e83c9554f2a0dfc17bb8d",
+      "bytes": 777265,
+      "matches": true
+    }
+  ],
+  "evaluation_protocol_sha256": "b3ec763488158d2624ebb009f3c5b75fc341f8b517e6ffa92496a12a5b90841b",
+  "metrics_json": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101_unified_eval_20261102_diagnostic/metrics.json",
+  "metrics_json_sha256": "515de677142087dbf7ffeb2b05a0da883754714d71f295de46777146b70ec64c",
+  "csv_sha256": "45d92451ece7937bcd1cc934549bb5dc9287f96159a8d46053775f893a03b6d3",
+  "field_mapping": [
+    [
+      "相关检测AP@2m_xy",
+      "Relevant_Detection_AP",
+      "AP@2m_xy"
+    ],
+    [
+      "无关检测AP@2m_xy",
+      "Irrelevant_Detection_AP",
+      "AP@2m_xy"
+    ],
+    [
+      "相关分割IoU",
+      "Relevant_Segmentation_IoU",
+      "mIoU"
+    ],
+    [
+      "无关分割IoU",
+      "Irrelevant_Segmentation_IoU",
+      "mIoU"
+    ]
+  ],
+  "link_checks": [
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/四阶段任务交付审计_2026-10-26.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/README.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage2/17_第二阶段复现指引.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/scripts/stage3/README.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage1/03_基线性能测试报告.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/weekly_report_2026-10-26_to_2026-10-30.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/lg_bev_formal_training_protocol_2026-10-27.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../images/2026-10-12/drivelm_bevformer_joint_01.png",
+      "exists": true,
+      "kind": "本地引用",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../images/stage2/stage2_audited_architecture_20261022.svg",
+      "exists": true,
+      "kind": "本地引用",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage2/11_模块架构设计.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage2/23_空间指令监督与评估修订_2026-10-26.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../images/2026-10-12/drivelm799_seg_comparison_000.png",
+      "exists": true,
+      "kind": "本地引用",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage1/03_基线性能测试报告.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage1/07_DriveLM799分割根因排查_2026-10-19.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage1/08_BEV分割空间协议与独立复现_2026-10-20.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../images/stage2/stage2_evidence.svg",
+      "exists": true,
+      "kind": "本地引用",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../../results/stage2_delivery_2026-10-23/figures/training_loss_20steps.png",
+      "exists": true,
+      "kind": "本地引用",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../../results/stage2_delivery_2026-10-23/figures/ab_metrics_6frames.png",
+      "exists": true,
+      "kind": "本地引用",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/README.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../images/stage2/step62_divider_overlay.png",
+      "exists": true,
+      "kind": "本地引用",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage2/26_第二轮空间对比监督与独立留出评估_2026-10-26.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage3/03_V5语言条件耦合与最终探索结论_2026-10-26.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/weekly_report_2026-10-26_to_2026-10-30.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/lg_bev_formal_training_protocol_2026-10-27.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+      "exists": true,
+      "kind": "本地引用",
+      "git_tracked": false
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md",
+      "exists": true,
+      "kind": "本地引用",
+      "git_tracked": false
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/README.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage1/03_基线性能测试报告.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage1/07_DriveLM799分割根因排查_2026-10-19.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage1/08_BEV分割空间协议与独立复现_2026-10-20.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage2/11_模块架构设计.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage2/16_阶段二实证汇总_2026-10-21.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage2/23_空间指令监督与评估修订_2026-10-26.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage2/26_第二轮空间对比监督与独立留出评估_2026-10-26.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/stage3/03_V5语言条件耦合与最终探索结论_2026-10-26.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/weekly_report_2026-10-26_to_2026-10-30.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "https://github.com/JiaxuanJin/bev_vla_internship/blob/main/docs/lg_bev_formal_training_protocol_2026-10-27.md",
+      "exists": true,
+      "kind": "GitHub链接的本地镜像，未检查远程发布",
+      "git_tracked": true
+    },
+    {
+      "document": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+      "target": "空间注意力对照.png",
+      "exists": true,
+      "kind": "本地引用",
+      "git_tracked": false
+    },
+    {
+      "document": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+      "target": "Attention指标对照.png",
+      "exists": true,
+      "kind": "本地引用",
+      "git_tracked": false
+    }
+  ],
+  "installed_environment_reference": {
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "mmcv-full": "1.7.2",
+    "mmdet": "2.28.2",
+    "mmdet3d": "0.17.1",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "numba": "0.58.1",
+    "transformers": "4.44.2",
+    "nuscenes-devkit": "1.1.10",
+    "matplotlib": "3.5.2",
+    "pytest": "9.1.1",
+    "black": "26.10.1"
+  },
+  "development_v2_authorization_present": false,
+  "source_roles_verified_from": [
+    "core.py::group_bev",
+    "evaluation_20261102/source/eval_driver.py::evaluate_frame",
+    "scripts/stage3/lg_bev_engineering_native.py::NativeRuntime"
+  ],
+  "all_a_only_heads_bitwise_equal": true
+}

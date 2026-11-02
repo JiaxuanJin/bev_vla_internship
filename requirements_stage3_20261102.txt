@@ -1,0 +1,28 @@
+# Stage3 已验证环境版本记录（2026-11-02），CPython 3.10 / Linux x86_64。
+# 本次只记录，不安装或升级。不是跨平台一键安装脚本。
+# torch/torchvision 为 cu128 发行版本；MMCV 与 MMDetection3D 是本地源码构建。
+# 先阅读 docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md。
+# 不得把以下版本号替代现有补丁、CUDA ABI 或源码来源。
+
+torch==2.8.0+cu128
+torchvision==0.23.0+cu128
+mmcv-full==1.7.2
+mmdet==2.28.2
+mmdet3d==0.17.1
+nuscenes-devkit==1.1.10
+numpy==1.26.4
+scipy==1.15.3
+numba==0.58.1
+llvmlite==0.41.1
+transformers==4.44.2
+tokenizers==0.19.1
+huggingface-hub==0.25.2
+safetensors==0.4.5
+matplotlib==3.5.2
+pyquaternion==0.9.9
+Shapely==1.8.5
+opencv-python==4.11.0.86
+scikit-learn==1.7.2
+Pillow==12.3.0
+pytest==9.1.1
+black==26.10.1

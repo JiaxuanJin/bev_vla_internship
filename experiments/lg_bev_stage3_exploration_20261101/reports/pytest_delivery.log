@@ -1,0 +1,53 @@
+........................................................................ [ 68%]
+.................................                                        [100%]
+=============================== warnings summary ===============================
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+  /home/jjx2003520/projects/bev_vla/.venv-bevformer/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:66: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._family)
+
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+  /home/jjx2003520/projects/bev_vla/.venv-bevformer/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:70: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._size)
+
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+  /home/jjx2003520/projects/bev_vla/.venv-bevformer/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:74: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._name)
+
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+  /home/jjx2003520/projects/bev_vla/.venv-bevformer/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:78: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._value)
+
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+  /home/jjx2003520/projects/bev_vla/.venv-bevformer/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._families)
+
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+  /home/jjx2003520/projects/bev_vla/.venv-bevformer/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:92: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._point_sizes)
+
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+  /home/jjx2003520/projects/bev_vla/.venv-bevformer/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:102: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._property)
+
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+  /home/jjx2003520/projects/bev_vla/.venv-bevformer/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:127: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    self._parser.parseString(pattern)
+
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+  /home/jjx2003520/projects/bev_vla/.venv-bevformer/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:134: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    self._parser.resetCache()
+
+test_metrics.py::test_ap_matches_installed_nuscenes_sdk[hits0]
+  /home/jjx2003520/projects/bev_vla/.venv-bevformer/lib/python3.10/site-packages/matplotlib/_mathtext.py:30: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+105 passed, 18 warnings in 24.60s

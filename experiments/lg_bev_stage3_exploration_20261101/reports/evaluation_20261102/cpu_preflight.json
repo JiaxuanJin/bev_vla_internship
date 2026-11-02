@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "tests": 38,
+  "failures": 0,
+  "source_sha256": {
+    "checks.py": "0f4be4412d0f90040e409376d9dba65eaff601306aae9ba8653ad341136be701",
+    "entry.py": "0e9d6be528ee1c93e5e3f08eae39817e38d51959d324370725ff236de34d4f50",
+    "eval_driver.py": "c4733927e44f7441eb039baf6067b1785100ddd408b29a024195d9c9a26973f3",
+    "eval_metrics.py": "fc21d00309f09774719b6553213a4670440fd64c2b77cb82f9f1ebb335de7c6f",
+    "job.py": "e7e2a33231dce493e9596511ff17675888a906c6e6b702c99756f5690df388a2"
+  },
+  "junit_sha256": "7e0d120f9175212271d69acafdf2dc3fcfc7b1f5d8e0de38344e9c164540c1a9",
+  "development_gt_read": false,
+  "cold_final_gt_read": false
+}

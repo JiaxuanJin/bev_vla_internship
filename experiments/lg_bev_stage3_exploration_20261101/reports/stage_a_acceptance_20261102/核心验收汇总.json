@@ -1,0 +1,313 @@
+{
+  "scope": "复用已通过的8帧GPU诊断原始预测，仅新增统计与图表，无新模型推理",
+  "original_protocol_sha256": "b3ec763488158d2624ebb009f3c5b75fc341f8b517e6ffa92496a12a5b90841b",
+  "checkpoint": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101_unified_eval_20261102_diagnostic/checkpoints/1793595700618089535_296c3d81_end.pt",
+  "checkpoint_sha256": "2f9eb37a20064f11f05e7416f0f3300759db5b37e165b6a7a223825f34cfa97a",
+  "a9562_checkpoint_sha256": "b19dacd76ee5861a05d6f915e4d096250d36d7280bc3701dbf5e99e1430b038a",
+  "a9562_adapter_sha256": "5db7c4105bb9b138773ec249b7f47641ccddc16bb64d3a3b11ebb297ce7dfe81",
+  "historical_A128": {
+    "path": "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/warmup_gate.json",
+    "sha256": "5459b6aecf8e7099a6989f5b1446aa378fa6188def98bf7c46f8f5bc14e2851a",
+    "result": {
+      "status": "GROUNDING_NOT_READY",
+      "tokens": [
+        "ba62d5f518a24c16bdd4c39260d4d1c7",
+        "27182866b4c741f78497b26159e8398e",
+        "1a73670b5844443fa53f5111aef2bcab",
+        "2b25436f135f450c92bbfe4f6f5076ae",
+        "9a9ff278eca1473cbb35c0c95d987e83",
+        "3e4c7d9bd1bb47a383e70083fe9b94fc",
+        "b94e8addd40c47a29949de876aae949d",
+        "14227d4d67a6425d988416a8108a7ae3",
+        "39e97d649a9b4ca0988983bbb2fd8002",
+        "107e16415d004a3b8a56f39947475ec7",
+        "0ce6cfd0370e48ecbff64ad2b148c2f4",
+        "4af6ede8b8534868aadd1b0355c3d8b2",
+        "b93eca10a3ae44e8b33bdcfd89413dc4",
+        "903df5a17fb04ee5bd4c9f8df6d00f7e",
+        "535f2ef475334d1cb7af464b22ffba43",
+        "ba2fcbda14074226aac9e235fb3da163",
+        "90f7ef81fc1448a298a9b360ca57389c",
+        "51ddc58cd4ee4238a1f48ee55125c332",
+        "1977f8ea49504d2fa77076a38f61e821",
+        "7eb5187e225e49a3ad71b5c64533472a",
+        "42895151ac404712b4ea0486d070fe94",
+        "f27f8abbe8d04e53a4ae13973a6eef74",
+        "82a88b64c2d542e5867a02683c0e513c",
+        "8034fcccce954b4ba926d5d23bcda7df",
+        "04c6739032994dfca44886329e8cfdeb",
+        "214ea23aad7f446a8a3d425678a431ac",
+        "7dd2356d3f134901afcea7842dd4a1b0",
+        "4f7273a9ea1d4aa59f71e8e881beb27c",
+        "5b99949d545f4971add2d34c43576482",
+        "04fdfebbf5a041edac1db9097a7e82e6",
+        "49f28771bc3849dc8f504bd97ff6eb7f",
+        "614e9290a88143cf844fae01bdbcef6f",
+        "538a705eb09e4b63a34c431a27838b8e",
+        "7d036240624b48c3a78934c962581333",
+        "010e89fb301448cf8ff08723f513738a",
+        "9da4f3f3b437499293bd88f442a98cbe",
+        "5a047025438e475d8c17fef1151b4e48",
+        "a10578fadcd24a9db6698b015c1438d5",
+        "64f62d9d84a54c61a3a8c78604bb7036",
+        "1298a372c23745ef95c6b1071ae1b2bc",
+        "95619e3927234382802b13a3942cea07",
+        "54393ef94bd640f6ba714558ff3a85ea",
+        "e4299084285843db9970521e8b7212a0",
+        "b4437279beaf4738b3cd051d2bcaff55",
+        "71682cb8a436477ea7cc057599206c4c",
+        "b7e83dba15fc48e894717e1a0a0ea2f2",
+        "98021fc238e04523891345bdc307a750",
+        "7a32b94d298d4a7fa22ca1c4e2158aed",
+        "a4560a3ded0b49ebb2a0bb5bfd7e42c6",
+        "27463499352b4c1291346bf9ba3839fb",
+        "6a0d2b02899e4d919a8e724d453d09c7",
+        "3402a5670edb4b0ea931e45afaf4aa8b",
+        "83836716af8e4fd59cd2669fb9ff1631",
+        "7d25b827b18c40358656d2b30f3dd64e",
+        "63e39f83ae0e414fad8cb4019aa82574",
+        "1237dcc5f970483ba9b77c5d52ccb460",
+        "03d3756a7cc041f98da355e27f7622cd",
+        "67962770479b47cfbecbd4619a0110be",
+        "1f8cde6768f44a2fbcd26d3e960bf127",
+        "5a8a1460775e471cb5d320bc9f50848b",
+        "8f8913d84f514e53b5cbd3c3367c1819",
+        "0ca38bc58e514d41ac3315eecb19c143",
+        "952fe3dccc434805a99d4177199e5992",
+        "ba57cf0814574a8d9d5b988f31203c96",
+        "2da016e4cc7645d2bf57948a2c32f324",
+        "699cf22751e64a4789a6d53ccb1b12b2",
+        "3682f33180a44da8b5e6da3ed49ef596",
+        "f40e3e9d1ba0456cbf5fac850cb3e277",
+        "96c25b0bfe634a0981004f36c361241b",
+        "937fd84dfd6d4f1aa0b9718452880dad",
+        "b9b05597308b4c7b874287d392e14c3e",
+        "b50707c212f640719eb3bfd96d725319",
+        "282e361bc8be42b08abe558dc51c4b85",
+        "5434f7b266264f08b021702a0768a222",
+        "e38f2364ce574d9c9789bcab73bedd99",
+        "777bd39dde174fee927050de731df7bc",
+        "9cd8fe18b9ce4662b50277a5e7fd91dc",
+        "f15f55b3d02540398bde9f7208c0428d",
+        "bbda24c669274c19a997c59f3cf54727",
+        "1e72d3e64b394b33b66ec0b895323ac5",
+        "094d5f150aa34c1bbbc357365ce43857",
+        "076fcc0d55aa452f949f4d92e074d50d",
+        "a547fcb9cbe440f7ab341d4d5d827cd9",
+        "36d9e06ab0fa4ed2bc80a839792818f0",
+        "02dab9b1ab4b4acc8c63d07b1eff9c8f",
+        "28f02762d9a9423cb2de31f0305e565a",
+        "3619b3f426e144ad9a7b60b67772bf73",
+        "00fd4e991cda4decb34d1a3c166755f0",
+        "dd8729b05f774a06a500c10779540e95",
+        "1a82ef03fea2490ab1c5dc00f117cd88",
+        "a2da4778f4a84c6f80f44652ce062088",
+        "48d40adb75d040a0aa5c5f79513be0f9",
+        "3ab5a361d231463484de11a2be77a3ca",
+        "29fc05e8aed046a087c854ec2df7b9fc",
+        "3eb1ae1640d84144821f9c8908035580",
+        "e81947adb1304844878ec927aa2b4ed7",
+        "14b5f2ad428e47e09f666c6e1edbfae1",
+        "2341cb7aa5a94336bada2b0ee6c502bc",
+        "4dd0d339becb443d90a2a2deb22d4e15",
+        "266e331936ef41a3b956b03c6c5bc014",
+        "a159f6d30dac4b1a928bb5298ab1b55c",
+        "7fbcd7ef482b427eb22e6ddf910c4913",
+        "73e6bed21a78420aaca5719366b87a41",
+        "add49014fcdd4e9a9860faa9f2734c17",
+        "dc03527e1fa944d78ca0d92a507bee44",
+        "bd3aee38d25d46cd8ff7f14a56ee0ced",
+        "0ff506b999884263ab5e72c6dd2af8d9",
+        "ff2adc80b791401a9247ab53caaf84e6",
+        "e01006e489c94d23bca45c2729042e0d",
+        "82d14b881d2e4eef8be8c3da516d3bc5",
+        "8d80534623e64482b0e7dfbdfc5b70f3",
+        "c9390af3852e48139719a189a9d4df59",
+        "fd8bbd0916c14c6682f58b657ca681d7",
+        "0799ca6861ca490da7cace1abdf66dab",
+        "2d728008d7c640f5ad46139cd3c74bdf",
+        "5bc241e0da6649fca924a960ced35721",
+        "e4f5ad18e92b4c98b28b26d654cf0d29",
+        "0d6a183ff9044f48a355e93a3fe9dc49",
+        "546d42842df1464ca4946cde22d21efd",
+        "557388d2b42b4e22adc6ae99e96912a4",
+        "b7f8c5c6a5554286b4a4fae650a7b799",
+        "7f96d18ff0254002931dfdcc1b4077f1",
+        "351fcb1fab18471bb8b9cf6fb34d0525",
+        "1cf1a2d47b0f437aa437954106596d1a",
+        "3ff9b1801e9c465397bc7ab1565d5a59",
+        "a8ad8de2507846598d1a3403e5a3da21",
+        "8a06e007a8bb4ba090ea96a99f0fdc61",
+        "d4d349f8a8b448a7a64b3933d5e4c3ba"
+      ],
+      "positive_macro_IoU": {
+        "map": 0.1221678496594159,
+        "object": 0.11712482426082715
+      },
+      "target_correct_wrong_logit_gap": 5.459626777663386,
+      "empty_active_fraction": 0.006010515871457756,
+      "identity": {
+        "protocol_sha256": "9de2da91b104d6fca28a223d76f0d5c8aae2078b6c5243b6d13e9b7058b30cf6",
+        "adapter_sha256": "5db7c4105bb9b138773ec249b7f47641ccddc16bb64d3a3b11ebb297ce7dfe81",
+        "updates": 9562
+      },
+      "elapsed_wall_seconds": 141228.39208563
+    }
+  },
+  "diagnostic_attention": [
+    {
+      "任务": "地图",
+      "模型": "a0",
+      "正目标宏平均IoU": 0.007841644745638395,
+      "正目标合并IoU": 0.0073551548371692255,
+      "正目标条数": 4,
+      "空目标条数": 4,
+      "空目标激活比例": 0.7145406249999999,
+      "正确减错误Logit差": 0.015939312947283717
+    },
+    {
+      "任务": "地图",
+      "模型": "a_only",
+      "正目标宏平均IoU": 0.14437665660237484,
+      "正目标合并IoU": 0.0743658636549934,
+      "正目标条数": 4,
+      "空目标条数": 4,
+      "空目标激活比例": 0.016065625,
+      "正确减错误Logit差": 3.4978440560143746
+    },
+    {
+      "任务": "地图",
+      "模型": "enhanced",
+      "正目标宏平均IoU": 0.09713080662256357,
+      "正目标合并IoU": 0.04884476149914821,
+      "正目标条数": 4,
+      "空目标条数": 4,
+      "空目标激活比例": 0.0453,
+      "正确减错误Logit差": 2.4406799798142944
+    },
+    {
+      "任务": "对象",
+      "模型": "a0",
+      "正目标宏平均IoU": 0.0009489654512927048,
+      "正目标合并IoU": 0.000904268145647456,
+      "正目标条数": 5,
+      "空目标条数": 3,
+      "空目标激活比例": 0.6541481481481481,
+      "正确减错误Logit差": -0.004908396234107633
+    },
+    {
+      "任务": "对象",
+      "模型": "a_only",
+      "正目标宏平均IoU": 0.23078864591994766,
+      "正目标合并IoU": 0.1525,
+      "正目标条数": 5,
+      "空目标条数": 3,
+      "空目标激活比例": 0.0070666666666666655,
+      "正确减错误Logit差": 11.203560534781321
+    },
+    {
+      "任务": "对象",
+      "模型": "enhanced",
+      "正目标宏平均IoU": 0.14092933039415526,
+      "正目标合并IoU": 0.11695906432748537,
+      "正目标条数": 5,
+      "空目标条数": 3,
+      "空目标激活比例": 0.006414814814814815,
+      "正确减错误Logit差": 9.712000394787001
+    }
+  ],
+  "paired_instruction_response": [
+    {
+      "任务": "地图",
+      "有效正目标配对数": 3,
+      "正确IoU": 0.01607977736640835,
+      "错误IoU": 0.0,
+      "正确减错误Logit差": 3.4978440560143746,
+      "正确减错误概率差": 0.5152935032900287
+    },
+    {
+      "任务": "对象",
+      "有效正目标配对数": 5,
+      "正确IoU": 0.23078864591994766,
+      "错误IoU": 0.05,
+      "正确减错误Logit差": 11.203560534781321,
+      "正确减错误概率差": 0.6688664034861639
+    }
+  ],
+  "same_class_localization": {
+    "可比较对象指令数": 4,
+    "正确目标强于同类干扰数": 4,
+    "正确相对错误增强目标数": 4,
+    "同类实例记录数": 49,
+    "说明": "像素均值及逐实例记录是定位诊断，不构成唯一实例泛化证明"
+  },
+  "diagnostic_A9562_minus_A0": {
+    "map": {
+      "positive_macro_IoU": 0.13653501185673644,
+      "mean_logit_gap": 3.481904743067091,
+      "mean_probability_gap": 0.5113089415446451,
+      "empty_active_fraction": -0.698475
+    },
+    "object": {
+      "positive_macro_IoU": 0.22983968046865497,
+      "mean_logit_gap": 11.208468931015428,
+      "mean_probability_gap": 0.670092213739819,
+      "empty_active_fraction": -0.6470814814814815
+    }
+  },
+  "baseline_head_identity": true,
+  "original_predictions": [
+    {
+      "索引": 0,
+      "路径": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101_unified_eval_20261102_diagnostic/predictions/0000.pkl.gz",
+      "SHA256": "f7a13d8156838885edd98776e37c2077deffeeeab307aaa3e2bb81d04e4e023a"
+    },
+    {
+      "索引": 1,
+      "路径": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101_unified_eval_20261102_diagnostic/predictions/0001.pkl.gz",
+      "SHA256": "2b14785ba2eb30341b9e63bbde093c4cf54110873b8f1bbb47f4a1c0ff5d00b3"
+    },
+    {
+      "索引": 2,
+      "路径": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101_unified_eval_20261102_diagnostic/predictions/0002.pkl.gz",
+      "SHA256": "667dc9c5070f292dd129a6e5ce7684ec6f2a4d4ac0c5e04ee1f08c473037934d"
+    },
+    {
+      "索引": 3,
+      "路径": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101_unified_eval_20261102_diagnostic/predictions/0003.pkl.gz",
+      "SHA256": "f3095eb2c368bf81880ede145f586f586fa8eed1ee7e6959c50c569bfb57c246"
+    },
+    {
+      "索引": 4,
+      "路径": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101_unified_eval_20261102_diagnostic/predictions/0004.pkl.gz",
+      "SHA256": "0bbf4ad5be47bb34b07430994d1bb4cb507b89bf67e6910c0e4f7f8798668c56"
+    },
+    {
+      "索引": 5,
+      "路径": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101_unified_eval_20261102_diagnostic/predictions/0005.pkl.gz",
+      "SHA256": "53c6147bcf38905cf56988305b95dffe030d25f958a67515f943a88cdf2155a8"
+    },
+    {
+      "索引": 6,
+      "路径": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101_unified_eval_20261102_diagnostic/predictions/0006.pkl.gz",
+      "SHA256": "c24406e1295b5f4936dbdb5485fa8ed7f43db060c399b3f0d36742f4adfb000b"
+    },
+    {
+      "索引": 7,
+      "路径": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101_unified_eval_20261102_diagnostic/predictions/0007.pkl.gz",
+      "SHA256": "f567214572012477d3c4c5ec92b818d693f543c84e281a93702625bd7fb14419"
+    }
+  ],
+  "visualization_examples": {
+    "object": {
+      "token": "b510deca46e4452895e071b7f3317343",
+      "instruction": "b510deca46e4452895e071b7f3317343_object_0_rear_left_all"
+    },
+    "map": {
+      "token": "b510deca46e4452895e071b7f3317343",
+      "instruction": "b510deca46e4452895e071b7f3317343_map_1_rear_left_nearest"
+    }
+  },
+  "formal_acceptance": "GROUNDING_NOT_READY，未通过；保持原状态",
+  "development_inference_frames": 0
+}

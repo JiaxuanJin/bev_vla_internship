@@ -1,0 +1,31 @@
+{
+  "scope": "只补报告溯源并新增缺口检查记录",
+  "updated_existing_files": [
+    "docs/final_report/BEV_DriveLM_项目总结报告.md"
+  ],
+  "existing_stage_a_artifacts_unchanged": [
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/有效指令配对.csv",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/同类不同位置实例.csv",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/逐指令定位.csv",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention对照.csv",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/生成日志_第二次.log",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/汇总既有结果.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.pdf",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.png",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/生成日志.log",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.pdf",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收汇总.json"
+  ],
+  "logbook_unchanged": true,
+  "no_training_inference_metric_recalculation_or_test_suite_run": true,
+  "development_v2_still_unauthorized": true,
+  "files": {
+    "docs/final_report/BEV_DriveLM_项目总结报告.md": "07f5d8f4f9ddfbaafdea31522aa7e6d144fc4d863bc03f52c72e4b5daf919a47",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/交付缺口检查.md": "61247b439a80e5e3a82270236c63455222003d768be088a6840f7affa2301081",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/GitHub待提交候选.json": "99df14f6667aa16df557f092821c6eba7d418906964073e6881022b0aec1347a",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/核查记录.json": "55f64cbfd524e751c28e4a25e434d29588530be94dee134a7c495e360f861fe7"
+  }
+}

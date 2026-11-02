@@ -1,0 +1,6 @@
+{
+  "scope": "只读核对新run从A9562独立初始化的共同前缀；不执行额外训练",
+  "compared_microsteps": 7,
+  "all_equal": true,
+  "max_loss_abs_error": 0.0
+}

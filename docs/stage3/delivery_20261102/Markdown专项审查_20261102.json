@@ -1,0 +1,1267 @@
+{
+  "date": "2026-11-02",
+  "phase": "文档专项审查完成、精确暂存和Commit之前",
+  "passed": true,
+  "original_markdown_count": 14,
+  "markdown_count_including_this_report": 15,
+  "original_markdown_changed_count": 11,
+  "markdown_checks": [
+    {
+      "file": "README.md",
+      "headings_checked": 13,
+      "parsed": true,
+      "fences_tables_lists_links_checked": true
+    },
+    {
+      "file": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "headings_checked": 53,
+      "parsed": true,
+      "fences_tables_lists_links_checked": true
+    },
+    {
+      "file": "docs/logbook_2026-11-02.md",
+      "headings_checked": 6,
+      "parsed": true,
+      "fences_tables_lists_links_checked": true
+    },
+    {
+      "file": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "headings_checked": 9,
+      "parsed": true,
+      "fences_tables_lists_links_checked": true
+    },
+    {
+      "file": "docs/stage3/delivery_20261102/Markdown专项审查_20261102.md",
+      "headings_checked": 7,
+      "parsed": true,
+      "fences_tables_lists_links_checked": true
+    },
+    {
+      "file": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "headings_checked": 4,
+      "parsed": true,
+      "fences_tables_lists_links_checked": true
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "headings_checked": 7,
+      "parsed": true,
+      "fences_tables_lists_links_checked": true
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/交付缺口检查.md",
+      "headings_checked": 5,
+      "parsed": true,
+      "fences_tables_lists_links_checked": true
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md",
+      "headings_checked": 6,
+      "parsed": true,
+      "fences_tables_lists_links_checked": true
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/GPU预检报告.md",
+      "headings_checked": 6,
+      "parsed": true,
+      "fences_tables_lists_links_checked": true
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+      "headings_checked": 6,
+      "parsed": true,
+      "fences_tables_lists_links_checked": true
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/下一步Development评价方案.md",
+      "headings_checked": 5,
+      "parsed": true,
+      "fences_tables_lists_links_checked": true
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/实施报告.md",
+      "headings_checked": 7,
+      "parsed": true,
+      "fences_tables_lists_links_checked": true
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/运行命令.md",
+      "headings_checked": 6,
+      "parsed": true,
+      "fences_tables_lists_links_checked": true
+    },
+    {
+      "file": "experiments/lg_bev_stage3_feasibility_audit_20261101/审计与最小实验方案.md",
+      "headings_checked": 17,
+      "parsed": true,
+      "fences_tables_lists_links_checked": true
+    }
+  ],
+  "changes": [
+    {
+      "file": "README.md",
+      "type": "措辞",
+      "before": "本次按用户提供的四阶段及性能要求审计，待原 PDF 核对",
+      "after": "本次依据已记录的四阶段任务说明及性能要求审计，待原 PDF 核对"
+    },
+    {
+      "file": "README.md",
+      "type": "措辞",
+      "before": "原任务性能门槛（按用户提供原写法，待 PDF 核对）",
+      "after": "原任务性能门槛（沿用已记录任务说明的原文，待 PDF 核对）"
+    },
+    {
+      "file": "README.md",
+      "type": "措辞",
+      "before": "不在本次用户提供的原始四阶段强制项中",
+      "after": "不在已记录的原始四阶段强制项中"
+    },
+    {
+      "file": "README.md",
+      "type": "措辞",
+      "before": "随后经用户授权已正式启动训练",
+      "after": "随后经单独授权已正式启动训练"
+    },
+    {
+      "file": "README.md",
+      "type": "措辞",
+      "before": "按现有第二阶段材料及用户本次明确要求",
+      "after": "依据现有第二阶段材料及已登记任务范围"
+    },
+    {
+      "file": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "type": "措辞",
+      "before": "因此依用户要求暂停相关正式评价",
+      "after": "因此按照既定授权边界暂停相关正式评价"
+    },
+    {
+      "file": "docs/logbook_2026-11-02.md",
+      "type": "措辞",
+      "before": "按用户补充要求，正式 Development 保持暂停",
+      "after": "按照既定授权边界，正式 Development 保持暂停"
+    },
+    {
+      "file": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "type": "历史范围",
+      "detail": "> **检查阶段说明：** 本文记录交付材料整理完成、专项文档审查及 Git 提交之前的状态；正文“未执行提交”等表述对应该检查阶段。后续审查结论与精确提交范围见[Markdown 专项审查](Markdown专项审查_20261102.md)，Push 仍需单独确认。"
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/交付缺口检查.md",
+      "type": "历史范围",
+      "detail": "> **历史检查范围：** 本记录对应 2026-11-02 README／环境交付工程之前的缺口快照。后续已补充导航、独立 requirements、资产说明和精确白名单；正文原缺口保留用于追踪。当前交付状态见[交付核查](../../../../docs/stage3/delivery_20261102/交付核查_20261102.md)。"
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md",
+      "type": "措辞",
+      "before": "本次用户要求涉及冻结评估代码哈希变化时暂停正式评价",
+      "after": "既定授权边界要求在冻结评估代码哈希变化时暂停正式评价"
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/GPU预检报告.md",
+      "type": "历史范围",
+      "detail": "> **历史范围说明：** 本报告统计截至 2026-11-01 的 32 帧／8 更新迁移预检，正文“下一阶段”对应当时安排。后续独立 StageB256 已完成；当前 320 帧 Development 为 NOT_COMPLETED、v2 待授权，正式 A128 仍为 NOT_PASS。最新状态见[独立实验导航](../../README.md)。"
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/GPU预检报告.md",
+      "type": "Markdown列表",
+      "inserted_blank_lines": 2
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/下一步Development评价方案.md",
+      "type": "措辞",
+      "before": "用户另行明确授权`evaluate`和固定320帧Development GT",
+      "after": "另行取得`evaluate`和固定320帧Development GT的明确授权"
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/下一步Development评价方案.md",
+      "type": "历史范围",
+      "detail": "> **历史方案说明：** 本文保留 2026-11-01 登记的终点评价设计与旧入口。独立 256 更新训练后续已完成，旧版评价加载失败；当前 320 帧 Development 为 NOT_COMPLETED，v2 仍待单独授权。实际继续条件以[修复验收报告](../evaluation_fix_v2_20261102/修复验收报告.md)为准，本文不是当前执行授权。"
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/实施报告.md",
+      "type": "历史范围",
+      "detail": "> **历史范围说明：** 本报告记录 2026-11-01 CPU 准备阶段。当时的未运行项目及 11 月 10 日计划保持原始事实；它们不代表当前进度。独立 StageB256 后续已完成，320 帧 Development 仍为 NOT_COMPLETED、v2 待授权，当前结项日期为 2026-11-06，详见[当前交付导航](README.md)。"
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/运行命令.md",
+      "type": "措辞",
+      "before": "只在收到新的明确用户授权后，记录授权原文并制作相应批准文件",
+      "after": "只在取得新的明确授权后，保存授权记录并制作相应批准文件"
+    },
+    {
+      "file": "experiments/lg_bev_stage3_feasibility_audit_20261101/审计与最小实验方案.md",
+      "type": "措辞",
+      "before": "不能把全局保护指标改名充数",
+      "after": "不得将全局保护指标改名为无关区域指标"
+    },
+    {
+      "file": "experiments/lg_bev_stage3_feasibility_audit_20261101/审计与最小实验方案.md",
+      "type": "措辞",
+      "before": "明确导师要求的“训练后B Enhanced完整对照”尚未完成",
+      "after": "明确“训练后B Enhanced完整对照”交付项尚未完成"
+    },
+    {
+      "file": "experiments/lg_bev_stage3_feasibility_audit_20261101/审计与最小实验方案.md",
+      "type": "措辞",
+      "before": "不降FP32或偷偷缩图",
+      "after": "不降低FP32精度或未经登记缩小图像"
+    },
+    {
+      "file": "experiments/lg_bev_stage3_feasibility_audit_20261101/审计与最小实验方案.md",
+      "type": "历史范围",
+      "detail": "> **历史审计说明：** 正文为 2026-11-01 的可行性结论、预算及原 2026-11-10 计划，保持当时记录，不作为当前待办或执行许可。后续已完成独立 StageB256 和固定 8 帧工程诊断；当前 320 帧 Development 为 NOT_COMPLETED、v2 待授权，结项日期调整为 2026-11-06。参见[当前交付导航](../lg_bev_stage3_exploration_20261101/README.md)。"
+    },
+    {
+      "file": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "type": "Markdown硬换行",
+      "detail": "三行元信息尾部两个空格改为显式<br>，保持GitHub换行语义并消除普通文档空白提示",
+      "lines_changed": 3
+    }
+  ],
+  "relative_links_checked": 136,
+  "relative_links": [
+    {
+      "from": "README.md",
+      "target": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "resolved": "docs/final_report/BEV_DriveLM_项目总结报告.md"
+    },
+    {
+      "from": "README.md",
+      "target": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md"
+    },
+    {
+      "from": "README.md",
+      "target": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv"
+    },
+    {
+      "from": "README.md",
+      "target": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md"
+    },
+    {
+      "from": "README.md",
+      "target": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/README.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "resolved": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage3/delivery_20261102/GitHub提交白名单_20261102.json",
+      "resolved": "docs/stage3/delivery_20261102/GitHub提交白名单_20261102.json"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/logbook_2026-11-02.md",
+      "resolved": "docs/logbook_2026-11-02.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/weekly_report_2026-10-26_to_2026-10-30.md",
+      "resolved": "docs/weekly_report_2026-10-26_to_2026-10-30.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/logbook_2026-10-30.md",
+      "resolved": "docs/logbook_2026-10-30.md"
+    },
+    {
+      "from": "README.md",
+      "target": "scripts/stage3/README_LG_BEV_V3_20261028.md",
+      "resolved": "scripts/stage3/README_LG_BEV_V3_20261028.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/lg_bev_formal_training_protocol_2026-10-27.md",
+      "resolved": "docs/lg_bev_formal_training_protocol_2026-10-27.md"
+    },
+    {
+      "from": "README.md",
+      "target": "scripts/stage3/README.md",
+      "resolved": "scripts/stage3/README.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/四阶段任务交付审计_2026-10-26.md",
+      "resolved": "docs/四阶段任务交付审计_2026-10-26.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage1/00_阶段一交付导航.md",
+      "resolved": "docs/stage1/00_阶段一交付导航.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage2/13_阶段二任务对照.md",
+      "resolved": "docs/stage2/13_阶段二任务对照.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "resolved": "docs/final_report/BEV_DriveLM_项目总结报告.md"
+    },
+    {
+      "from": "README.md",
+      "target": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/README.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage3/03_V5语言条件耦合与最终探索结论_2026-10-26.md",
+      "resolved": "docs/stage3/03_V5语言条件耦合与最终探索结论_2026-10-26.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage4/01_综合验收与Git交付_2026-10-26.md",
+      "resolved": "docs/stage4/01_综合验收与Git交付_2026-10-26.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/四阶段任务交付审计_2026-10-26.md",
+      "resolved": "docs/四阶段任务交付审计_2026-10-26.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage2/02_第二阶段原始任务书.md",
+      "resolved": "docs/stage2/02_第二阶段原始任务书.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage2/13_阶段二任务对照.md",
+      "resolved": "docs/stage2/13_阶段二任务对照.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage2/11_模块架构设计.md",
+      "resolved": "docs/stage2/11_模块架构设计.md"
+    },
+    {
+      "from": "README.md",
+      "target": "results/stage2_delivery_2026-10-23/README.md",
+      "resolved": "results/stage2_delivery_2026-10-23/README.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage2/17_第二阶段复现指引.md",
+      "resolved": "docs/stage2/17_第二阶段复现指引.md"
+    },
+    {
+      "from": "README.md",
+      "target": "scripts/stage3/README.md",
+      "resolved": "scripts/stage3/README.md"
+    },
+    {
+      "from": "README.md",
+      "target": "scripts/stage3/README_LG_BEV_V3_20261028.md",
+      "resolved": "scripts/stage3/README_LG_BEV_V3_20261028.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/lg_bev_formal_training_protocol_2026-10-27.md",
+      "resolved": "docs/lg_bev_formal_training_protocol_2026-10-27.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/lg_bev_resource_protocol_v3_2026-10-28.md",
+      "resolved": "docs/lg_bev_resource_protocol_v3_2026-10-28.md"
+    },
+    {
+      "from": "README.md",
+      "target": "scripts/stage3/README_LG_BEV_ENGINEERING_20261027.md",
+      "resolved": "scripts/stage3/README_LG_BEV_ENGINEERING_20261027.md"
+    },
+    {
+      "from": "README.md",
+      "target": "scripts/stage3/README_LG_BEV_SPACE_20261027.md",
+      "resolved": "scripts/stage3/README_LG_BEV_SPACE_20261027.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/logbook_2026-10-28.md",
+      "resolved": "docs/logbook_2026-10-28.md"
+    },
+    {
+      "from": "README.md",
+      "target": "results/lg_bev_v3_20261028/git_whitelist.json",
+      "resolved": "results/lg_bev_v3_20261028/git_whitelist.json"
+    },
+    {
+      "from": "README.md",
+      "target": "tests/stage2/",
+      "resolved": "tests/stage2"
+    },
+    {
+      "from": "README.md",
+      "target": "tests/README.md",
+      "resolved": "tests/README.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage2/24_测试目录规范化_2026-10-26.md",
+      "resolved": "docs/stage2/24_测试目录规范化_2026-10-26.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/images/stage2/stage2_audited_architecture_20261022.svg",
+      "resolved": "docs/images/stage2/stage2_audited_architecture_20261022.svg"
+    },
+    {
+      "from": "README.md",
+      "target": "scripts/stage2/",
+      "resolved": "scripts/stage2"
+    },
+    {
+      "from": "README.md",
+      "target": "scripts/stage2/run_stage2.py",
+      "resolved": "scripts/stage2/run_stage2.py"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage2/11_模块架构设计.md",
+      "resolved": "docs/stage2/11_模块架构设计.md"
+    },
+    {
+      "from": "README.md",
+      "target": "results/stage2_delivery_2026-10-23/figures/training_loss_20steps.png",
+      "resolved": "results/stage2_delivery_2026-10-23/figures/training_loss_20steps.png"
+    },
+    {
+      "from": "README.md",
+      "target": "results/stage2_delivery_2026-10-23/figures/ab_metrics_6frames.png",
+      "resolved": "results/stage2_delivery_2026-10-23/figures/ab_metrics_6frames.png"
+    },
+    {
+      "from": "README.md",
+      "target": "results/stage2_delivery_2026-10-23/README.md",
+      "resolved": "results/stage2_delivery_2026-10-23/README.md"
+    },
+    {
+      "from": "README.md",
+      "target": "scripts/stage2/",
+      "resolved": "scripts/stage2"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage2/11_模块架构设计.md",
+      "resolved": "docs/stage2/11_模块架构设计.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/images/stage2/stage2_audited_architecture_20261022.svg",
+      "resolved": "docs/images/stage2/stage2_audited_architecture_20261022.svg"
+    },
+    {
+      "from": "README.md",
+      "target": "results/stage2_delivery_2026-10-23/README.md",
+      "resolved": "results/stage2_delivery_2026-10-23/README.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage2/12_单元测试报告.md",
+      "resolved": "docs/stage2/12_单元测试报告.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+      "resolved": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage2/17_第二阶段复现指引.md",
+      "resolved": "docs/stage2/17_第二阶段复现指引.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+      "resolved": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/logbook_2026-10-22.md",
+      "resolved": "docs/logbook_2026-10-22.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage1/03_基线性能测试报告.md",
+      "resolved": "docs/stage1/03_基线性能测试报告.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage1/00_阶段一交付导航.md",
+      "resolved": "docs/stage1/00_阶段一交付导航.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage2/17_第二阶段复现指引.md",
+      "resolved": "docs/stage2/17_第二阶段复现指引.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "resolved": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md"
+    },
+    {
+      "from": "README.md",
+      "target": "results/stage2_delivery_2026-10-23/non_git_assets.json",
+      "resolved": "results/stage2_delivery_2026-10-23/non_git_assets.json"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage2/数据图表总览_2026-10-21.md",
+      "resolved": "docs/stage2/数据图表总览_2026-10-21.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/stage2/全部实验图表索引_2026-10-21.md",
+      "resolved": "docs/stage2/全部实验图表索引_2026-10-21.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/logbook_2026-10-21.md",
+      "resolved": "docs/logbook_2026-10-21.md"
+    },
+    {
+      "from": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "resolved": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md"
+    },
+    {
+      "from": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../../requirements_stage3_20261102.txt",
+      "resolved": "requirements_stage3_20261102.txt"
+    },
+    {
+      "from": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../images/2026-10-12/drivelm_bevformer_joint_01.png",
+      "resolved": "docs/images/2026-10-12/drivelm_bevformer_joint_01.png"
+    },
+    {
+      "from": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../images/stage2/stage2_audited_architecture_20261022.svg",
+      "resolved": "docs/images/stage2/stage2_audited_architecture_20261022.svg"
+    },
+    {
+      "from": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../images/2026-10-12/drivelm799_seg_comparison_000.png",
+      "resolved": "docs/images/2026-10-12/drivelm799_seg_comparison_000.png"
+    },
+    {
+      "from": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../images/stage2/stage2_evidence.svg",
+      "resolved": "docs/images/stage2/stage2_evidence.svg"
+    },
+    {
+      "from": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../../results/stage2_delivery_2026-10-23/figures/training_loss_20steps.png",
+      "resolved": "results/stage2_delivery_2026-10-23/figures/training_loss_20steps.png"
+    },
+    {
+      "from": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../../results/stage2_delivery_2026-10-23/figures/ab_metrics_6frames.png",
+      "resolved": "results/stage2_delivery_2026-10-23/figures/ab_metrics_6frames.png"
+    },
+    {
+      "from": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../images/stage2/step62_divider_overlay.png",
+      "resolved": "docs/images/stage2/step62_divider_overlay.png"
+    },
+    {
+      "from": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/核查记录.json",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/核查记录.json"
+    },
+    {
+      "from": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv"
+    },
+    {
+      "from": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收汇总.json",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收汇总.json"
+    },
+    {
+      "from": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md"
+    },
+    {
+      "from": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md"
+    },
+    {
+      "from": "docs/logbook_2026-11-02.md",
+      "target": "../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md"
+    },
+    {
+      "from": "docs/logbook_2026-11-02.md",
+      "target": "final_report/BEV_DriveLM_项目总结报告.md",
+      "resolved": "docs/final_report/BEV_DriveLM_项目总结报告.md"
+    },
+    {
+      "from": "docs/logbook_2026-11-02.md",
+      "target": "../experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md"
+    },
+    {
+      "from": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "target": "../final_report/BEV_DriveLM_项目总结报告.md",
+      "resolved": "docs/final_report/BEV_DriveLM_项目总结报告.md"
+    },
+    {
+      "from": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md"
+    },
+    {
+      "from": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv"
+    },
+    {
+      "from": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md"
+    },
+    {
+      "from": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "target": "../../requirements_stage3_20261102.txt",
+      "resolved": "requirements_stage3_20261102.txt"
+    },
+    {
+      "from": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "target": "delivery_20261102/环境快照_20261102.json",
+      "resolved": "docs/stage3/delivery_20261102/环境快照_20261102.json"
+    },
+    {
+      "from": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "target": "delivery_20261102/mmdetection3d_0.17.1_现有兼容补丁.patch",
+      "resolved": "docs/stage3/delivery_20261102/mmdetection3d_0.17.1_现有兼容补丁.patch"
+    },
+    {
+      "from": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "target": "delivery_20261102/非Git资产清单_20261102.json",
+      "resolved": "docs/stage3/delivery_20261102/非Git资产清单_20261102.json"
+    },
+    {
+      "from": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/回归汇总.json",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/回归汇总.json"
+    },
+    {
+      "from": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "target": "../../experiments/lg_bev_stage3_exploration_20261101/运行命令.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/运行命令.md"
+    },
+    {
+      "from": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "target": "delivery_20261102/GitHub提交白名单_20261102.json",
+      "resolved": "docs/stage3/delivery_20261102/GitHub提交白名单_20261102.json"
+    },
+    {
+      "from": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "target": "delivery_20261102/交付核查_20261102.md",
+      "resolved": "docs/stage3/delivery_20261102/交付核查_20261102.md"
+    },
+    {
+      "from": "docs/stage3/delivery_20261102/Markdown专项审查_20261102.md",
+      "target": "Markdown专项审查_20261102.json",
+      "resolved": "docs/stage3/delivery_20261102/Markdown专项审查_20261102.json"
+    },
+    {
+      "from": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "target": "Markdown专项审查_20261102.md",
+      "resolved": "docs/stage3/delivery_20261102/Markdown专项审查_20261102.md"
+    },
+    {
+      "from": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "target": "../05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "resolved": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md"
+    },
+    {
+      "from": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "target": "GitHub提交白名单_20261102.json",
+      "resolved": "docs/stage3/delivery_20261102/GitHub提交白名单_20261102.json"
+    },
+    {
+      "from": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "target": "GitHub提交白名单_20261102.txt",
+      "resolved": "docs/stage3/delivery_20261102/GitHub提交白名单_20261102.txt"
+    },
+    {
+      "from": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "target": "环境快照_20261102.json",
+      "resolved": "docs/stage3/delivery_20261102/环境快照_20261102.json"
+    },
+    {
+      "from": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "target": "非Git资产清单_20261102.json",
+      "resolved": "docs/stage3/delivery_20261102/非Git资产清单_20261102.json"
+    },
+    {
+      "from": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "target": "交付核查_20261102.json",
+      "resolved": "docs/stage3/delivery_20261102/交付核查_20261102.json"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "target": "../lg_bev_stage3_feasibility_audit_20261101/审计与最小实验方案.md",
+      "resolved": "experiments/lg_bev_stage3_feasibility_audit_20261101/审计与最小实验方案.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "target": "../../docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "resolved": "docs/final_report/BEV_DriveLM_项目总结报告.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "target": "reports/stage_a_acceptance_20261102/核心验收报告.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "target": "reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "target": "reports/evaluation_fix_v2_20261102/修复验收报告.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "target": "../../docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "resolved": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "target": "../../requirements_stage3_20261102.txt",
+      "resolved": "requirements_stage3_20261102.txt"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "target": "../../docs/stage3/delivery_20261102/GitHub提交白名单_20261102.json",
+      "resolved": "docs/stage3/delivery_20261102/GitHub提交白名单_20261102.json"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "target": "运行命令.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/运行命令.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "target": "reports/gpu_preflight_20261101/GPU预检报告.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/GPU预检报告.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "target": "../../docs/logbook_2026-11-02.md",
+      "resolved": "docs/logbook_2026-11-02.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "target": "运行命令.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/运行命令.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "target": "实施报告.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/实施报告.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "target": "reports/gpu_preflight_20261101/GPU预检报告.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/GPU预检报告.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/交付缺口检查.md",
+      "target": "../../../../docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "resolved": "docs/stage3/delivery_20261102/交付核查_20261102.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/交付缺口检查.md",
+      "target": "../../../../docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "resolved": "docs/final_report/BEV_DriveLM_项目总结报告.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/GPU预检报告.md",
+      "target": "../../README.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/README.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/GPU预检报告.md",
+      "target": "microsteps.json",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/microsteps.json"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/GPU预检报告.md",
+      "target": "updates.csv",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/updates.csv"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/GPU预检报告.md",
+      "target": "result.json",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/result.json"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/GPU预检报告.md",
+      "target": "preregistration.json",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/preregistration.json"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/GPU预检报告.md",
+      "target": "preservation_after.json",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/preservation_after.json"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+      "target": "空间注意力对照.png",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+      "target": "Attention指标对照.png",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.png"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/下一步Development评价方案.md",
+      "target": "../evaluation_fix_v2_20261102/修复验收报告.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/实施报告.md",
+      "target": "README.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/README.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/实施报告.md",
+      "target": "../lg_bev_stage3_feasibility_audit_20261101/审计与最小实验方案.md",
+      "resolved": "experiments/lg_bev_stage3_feasibility_audit_20261101/审计与最小实验方案.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/实施报告.md",
+      "target": "reports/pytest_delivery.log",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/pytest_delivery.log"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/实施报告.md",
+      "target": "reports/pytest_delivery.xml",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/pytest_delivery.xml"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/实施报告.md",
+      "target": "reports/cpu_check.json",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/cpu_check.json"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/实施报告.md",
+      "target": "reports/format_check.json",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/format_check.json"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/实施报告.md",
+      "target": "reports/synthetic_acceptance.json",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/synthetic_acceptance.json"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/实施报告.md",
+      "target": "reports/preservation_result.json",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/preservation_result.json"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/实施报告.md",
+      "target": "运行命令.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/运行命令.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/运行命令.md",
+      "target": "../../docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "resolved": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_exploration_20261101/运行命令.md",
+      "target": "reports/gpu_preflight_20261101/GPU预检报告.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/GPU预检报告.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_feasibility_audit_20261101/审计与最小实验方案.md",
+      "target": "../lg_bev_stage3_exploration_20261101/README.md",
+      "resolved": "experiments/lg_bev_stage3_exploration_20261101/README.md"
+    },
+    {
+      "from": "experiments/lg_bev_stage3_feasibility_audit_20261101/审计与最小实验方案.md",
+      "target": "proposed_subset_metadata.json",
+      "resolved": "experiments/lg_bev_stage3_feasibility_audit_20261101/proposed_subset_metadata.json"
+    }
+  ],
+  "image_checks": [
+    {
+      "file": "docs/images/2026-10-12/drivelm799_seg_comparison_000.png",
+      "format": ".png",
+      "valid": true
+    },
+    {
+      "file": "docs/images/2026-10-12/drivelm_bevformer_joint_01.png",
+      "format": ".png",
+      "valid": true
+    },
+    {
+      "file": "docs/images/stage2/stage2_audited_architecture_20261022.svg",
+      "format": ".svg",
+      "valid": true
+    },
+    {
+      "file": "docs/images/stage2/stage2_evidence.svg",
+      "format": ".svg",
+      "valid": true
+    },
+    {
+      "file": "docs/images/stage2/step62_divider_overlay.png",
+      "format": ".png",
+      "valid": true
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.pdf",
+      "format": ".pdf",
+      "valid": true
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.png",
+      "format": ".png",
+      "valid": true
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.pdf",
+      "format": ".pdf",
+      "valid": true
+    },
+    {
+      "file": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png",
+      "format": ".png",
+      "valid": true
+    },
+    {
+      "file": "results/stage2_delivery_2026-10-23/figures/ab_metrics_6frames.png",
+      "format": ".png",
+      "valid": true
+    },
+    {
+      "file": "results/stage2_delivery_2026-10-23/figures/training_loss_20steps.png",
+      "format": ".png",
+      "valid": true
+    }
+  ],
+  "google_drive_link_structure_valid": true,
+  "google_drive_url_changed": false,
+  "external_availability_checked": false,
+  "renderer": "Python-Markdown 3.10.3 extra+sane_lists；details仅在离线解析输入适配，源文件保持标准GitHub写法",
+  "secret_scan_hits": [],
+  "provenance_retained": [
+    "Codex辅助审查的真实记录",
+    "本机路径、数据集标识及历史授权来源"
+  ],
+  "unresolved_markdown_or_relative_link_errors": [],
+  "existing_research_limitations_unchanged": true,
+  "protected_non_markdown_files_unchanged": [
+    ".gitignore",
+    "docs/stage3/delivery_20261102/mmdetection3d_0.17.1_现有兼容补丁.patch",
+    "docs/stage3/delivery_20261102/交付核查_20261102.json",
+    "docs/stage3/delivery_20261102/环境快照_20261102.json",
+    "docs/stage3/delivery_20261102/非Git资产清单_20261102.json",
+    "experiments/lg_bev_stage3_exploration_20261101/backend.py",
+    "experiments/lg_bev_stage3_exploration_20261101/cli.py",
+    "experiments/lg_bev_stage3_exploration_20261101/configs/authorization_main.template.json",
+    "experiments/lg_bev_stage3_exploration_20261101/configs/authorization_preflight.approved.json",
+    "experiments/lg_bev_stage3_exploration_20261101/configs/authorization_short.template.json",
+    "experiments/lg_bev_stage3_exploration_20261101/configs/authorization_train.approved.json",
+    "experiments/lg_bev_stage3_exploration_20261101/configs/main.json",
+    "experiments/lg_bev_stage3_exploration_20261101/configs/short.json",
+    "experiments/lg_bev_stage3_exploration_20261101/core.py",
+    "experiments/lg_bev_stage3_exploration_20261101/evaluation.py",
+    "experiments/lg_bev_stage3_exploration_20261101/lifecycle.py",
+    "experiments/lg_bev_stage3_exploration_20261101/metrics.py",
+    "experiments/lg_bev_stage3_exploration_20261101/numerics.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/code_manifest.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/cpu_check.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/GitHub待提交候选.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/本次最小变更清单.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/核查记录.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/cpu_preflight.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/cpu_tests.xml",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/protocol.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/protocol.sha256",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/checks.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/entry.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/eval_driver.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/eval_metrics.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/job.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/tests/conftest.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/tests/test_metrics.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/tests/test_pipeline.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/training_256_updates.csv",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/training_final_audit.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/training_sessions_verified.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/authorization.pending.template.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/cpu_preflight.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/protocol.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/protocol.sha256",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/regression_tests.xml",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/checks.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/entry.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/eval_driver.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/eval_metrics.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/job.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/metadata_context.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/runtime_v2.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/targeted_tests.xml",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/tests/conftest.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/tests/test_authorization_gate.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/tests/test_cleanup_fence.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/tests/test_metadata_context.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/交付文件清单.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/保全核查.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复差异.patch",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复清单.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/回归汇总.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/最终进程核查.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/根因现场.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/格式检查.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/format_check.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/boundary_comparison.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/config_before.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/delivery_manifest.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/gpu_sample_after.csv",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/gpu_sample_session1.csv",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/gpu_sample_session2.csv",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/microsteps.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/preregistration.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/preservation_after.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/preservation_after_session1.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/protected_after.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/protected_before.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/restore_state_comparison.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/result.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/session1_closure.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/session1_exit.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/session1_launch.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/session1_worker_end.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/session2_closure.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/session2_exit.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/session2_launch.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/session2_worker_end.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/updates.csv",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/preservation_result.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/pytest_delivery.log",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/pytest_delivery.xml",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/resume_20261102/after_audit.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/resume_20261102/before_audit.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/resume_20261102/v2_fix_final_audit.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention对照.csv",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.pdf",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.png",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/同类不同位置实例.csv",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/有效指令配对.csv",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收汇总.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/汇总既有结果.py",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.pdf",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/逐指令定位.csv",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/synthetic_acceptance.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/checkpoint_64_audit.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/config.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/fresh_initialization_prefix.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/pause_audit.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/preregistration.json",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/preservation_after_pause.json",
+    "experiments/lg_bev_stage3_exploration_20261101/synthetic.py",
+    "experiments/lg_bev_stage3_exploration_20261101/tests/conftest.py",
+    "experiments/lg_bev_stage3_exploration_20261101/tests/test_assets.py",
+    "experiments/lg_bev_stage3_exploration_20261101/tests/test_metrics.py",
+    "experiments/lg_bev_stage3_exploration_20261101/tests/test_numerics.py",
+    "experiments/lg_bev_stage3_exploration_20261101/tests/test_protocol.py",
+    "experiments/lg_bev_stage3_exploration_20261101/tests/test_safety.py",
+    "experiments/lg_bev_stage3_exploration_20261101/worker.py",
+    "experiments/lg_bev_stage3_feasibility_audit_20261101/proposed_subset_metadata.json",
+    "experiments/lg_bev_stage3_feasibility_audit_20261101/只读核查证据.json",
+    "requirements_stage3_20261102.txt",
+    "results/lg_bev_v3_20261028/git_whitelist.json"
+  ],
+  "original_markdown_sha256": {
+    "README.md": "b25418b9ea50832459a9fd165a377471d4ba19e80802027ef40142d0f8b300d3",
+    "docs/final_report/BEV_DriveLM_项目总结报告.md": "36e1249e3dbe8c8d43b8430b9b6cd462565de2f6013e55b8b5dd6dff99b20894",
+    "docs/logbook_2026-11-02.md": "bf58587ff84ac72a6e234ed20d405e6b56b5e7dbee26700269bac6747f359b98",
+    "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md": "4bb8f409542134e0c36d94cfe0b2ab9c6d9c94cf9c9b2b180faad2b3ba4ab253",
+    "docs/stage3/delivery_20261102/交付核查_20261102.md": "45ade52faba803c2cdb78b87ca9011473a54da698dd3df68561dc9f5d1d61042",
+    "experiments/lg_bev_stage3_exploration_20261101/README.md": "33b98d7806e35720159b7ce664e791a5e71457df812516e22af99a98a741091e",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/交付缺口检查.md": "61247b439a80e5e3a82270236c63455222003d768be088a6840f7affa2301081",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md": "d50957b88c33fbe093653cae97225529c798248c9cbf18420c79bc629d76fd58",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/GPU预检报告.md": "8923f6f3746b0ae4d4a18238b69511efa2a123422dcaf8dbc5f224ff493b6a7f",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md": "5c0bea8c5602502a9cd7c2d28493e96c779ec685113a5a29fed2ee97db3a814e",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/下一步Development评价方案.md": "7c8c28bdb750dea571b06a140ca5d776726ed20134e9c4203b97b4f3d1077be6",
+    "experiments/lg_bev_stage3_exploration_20261101/实施报告.md": "d18f5ab6b8f812b9eaf6a0ea0ae5f11221fce9dc93064702108df42fbda4e224",
+    "experiments/lg_bev_stage3_exploration_20261101/运行命令.md": "64f9bb966e00de4b12bc67b7c0f8d8fd6f2860a50461ce16d170568d8bb34533",
+    "experiments/lg_bev_stage3_feasibility_audit_20261101/审计与最小实验方案.md": "7dcf3a4fa50a231d246565bfaf5180118d5e9ebbcdd18aeafe21c3030c1de918"
+  },
+  "current_file_sha256": {
+    ".gitignore": "e84976af4f176166be351f2634cf8a58fbedc8045f2d2d629d4b0fe529619c83",
+    "README.md": "8ac4823c362306895c02cf66a42d20b793d639c79ef91c9031c0be46a08e7ef6",
+    "docs/final_report/BEV_DriveLM_项目总结报告.md": "b805f7db7a0bf728957a0fd3bd1add26ef4fab239dc7ef58d308af2e503ecee6",
+    "docs/logbook_2026-11-02.md": "6d501411b05529ffa521c36ddcae1cbe724f2d2a1b3f3604e8cbdd4e7c84afe5",
+    "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md": "4bb8f409542134e0c36d94cfe0b2ab9c6d9c94cf9c9b2b180faad2b3ba4ab253",
+    "docs/stage3/delivery_20261102/GitHub提交白名单_20261102.json": "8f68547118db8061eb19ddef56161e85c632366132233f1ff42daeb0e24ebb1e",
+    "docs/stage3/delivery_20261102/GitHub提交白名单_20261102.txt": "a5bad48206b95a466e7032331f1f49ab108c706d99b4ec0cfdd55bf800ccfe74",
+    "docs/stage3/delivery_20261102/Markdown专项审查_20261102.md": "02f72090c7608de73f7333ee5a6f94fadcda59b25eb602377d265d0a5c4d4296",
+    "docs/stage3/delivery_20261102/mmdetection3d_0.17.1_现有兼容补丁.patch": "cf9ba622b12ff8f771b74bb2593aa1db1123e34fbaf4c6ac444e95af0b7b937e",
+    "docs/stage3/delivery_20261102/交付核查_20261102.json": "691ddbda2c84e728bc43e187e72ebcb95f8f2fdc7d9ccefd2140ea8d7e5c5ac3",
+    "docs/stage3/delivery_20261102/交付核查_20261102.md": "799cd7aa508b6aba5df0c3f215b3c1cb923b25b4116a436982f611f60989814b",
+    "docs/stage3/delivery_20261102/环境快照_20261102.json": "5407b0681ac9c0aba88a6dc0fd9fd9c2bafb2d9e911e9116ccbf78002f991536",
+    "docs/stage3/delivery_20261102/非Git资产清单_20261102.json": "08024b47d86a7cbae1633ee8ce1a6983d1aac5f7bfe73d52f9486e83541bc23a",
+    "experiments/lg_bev_stage3_exploration_20261101/README.md": "33b98d7806e35720159b7ce664e791a5e71457df812516e22af99a98a741091e",
+    "experiments/lg_bev_stage3_exploration_20261101/backend.py": "0dc586d263f1c3225d6dcc4142c578bb876ffd3314b662c8904aadb4b8b6b059",
+    "experiments/lg_bev_stage3_exploration_20261101/cli.py": "a57bee950fc28d25d53ba5441002c0c0ae142669103925ab207f855e7f7a03b4",
+    "experiments/lg_bev_stage3_exploration_20261101/configs/authorization_main.template.json": "c57158dc9773396f0fd82e39f2afe6b79f38455fb14391ffff6fc5cc1f38ccdd",
+    "experiments/lg_bev_stage3_exploration_20261101/configs/authorization_preflight.approved.json": "abdee92d5c5fecc9e51be4f2942b9d095fb003fb3b61a1896572f43e0a0aa121",
+    "experiments/lg_bev_stage3_exploration_20261101/configs/authorization_short.template.json": "d77633e748e73c6d5eb32262a355b56463930cc7ad5e40ecc1d74f9b622e561c",
+    "experiments/lg_bev_stage3_exploration_20261101/configs/authorization_train.approved.json": "b3b72cad857ce036962b7d6b64efe73e3d28a8c4f53e69ea1dad85d7734ce2e0",
+    "experiments/lg_bev_stage3_exploration_20261101/configs/main.json": "7bf789510eba5fea4ef170dd5cbae5e37239ba41ab58be04059db78861eb18b7",
+    "experiments/lg_bev_stage3_exploration_20261101/configs/short.json": "488e76a0481d25ccd0d95ab6ef6ec4fae9b9ce03eea0102e9633f1665ef90fad",
+    "experiments/lg_bev_stage3_exploration_20261101/core.py": "8f684e41124e4a75ee8b8e434e703798ba79eff1a6e70896203bce8b1c2da102",
+    "experiments/lg_bev_stage3_exploration_20261101/evaluation.py": "ba2c8a8f1f05d16cb21d7449ce609ac1f12f25027a66a79344f712d8ce9c8102",
+    "experiments/lg_bev_stage3_exploration_20261101/lifecycle.py": "f0a64c4bd593b1bea16640062a6c3a3c3a55b863b29a6f89ff9107eb6a989732",
+    "experiments/lg_bev_stage3_exploration_20261101/metrics.py": "22836fb963b260f3c749d86da824739ab6b7d9c65aa197c159fc1f4e14106959",
+    "experiments/lg_bev_stage3_exploration_20261101/numerics.py": "59f7c1ba2c31a52403cbb25399dac093a539b0a9b4c71cdcdc958f38332d5bd9",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/code_manifest.json": "11bc3518924158631c3a85eaa25f97d239208211a74bcb5f4d5ddb5b153a2b2c",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/cpu_check.json": "d23fcb95bf29b63b25667147701911ba873b6a09af7d55c5fea73e3fb0fd0ec9",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/GitHub待提交候选.json": "99df14f6667aa16df557f092821c6eba7d418906964073e6881022b0aec1347a",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/交付缺口检查.md": "b03efc90dd0e8adfad0b68dddc63f9d2cb12a527cb4a932f55f92c6cf902ad4a",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/本次最小变更清单.json": "0308d68b729467f782321ad46a7b31fb3df754f63741ad5a4ef909db6d2d88e5",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/核查记录.json": "55f64cbfd524e751c28e4a25e434d29588530be94dee134a7c495e360f861fe7",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/cpu_preflight.json": "c5a713db5dbe66d447f17b202139fde2812d6e2aa24e07bd56656afda05185c9",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/cpu_tests.xml": "7e0d120f9175212271d69acafdf2dc3fcfc7b1f5d8e0de38344e9c164540c1a9",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/protocol.json": "b3ec763488158d2624ebb009f3c5b75fc341f8b517e6ffa92496a12a5b90841b",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/protocol.sha256": "25231341281d928ff0733f70118ed80c9eaef482bc0c79cf643a43d0e11ce88c",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/checks.py": "0f4be4412d0f90040e409376d9dba65eaff601306aae9ba8653ad341136be701",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/entry.py": "0e9d6be528ee1c93e5e3f08eae39817e38d51959d324370725ff236de34d4f50",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/eval_driver.py": "c4733927e44f7441eb039baf6067b1785100ddd408b29a024195d9c9a26973f3",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/eval_metrics.py": "fc21d00309f09774719b6553213a4670440fd64c2b77cb82f9f1ebb335de7c6f",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/job.py": "e7e2a33231dce493e9596511ff17675888a906c6e6b702c99756f5690df388a2",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/tests/conftest.py": "e4ed2073067714b403b5ef8fe7ab8d923f6a919df1fb91dd35e0eb1157fce5b4",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/tests/test_metrics.py": "e6f0277bd230e4e56fe3daf7734c3124acbf1fc1c95c72d4802cb9834bb7815d",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/tests/test_pipeline.py": "1970d264816f42d06c37c59c4ee3c61feeda2b8f7122cb668d4da71a181eb59e",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/training_256_updates.csv": "eba1542300dcbfb4847917556b513f3400804d4928ccae3f451dbe4b91de54e3",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/training_final_audit.json": "19dd3e0a4f27fcaa4b48b1d4c9f533ddc45ebcce7d9801fd02718d3176a1ef63",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/training_sessions_verified.json": "ba9a0eef34376de7a42c1d6cc148a11b7a3abffde82d0a5c938716a56d0aa3b5",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/authorization.pending.template.json": "619866ec5a25921f95ab1e1939d65b1b66bc05754851a667b85e287daa88b6e3",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/cpu_preflight.json": "b9d5bcb8d7654435dfd89d78e39ece3009921bba2aa99f2694dbb2be7cc5fa95",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/protocol.json": "ce6340a79f3c2479dbf2883e305571e1582acf915a8fbffc2cf2488af8c1e869",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/protocol.sha256": "1fd4f6b9b151d4d5a2921641215d291c01772b3acc19bef26394502efe3f4d1b",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/regression_tests.xml": "02a3b40df756ed80cdebe9dfc5907e2129fe89252aed698da21427c44649df59",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/checks.py": "82fffdc7d492f026b8b8d340e375944bfec3983c31e80af32d61d55a3aa15656",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/entry.py": "0ec795e4952d6f0f7fb3d1e527f15376e7ed2c496431a11df243d0d5ca19553c",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/eval_driver.py": "ce0492caf1e5004bb8f1ace3593512174c6ee49df1c113c3971306cd814baeb4",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/eval_metrics.py": "3a8011834268aaef75885ca1c8b316e553befa10521af4f048668bd90abe5cfa",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/job.py": "8c5fce5c6cc8fa9ef9fd4cbb7c1f5f550be54cb52e1a5d497aec283d14f92e34",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/metadata_context.py": "0230c68656f7a569acd341d7f9237a8e62c7bcf437d785af2734f21c08a9134a",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/runtime_v2.py": "3c6d9d1f5da23be0a04e76d2b5e9dc13e840663ba04b0fb6e14f1ed02bb10fa8",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/targeted_tests.xml": "8601ed9d84ea466a0425768061f3c769443d0f487b1f3a85e8d24e0858a469bd",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/tests/conftest.py": "49a0868dd832b9a07036f59aed71b6db51c55b43df0f58710a4a552c0833eec5",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/tests/test_authorization_gate.py": "da96237cfa629a9cdab3f736ff0a17f738fafeee878b0323e588efd3db65e98b",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/tests/test_cleanup_fence.py": "db4d3575a9bae71688f96839b85153949533bcb152f28bd4c73dae67b874827e",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/tests/test_metadata_context.py": "7476470a47615015e511aa3b7ab4648bee990c0863a66fbc8d51605c8219c8e8",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/交付文件清单.json": "626e10ad71f419927ddb8d48c008bd86021a2bf5af88861ea9106e3208d3c360",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/保全核查.json": "38194866557b06e87ebdc20c9dbfb92b7fd85be713adb14c78a10849ce57e6a6",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复差异.patch": "816793d690e266f2021ece669e532abc5652e5d79e7d87380a6348c1c11bcc31",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复清单.json": "3406cb8ba9532449ae9da2d7cd5e8948e9d64f28bfb87c510b2a396e5870957d",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md": "3d3df6f9e66819d607a8163bb16b0f9e159b330533bcf37750a31b44be7e1e04",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/回归汇总.json": "b58366b6c2f07757847a9145f3d0cf57212a3a2e4da28097f2319c45a8b8daa5",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/最终进程核查.json": "42a7e8af15f2b94dc5137dc5c115dbe73a3242d247b7647d0cb5863eb72f51d9",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/根因现场.json": "cff368e24c19dc4bbf667a4f4fb7eb290c4e056144994cc615054d36237964ac",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/格式检查.json": "72000e6cc65743a54d1be363028d99b08cc8849d4041d1cf28d79d9ecde9a6d6",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/format_check.json": "9d441d52419b01127aaa5e6a00b8f8774ed78717fcfb259a3aed29354f692522",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/GPU预检报告.md": "59d77c33c2eb07b0198f617c2843d49d617acdb2264af6aae5ae9cb7239079d9",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/boundary_comparison.json": "2bf87b2cef97c388ae3b263dfc66fee832752c1fb9b73659098f6c647c0d02bb",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/config_before.json": "7bf789510eba5fea4ef170dd5cbae5e37239ba41ab58be04059db78861eb18b7",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/delivery_manifest.json": "3b11464c5b114493c027e93999fd8d4ab67055ebe33916c7b6e81d0510dd2d25",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/gpu_sample_after.csv": "b26f3de39bc4f0b5c6acedcb51bf56733e33461479bbfd6158b2a0deadefe1af",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/gpu_sample_session1.csv": "67dd5850d198c56834df4edba415cad5f912b82e29c8507e9e0728aeb50d537a",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/gpu_sample_session2.csv": "339b3332310209bef4c7bd5f4328499fe5b3c175d8bb2d03b3175bbe01957113",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/microsteps.json": "1e8f6c0726717be8299bbe91085d8c452fda129ca0e0d44ed1162433a83f187d",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/preregistration.json": "28b9c1e0153d4184814a9722d395c9fb75589be933645b5d659e7a520548ffb4",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/preservation_after.json": "b3f4cead20376a96f288d4bf98669b7d8d159b56bc13f73133eb8f7ae8efc619",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/preservation_after_session1.json": "a77379f8c41ede6d8c3c9c368bc7c377d3eea3189feb50d57e5192370d2162ce",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/protected_after.json": "97ec651189a3e0301027dfa62742cb4690f5ef86e6e0af24ca53f5705e74f6b5",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/protected_before.json": "d45ff182660ffa3f71c59c03e48423a417363d351ada7b60057afa9bb0ef75e2",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/restore_state_comparison.json": "3fbc9b7092d0ce1dc3ce55fa51194174a503c62df211a89815e901c2f0d23cf8",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/result.json": "32aea9d4ea99744a35646037bcd717a296f572cacbffae78a6e355e0471aa941",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/session1_closure.json": "361a2f61a17d9373795f3cf5a61cca9426101c26a79ebf4567e898568bd0f702",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/session1_exit.json": "940e0a6a0d91aac4236823c80a9291525b9937a6bc4a309461e31473c5270bbd",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/session1_launch.json": "a28817296168b8c7a16d4a9f83becce5328205ddddb896dce58e7515d144fba4",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/session1_worker_end.json": "8e0fcb29352ae148988646d7bd86026fea0e2c8f64142a8ba0dbc552df357257",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/session2_closure.json": "b2427cb2c3ce7f133d39ddef8da36d34debe0dabbaf1051c1b1359b194a8406d",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/session2_exit.json": "9ae4663d94d47df75c6997bee3f813490a48e0fafe52b60236ca4c018ab89cd1",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/session2_launch.json": "557a1b8e0bad233dba37c018bb9281576dcf0ba08a7ecee858475afa2cd888f8",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/session2_worker_end.json": "6bdba8ad261bb4f0307e4e011111007cbbf4608959f4a293752dd4c977d6a363",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/updates.csv": "1e9a4f91e25f9dd4428973c85e003a6af9ce70b92d963c7bd9725aa59baad9d2",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/preservation_result.json": "95f18a5744a5ac4543c5eb2c4681573521fa1baa8ff5841626e87145b7cf95ce",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/pytest_delivery.log": "15268fe5e433af75cf8a0fdd9789a7141fd56d52e2763e3a549755027516d1a0",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/pytest_delivery.xml": "2d5da8558ed0d08a42118d47a81b3fc0a1d952ddb5b9eab1dd3a788f029fb541",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/resume_20261102/after_audit.json": "19dd3e0a4f27fcaa4b48b1d4c9f533ddc45ebcce7d9801fd02718d3176a1ef63",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/resume_20261102/before_audit.json": "18db18f9d8511137a4e17e7a07776f8043b6187a626ad4bf8233cbf6dcdae81e",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/resume_20261102/v2_fix_final_audit.json": "38194866557b06e87ebdc20c9dbfb92b7fd85be713adb14c78a10849ce57e6a6",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention对照.csv": "aac83ed758fdb496656d31f316fe6320fcc0b9eec91560cc5b9a1893b42d4f8a",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.pdf": "b51c5f134222f483d219f534320d98a15a4e8f87b24bc5600f894dadd6d9926f",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.png": "721420034a4f540b5931569e76d4514547cd3517fa0ca6d28bbedad7ee8ce9e1",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/同类不同位置实例.csv": "d3736404fae8f39a7d2b56c0f2c87d860c858b4613ef21be56a093d8a982fb58",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv": "45d92451ece7937bcd1cc934549bb5dc9287f96159a8d46053775f893a03b6d3",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/有效指令配对.csv": "65f746623a2047d1d3e878ecd5cee9e48a56768805fdf50eab96568114444b1c",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md": "5c0bea8c5602502a9cd7c2d28493e96c779ec685113a5a29fed2ee97db3a814e",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收汇总.json": "42c21c06c538ff11661fd4dd2dedb69a24b96252d61d8d362997105a62d077e1",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/汇总既有结果.py": "133ba9ec324adb806b1293ede009b5966c1e05fee8e94cc84ef3285fcc507899",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.pdf": "70b2332445578eb1ebcbe9895450c2248e19c923bbea8bcb9c8a5ed25f461c9c",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png": "d14cbb945b2ae3cf7afcdc52ee0ff821a450cd1ff4be8c15e60a06854809d3b7",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/逐指令定位.csv": "d39eca8067385a501455d8e5659dbb1b6c43167459b1b461fea8c25acb5bd883",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/synthetic_acceptance.json": "265e37239a4ea227c0a4241c94652f3240d9a9c52ead753ed057de901f721d82",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/checkpoint_64_audit.json": "ee986866bf9e882fc7bff8de0bdefd68e35e04612dfe3703048cfa3c4846cd79",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/config.json": "7bf789510eba5fea4ef170dd5cbae5e37239ba41ab58be04059db78861eb18b7",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/fresh_initialization_prefix.json": "a0fc61e26deeb93fb8d28154a3d33c222a34b37cc78941027a842dc8010ac3fb",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/pause_audit.json": "dd8b2f97a596ae1b8053b94f37c241da78f4bf021e511800529519bc4622dde0",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/preregistration.json": "bad4d647929dacf8bd3737227c71efded6a29165fbe7aa9c06963d3d7664d8c6",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/preservation_after_pause.json": "a77379f8c41ede6d8c3c9c368bc7c377d3eea3189feb50d57e5192370d2162ce",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/training_256_20261101/下一步Development评价方案.md": "f2674b9405b715eba0374d43430843583907f7f14bf8ec6bb0567fcd1a8bf6ea",
+    "experiments/lg_bev_stage3_exploration_20261101/synthetic.py": "e2251ad83819c93f8abeb96a8690b13e66b2bb6c6d2e4628cda1a04cdeeac6fb",
+    "experiments/lg_bev_stage3_exploration_20261101/tests/conftest.py": "537968b308b2084601b65d28ebc6fa082d3c2e318856f74931e619a4989d9ad0",
+    "experiments/lg_bev_stage3_exploration_20261101/tests/test_assets.py": "9be73673e4236c7793490da977e724ac4b17e18458c13297ea0faa3463e41940",
+    "experiments/lg_bev_stage3_exploration_20261101/tests/test_metrics.py": "1b29be1f3d331f277a3b99b0d073ebe22876bbae5c024bb2b9fff6483df09db9",
+    "experiments/lg_bev_stage3_exploration_20261101/tests/test_numerics.py": "4d7857929558ecf6e53d5731cebc9df71e378e3376a0a48b71a7c4a7d2c38d7e",
+    "experiments/lg_bev_stage3_exploration_20261101/tests/test_protocol.py": "5984784b56d9e423f77275eba80b263287949994db4a1561bb483d79c3e7fcc9",
+    "experiments/lg_bev_stage3_exploration_20261101/tests/test_safety.py": "a1e03ef2284a76e5586e483fbdc54f47bc0813116bc7bed43aec875cea0b88f4",
+    "experiments/lg_bev_stage3_exploration_20261101/worker.py": "bfa8921923de8ee05daa2d69eaad76d4ce1789fd09077559ad3e748d70b23b0d",
+    "experiments/lg_bev_stage3_exploration_20261101/实施报告.md": "ef7de89ac2e36682d4f7193d8293ce6d592cd289cb0401274170c176c0e36e22",
+    "experiments/lg_bev_stage3_exploration_20261101/运行命令.md": "14632dc14fc568e9b5d1f9cf9e7f7f1dfc94d845e3475b62dc48f9f931af09bd",
+    "experiments/lg_bev_stage3_feasibility_audit_20261101/proposed_subset_metadata.json": "116822521c67167d05d9e9edec18c68194109a00aed9eb0b1c132d34cb159439",
+    "experiments/lg_bev_stage3_feasibility_audit_20261101/只读核查证据.json": "e7872025150f16f45a90859a9e2cf41fc084b5aa2303b779bdca4c314fe5a1aa",
+    "experiments/lg_bev_stage3_feasibility_audit_20261101/审计与最小实验方案.md": "2053fc962dfbca38db93ef4720a8c869a6810f5b7f155ba0e40e1e18bbf8168d",
+    "requirements_stage3_20261102.txt": "fc8073ab52659549ec729988e59a7f6472ea71d42729241d146d6aeb140644d9",
+    "results/lg_bev_v3_20261028/git_whitelist.json": "1b0d419ac9ded3ba9c2a82a4f42963f1412628ab295e61ece041832fb5c20632"
+  },
+  "whitelist_count": 141,
+  "staging_commit_authorized": true,
+  "push_authorized": false,
+  "staged_files_before_review": [],
+  "commit_receipt_note": "提交后回执不纳入同一Commit以避免哈希自引用。",
+  "staging_findings": {
+    "first_staged_path_and_blob_check": "141个路径及内容摘要全部一致",
+    "markdown_hardbreaks_fixed": 3,
+    "csv_crlf_preserved": true,
+    "nested_patch_whitespace_preserved": true,
+    "plain_file_whitespace_check_rule": "Git core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol；只排除原始.patch上下文"
+  }
+}

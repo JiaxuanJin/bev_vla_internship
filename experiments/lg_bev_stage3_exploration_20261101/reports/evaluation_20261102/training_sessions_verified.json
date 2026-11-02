@@ -1,0 +1,11 @@
+{
+  "all_chains_verified": true,
+  "sessions": [
+    "1793545951686660365_2d1a20fe",
+    "1793584192670218683_b4c8adda",
+    "1793586093365436391_6b94c545"
+  ],
+  "restore_zero_error": true,
+  "microsteps": 1024,
+  "updates": 256
+}

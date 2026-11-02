@@ -1,0 +1,22 @@
+{
+  "scope": "运行中周期Checkpoint只读核查，不构成退出回执",
+  "checkpoint": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101/checkpoints/1793545951686660365_2d1a20fe_periodic_000064.pt",
+  "sha256": "5c31f145a04f8ac4feedad366bfa2705de87fbfd8ef586c85b0de632adc23a3d",
+  "updates": 64,
+  "epoch": 0,
+  "cursor": 256,
+  "accumulated": 0,
+  "optimizer_states": 18,
+  "optimizer_steps_all": 64,
+  "scheduler_last_epoch": 64,
+  "current_lr": 0.0002604594154601841,
+  "RNG_components": [
+    "python",
+    "numpy",
+    "cpu",
+    "cuda"
+  ],
+  "frozen_sha_matches_gpu_preflight": true,
+  "train_order_matches": true,
+  "source_sha_matches": true
+}

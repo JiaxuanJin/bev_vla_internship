@@ -1,0 +1,27 @@
+{
+  "approved": true,
+  "actions": [
+    "train"
+  ],
+  "config_sha256": "7bf789510eba5fea4ef170dd5cbae5e37239ba41ab58be04059db78861eb18b7",
+  "code_sha256": {
+    "backend.py": "0dc586d263f1c3225d6dcc4142c578bb876ffd3314b662c8904aadb4b8b6b059",
+    "cli.py": "a57bee950fc28d25d53ba5441002c0c0ae142669103925ab207f855e7f7a03b4",
+    "core.py": "8f684e41124e4a75ee8b8e434e703798ba79eff1a6e70896203bce8b1c2da102",
+    "evaluation.py": "ba2c8a8f1f05d16cb21d7449ce609ac1f12f25027a66a79344f712d8ce9c8102",
+    "lifecycle.py": "f0a64c4bd593b1bea16640062a6c3a3c3a55b863b29a6f89ff9107eb6a989732",
+    "metrics.py": "22836fb963b260f3c749d86da824739ab6b7d9c65aa197c159fc1f4e14106959",
+    "numerics.py": "59f7c1ba2c31a52403cbb25399dac093a539b0a9b4c71cdcdc958f38332d5bd9",
+    "synthetic.py": "e2251ad83819c93f8abeb96a8690b13e66b2bb6c6d2e4628cda1a04cdeeac6fb",
+    "worker.py": "bfa8921923de8ee05daa2d69eaad76d4ce1789fd09077559ad3e748d70b23b0d"
+  },
+  "user_request": "授权执行LG-BEV Stage 3独立探索性Stage B固定预算GPU训练。从原A9562 Adapter state_dict新建独立run及优化器、scheduler、RNG，不在8更新preflight继续累计。固定512帧、2 epochs、1024微步、256次optimizer.step、seed=20261101；只训练93866参数。每会话不超过27000秒、预留至少600秒安全保存退出；允许使用本独立实验安全控制器跨会话继续。异常安全停止不扩预算、不自动64更新回退。禁止Development/Cold Final GT和精度评价，正式资产及A128失败结论不变，不Git commit/push。",
+  "max_frames": 512,
+  "epochs": 2,
+  "max_microsteps": 1024,
+  "max_updates": 256,
+  "development_gt": false,
+  "cold_final": false,
+  "output_root": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101",
+  "preregistration_sha256": "bad4d647929dacf8bd3737227c71efded6a29165fbe7aa9c06963d3d7664d8c6"
+}

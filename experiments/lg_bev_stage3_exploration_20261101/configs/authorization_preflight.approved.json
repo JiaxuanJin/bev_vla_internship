@@ -1,0 +1,33 @@
+{
+  "approved": true,
+  "actions": [
+    "preflight"
+  ],
+  "config_sha256": "7bf789510eba5fea4ef170dd5cbae5e37239ba41ab58be04059db78861eb18b7",
+  "code_sha256": {
+    "backend.py": "0dc586d263f1c3225d6dcc4142c578bb876ffd3314b662c8904aadb4b8b6b059",
+    "cli.py": "a57bee950fc28d25d53ba5441002c0c0ae142669103925ab207f855e7f7a03b4",
+    "core.py": "8f684e41124e4a75ee8b8e434e703798ba79eff1a6e70896203bce8b1c2da102",
+    "evaluation.py": "ba2c8a8f1f05d16cb21d7449ce609ac1f12f25027a66a79344f712d8ce9c8102",
+    "lifecycle.py": "f0a64c4bd593b1bea16640062a6c3a3c3a55b863b29a6f89ff9107eb6a989732",
+    "metrics.py": "22836fb963b260f3c749d86da824739ab6b7d9c65aa197c159fc1f4e14106959",
+    "numerics.py": "59f7c1ba2c31a52403cbb25399dac093a539b0a9b4c71cdcdc958f38332d5bd9",
+    "synthetic.py": "e2251ad83819c93f8abeb96a8690b13e66b2bb6c6d2e4628cda1a04cdeeac6fb",
+    "worker.py": "bfa8921923de8ee05daa2d69eaad76d4ce1789fd09077559ad3e748d70b23b0d"
+  },
+  "user_request": "授权执行 LG-BEV 独立探索性 Stage B 的最小 GPU 预检。本次授权范围严格限定为：32 帧、总计 8 次 optimizer 更新、两个独立 GPU 会话。第一会话执行至 update 4，正常停止保存；第二会话只使用新探索实验自身的安全恢复入口恢复至 update 8。不读取 Development 或 Cold Final GT，不进行终点精度评价。出现异常立即安全停止，不自动重试或增加训练预算。不授权256更新或64更新训练。",
+  "development_gt": false,
+  "cold_final": false,
+  "max_frames": 32,
+  "max_updates": 8,
+  "max_sessions": 2,
+  "output_root": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101",
+  "numeric_policy": {
+    "state_atol": 0.0,
+    "state_rtol": 0.0,
+    "witness_atol": 0.0,
+    "witness_rtol": 0.0,
+    "definition": "相同update4状态的同一下一帧Loss、全参数梯度和输入摘要完全一致"
+  },
+  "preregistration_sha256": "28b9c1e0153d4184814a9722d395c9fb75589be933645b5d659e7a520548ffb4"
+}

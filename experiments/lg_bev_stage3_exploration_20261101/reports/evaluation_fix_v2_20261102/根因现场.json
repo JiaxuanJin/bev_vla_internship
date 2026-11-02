@@ -1,0 +1,235 @@
+{
+  "failed_cached_index": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/cache/metadata/fbf27198b3424e28ab1de2a12eb3dc4a.pt",
+  "failed_cached_sha256": "f4613a0f9793af2aedf82b8f05d0c3e809bd308bb4a587d94a8a3ecf39a89b4d",
+  "sample_count": 32,
+  "annotation_count": 1225,
+  "missing_neighbor_links": 37,
+  "missing": [
+    {
+      "annotation": "0684a5e4b3c24e26bf5e0a018e529981",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "1a8180a50008418cbbd4c650c319f11e"
+    },
+    {
+      "annotation": "a28e575949ba4ffebc565b2aea2f266e",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "a826cb2cb8804b4b80acef7e977df438"
+    },
+    {
+      "annotation": "1aa0fbc13b514a2292191a9b6320caca",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "6bb7b6f540fe4d91ae962c1cb8e17cac"
+    },
+    {
+      "annotation": "371e1048a4d74684810c96f95714333d",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "bf2122e45b8b4cfcb1f8c500b8fef1a1"
+    },
+    {
+      "annotation": "31b7ef95718a4a93af11b6fbf6f7c94b",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "36d8036a74e047d5b8b0e787770e3165"
+    },
+    {
+      "annotation": "3819b6ac764644709684db292e64dbc4",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "d32a05db962b43daabe993cb3c81b401"
+    },
+    {
+      "annotation": "7d2f8115a67a4198942fe5e6faf16c95",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "e37b01d55e9c400fa905c4ef3b1b2fbf"
+    },
+    {
+      "annotation": "eb192d4a0847409d9da668f4dfbd82b6",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "8c3cb00df771472bad4bda44afdf7fb2"
+    },
+    {
+      "annotation": "0e1fe8aed4b54885bc06a7490412ec31",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "e478ff467ef743288726382df6f77412"
+    },
+    {
+      "annotation": "7935ddc3454245ce8795b285f73427e6",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "cad8f8a4ff6b41fbaef692ce9361b088"
+    },
+    {
+      "annotation": "69c04c6c06fc41c59b30d97f9dba09eb",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "65132b6f2e1446b98818bc82d44fcedd"
+    },
+    {
+      "annotation": "f2d657e2371c4a6fb90d7f2adfc77f93",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "928b32d625e74dd0969a6ffbb28a0589"
+    },
+    {
+      "annotation": "55c143e3b7b74cd4b77db9e5471fed4a",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "a97c655f84d04dda89142baf81adfdbd"
+    },
+    {
+      "annotation": "738a07664df442ee85ad83e13cc63316",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "daf519bf5fcc4647ab14798457e1e932"
+    },
+    {
+      "annotation": "7078e77a69184ed1be0cce7541ed255b",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "e92199c9c01a4e558ead7a42bc62b97d"
+    },
+    {
+      "annotation": "3e0e63e6dc0c4913ac210d77dc5cb662",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "b65f4de4c089445f8d17240c2d58bf67"
+    },
+    {
+      "annotation": "50f9e7239cf04e52b6f0b7a7f9736c21",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "03104a088bff4d53bc461d5ff4c8bcec"
+    },
+    {
+      "annotation": "f95ecadc2e794a6abe9d138cbb732c57",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "97ed18eac8684fbdb0ff66285626a7cc"
+    },
+    {
+      "annotation": "67b5b02f9e8e4a849291efd0553543da",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "1a2936a85bbb4a3596530398c0b71bc8"
+    },
+    {
+      "annotation": "28d9e889b1b94eb492078774398fa4bc",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "7081309d92e049cd88d37ed89fb96b0a"
+    },
+    {
+      "annotation": "2ff5cb835b9745c682bc222470956364",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "60b239168e8e45cbafc9996cf70cba9e"
+    },
+    {
+      "annotation": "e172a56d2387484591068eebd0ad87b8",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "2b69ce177f0b4cd79125741163c7a31a"
+    },
+    {
+      "annotation": "bf955555de8147a3a0efdfd5b0ccde03",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "016df1f3757f4a749deeae4ef02e642b"
+    },
+    {
+      "annotation": "e05dea73eda84fcab138df91336208c8",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "8ed8c9f63d9841b2b896cb1e30904314"
+    },
+    {
+      "annotation": "715dacfa120244a3b93cabe94d0f9df6",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "2e6d80c196254526a87bc55f31ecf94b"
+    },
+    {
+      "annotation": "1c2b91f1f68d40f8b453068e74e0faea",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "987eeeb68cc5496d84cbc3b034f20bc9"
+    },
+    {
+      "annotation": "750fecaaf59b4c3ab58c79da069b4441",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "00885e15b0744763b1a5e264d31ecc8a"
+    },
+    {
+      "annotation": "f38a85c637054235b535d8a40a8227a0",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "d57c2be5ff2946e4a93bd76a1ca34e4e"
+    },
+    {
+      "annotation": "9f90aa328c444ed8aac2b1092491523a",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "9d1c1241a68a46a0b6bf7083f6de5bca"
+    },
+    {
+      "annotation": "45cda88bc4e64f1ba0d4a4f9c4048081",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "abbcbb98e6dd43b6b11ce13b986c0c8d"
+    },
+    {
+      "annotation": "9e36e28051114a96b3dc640687d2dae9",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "69c1d419ba4d4da7b9213eb1ab27044a"
+    },
+    {
+      "annotation": "cff2bd33c8a74b1b927bfa9408ac8999",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "6dd92a95c6fe47238c76818077720f80"
+    },
+    {
+      "annotation": "1c536d369f8943dd92445052734ada47",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "62f6f4a7c53444a3b8b5e02cade183f7"
+    },
+    {
+      "annotation": "5155bdd018684537ae906a9c11524e3b",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "7425025fee454ea2aa3d31cc09f7c62e"
+    },
+    {
+      "annotation": "e9a55376fc094e9fbccd349c2049eca6",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "aa6f1b665428450f88db2cb246e48ada"
+    },
+    {
+      "annotation": "95a7105a0efe43ddadf2e99fe52dd7cc",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "1a21341849304e86979150d9d9295ee9"
+    },
+    {
+      "annotation": "ccaa0c660403472ca73fd7447f885aa7",
+      "sample": "5193a1bb5d334e09965d96d68f9c0573",
+      "field": "next",
+      "missing": "f78606732feb46d3962d13069604f8cd"
+    }
+  ],
+  "reason": "原始subset只含评分帧；边界annotation保留了真实next/prev，但目标行及sample时间戳未加载。训练侧预检使用共享完整场景索引，所以未触发该缺失。",
+  "old_development_predictions": 0,
+  "old_run_receipts": "保留非零退出观察，不补造成功回执",
+  "original_files_modified": false
+}

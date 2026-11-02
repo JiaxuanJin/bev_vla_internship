@@ -1,0 +1,19 @@
+{
+  "approved": false,
+  "protocol_sha256": "ce6340a79f3c2479dbf2883e305571e1582acf915a8fbffc2cf2488af8c1e869",
+  "source_sha256": {
+    "checks.py": "82fffdc7d492f026b8b8d340e375944bfec3983c31e80af32d61d55a3aa15656",
+    "entry.py": "0ec795e4952d6f0f7fb3d1e527f15376e7ed2c496431a11df243d0d5ca19553c",
+    "eval_driver.py": "ce0492caf1e5004bb8f1ace3593512174c6ee49df1c113c3971306cd814baeb4",
+    "eval_metrics.py": "3a8011834268aaef75885ca1c8b316e553befa10521af4f048668bd90abe5cfa",
+    "job.py": "8c5fce5c6cc8fa9ef9fd4cbb7c1f5f550be54cb52e1a5d497aec283d14f92e34",
+    "metadata_context.py": "0230c68656f7a569acd341d7f9237a8e62c7bcf437d785af2734f21c08a9134a",
+    "runtime_v2.py": "3c6d9d1f5da23be0a04e76d2b5e9dc13e840663ba04b0fb6e14f1ed02bb10fa8"
+  },
+  "development_gt": true,
+  "cold_final": false,
+  "scoring_frames": 320,
+  "trained_checkpoint_sha256": "fd0bead6f70aff8eac103817ea1059b4e598c59b4c59c2c04bf6b77ff1636621",
+  "velocity_context": "仅评分场景内一阶相邻标注及sample时间戳，禁止作为额外评分帧",
+  "user_authorization_text": "待用户单独确认后填写；本模板不构成批准"
+}

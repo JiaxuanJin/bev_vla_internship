@@ -1,0 +1,148 @@
+"""Separately sealed evaluation controller. Original training code stays immutable."""
+import argparse
+import fcntl
+import json
+import os
+from pathlib import Path
+import subprocess
+import sys
+import time
+import uuid
+
+SOURCE = Path(__file__).resolve().parent
+REPORT = SOURCE.parent
+ORIGINAL = REPORT.parents[1]
+sys.path.insert(0, str(ORIGINAL))
+sys.path.insert(0, str(ORIGINAL.parents[1]))
+from core import Store, read, require, sha, tensor_sha
+from cli import validate_config, trained_endpoint
+from lifecycle import verified_checkpoint, session_directories, record_exit, record_closure
+
+CONFIG_PATH = ORIGINAL/'configs/main.json'
+
+
+def checked_protocol():
+    p = read(REPORT/'protocol.json')
+    require(sha(REPORT/'protocol.json') == (REPORT/'protocol.sha256').read_text().strip(), 'Protocol SHA changed')
+    require(p['source_sha256'] == {f.name: sha(f) for f in sorted(SOURCE.glob('*.py'))}, 'Evaluation source changed')
+    require(p['authorization']['approved'] and not p['authorization']['cold_final'], 'Invalid authorization')
+    require(p['development_frames'] == 320 and p['session_seconds'] == 27000 and p['save_margin_seconds'] == 600, 'Protocol changed')
+    config = validate_config(CONFIG_PATH)
+    require(sha(CONFIG_PATH) == p['training_config_sha256'], 'Training config changed')
+    return p, config
+
+
+def expected(action):
+    return dict(schema='LG_BEV_UNIFIED_EVAL_20261102_V1', action=action, protocol_sha256=sha(REPORT/'protocol.json'))
+
+
+def run_id(action):
+    return 'lg_bev_explore_main_20261101_unified_eval_20261102_'+action
+
+
+def endpoint(store, config, protocol):
+    trained = trained_endpoint(store, config, CONFIG_PATH)
+    require(trained['adapter_digest'] == protocol['trained_adapter_sha256'], 'Trained adapter changed')
+    require(sha(protocol['trained_checkpoint']) == protocol['trained_checkpoint_sha256'], 'Trained checkpoint changed')
+    return trained
+
+
+def preflight_gate(store):
+    state, end, _ = verified_checkpoint(store, run_id('diagnostic'), expected('diagnostic'), require_outcome='PREFLIGHT_PASS')
+    require(state['preflight_passed'] and end['preflight_passed'], 'Diagnostic preflight failed')
+    cpu = read(REPORT/'cpu_preflight.json')
+    require(cpu['passed'] and cpu['source_sha256'] == read(REPORT/'protocol.json')['source_sha256'], 'CPU preflight missing or stale')
+
+
+def command(args, role):
+    result = [sys.executable, '-B', str(SOURCE/'entry.py'), role, '--action', args.action, '--session-id', args.session_id, '--started', str(args.started)]
+    if args.continue_run:
+        result.append('--continue-run')
+    return result
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('command', choices=('diagnostic','development','status','stop','_supervisor','_worker'))
+    parser.add_argument('--action', choices=('diagnostic','development'), default='development')
+    parser.add_argument('--session-id')
+    parser.add_argument('--started', type=float)
+    parser.add_argument('--continue-run', action='store_true')
+    args = parser.parse_args()
+    if args.command in ('diagnostic','development'):
+        args.action = args.command
+    protocol, config = checked_protocol()
+    store = Store()
+    rid, ident = run_id(args.action), expected(args.action)
+    if args.command == 'status':
+        state, end, cp = verified_checkpoint(store,rid,ident)
+        print(json.dumps(dict(outcome=end['outcome'],cursor=state['cursor'],safe_to_shutdown=True,can_resume=end['outcome']=='PAUSED',checkpoint=str(cp),sha256=sha(cp))))
+        return
+    if args.command == 'stop':
+        sessions = session_directories(store,rid)
+        require(sessions,'No session to stop')
+        rel = str(sessions[-1].relative_to(store.root))+'/stop.request.json'
+        if not store.path(rel).exists():
+            store.json(rel,dict(requested_at=time.time(),reason='USER_STOP'))
+        return
+    trained = endpoint(store,config,protocol)
+    if args.action == 'development':
+        preflight_gate(store)
+    if args.command in ('diagnostic','development'):
+        args.started = time.monotonic()
+        with store.path('experiment.lock').open('a') as lock:
+            fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+            sessions = session_directories(store,rid)
+            prior = None
+            if args.continue_run:
+                _, _, prior = verified_checkpoint(store,rid,ident,require_outcome='PAUSED')
+            else:
+                require(not sessions,'Existing run: no retry or overwrite permitted')
+            args.session_id = str(time.time_ns())+'_'+uuid.uuid4().hex[:8]
+            rel=f'{rid}/sessions/{args.session_id}'
+            launch=dict(identity=ident,session_id=args.session_id,launcher_pid=os.getpid(),requested_at=time.time())
+            if prior:
+                launch.update(previous_checkpoint=str(prior.relative_to(store.root)),previous_checkpoint_sha256=sha(prior))
+            store.json(rel+'/launch.json',launch)
+            with store.path(rel+'/console.log').open('xb') as log:
+                child=subprocess.Popen(command(args,'_supervisor'),stdout=log,stderr=log)
+                code=child.wait()
+            if code:
+                store.json(rel+'/failure_observation.json',dict(supervisor_pid=child.pid,actual_exit_code=code,safe_to_shutdown=False))
+            record_closure(store,rid,args.session_id,ident,child,code,args.started)
+            state,end,cp=verified_checkpoint(store,rid,ident)
+            print(json.dumps(dict(outcome=end['outcome'],cursor=state['cursor'],safe_to_shutdown=True,checkpoint=str(cp))))
+            return
+    rel=f'{rid}/sessions/{args.session_id}'
+    launch=read(store.path(rel+'/launch.json'))
+    require(launch['identity']==ident,'Session identity changed')
+    if args.command=='_supervisor':
+        require(os.getppid()==launch['launcher_pid'],'Wrong launcher')
+        store.json(rel+'/supervisor.json',dict(pid=os.getpid()))
+        child=subprocess.Popen(command(args,'_worker'))
+        code=child.wait()
+        if code:
+            store.json(rel+'/worker_failure_observation.json',dict(worker_pid=child.pid,actual_exit_code=code,safe_to_shutdown=False))
+        record_exit(store,rid,args.session_id,ident,child,code,args.started)
+        return
+    require(os.getppid()==read(store.path(rel+'/supervisor.json'))['pid'],'Wrong supervisor')
+    previous=None
+    if args.continue_run:
+        import torch
+        cp=store.path(launch['previous_checkpoint'])
+        require(sha(cp)==launch['previous_checkpoint_sha256'],'Previous checkpoint changed')
+        previous=torch.load(cp,map_location='cpu',weights_only=False)
+        require(previous['identity']==ident,'Previous identity changed')
+    from backend import environment
+    environment(store)
+    from job import evaluate
+    evaluate(args,config,protocol,store,rid,ident,trained,previous)
+
+
+if __name__=='__main__':
+    try:
+        main()
+    except Exception:
+        import traceback
+        traceback.print_exc()
+        sys.exit(2)

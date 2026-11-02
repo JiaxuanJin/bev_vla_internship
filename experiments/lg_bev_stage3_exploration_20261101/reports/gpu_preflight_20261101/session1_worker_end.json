@@ -1,0 +1,237 @@
+{
+  "identity": {
+    "config_sha256": "7bf789510eba5fea4ef170dd5cbae5e37239ba41ab58be04059db78861eb18b7",
+    "code_sha256": {
+      "backend.py": "0dc586d263f1c3225d6dcc4142c578bb876ffd3314b662c8904aadb4b8b6b059",
+      "cli.py": "a57bee950fc28d25d53ba5441002c0c0ae142669103925ab207f855e7f7a03b4",
+      "core.py": "8f684e41124e4a75ee8b8e434e703798ba79eff1a6e70896203bce8b1c2da102",
+      "evaluation.py": "ba2c8a8f1f05d16cb21d7449ce609ac1f12f25027a66a79344f712d8ce9c8102",
+      "lifecycle.py": "f0a64c4bd593b1bea16640062a6c3a3c3a55b863b29a6f89ff9107eb6a989732",
+      "metrics.py": "22836fb963b260f3c749d86da824739ab6b7d9c65aa197c159fc1f4e14106959",
+      "numerics.py": "59f7c1ba2c31a52403cbb25399dac093a539b0a9b4c71cdcdc958f38332d5bd9",
+      "synthetic.py": "e2251ad83819c93f8abeb96a8690b13e66b2bb6c6d2e4628cda1a04cdeeac6fb",
+      "worker.py": "bfa8921923de8ee05daa2d69eaad76d4ce1789fd09077559ad3e748d70b23b0d"
+    },
+    "action": "preflight",
+    "schema": "LG_BEV_EXPLORATION_V1"
+  },
+  "session_id": "1793544071841122956_a6b12db4",
+  "checkpoint": "lg_bev_explore_main_20261101_preflight/checkpoints/1793544071841122956_a6b12db4_end.pt",
+  "checkpoint_sha256": "c65f7e86a0845afc60be344a1a4c25a1141457408dc271ae3d6be00d672bbc76",
+  "outcome": "PAUSED",
+  "updates": 4,
+  "cuda_peak_allocated_bytes": 1980924416,
+  "cuda_peak_reserved_bytes": 2891972608,
+  "native_raw_frames": 17,
+  "elapsed_before_checkpoint_exit_seconds": 359.4644065619941,
+  "preflight_evidence": {
+    "initial_gradient": {
+      "detection": {
+        "up.": 0.002587607738317978,
+        "language.": 0.0,
+        "visual.": 0.0,
+        "key.": 0.0,
+        "mask_refine.": 0.0,
+        "loss": 2.482447385787964,
+        "total_l2": 0.002587607738317978
+      },
+      "segmentation": {
+        "up.": 0.0006905235912761116,
+        "language.": 0.0,
+        "visual.": 0.0,
+        "key.": 0.0,
+        "mask_refine.": 0.0,
+        "loss": 0.6575121283531189,
+        "total_l2": 0.0006905235912761116
+      },
+      "attention": {
+        "up.": 0.0,
+        "language.": 13.97856101231011,
+        "visual.": 7.280616278350476,
+        "key.": 13.72039187258174,
+        "mask_refine.": 0.5357322586257639,
+        "loss": 1.547683835029602,
+        "total_l2": 21.89598199620157
+      }
+    },
+    "after_update_gradient": {
+      "detection": {
+        "up.": 0.0028967038582584236,
+        "language.": 0.0004917584800290129,
+        "visual.": 0.00011889084421706711,
+        "key.": 0.0003295355260829939,
+        "mask_refine.": 1.1664242200055237e-05,
+        "loss": 3.026724338531494,
+        "total_l2": 0.0029648174962855476
+      },
+      "segmentation": {
+        "up.": 0.0034254515690603986,
+        "language.": 0.00024240769063721036,
+        "visual.": 0.00016183944897221622,
+        "key.": 0.0002499593115844398,
+        "mask_refine.": 1.4808980729183658e-05,
+        "loss": 0.7408159375190735,
+        "total_l2": 0.0034493043670641454
+      },
+      "attention": {
+        "up.": 0.0,
+        "language.": 16.478921074486557,
+        "visual.": 15.609502123600485,
+        "key.": 16.381704457603895,
+        "mask_refine.": 1.4611622285629005,
+        "loss": 2.056250810623169,
+        "total_l2": 29.17227114868716
+      }
+    },
+    "identity_frames": [
+      "b93594cfacc944bca351b979e0c37397",
+      "1759e74726f7465585fd860ec81315c5"
+    ],
+    "raw_replay_frames": [
+      "b93594cfacc944bca351b979e0c37397",
+      "1759e74726f7465585fd860ec81315c5"
+    ],
+    "formal_training": false,
+    "gradient_checks": [
+      {
+        "before_update": 0,
+        "token": "b93594cfacc944bca351b979e0c37397",
+        "branches": {
+          "detection": {
+            "up.": 0.002587607738317978,
+            "language.": 0.0,
+            "visual.": 0.0,
+            "key.": 0.0,
+            "mask_refine.": 0.0,
+            "loss": 2.482447385787964,
+            "total_l2": 0.002587607738317978
+          },
+          "segmentation": {
+            "up.": 0.0006905235912761116,
+            "language.": 0.0,
+            "visual.": 0.0,
+            "key.": 0.0,
+            "mask_refine.": 0.0,
+            "loss": 0.6575121283531189,
+            "total_l2": 0.0006905235912761116
+          },
+          "attention": {
+            "up.": 0.0,
+            "language.": 13.97856101231011,
+            "visual.": 7.280616278350476,
+            "key.": 13.72039187258174,
+            "mask_refine.": 0.5357322586257639,
+            "loss": 1.547683835029602,
+            "total_l2": 21.89598199620157
+          }
+        }
+      },
+      {
+        "before_update": 1,
+        "token": "a7fa58e31e984664982170ea74c24449",
+        "branches": {
+          "detection": {
+            "up.": 0.0028967038582584236,
+            "language.": 0.0004917584800290129,
+            "visual.": 0.00011889084421706711,
+            "key.": 0.0003295355260829939,
+            "mask_refine.": 1.1664242200055237e-05,
+            "loss": 3.026724338531494,
+            "total_l2": 0.0029648174962855476
+          },
+          "segmentation": {
+            "up.": 0.0034254515690603986,
+            "language.": 0.00024240769063721036,
+            "visual.": 0.00016183944897221622,
+            "key.": 0.0002499593115844398,
+            "mask_refine.": 1.4808980729183658e-05,
+            "loss": 0.7408159375190735,
+            "total_l2": 0.0034493043670641454
+          },
+          "attention": {
+            "up.": 0.0,
+            "language.": 16.478921074486557,
+            "visual.": 15.609502123600485,
+            "key.": 16.381704457603895,
+            "mask_refine.": 1.4611622285629005,
+            "loss": 2.056250810623169,
+            "total_l2": 29.17227114868716
+          }
+        }
+      },
+      {
+        "before_update": 2,
+        "token": "f67e5b25a4d741c6ab86a9f1c1d8309b",
+        "branches": {
+          "detection": {
+            "up.": 0.003683685004558556,
+            "language.": 0.00024537519758592455,
+            "visual.": 0.0001253541662355128,
+            "key.": 0.00023882167424517007,
+            "mask_refine.": 1.75133262564636e-05,
+            "loss": 2.6527597904205322,
+            "total_l2": 0.003705008879997594
+          },
+          "segmentation": {
+            "up.": 0.004385495556491494,
+            "language.": 0.00016066327900713935,
+            "visual.": 9.996332945303873e-05,
+            "key.": 0.00016776245588304693,
+            "mask_refine.": 1.2023979818788596e-05,
+            "loss": 0.6528250575065613,
+            "total_l2": 0.00439423333973353
+          },
+          "attention": {
+            "up.": 0.0,
+            "language.": 12.483110478399947,
+            "visual.": 9.120515318996384,
+            "key.": 10.706809107338485,
+            "mask_refine.": 1.178828352900899,
+            "loss": 1.8428932428359985,
+            "total_l2": 19.88396284470448
+          }
+        }
+      },
+      {
+        "before_update": 3,
+        "token": "1759e74726f7465585fd860ec81315c5",
+        "branches": {
+          "detection": {
+            "up.": 0.024942740591675297,
+            "language.": 0.004413854033177146,
+            "visual.": 0.0010777122517922504,
+            "key.": 0.0029953580672423294,
+            "mask_refine.": 6.57726063938846e-05,
+            "loss": 3.4158408641815186,
+            "total_l2": 0.025583989859985806
+          },
+          "segmentation": {
+            "up.": 0.0022737911015666542,
+            "language.": 0.0001237801444714954,
+            "visual.": 0.00011345349402657247,
+            "key.": 0.00011478716631035291,
+            "mask_refine.": 1.6309543890531306e-05,
+            "loss": 0.3617222309112549,
+            "total_l2": 0.002283770127254159
+          },
+          "attention": {
+            "up.": 0.0,
+            "language.": 1.4481191973623808,
+            "visual.": 1.6556008445547992,
+            "key.": 1.4590011146330677,
+            "mask_refine.": 0.39044001788889493,
+            "loss": 1.2707897424697876,
+            "total_l2": 2.7924011677478764
+          }
+        }
+      }
+    ],
+    "numeric_policy": {
+      "state_atol": 0.0,
+      "state_rtol": 0.0,
+      "witness_atol": 0.0,
+      "witness_rtol": 0.0,
+      "definition": "相同update4状态的同一下一帧Loss、全参数梯度和输入摘要完全一致"
+    }
+  }
+}

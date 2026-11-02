@@ -1,0 +1,47 @@
+{
+  "scope": "INDEPENDENT_EXPLORATORY_NOT_FORMAL",
+  "run_id": "lg_bev_explore_main_20261101",
+  "seed": 20261101,
+  "train_frames": 512,
+  "updates": 256,
+  "evaluation_frames": 320,
+  "session_seconds": 27000,
+  "save_margin_seconds": 600,
+  "output_root": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101",
+  "asset_limit_bytes": 8000000000,
+  "combined_limit_bytes": 30000000000,
+  "free_reserve_bytes": 250000000000,
+  "subset_manifest": "/home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_feasibility_audit_20261101/proposed_subset_metadata.json",
+  "sealed_inputs": {
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/execution.json": "9de2da91b104d6fca28a223d76f0d5c8aae2078b6c5243b6d13e9b7058b30cf6",
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_v3_20261028/admission.json": "e4fd5af5ad9980dca85357da91adc26d5a812d8453faa5b24e0006c5530898ca",
+    "/home/jjx2003520/projects/bev_vla/results/lg_bev_formal_training_audit_20261027/formal_split_manifest.json": "2adc066fb931c4c59ac8d76e447d7e5b3781827e8bb2c2a1e409ded8111f3302",
+    "/home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_feasibility_audit_20261101/proposed_subset_metadata.json": "116822521c67167d05d9e9edec18c68194109a00aed9eb0b1c132d34cb159439",
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/formal_gt_20261027_v1/data_report.json": "295f6006e0aa09ab4dad45e1a6a528115de89dec1b2a524c7a423d46db8afd27",
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_acceptance_v3_20261028_v1/execution.json": "a30f9a7f9735bfcd36c04bd9a952b6492093b785fbe6ddd7cd4d49ba7208c5e3",
+    "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_acceptance_v3_20261028_v1/control.jsonl": "c76f954c7e136928a5eb4016aa73e833756c6ba2e7dd24022ce1fe5c770e3ada"
+  },
+  "assets": {
+    "a9562": {
+      "path": "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/lg_bev_formal_v3_20261028_v1/checkpoints/A_u009562_m019123_1d99b39859.pt",
+      "file_sha256": "b19dacd76ee5861a05d6f915e4d096250d36d7280bc3701dbf5e99e1430b038a",
+      "receipt_sha256": "32ed28a87d29c8e0d6e74f42978ffba5301e67e3ced1146591b5c4b832351cb4",
+      "execution_sha256": "9de2da91b104d6fca28a223d76f0d5c8aae2078b6c5243b6d13e9b7058b30cf6",
+      "adapter_sha256": "5db7c4105bb9b138773ec249b7f47641ccddc16bb64d3a3b11ebb297ce7dfe81"
+    },
+    "a0": {
+      "path": "/mnt/g/BEV_VLA_Datasets/lg_bev_rolling_cache/runs/daily_acceptance_v3_20261028_v1/checkpoints/B_u000000_m000001_e4660011d5.pt",
+      "file_sha256": "737b8dded2aabc340572d46c86d36515e9496b38c69e83c9554f2a0dfc17bb8d",
+      "receipt_sha256": "a9be0d3eb6f544bab81b964036521ab3c4b0aec75cb880745bce2d3afa7584ff",
+      "execution_sha256": "a30f9a7f9735bfcd36c04bd9a952b6492093b785fbe6ddd7cd4d49ba7208c5e3",
+      "adapter_sha256": "bc6e34dd4def828420d94b147a61a57a0b4f2d5c3a6e6f60512d301d58a2bc8f"
+    }
+  },
+  "说明": "固定终点；GPU与Development GT另行授权；Cold Final禁止；A0仅为独立零更新参数候选。",
+  "preflight_pause_updates": 4,
+  "training_query_policy": {
+    "implementation": "sealed_choose_query",
+    "hash_salt": 20261027,
+    "说明": "固定指令表排序标签，非RNG种子；Python/NumPy/Torch新实验RNG均为20261101。"
+  }
+}

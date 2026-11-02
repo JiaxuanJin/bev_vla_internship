@@ -1,0 +1,100 @@
+{
+  "observed_at": 1793607646.7669303,
+  "mode": "v2_fix_final",
+  "outcome": "COMPLETED",
+  "completed_updates": 256,
+  "budget_updates": 256,
+  "epoch": 1,
+  "cursor": 512,
+  "accumulated": 0,
+  "persisted_microsteps": 1024,
+  "sample_order_verified": true,
+  "optimizer_states": 18,
+  "optimizer_steps_all": 256,
+  "scheduler": {
+    "T_max": 256,
+    "eta_min": 3e-05,
+    "base_lrs": [
+      0.0003
+    ],
+    "last_epoch": 256,
+    "_step_count": 257,
+    "_is_initial": false,
+    "_get_lr_called_within_step": false,
+    "_last_lr": [
+      3e-05
+    ]
+  },
+  "optimizer_param_groups": [
+    {
+      "lr": 3e-05,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "weight_decay": 0.01,
+      "amsgrad": false,
+      "maximize": false,
+      "foreach": null,
+      "capturable": false,
+      "differentiable": false,
+      "fused": null,
+      "decoupled_weight_decay": true,
+      "initial_lr": 0.0003,
+      "params": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    }
+  ],
+  "RNG_components": [
+    "python",
+    "numpy",
+    "cpu",
+    "cuda"
+  ],
+  "frozen_sha_matches_preflight": true,
+  "adapter_parameters": 93866,
+  "checkpoint": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101/checkpoints/1793586093365436391_6b94c545_end.pt",
+  "checkpoint_sha256": "fd0bead6f70aff8eac103817ea1059b4e598c59b4c59c2c04bf6b77ff1636621",
+  "worker_exit_code": 0,
+  "supervisor_exit_code": 0,
+  "session_wall_seconds": 6027.979688034,
+  "can_resume": false,
+  "safe_to_shutdown": true,
+  "training_processes": [],
+  "preservation": {
+    "files_checked": 196,
+    "changed": [],
+    "changed_sources": [],
+    "shared_catalog_unchanged": true,
+    "added": [],
+    "removed": [],
+    "directories_unchanged": true,
+    "unchanged": true
+  },
+  "new_assets_bytes": 91229739,
+  "shared_bytes": 20276225955,
+  "g_free_bytes": 360091713536,
+  "formal_status": "FAILED",
+  "formal_stop_reason": "GROUNDING_NOT_READY",
+  "development_gt_read": false,
+  "cold_final_gt_read": false
+}

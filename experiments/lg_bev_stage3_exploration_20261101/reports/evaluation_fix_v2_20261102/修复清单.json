@@ -1,0 +1,69 @@
+{
+  "files": {
+    "checks.py": {
+      "new_sha256": "82fffdc7d492f026b8b8d340e375944bfec3983c31e80af32d61d55a3aa15656",
+      "original": "/home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/checks.py",
+      "original_sha256": "0f4be4412d0f90040e409376d9dba65eaff601306aae9ba8653ad341136be701"
+    },
+    "entry.py": {
+      "new_sha256": "0ec795e4952d6f0f7fb3d1e527f15376e7ed2c496431a11df243d0d5ca19553c",
+      "original": "/home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/entry.py",
+      "original_sha256": "0e9d6be528ee1c93e5e3f08eae39817e38d51959d324370725ff236de34d4f50"
+    },
+    "eval_driver.py": {
+      "new_sha256": "ce0492caf1e5004bb8f1ace3593512174c6ee49df1c113c3971306cd814baeb4",
+      "original": "/home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/eval_driver.py",
+      "original_sha256": "c4733927e44f7441eb039baf6067b1785100ddd408b29a024195d9c9a26973f3"
+    },
+    "eval_metrics.py": {
+      "new_sha256": "3a8011834268aaef75885ca1c8b316e553befa10521af4f048668bd90abe5cfa",
+      "original": "/home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/eval_metrics.py",
+      "original_sha256": "fc21d00309f09774719b6553213a4670440fd64c2b77cb82f9f1ebb335de7c6f"
+    },
+    "job.py": {
+      "new_sha256": "8c5fce5c6cc8fa9ef9fd4cbb7c1f5f550be54cb52e1a5d497aec283d14f92e34",
+      "original": "/home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/job.py",
+      "original_sha256": "e7e2a33231dce493e9596511ff17675888a906c6e6b702c99756f5690df388a2"
+    },
+    "metadata_context.py": {
+      "new_sha256": "0230c68656f7a569acd341d7f9237a8e62c7bcf437d785af2734f21c08a9134a",
+      "original": null,
+      "original_sha256": null
+    },
+    "runtime_v2.py": {
+      "new_sha256": "3c6d9d1f5da23be0a04e76d2b5e9dc13e840663ba04b0fb6e14f1ed02bb10fa8",
+      "original": "/home/jjx2003520/projects/bev_vla/experiments/lg_bev_stage3_exploration_20261101/backend.py",
+      "original_sha256": "0dc586d263f1c3225d6dcc4142c578bb876ffd3314b662c8904aadb4b8b6b059"
+    }
+  },
+  "parent_protocol_sha256": "b3ec763488158d2624ebb009f3c5b75fc341f8b517e6ffa92496a12a5b90841b",
+  "new_protocol_sha256": "ce6340a79f3c2479dbf2883e305571e1582acf915a8fbffc2cf2488af8c1e869",
+  "scoring_ast_unchanged": true,
+  "unchanged_protocol_fields": [
+    "training_config_sha256",
+    "original_training_code_sha256",
+    "trained_checkpoint",
+    "trained_checkpoint_sha256",
+    "trained_adapter_sha256",
+    "a9562",
+    "a0",
+    "development_frames",
+    "development_tokens",
+    "development_scenes",
+    "diagnostic_tokens",
+    "diagnostic_selection",
+    "session_seconds",
+    "save_margin_seconds",
+    "seed",
+    "queries_per_frame",
+    "query_policy",
+    "controls",
+    "detection",
+    "segmentation",
+    "attention",
+    "raw_predictions",
+    "storage",
+    "corrections"
+  ],
+  "authorization": "PENDING_REAUTHORIZATION"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "CPU_PREPARATION_ONLY",
+  "cuda_initialized": false,
+  "a9562_sha": "5db7c4105bb9b138773ec249b7f47641ccddc16bb64d3a3b11ebb297ce7dfe81",
+  "a0_sha": "bc6e34dd4def828420d94b147a61a57a0b4f2d5c3a6e6f60512d301d58a2bc8f",
+  "train_frames": 512,
+  "evaluation_metadata_frames": 320,
+  "development_GT_read": false,
+  "code_sha256": {
+    "backend.py": "0dc586d263f1c3225d6dcc4142c578bb876ffd3314b662c8904aadb4b8b6b059",
+    "cli.py": "b22c63cf3edd11d25b58e73d8ab783b8279e8e3f324b3218f32aef26837bd1bc",
+    "core.py": "8f684e41124e4a75ee8b8e434e703798ba79eff1a6e70896203bce8b1c2da102",
+    "evaluation.py": "ba2c8a8f1f05d16cb21d7449ce609ac1f12f25027a66a79344f712d8ce9c8102",
+    "lifecycle.py": "f0a64c4bd593b1bea16640062a6c3a3c3a55b863b29a6f89ff9107eb6a989732",
+    "metrics.py": "22836fb963b260f3c749d86da824739ab6b7d9c65aa197c159fc1f4e14106959",
+    "synthetic.py": "e2251ad83819c93f8abeb96a8690b13e66b2bb6c6d2e4628cda1a04cdeeac6fb",
+    "worker.py": "220a66107d168963c303e302341de93d168c39727110fda8a3b090b83254232a"
+  }
+}

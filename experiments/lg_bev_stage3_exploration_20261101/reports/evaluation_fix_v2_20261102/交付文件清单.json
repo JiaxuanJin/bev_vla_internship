@@ -1,0 +1,143 @@
+{
+  "original_v1_and_training_sha_unchanged": true,
+  "v2_protocol_sha256": "ce6340a79f3c2479dbf2883e305571e1582acf915a8fbffc2cf2488af8c1e869",
+  "authorization_pending": true,
+  "artifacts": {
+    "docs/logbook_2026-11-02.md": {
+      "sha256": "bf58587ff84ac72a6e234ed20d405e6b56b5e7dbee26700269bac6747f359b98",
+      "bytes": 4082
+    },
+    "docs/final_report/BEV_DriveLM_项目总结报告.md": {
+      "sha256": "59b0c517d05cedec2358afc48c8540b656ba22e165e3af2f96732643e5dd9a1a",
+      "bytes": 52712
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/cpu_preflight.json": {
+      "sha256": "b9d5bcb8d7654435dfd89d78e39ece3009921bba2aa99f2694dbb2be7cc5fa95",
+      "bytes": 913
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/black.log": {
+      "sha256": "169e77f3e39d8c8f1a737c1ab263573100d8671d8b3d03c34ada681c589782f6",
+      "bytes": 1552
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/authorization.pending.template.json": {
+      "sha256": "619866ec5a25921f95ab1e1939d65b1b66bc05754851a667b85e287daa88b6e3",
+      "bytes": 1126
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/格式检查.json": {
+      "sha256": "72000e6cc65743a54d1be363028d99b08cc8849d4041d1cf28d79d9ecde9a6d6",
+      "bytes": 90
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/保全核查.json": {
+      "sha256": "38194866557b06e87ebdc20c9dbfb92b7fd85be713adb14c78a10849ce57e6a6",
+      "bytes": 2211
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md": {
+      "sha256": "d50957b88c33fbe093653cae97225529c798248c9cbf18420c79bc629d76fd58",
+      "bytes": 5027
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/targeted_tests.log": {
+      "sha256": "fe2b0279cc2257b29241d2f5e8d646a99bb106a6497254d0bb89d31b3dacbfa4",
+      "bytes": 3788
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复差异.patch": {
+      "sha256": "816793d690e266f2021ece669e532abc5652e5d79e7d87380a6348c1c11bcc31",
+      "bytes": 46777
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/回归汇总.json": {
+      "sha256": "b58366b6c2f07757847a9145f3d0cf57212a3a2e4da28097f2319c45a8b8daa5",
+      "bytes": 335
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复清单.json": {
+      "sha256": "3406cb8ba9532449ae9da2d7cd5e8948e9d64f28bfb87c510b2a396e5870957d",
+      "bytes": 3148
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/protocol.sha256": {
+      "sha256": "1fd4f6b9b151d4d5a2921641215d291c01772b3acc19bef26394502efe3f4d1b",
+      "bytes": 65
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/regression_tests.log": {
+      "sha256": "d89e05a5f4f36e4824975c5b5f3febbdf77cc2f1b86630f0154f2cb251d467f1",
+      "bytes": 3897
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/结项报告_更新前_20261102.md": {
+      "sha256": "caa43dde6046874b22891e075b404c0dd0e117103d81b1c842e63b7977f8f4e1",
+      "bytes": 47982
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/regression_tests.xml": {
+      "sha256": "02a3b40df756ed80cdebe9dfc5907e2129fe89252aed698da21427c44649df59",
+      "bytes": 15868
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/protocol.json": {
+      "sha256": "ce6340a79f3c2479dbf2883e305571e1582acf915a8fbffc2cf2488af8c1e869",
+      "bytes": 20439
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/black_final.log": {
+      "sha256": "a45e0c385dadb5969aa29a3285d10dd9afaa343dd566fb9b7fd84817c5b6bab0",
+      "bytes": 195
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/targeted_tests.xml": {
+      "sha256": "8601ed9d84ea466a0425768061f3c769443d0f487b1f3a85e8d24e0858a469bd",
+      "bytes": 778
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/根因现场.json": {
+      "sha256": "cff368e24c19dc4bbf667a4f4fb7eb290c4e056144994cc615054d36237964ac",
+      "bytes": 7939
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md": {
+      "sha256": "5c0bea8c5602502a9cd7c2d28493e96c779ec685113a5a29fed2ee97db3a814e",
+      "bytes": 3996
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/有效指令配对.csv": {
+      "sha256": "65f746623a2047d1d3e878ecd5cee9e48a56768805fdf50eab96568114444b1c",
+      "bytes": 247
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/同类不同位置实例.csv": {
+      "sha256": "d3736404fae8f39a7d2b56c0f2c87d860c858b4613ef21be56a093d8a982fb58",
+      "bytes": 11613
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/逐指令定位.csv": {
+      "sha256": "d39eca8067385a501455d8e5659dbb1b6c43167459b1b461fea8c25acb5bd883",
+      "bytes": 3302
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention对照.csv": {
+      "sha256": "aac83ed758fdb496656d31f316fe6320fcc0b9eec91560cc5b9a1893b42d4f8a",
+      "bytes": 694
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/生成日志_第二次.log": {
+      "sha256": "18b087a632e006b272d7ef80472c86dd89f83e65341e3f1d7e49fd50ca899961",
+      "bytes": 339
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/汇总既有结果.py": {
+      "sha256": "133ba9ec324adb806b1293ede009b5966c1e05fee8e94cc84ef3285fcc507899",
+      "bytes": 11205
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.pdf": {
+      "sha256": "70b2332445578eb1ebcbe9895450c2248e19c923bbea8bcb9c8a5ed25f461c9c",
+      "bytes": 146206
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.png": {
+      "sha256": "721420034a4f540b5931569e76d4514547cd3517fa0ca6d28bbedad7ee8ce9e1",
+      "bytes": 80299
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/生成日志.log": {
+      "sha256": "f2222eead61a21d3bf825546e84382d9be37663ee0340971b34effdda385b3e5",
+      "bytes": 1005
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv": {
+      "sha256": "45d92451ece7937bcd1cc934549bb5dc9287f96159a8d46053775f893a03b6d3",
+      "bytes": 672
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png": {
+      "sha256": "d14cbb945b2ae3cf7afcdc52ee0ff821a450cd1ff4be8c15e60a06854809d3b7",
+      "bytes": 323113
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.pdf": {
+      "sha256": "b51c5f134222f483d219f534320d98a15a4e8f87b24bc5600f894dadd6d9926f",
+      "bytes": 29328
+    },
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收汇总.json": {
+      "sha256": "42c21c06c538ff11661fd4dd2dedb69a24b96252d61d8d362997105a62d077e1",
+      "bytes": 13115
+    }
+  }
+}
