@@ -1,0 +1,225 @@
+{
+  "状态": "VOICE_VIDEO_COMPLETED_LOCAL_CANDIDATE",
+  "最终验收状态": "NOT_VERIFIED；本人试听、接收设备实际开播及指导老师终审待完成",
+  "视频": "outputs/stage4_delivery_20261103/demo_voice_20261103/LG-BEV_demo_4分钟.mp4",
+  "原登记视频路径": "outputs/stage4_delivery_20261103/demo_voice_20261103/LG-BEV_本人配音_4分钟.mp4",
+  "文件名变更": "负责人确认改名为LG-BEV_demo_4分钟.mp4；与原登记本人配音版SHA一致",
+  "视频SHA256": "a5af1ca852b078849476ed3aa5e388a08d27b1fb36f5c33933428008b65e22e9",
+  "视频字节": 27358410,
+  "时长秒": 240.0,
+  "帧数": 1200,
+  "帧率": 5.0,
+  "分辨率": [
+    1920,
+    1080
+  ],
+  "编码": "MPEG-4 Part 2 / mp4v",
+  "像素格式": "I420 / yuv420p；沿用正式展示版解码记录",
+  "音轨": "AAC LC，48kHz，双声道人声；192kbps编码目标码率",
+  "轨道数": 2,
+  "字幕": "outputs/stage4_delivery_20261103/demo_voice_20261103/LG-BEV_正式展示_中文字幕.srt",
+  "字幕SHA256": "782589f2ce33094d1339c63fe90e9264130a3847c4f0b69be1caab9366d65e38",
+  "原始录音": "outputs/stage4_delivery_20261103/voice_recordings/01.m4a至12.m4a；12/12存在且SHA与既有合成回执一致，原录音未修改",
+  "同步检查": "outputs/stage4_delivery_20261103/demo_voice_20261103/12段录音同步检查.csv；每段两条SRT分别放置，未变速或变调",
+  "合成回执": "outputs/stage4_delivery_20261103/demo_voice_20261103/合成与同步核查.json；制作回执记录原文件名，原记录保留",
+  "播放验证": "当前SHA对应既有1200帧视频和240秒AAC完整解码；容器及音轨编辑列表均为240秒，抽取9个时间点，不重复全量解码。接收端播放器及主观听感NOT_VERIFIED",
+  "原视频画面媒体数据与视频轨逐字节一致": true,
+  "本轮抽帧秒": [
+    1,
+    75,
+    85,
+    95,
+    105,
+    115,
+    145,
+    172,
+    235
+  ],
+  "同场景对照": {
+    "场景": "scene-0695",
+    "token": "b510deca46e4452895e071b7f3317343",
+    "正确指令": "Find cars on the rear left",
+    "错误指令": "Find cars on the rear right",
+    "身份来源": "既有query ID与lg_bev_engineering_data.py中all指令左右配对规则；没有读取新GT或生成预测",
+    "目标平均Logit正确": 0.5165983438491821,
+    "目标平均Logit错误": -17.551877975463867,
+    "呈现方式": [
+      "A0初始化候选/正确指令，与A9562正确/错误指令并排",
+      "同位置目标局部放大",
+      "目标和同类干扰局部正确/错误四格对照"
+    ],
+    "原图像素裁剪框": {
+      "a0": [
+        110,
+        93,
+        643,
+        625
+      ],
+      "correct": [
+        722,
+        93,
+        1257,
+        625
+      ],
+      "wrong": [
+        1335,
+        93,
+        1870,
+        625
+      ]
+    },
+    "地图裁剪框": {
+      "correct": [
+        718,
+        852,
+        1257,
+        1121
+      ],
+      "wrong": [
+        1331,
+        852,
+        1870,
+        1121
+      ]
+    },
+    "固定归一化ROI": {
+      "target": [
+        0.15,
+        0,
+        0.425,
+        0.19
+      ],
+      "distractor": [
+        0.51,
+        0.14,
+        0.66,
+        0.33
+      ]
+    },
+    "数值处理": "仅裁剪、最近邻放大和边框标注；保留原图共同0—1色标，不重新归一化，不修改热力图值"
+  },
+  "边界与负向结论": [
+    "4场景8帧小样本诊断，不是DriveLM正式测试",
+    "A128为12.22%/11.71%，低于15%，未通过",
+    "检测AP无增益，分割仅+0.023/+0.0017个百分点",
+    "StageB256 Attention低于A9562",
+    "正式DriveLM测试尚未完成，正式性能目标仍未验证"
+  ],
+  "内部制作栏和素材路径栏": "当前画面已去除；小样本和失败结论保留",
+  "人工确认": [
+    "句间边界由声学停顿推定，未做ASR/逐字强制对齐，需真人试听，优先08/11/12。",
+    "01开头原录音含孤立活动声，保留以避免误删讲话；建议确认是否为操作噪声。",
+    "录音较字幕窗短，保留自然语速并填充计划停顿；需确认总体讲解节奏。",
+    "当前环境未安装常见播放器，需在验收设备确认人声听感、音量与接收端实际播放。"
+  ],
+  "源素材": [
+    {
+      "路径": "docs/images/2026-10-12/drivelm_bevformer_joint_01.png",
+      "SHA256": "1ba562c4ce052a9fcf3f7bd92a038189e17399b02195da3843a261bc9981aeea"
+    },
+    {
+      "路径": "docs/images/stage2/stage2_audited_architecture_20261022.svg",
+      "SHA256": "accdb8a22f49e4847dce6b1774bc6fe761051043a25404f9d0f3a1ae1f2aa35f"
+    },
+    {
+      "路径": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png",
+      "SHA256": "d14cbb945b2ae3cf7afcdc52ee0ff821a450cd1ff4be8c15e60a06854809d3b7"
+    },
+    {
+      "路径": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.png",
+      "SHA256": "721420034a4f540b5931569e76d4514547cd3517fa0ca6d28bbedad7ee8ce9e1"
+    },
+    {
+      "路径": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+      "SHA256": "45d92451ece7937bcd1cc934549bb5dc9287f96159a8d46053775f893a03b6d3"
+    }
+  ],
+  "历史版本": [
+    {
+      "名称": "正式无声展示版",
+      "视频": "outputs/stage4_delivery_20261103/demo_formal_20261103/LG-BEV_正式展示_4分钟.mp4",
+      "视频SHA256": "28b32b585b9e99dea204e669b26a3460bab636a9221534f17a0beb7b871d6468",
+      "视频字节": 22527982,
+      "当前存在": true,
+      "音轨": "无",
+      "用途": "当前有声版画面来源和审计对照，不作为最终有声交付"
+    },
+    {
+      "名称": "初版静态无声演示",
+      "当前存在": false,
+      "说明": "初版MP4不在现有交付目录，字幕、预览及回执保留；当前有声版为交付候选",
+      "制作时记录": {
+        "状态": "VIDEO_COMPLETED",
+        "视频": "outputs/stage4_delivery_20261103/demo/项目演示_4分钟.mp4",
+        "时长秒": 240.0,
+        "帧数": 1200,
+        "帧率": 5.0,
+        "分辨率": [
+          1920,
+          1080
+        ],
+        "编码": "MPEG-4 Part 2 / mp4v",
+        "音轨": "无；中文硬字幕与独立SRT/旁白脚本",
+        "播放验证": "OpenCV FFmpeg后端逐帧完整解码通过；未验证全部浏览器/播放器",
+        "制作工具": "既有OpenCV/Pillow/NumPy与系统librsvg/Cairo；无ffmpeg命令行，无安装升级",
+        "无实时推理": true,
+        "历史素材未修改": true,
+        "源素材": [
+          {
+            "路径": "docs/images/2026-10-12/drivelm_bevformer_joint_01.png",
+            "SHA256": "1ba562c4ce052a9fcf3f7bd92a038189e17399b02195da3843a261bc9981aeea"
+          },
+          {
+            "路径": "docs/images/stage2/stage2_audited_architecture_20261022.svg",
+            "SHA256": "accdb8a22f49e4847dce6b1774bc6fe761051043a25404f9d0f3a1ae1f2aa35f"
+          },
+          {
+            "路径": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png",
+            "SHA256": "d14cbb945b2ae3cf7afcdc52ee0ff821a450cd1ff4be8c15e60a06854809d3b7"
+          },
+          {
+            "路径": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.png",
+            "SHA256": "721420034a4f540b5931569e76d4514547cd3517fa0ca6d28bbedad7ee8ce9e1"
+          },
+          {
+            "路径": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+            "SHA256": "45d92451ece7937bcd1cc934549bb5dc9287f96159a8d46053775f893a03b6d3"
+          }
+        ],
+        "视频字节": 25718462,
+        "视频SHA256": "8940ffe56a9aa357ecafb1ebd5f6bd1bcc83141177403c9a4a7e70407c9c594f",
+        "字幕": "outputs/stage4_delivery_20261103/demo/中文字幕与旁白.srt",
+        "字幕SHA256": "8c1701a099fbf71a6d288df3b15ae884660e2300b15eb3154c52a00d35fcd5ca",
+        "人工查看分镜": [
+          "03：架构中文字形",
+          "08：三组感知表格和字幕",
+          "12：最终局限说明"
+        ],
+        "文件交付": "MP4位于既有忽略规则覆盖的outputs目录；没有加入暂存区或上传。",
+        "归档建议": "审核25.7MB大小与播放器后独立传递；如需公开，另行确认Git LFS或Release等方式，不自动执行。",
+        "版本": "加入固定8帧及非官方AP提示，字幕无配音；未把图片编排当作实时模型运行。",
+        "收尾兼容性核查": {
+          "容器时长秒": 240.0,
+          "像素格式": "I420 / yuv420p",
+          "音轨数": 0,
+          "常见播放器实测": "NOT_VERIFIED；本环境无已安装播放器/浏览器",
+          "H264兼容导出": "NOT_AVAILABLE；现有FFmpeg后端无libx264/libopenh264/h264编码器，未反复尝试或安装",
+          "容器faststart": false,
+          "建议": "独立完整下载后本地播放；交接前在接收设备开播确认；不承诺浏览器在线播放。",
+          "详细记录": "results/stage4_delivery_20261103/收尾核查_20261103.json"
+        }
+      }
+    }
+  ],
+  "文件交付": "当前MP4、SRT、真人原录音均在Git忽略目录，未暂存或公开上传；经人工审阅后通过负责人认可的独立渠道传递合成MP4及字幕。",
+  "公开上传": false,
+  "CommitPush": false,
+  "视频重编码_本轮": false,
+  "兼容性限制": {
+    "常见播放器实测": "NOT_VERIFIED",
+    "H264兼容版": "NOT_AVAILABLE；沿用此前工具核查，无新安装、探测或转码",
+    "容器faststart": false,
+    "建议": "完整下载后在验收设备1080p全屏开播；文档中可见路径不表示已提供在线下载"
+  },
+  "本轮核查记录": "results/stage4_delivery_20261103/最终交付一致性核查_20261103.json"
+}

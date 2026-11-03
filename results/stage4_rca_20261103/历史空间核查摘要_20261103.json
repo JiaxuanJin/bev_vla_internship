@@ -1,0 +1,121 @@
+{
+  "范围": "复用2026-10-27已完成的空间核查，只摘录已有结果；该摘要不包含新几何测试、模型推理或标签验证。",
+  "原始来源": [
+    {
+      "本地路径": "results/lg_bev_supervision_space_20261027/supervision_space_audit.json",
+      "SHA256": "fc53fa04fda13f38903944e110009906f2aaf084a011f5161551791add095904",
+      "公开范围": "公开内容限于结果摘要；原始明细独立保存"
+    },
+    {
+      "本地路径": "results/lg_bev_coordinate_rca_20261027/independent_gt.json",
+      "SHA256": "1cc8683a5f4a648b57838efb33b501c06d0381446bfa39be8f89f73e6ee7ce70",
+      "公开范围": "公开内容限于结果摘要；原始明细独立保存"
+    },
+    {
+      "本地路径": "results/lg_bev_coordinate_rca_20261027/correction.json",
+      "SHA256": "fc03c70bc8e89177965e9f6caf5bb223e0d9e3c7e53d0238711267ea2787468d",
+      "公开范围": "公开内容限于结果摘要；原始明细独立保存"
+    }
+  ],
+  "监督空间": {
+    "原状态": "PASS",
+    "核查样本数": 4,
+    "原有核查结果": [
+      {
+        "scene_name": "scene-0796",
+        "sample_token": "c1676a2feac74eee8aa38ca3901787d6",
+        "max_xyz_ramp_error_m": 7.037975370332924e-06,
+        "bilinear_adjoint": {
+          "gt_pixel": [
+            90,
+            216
+          ],
+          "max_weight_error": 0.0,
+          "gradient_support_cells": 4,
+          "gradient_mass": 1.0,
+          "pass_check": true
+        },
+        "target_pixels": 592
+      },
+      {
+        "scene_name": "scene-1077",
+        "sample_token": "5998b71b64c146769bde1d5430741381",
+        "max_xyz_ramp_error_m": 7.037975370332924e-06,
+        "bilinear_adjoint": {
+          "gt_pixel": [
+            150,
+            313
+          ],
+          "max_weight_error": 0.0,
+          "gradient_support_cells": 4,
+          "gradient_mass": 1.0,
+          "pass_check": true
+        },
+        "target_pixels": 921
+      },
+      {
+        "scene_name": "scene-1094",
+        "sample_token": "e6b0b282aa174a978272dc2d0a89d560",
+        "max_xyz_ramp_error_m": 7.037975370332924e-06,
+        "bilinear_adjoint": {
+          "gt_pixel": [
+            173,
+            327
+          ],
+          "max_weight_error": 0.0,
+          "gradient_support_cells": 4,
+          "gradient_mass": 1.0,
+          "pass_check": true
+        },
+        "target_pixels": 394
+      },
+      {
+        "scene_name": "scene-1100",
+        "sample_token": "a480496a5988410fbe3d8ed6c84da996",
+        "max_xyz_ramp_error_m": 7.037975370332924e-06,
+        "bilinear_adjoint": {
+          "gt_pixel": [
+            2,
+            283
+          ],
+          "max_weight_error": 0.0,
+          "gradient_support_cells": 4,
+          "gradient_mass": 0.9999999999999999,
+          "pass_check": true
+        },
+        "target_pixels": 32
+      }
+    ],
+    "Head": "projects.mmdet3d_plugin.bevformer.dense_heads.bevformer_head.BEVFormerHead",
+    "Decoder": "projects.mmdet3d_plugin.bevformer.modules.seg_subnet.SegEncode"
+  },
+  "独立标签核查": {
+    "原状态": "PASS_COORDINATE_AND_ANNOTATION_CHAIN",
+    "原记录数": 4,
+    "保留范围": "本摘要不复制原地图几何、对象GT、掩码、完整实例/annotation明细；独立核查仅限历史记录范围，不宣称A128逐样本认证。"
+  },
+  "历史审计对象更正": {
+    "status": "CONFIRMED_AUDIT_TARGET_ERROR",
+    "old_report_unchanged": true,
+    "old_mean_error_m": 15.062867824384352,
+    "old_max_error_m": 29.933846758846745,
+    "audited_inactive": "BEVFormerHead_seg in bevformer_seg_head.py: rot90(-1)+flip3=transpose",
+    "actual_active": "BEVFormerHead in bevformer_head.py: transpose+flip2",
+    "actual_mean_error_m": 0.8995815662295792,
+    "actual_max_error_m": 0.9419845134906801,
+    "explicit_decoder_calibration_warp": false,
+    "analytic_bridge_candidate": {
+      "adopted": false,
+      "training_frames": 4,
+      "native_foreground_miou": 0.3897491952119636,
+      "bridge_foreground_miou": 0.29991626481733924,
+      "delta_pp": -8.983293039462437
+    },
+    "current_fix": "runtime-aware audit + independent Attention calibration supervision contract; original Head/cropper/decoder sampling preserved. Original calibrated attention formula already correct; do not invent a GT shift.",
+    "optimizer_updates_rca": 0,
+    "unseen_generalization": "NOT_VERIFIED"
+  },
+  "结论边界": "Attention独立标定监督与原生分割Head是不同路径；旧15m结论来自审计对象错误，解析桥接替换未采用。历史四帧ramp核查不能证明全部当前样本或正式性能目标通过。",
+  "GT或历史来源内容修改": false,
+  "新测试或模型推理": false
+}

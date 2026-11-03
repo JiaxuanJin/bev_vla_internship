@@ -1,0 +1,269 @@
+{
+  "date": "2026-11-03",
+  "branch": "main",
+  "base_commit": "e2cde6a81a0f9f72e817140ced5cd53e8790d3c2",
+  "scope": "2026-11-03正式技术交付文案、第四阶段分析和复现说明；精确公开材料范围",
+  "candidate_count": 35,
+  "entries": [
+    {
+      "path": "README.md",
+      "tracked_before": true,
+      "change": "modified",
+      "bytes": 21531,
+      "sha256": "18bc2a8b583101cf992aadf677b9001275c2aed3876799a36ca27a0f5d18dfbd"
+    },
+    {
+      "path": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "tracked_before": true,
+      "change": "modified",
+      "bytes": 60323,
+      "sha256": "e976f3475a333551ed22889d2d193199db978ccf51234b0a9f5affc5de31a5d3"
+    },
+    {
+      "path": "docs/logbook_2026-11-03.md",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 15634,
+      "sha256": "1312b97212a4c14258d1ff1fddf40ace1dda45bd433d99dba73b2c48640998d7"
+    },
+    {
+      "path": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "tracked_before": true,
+      "change": "modified",
+      "bytes": 10176,
+      "sha256": "02c378aabfb8beaa52bf25d75a8fc8c5cc059300ec3602a2e0f4c892510457be"
+    },
+    {
+      "path": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "tracked_before": true,
+      "change": "modified",
+      "bytes": 11556,
+      "sha256": "14e449496625a763fe383b4dd8951bb6467b2bc8005b97873f3efbfded465124"
+    },
+    {
+      "path": "docs/stage3/delivery_20261102/线上交付核查_20261103.json",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 139354,
+      "sha256": "c100d24387a85e40addf90b4f2f7464ca2aeaffa2d141a9fe088f0896da1f056"
+    },
+    {
+      "path": "docs/stage4/01_综合验收与Git交付_2026-10-26.md",
+      "tracked_before": true,
+      "change": "modified",
+      "bytes": 6602,
+      "sha256": "d7cef0ebe5b5d141bac12f9b701590d2c8bbd0722270cdb26a6578aee003203d"
+    },
+    {
+      "path": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 14775,
+      "sha256": "f45259ccfcfd88f232f316b978b4d89b4a119b6c2549ec5c60627fd7529f65e2"
+    },
+    {
+      "path": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 10321,
+      "sha256": "34f49dfd8ad5a866b3b3c584a59b4a7d442380a65ffa5c09824aec00fa62eac7"
+    },
+    {
+      "path": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 12604,
+      "sha256": "4a2d6db7fa6a5b771af1d006275f2d1d176cb2bd2f569f30446c2263852ce4ce"
+    },
+    {
+      "path": "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 6479,
+      "sha256": "c591ef3d5563943a3dadfe46392cdffaa0b474148c2238e18e8bab1c3c598e70"
+    },
+    {
+      "path": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 29588,
+      "sha256": "24a36199670bc1f2983b631b899c687a7394a640bee9085431d921b1a9d75a9e"
+    },
+    {
+      "path": "docs/四阶段任务交付审计_2026-10-26.md",
+      "tracked_before": true,
+      "change": "modified",
+      "bytes": 22374,
+      "sha256": "eed7a26c433a0dea0065b2ce528c7616db82c2d3efd5abe5a2d44b2646146752"
+    },
+    {
+      "path": "results/stage4_delivery_20261103/Git提交候选_20261103.json",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": null,
+      "sha256": null,
+      "note": "精确范围包含清单自身；不作自引用摘要。"
+    },
+    {
+      "path": "results/stage4_delivery_20261103/Git提交候选_20261103.txt",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 1936,
+      "sha256": "c15c6f0f0a5cb63a0821878420b3a1558606c1dc4a6f81f3bd75ad8abc328f53"
+    },
+    {
+      "path": "results/stage4_delivery_20261103/任务依据_20261103.json",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 1557,
+      "sha256": "b7de1643512b43428bc23ed7d2ea606fc91a6a8978ba1dfdaa716c3aee7887a6"
+    },
+    {
+      "path": "results/stage4_delivery_20261103/分场景Attention.csv",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 7684,
+      "sha256": "16753c08081496cad31b1aa882c6073f660a5306b2951e242364a8c945a5cd1b"
+    },
+    {
+      "path": "results/stage4_delivery_20261103/分场景感知.csv",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 4859,
+      "sha256": "d8833f57ffafdcaf3055699c432a1dfda163a4af48a87115c74e9b4595d48a4d"
+    },
+    {
+      "path": "results/stage4_delivery_20261103/分指令类型汇总.csv",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 7843,
+      "sha256": "df5c1177e2a57d4263bd9ffcfd65d17cc52229cc35662818c9d6b77ced4def45"
+    },
+    {
+      "path": "results/stage4_delivery_20261103/执行与完整性记录.json",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 26176,
+      "sha256": "a672838b7af8f585c072fdf9655e1f9133ea020201ce3ee40abb1c63eb8ed52c"
+    },
+    {
+      "path": "results/stage4_delivery_20261103/收尾核查_20261103.json",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 21142,
+      "sha256": "e29f7fa8012e1e60557450ac5d0004094720f4a3373e0e4301660bd8d4b714c9"
+    },
+    {
+      "path": "results/stage4_delivery_20261103/文案审查与发布核查_20261103.json",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 25312,
+      "sha256": "0dce82b8398e71c87fb18c49fe64f4bcd32dd3e8c87adc689739b4fd3a9bdf50"
+    },
+    {
+      "path": "results/stage4_delivery_20261103/最终交付一致性核查_20261103.json",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 65917,
+      "sha256": "26d4ca1397ba22b76628839ba59a2c6691bf1db51e45258b7bda9bf8e3d4803c"
+    },
+    {
+      "path": "results/stage4_delivery_20261103/来源与统计口径.json",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 4919,
+      "sha256": "9690a8f9ebd911308763f850d567b42b31b483c3a27027ce08d245b4ce495cf2"
+    },
+    {
+      "path": "results/stage4_delivery_20261103/演示视频交付清单.json",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 10002,
+      "sha256": "dc9bdc5e752c9be730c6dc74da0e452ac4c677ad772b8161bc8bad443347f8c5"
+    },
+    {
+      "path": "results/stage4_delivery_20261103/逐指令与背景激活.csv",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 23593,
+      "sha256": "9f6b9ae00cf7be59358c95a500d45fe140150350bcedb7c9d17de2790bce3247"
+    },
+    {
+      "path": "results/stage4_rca_20261103/A9562_StageB256逐指令变化.csv",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 9189,
+      "sha256": "6be6704c32162d5dbea78c4ebe47b60d058fbf2136c4f8617ca11e07a19403ec"
+    },
+    {
+      "path": "results/stage4_rca_20261103/StageB256任务与空目标采样.csv",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 163,
+      "sha256": "74f022d1442021b0c7104e11ecc6d8eda2bcb27d2d03b6504d7e99132807571f"
+    },
+    {
+      "path": "results/stage4_rca_20261103/历史空间核查摘要_20261103.json",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 4705,
+      "sha256": "7ad3799d76e56e0c953566a78cffd3bfc4431221b9aa70f64dc8f7c10ff15339"
+    },
+    {
+      "path": "results/stage4_rca_20261103/既有解码输出变化.csv",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 4957,
+      "sha256": "eb50fcdff452ad33477384a46b8b0e584902d3526361e75d1271ae36e28c2dfd"
+    },
+    {
+      "path": "results/stage4_rca_20261103/根因只读分析.json",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 9961,
+      "sha256": "e21216f106d55a73d5a80b4ab0203fe048725fffa43fd9b60f95a7f5a0cc6cd6"
+    },
+    {
+      "path": "results/stage4_rca_20261103/输入来源与SHA256.json",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 230247,
+      "sha256": "6e166a6eafbdad338e6219f2f33b208ae0c14be7f2e35e86b0f763e189a7c8cf"
+    },
+    {
+      "path": "scripts/stage4/analyze_existing_rca.py",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 15465,
+      "sha256": "8e55998c31764f13b0d65cf3abf1ae75264ab25d1ae679eb008c603dc6557c01"
+    },
+    {
+      "path": "scripts/stage4/make_demo.py",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 20486,
+      "sha256": "10103658bb04d97dd613343cad59f93942bff38ea9b55ed68c9e435d1f6c46ab"
+    },
+    {
+      "path": "scripts/stage4/summarize_existing.py",
+      "tracked_before": false,
+      "change": "new",
+      "bytes": 12723,
+      "sha256": "6bab2b8d592eacf91ce39b5afd49f044ed3a4e74d1a71868ae62efc4f1bdaa39"
+    }
+  ],
+  "explicit_exclusions": [
+    "outputs/stage4_delivery_20261103/全部媒体与过程资产（MP4、SRT、12段真人m4a、WAV、视频回执/预览、归档模板和源PDF）",
+    "原始GT/预测、Checkpoint、模型权重、数据集及缓存",
+    "docs/stage2_oom_fix_20261022.md及其他范围外已有修改",
+    "未列出的其他文件与目录；旧临时链接检查、备份和缓存"
+  ],
+  "private_pdf_public_permission": "NOT_CONFIRMED；未加入候选",
+  "video_upload_authorized": false,
+  "staged": false,
+  "committed": null,
+  "pushed": null,
+  "hash_note": "34份其他文件记录当前字节数和SHA256；清单自身摘要和长度留空以避免递归。提交结果见Git回执。",
+  "record_stage": "PRE_STAGING_MANIFEST",
+  "publication_authorized": true
+}

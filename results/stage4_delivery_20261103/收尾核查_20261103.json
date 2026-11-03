@@ -1,0 +1,434 @@
+{
+  "date": "2026-11-03",
+  "scope": "视频兼容性、第四阶段材料收尾核查、精确候选及独立归档方案",
+  "video_container": {
+    "file": "outputs/stage4_delivery_20261103/demo/项目演示_4分钟.mp4",
+    "bytes": 25718462,
+    "sha256": "8940ffe56a9aa357ecafb1ebd5f6bd1bcc83141177403c9a4a7e70407c9c594f",
+    "container_duration_seconds": 240.0,
+    "timescale": 1000,
+    "tracks": [
+      {
+        "handler": "vide",
+        "sample_entry_codec": "mp4v"
+      }
+    ],
+    "top_atoms": [
+      {
+        "name": "ftyp",
+        "offset": 0
+      },
+      {
+        "name": "free",
+        "offset": 28
+      },
+      {
+        "name": "mdat",
+        "offset": 36
+      },
+      {
+        "name": "moov",
+        "offset": 25712109
+      }
+    ],
+    "faststart": false
+  },
+  "video_decoder": {
+    "backend": "OpenCV FFMPEG",
+    "frames": 1200,
+    "fps": 5.0,
+    "width": 1920,
+    "height": 1080,
+    "pixel_format": "I420 / yuv420p",
+    "decoded_sample_seconds": [
+      75,
+      100,
+      187.5,
+      232.5
+    ],
+    "prior_full_decode": "PASS，复用同SHA文件的完整解码记录"
+  },
+  "video_visual_review": {
+    "attention_correct_wrong_distractor": "可读，图例/热力图区未被字幕遮挡",
+    "chinese_subtitles": "可读",
+    "axis_text": "字号较小，1080p全屏；精细核查使用原PNG",
+    "all_players": "NOT_VERIFIED"
+  },
+  "h264_export": {
+    "status": "NOT_AVAILABLE",
+    "ffmpeg_cli": false,
+    "ffprobe_cli": false,
+    "PyAV": false,
+    "imageio_ffmpeg": false,
+    "installed_CPU_encoder_query": {
+      "libx264": false,
+      "libopenh264": false,
+      "h264": false
+    },
+    "gstreamer_h264_plugin_found": false,
+    "encode_attempts": 0,
+    "installation_or_upgrade": false,
+    "original_video_preserved": true
+  },
+  "common_player_test": {
+    "status": "NOT_VERIFIED",
+    "reason": "本环境无已安装常见播放器、浏览器或对应自动化工具；FFmpeg库解码与接收端播放器实测分别登记。"
+  },
+  "repairs": [
+    "公开分镜/矩阵中指向Git忽略视频/SRT/本地回执的下载型Markdown链接改为明确的独立交付代码路径。",
+    "分镜中7.5、22.5、142.5、167.5秒旁白边界改为与既有SRT一致；不改视频或字幕内容。",
+    "首次执行回执补充快照阶段标记，旧SHA仅对应原记录阶段。"
+  ],
+  "private_archival": {
+    "pdf_status": "NOT_ARCHIVED",
+    "source": "任务要求已登记；源文件归档及直接核验状态见任务依据_20261103.json",
+    "local_directory": "outputs/stage4_delivery_20261103/private_taskbook",
+    "template_prepared": true,
+    "public_permission": "NOT_CONFIRMED",
+    "in_git_candidates": false
+  },
+  "separate_delivery": {
+    "uploaded": false,
+    "external_link_created": false,
+    "pdf_or_video_in_candidates": false,
+    "local_readme": "outputs/stage4_delivery_20261103/demo/独立交付说明.txt",
+    "local_checksums": "outputs/stage4_delivery_20261103/demo/独立交付校验.txt"
+  },
+  "candidate_txt": "results/stage4_delivery_20261103/Git提交候选_20261103.txt",
+  "candidate_json": "results/stage4_delivery_20261103/Git提交候选_20261103.json",
+  "final_checks": {
+    "markdown": [
+      {
+        "path": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "tables": 9,
+        "parse": "PASS",
+        "public_relative_targets": "PASS"
+      },
+      {
+        "path": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+        "tables": 0,
+        "parse": "PASS",
+        "public_relative_targets": "PASS"
+      },
+      {
+        "path": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "tables": 6,
+        "parse": "PASS",
+        "public_relative_targets": "PASS"
+      },
+      {
+        "path": "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md",
+        "tables": 1,
+        "parse": "PASS",
+        "public_relative_targets": "PASS"
+      }
+    ],
+    "public_relative_link_occurrences": 55,
+    "public_relative_links": [
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "../final_report/BEV_DriveLM_项目总结报告.md",
+        "resolved": "docs/final_report/BEV_DriveLM_项目总结报告.md"
+      },
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "04_原始任务与交付清单_2026-11-03.md",
+        "resolved": "docs/stage4/04_原始任务与交付清单_2026-11-03.md"
+      },
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/核查记录.json",
+        "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/核查记录.json"
+      },
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "../../results/stage4_delivery_20261103/来源与统计口径.json",
+        "resolved": "results/stage4_delivery_20261103/来源与统计口径.json"
+      },
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "../../scripts/stage4/summarize_existing.py",
+        "resolved": "scripts/stage4/summarize_existing.py"
+      },
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+        "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md"
+      },
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention对照.csv",
+        "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention对照.csv"
+      },
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/有效指令配对.csv",
+        "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/有效指令配对.csv"
+      },
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/逐指令定位.csv",
+        "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/逐指令定位.csv"
+      },
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/同类不同位置实例.csv",
+        "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/同类不同位置实例.csv"
+      },
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+        "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv"
+      },
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "../../results/stage4_delivery_20261103/分场景Attention.csv",
+        "resolved": "results/stage4_delivery_20261103/分场景Attention.csv"
+      },
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "../../results/stage4_delivery_20261103/分场景感知.csv",
+        "resolved": "results/stage4_delivery_20261103/分场景感知.csv"
+      },
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "../../results/stage4_delivery_20261103/分指令类型汇总.csv",
+        "resolved": "results/stage4_delivery_20261103/分指令类型汇总.csv"
+      },
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "../../results/stage4_delivery_20261103/逐指令与背景激活.csv",
+        "resolved": "results/stage4_delivery_20261103/逐指令与背景激活.csv"
+      },
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png",
+        "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png"
+      },
+      {
+        "from": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.png",
+        "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.png"
+      },
+      {
+        "from": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+        "target": "../../results/stage4_delivery_20261103/演示视频交付清单.json",
+        "resolved": "results/stage4_delivery_20261103/演示视频交付清单.json"
+      },
+      {
+        "from": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+        "target": "05_视频兼容性与独立交付_2026-11-03.md",
+        "resolved": "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md"
+      },
+      {
+        "from": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+        "target": "../../docs/images/2026-10-12/drivelm_bevformer_joint_01.png",
+        "resolved": "docs/images/2026-10-12/drivelm_bevformer_joint_01.png"
+      },
+      {
+        "from": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+        "target": "../../docs/images/2026-10-12/drivelm_bevformer_joint_01.png",
+        "resolved": "docs/images/2026-10-12/drivelm_bevformer_joint_01.png"
+      },
+      {
+        "from": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+        "target": "../../docs/images/stage2/stage2_audited_architecture_20261022.svg",
+        "resolved": "docs/images/stage2/stage2_audited_architecture_20261022.svg"
+      },
+      {
+        "from": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+        "target": "../../docs/images/stage2/stage2_audited_architecture_20261022.svg",
+        "resolved": "docs/images/stage2/stage2_audited_architecture_20261022.svg"
+      },
+      {
+        "from": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+        "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png",
+        "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png"
+      },
+      {
+        "from": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+        "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png",
+        "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png"
+      },
+      {
+        "from": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+        "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png",
+        "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png"
+      },
+      {
+        "from": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+        "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+        "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv"
+      },
+      {
+        "from": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+        "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.png",
+        "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.png"
+      },
+      {
+        "from": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+        "target": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png",
+        "resolved": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png"
+      },
+      {
+        "from": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+        "target": "../../docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "resolved": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md"
+      },
+      {
+        "from": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+        "target": "../../docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+        "resolved": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md"
+      },
+      {
+        "from": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+        "target": "../../scripts/stage4/make_demo.py",
+        "resolved": "scripts/stage4/make_demo.py"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "../四阶段任务交付审计_2026-10-26.md",
+        "resolved": "docs/四阶段任务交付审计_2026-10-26.md"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "01_综合验收与Git交付_2026-10-26.md",
+        "resolved": "docs/stage4/01_综合验收与Git交付_2026-10-26.md"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "02_有限样本综合性能评估_2026-11-03.md",
+        "resolved": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "../../results/stage4_delivery_20261103/分场景Attention.csv",
+        "resolved": "results/stage4_delivery_20261103/分场景Attention.csv"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "../../results/stage4_delivery_20261103/分场景感知.csv",
+        "resolved": "results/stage4_delivery_20261103/分场景感知.csv"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "02_有限样本综合性能评估_2026-11-03.md",
+        "resolved": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "../../results/stage4_delivery_20261103/分指令类型汇总.csv",
+        "resolved": "results/stage4_delivery_20261103/分指令类型汇总.csv"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "02_有限样本综合性能评估_2026-11-03.md",
+        "resolved": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "../../README.md",
+        "resolved": "README.md"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "../../scripts/stage3/README.md",
+        "resolved": "scripts/stage3/README.md"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "../stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+        "resolved": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "../../requirements_stage3_20261102.txt",
+        "resolved": "requirements_stage3_20261102.txt"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "../final_report/BEV_DriveLM_项目总结报告.md",
+        "resolved": "docs/final_report/BEV_DriveLM_项目总结报告.md"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "05_视频兼容性与独立交付_2026-11-03.md",
+        "resolved": "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "02_有限样本综合性能评估_2026-11-03.md",
+        "resolved": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "../final_report/BEV_DriveLM_项目总结报告.md",
+        "resolved": "docs/final_report/BEV_DriveLM_项目总结报告.md"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "03_项目演示分镜与旁白_2026-11-03.md",
+        "resolved": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "../../results/stage4_delivery_20261103/演示视频交付清单.json",
+        "resolved": "results/stage4_delivery_20261103/演示视频交付清单.json"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "05_视频兼容性与独立交付_2026-11-03.md",
+        "resolved": "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md"
+      },
+      {
+        "from": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+        "target": "../../results/stage4_delivery_20261103/执行与完整性记录.json",
+        "resolved": "results/stage4_delivery_20261103/执行与完整性记录.json"
+      },
+      {
+        "from": "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md",
+        "target": "../../results/stage4_delivery_20261103/收尾核查_20261103.json",
+        "resolved": "results/stage4_delivery_20261103/收尾核查_20261103.json"
+      },
+      {
+        "from": "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md",
+        "target": "../../results/stage4_delivery_20261103/Git提交候选_20261103.txt",
+        "resolved": "results/stage4_delivery_20261103/Git提交候选_20261103.txt"
+      },
+      {
+        "from": "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md",
+        "target": "../../results/stage4_delivery_20261103/Git提交候选_20261103.json",
+        "resolved": "results/stage4_delivery_20261103/Git提交候选_20261103.json"
+      }
+    ],
+    "csv_rows": {
+      "分场景Attention.csv": 24,
+      "分场景感知.csv": 12,
+      "逐指令与背景激活.csv": 48,
+      "分指令类型汇总.csv": 21
+    },
+    "source_sha_unchanged": true,
+    "failure_cases_F01_F05": "PASS；F01—F03逐query值、F04既有负向结果、F05原gate状态一致",
+    "sample_protocol_boundaries": "PASS；A128/8帧/Development/DriveLM正式测试分列，模型效果未被标为正式达标",
+    "prior_four_files_and_original_video_unchanged": true,
+    "protected_sha256": {
+      "docs/final_report/BEV_DriveLM_项目总结报告.md": "00d3b25db712ef5c0ee000f0df846608939af8e7281d78c4676db5c3d3a64ed4",
+      "docs/stage3/delivery_20261102/交付核查_20261102.md": "c7299a5554d61c52d20990d63bcd251293ef69611d729072129da63189636505",
+      "docs/stage3/delivery_20261102/线上交付核查_20261103.json": "c100d24387a85e40addf90b4f2f7464ca2aeaffa2d141a9fe088f0896da1f056",
+      "docs/logbook_2026-11-03.md": "b5d0b018c82464fa8908d773a11ec267a1c0d89de8da13c037186daee3022c1c",
+      "docs/stage2_oom_fix_20261022.md": "898c954653dfdd211085e18ce25a0f9f303bc3ec646f7dc8603548d361e264a7",
+      "outputs/stage4_delivery_20261103/demo/项目演示_4分钟.mp4": "8940ffe56a9aa357ecafb1ebd5f6bd1bcc83141177403c9a4a7e70407c9c594f"
+    },
+    "historical_audit_bodies_unchanged": true,
+    "branch": "main",
+    "head": "e2cde6a81a0f9f72e817140ced5cd53e8790d3c2",
+    "git_index_unchanged": true,
+    "staging_commit_push_executed": false,
+    "PDF_and_video_ignored_and_excluded": true,
+    "private_key_token_pattern_hits": [],
+    "python_ast": "PASS；未执行模型或155项测试",
+    "whitelist_count": 22,
+    "check_method_note": "CSV比例、原状态和GT像素计数列按各自口径检查；未重算指标。",
+    "self_checksum_note": "本回执不包含候选清单摘要，避免互相递归。"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "日期": "2026-11-03",
+  "数据集": "固定8帧工程诊断，非DriveLM正式测试，非320帧Development",
+  "帧数": 8,
+  "场景数": 4,
+  "日志数": 4,
+  "指令数": 16,
+  "地图指令数": 8,
+  "地图正目标数": 4,
+  "地图空目标数": 4,
+  "对象指令数": 8,
+  "对象正目标数": 5,
+  "对象空目标数": 3,
+  "场景及固定帧": {
+    "1466f33b56704942a368fa03d10708dd": [
+      "0468b5e2192f40d88a4e3353c83d28a1",
+      "b510deca46e4452895e071b7f3317343"
+    ],
+    "19f47b8941094af29b8db20b255717fc": [
+      "340932e76b8143afae5cdcb98892ab96",
+      "5ae5b95844d94447a5434d8ff3884da7"
+    ],
+    "6bb64043c9db4f51b7a69e7260ed4f6e": [
+      "8c21c741741a443f8ac4dbd20e03cb0b",
+      "e5aee6714b42408bbd92ad98378e1327"
+    ],
+    "d1455a9d8add42dba52beac59a67259c": [
+      "0d169808083f45a49f945348d6406154",
+      "c6e28b2a7d4641c597e03423b02ce9b1"
+    ]
+  },
+  "来源": [
+    {
+      "路径": "experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/核查记录.json",
+      "SHA256": "55f64cbfd524e751c28e4a25e434d29588530be94dee134a7c495e360f861fe7"
+    },
+    {
+      "路径": "/mnt/g/BEV_VLA_Datasets/lg_bev_stage3_exploration_20261101/lg_bev_explore_main_20261101_unified_eval_20261102_diagnostic/metrics.json",
+      "SHA256": "515de677142087dbf7ffeb2b05a0da883754714d71f295de46777146b70ec64c"
+    },
+    {
+      "路径": "experiments/lg_bev_stage3_feasibility_audit_20261101/proposed_subset_metadata.json",
+      "SHA256": "116822521c67167d05d9e9edec18c68194109a00aed9eb0b1c132d34cb159439"
+    },
+    {
+      "路径": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/protocol.json",
+      "SHA256": "b3ec763488158d2624ebb009f3c5b75fc341f8b517e6ffa92496a12a5b90841b"
+    },
+    {
+      "路径": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention对照.csv",
+      "SHA256": "aac83ed758fdb496656d31f316fe6320fcc0b9eec91560cc5b9a1893b42d4f8a"
+    },
+    {
+      "路径": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/同类不同位置实例.csv",
+      "SHA256": "d3736404fae8f39a7d2b56c0f2c87d860c858b4613ef21be56a093d8a982fb58"
+    },
+    {
+      "路径": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+      "SHA256": "45d92451ece7937bcd1cc934549bb5dc9287f96159a8d46053775f893a03b6d3"
+    },
+    {
+      "路径": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/有效指令配对.csv",
+      "SHA256": "65f746623a2047d1d3e878ecd5cee9e48a56768805fdf50eab96568114444b1c"
+    },
+    {
+      "路径": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/逐指令定位.csv",
+      "SHA256": "d39eca8067385a501455d8e5659dbb1b6c43167459b1b461fea8c25acb5bd883"
+    },
+    {
+      "路径": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收汇总.json",
+      "SHA256": "42c21c06c538ff11661fd4dd2dedb69a24b96252d61d8d362997105a62d077e1"
+    }
+  ],
+  "汇总方法": "分场景指标逐字段摘录既有per_scene；逐指令背景项逐字段摘录；仅缺少的任务×类别×限定词分组对同协议已存IoU/Logit标量求均值，不生成预测或重计AP。",
+  "分母规则": "正目标IoU排除空目标；正确/错误仅在同一非空且有效配对集合；空目标激活单列。不可验证项为NOT_VERIFIED，保留原NOT_EVALUABLE，不填零。",
+  "背景计数规则": "background_FP/distractor_FP是Attention阈值激活像素，不是检测框FP；不同网格/指令不作总像素平均。",
+  "独立性限制": "nuScenes原train来源的预登记诊断场景；不是原任务DriveLM-v1正式测试；不证明Stage A或作者预训练未见，单seed和模板指令不支持稳定泛化。",
+  "源结果保持": true,
+  "执行边界": {
+    "新推理": false,
+    "训练": false,
+    "GT及Checkpoint读取": false,
+    "ColdFinal读取": false,
+    "回归测试执行": false,
+    "模型模块导入": false
+  },
+  "输出": [
+    {
+      "文件": "分场景Attention.csv",
+      "行数": 24,
+      "SHA256": "16753c08081496cad31b1aa882c6073f660a5306b2951e242364a8c945a5cd1b"
+    },
+    {
+      "文件": "分场景感知.csv",
+      "行数": 12,
+      "SHA256": "d8833f57ffafdcaf3055699c432a1dfda163a4af48a87115c74e9b4595d48a4d"
+    },
+    {
+      "文件": "逐指令与背景激活.csv",
+      "行数": 48,
+      "SHA256": "9f6b9ae00cf7be59358c95a500d45fe140150350bcedb7c9d17de2790bce3247"
+    },
+    {
+      "文件": "分指令类型汇总.csv",
+      "行数": 21,
+      "SHA256": "df5c1177e2a57d4263bd9ffcfd65d17cc52229cc35662818c9d6b77ced4def45"
+    }
+  ],
+  "表头说明": "场景帧数和帧token描述该场景的两帧；逐指令行另有唯一样本token，不把每条query当两帧。"
+}

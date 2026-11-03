@@ -1,0 +1,1801 @@
+{
+  "状态": "LOCAL_CONSISTENCY_PASS_MANUAL_ACCEPTANCE_PENDING",
+  "日期": "2026-11-03",
+  "媒体核对": {
+    "视频": "outputs/stage4_delivery_20261103/demo_voice_20261103/LG-BEV_demo_4分钟.mp4",
+    "原登记视频路径": "outputs/stage4_delivery_20261103/demo_voice_20261103/LG-BEV_本人配音_4分钟.mp4",
+    "原登记路径当前存在": false,
+    "当前文件与原登记SHA一致": true,
+    "视频SHA256": "a5af1ca852b078849476ed3aa5e388a08d27b1fb36f5c33933428008b65e22e9",
+    "视频字节": 27358410,
+    "时长秒": 240,
+    "轨道": [
+      {
+        "类型": "vide",
+        "编码": "mp4v"
+      },
+      {
+        "类型": "soun",
+        "编码": "mp4a",
+        "采样率": 48000,
+        "声道": 2,
+        "编辑列表时长秒": 240.0,
+        "编码延迟采样": 1024
+      }
+    ],
+    "原视频画面媒体数据与视频轨逐字节一致": true,
+    "抽帧秒": [
+      1,
+      75,
+      85,
+      95,
+      105,
+      115,
+      145,
+      172,
+      235
+    ],
+    "字幕24条与正式展示字幕一致": true,
+    "字幕SHA256": "782589f2ce33094d1339c63fe90e9264130a3847c4f0b69be1caab9366d65e38",
+    "12段录音核对": [
+      {
+        "编号": "01",
+        "实际解码时长秒_既有记录": 15.594666666666667,
+        "文件SHA256": "72f3c226617ce649130d28fc012318e6e84be1bb4f89cdd8c39a1721ba9775d3",
+        "两句放置核对": true
+      },
+      {
+        "编号": "02",
+        "实际解码时长秒_既有记录": 13.888,
+        "文件SHA256": "199e7b1b145d0180c7f3a6a93255ca854dae8682f7e6b4147c2c29c48fba4837",
+        "两句放置核对": true
+      },
+      {
+        "编号": "03",
+        "实际解码时长秒_既有记录": 15.061270833333333,
+        "文件SHA256": "869b843402c9bf552081aeee9fd794244846fb3ecc77d5e580003b2fcd048b4a",
+        "两句放置核对": true
+      },
+      {
+        "编号": "04",
+        "实际解码时长秒_既有记录": 15.061333333333334,
+        "文件SHA256": "bc61358a4975138f15a00c07e37f58b03a9e9fbcb875aa12735bbbae6c46f91e",
+        "两句放置核对": true
+      },
+      {
+        "编号": "05",
+        "实际解码时长秒_既有记录": 19.072,
+        "文件SHA256": "d978adf325e6bb7e50c3ccece2c3fb71b1c1ae6a44d38ee0b81017342c798660",
+        "两句放置核对": true
+      },
+      {
+        "编号": "06",
+        "实际解码时长秒_既有记录": 17.727979166666668,
+        "文件SHA256": "de726dad93594b0288a95dc7a9097bdc34c26c2db7e261c97cc54f7d330cb01b",
+        "两句放置核对": true
+      },
+      {
+        "编号": "07",
+        "实际解码时长秒_既有记录": 18.026666666666667,
+        "文件SHA256": "3cd0112f8233fbca6a1212ad11ae8730ce7dc258a1692ec626d85266e16aa4d6",
+        "两句放置核对": true
+      },
+      {
+        "编号": "08",
+        "实际解码时长秒_既有记录": 19.242645833333334,
+        "文件SHA256": "80eb0016d608645d421572ff8b9a931e289ba8b336960662ddf1b07e3da60e92",
+        "两句放置核对": true
+      },
+      {
+        "编号": "09",
+        "实际解码时长秒_既有记录": 17.386375,
+        "文件SHA256": "c3eea259c71b6187ba509d0c08535ea2bea42d0252bf8303678c2f0ab9ba35b0",
+        "两句放置核对": true
+      },
+      {
+        "编号": "10",
+        "实际解码时长秒_既有记录": 15.8293125,
+        "文件SHA256": "814a10f564835682fd80a5d5fa5bfcc807b2f8858a41942150e341215666f828",
+        "两句放置核对": true
+      },
+      {
+        "编号": "11",
+        "实际解码时长秒_既有记录": 14.869291666666667,
+        "文件SHA256": "7fc4136d88042765a2344441cd09275cd83e18406cbfecfd5919e9510afc917e",
+        "两句放置核对": true
+      },
+      {
+        "编号": "12",
+        "实际解码时长秒_既有记录": 18.1119375,
+        "文件SHA256": "1b48b1a37aff996de2f2737eff44a03f8e823743ed4dcf6172df7afdccd588f6",
+        "两句放置核对": true
+      }
+    ],
+    "既有完整解码回执复用": {
+      "视频帧": 1200,
+      "音频秒": 240.0,
+      "依据": "MP4与已完成全解码记录SHA一致，该阶段仅解析容器并抽帧，不重新编码或全量解码音轨。"
+    },
+    "既有音频人工确认事项": [
+      "句间边界由声学停顿推定，未做ASR/逐字强制对齐，需真人试听，优先08/11/12。",
+      "01开头原录音含孤立活动声，保留以避免误删讲话；建议确认是否为操作噪声。",
+      "录音较字幕窗短，保留自然语速并填充计划停顿；需确认总体讲解节奏。",
+      "当前环境未安装常见播放器，需在验收设备确认人声听感、音量与接收端实际播放。"
+    ],
+    "回归XML只读核对": {
+      "tests": 155,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "A128已有原始结果": {
+      "status": "GROUNDING_NOT_READY",
+      "positive_macro_IoU": {
+        "map": 0.1221678496594159,
+        "object": 0.11712482426082715
+      },
+      "target_correct_wrong_logit_gap": 5.459626777663386,
+      "empty_active_fraction": 0.006010515871457756,
+      "identity": {
+        "protocol_sha256": "9de2da91b104d6fca28a223d76f0d5c8aae2078b6c5243b6d13e9b7058b30cf6",
+        "adapter_sha256": "5db7c4105bb9b138773ec249b7f47641ccddc16bb64d3a3b11ebb297ce7dfe81",
+        "updates": 9562
+      },
+      "elapsed_wall_seconds": 141228.39208563
+    },
+    "Attention已有CSV": [
+      {
+        "任务": "地图",
+        "模型": "a0",
+        "正目标宏平均IoU": "0.007841644745638395",
+        "正目标合并IoU": "0.0073551548371692255",
+        "正目标条数": "4",
+        "空目标条数": "4",
+        "空目标激活比例": "0.7145406249999999",
+        "正确减错误Logit差": "0.015939312947283717"
+      },
+      {
+        "任务": "地图",
+        "模型": "a_only",
+        "正目标宏平均IoU": "0.14437665660237484",
+        "正目标合并IoU": "0.0743658636549934",
+        "正目标条数": "4",
+        "空目标条数": "4",
+        "空目标激活比例": "0.016065625",
+        "正确减错误Logit差": "3.4978440560143746"
+      },
+      {
+        "任务": "地图",
+        "模型": "enhanced",
+        "正目标宏平均IoU": "0.09713080662256357",
+        "正目标合并IoU": "0.04884476149914821",
+        "正目标条数": "4",
+        "空目标条数": "4",
+        "空目标激活比例": "0.0453",
+        "正确减错误Logit差": "2.4406799798142944"
+      },
+      {
+        "任务": "对象",
+        "模型": "a0",
+        "正目标宏平均IoU": "0.0009489654512927048",
+        "正目标合并IoU": "0.000904268145647456",
+        "正目标条数": "5",
+        "空目标条数": "3",
+        "空目标激活比例": "0.6541481481481481",
+        "正确减错误Logit差": "-0.004908396234107633"
+      },
+      {
+        "任务": "对象",
+        "模型": "a_only",
+        "正目标宏平均IoU": "0.23078864591994766",
+        "正目标合并IoU": "0.1525",
+        "正目标条数": "5",
+        "空目标条数": "3",
+        "空目标激活比例": "0.0070666666666666655",
+        "正确减错误Logit差": "11.203560534781321"
+      },
+      {
+        "任务": "对象",
+        "模型": "enhanced",
+        "正目标宏平均IoU": "0.14092933039415526",
+        "正目标合并IoU": "0.11695906432748537",
+        "正目标条数": "5",
+        "空目标条数": "3",
+        "空目标激活比例": "0.006414814814814815",
+        "正确减错误Logit差": "9.712000394787001"
+      }
+    ],
+    "感知已有CSV": [
+      {
+        "模型": "Baseline",
+        "范围": "固定8帧诊断，非Development",
+        "相关检测AP@2m_xy": "0.8438523662551441",
+        "相关检测AP@2m_xy变化_百分点": "0.0",
+        "无关检测AP@2m_xy": "0.9366734657474463",
+        "无关检测AP@2m_xy变化_百分点": "0.0",
+        "相关分割IoU": "0.45608315081999296",
+        "相关分割IoU变化_百分点": "0.0",
+        "无关分割IoU": "0.42823871166709654",
+        "无关分割IoU变化_百分点": "0.0"
+      },
+      {
+        "模型": "A9562",
+        "范围": "固定8帧诊断，非Development",
+        "相关检测AP@2m_xy": "0.8438523662551441",
+        "相关检测AP@2m_xy变化_百分点": "0.0",
+        "无关检测AP@2m_xy": "0.9366734657474463",
+        "无关检测AP@2m_xy变化_百分点": "0.0",
+        "相关分割IoU": "0.45608315081999296",
+        "相关分割IoU变化_百分点": "0.0",
+        "无关分割IoU": "0.42823871166709654",
+        "无关分割IoU变化_百分点": "0.0"
+      },
+      {
+        "模型": "StageB256",
+        "范围": "固定8帧诊断，非Development",
+        "相关检测AP@2m_xy": "0.8438523662551441",
+        "相关检测AP@2m_xy变化_百分点": "0.0",
+        "无关检测AP@2m_xy": "0.9366734657474463",
+        "无关检测AP@2m_xy变化_百分点": "0.0",
+        "相关分割IoU": "0.4563129190330716",
+        "相关分割IoU变化_百分点": "0.022976821307862938",
+        "无关分割IoU": "0.4282557864047893",
+        "无关分割IoU变化_百分点": "0.0017074737692746034"
+      }
+    ],
+    "源PDF归档与公开许可": "未取得已归档来源和公开许可凭据；维持待归档、不公开",
+    "旧初版MP4当前存在": false,
+    "媒体上传": false,
+    "媒体重编码": false
+  },
+  "检查范围": [
+    "README.md",
+    "docs/final_report/BEV_DriveLM_项目总结报告.md",
+    "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+    "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+    "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+    "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md",
+    "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+    "docs/stage3/delivery_20261102/交付核查_20261102.md",
+    "docs/logbook_2026-11-03.md"
+  ],
+  "文档核查结果": {
+    "README.md": "PASS_MINIMAL_UPDATE",
+    "docs/final_report/BEV_DriveLM_项目总结报告.md": "PASS_MINIMAL_UPDATE",
+    "docs/stage4/02_有限样本综合性能评估_2026-11-03.md": "PASS_NO_CHANGE",
+    "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md": "PASS_MINIMAL_UPDATE",
+    "docs/stage4/04_原始任务与交付清单_2026-11-03.md": "PASS_MINIMAL_UPDATE",
+    "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md": "PASS_MINIMAL_UPDATE",
+    "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md": "PASS_MINIMAL_UPDATE",
+    "docs/stage3/delivery_20261102/交付核查_20261102.md": "PASS_MINIMAL_UPDATE",
+    "docs/logbook_2026-11-03.md": "PASS_MINIMAL_UPDATE"
+  },
+  "发现并修正": [
+    "README视频NOT_RUN及旧第四阶段导航过时",
+    "03/04/05仍以旧无声版及旧文案作为当前入口",
+    "负责人确认视频改名后路径需同步，SHA一致",
+    "旧候选清单未包含RCA且部分摘要过时",
+    "原四份文档保持原字节的描述与后续合法修订不符",
+    "旧初版MP4当前缺失，不能继续列为可交付视频",
+    "RCA三份历史空间审计未跟踪，改用保留原SHA和数值的可提交摘要，原明细不入Git"
+  ],
+  "结论口径": "正式A9562为9562更新、A128 NOT_PASS；固定8帧和Development/DriveLM正式测试分开。独立B256训练完成、Attention下降、检测AP无增益、分割仅微小变化；四项正式性能目标无达标证据。",
+  "RCA等级": "采样绑定为CONFIRMED覆盖机制，导致退化的因果仍为SUPPORTED_HYPOTHESIS；稀疏表示和小幅增强为支持假设；有害Head分布漂移与B256梯度方向冲突UNVERIFIED；没有确认唯一根因。",
+  "数据摘要保持": [
+    "results/stage4_delivery_20261103/分场景Attention.csv",
+    "results/stage4_delivery_20261103/分场景感知.csv",
+    "results/stage4_delivery_20261103/逐指令与背景激活.csv",
+    "results/stage4_delivery_20261103/分指令类型汇总.csv"
+  ],
+  "RCA原输出摘要保持": true,
+  "原始证据SHA256": {
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention对照.csv": "aac83ed758fdb496656d31f316fe6320fcc0b9eec91560cc5b9a1893b42d4f8a",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/有效指令配对.csv": "65f746623a2047d1d3e878ecd5cee9e48a56768805fdf50eab96568114444b1c",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/逐指令定位.csv": "d39eca8067385a501455d8e5659dbb1b6c43167459b1b461fea8c25acb5bd883",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/同类不同位置实例.csv": "d3736404fae8f39a7d2b56c0f2c87d860c858b4613ef21be56a093d8a982fb58",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv": "45d92451ece7937bcd1cc934549bb5dc9287f96159a8d46053775f893a03b6d3",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收汇总.json": "42c21c06c538ff11661fd4dd2dedb69a24b96252d61d8d362997105a62d077e1",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/resume_20261102/v2_fix_final_audit.json": "38194866557b06e87ebdc20c9dbfb92b7fd85be713adb14c78a10849ce57e6a6",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/regression_tests.xml": "02a3b40df756ed80cdebe9dfc5907e2129fe89252aed698da21427c44649df59",
+    "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/回归汇总.json": "b58366b6c2f07757847a9145f3d0cf57212a3a2e4da28097f2319c45a8b8daa5",
+    "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md": "4bb8f409542134e0c36d94cfe0b2ab9c6d9c94cf9c9b2b180faad2b3ba4ab253"
+  },
+  "相对链接": [
+    {
+      "文件": "README.md",
+      "目标": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage3/delivery_20261102/GitHub提交白名单_20261102.json",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/logbook_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/weekly_report_2026-10-26_to_2026-10-30.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/logbook_2026-10-30.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "scripts/stage3/README_LG_BEV_V3_20261028.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/lg_bev_formal_training_protocol_2026-10-27.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "scripts/stage3/README.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/四阶段任务交付审计_2026-10-26.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage1/00_阶段一交付导航.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage2/13_阶段二任务对照.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "experiments/lg_bev_stage3_exploration_20261101/README.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage3/03_V5语言条件耦合与最终探索结论_2026-10-26.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage4/01_综合验收与Git交付_2026-10-26.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/四阶段任务交付审计_2026-10-26.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage2/02_第二阶段原始任务书.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage2/13_阶段二任务对照.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage2/11_模块架构设计.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "results/stage2_delivery_2026-10-23/README.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage2/17_第二阶段复现指引.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "scripts/stage3/README.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "scripts/stage3/README_LG_BEV_V3_20261028.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/lg_bev_formal_training_protocol_2026-10-27.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/lg_bev_resource_protocol_v3_2026-10-28.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "scripts/stage3/README_LG_BEV_ENGINEERING_20261027.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "scripts/stage3/README_LG_BEV_SPACE_20261027.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/logbook_2026-10-28.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "results/lg_bev_v3_20261028/git_whitelist.json",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "tests/stage2/",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "tests/README.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage2/24_测试目录规范化_2026-10-26.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/images/stage2/stage2_audited_architecture_20261022.svg",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "scripts/stage2/",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "scripts/stage2/run_stage2.py",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage2/11_模块架构设计.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "results/stage2_delivery_2026-10-23/figures/training_loss_20steps.png",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "results/stage2_delivery_2026-10-23/figures/ab_metrics_6frames.png",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "results/stage2_delivery_2026-10-23/README.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "scripts/stage2/",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage2/11_模块架构设计.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/images/stage2/stage2_audited_architecture_20261022.svg",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "results/stage2_delivery_2026-10-23/README.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage2/12_单元测试报告.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage2/21_第二阶段最终缺口审查_2026-10-22.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage2/17_第二阶段复现指引.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage2/22_第二阶段Git交付检查_2026-10-23.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/logbook_2026-10-22.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage1/03_基线性能测试报告.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage1/00_阶段一交付导航.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage2/17_第二阶段复现指引.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "results/stage2_delivery_2026-10-23/non_git_assets.json",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage2/数据图表总览_2026-10-21.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/stage2/全部实验图表索引_2026-10-21.md",
+      "存在": true
+    },
+    {
+      "文件": "README.md",
+      "目标": "docs/logbook_2026-10-21.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../stage4/04_原始任务与交付清单_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../../requirements_stage3_20261102.txt",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/eval_metrics.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../images/2026-10-12/drivelm_bevformer_joint_01.png",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../images/stage2/stage2_audited_architecture_20261022.svg",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../images/2026-10-12/drivelm799_seg_comparison_000.png",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../images/stage2/stage2_evidence.svg",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../../results/stage2_delivery_2026-10-23/figures/training_loss_20steps.png",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../../results/stage2_delivery_2026-10-23/figures/ab_metrics_6frames.png",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../images/stage2/step62_divider_overlay.png",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/核查记录.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收汇总.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/final_report/BEV_DriveLM_项目总结报告.md",
+      "目标": "../stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "../final_report/BEV_DriveLM_项目总结报告.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "04_原始任务与交付清单_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/delivery_gap_audit_20261102/核查记录.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/来源与统计口径.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "../../scripts/stage4/summarize_existing.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention对照.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/有效指令配对.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/逐指令定位.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/同类不同位置实例.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/分场景Attention.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/分场景感知.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/分指令类型汇总.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/逐指令与背景激活.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.png",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/演示视频交付清单.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "目标": "05_视频兼容性与独立交付_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "目标": "../images/2026-10-12/drivelm_bevformer_joint_01.png",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "目标": "../images/2026-10-12/drivelm_bevformer_joint_01.png",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "目标": "../images/stage2/stage2_audited_architecture_20261022.svg",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收汇总.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.png",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "目标": "02_有限样本综合性能评估_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "目标": "06_StageA_StageB_根因定位_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "目标": "../../scripts/stage4/make_demo.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "../四阶段任务交付审计_2026-10-26.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "01_综合验收与Git交付_2026-10-26.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "02_有限样本综合性能评估_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/分场景Attention.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/分场景感知.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "02_有限样本综合性能评估_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/分指令类型汇总.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "02_有限样本综合性能评估_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "06_StageA_StageB_根因定位_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "../../README.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "../../scripts/stage3/README.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "../stage3/05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "../../requirements_stage3_20261102.txt",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "../final_report/BEV_DriveLM_项目总结报告.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "05_视频兼容性与独立交付_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "02_有限样本综合性能评估_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "../final_report/BEV_DriveLM_项目总结报告.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "03_项目演示分镜与旁白_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/演示视频交付清单.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "05_视频兼容性与独立交付_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/最终交付一致性核查_20261103.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/执行与完整性记录.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/最终交付一致性核查_20261103.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/收尾核查_20261103.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/演示视频交付清单.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/演示视频交付清单.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/Git提交候选_20261103.txt",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md",
+      "目标": "../../results/stage4_delivery_20261103/Git提交候选_20261103.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../final_report/BEV_DriveLM_项目总结报告.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收汇总.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../results/stage4_rca_20261103/输入来源与SHA256.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../scripts/stage4/analyze_existing_rca.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../stage2/23_空间指令监督与评估修订_2026-10-26.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../stage2/26_第二轮空间对比监督与独立留出评估_2026-10-26.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../stage2/27_第三轮实例排序与背景难负例实测_2026-10-26.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../stage3/02_语言条件目标Mask与感知收益验证_2026-10-26.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../stage3/03_V5语言条件耦合与最终探索结论_2026-10-26.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../scripts/stage2/bev_coordinates.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../scripts/stage2/spatial_annotations.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../scripts/stage3/lg_bev_supervision_space.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../scripts/stage3/lg_bev_data.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../scripts/stage3/lg_bev_engineering_data.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../results/stage4_rca_20261103/历史空间核查摘要_20261103.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../results/stage4_rca_20261103/历史空间核查摘要_20261103.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../results/stage4_rca_20261103/历史空间核查摘要_20261103.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../scripts/stage3/lg_bev_prototype.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../scripts/stage3/lg_bev_engineering_loss.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/eval_metrics.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../results/stage4_rca_20261103/A9562_StageB256逐指令变化.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/resume_20261102/v2_fix_final_audit.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../results/stage4_rca_20261103/既有解码输出变化.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../scripts/stage3/lg_bev_engineering_train.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../results/stage4_rca_20261103/StageB256任务与空目标采样.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/gpu_preflight_20261101/result.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../results/stage4_rca_20261103/根因只读分析.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../results/stage4_rca_20261103/A9562_StageB256逐指令变化.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../results/stage4_rca_20261103/既有解码输出变化.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../results/stage4_rca_20261103/StageB256任务与空目标采样.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "目标": "../../results/stage4_rca_20261103/输入来源与SHA256.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "Markdown专项审查_20261102.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "GitHub提交白名单_20261102.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "GitHub提交白名单_20261102.txt",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "环境快照_20261102.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "非Git资产清单_20261102.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "交付核查_20261102.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "线上交付核查_20261103.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../logbook_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../final_report/BEV_DriveLM_项目总结报告.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../stage2/11_模块架构设计.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../images/stage2/stage2_audited_architecture_20261022.svg",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../stage2/23_空间指令监督与评估修订_2026-10-26.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收报告.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/核心验收汇总.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/既有8帧感知诊断.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/resume_20261102/after_audit.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../final_report/BEV_DriveLM_项目总结报告.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../03_V5语言条件耦合与最终探索结论_2026-10-26.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../05_Stage3环境与非Git资产复现_2026-11-02.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../requirements_stage3_20261102.txt",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/修复验收报告.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/回归汇总.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/regression_tests.xml",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.png",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/空间注意力对照.pdf",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.png",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention指标对照.pdf",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/Attention对照.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/有效指令配对.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/逐指令定位.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/stage_a_acceptance_20261102/同类不同位置实例.csv",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../scripts/stage3/README.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../scripts/stage3/lg_bev_supervision_space.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../scripts/stage3/lg_bev_engineering_train.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/worker.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/configs/main.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_20261102/source/eval_metrics.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/source/entry.py",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../experiments/lg_bev_stage3_exploration_20261101/reports/evaluation_fix_v2_20261102/protocol.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../stage4/04_原始任务与交付清单_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../stage4/02_有限样本综合性能评估_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../stage4/03_项目演示分镜与旁白_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../stage4/05_视频兼容性与独立交付_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../results/stage4_delivery_20261103/Git提交候选_20261103.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/stage3/delivery_20261102/交付核查_20261102.md",
+      "目标": "../../../results/stage4_delivery_20261103/最终交付一致性核查_20261103.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/logbook_2026-11-03.md",
+      "目标": "stage3/delivery_20261102/Markdown专项审查_20261102.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/logbook_2026-11-03.md",
+      "目标": "stage3/delivery_20261102/线上交付核查_20261103.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/logbook_2026-11-03.md",
+      "目标": "stage3/delivery_20261102/交付核查_20261102.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/logbook_2026-11-03.md",
+      "目标": "stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+      "存在": true
+    },
+    {
+      "文件": "docs/logbook_2026-11-03.md",
+      "目标": "../results/stage4_delivery_20261103/最终交付一致性核查_20261103.json",
+      "存在": true
+    },
+    {
+      "文件": "docs/logbook_2026-11-03.md",
+      "目标": "../results/stage4_delivery_20261103/Git提交候选_20261103.txt",
+      "存在": true
+    }
+  ],
+  "缺失目标": [],
+  "候选未覆盖目标": [],
+  "表格结构": {
+    "README.md": [
+      {
+        "行数_不含表头分隔": 7,
+        "列数": 2
+      },
+      {
+        "行数_不含表头分隔": 4,
+        "列数": 4
+      },
+      {
+        "行数_不含表头分隔": 6,
+        "列数": 2
+      },
+      {
+        "行数_不含表头分隔": 5,
+        "列数": 3
+      },
+      {
+        "行数_不含表头分隔": 1,
+        "列数": 4
+      },
+      {
+        "行数_不含表头分隔": 5,
+        "列数": 2
+      },
+      {
+        "行数_不含表头分隔": 3,
+        "列数": 3
+      }
+    ],
+    "docs/final_report/BEV_DriveLM_项目总结报告.md": [
+      {
+        "行数_不含表头分隔": 4,
+        "列数": 3
+      },
+      {
+        "行数_不含表头分隔": 4,
+        "列数": 3
+      },
+      {
+        "行数_不含表头分隔": 7,
+        "列数": 2
+      },
+      {
+        "行数_不含表头分隔": 6,
+        "列数": 3
+      },
+      {
+        "行数_不含表头分隔": 6,
+        "列数": 3
+      },
+      {
+        "行数_不含表头分隔": 3,
+        "列数": 6
+      },
+      {
+        "行数_不含表头分隔": 1,
+        "列数": 5
+      },
+      {
+        "行数_不含表头分隔": 5,
+        "列数": 4
+      },
+      {
+        "行数_不含表头分隔": 7,
+        "列数": 3
+      },
+      {
+        "行数_不含表头分隔": 4,
+        "列数": 4
+      },
+      {
+        "行数_不含表头分隔": 3,
+        "列数": 4
+      },
+      {
+        "行数_不含表头分隔": 3,
+        "列数": 5
+      },
+      {
+        "行数_不含表头分隔": 3,
+        "列数": 5
+      },
+      {
+        "行数_不含表头分隔": 11,
+        "列数": 2
+      }
+    ],
+    "docs/stage4/02_有限样本综合性能评估_2026-11-03.md": [
+      {
+        "行数_不含表头分隔": 4,
+        "列数": 4
+      },
+      {
+        "行数_不含表头分隔": 3,
+        "列数": 4
+      },
+      {
+        "行数_不含表头分隔": 2,
+        "列数": 5
+      },
+      {
+        "行数_不含表头分隔": 3,
+        "列数": 5
+      },
+      {
+        "行数_不含表头分隔": 4,
+        "列数": 7
+      },
+      {
+        "行数_不含表头分隔": 7,
+        "列数": 6
+      },
+      {
+        "行数_不含表头分隔": 2,
+        "列数": 4
+      },
+      {
+        "行数_不含表头分隔": 5,
+        "列数": 3
+      },
+      {
+        "行数_不含表头分隔": 4,
+        "列数": 3
+      }
+    ],
+    "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md": [],
+    "docs/stage4/04_原始任务与交付清单_2026-11-03.md": [
+      {
+        "行数_不含表头分隔": 4,
+        "列数": 2
+      },
+      {
+        "行数_不含表头分隔": 8,
+        "列数": 4
+      },
+      {
+        "行数_不含表头分隔": 4,
+        "列数": 3
+      },
+      {
+        "行数_不含表头分隔": 4,
+        "列数": 3
+      },
+      {
+        "行数_不含表头分隔": 4,
+        "列数": 3
+      },
+      {
+        "行数_不含表头分隔": 3,
+        "列数": 3
+      }
+    ],
+    "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md": [
+      {
+        "行数_不含表头分隔": 9,
+        "列数": 2
+      }
+    ],
+    "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md": [
+      {
+        "行数_不含表头分隔": 3,
+        "列数": 4
+      },
+      {
+        "行数_不含表头分隔": 3,
+        "列数": 5
+      },
+      {
+        "行数_不含表头分隔": 6,
+        "列数": 3
+      },
+      {
+        "行数_不含表头分隔": 5,
+        "列数": 3
+      },
+      {
+        "行数_不含表头分隔": 2,
+        "列数": 3
+      },
+      {
+        "行数_不含表头分隔": 5,
+        "列数": 3
+      },
+      {
+        "行数_不含表头分隔": 2,
+        "列数": 4
+      },
+      {
+        "行数_不含表头分隔": 3,
+        "列数": 5
+      },
+      {
+        "行数_不含表头分隔": 11,
+        "列数": 7
+      },
+      {
+        "行数_不含表头分隔": 5,
+        "列数": 3
+      }
+    ],
+    "docs/stage3/delivery_20261102/交付核查_20261102.md": [
+      {
+        "行数_不含表头分隔": 7,
+        "列数": 3
+      },
+      {
+        "行数_不含表头分隔": 5,
+        "列数": 3
+      }
+    ],
+    "docs/logbook_2026-11-03.md": [
+      {
+        "行数_不含表头分隔": 6,
+        "列数": 2
+      },
+      {
+        "行数_不含表头分隔": 3,
+        "列数": 2
+      }
+    ]
+  },
+  "本轮视觉复核秒": [
+    85,
+    105,
+    115,
+    145,
+    172,
+    235
+  ],
+  "视觉结论": "中文可读，同场景正确错误与目标干扰局部、A128失败、StageB表及Attention下降、结尾限制均保留；未对播放器或人声作主观验收。",
+  "外部URL处理": {
+    "数量": 13,
+    "状态": "NOT_VERIFIED；该核查阶段无网络请求，沿用此前115次访问的历史回执，不将新文档标为线上已发布。"
+  },
+  "本轮修改文件_候选清单自身除外": [
+    "README.md",
+    "docs/final_report/BEV_DriveLM_项目总结报告.md",
+    "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+    "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+    "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md",
+    "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+    "docs/stage3/delivery_20261102/交付核查_20261102.md",
+    "docs/logbook_2026-11-03.md",
+    "results/stage4_delivery_20261103/演示视频交付清单.json"
+  ],
+  "文档及视频清单SHA256": {
+    "README.md": "4aa25bcfbfe1e7175aa1acd20debdc78409a88a327ccfbfe631ae15d4cdc32a1",
+    "docs/final_report/BEV_DriveLM_项目总结报告.md": "2294cd4436fb703f2189ddc0c25b75c67dbb1d2132bc61d162249b0d2f5cf1b7",
+    "docs/stage4/02_有限样本综合性能评估_2026-11-03.md": "082125327f150ba375e8e6815c06d4965be7b760238e15b250cc5d20b2ee8862",
+    "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md": "99125f9422c86e3b21c9999bce875072d524b249e6a85e536d342b5816dde010",
+    "docs/stage4/04_原始任务与交付清单_2026-11-03.md": "841166e694a72e7f0bf5de2a1c795b8eacb12f024577750705fcfef94bc4862e",
+    "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md": "9b0b644a81c5f8a125437f1f9a10abd2d8c33bb43f3336c49cbad3b4d9c8d135",
+    "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md": "31988b74270ea3f66f02879380b1d98b7a98cf159815ff4226dca50c59e781e2",
+    "docs/stage3/delivery_20261102/交付核查_20261102.md": "3682e804ce54271d199b6e873c69e8fe78f75a5aa0923178061aaf02f6e3f068",
+    "docs/logbook_2026-11-03.md": "cfaf14675ade30295511f8d36ff8403d6e1412aba3d97a5e481bc27e1de51bbc",
+    "results/stage4_delivery_20261103/演示视频交付清单.json": "85c4d0f01700d45f46b8bb753a8e0abc03f9b58976dfbc8de2efb54438b3c6bf"
+  },
+  "精确Git候选数": 32,
+  "精确Git候选": [
+    "README.md",
+    "docs/final_report/BEV_DriveLM_项目总结报告.md",
+    "docs/logbook_2026-11-03.md",
+    "docs/stage3/delivery_20261102/交付核查_20261102.md",
+    "docs/stage3/delivery_20261102/线上交付核查_20261103.json",
+    "docs/stage4/01_综合验收与Git交付_2026-10-26.md",
+    "docs/stage4/02_有限样本综合性能评估_2026-11-03.md",
+    "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+    "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+    "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md",
+    "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+    "docs/四阶段任务交付审计_2026-10-26.md",
+    "results/stage4_delivery_20261103/Git提交候选_20261103.json",
+    "results/stage4_delivery_20261103/Git提交候选_20261103.txt",
+    "results/stage4_delivery_20261103/分场景Attention.csv",
+    "results/stage4_delivery_20261103/分场景感知.csv",
+    "results/stage4_delivery_20261103/分指令类型汇总.csv",
+    "results/stage4_delivery_20261103/执行与完整性记录.json",
+    "results/stage4_delivery_20261103/收尾核查_20261103.json",
+    "results/stage4_delivery_20261103/最终交付一致性核查_20261103.json",
+    "results/stage4_delivery_20261103/来源与统计口径.json",
+    "results/stage4_delivery_20261103/演示视频交付清单.json",
+    "results/stage4_delivery_20261103/逐指令与背景激活.csv",
+    "results/stage4_rca_20261103/A9562_StageB256逐指令变化.csv",
+    "results/stage4_rca_20261103/StageB256任务与空目标采样.csv",
+    "results/stage4_rca_20261103/历史空间核查摘要_20261103.json",
+    "results/stage4_rca_20261103/既有解码输出变化.csv",
+    "results/stage4_rca_20261103/根因只读分析.json",
+    "results/stage4_rca_20261103/输入来源与SHA256.json",
+    "scripts/stage4/analyze_existing_rca.py",
+    "scripts/stage4/make_demo.py",
+    "scripts/stage4/summarize_existing.py"
+  ],
+  "历史摘要边界": "旧线上记录、早期交付记录和RCA文档摘要保持各自核查时点；当前合法文案变化记录在本文件及更新后的候选清单，不改写历史记录。",
+  "执行边界": {
+    "分支": "main",
+    "新分支": false,
+    "训练或模型推理": false,
+    "Development或ColdFinal": false,
+    "视频重编码": false,
+    "回归测试重跑": false,
+    "网络请求": false,
+    "安装依赖": false,
+    "暂存区保持": true,
+    "CommitPush": false
+  },
+  "人工终审待办": [
+    "本人试听08/11/12句间位置、01开头活动声和计划停顿",
+    "在接收设备播放器1080p全屏开播，记录声音及画面可读性",
+    "指导老师终审报告与RCA证据等级并确认结项范围",
+    "源PDF本地归档和原文核验；公开许可未确认前不公开",
+    "代码与文档按正式发布清单管理，媒体独立交付"
+  ],
+  "本轮新增文件": [
+    "results/stage4_delivery_20261103/最终交付一致性核查_20261103.json",
+    "results/stage4_rca_20261103/历史空间核查摘要_20261103.json"
+  ],
+  "本轮修改既有文件": [
+    "README.md",
+    "docs/final_report/BEV_DriveLM_项目总结报告.md",
+    "docs/stage4/03_项目演示分镜与旁白_2026-11-03.md",
+    "docs/stage4/04_原始任务与交付清单_2026-11-03.md",
+    "docs/stage4/05_视频兼容性与独立交付_2026-11-03.md",
+    "docs/stage4/06_StageA_StageB_根因定位_2026-11-03.md",
+    "docs/stage3/delivery_20261102/交付核查_20261102.md",
+    "docs/logbook_2026-11-03.md",
+    "results/stage4_delivery_20261103/演示视频交付清单.json",
+    "results/stage4_delivery_20261103/Git提交候选_20261103.json",
+    "results/stage4_delivery_20261103/Git提交候选_20261103.txt"
+  ],
+  "本轮变更文件总数": 13,
+  "正式性能与工程验收区分": "文档一致性通过限于材料核查；模型A128仍NOT_PASS，DriveLM正式测试NOT_RUN，模型性能由独立正式评价判定。",
+  "历史空间原来源保持": true
+}
